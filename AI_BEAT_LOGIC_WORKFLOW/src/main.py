@@ -10,6 +10,7 @@ from ingest_convert import ConversionError, ingest_and_convert, write_conversion
 from logic_integration import attempt_logic_project
 from logging_utils import print_configuration_summary
 from paths import ensure_folder_structure
+from qc_report import run_final_export_and_qc
 from user_options import options_from_args, options_from_questionnaire
 
 
@@ -82,7 +83,14 @@ def main() -> int:
     fallback = run_fallback_processing(options=vars(options))
     print(f"Fallback processed WAV written: {fallback['verification']['path']}")
     print("Processing log written: 04_PROCESSED_AUDIO/processing_log.md")
-    return 0
+    final_result = run_final_export_and_qc(options=vars(options))
+    print(f"Final WAV written: {final_result['final_path']}")
+    print(f"QC report written: {final_result['qc_report']}")
+    if final_result["complete"]:
+        print("COMPLETE")
+        return 0
+    print("NOT COMPLETE")
+    return 2
 
 
 if __name__ == "__main__":
