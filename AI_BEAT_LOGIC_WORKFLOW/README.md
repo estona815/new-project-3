@@ -15,6 +15,8 @@ The current branch contains the scaffold plus input ingestion and working WAV co
 - sanitize filenames without overwriting existing files
 - convert a source file into `04_PROCESSED_AUDIO/working_input.wav`
 - write `01_ANALYSIS/input_metadata.json`
+- analyze `04_PROCESSED_AUDIO/working_input.wav`
+- write `01_ANALYSIS/analysis.json` and `01_ANALYSIS/analysis_summary.md`
 - write `01_ANALYSIS/conversion_error.md` on conversion failure
 - print a clear configuration summary
 - clearly mark final WAV export as pending until a real output exists and is verified
@@ -79,6 +81,10 @@ make -C AI_BEAT_LOGIC_WORKFLOW/tools test
 ```
 
 Details are in `tools/README_C_TOOLS.md`.
+
+## Python Analysis Engine
+
+After working WAV conversion, the CLI runs a heuristic analysis pass for metadata, level, silence, over-compression, low-end excess, vocal-like texture candidates, melody-buried candidates, and arrangement candidates. The report uses heuristic language for uncertain detections and writes producer-readable notes to `01_ANALYSIS/analysis_summary.md`.
 
 Run the questionnaire:
 

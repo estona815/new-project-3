@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 
+from audio_analysis import analyze_working_wav
 from config import load_defaults
 from ingest_convert import ConversionError, ingest_and_convert, write_conversion_error
 from logging_utils import print_configuration_summary
@@ -57,6 +58,10 @@ def main() -> int:
     print(f"Copied input: {metadata.copied_path}")
     print(f"Working WAV: {metadata.working_wav_path}")
     print(f"Conversion tool: {metadata.conversion_tool_used}")
+    analysis = analyze_working_wav()
+    print(f"Analysis written: 01_ANALYSIS/analysis.json")
+    print(f"Analysis summary written: 01_ANALYSIS/analysis_summary.md")
+    print(f"Analyzed duration: {analysis['metadata']['duration_seconds']:.2f}s")
     return 0
 
 
