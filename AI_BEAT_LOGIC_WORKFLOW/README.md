@@ -10,9 +10,9 @@ This first branch contains the repository scaffold, branch strategy, and initial
 
 - create the required folder structure
 - collect or default the production choices
-- sanitize and copy a user input file into `00_INPUT_SUNO/`
-- write initial session settings
-- write starter analysis, edit-plan, and QC report files
+- load `config/defaults.json`
+- validate the input path enough to warn about missing or unsupported files
+- print a clear configuration summary
 - clearly mark final WAV export as pending until a real output exists and is verified
 
 ## Required Folder Structure
@@ -45,16 +45,35 @@ If the user does not answer a prompt, the workflow defaults to:
 
 ## Quick Start
 
-Initialize the folders and write starter artifacts:
+Show help:
 
 ```bash
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py init
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --help
 ```
 
-Start a session with an input file:
+Run with explicit options:
 
 ```bash
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py prepare --input "/path/to/suno_track.mp3" --non-interactive
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
+  --input "/path/to/suno_song.mp3" \
+  --length-mode "under_2min" \
+  --vocal-mode "suppress" \
+  --melody-focus "front" \
+  --drum-808 "strong_controlled" \
+  --export-format "wav24_48k" \
+  --save-logic-project true
+```
+
+Run the questionnaire:
+
+```bash
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --interactive
+```
+
+The shell wrapper passes arguments to the same CLI:
+
+```bash
+AI_BEAT_LOGIC_WORKFLOW/scripts/run_workflow.sh --input dummy.wav
 ```
 
 Run tests:
