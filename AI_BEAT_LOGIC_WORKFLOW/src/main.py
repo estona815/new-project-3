@@ -5,6 +5,7 @@ import argparse
 from audio_analysis import analyze_working_wav
 from config import load_defaults
 from edit_plan_generator import write_edit_plan
+from fallback_processing import run_fallback_processing
 from ingest_convert import ConversionError, ingest_and_convert, write_conversion_error
 from logic_integration import attempt_logic_project
 from logging_utils import print_configuration_summary
@@ -78,6 +79,9 @@ def main() -> int:
     print(f"Analyzed duration: {analysis['metadata']['duration_seconds']:.2f}s")
     write_edit_plan(options=vars(options))
     print("Edit plan written: 02_EDIT_PLAN/edit_plan.md")
+    fallback = run_fallback_processing(options=vars(options))
+    print(f"Fallback processed WAV written: {fallback['verification']['path']}")
+    print("Processing log written: 04_PROCESSED_AUDIO/processing_log.md")
     return 0
 
 
