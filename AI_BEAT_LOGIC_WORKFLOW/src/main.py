@@ -4,6 +4,7 @@ import argparse
 
 from audio_analysis import analyze_working_wav
 from config import load_defaults
+from edit_plan_generator import write_edit_plan
 from ingest_convert import ConversionError, ingest_and_convert, write_conversion_error
 from logging_utils import print_configuration_summary
 from paths import ensure_folder_structure
@@ -62,6 +63,8 @@ def main() -> int:
     print(f"Analysis written: 01_ANALYSIS/analysis.json")
     print(f"Analysis summary written: 01_ANALYSIS/analysis_summary.md")
     print(f"Analyzed duration: {analysis['metadata']['duration_seconds']:.2f}s")
+    write_edit_plan(options=vars(options))
+    print("Edit plan written: 02_EDIT_PLAN/edit_plan.md")
     return 0
 
 
