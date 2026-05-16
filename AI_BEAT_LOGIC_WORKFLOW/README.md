@@ -70,6 +70,16 @@ python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
 
 Supported input extensions are `.mp3`, `.wav`, `.aiff`, `.aif`, `.flac`, and `.m4a`. Conversion prefers `ffmpeg`; if `ffmpeg` is unavailable on macOS, it tries `afconvert`.
 
+## C WAV Helper Tools
+
+Build and test helper tools for fast WAV analysis, gain staging, trim/fade, and integrity checks:
+
+```bash
+make -C AI_BEAT_LOGIC_WORKFLOW/tools test
+```
+
+Details are in `tools/README_C_TOOLS.md`.
+
 Run the questionnaire:
 
 ```bash
