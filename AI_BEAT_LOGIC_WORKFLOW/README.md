@@ -6,13 +6,17 @@ This project is designed to turn a Suno-generated MP3/WAV sketch into a cleaner,
 
 ## Current Scope
 
-This first branch contains the repository scaffold, branch strategy, and initial CLI skeleton. It does not claim to finish audio processing yet. The CLI can:
+The current branch contains the scaffold plus input ingestion and working WAV conversion. It does not claim final mix, master, Logic automation, or QC completion yet. The CLI can:
 
 - create the required folder structure
 - collect or default the production choices
-- sanitize and copy a user input file into `00_INPUT_SUNO/`
-- write initial session settings
-- write starter analysis, edit-plan, and QC report files
+- load `config/defaults.json`
+- copy supported source audio into `00_INPUT_SUNO/`
+- sanitize filenames without overwriting existing files
+- convert a source file into `04_PROCESSED_AUDIO/working_input.wav`
+- write `01_ANALYSIS/input_metadata.json`
+- write `01_ANALYSIS/conversion_error.md` on conversion failure
+- print a clear configuration summary
 - clearly mark final WAV export as pending until a real output exists and is verified
 
 ## Required Folder Structure
@@ -45,16 +49,47 @@ If the user does not answer a prompt, the workflow defaults to:
 
 ## Quick Start
 
-Initialize the folders and write starter artifacts:
+Show help:
 
 ```bash
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py init
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --help
 ```
 
-Start a session with an input file:
+Run with explicit options:
 
 ```bash
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py prepare --input "/path/to/suno_track.mp3" --non-interactive
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
+  --input "/path/to/suno_song.mp3" \
+  --length-mode "under_2min" \
+  --vocal-mode "suppress" \
+  --melody-focus "front" \
+  --drum-808 "strong_controlled" \
+  --export-format "wav24_48k" \
+  --save-logic-project true
+```
+
+Supported input extensions are `.mp3`, `.wav`, `.aiff`, `.aif`, `.flac`, and `.m4a`. Conversion prefers `ffmpeg`; if `ffmpeg` is unavailable on macOS, it tries `afconvert`.
+
+## C WAV Helper Tools
+
+Build and test helper tools for fast WAV analysis, gain staging, trim/fade, and integrity checks:
+
+```bash
+make -C AI_BEAT_LOGIC_WORKFLOW/tools test
+```
+
+Details are in `tools/README_C_TOOLS.md`.
+
+Run the questionnaire:
+
+```bash
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --interactive
+```
+
+The shell wrapper passes arguments to the same CLI:
+
+```bash
+AI_BEAT_LOGIC_WORKFLOW/scripts/run_workflow.sh --input dummy.wav
 ```
 
 Run tests:
