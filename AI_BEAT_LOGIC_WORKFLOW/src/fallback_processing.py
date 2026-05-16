@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import json
-import math
+from datetime import datetime
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -144,6 +144,16 @@ def apply_ffmpeg_fallback(input_path: Path, output_path: Path, decision: Fallbac
     return command, notes
 
 
+def unique_backup_path(output_path: Path) -> Path:
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    candidate = output_path.with_name(f"{output_path.stem}_backup_{timestamp}{output_path.suffix}")
+    index = 1
+    while candidate.exists():
+        candidate = output_path.with_name(f"{output_path.stem}_backup_{timestamp}_{index:03d}{output_path.suffix}")
+        index += 1
+    return candidate
+
+
 def write_processing_log(path: Path, decision: FallbackDecision, notes: list[str], verification: dict[str, Any], command: list[str] | None) -> None:
     command_text = " ".join(command) if command else "No ffmpeg command used."
     note_text = "\n".join(f"- {note}" for note in notes)
@@ -189,8 +199,7 @@ def run_fallback_processing(
     decision = choose_section(analysis, resolved_options)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     if output_path.exists():
-        backup = output_path.with_name(f"fallback_processed_backup_{int(math.floor(output_path.stat().st_mtime))}.wav")
-        output_path.replace(backup)
+        output_path.replace(unique_backup_path(output_path))
 
     command: list[str] | None = None
     try:
@@ -216,4 +225,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

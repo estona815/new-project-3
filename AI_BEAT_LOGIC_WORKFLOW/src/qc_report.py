@@ -3,23 +3,14 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
-import wave
 from pathlib import Path
 from typing import Any
 
 from audio_analysis import read_wav_float
 from config import load_defaults
-from export_audio import ffmpeg_path, run_command, write_float_wav
+from export_audio import ffmpeg_path, run_command
 from final_verify import expected_final_name, expected_sample_rate, verify_final_export, write_verification_json
 from paths import PROJECT_ROOT
-
-
-FINAL_DIR = PROJECT_ROOT / "05_FINAL_WAV"
-QC_REPORT = PROJECT_ROOT / "06_QC_REPORT" / "qc_report.md"
-FINAL_VERIFY_JSON = PROJECT_ROOT / "06_QC_REPORT" / "final_verification.json"
-FALLBACK_SOURCE = PROJECT_ROOT / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
-LOGIC_EXPORT_SOURCE = PROJECT_ROOT / "03_LOGIC_PROJECT" / "logic_export.wav"
-MP3_PREVIEW = FINAL_DIR / "final_preview.mp3"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -36,21 +27,6 @@ def choose_final_source(project_root: Path = PROJECT_ROOT) -> tuple[Path, str]:
     if fallback_source.exists():
         return fallback_source, "fallback_processed"
     raise FileNotFoundError("No final source found. Expected Logic export or fallback_processed.wav.")
-
-
-def convert_with_python(source: Path, destination: Path, sample_rate: int) -> list[str]:
-    metadata, channels = read_wav_float(source)
-    source_rate = int(metadata["sample_rate"])
-    if source_rate != sample_rate:
-        # Minimal nearest-neighbor resampling fallback. ffmpeg/afconvert should be preferred.
-        ratio = source_rate / sample_rate
-        frame_count = int(min(len(channel) for channel in channels) / ratio)
-        resampled: list[list[float]] = []
-        for channel in channels:
-            resampled.append([channel[min(len(channel) - 1, int(index * ratio))] for index in range(frame_count)])
-        channels = resampled
-    write_float_wav(destination, channels, sample_rate)
-    return ["Python WAV writer used because ffmpeg/afconvert conversion was unavailable; output is PCM WAV, not a mastered Logic export."]
 
 
 def convert_final_wav(source: Path, destination: Path, export_format: str) -> tuple[list[str], str]:
@@ -89,19 +65,19 @@ def convert_final_wav(source: Path, destination: Path, export_format: str) -> tu
         if result.returncode == 0:
             return command, "afconvert"
 
-    notes = convert_with_python(source, destination, sample_rate)
-    return notes, "python_wave"
+    raise RuntimeError("Final WAV export requires ffmpeg or afconvert so the requested 24-bit output can be verified.")
 
 
-def create_mp3_preview(final_wav: Path) -> tuple[Path | None, str]:
+def create_mp3_preview(final_wav: Path, project_root: Path = PROJECT_ROOT) -> tuple[Path | None, str]:
     ffmpeg = ffmpeg_path()
     if not ffmpeg:
         return None, "ffmpeg unavailable; MP3 preview skipped"
-    command = [ffmpeg, "-hide_banner", "-y", "-i", str(final_wav), "-codec:a", "libmp3lame", "-b:a", "192k", str(MP3_PREVIEW)]
+    preview_path = project_root / "05_FINAL_WAV" / "final_preview.mp3"
+    command = [ffmpeg, "-hide_banner", "-y", "-i", str(final_wav), "-codec:a", "libmp3lame", "-b:a", "192k", str(preview_path)]
     result = run_command(command)
-    if result.returncode != 0 or not MP3_PREVIEW.exists() or MP3_PREVIEW.stat().st_size <= 0:
+    if result.returncode != 0 or not preview_path.exists() or preview_path.stat().st_size <= 0:
         return None, "MP3 preview failed; final WAV remains valid if verification passed"
-    return MP3_PREVIEW, "created with ffmpeg"
+    return preview_path, "created with ffmpeg"
 
 
 def original_filename(metadata: dict[str, Any]) -> str:
@@ -208,7 +184,7 @@ def run_final_export_and_qc(options: dict[str, Any] | None = None, project_root:
     final_path = project_root / "05_FINAL_WAV" / expected_final_name(export_format)
     source, source_type = choose_final_source(project_root)
     command, conversion_tool = convert_final_wav(source, final_path, export_format)
-    mp3_path, mp3_note = create_mp3_preview(final_path)
+    mp3_path, mp3_note = create_mp3_preview(final_path, project_root)
     verification = verify_final_export(final_path, export_format, length_mode)
     write_verification_json(verification, project_root / "06_QC_REPORT" / "final_verification.json")
 

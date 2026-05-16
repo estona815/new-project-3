@@ -7,6 +7,7 @@ import tempfile
 import unittest
 import wave
 from pathlib import Path
+from unittest import mock
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -109,6 +110,22 @@ class QCReportTests(unittest.TestCase):
                     options={"export_format": "wav24_48k", "length_mode": "under_2min"},
                     project_root=project_root,
                 )
+
+    def test_final_export_requires_ffmpeg_or_afconvert(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            project_root = Path(tmp) / "AI_BEAT_LOGIC_WORKFLOW"
+            ensure_folder_structure(project_root)
+            fallback = project_root / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
+            write_source_wav(fallback)
+            write_metadata(project_root)
+
+            with mock.patch("qc_report.ffmpeg_path", return_value=None):
+                with mock.patch("qc_report.shutil.which", return_value=None):
+                    with self.assertRaises(RuntimeError):
+                        run_final_export_and_qc(
+                            options={"export_format": "wav24_48k", "length_mode": "under_2min"},
+                            project_root=project_root,
+                        )
 
 
 if __name__ == "__main__":

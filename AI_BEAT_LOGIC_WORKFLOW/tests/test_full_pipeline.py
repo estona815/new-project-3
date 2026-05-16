@@ -27,11 +27,32 @@ GENERATED_PATHS = [
     PROJECT_ROOT / "01_ANALYSIS" / "conversion_error.md",
 ]
 
+TRACKED_GENERATED_FILES = [
+    PROJECT_ROOT / "01_ANALYSIS" / "analysis.json",
+    PROJECT_ROOT / "01_ANALYSIS" / "analysis_summary.md",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "edit_plan.md",
+    PROJECT_ROOT / "06_QC_REPORT" / "qc_report.md",
+]
+
 
 def cleanup_generated_outputs() -> None:
     for path in GENERATED_PATHS:
         if path.exists():
             path.unlink()
+
+
+def capture_tracked_generated_files() -> dict[Path, str | None]:
+    return {path: path.read_text(encoding="utf-8") if path.exists() else None for path in TRACKED_GENERATED_FILES}
+
+
+def restore_tracked_generated_files(snapshot: dict[Path, str | None]) -> None:
+    for path, content in snapshot.items():
+        if content is None:
+            if path.exists():
+                path.unlink()
+        else:
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text(content, encoding="utf-8")
     for directory, pattern in [
         (PROJECT_ROOT / "00_INPUT_SUNO", "dummy_suno_like*.wav"),
         (PROJECT_ROOT / "04_PROCESSED_AUDIO", "working_input_backup_*.wav"),
@@ -43,6 +64,7 @@ def cleanup_generated_outputs() -> None:
 
 class FullPipelineTests(unittest.TestCase):
     def test_dummy_pipeline_produces_final_wav_and_qc_report(self) -> None:
+        snapshot = capture_tracked_generated_files()
         cleanup_generated_outputs()
         generate_dummy_audio()
         try:
@@ -97,6 +119,7 @@ class FullPipelineTests(unittest.TestCase):
             self.assertEqual(verification["sample_rate"], 48000)
         finally:
             cleanup_generated_outputs()
+            restore_tracked_generated_files(snapshot)
 
 
 if __name__ == "__main__":
