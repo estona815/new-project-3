@@ -6,6 +6,7 @@ from audio_analysis import analyze_working_wav
 from config import load_defaults
 from edit_plan_generator import write_edit_plan
 from ingest_convert import ConversionError, ingest_and_convert, write_conversion_error
+from logic_integration import attempt_logic_project
 from logging_utils import print_configuration_summary
 from paths import ensure_folder_structure
 from user_options import options_from_args, options_from_questionnaire
@@ -27,6 +28,11 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Ask the seven setup questions interactively.",
     )
+    parser.add_argument(
+        "--logic-only",
+        action="store_true",
+        help="Only check/attempt optional Logic Pro project automation and write status.",
+    )
     return parser
 
 
@@ -36,6 +42,13 @@ def main() -> int:
 
     ensure_folder_structure()
     defaults = load_defaults()
+
+    if args.logic_only:
+        status = attempt_logic_project()
+        print(f"Logic automation status: {status.status}")
+        print(status.message)
+        print("Status written: 03_LOGIC_PROJECT/logic_automation_status.md")
+        return 0 if status.status in {"success", "partial_success", "unavailable"} else 2
 
     if args.interactive:
         options = options_from_questionnaire(defaults)
