@@ -1,0 +1,19 @@
+{
+  "status": "pending_audio_analysis",
+  "note": "Detailed audio analysis will be implemented in the audio-analysis branch.",
+  "required_metrics": [
+    "duration",
+    "sample_rate",
+    "channels",
+    "peak",
+    "rms",
+    "lufs_estimate",
+    "clipping",
+    "silence",
+    "over_compressed_sections",
+    "excessive_low_end",
+    "vocal_like_texture_candidates",
+    "melody_buried_candidates",
+    "intro_hook_drop_outro_candidates"
+  ]
+}
