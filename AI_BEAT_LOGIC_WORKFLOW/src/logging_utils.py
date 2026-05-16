@@ -14,10 +14,9 @@ def print_configuration_summary(options: UserOptions) -> None:
     print(f"Drum/808: {options.drum_808}")
     print(f"Export format: {options.export_format}")
     print(f"Save Logic project: {'true' if options.save_logic_project else 'false'}")
-    print(f"Audio processing: not run in scaffold phase")
+    print("Audio processing: input ingest and working WAV conversion only")
     if options.validation_warnings:
         print("\nValidation warnings")
         for warning in options.validation_warnings:
             print(f"- {warning}")
     print("------------------------------------------------\n")
-

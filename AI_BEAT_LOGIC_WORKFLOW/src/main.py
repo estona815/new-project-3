@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 
 from config import load_defaults
+from ingest_convert import ConversionError, ingest_and_convert, write_conversion_error
 from logging_utils import print_configuration_summary
 from paths import ensure_folder_structure
 from user_options import options_from_args, options_from_questionnaire
@@ -40,10 +41,24 @@ def main() -> int:
         options = options_from_args(args, defaults)
 
     print_configuration_summary(options)
-    print("Planned settings loaded. No audio processing was performed.")
+    if not options.input_path:
+        print("Planned settings loaded. No input was provided, so conversion was not attempted.")
+        return 0
+
+    try:
+        metadata = ingest_and_convert(options.input_path, options.export_format)
+    except (ConversionError, FileNotFoundError, ValueError) as error:
+        write_conversion_error(str(error))
+        print(f"Conversion failed: {error}")
+        print("No converted working WAV is being claimed.")
+        return 2
+
+    print("Input ingestion and working WAV conversion complete.")
+    print(f"Copied input: {metadata.copied_path}")
+    print(f"Working WAV: {metadata.working_wav_path}")
+    print(f"Conversion tool: {metadata.conversion_tool_used}")
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

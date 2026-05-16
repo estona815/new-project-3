@@ -40,7 +40,7 @@ class ScaffoldTests(unittest.TestCase):
     def test_missing_dummy_input_is_a_warning_not_a_crash_condition(self) -> None:
         exists, warnings = validate_input_path("dummy.wav")
         self.assertFalse(exists)
-        self.assertIn("Input path does not exist yet", " ".join(warnings))
+        self.assertIn("Input path does not exist", " ".join(warnings))
 
     def test_help_command_works(self) -> None:
         result = subprocess.run(
@@ -52,17 +52,22 @@ class ScaffoldTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0)
         self.assertIn("--interactive", result.stdout)
 
-    def test_dummy_input_command_does_not_process_audio_or_crash(self) -> None:
+    def test_dummy_input_command_gives_clean_error(self) -> None:
+        error_path = PROJECT_ROOT / "01_ANALYSIS" / "conversion_error.md"
+        if error_path.exists():
+            error_path.unlink()
         result = subprocess.run(
             ["python3", str(PROJECT_ROOT / "src" / "main.py"), "--input", "dummy.wav"],
             check=False,
             capture_output=True,
             text=True,
         )
-        self.assertEqual(result.returncode, 0)
-        self.assertIn("No audio processing was performed", result.stdout)
+        self.assertEqual(result.returncode, 2)
+        self.assertIn("Conversion failed", result.stdout)
+        self.assertIn("No converted working WAV is being claimed", result.stdout)
+        self.assertTrue(error_path.exists())
+        error_path.unlink()
 
 
 if __name__ == "__main__":
     unittest.main()
-

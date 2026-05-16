@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 
-SUPPORTED_INPUT_EXTENSIONS = {".mp3", ".wav"}
+SUPPORTED_INPUT_EXTENSIONS = {".mp3", ".wav", ".aiff", ".aif", ".flac", ".m4a"}
 
 
 @dataclass(frozen=True)
@@ -53,9 +53,9 @@ def validate_input_path(input_path: str | None) -> tuple[bool, tuple[str, ...]]:
     path = Path(input_path).expanduser()
     warnings: list[str] = []
     if path.suffix.lower() not in SUPPORTED_INPUT_EXTENSIONS:
-        warnings.append("Input path should point to an MP3 or WAV file.")
+        warnings.append("Input path should point to an MP3, WAV, AIFF, FLAC, or M4A file.")
     if not path.exists():
-        warnings.append("Input path does not exist yet; scaffold mode will not process audio.")
+        warnings.append("Input path does not exist; conversion will fail until a real file is provided.")
 
     return path.exists(), tuple(warnings)
 
@@ -97,4 +97,3 @@ def options_from_questionnaire(defaults: dict[str, Any]) -> UserOptions:
         input_exists=input_exists,
         validation_warnings=warnings,
     )
-

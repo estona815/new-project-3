@@ -6,12 +6,16 @@ This project is designed to turn a Suno-generated MP3/WAV sketch into a cleaner,
 
 ## Current Scope
 
-This first branch contains the repository scaffold, branch strategy, and initial CLI skeleton. It does not claim to finish audio processing yet. The CLI can:
+The current branch contains the scaffold plus input ingestion and working WAV conversion. It does not claim final mix, master, Logic automation, or QC completion yet. The CLI can:
 
 - create the required folder structure
 - collect or default the production choices
 - load `config/defaults.json`
-- validate the input path enough to warn about missing or unsupported files
+- copy supported source audio into `00_INPUT_SUNO/`
+- sanitize filenames without overwriting existing files
+- convert a source file into `04_PROCESSED_AUDIO/working_input.wav`
+- write `01_ANALYSIS/input_metadata.json`
+- write `01_ANALYSIS/conversion_error.md` on conversion failure
 - print a clear configuration summary
 - clearly mark final WAV export as pending until a real output exists and is verified
 
@@ -63,6 +67,8 @@ python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
   --export-format "wav24_48k" \
   --save-logic-project true
 ```
+
+Supported input extensions are `.mp3`, `.wav`, `.aiff`, `.aif`, `.flac`, and `.m4a`. Conversion prefers `ffmpeg`; if `ffmpeg` is unavailable on macOS, it tries `afconvert`.
 
 Run the questionnaire:
 
