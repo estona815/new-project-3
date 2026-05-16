@@ -35,7 +35,7 @@ Test commands:
 
 ```bash
 python3 -m unittest discover -s AI_BEAT_LOGIC_WORKFLOW/tests -v
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py init
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --help
 ```
 
 Merge order:
@@ -60,7 +60,7 @@ Test commands:
 
 ```bash
 python3 -m unittest discover -s AI_BEAT_LOGIC_WORKFLOW/tests -v
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py init
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --input dummy.wav
 ```
 
 Merge order:
@@ -91,8 +91,9 @@ Test commands:
 
 ```bash
 python3 -m unittest discover -s AI_BEAT_LOGIC_WORKFLOW/tests -v
-python3 AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py init
-python3 -m py_compile AI_BEAT_LOGIC_WORKFLOW/scripts/ai_beat_logic_workflow.py AI_BEAT_LOGIC_WORKFLOW/src/workflow.py
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --help
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --input dummy.wav
+python3 -m py_compile AI_BEAT_LOGIC_WORKFLOW/src/main.py AI_BEAT_LOGIC_WORKFLOW/src/config.py AI_BEAT_LOGIC_WORKFLOW/src/paths.py AI_BEAT_LOGIC_WORKFLOW/src/logging_utils.py AI_BEAT_LOGIC_WORKFLOW/src/user_options.py
 ```
 
 Merge order:
@@ -391,4 +392,3 @@ dev -> main
 - Do not delete original user audio.
 - For generated artifacts, remove only files known to be produced by tests or the current workflow run.
 - If an external dependency is missing, keep the code path and mark the feature blocked or partially verified rather than inventing a successful result.
-

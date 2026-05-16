@@ -1,0 +1,9 @@
+{
+  "length_mode": "under_2min",
+  "vocal_mode": "suppress",
+  "melody_focus": "front",
+  "drum_808": "strong_controlled",
+  "export_format": "wav24_48k",
+  "save_logic_project": true
+}
+
