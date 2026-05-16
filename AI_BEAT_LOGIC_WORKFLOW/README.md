@@ -2,60 +2,51 @@
 
 Local Suno-to-Logic beat post-production workflow for digicore, hyperpop, and underground hip-hop instrumentals.
 
-This project is designed to turn a Suno-generated MP3/WAV sketch into a cleaner, more intentional, human-produced instrumental beat. The core priority is to preserve the main melody and emotional atmosphere while reducing fake vocal textures, random AI artifacts, weak section logic, generic loop feel, harsh low-end distortion, and over-mastered exports.
+## Project Goal
 
-## Current Scope
+Turn a Suno-generated MP3/WAV sketch into a cleaner, more intentional, melody-forward instrumental beat. The workflow preserves the main melody and emotional atmosphere while reducing obvious AI artifacts, fake vocal textures, weak section logic, generic loop feel, harsh low-end distortion, and over-mastered output.
 
-The current branch contains the scaffold plus input ingestion and working WAV conversion. It does not claim final mix, master, Logic automation, or QC completion yet. The CLI can:
+## What It Can Do
 
-- create the required folder structure
-- collect or default the production choices
-- load `config/defaults.json`
-- copy supported source audio into `00_INPUT_SUNO/`
-- sanitize filenames without overwriting existing files
-- convert a source file into `04_PROCESSED_AUDIO/working_input.wav`
-- write `01_ANALYSIS/input_metadata.json`
-- analyze `04_PROCESSED_AUDIO/working_input.wav`
-- write `01_ANALYSIS/analysis.json` and `01_ANALYSIS/analysis_summary.md`
-- write `01_ANALYSIS/conversion_error.md` on conversion failure
-- print a clear configuration summary
-- clearly mark final WAV export as pending until a real output exists and is verified
+- Create the required project folder structure.
+- Collect production choices through CLI flags or interactive prompts.
+- Copy and sanitize input audio without overwriting originals.
+- Convert supported audio to `04_PROCESSED_AUDIO/working_input.wav`.
+- Analyze metadata, levels, clipping, silence, low-end risk, vocal-like texture candidates, melody-buried candidates, and section candidates.
+- Generate a producer-readable edit plan for Logic Pro/manual editing.
+- Attempt optional Logic Pro automation and write a status report without fake success claims.
+- Run conservative stereo-only fallback processing: trim, fade, gain-stage, basic EQ/compression when tools support it, and verification.
+- Export a final WAV and write a QC report only after the file exists and verification passes.
 
-## Required Folder Structure
+## What It Cannot Do
 
-```text
-AI_BEAT_LOGIC_WORKFLOW/
-  00_INPUT_SUNO/
-  01_ANALYSIS/
-  02_EDIT_PLAN/
-  03_LOGIC_PROJECT/
-  04_PROCESSED_AUDIO/
-  05_FINAL_WAV/
-  06_QC_REPORT/
-  tools/
-  scripts/
-  src/
-  tests/
-```
+- It cannot truly remix stems from a single stereo file unless stem separation is added.
+- It cannot guarantee real vocal removal; vocal-like detection is heuristic unless a real model is added.
+- It cannot fully automate Logic Pro mixing, plugin insertion, region edits, or automation curves.
+- It cannot replace human listening and arrangement judgment.
+- It must not claim production completion unless final WAV verification and QC report creation pass.
 
-## Default Production Choices
+## Requirements
 
-If the user does not answer a prompt, the workflow defaults to:
+- macOS is recommended.
+- Python 3.9+.
+- `afconvert`/`afinfo` on macOS, or `ffmpeg`/`ffprobe`.
+- Logic Pro is optional.
+- C compiler for helper tools: `cc` or compatible.
 
-- final length: under 2 minutes
-- vocal handling: suppress vocal chops / no vocal texture
-- main melody: forward
-- drums and 808: strong but not covering melody
-- final export: WAV 24-bit 48 kHz
-- Logic project: save Logic project and final WAV if possible
-
-## Quick Start
-
-Show help:
+Install ffmpeg if you want broader input support, MP3 preview export, and richer filter processing:
 
 ```bash
-python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --help
+brew install ffmpeg
 ```
+
+If `ffmpeg` is missing, the workflow tries macOS `afconvert`. If both are missing, conversion/export fails cleanly and writes an error/status file where relevant.
+
+## macOS / Logic Pro Note
+
+Logic Pro automation is optional and limited. The workflow checks `/Applications/Logic Pro.app` and `osascript`, then writes `03_LOGIC_PROJECT/logic_automation_status.md`. It never reports Logic success unless the expected `.logicx` project/package exists. See `docs/LOGIC_AUTOMATION_LIMITS.md`.
+
+## Example Commands
 
 Run with explicit options:
 
@@ -70,40 +61,53 @@ python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
   --save-logic-project true
 ```
 
-Supported input extensions are `.mp3`, `.wav`, `.aiff`, `.aif`, `.flac`, and `.m4a`. Conversion prefers `ffmpeg`; if `ffmpeg` is unavailable on macOS, it tries `afconvert`.
-
-## C WAV Helper Tools
-
-Build and test helper tools for fast WAV analysis, gain staging, trim/fade, and integrity checks:
-
-```bash
-make -C AI_BEAT_LOGIC_WORKFLOW/tools test
-```
-
-Details are in `tools/README_C_TOOLS.md`.
-
-## Python Analysis Engine
-
-After working WAV conversion, the CLI runs a heuristic analysis pass for metadata, level, silence, over-compression, low-end excess, vocal-like texture candidates, melody-buried candidates, and arrangement candidates. The report uses heuristic language for uncertain detections and writes producer-readable notes to `01_ANALYSIS/analysis_summary.md`.
-
-Run the questionnaire:
+Interactive mode:
 
 ```bash
 python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --interactive
 ```
 
-The shell wrapper passes arguments to the same CLI:
+Logic-only status attempt:
 
 ```bash
-AI_BEAT_LOGIC_WORKFLOW/scripts/run_workflow.sh --input dummy.wav
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --logic-only
 ```
 
-Run tests:
+Generate and run the dummy integration fixture:
+
+```bash
+python3 AI_BEAT_LOGIC_WORKFLOW/tests/generate_dummy_audio.py
+python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py --input AI_BEAT_LOGIC_WORKFLOW/tests/fixtures/dummy_suno_like.wav
+```
+
+## Output Folders
+
+- `00_INPUT_SUNO/`: sanitized copy of the original source audio.
+- `01_ANALYSIS/`: input metadata, analysis JSON, and producer-readable analysis summary.
+- `02_EDIT_PLAN/`: manual Logic/edit plan.
+- `03_LOGIC_PROJECT/`: Logic automation status and optional `.logicx` project.
+- `04_PROCESSED_AUDIO/`: working WAV, fallback processed WAV, and processing log.
+- `05_FINAL_WAV/`: final WAV and optional MP3 preview.
+- `06_QC_REPORT/`: final verification JSON and QC report.
+
+## QC Report
+
+`06_QC_REPORT/qc_report.md` records exactly what happened. If fallback processing was used, it says so. It includes input file details, final export metadata, melody preservation notes, vocal-like texture notes, drum/808 balance warnings, clipping/loudness checks, AI-feel reduction notes, remaining problems, and next improvement options.
+
+## Tests
+
+Run Python tests:
 
 ```bash
 python3 -m unittest discover -s AI_BEAT_LOGIC_WORKFLOW/tests -v
 ```
 
+Run C helper smoke tests:
+
+```bash
+make -C AI_BEAT_LOGIC_WORKFLOW/tools test
+```
+
 ## Completion Rule
 
-Do not mark a production run as complete unless the final WAV file exists and its duration, format, and peak have been verified.
+The CLI prints `COMPLETE` only if the final WAV exists, verification passed, and `qc_report.md` exists.
