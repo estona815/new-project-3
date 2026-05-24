@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import json
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parent
+SRC = ROOT / "AI_BEAT_LOGIC_WORKFLOW" / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+from reference_comparison import write_reference_comparison  # noqa: E402
+from reaper_harness_v05 import run_harness_v05  # noqa: E402
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="Suno Codex REAPER Harness v0.5")
+    sub = parser.add_subparsers(dest="command", required=True)
+
+    compare = sub.add_parser("compare-reference", help="Analyze current/problem and technical reference files.")
+    compare.add_argument("--project-dir", required=True)
+    compare.add_argument("--current", required=True)
+    compare.add_argument("--reference", required=True)
+
+    build = sub.add_parser("build-reaper-harness", help="Generate v0.5 reports and REAPER scripts.")
+    build.add_argument("--project-dir", required=True)
+    build.add_argument("--current", required=True)
+    build.add_argument("--reference", required=True)
+    return parser
+
+
+def main() -> int:
+    args = build_parser().parse_args()
+    if args.command == "compare-reference":
+        result = write_reference_comparison(args.project_dir, args.current, args.reference)
+    elif args.command == "build-reaper-harness":
+        result = run_harness_v05(args.project_dir, current_reference=args.current, technical_reference=args.reference)
+    else:  # pragma: no cover
+        raise AssertionError(args.command)
+    print(json.dumps(result, indent=2, ensure_ascii=False, default=str))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

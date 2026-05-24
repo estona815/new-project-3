@@ -1,0 +1,465 @@
+{
+  "schema_version": "reaper_plugin_inventory.v0.5",
+  "plugin_map": "/Users/hantaeheuk/Documents/New project 3/config/plugin_map.yaml",
+  "scan_sources": [
+    "/Library/Audio/Plug-Ins/Components/ASAF Channels Renderer.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Channels.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Export.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Object Renderer.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Object to Scene.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Object.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Panner.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Scene Renderer.component",
+    "/Library/Audio/Plug-Ins/Components/ASAF Scene.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX ARTICULATOR.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX ASPIRE.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX CHOIR.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX DUO.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX MUTATOR.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX PUNCH.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX THROAT.component",
+    "/Library/Audio/Plug-Ins/Components/AVOX WARM.component",
+    "/Library/Audio/Plug-Ins/Components/AppleAES3Audio.component",
+    "/Library/Audio/Plug-Ins/Components/Auburn Sounds Graillon 3.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Key.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune EFX+.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune Pro.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune Slice.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune SoundSoap.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune Vocal Compressor.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune Vocal EQ.component",
+    "/Library/Audio/Plug-Ins/Components/Auto-Tune Vocodist.component",
+    "/Library/Audio/Plug-Ins/Components/AutoTune.component",
+    "/Library/Audio/Plug-Ins/Components/BYOD.component",
+    "/Library/Audio/Plug-Ins/Components/Decapitator.component",
+    "/Library/Audio/Plug-Ins/Components/FreeClip.component",
+    "/Library/Audio/Plug-Ins/Components/Fresh Air.component",
+    "/Library/Audio/Plug-Ins/Components/Harmony Engine 4x.component",
+    "/Library/Audio/Plug-Ins/Components/IVGI2.component",
+    "/Library/Audio/Plug-Ins/Components/Krush.component",
+    "/Library/Audio/Plug-Ins/Components/MAutoPitch.component",
+    "/Library/Audio/Plug-Ins/Components/Metamorph.component",
+    "/Library/Audio/Plug-Ins/Components/Mic Mod.component",
+    "/Library/Audio/Plug-Ins/Components/Raum.component",
+    "/Library/Audio/Plug-Ins/Components/TDR Kotelnikov.component",
+    "/Library/Audio/Plug-Ins/Components/TDR Nova.component",
+    "/Library/Audio/Plug-Ins/Components/ValhallaSupermassive.component",
+    "/Library/Audio/Plug-Ins/Components/ValhallaVintageVerbAU64.component",
+    "/Library/Audio/Plug-Ins/Components/Vocal De-Esser.component",
+    "/Library/Audio/Plug-Ins/Components/Vocal Reverb.component",
+    "/Library/Audio/Plug-Ins/Components/Wider.component",
+    "/Library/Audio/Plug-Ins/Components/iZOzone12EqualizerAUHook.component",
+    "/Library/Audio/Plug-Ins/Components/iZOzoneImager2AUHook.component",
+    "/Library/Audio/Plug-Ins/Components/iZVocalDoublerAUHook.component",
+    "/Library/Audio/Plug-Ins/Components/mvMeter2.component",
+    "/Library/Audio/Plug-Ins/Components/uaudio_teletronix_la-2a_tc.component",
+    "/Library/Audio/Plug-Ins/Components/uaudio_ua_1176.component",
+    "/Library/Audio/Plug-Ins/VST/Auburn Sounds Graillon 3.vst",
+    "/Library/Audio/Plug-Ins/VST/BYOD.vst",
+    "/Library/Audio/Plug-Ins/VST/FreeClip.vst",
+    "/Library/Audio/Plug-Ins/VST/IVGI2.vst",
+    "/Library/Audio/Plug-Ins/VST/Krush.vst",
+    "/Library/Audio/Plug-Ins/VST/MeldaProduction",
+    "/Library/Audio/Plug-Ins/VST/Ozone Imager 2.vst",
+    "/Library/Audio/Plug-Ins/VST/Raum.vst",
+    "/Library/Audio/Plug-Ins/VST/Slate Digital",
+    "/Library/Audio/Plug-Ins/VST/Soundtoys",
+    "/Library/Audio/Plug-Ins/VST/TDR Kotelnikov.vst",
+    "/Library/Audio/Plug-Ins/VST/TDR Nova.vst",
+    "/Library/Audio/Plug-Ins/VST/ValhallaSupermassive.vst",
+    "/Library/Audio/Plug-Ins/VST/ValhallaVintageVerb_x64.vst",
+    "/Library/Audio/Plug-Ins/VST/Vocal Doubler.vst",
+    "/Library/Audio/Plug-Ins/VST/Wider.vst",
+    "/Library/Audio/Plug-Ins/VST/mvMeter2.vst",
+    "/Library/Audio/Plug-Ins/VST3/AVOX ARTICULATOR.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX ASPIRE.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX CHOIR.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX DUO.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX MUTATOR.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX PUNCH.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX THROAT.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AVOX WARM.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auburn Sounds Graillon 3.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Key.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune EFX+.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune Pro.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune Slice.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune SoundSoap.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune Vocal Compressor.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune Vocal EQ.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Auto-Tune Vocodist.vst3",
+    "/Library/Audio/Plug-Ins/VST3/AutoTune.vst3",
+    "/Library/Audio/Plug-Ins/VST3/BYOD.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Harmony Engine 4x.vst3",
+    "/Library/Audio/Plug-Ins/VST3/IVGI2.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Krush.vst3",
+    "/Library/Audio/Plug-Ins/VST3/MeldaProduction",
+    "/Library/Audio/Plug-Ins/VST3/Metamorph.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Mic Mod.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Ozone 12 Equalizer.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Ozone Imager 2.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Raum.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Slate Digital",
+    "/Library/Audio/Plug-Ins/VST3/Soundtoys",
+    "/Library/Audio/Plug-Ins/VST3/TDR Kotelnikov.vst3",
+    "/Library/Audio/Plug-Ins/VST3/TDR Nova.vst3",
+    "/Library/Audio/Plug-Ins/VST3/ValhallaSupermassive.vst3",
+    "/Library/Audio/Plug-Ins/VST3/ValhallaVintageVerb.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Vocal De-Esser.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Vocal Doubler.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Vocal Reverb.vst3",
+    "/Library/Audio/Plug-Ins/VST3/Wider.vst3",
+    "/Library/Audio/Plug-Ins/VST3/mvMeter2.vst3",
+    "/Library/Audio/Plug-Ins/VST3/uaudio_teletronix_la-2a_tc.vst3",
+    "/Library/Audio/Plug-Ins/VST3/uaudio_ua_1176.vst3"
+  ],
+  "available_plugin_name_count": 60,
+  "available_plugin_names": [
+    "ASAF Channels",
+    "ASAF Channels Renderer",
+    "ASAF Export",
+    "ASAF Object",
+    "ASAF Object Renderer",
+    "ASAF Object to Scene",
+    "ASAF Panner",
+    "ASAF Scene",
+    "ASAF Scene Renderer",
+    "AVOX ARTICULATOR",
+    "AVOX ASPIRE",
+    "AVOX CHOIR",
+    "AVOX DUO",
+    "AVOX MUTATOR",
+    "AVOX PUNCH",
+    "AVOX THROAT",
+    "AVOX WARM",
+    "AppleAES3Audio",
+    "Auburn Sounds Graillon 3",
+    "Auto-Key",
+    "Auto-Tune EFX+",
+    "Auto-Tune Pro",
+    "Auto-Tune Slice",
+    "Auto-Tune SoundSoap",
+    "Auto-Tune Vocal Compressor",
+    "Auto-Tune Vocal EQ",
+    "Auto-Tune Vocodist",
+    "AutoTune",
+    "BYOD",
+    "Decapitator",
+    "FreeClip",
+    "Fresh Air",
+    "Harmony Engine 4x",
+    "IVGI2",
+    "Krush",
+    "MAutoPitch",
+    "MeldaProduction",
+    "Metamorph",
+    "Mic Mod",
+    "Ozone 12 Equalizer",
+    "Ozone Imager 2",
+    "Raum",
+    "Slate Digital",
+    "Soundtoys",
+    "TDR Kotelnikov",
+    "TDR Nova",
+    "ValhallaSupermassive",
+    "ValhallaVintageVerb",
+    "ValhallaVintageVerbAU64",
+    "ValhallaVintageVerb_x64",
+    "Vocal De-Esser",
+    "Vocal Doubler",
+    "Vocal Reverb",
+    "Wider",
+    "iZOzone12EqualizerAUHook",
+    "iZOzoneImager2AUHook",
+    "iZVocalDoublerAUHook",
+    "mvMeter2",
+    "uaudio_teletronix_la-2a_tc",
+    "uaudio_ua_1176"
+  ],
+  "roles": {
+    "pitch_correction": {
+      "role": "pitch_correction",
+      "preferred": [
+        "Auto-Tune Pro",
+        "Auto-Tune",
+        "Melodyne",
+        "Waves Tune Real-Time",
+        "MetaTune",
+        "Graillon"
+      ],
+      "fallback": "ReaTune",
+      "detected": [
+        {
+          "requested": "Auto-Tune Pro",
+          "detected_name": "Auto-Tune Pro"
+        },
+        {
+          "requested": "Auto-Tune",
+          "detected_name": "Auto-Tune EFX+"
+        },
+        {
+          "requested": "Graillon",
+          "detected_name": "Auburn Sounds Graillon 3"
+        }
+      ],
+      "selected_plugin": "Auto-Tune Pro",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "surgical_eq": {
+      "role": "surgical_eq",
+      "preferred": [
+        "FabFilter Pro-Q 3",
+        "Kirchhoff-EQ",
+        "DMG Equilibrium",
+        "TDR Nova"
+      ],
+      "fallback": "ReaEQ",
+      "detected": [
+        {
+          "requested": "TDR Nova",
+          "detected_name": "TDR Nova"
+        }
+      ],
+      "selected_plugin": "TDR Nova",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "dynamic_eq": {
+      "role": "dynamic_eq",
+      "preferred": [
+        "FabFilter Pro-Q 3",
+        "TDR Nova",
+        "Ozone Dynamic EQ",
+        "Waves F6"
+      ],
+      "fallback": "ReaXcomp",
+      "detected": [
+        {
+          "requested": "TDR Nova",
+          "detected_name": "TDR Nova"
+        }
+      ],
+      "selected_plugin": "TDR Nova",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "deesser": {
+      "role": "deesser",
+      "preferred": [
+        "FabFilter Pro-DS",
+        "Soothe2",
+        "Waves Sibilance",
+        "TDR Nova"
+      ],
+      "fallback": "ReaXcomp",
+      "detected": [
+        {
+          "requested": "TDR Nova",
+          "detected_name": "TDR Nova"
+        }
+      ],
+      "selected_plugin": "TDR Nova",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "compressor_clean": {
+      "role": "compressor_clean",
+      "preferred": [
+        "FabFilter Pro-C 2",
+        "RComp",
+        "SSL Channel",
+        "Pro-C 2"
+      ],
+      "fallback": "ReaComp",
+      "detected": [],
+      "selected_plugin": "ReaComp",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "compressor_character": {
+      "role": "compressor_character",
+      "preferred": [
+        "CLA-76",
+        "LA-2A",
+        "1176",
+        "RComp",
+        "SSL Channel"
+      ],
+      "fallback": "ReaComp",
+      "detected": [
+        {
+          "requested": "LA-2A",
+          "detected_name": "uaudio_teletronix_la-2a_tc"
+        },
+        {
+          "requested": "1176",
+          "detected_name": "uaudio_ua_1176"
+        }
+      ],
+      "selected_plugin": "uaudio_teletronix_la-2a_tc",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "saturation": {
+      "role": "saturation",
+      "preferred": [
+        "FabFilter Saturn",
+        "Saturn",
+        "Decapitator",
+        "Fresh Air",
+        "Tape"
+      ],
+      "fallback": "JS: Saturation",
+      "detected": [
+        {
+          "requested": "Decapitator",
+          "detected_name": "Decapitator"
+        },
+        {
+          "requested": "Fresh Air",
+          "detected_name": "Fresh Air"
+        }
+      ],
+      "selected_plugin": "Decapitator",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "multiband_compressor": {
+      "role": "multiband_compressor",
+      "preferred": [
+        "FabFilter Pro-MB",
+        "Ozone Dynamics",
+        "C4",
+        "C6"
+      ],
+      "fallback": "ReaXcomp",
+      "detected": [],
+      "selected_plugin": "ReaXcomp",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "stereo_imager": {
+      "role": "stereo_imager",
+      "preferred": [
+        "Ozone Imager",
+        "MSED",
+        "bx_stereomaker",
+        "bx_digital"
+      ],
+      "fallback": "JS: Stereo Width",
+      "detected": [
+        {
+          "requested": "Ozone Imager",
+          "detected_name": "Ozone Imager 2"
+        }
+      ],
+      "selected_plugin": "Ozone Imager 2",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "mid_side_eq": {
+      "role": "mid_side_eq",
+      "preferred": [
+        "FabFilter Pro-Q 3",
+        "bx_digital",
+        "Kirchhoff-EQ",
+        "TDR Nova"
+      ],
+      "fallback": "ReaEQ",
+      "detected": [
+        {
+          "requested": "TDR Nova",
+          "detected_name": "TDR Nova"
+        }
+      ],
+      "selected_plugin": "TDR Nova",
+      "uses_fallback": false,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "reverb_plate": {
+      "role": "reverb_plate",
+      "preferred": [
+        "ValhallaPlate",
+        "Valhalla Plate",
+        "FabFilter Pro-R",
+        "RVerb"
+      ],
+      "fallback": "ReaVerbate",
+      "detected": [],
+      "selected_plugin": "ReaVerbate",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "reverb_room": {
+      "role": "reverb_room",
+      "preferred": [
+        "ValhallaRoom",
+        "Valhalla Room",
+        "FabFilter Pro-R",
+        "RVerb"
+      ],
+      "fallback": "ReaVerbate",
+      "detected": [],
+      "selected_plugin": "ReaVerbate",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "delay": {
+      "role": "delay",
+      "preferred": [
+        "EchoBoy",
+        "H-Delay",
+        "Timeless",
+        "FabFilter Timeless"
+      ],
+      "fallback": "ReaDelay",
+      "detected": [],
+      "selected_plugin": "ReaDelay",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "limiter": {
+      "role": "limiter",
+      "preferred": [
+        "FabFilter Pro-L 2",
+        "Ozone Maximizer",
+        "L2",
+        "Elephant"
+      ],
+      "fallback": "ReaLimit",
+      "detected": [],
+      "selected_plugin": "ReaLimit",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "loudness_meter": {
+      "role": "loudness_meter",
+      "preferred": [
+        "Youlean Loudness Meter",
+        "Insight",
+        "dpMeter"
+      ],
+      "fallback": "ffmpeg ebur128 / JS: Loudness Meter Peak/RMS/LUFS",
+      "detected": [],
+      "selected_plugin": "ffmpeg ebur128 / JS: Loudness Meter Peak/RMS/LUFS",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    },
+    "noise_reduction": {
+      "role": "noise_reduction",
+      "preferred": [
+        "RX Voice De-noise",
+        "Clarity Vx",
+        "NS1",
+        "ReaFIR"
+      ],
+      "fallback": "ReaFIR",
+      "detected": [],
+      "selected_plugin": "ReaFIR",
+      "uses_fallback": true,
+      "insertion_policy": "REAPER Lua attempts insertion by name; if unavailable it records missing_fx metadata and manual notes."
+    }
+  },
+  "claim_rule": "Detected plugins are availability hints. Do not claim plugin processing was applied until REAPER insertion and render are verified."
+}

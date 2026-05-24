@@ -1,0 +1,19 @@
+{
+  "style_prompt": "180 BPM fast melodic digicore hyperpop commercial short-form track. Clean vocal-forward modern pop mix, immediate musical hook within 2 seconds, no long intro. Controlled genre blend: digicore, hyperpop, emo rap, trap, future bass, jersey club bounce, electropop, and pop-punk energy. Instrumental sample-flip feel from resampled synth riffs, sliced plucks, tight drum edits, reversed synth tails, clean digital fills, sparkling arps, and tight 808 bounce. Main vocal must sound like a real studio singer: centered, upfront, low-mid to mid register, clean, bright, emotionally autotuned but natural, intelligible, stable, and catchy. Female vocal layers only as controlled backing doubles, harmony tails, and soft adlibs, low volume and wide stereo, never random, never lead, never main hook. Smooth transitions, no hard vocal cuts, no random vocal chops. Refined plate reverb, tempo-synced delay throws, polished human arrangement, punchy drums, clean low-end, loud but not crushed, aggressive but not noisy, commercial release quality.",
+  "exclude_prompt": "random ahh, random ooh, random yeah, moaning vocal, weird vocal chop, vocal chop intro, chopped vocal hook, pitched-up chipmunk vocal, anime voice, baby voice, harsh female lead takeover, loud female hook, random female adlib, hard vocal splice, abrupt vocal cut, sudden AI cutoff, noisy glitch burst, harsh white noise, metallic digital noise, excessive bitcrush, unmusical stutter, phasey stereo, anti-phase widening, muddy bass, buried main vocal, muffled vocal, washed-out vocal, excessive reverb, messy delay, over-compression, clipping, long ambient intro, slow buildup, weak hook, random chord drift, generic AI demo, amateur demo",
+  "recommended_settings": {
+    "custom_mode": true,
+    "instrumental": false,
+    "vocal_gender": "male_main_generation",
+    "weirdness_percent": "6-12",
+    "style_influence_percent": "84-88",
+    "audio_influence_percent": "0-15 unless clean instrumental reference only",
+    "reject_if": [
+      "random vocal chops",
+      "weird adlibs",
+      "female lead takeover",
+      "buried main vocal",
+      "hard vocal cuts"
+    ]
+  }
+}
