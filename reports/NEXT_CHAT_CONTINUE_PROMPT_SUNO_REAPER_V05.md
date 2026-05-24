@@ -22,14 +22,18 @@ Paste this into a new Codex chat to continue from the current project state.
   /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav
 - v23 processed stems ZIP:
   /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_processed_stems.zip
-- 현재 분류 보관본:
-  /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/_classified_current_v23_for_new_work
 - raw Suno stems:
   /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems
+- original user stem ZIP:
+  /Users/hantaeheuk/Documents/New project 3/exports/얇은_Shadow_Suno_multitrack_stems.zip
+- MIDI package ZIP:
+  /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/suno_studio_best_midi_stems_package.zip
 - guide MIDI:
   /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides
 - external female vocal source:
   /Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems/0 Lead Vocals.wav
+- cleanup report:
+  /Users/hantaeheuk/Documents/New project 3/reports/cleanup_report_2026-05-24.md
 
 v0.5 harness handoff:
 - /Users/hantaeheuk/Documents/New project 3/reports/SUNO_REAPER_HARNESS_V05_HANDOFF.md
@@ -80,4 +84,3 @@ Plugin inventory:
 
 최종 답변은 한국어로 간결하게, 무엇을 바꿨고 어떤 검증을 했는지 중심으로 정리해줘.
 ```
-

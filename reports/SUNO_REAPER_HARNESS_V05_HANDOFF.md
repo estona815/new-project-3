@@ -13,7 +13,14 @@ The latest completed audio snapshot before the new REAPER workflow is v23:
 - MP3: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k.mp3`
 - WAV: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav`
 - Processed stems ZIP: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_processed_stems.zip`
-- Current classified package: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/_classified_current_v23_for_new_work`
+
+The temporary classified copy package was removed during cleanup because it duplicated preserved originals and ZIP archives. Use these live source locations instead:
+
+- Raw Suno stems: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems`
+- External female source: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems`
+- User stem ZIP: `/Users/hantaeheuk/Documents/New project 3/exports/얇은_Shadow_Suno_multitrack_stems.zip`
+- MIDI package ZIP: `/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/suno_studio_best_midi_stems_package.zip`
+- Cleanup report: `/Users/hantaeheuk/Documents/New project 3/reports/cleanup_report_2026-05-24.md`
 
 Important rule: MP3/master/fullmix files are reference/problem-reference only. Production rebuild must use Suno Studio WAV stems and guide MIDI.
 
@@ -239,4 +246,3 @@ Full `unittest discover` was attempted:
 9. Use send-based plate/delay, filtered and ducked.
 10. Render premaster first, then conservative master.
 11. Update `reports/render_report.md` after actual REAPER render verification.
-
