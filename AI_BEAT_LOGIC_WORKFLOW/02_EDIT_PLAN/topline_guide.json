@@ -1,0 +1,67 @@
+{
+  "schema_version": "topline_guide.v1",
+  "status": "COMPOSITION_GUIDE_READY",
+  "ideas": [
+    {
+      "idea_id": "topline_01",
+      "role": "lead_vocal_hook",
+      "placement": "hook early; keep vocal/melody forward",
+      "phrase_hints": [
+        {
+          "phrase_id": "vocal_phrase_001",
+          "start": 9.92,
+          "end": 10.88,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_002",
+          "start": 11.44,
+          "end": 12.08,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_003",
+          "start": 12.4,
+          "end": 13.44,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_004",
+          "start": 13.68,
+          "end": 14.64,
+          "placement_use": "support hook placement; not exact transcription"
+        }
+      ],
+      "tuning_direction": "natural_clear",
+      "lyric_policy": "write original lyrics only; do not copy reference lyrics",
+      "confidence": "medium",
+      "safety_notes": [
+        "Use vocal_to_code for placement and contour hints only.",
+        "No living artist vocal identity clone is allowed."
+      ]
+    },
+    {
+      "idea_id": "topline_02",
+      "role": "adlib_or_answer",
+      "placement": "after hook call or bar-end gaps",
+      "phrase_hints": [],
+      "tuning_direction": "wider adlibs if style calls for hyperpop; keep sub and lead center clean",
+      "lyric_policy": "new adlib text or non-lexical texture only",
+      "confidence": "medium",
+      "safety_notes": [
+        "Do not imitate a living artist voice or exact delivery."
+      ]
+    }
+  ],
+  "safety": {
+    "voice_clone": false,
+    "exact_reference_copy": false,
+    "notes": [
+      "Topline guide does not claim exact vocal transcription.",
+      "No voice cloning, lyric copying, or living artist impersonation is allowed."
+    ]
+  },
+  "limitations": [
+    "Guide-only topline planning; no AutoTune, recording, or Logic processing is claimed."
+  ]
+}

@@ -2,12 +2,12 @@
   "status": {
     "allowed": true,
     "reason": "",
-    "production_audio_count": 14,
-    "reference_only_count": 5,
-    "technical_mix_reference_count": 0,
-    "problem_reference_count": 3,
+    "production_audio_count": 12,
+    "reference_only_count": 7,
+    "technical_mix_reference_count": 1,
+    "problem_reference_count": 4,
     "guide_midi_count": 13,
-    "quarantine_count": 0
+    "quarantine_count": 2
   },
   "sources": [
     {
@@ -223,12 +223,12 @@
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/03_FX.wav",
       "name": "03_FX.wav",
       "extension": ".wav",
-      "category": "fx",
-      "reason": "transition/fx/noise source",
+      "category": "vocal_artifact_quarantine",
+      "reason": "audio QC quarantine override; original category was fx",
       "reference_only": false,
-      "production_eligible": true,
+      "production_eligible": false,
       "guide_only": false,
-      "quarantine": false
+      "quarantine": true
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/04_Synth.wav",
@@ -278,12 +278,12 @@
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/08_Guitar.wav",
       "name": "08_Guitar.wav",
       "extension": ".wav",
-      "category": "music_or_synth",
-      "reason": "music/synth/harmonic source",
+      "category": "vocal_artifact_quarantine",
+      "reason": "audio QC quarantine override; original category was music_or_synth",
       "reference_only": false,
-      "production_eligible": true,
+      "production_eligible": false,
       "guide_only": false,
-      "quarantine": false
+      "quarantine": true
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/09_Bass.wav",
@@ -380,6 +380,39 @@
       "category": "problem_reference",
       "reason": "current/problem master or mp3-like source is analysis-only",
       "reference_only": true,
+      "production_eligible": false,
+      "guide_only": false,
+      "quarantine": false
+    },
+    {
+      "path": "/Users/hantaeheuk/Downloads/hangang_shadow_mashup_v19_polished_balance_melody_vocal_MASTER_320k Stems.zip",
+      "name": "hangang_shadow_mashup_v19_polished_balance_melody_vocal_MASTER_320k Stems.zip",
+      "extension": ".zip",
+      "category": "problem_reference",
+      "reason": "current/problem master or mp3-like source is analysis-only",
+      "reference_only": true,
+      "production_eligible": false,
+      "guide_only": false,
+      "quarantine": false
+    },
+    {
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "name": "동반자살 WAV.wav",
+      "extension": ".wav",
+      "category": "technical_mix_reference",
+      "reason": "commercial mix reference for technical analysis only",
+      "reference_only": true,
+      "production_eligible": false,
+      "guide_only": false,
+      "quarantine": false
+    },
+    {
+      "path": "/Users/hantaeheuk/Downloads/한강 Shadow x 얇은 Shadow (Mashup).zip",
+      "name": "한강 Shadow x 얇은 Shadow (Mashup).zip",
+      "extension": ".zip",
+      "category": "uncertain",
+      "reason": "archive must be safely unpacked and classified by contained files",
+      "reference_only": false,
       "production_eligible": false,
       "guide_only": false,
       "quarantine": false

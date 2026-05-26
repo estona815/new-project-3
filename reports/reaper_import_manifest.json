@@ -1,7 +1,7 @@
 {
   "bpm": 180,
-  "media_count": 31,
-  "script": "/Users/hantaeheuk/Documents/New project 3/reaper/build_project.lua",
+  "media_count": 32,
+  "script": "/Users/hantaeheuk/Documents/New project 3/reaper/build_fresh_mix.lua",
   "buses": [
     "REF_BUS",
     "DRUM_BUS",
@@ -27,11 +27,11 @@
       "name": "Female BGV L - 0 Lead Vocals",
       "category": "female_bgv",
       "bus": "FEMALE_BGV_BUS",
-      "vol": 0.12589254117941673,
-      "vol_db": -18.0,
+      "vol": 0.08912509381337455,
+      "vol_db": -21.0,
       "pan": -0.4,
       "mute": false,
-      "notes": "female BGV L, low support"
+      "notes": "female BGV L, low support below male lead"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems/1 Instrumental.wav",
@@ -52,8 +52,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/02_Brass_brass.mid",
@@ -63,8 +63,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/03_FX_fx.mid",
@@ -74,8 +74,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/04_Synth_synth.mid",
@@ -85,8 +85,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/05_Strings_strings.mid",
@@ -96,8 +96,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/06_Percussion_percussion.mid",
@@ -107,8 +107,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/07_Keyboard_keyboard.mid",
@@ -118,8 +118,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/08_Guitar_guitar.mid",
@@ -129,8 +129,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/09_Bass_bass.mid",
@@ -140,8 +140,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/10_Drums_drums.mid",
@@ -151,8 +151,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/11_Backing_Vocals_female_vocal_candidate.mid",
@@ -162,8 +162,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/12_Vocals_lead_vocal.mid",
@@ -173,8 +173,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/combined_suno_audio_derived_guides.mid",
@@ -184,8 +184,8 @@
       "vol": 0.12589254117941673,
       "vol_db": -18.0,
       "pan": 0.0,
-      "mute": false,
-      "notes": "guide MIDI only, no final-truth claim"
+      "mute": true,
+      "notes": "guide MIDI placeholder muted, no final-truth claim"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/00_REF_Full_Mix.wav",
@@ -203,8 +203,8 @@
       "name": "01_Woodwinds",
       "category": "music_or_synth",
       "bus": "MUSIC_BUS",
-      "vol": 0.26607250597988097,
-      "vol_db": -11.5,
+      "vol": 0.22387211385683395,
+      "vol_db": -13.0,
       "pan": 0.0,
       "mute": false,
       "notes": "supportive controlled stereo music"
@@ -214,8 +214,8 @@
       "name": "02_Brass",
       "category": "music_or_synth",
       "bus": "MUSIC_BUS",
-      "vol": 0.26607250597988097,
-      "vol_db": -11.5,
+      "vol": 0.22387211385683395,
+      "vol_db": -13.0,
       "pan": 0.0,
       "mute": false,
       "notes": "supportive controlled stereo music"
@@ -229,15 +229,15 @@
       "vol_db": -24.0,
       "pan": 0.0,
       "mute": true,
-      "notes": "QC quarantine override from fx"
+      "notes": "artifact quarantine muted by default"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/04_Synth.wav",
       "name": "04_Synth",
       "category": "music_or_synth",
       "bus": "MUSIC_BUS",
-      "vol": 0.26607250597988097,
-      "vol_db": -11.5,
+      "vol": 0.22387211385683395,
+      "vol_db": -13.0,
       "pan": 0.0,
       "mute": false,
       "notes": "supportive controlled stereo music"
@@ -247,8 +247,8 @@
       "name": "05_Strings",
       "category": "music_or_synth",
       "bus": "MUSIC_BUS",
-      "vol": 0.26607250597988097,
-      "vol_db": -11.5,
+      "vol": 0.22387211385683395,
+      "vol_db": -13.0,
       "pan": 0.0,
       "mute": false,
       "notes": "supportive controlled stereo music"
@@ -258,19 +258,19 @@
       "name": "06_Percussion",
       "category": "drums",
       "bus": "DRUM_BUS",
-      "vol": 0.3981071705534972,
-      "vol_db": -8.0,
+      "vol": 0.31622776601683794,
+      "vol_db": -10.0,
       "pan": 0.0,
       "mute": false,
-      "notes": "punchy but conservative drums"
+      "notes": "fresh conservative drums with headroom"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/07_Keyboard.wav",
       "name": "07_Keyboard",
       "category": "music_or_synth",
       "bus": "MUSIC_BUS",
-      "vol": 0.26607250597988097,
-      "vol_db": -11.5,
+      "vol": 0.22387211385683395,
+      "vol_db": -13.0,
       "pan": 0.0,
       "mute": false,
       "notes": "supportive controlled stereo music"
@@ -284,66 +284,66 @@
       "vol_db": -24.0,
       "pan": 0.0,
       "mute": true,
-      "notes": "QC quarantine override from music_or_synth"
+      "notes": "artifact quarantine muted by default"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/09_Bass.wav",
       "name": "09_Bass",
       "category": "bass_or_808",
       "bus": "BASS_808_BUS",
-      "vol": 0.35481338923357547,
-      "vol_db": -9.0,
+      "vol": 0.29853826189179594,
+      "vol_db": -10.5,
       "pan": 0.0,
       "mute": false,
-      "notes": "mono center bass/808"
+      "notes": "mono center bass/808 with headroom"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/10_Drums.wav",
       "name": "10_Drums",
       "category": "drums",
       "bus": "DRUM_BUS",
-      "vol": 0.3981071705534972,
-      "vol_db": -8.0,
+      "vol": 0.31622776601683794,
+      "vol_db": -10.0,
       "pan": 0.0,
       "mute": false,
-      "notes": "punchy but conservative drums"
+      "notes": "fresh conservative drums with headroom"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/11_Backing_Vocals.wav",
       "name": "Female BGV R - 11_Backing_Vocals",
       "category": "female_bgv",
       "bus": "FEMALE_BGV_BUS",
-      "vol": 0.12589254117941673,
-      "vol_db": -18.0,
+      "vol": 0.08912509381337455,
+      "vol_db": -21.0,
       "pan": 0.4,
       "mute": false,
-      "notes": "female BGV R, low support"
+      "notes": "female BGV R, low support below male lead"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/12_Vocals.wav",
       "name": "12_Vocals",
       "category": "male_lead_vocal",
       "bus": "MALE_LEAD_VOX_BUS",
-      "vol": 0.5308844442309884,
-      "vol_db": -5.5,
+      "vol": 0.5011872336272722,
+      "vol_db": -6.0,
       "pan": 0.0,
       "mute": false,
-      "notes": "center male lead vocal"
+      "notes": "fresh center male lead vocal"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/female_vocal_candidate_clean.wav",
       "name": "Female BGV L - female_vocal_candidate_clean",
       "category": "female_bgv",
       "bus": "FEMALE_BGV_BUS",
-      "vol": 0.12589254117941673,
-      "vol_db": -18.0,
+      "vol": 0.08912509381337455,
+      "vol_db": -21.0,
       "pan": -0.4,
       "mute": false,
-      "notes": "female BGV L, low support"
+      "notes": "female BGV L, low support below male lead"
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav",
-      "name": "hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48",
+      "name": "PROBLEM REF - hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48",
       "category": "problem_reference",
       "bus": "REF_BUS",
       "vol": 0.12589254117941673,
@@ -354,8 +354,19 @@
     },
     {
       "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k.mp3",
-      "name": "hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k",
+      "name": "PROBLEM REF - hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k",
       "category": "problem_reference",
+      "bus": "REF_BUS",
+      "vol": 0.12589254117941673,
+      "vol_db": -18.0,
+      "pan": 0.0,
+      "mute": true,
+      "notes": "reference muted by default"
+    },
+    {
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "name": "TECH REF - 동반자살 WAV",
+      "category": "technical_mix_reference",
       "bus": "REF_BUS",
       "vol": 0.12589254117941673,
       "vol_db": -18.0,

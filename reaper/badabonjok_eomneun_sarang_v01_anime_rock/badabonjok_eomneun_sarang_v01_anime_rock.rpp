@@ -1,0 +1,334 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 0 0
+  RIPPLE 0 0
+  AUTOXFADE 129
+  RENDER_FILE "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_reaper_print.wav"
+  RENDER_FMT 0 2 48000
+  RENDER_RANGE 1 0 76.040020833333 0 1000
+  SAMPLERATE 48000 1 0
+  TEMPO 84 4 4 0
+  PLAYRATE 1 0 0.25 4
+  MARKER 1 0 "source stems preserved; processed mix stems active" 0 0 1 B {00000000-0000-0000-0000-000000000001} 0 2
+  MARKER 2 0 "Suno female anime rock vocal guide prepared; no generated Suno audio imported yet" 0 0 1 B {00000000-0000-0000-0000-000000000002} 0 2
+  <TRACK
+    NAME "processed lead"
+    PEAKCOL 16744576
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8293919E8BC07F1545C4CFF2D0E8E7FD}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5467A6E31B8345EB4C247A5732603D1A}
+      IID 1
+      NAME "processed_lead.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BE59A11567282FDFDBEFACB511260C59}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_lead.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "processed backing"
+    PEAKCOL 16761024
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4B7453319DF108B80F3C970A92AF2315}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {01EDC94257A90D9E4A10655CB0FCDB5D}
+      IID 1
+      NAME "processed_backing.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F771EC6A8680A3459BC55B246221C0EC}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_backing.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "processed drums"
+    PEAKCOL 3368703
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {01E22CAB14110CAF3F8E97BC9AC5A2EB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9E9A35E693DC57A40F656DCED5410F19}
+      IID 1
+      NAME "processed_drums.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B55577043A2009DC1A035A2A48C4FB8B}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_drums.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "processed bass"
+    PEAKCOL 5635925
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C09E50D1CFC03BA4AB9411578786EEAC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {04D2332DDE1C3033570C4BEC4DEDDE21}
+      IID 1
+      NAME "processed_bass.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1B58CE3830A833871EC5215ED7116205}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_bass.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "processed synth"
+    PEAKCOL 11184810
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CD8C4C15BE9F27B8361C228ABA66A99B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {704FA04894E79FB6C55D2F3A2BF26538}
+      IID 1
+      NAME "processed_synth.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {850BD88E82B0FA0B7E8B78710ACC2865}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_synth.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "processed other"
+    PEAKCOL 8421631
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A21320F8CC9EECF7EAE5BFE2A0948110}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {249130F869B1964353A81A3BEB0A0739}
+      IID 1
+      NAME "processed_other.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8278E5A5B2C69273C8C465F85DBAAC9B}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/processed_other.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "PRINT reference master muted on import"
+    PEAKCOL 4210752
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    FREEMODE 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EEAD27114C99C12C2D2ECC3937713228}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {AA9B2390ECAF79C45C1C2992F7FE7D0F}
+      IID 1
+      NAME "badabonjok_eomneun_sarang_v01_anime_rock_MASTER_48k16.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4E30E37EAF4DE79B50301EA62A2C2C0F}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_MASTER_48k16.wav"
+      >
+    >
+  >
+>

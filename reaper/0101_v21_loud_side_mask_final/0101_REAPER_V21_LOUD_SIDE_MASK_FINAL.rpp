@@ -1,0 +1,249 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 v21 loud side mask final. Keeps v20 pocket, targets -6 LUFS, and uses melody/piano/synth side masking when vocal fizz appears.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 135.000000 4 4 0
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  MASTER_NCH 2 2
+  <TRACK {cd1d14e9-bf9e-4c26-ac03-188c6af36505}
+    NAME "V18_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {536f2c6c-03d9-4c8c-81fa-1b523ea4e819}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {6e2c9ef9-1ba4-4352-851b-5bc1e801e7c5}
+      IID 1
+      NAME 0101_FINAL_v18_endpoint_throw_female_up.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {b4c79cfb-8df9-4185-86bf-362a0e5c517b}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v18_endpoint_throw_female_up/0101_FINAL_v18_endpoint_throw_female_up.wav"
+      >
+    >
+  >
+  <TRACK {b0d34c79-dbc9-4a0a-8fc5-d60f147662ed}
+    NAME "RAW_VOCAL_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {ca89ebc5-f5be-44ee-811d-260edcdf1202}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {6eeaca3c-15d3-4d53-9f04-14dae3babc66}
+      IID 2
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4f9310e3-b4af-4ce9-8ad6-847c17f97c25}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v01/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {e6fc4d15-da80-427a-b677-26cb962eb4a1}
+    NAME "MALE_V21_REDESIGNED muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {776483d6-2de5-4f0f-a2c4-0663772d6d1c}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {41c0ec30-3aab-42ea-a544-2462c1bb4532}
+      IID 3
+      NAME processed_male_vocal_v21_redesigned_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {50cb484f-56ee-4619-aeef-c7ec09cdc43c}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/processed_male_vocal_v21_redesigned_stem.wav"
+      >
+    >
+  >
+  <TRACK {de6c960e-1488-473f-a0ec-a0485a80cc7d}
+    NAME "FEMALE_V21_SIDE_PLUS1_MORE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {85901299-37dc-4c23-9931-a7eaa5da0e09}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {abf22171-3084-4d0f-9edf-f46f0a93ec27}
+      IID 4
+      NAME processed_female_layer_v21_side_plus1db_more_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5aa2c220-f913-40e0-a928-38241d315d70}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/processed_female_layer_v21_side_plus1db_more_stem.wav"
+      >
+    >
+  >
+  <TRACK {09280950-a554-419e-a808-5020986a5802}
+    NAME "ENDPOINT_THROW_V21 muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {0048d0ff-0aa4-4fb6-aa45-abdf929d254a}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {3f29323e-5034-4418-9e51-a7628949805a}
+      IID 5
+      NAME endpoint_throw_fx_v21_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6f2a3bda-9138-4246-a323-e42fc56e0435}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/endpoint_throw_fx_v21_stem.wav"
+      >
+    >
+  >
+  <TRACK {50bd891e-ac9e-4075-859f-7bb2e440145c}
+    NAME "INSTRUMENTAL_POCKET_V21 muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {22356372-48cf-4e55-88bb-cdc1c7c36509}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {7687e6d7-7522-44c9-ab36-74e4210175cc}
+      IID 6
+      NAME instrumental_pocket_v21_no_broadband_duck_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {c2ea4dac-4081-47ee-be00-c92f90ac3f84}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/instrumental_pocket_v21_no_broadband_duck_stem.wav"
+      >
+    >
+  >
+  <TRACK {4dd39389-0f46-4d37-9756-81b298fbf57c}
+    NAME "SIDE_NOISE_MASK_V21 muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {6adb932c-cfe0-4feb-a0a8-a790c9082c43}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {dd90def9-717e-41c4-8d18-48b817526f0d}
+      IID 7
+      NAME side_noise_mask_v21_piano_synth_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {83a35618-7b22-405e-a952-06d538f0896b}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/side_noise_mask_v21_piano_synth_stem.wav"
+      >
+    >
+  >
+  <TRACK {dbad7ba3-7823-410a-9fde-4a8adda82d8f}
+    NAME "V21_FINAL_ACTIVE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {120f50a9-8110-4ca8-9eac-2f6421ed2f22}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {78088b3f-fe3d-46f8-a69a-e2ae2cac1739}
+      IID 8
+      NAME 0101_FINAL_v21_loud_side_mask_final.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5405de1e-29bc-4afa-898d-7f0cafa153ff}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v21_loud_side_mask_final/0101_FINAL_v21_loud_side_mask_final.wav"
+      >
+    >
+  >
+>

@@ -1,0 +1,400 @@
+{
+  "male_vocal": [
+    {
+      "type": "hpf",
+      "freq_hz": 92,
+      "slope": "18 dB/oct"
+    },
+    {
+      "low_hz": 180,
+      "high_hz": 350,
+      "threshold_db": -32.78,
+      "max_cut_db": 2.1,
+      "mean_gr_db": 0.362,
+      "p95_gr_db": 2.1,
+      "type": "mud/body dynamic cleanup"
+    },
+    {
+      "low_hz": 700,
+      "high_hz": 1400,
+      "threshold_db": -34.0,
+      "max_cut_db": 1.8,
+      "mean_gr_db": 0.286,
+      "p95_gr_db": 1.8,
+      "type": "nasal/formant soften"
+    },
+    {
+      "low_hz": 2500,
+      "high_hz": 5500,
+      "threshold_db": -38.49,
+      "max_cut_db": 2.8,
+      "mean_gr_db": 0.389,
+      "p95_gr_db": 2.8,
+      "type": "metallic presence soften"
+    },
+    {
+      "low_hz": 5500,
+      "high_hz": 9000,
+      "threshold_db": -42.63,
+      "max_cut_db": 4.3,
+      "mean_gr_db": 0.544,
+      "p95_gr_db": 3.385,
+      "type": "primary de-ess"
+    },
+    {
+      "low_hz": 9000,
+      "high_hz": 12000,
+      "threshold_db": -41.08,
+      "max_cut_db": 1.7,
+      "mean_gr_db": 0.199,
+      "p95_gr_db": 1.7,
+      "type": "secondary glass soften"
+    },
+    {
+      "type": "tube/tape saturation",
+      "drive_db": 2.4,
+      "wet": 0.11
+    },
+    {
+      "type": "gentle vocal compression",
+      "ratio": 2.4,
+      "avg_target_gr_db": "1-3"
+    },
+    {
+      "low_hz": 5600,
+      "high_hz": 9200,
+      "threshold_db": -42.35,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.244,
+      "p95_gr_db": 1.769,
+      "type": "post-saturation de-ess"
+    },
+    {
+      "type": "polish",
+      "presence_db": 0.55,
+      "air_shelf_db": 0.55
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -16.6
+    },
+    {
+      "stage": "sip_breath_suppress",
+      "label": "male_lead",
+      "events": 78,
+      "threshold": 0.043319,
+      "dynamic_tame": {
+        "low_hz": 5600,
+        "high_hz": 11800,
+        "threshold_db": -32.99,
+        "max_cut_db": 3.8,
+        "mean_gr_db": 0.311,
+        "p95_gr_db": 1.72
+      }
+    },
+    {
+      "stage": "vocal_level_ride",
+      "target_db": -22.5,
+      "max_cut_db": -8.5,
+      "max_boost_db": 0.8,
+      "active_windows": 4898,
+      "median_gain_db": -4.783,
+      "min_gain_db": -8.5,
+      "max_gain_db": 0.8
+    }
+  ],
+  "female_vocal": [
+    {
+      "type": "hpf",
+      "freq_hz": 132,
+      "slope": "18 dB/oct"
+    },
+    {
+      "low_hz": 180,
+      "high_hz": 350,
+      "threshold_db": -45.86,
+      "max_cut_db": 2.6,
+      "mean_gr_db": 0.25,
+      "p95_gr_db": 2.6,
+      "type": "mud/body dynamic cleanup"
+    },
+    {
+      "low_hz": 700,
+      "high_hz": 1400,
+      "threshold_db": -50.39,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.233,
+      "p95_gr_db": 2.2,
+      "type": "nasal/formant soften"
+    },
+    {
+      "low_hz": 2500,
+      "high_hz": 5500,
+      "threshold_db": -61.73,
+      "max_cut_db": 3.1,
+      "mean_gr_db": 0.323,
+      "p95_gr_db": 3.1,
+      "type": "metallic presence soften"
+    },
+    {
+      "low_hz": 5500,
+      "high_hz": 9000,
+      "threshold_db": -63.65,
+      "max_cut_db": 4.8,
+      "mean_gr_db": 0.363,
+      "p95_gr_db": 3.567,
+      "type": "primary de-ess"
+    },
+    {
+      "low_hz": 9000,
+      "high_hz": 12000,
+      "threshold_db": -58.39,
+      "max_cut_db": 1.7,
+      "mean_gr_db": 0.124,
+      "p95_gr_db": 1.7,
+      "type": "secondary glass soften"
+    },
+    {
+      "type": "tube/tape saturation",
+      "drive_db": 1.8,
+      "wet": 0.08
+    },
+    {
+      "type": "gentle vocal compression",
+      "ratio": 2.0,
+      "avg_target_gr_db": "1-3"
+    },
+    {
+      "low_hz": 5600,
+      "high_hz": 9200,
+      "threshold_db": -62.43,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.148,
+      "p95_gr_db": 1.62,
+      "type": "post-saturation de-ess"
+    },
+    {
+      "type": "backing tuck",
+      "presence_db": -0.65,
+      "air_shelf_db": -0.75
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -25.0
+    },
+    {
+      "stage": "female_upper_fizz_control",
+      "low_hz": 7200,
+      "high_hz": 12200,
+      "threshold_db": -47.98,
+      "max_cut_db": 2.4,
+      "mean_gr_db": 0.193,
+      "p95_gr_db": 2.043
+    },
+    {
+      "stage": "audible_female_like_support_from_male",
+      "pitch_shift_semitones": 5.0,
+      "note": "used because exported backing vocal was too sparse to hear as a real female layer"
+    },
+    {
+      "stage": "female_like_bite_control",
+      "low_hz": 2500,
+      "high_hz": 6200,
+      "threshold_db": -31.29,
+      "max_cut_db": 2.5,
+      "mean_gr_db": 0.352,
+      "p95_gr_db": 2.5
+    },
+    {
+      "stage": "female_like_hiss_control",
+      "low_hz": 6200,
+      "high_hz": 11200,
+      "threshold_db": -46.1,
+      "max_cut_db": 3.0,
+      "mean_gr_db": 0.495,
+      "p95_gr_db": 3.0
+    },
+    {
+      "stage": "vocal_level_ride",
+      "target_db": -25.0,
+      "max_cut_db": -5.0,
+      "max_boost_db": 1.0,
+      "active_windows": 5038,
+      "median_gain_db": -2.63,
+      "min_gain_db": -4.988,
+      "max_gain_db": 0.994
+    },
+    {
+      "stage": "sip_breath_suppress",
+      "label": "female_support",
+      "events": 50,
+      "threshold": 0.016915,
+      "dynamic_tame": {
+        "low_hz": 5600,
+        "high_hz": 11800,
+        "threshold_db": -49.13,
+        "max_cut_db": 3.8,
+        "mean_gr_db": 0.561,
+        "p95_gr_db": 3.8
+      }
+    },
+    {
+      "stage": "vocal_level_ride",
+      "target_db": -24.5,
+      "max_cut_db": -5.0,
+      "max_boost_db": 1.0,
+      "active_windows": 5191,
+      "median_gain_db": 0.65,
+      "min_gain_db": -5.0,
+      "max_gain_db": 1.0
+    },
+    {
+      "stage": "sip_breath_suppress",
+      "label": "female_alt",
+      "events": 4,
+      "threshold": 0.031973,
+      "dynamic_tame": {
+        "low_hz": 5600,
+        "high_hz": 11800,
+        "threshold_db": -45.39,
+        "max_cut_db": 3.8,
+        "mean_gr_db": 0.8,
+        "p95_gr_db": 3.8
+      }
+    },
+    {
+      "stage": "vocal_level_ride",
+      "target_db": -22.5,
+      "max_cut_db": -6.5,
+      "max_boost_db": 1.0,
+      "active_windows": 4857,
+      "median_gain_db": 0.0,
+      "min_gain_db": -6.5,
+      "max_gain_db": 1.0
+    }
+  ],
+  "drums": [
+    {
+      "stage": "no_gate_drum_cleanup",
+      "note": "no noise gate to avoid beat cut"
+    },
+    {
+      "stage": "drum_low_mid_cleanup",
+      "low_hz": 240,
+      "high_hz": 560,
+      "threshold_db": -43.08,
+      "max_cut_db": 0.8,
+      "mean_gr_db": 0.077,
+      "p95_gr_db": 0.8
+    },
+    {
+      "stage": "clean_punch_light_sat",
+      "ratio": 1.25,
+      "sat_drive_db": 0.8
+    },
+    {
+      "stage": "round_kick_support",
+      "detected_onsets": 114,
+      "gain_db": -7.2
+    }
+  ],
+  "bass": [
+    {
+      "type": "bass mud dynamic cleanup",
+      "low_hz": 180,
+      "high_hz": 380,
+      "threshold_db": -39.22,
+      "max_cut_db": 1.6,
+      "mean_gr_db": 0.196,
+      "p95_gr_db": 1.6
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -18.1
+    },
+    {
+      "stage": "clean_bass_no_hard_grit",
+      "drive_db": 1.7,
+      "note": "removed rough clip layer to avoid breakup"
+    },
+    {
+      "stage": "sub_mono_reinforcement",
+      "lowpass_hz": 96,
+      "gain_db": -2.4
+    }
+  ],
+  "music": [
+    {
+      "type": "music low-mid dynamic cleanup",
+      "low_hz": 220,
+      "high_hz": 700,
+      "threshold_db": -32.56,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.345,
+      "p95_gr_db": 2.2
+    },
+    {
+      "type": "vocal presence pocket",
+      "band_hz": "1500-4200",
+      "amount_db": 1.0
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -24.6
+    },
+    {
+      "type": "music low-mid dynamic cleanup",
+      "low_hz": 220,
+      "high_hz": 700,
+      "threshold_db": -44.73,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.18,
+      "p95_gr_db": 2.2
+    },
+    {
+      "type": "vocal presence pocket",
+      "band_hz": "1500-4200",
+      "amount_db": 1.0
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -24.2
+    },
+    {
+      "type": "music low-mid dynamic cleanup",
+      "low_hz": 220,
+      "high_hz": 700,
+      "threshold_db": -64.37,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.115,
+      "p95_gr_db": 1.35
+    },
+    {
+      "type": "vocal presence pocket",
+      "band_hz": "1500-4200",
+      "amount_db": 0.7
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -26.2
+    },
+    {
+      "type": "music low-mid dynamic cleanup",
+      "low_hz": 220,
+      "high_hz": 700,
+      "threshold_db": -60.0,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.0,
+      "p95_gr_db": 0.0
+    },
+    {
+      "type": "vocal presence pocket",
+      "band_hz": "1500-4200",
+      "amount_db": 0.7
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -26.2
+    }
+  ]
+}

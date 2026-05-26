@@ -8,7 +8,7 @@ You are a senior macOS audio automation engineer, Logic Pro workflow reviewer, C
 Review the AI_BEAT_LOGIC_WORKFLOW project end to end.
 
 Primary goals:
-- Verify that the project never claims a final beat is complete unless the final WAV exists, verification passes, and qc_report.md exists.
+- Verify that the project never claims a final beat is complete unless `src/completion_gate.py` confirms the final WAV exists, requested 24-bit PCM format/sample rate passes, audio metrics are verified, `qc_report.md` exists, and any required master QC report exists.
 - Verify that Logic Pro automation is optional, honest, and never reports success unless output exists.
 - Verify that fallback processing is described as stereo-only and does not claim stem-level remixing or real vocal removal.
 - Verify that final WAV export is actually 24-bit at the requested sample rate through ffmpeg or afconvert.
@@ -33,4 +33,3 @@ Output expected:
 4. Verification commands to rerun.
 5. Any remaining honest limitations.
 ```
-

@@ -1,0 +1,7 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+raw_vocal_reference,0101_vocal_raw.wav,48000,float32,139.441,-5.82,-24.46,18.64,1.0,-46.2,0.019,15.134,26.275,37.954,14.911,3.935,1.772,-19.9,4.3,-5.8,-70.4,-20.0,-17.2
+v15_processed_male_reference,processed_male_vocal_v15_selected_stem.wav,48000,float32,139.441,-1.55,-16.68,15.13,0.9997,-38.5,0.001,9.608,31.148,19.744,39.346,0.068,0.085,-11.6,2.1,-1.1,-78.0,-11.6,-10.6
+v16_processed_male_raw_core,processed_male_vocal_v16_raw_core_sat_stem.wav,48000,float32,139.441,-1.8,-21.36,19.56,0.9999,-42.51,0.001,14.375,33.325,25.931,25.166,0.695,0.507,-16.7,2.7,-1.8,-78.1,-16.8,-15.3
+v15_final_reference,0101_FINAL_v15_dry_vocal_clarity_selected.wav,48000,int32,139.441,-1.22,-13.05,11.83,0.8994,-12.76,20.762,16.06,20.686,24.625,17.463,0.238,0.166,-10.2,2.3,-1.2,-30.4,-10.0,-9.1
+v16_final_wav,0101_FINAL_v16_raw_core_sat_clarity.wav,48000,int32,139.441,-1.18,-12.85,11.67,0.8882,-12.28,26.819,19.009,19.494,25.682,8.054,0.559,0.384,-10.5,2.5,-1.2,-29.9,-10.5,-9.1
+v16_final_mp3,0101_FINAL_v16_raw_core_sat_clarity_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.11,-12.85,11.74,0.8882,-12.28,26.816,19.011,19.494,25.681,8.055,0.559,0.384,-10.5,2.5,-1.1,-29.9,-10.5,-9.1

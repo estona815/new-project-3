@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import unicodedata
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Iterable
@@ -50,7 +51,7 @@ class ClassifiedSource:
 
 def normalized_name(path_or_name: str | Path) -> str:
     path = Path(path_or_name)
-    text = f"{path.parent.name} {path.stem} {path.suffix}".lower()
+    text = unicodedata.normalize("NFC", f"{path.parent.name} {path.stem} {path.suffix}".lower())
     text = re.sub(r"[_./\\-]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
@@ -74,7 +75,19 @@ def classify_source_file(path: str | Path) -> ClassifiedSource:
     if extension in MIDI_EXTENSIONS:
         category = GUIDE_MIDI
         reason = "Suno MIDI is treated as guide-only and never final truth"
-    elif _has(text, "estona", "nib", "lovee", "technical reference", "technical mix reference", "reference wav"):
+    elif _has(
+        text,
+        "estona",
+        "nib",
+        "lovee",
+        "technical reference",
+        "technical mix reference",
+        "reference wav",
+        "dongbanjasal",
+        "동반자살",
+        "발매곡",
+        "완성본",
+    ):
         category = TECHNICAL_MIX_REFERENCE
         reason = "commercial mix reference for technical analysis only"
     elif extension in REFERENCE_EXTENSIONS or _has(

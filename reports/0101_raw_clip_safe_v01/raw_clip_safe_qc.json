@@ -1,0 +1,102 @@
+{
+  "source_folder": "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v04_real_female_audible_vocal_ride/stems",
+  "final_wav": "/Users/hantaeheuk/Documents/New project 3/renders/0101_raw_clip_safe_v01/0101_RAW_CLIP_SAFE_v01.wav",
+  "preview_wav": "/Users/hantaeheuk/Documents/New project 3/renders/0101_raw_clip_safe_v01/0101_RAW_CLIP_SAFE_v01_preview_30s.wav",
+  "included_stems": [
+    {
+      "file": "0101_backing_vocals_raw.wav",
+      "gain_db": -5.8
+    },
+    {
+      "file": "0101_bass808_raw.wav",
+      "gain_db": -0.9
+    },
+    {
+      "file": "0101_drums_raw.wav",
+      "gain_db": -1.8
+    },
+    {
+      "file": "0101_fx_raw.wav",
+      "gain_db": -5.5
+    },
+    {
+      "file": "0101_keyboard_raw.wav",
+      "gain_db": -2.8
+    },
+    {
+      "file": "0101_melody_raw.wav",
+      "gain_db": -2.2
+    },
+    {
+      "file": "0101_synth_raw.wav",
+      "gain_db": -3.2
+    },
+    {
+      "file": "0101_vocal_raw.wav",
+      "gain_db": 1.2
+    }
+  ],
+  "excluded_or_muted_stems": [
+    {
+      "file": "0101_brass_raw.wav",
+      "reason": "near-silent separated stem, analyzed but muted"
+    },
+    {
+      "file": "0101_guitar_raw.wav",
+      "reason": "near-silent separated stem, analyzed but muted"
+    },
+    {
+      "file": "0101_instrumental_raw.wav",
+      "reason": "reference/composite, analyzed but not mixed"
+    },
+    {
+      "file": "0101_original_reference.wav",
+      "reason": "reference/composite, analyzed but not mixed"
+    },
+    {
+      "file": "0101_original_reference_duplicate.wav",
+      "reason": "reference/composite, analyzed but not mixed"
+    },
+    {
+      "file": "0101_percussion_raw.wav",
+      "reason": "near-silent separated stem, analyzed but muted"
+    },
+    {
+      "file": "0101_strings_raw.wav",
+      "reason": "near-silent separated stem, analyzed but muted"
+    },
+    {
+      "file": "0101_woodwinds_raw.wav",
+      "reason": "near-silent separated stem, analyzed but muted"
+    }
+  ],
+  "final_metrics": {
+    "file": "0101_RAW_CLIP_SAFE_v01.wav",
+    "sr": 48000,
+    "duration_sec": 139.4409375,
+    "peak_dbfs": -1.2097029722675468,
+    "rms_dbfs": -17.310427923532753,
+    "crest_db": 16.100724951265207,
+    "clipped_samples_ge_0_999": 0,
+    "sub_20_80_rms_dbfs": -23.81552060466291,
+    "bass_80_200_rms_dbfs": -24.890150426067382,
+    "low_mid_200_500_rms_dbfs": -25.018369410984743,
+    "mid_500_2000_rms_dbfs": -23.840853268619732,
+    "presence_2k_5k_rms_dbfs": -33.31596780905453,
+    "sibilance_5k_8k_rms_dbfs": -40.376258067608866,
+    "fizz_8k_12k_rms_dbfs": -38.572909439573436,
+    "air_12k_20k_rms_dbfs": -45.96249705434526,
+    "true_peak_dbfs_4x": -1.2000001645528333,
+    "lufs_i_approx_no_gate": -15.292477385332296,
+    "final_gain_db": 0.015018714402737578,
+    "pre_mix_peak_dbfs": -1.2247217940596138,
+    "pre_mix_true_peak_dbfs_4x": -1.2150187144027365
+  },
+  "notes": [
+    "No hard clipping or aggressive limiter was used.",
+    "Raw stems were analyzed before processing.",
+    "Original reference and instrumental composite were analyzed but not mixed to avoid double-counting.",
+    "Near-silent separation artifact stems were analyzed and muted.",
+    "Vocal cleanup is conservative: HPF, tiny mud/plastic/harshness cuts, and light de-ess/fizz reduction."
+  ]
+}

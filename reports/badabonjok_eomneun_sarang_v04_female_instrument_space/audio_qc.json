@@ -1,0 +1,26 @@
+{
+  "slug": "badabonjok_eomneun_sarang_v04_female_instrument_space",
+  "source_slug": "badabonjok_eomneun_sarang_v01_anime_rock",
+  "sample_rate": 48000,
+  "duration_seconds": 76.04,
+  "clear_master_metrics": {
+    "peak_dbfs": -1.0,
+    "rms_dbfs": -10.35,
+    "rough_integrated_lufs": -11.06,
+    "stereo_correlation": 0.988
+  },
+  "female_layer_mix_metrics": {
+    "peak_dbfs": -1.0,
+    "rms_dbfs": -11.2,
+    "rough_integrated_lufs": -11.93,
+    "stereo_correlation": 0.984
+  },
+  "premaster_metrics": {
+    "peak_dbfs": -9.11,
+    "rms_dbfs": -19.46,
+    "rough_integrated_lufs": -20.17,
+    "stereo_correlation": 0.988
+  },
+  "female_candidate_used": "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v01_anime_rock/suno_generated_candidates/suno_anime_rock_female_candidate_7016b495.wav",
+  "female_candidate_note": "MP3-derived full mix, not isolated vocal stem; used only as a low tucked layer."
+}

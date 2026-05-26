@@ -1,0 +1,600 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779617998 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 0 0 134.9 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 1 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0 0
+  SELECTION2 0 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {68A99D25-B894-714B-8719-72B106B76799}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {32B88420-0D1B-684A-B83A-B0772EBEB4E7}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  MARKER 1 0 START 0 0 1 B {CAB03815-C8C6-3B48-AC4A-BDC70E7D0254} 0 2
+  MARKER 2 33.725 "ENERGY CHECK 1" 0 0 1 B {D7E2BA9F-5E97-F14B-B297-BD567673BA45} 0 2
+  MARKER 3 67.45 "MID BALANCE CHECK" 0 0 1 B {C1C5163B-CEC8-5047-A8EA-CD9A4E309E24} 0 2
+  MARKER 4 101.175 "FINAL LIFT CHECK" 0 0 1 B {3A70F56D-5F98-0846-A7E8-263377981C1E} 0 2
+  MARKER 5 131.4 TAIL 0 0 1 B {22662DA7-A80D-EA46-9C7B-366F4496F404} 0 2
+  <PROJBAY
+  >
+  <TRACK {4471AF4B-35F2-DF4B-A76A-23BFF19E566B}
+    NAME REF_BUS_MUTED
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4471AF4B-35F2-DF4B-A76A-23BFF19E566B}
+    PERF 0
+    AUXRECV 7 0 0.12589254117942 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {AAE96227-5277-3A42-8D5F-EA7DABDA3519}
+    NAME VOCAL_BUS_EQ_COMP
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.12849593752776 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {AAE96227-5277-3A42-8D5F-EA7DABDA3519}
+    PERF 0
+    <EXT
+      v20_fx_vocal_bus_harshness_tame "JS: Codex Dynamic EQ Band"
+      v20_fx_vocal_bus_polish "JS: Codex V20 Channel Polish"
+    >
+    AUXRECV 5 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        85 180 0.1 330 -0.5 0.85 3850 0.5 0.9 10200 0.3 -22 1.4 24 170 0.3 0.6 0.05 0.97 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {7B411CE6-B9E6-9144-9092-71B2994C378F}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        4300 1 -35 1.5 8 120 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {0E37F656-09B5-4548-8F23-8B65D50E2EB8}
+      WAK 0 0
+    >
+  >
+  <TRACK {BFC87324-74D8-604D-930A-F7C05F06AB21}
+    NAME MUSIC_BUS_EQ_COMP
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.92789749012733 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BFC87324-74D8-604D-930A-F7C05F06AB21}
+    PERF 0
+    <EXT
+      v20_fx_music_bus_polish "JS: Codex V20 Channel Polish"
+      v20_fx_music_bus_vocal_space "JS: Codex Dynamic EQ Band"
+      v20_fx_music_high_tail_tamer "JS: Codex Noise Floor Tamer"
+    >
+    AUXRECV 6 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        24 90 -0.1 290 -0.3 0.75 1700 -0.2 0.9 11200 0.3 -21.5 1.15 42 260 0.1 0.3 0.04 1.04 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {CACF9443-8CFD-ED43-868A-7EDBE9F4AA2D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        2300 0.9 -35 1.1 16 190 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {7C38144F-DA56-7C48-A670-5B570591DB6C}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_noise_floor_tamer.jsfx ""
+        9200 -49 1.5 24 320 0.55 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {6599511D-A07B-AB43-BEAA-9C3F43798EAA}
+      WAK 0 0
+    >
+  >
+  <TRACK {3EF5AACB-3EF0-A64B-BED6-7907922ED0BD}
+    NAME MIX_BUS_COMMERCIAL_POLISH
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.58884365535559 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3EF5AACB-3EF0-A64B-BED6-7907922ED0BD}
+    PERF 0
+    <EXT
+      v20_fx_mix_bus_low_mid_tighten "JS: Codex Dynamic EQ Band"
+      v20_fx_mix_bus_polish "JS: Codex V20 Channel Polish"
+    >
+    AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        22 95 -0.1 310 -0.3 0.95 3300 0.2 1 11600 0.2 -19 1.2 35 240 0.2 0.4 0.04 1 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4AE4849C-6E34-1B45-895F-496851E6B0A8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        310 0.95 -29 1.2 18 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {83325097-12FC-3143-960D-C2858DDC5369}
+      WAK 0 0
+    >
+  >
+  <TRACK {DA1232F6-8654-1D4D-90B7-5ACEEE82B3D1}
+    NAME PRINT_MASTER_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DA1232F6-8654-1D4D-90B7-5ACEEE82B3D1}
+    PERF 0
+    <EXT
+      v20_fx_event_horizon_final_catch "JS: Event Horizon Limiter/Clipper"
+      v20_fx_loudness_meter "JS: Loudness Meter Peak/RMS/LUFS"
+      v20_fx_master_glue "JS: Codex V20 Master Glue"
+    >
+    AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_master_glue.jsfx ""
+        24 -0.3 88 -0.2 320 -0.2 3850 0.2 11200 -17.5 1.2 34 185 1.1 2 -1.2 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {880D15A1-D807-694A-856E-8645B04EBE67}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/eventhorizon2 ""
+        -2.6 -1 320 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {87DDB960-85B4-8049-9117-B73DC75028D3}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS analysis/loudness_meter ""
+        4 0 0 2 1 1 1 0 -12 -6 1 0 0 1.8 0 - - - - - - - - - - - - - - -150 -100 -100 -100 -100 -100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B760B36C-D2D9-2447-BAB7-F1AD0EDE568E}
+      WAK 0 0
+    >
+  >
+  <TRACK {4ADE7A20-1190-B24E-A837-9E19C927984B}
+    NAME "V19 Lead Vocals - active"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.10280823384955 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4ADE7A20-1190-B24E-A837-9E19C927984B}
+    PERF 0
+    <EXT
+      v20_fx_lead_polish "JS: Codex V20 Channel Polish"
+      v20_fx_lead_presence_tilt "JS: Codex Presence Tilt"
+      v20_fx_lead_sibilance_dynamic_tame "JS: Codex Dynamic EQ Band"
+      v20_fx_lead_stock_comp_marker ReaComp
+      v20_fx_lead_stock_eq_marker ReaEQ
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {CEA90A84-A6D0-EA4D-B61A-E6C372640882}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {09439318-D202-BC43-AA03-8E10211BA249}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        92 150 -0.3 285 -0.8 0.95 3150 1.1 0.9 10800 0.6 -25.5 1.7 14 135 0.6 0.9 0.08 0.98 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {3A2578C4-623E-5D4B-A703-9C0F4497B9D8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        6800 1.35 -38.5 2.2 6 85 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E263532F-02A9-1944-BE68-C847E3DD4AAF}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_presence_tilt.jsfx ""
+        2500 0.3 0.65 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {17F290CD-D764-2246-A8D2-87399C166CB2}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A938536A-1EE0-6B48-9480-F871FCAD2BEA}
+      IID 1
+      NAME "0 Lead Vocals.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {467D862E-08A8-F640-873A-F4319D228832}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_v19_2stem/0 Lead Vocals.wav"
+      >
+    >
+  >
+  <TRACK {CF68C89A-F8D4-1747-A0C4-C78E8255245E}
+    NAME "V19 Instrumental - active"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.93864203667214 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {CF68C89A-F8D4-1747-A0C4-C78E8255245E}
+    PERF 0
+    <EXT
+      v20_fx_inst_stock_comp_marker ReaComp
+      v20_fx_inst_stock_eq_marker ReaEQ
+      v20_fx_instrumental_polish "JS: Codex V20 Channel Polish"
+      v20_fx_instrumental_vocal_pocket "JS: Codex Dynamic EQ Band"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {04C63C17-CBEE-D045-985A-F0024C10FC06}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {04802545-1EBD-BE48-BF69-66330BB66FB0}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        28 85 -0.2 245 -0.4 0.8 2600 0.3 0.85 11800 0.2 -23 1.2 28 220 0.2 0.5 0.05 1.03 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {2E48FF3C-2DA4-6947-BDEC-FDCD5406FCD5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        2650 1.05 -34 1.4 12 160 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D606C4EE-D3DF-5F42-B10D-7FF267F922B7}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {307B3E00-5B4D-BD43-BAB2-A4041E0AD1B9}
+      IID 2
+      NAME "1 Instrumental.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0D2D98DB-5E65-A147-B879-EE9DCB955295}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_v19_2stem/1 Instrumental.wav"
+      >
+    >
+  >
+  <TRACK {5A638DC4-A347-4844-87BC-A9F0D84BE032}
+    NAME "FULL STEM REF - muted original mix"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {5A638DC4-A347-4844-87BC-A9F0D84BE032}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {9147C8BF-C28F-CB4D-94BE-0A9B3D897D92}
+      IID 3
+      NAME "0 한강 Shadow x 얇은 Shadow (Mashup).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {B924E752-5BB4-8545-9592-9623B0B3DF10}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/0 한강 Shadow x 얇은 Shadow (Mashup).wav"
+      >
+    >
+  >
+>

@@ -19,6 +19,8 @@ from suno_reaper_generator import build_track_entry, render_reaper_lua  # noqa: 
 from suno_source_classifier import (  # noqa: E402
     FEMALE_BGV,
     GUIDE_MIDI,
+    MALE_LEAD_VOCAL,
+    MUSIC_OR_SYNTH,
     PROBLEM_REFERENCE,
     REFERENCE_ONLY,
     TECHNICAL_MIX_REFERENCE,
@@ -41,6 +43,12 @@ class SunoReaperHarnessTests(unittest.TestCase):
         self.assertTrue(classified.reference_only)
         self.assertFalse(classified.production_eligible)
 
+    def test_user_release_reference_wav_classified_as_technical_reference(self) -> None:
+        classified = classify_source_file("발매곡 완성본/동반자살 WAV.wav")
+        self.assertEqual(classified.category, TECHNICAL_MIX_REFERENCE)
+        self.assertTrue(classified.reference_only)
+        self.assertFalse(classified.production_eligible)
+
     def test_production_rebuild_blocked_when_only_reference_exists(self) -> None:
         status = production_rebuild_status([classify_source_file("final_fullmix_MASTER.mp3")])
         self.assertFalse(status["allowed"])
@@ -48,6 +56,17 @@ class SunoReaperHarnessTests(unittest.TestCase):
             status["reason"],
             "Only reference/master files found. Export Suno Studio WAV stems and stem-derived MIDI before rebuilding.",
         )
+
+    def test_wav_stems_are_eligible_production_tracks(self) -> None:
+        classified = classify_source_file("raw_stems/04_Synth.wav")
+        self.assertEqual(classified.category, MUSIC_OR_SYNTH)
+        self.assertTrue(classified.production_eligible)
+        self.assertFalse(classified.reference_only)
+
+    def test_male_lead_vocal_classified_correctly(self) -> None:
+        classified = classify_source_file("raw_stems/12_Vocals.wav")
+        self.assertEqual(classified.category, MALE_LEAD_VOCAL)
+        self.assertTrue(classified.production_eligible)
 
     def test_female_adlib_double_harmony_classified_as_female_bgv(self) -> None:
         for filename in ("female_adlib.wav", "bgv_double.wav", "wide_harmony_tail.wav", "Backing Vocals.wav"):
@@ -119,6 +138,39 @@ class SunoReaperHarnessTests(unittest.TestCase):
         self.assertIn("VOCAL_DELAY_SEND", lua)
         self.assertIn("mix_bus_ms_eq", lua)
         self.assertIn("QC high: test", lua)
+
+    def test_reaper_script_creates_all_required_buses_and_saves_fresh_project(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            lua = render_reaper_lua(
+                [],
+                [],
+                bpm=180,
+                harness_version="fresh_mix_rebuild.v0.6",
+                project_save_path=Path(tmp) / "FRESH_MIX_REBUILD.rpp",
+            )
+        for bus in (
+            "REF_BUS",
+            "DRUM_BUS",
+            "BASS_808_BUS",
+            "MUSIC_BUS",
+            "MALE_LEAD_VOX_BUS",
+            "FEMALE_BGV_BUS",
+            "VOCAL_FX_BUS",
+            "FX_BUS",
+            "ARTIFACT_QUARANTINE_BUS",
+            "MIX_BUS",
+            "MASTER_PREMIX_BUS",
+            "PRINT_MASTER_BUS",
+            "VOCAL_PLATE_SEND",
+            "VOCAL_DELAY_SEND",
+            "SHORT_ROOM_SEND",
+            "OPTIONAL_WIDE_THROW_SEND",
+        ):
+            self.assertIn(bus, lua)
+        self.assertIn("Main_SaveProjectEx", lua)
+        self.assertIn("FRESH_MIX_REBUILD.rpp", lua)
+        self.assertIn('bus_tracks["PRINT_MASTER_BUS"], "B_MAINSEND", 1', lua)
+        self.assertIn('bus_tracks["REF_BUS"], "B_MAINSEND", 1', lua)
 
     def test_plugin_fallback_works_when_premium_missing(self) -> None:
         role = resolve_role("limiter", [])

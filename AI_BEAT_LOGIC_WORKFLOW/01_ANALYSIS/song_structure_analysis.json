@@ -1,0 +1,23 @@
+{
+  "schema_version": "song_structure_analysis.v1",
+  "input": {
+    "path": "work.wav",
+    "mode": "instrumental"
+  },
+  "duration_seconds": 0,
+  "sections": [],
+  "hook_candidates": [],
+  "weak_intro_candidates": [],
+  "dead_outro_candidates": [],
+  "repeated_ai_loop_candidates": [],
+  "abrupt_transition_candidates": [],
+  "melody_buried_candidates": [],
+  "vocal_like_texture_candidates": [],
+  "over_compressed_sections": [],
+  "low_end_excess_candidates": [],
+  "reels_hook_region": null,
+  "limitations": [
+    "Audio could not be read: [Errno 2] No such file or directory: 'work.wav'",
+    "Section detection is heuristic."
+  ]
+}

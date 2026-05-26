@@ -1,0 +1,67 @@
+{
+  "date": "2026-05-25",
+  "status": "ready_for_suno_studio_session",
+  "mission": "Generate, select, and export Suno Studio stems for REAPER mix/master while rejecting obvious AI vocal artifacts.",
+  "hard_reject_terms": [
+    "아아아아안녕",
+    "stretched hello",
+    "fake greeting",
+    "random ahh",
+    "random ooh",
+    "random yeah",
+    "moaning vocal",
+    "weird vocal chop",
+    "robotic syllable ending",
+    "formant tearing",
+    "chipmunk vocal",
+    "baby voice",
+    "anime voice",
+    "hard vocal splice",
+    "abrupt vocal cut",
+    "female lead takeover"
+  ],
+  "style_prompt": "Korean emo rap, digicore, hyperpop, trap, future bass, electropop energy. Fast melodic short-form song with an immediate hook, clean vocal-forward arrangement, punchy drums, controlled 808, bright synth/pluck melody, smooth transitions, polished Seoul underground pop finish. Main vocal should sound like a real studio singer: centered, natural low-mid to mid register, clean consonants, emotionally tuned, stable pitch, intelligible Korean phrasing, no robotic syllable tails, no fake spoken intro, no random greeting. Female vocal layer should be soft, wide, low-volume, supportive only: backing doubles, harmony tails, phrase-end adlibs, and hook reinforcement. It must never become the main lead or introduce random words.",
+  "exclude_prompt": "아아아아안녕, 안녕 spoken intro, stretched hello, fake greeting, random ahh, random ooh, random yeah, moaning vocal, weird vocal chop, vocal chop intro, chopped vocal hook, pitched-up chipmunk vocal, anime voice, baby voice, harsh female lead takeover, loud female hook, random female adlib, hard vocal splice, abrupt vocal cut, sudden AI cutoff, robotic syllable ending, formant tearing, noisy glitch burst, harsh white noise, metallic digital noise, excessive bitcrush, unmusical stutter, phasey stereo, anti-phase widening, muddy bass, buried main vocal, muffled vocal, washed-out vocal, excessive reverb, messy delay, over-compression, clipping, long ambient intro, slow buildup, weak hook, random chord drift, generic AI demo, amateur demo",
+  "recommended_settings": {
+    "custom_mode": true,
+    "instrumental_for_vocal_generation": false,
+    "weirdness_percent": "6-10",
+    "style_influence_percent": "84-88",
+    "audio_influence_percent": "0-15 unless using clean instrumental reference only",
+    "main_vocal_gender": "male",
+    "support_vocal_gender": "female"
+  },
+  "acceptance_criteria": [
+    "No stretched hello or fake greeting in the first seconds",
+    "No random filler adlibs",
+    "Lead vocal timing locks to beat",
+    "Korean consonants are clear enough for REAPER processing",
+    "Female layer works as quiet backing, harmony tail, phrase-end adlib, or hook reinforcement",
+    "Usable WAV stem export is available"
+  ],
+  "exports_required": [
+    "12-track WAV stems or multitracks if available",
+    "male lead vocal stem",
+    "female support vocal stem",
+    "instrumental stem",
+    "drums stem",
+    "bass/808 stem",
+    "music/synth stem",
+    "FX stem",
+    "useful MIDI exports when available",
+    "full mix WAV as reference only"
+  ],
+  "local_filing": {
+    "raw_exports": "audio_work/suno_studio_<slug>_vNN/raw_exports",
+    "selected_stems": "audio_work/suno_studio_<slug>_vNN/selected_stems",
+    "reports": "reports/suno_studio_<slug>_vNN"
+  },
+  "reaper_handoff": [
+    "Audit stem length, sample rate, channels, peak, and silence",
+    "Align stems against approved timing base",
+    "Keep female support muted or low until alignment is verified",
+    "Build a new REAPER version folder",
+    "Render premaster and print",
+    "Run loudness, true-peak, and MP3 QC before delivery"
+  ]
+}

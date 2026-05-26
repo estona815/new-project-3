@@ -1,0 +1,4 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+reference_0101_original_reference,0101_original_reference.wav,48000,float32,139.441,-2.12,-16.61,14.5,0.7903,-9.3,41.153,24.997,12.118,14.55,4.527,1.762,0.892,-14.7,7.4,-2.1,-45.4,-14.7,-12.3
+reference_030 320kbps,030 320kbps.mp3,48000,float32 decoded_from_mp3,155.112,0.13,-9.69,9.82,0.8336,-10.42,18.431,28.607,26.795,16.734,5.388,3.171,0.874,-7.3,5.6,0.3,-26.6,-6.6,-5.8
+reference_Am i 5u5ide? 320kbps,Am i 5u5ide? 320kbps.mp3,48000,float32 decoded_from_mp3,145.104,0.17,-8.4,8.57,0.7238,-7.95,44.36,23.733,10.053,12.245,5.17,2.947,1.492,-6.5,1.4,0.3,-14.4,-6.2,-5.8

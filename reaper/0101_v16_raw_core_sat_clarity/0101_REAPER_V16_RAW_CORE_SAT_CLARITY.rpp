@@ -1,0 +1,189 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 v16 raw-core vocal pass. Starts from raw vocal stem, not from previous processed vocal. Saturation/clarity only, no global reverb or delay.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 135.000000 4 4 0
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  MASTER_NCH 2 2
+  <TRACK {f63cf309-e037-421b-89f5-b2f5037d41c0}
+    NAME "RAW_VOCAL_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {f6909d6f-274d-4526-bada-28a555d2c845}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {de7d086f-264c-4866-b90e-7a65b2eb0585}
+      IID 1
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {c3b0da44-184a-44a8-a5fe-b48f0e876edd}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v01/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {6dbb5b9f-b8fd-42ae-9025-8705c28b962c}
+    NAME "V15_FINAL_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {74f06d80-7271-41e5-8d92-ea98e9788e73}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {5f1e0303-411b-4cb5-bb4f-d56065ba609b}
+      IID 2
+      NAME 0101_FINAL_v15_dry_vocal_clarity_selected.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8145a3ed-1e21-4e2d-89b3-02ff30ddbc31}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v15_dry_vocal_clarity_final/0101_FINAL_v15_dry_vocal_clarity_selected.wav"
+      >
+    >
+  >
+  <TRACK {07a15334-7c86-4d55-af24-d65a2e30d2fe}
+    NAME "MALE_V16_RAW_CORE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {dff61c72-492d-4fa6-9b56-482bf89a01f9}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {022f671a-e68a-482a-b553-27e15eb8823d}
+      IID 3
+      NAME processed_male_vocal_v16_raw_core_sat_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {e3198166-1ea4-40d6-81bc-e9d75d323d98}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v16_raw_core_sat_clarity/processed_male_vocal_v16_raw_core_sat_stem.wav"
+      >
+    >
+  >
+  <TRACK {026c3960-8798-402b-950d-571c0627ccc5}
+    NAME "FEMALE_V16_SIDE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {16e0ba68-ee36-4e05-a0ab-936688d29b16}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {a4c61b3d-16aa-4a75-b424-d105fc68b322}
+      IID 4
+      NAME processed_female_layer_v16_side_support_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {66adbb69-2b58-4293-b727-afa52b401b1f}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v16_raw_core_sat_clarity/processed_female_layer_v16_side_support_stem.wav"
+      >
+    >
+  >
+  <TRACK {6a7e992a-389b-4728-b14b-df2230facebf}
+    NAME "V16_FINAL_ACTIVE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {39523a4d-6b6e-4390-931f-d28302d69736}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {354d5e6f-da77-44fc-81a5-e6545765d631}
+      IID 5
+      NAME 0101_FINAL_v16_raw_core_sat_clarity.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {57240b6b-cf3a-4988-a0ca-3557c6f0fa71}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v16_raw_core_sat_clarity/0101_FINAL_v16_raw_core_sat_clarity.wav"
+      >
+    >
+  >
+  <TRACK {e3da57da-a024-4f2f-abd1-8866dcb0fc59}
+    NAME "V16_MP3_MONITOR muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {60470868-b355-4ad4-a654-2cab0ab89326}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {b2ab1d1e-cc73-43cb-8eea-0a412d434e95}
+      IID 6
+      NAME 0101_FINAL_v16_raw_core_sat_clarity_320.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {f671bead-75f5-4efa-86b5-fd2063b24217}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v16_raw_core_sat_clarity/0101_FINAL_v16_raw_core_sat_clarity_320.mp3"
+      >
+    >
+  >
+>

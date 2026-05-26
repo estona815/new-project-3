@@ -1,0 +1,199 @@
+{
+  "schema_version": "sample_motif_rebuild_plan.v1",
+  "status": "SAMPLE_MOTIF_REBUILD_PLAN_READY",
+  "selected_samples": [
+    {
+      "sample_id": "01_02._-___Shippo",
+      "role": "main_motif",
+      "start": 0.0,
+      "end": 1.8,
+      "reason": "most recognizable motif candidate",
+      "confidence": "low",
+      "source_path": "04_PROCESSED_AUDIO/music_sample_wavs/01_02._-___Shippo.wav"
+    },
+    {
+      "sample_id": "02_05._-___Shippo",
+      "role": "response_motif",
+      "start": 0.0,
+      "end": 1.8,
+      "reason": "contrasts main motif while staying repeatable",
+      "confidence": "low",
+      "source_path": "04_PROCESSED_AUDIO/music_sample_wavs/02_05._-___Shippo.wav"
+    },
+    {
+      "sample_id": "03_06._Chinese_Tea",
+      "role": "texture_layer",
+      "start": 0.0,
+      "end": 1.8,
+      "reason": "usable atmosphere at low density",
+      "confidence": "low",
+      "source_path": "04_PROCESSED_AUDIO/music_sample_wavs/03_06._Chinese_Tea.wav"
+    },
+    {
+      "sample_id": "04_06._-___Shippo",
+      "role": "transition_element",
+      "start": 0.0,
+      "end": 1.8,
+      "reason": "short intentional transition element, not random glitch",
+      "confidence": "low",
+      "source_path": "04_PROCESSED_AUDIO/music_sample_wavs/04_06._-___Shippo.wav"
+    }
+  ],
+  "section_usage": [
+    {
+      "section": "intro_hook_hint",
+      "sample_role": "main_motif_filtered",
+      "density": "low",
+      "sample_id": "01_02._-___Shippo",
+      "start_time": 0.0,
+      "duration": 4.0
+    },
+    {
+      "section": "main_hook",
+      "sample_role": "main_motif_full",
+      "density": "high",
+      "sample_id": "01_02._-___Shippo",
+      "start_time": 4.0,
+      "duration": 16.0
+    },
+    {
+      "section": "verse_groove",
+      "sample_role": "texture_only",
+      "density": "low",
+      "sample_id": "03_06._Chinese_Tea",
+      "start_time": 20.0,
+      "duration": 16.0
+    },
+    {
+      "section": "hook_return",
+      "sample_role": "main_motif_full",
+      "density": "high",
+      "sample_id": "01_02._-___Shippo",
+      "start_time": 36.0,
+      "duration": 16.0
+    },
+    {
+      "section": "breakdown_filtered_lead",
+      "sample_role": "response_motif_filtered",
+      "density": "low",
+      "sample_id": "02_05._-___Shippo",
+      "start_time": 52.0,
+      "duration": 16.0
+    },
+    {
+      "section": "final_hook",
+      "sample_role": "main_motif_full_plus_response",
+      "density": "high",
+      "sample_id": "01_02._-___Shippo",
+      "start_time": 68.0,
+      "duration": 20.0
+    },
+    {
+      "section": "clean_outro_or_loop",
+      "sample_role": "texture_tail",
+      "density": "low",
+      "sample_id": "03_06._Chinese_Tea",
+      "start_time": 88.0,
+      "duration": 12.0
+    }
+  ],
+  "call_response": {
+    "schema_version": "sample_call_response_plan.v1",
+    "main_motif_id": "01_02._-___Shippo",
+    "response_motif_id": "02_05._-___Shippo",
+    "section_usage": [
+      {
+        "section": "intro_hook_hint",
+        "sample_role": "main_motif_filtered",
+        "sample_id": "01_02._-___Shippo",
+        "density": "low",
+        "start_time": 0.0,
+        "duration": 4.0
+      },
+      {
+        "section": "main_hook",
+        "sample_role": "main_motif_full",
+        "sample_id": "01_02._-___Shippo",
+        "density": "high",
+        "start_time": 4.0,
+        "duration": 16.0
+      },
+      {
+        "section": "verse_groove",
+        "sample_role": "texture_only",
+        "sample_id": "03_06._Chinese_Tea",
+        "density": "low",
+        "start_time": 20.0,
+        "duration": 16.0
+      },
+      {
+        "section": "hook_return",
+        "sample_role": "main_motif_full",
+        "sample_id": "01_02._-___Shippo",
+        "density": "high",
+        "start_time": 36.0,
+        "duration": 16.0
+      },
+      {
+        "section": "breakdown_filtered_lead",
+        "sample_role": "response_motif_filtered",
+        "sample_id": "02_05._-___Shippo",
+        "density": "low",
+        "start_time": 52.0,
+        "duration": 16.0
+      },
+      {
+        "section": "final_hook",
+        "sample_role": "main_motif_full_plus_response",
+        "sample_id": "01_02._-___Shippo",
+        "density": "high",
+        "start_time": 68.0,
+        "duration": 20.0
+      },
+      {
+        "section": "clean_outro_or_loop",
+        "sample_role": "texture_tail",
+        "sample_id": "03_06._Chinese_Tea",
+        "density": "low",
+        "start_time": 88.0,
+        "duration": 12.0
+      }
+    ],
+    "hook_return_count": 4,
+    "call_response_rules": [
+      "Main motif states the hook.",
+      "Response motif answers only in gaps or second half of hook.",
+      "Texture layer supports verse/breakdown and must not become a random lead.",
+      "Transition element appears only at section boundaries."
+    ],
+    "anti_spam": {
+      "max_active_sample_roles_per_section": 2,
+      "avoid_over_chopping": true,
+      "minimum_hook_return_required": true
+    }
+  },
+  "song_context": {
+    "bpm": 75.0,
+    "key": "A5",
+    "key_confidence": "medium"
+  },
+  "quality_gates": {
+    "samples_assigned_musical_roles": true,
+    "main_motif_returns_in_hook": true,
+    "no_random_chop_spam": true,
+    "max_active_sample_roles_per_section": 2
+  },
+  "rules": [
+    "Use fewer stronger samples.",
+    "Main motif must repeat with variation.",
+    "Avoid random glitch chop.",
+    "Main motif returns in every hook.",
+    "Response motif answers the main motif; it does not spam every beat.",
+    "Texture layer stays behind lead/hook identity."
+  ],
+  "limitations": [
+    "Sample timing and role assignment are heuristic until edited by ear.",
+    "Direct sample use requires owned/licensed/cleared local material.",
+    "If ownership is unknown, recreate the trait with synthesis/MIDI instead of using the recording in release audio."
+  ]
+}

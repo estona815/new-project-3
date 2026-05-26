@@ -1,0 +1,9 @@
+{
+  "source": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v23_new_female_gated_pan/processed_stems/female_double_new_gated_pan_24-48.wav",
+  "output": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v26_v23_base_synth_natural/processed_stems/female_double_no_intro_chops_24-48.wav",
+  "policy": "Removed only the added female double layer before 9.20s. The male main vocal and original music stems are untouched.",
+  "cutoff_s": 9.2,
+  "intro_rms_before": 0.00886259,
+  "intro_rms_after": 0.0,
+  "duration_s": 141.394
+}

@@ -1,0 +1,117 @@
+{
+  "ref_am_i_5u5ide": {
+    "path": "08_REFERENCE_MATCH/reference_wavs/am_i_5u5ide_48k.wav",
+    "duration": 145.1,
+    "peak_dbfs": 0.0,
+    "rms_dbfs": -8.4,
+    "crest_db": 8.4,
+    "side_mid_db": -7.95,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -4.92,
+      "bass_60_150": -5.35,
+      "low_mid_150_400": -7.76,
+      "mid_400_1500": -8.45,
+      "presence_1500_4500": -13.16,
+      "bite_4500_8000": -15.78,
+      "air_8000_16000": -16.31
+    },
+    "one_sec_rms_p10_p50_p90": [
+      -12.53,
+      -8.77,
+      -8.08
+    ],
+    "tempo_guess_bpm": 133.9
+  },
+  "ref_030": {
+    "path": "08_REFERENCE_MATCH/reference_wavs/030_48k.wav",
+    "duration": 155.11,
+    "peak_dbfs": 0.0,
+    "rms_dbfs": -9.69,
+    "crest_db": 9.69,
+    "side_mid_db": -10.42,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -9.89,
+      "bass_60_150": -4.44,
+      "low_mid_150_400": -7.34,
+      "mid_400_1500": -5.58,
+      "presence_1500_4500": -12.38,
+      "bite_4500_8000": -15.8,
+      "air_8000_16000": -17.45
+    },
+    "one_sec_rms_p10_p50_p90": [
+      -17.85,
+      -9.13,
+      -8.45
+    ],
+    "tempo_guess_bpm": 152.0
+  },
+  "ref_00": {
+    "path": "08_REFERENCE_MATCH/reference_wavs/00_48k.wav",
+    "duration": 102.12,
+    "peak_dbfs": 0.0,
+    "rms_dbfs": -8.97,
+    "crest_db": 8.97,
+    "side_mid_db": -13.6,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -4.62,
+      "bass_60_150": -5.6,
+      "low_mid_150_400": -9.69,
+      "mid_400_1500": -8.0,
+      "presence_1500_4500": -11.9,
+      "bite_4500_8000": -15.61,
+      "air_8000_16000": -13.98
+    },
+    "one_sec_rms_p10_p50_p90": [
+      -22.88,
+      -8.58,
+      -7.89
+    ],
+    "tempo_guess_bpm": 175.8
+  },
+  "current_v2": {
+    "path": "05_FINAL_WAV/plugg_digicore_arranged_v2_vocal_up_24bit_48k.wav",
+    "duration": 95.93,
+    "peak_dbfs": -1.05,
+    "rms_dbfs": -11.49,
+    "crest_db": 10.44,
+    "side_mid_db": -17.59,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -3.19,
+      "bass_60_150": -7.71,
+      "low_mid_150_400": -12.23,
+      "mid_400_1500": -6.35,
+      "presence_1500_4500": -11.78,
+      "bite_4500_8000": -20.54,
+      "air_8000_16000": -23.38
+    },
+    "one_sec_rms_p10_p50_p90": [
+      -26.52,
+      -11.12,
+      -8.93
+    ],
+    "tempo_guess_bpm": 137.2
+  },
+  "v1": {
+    "path": "05_FINAL_WAV/plugg_digicore_mix_master_24bit_48k.wav",
+    "duration": 95.93,
+    "peak_dbfs": -1.05,
+    "rms_dbfs": -9.69,
+    "crest_db": 8.64,
+    "side_mid_db": -17.78,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -1.57,
+      "bass_60_150": -6.56,
+      "low_mid_150_400": -14.13,
+      "mid_400_1500": -13.2,
+      "presence_1500_4500": -19.81,
+      "bite_4500_8000": -23.74,
+      "air_8000_16000": -26.3
+    },
+    "one_sec_rms_p10_p50_p90": [
+      -24.13,
+      -8.68,
+      -7.63
+    ],
+    "tempo_guess_bpm": 92.2
+  }
+}

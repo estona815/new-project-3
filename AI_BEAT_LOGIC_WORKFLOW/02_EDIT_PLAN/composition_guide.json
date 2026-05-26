@@ -1,0 +1,520 @@
+{
+  "schema_version": "composition_guide.v1",
+  "status": "COMPOSITION_GUIDE_READY",
+  "complete": false,
+  "style_target": "system_seoul_adjacent",
+  "rough_request": "팝펑크 느낌 빼고, 바탕화면 음악샘플을 중심 motif/response/texture로 써서 전체를 수노처럼 새로 생성된 디지코어/하이퍼팝 곡처럼 재구성. SYSTEM SEOUL/ycs 인접 질감은 broad texture only. 원곡 스테레오는 분위기만 살리고 리드 훅은 새 synth/sample motif가 중심. 랜덤 AI 전환 줄이고 2분 이내 훅 먼저.",
+  "tempo": {
+    "bpm": 133.3,
+    "confidence": "medium",
+    "alternatives": [
+      66.7,
+      133.3
+    ]
+  },
+  "key": {
+    "estimated_key": "A5",
+    "confidence": "medium",
+    "alternatives": [
+      "A5"
+    ]
+  },
+  "composition_strategy": {
+    "main_hook": "sample_motif",
+    "emotional_direction": "playful",
+    "energy_curve": "fast_hook"
+  },
+  "chord_options": [
+    {
+      "name": "early hook lift",
+      "key": "A5",
+      "roman": [
+        "i",
+        "VI",
+        "III",
+        "VII"
+      ],
+      "section_use": "hook or first drop",
+      "feel": "playful digital motif color without exact sample or melody copy",
+      "confidence": "medium",
+      "notes": [
+        "Keep the top note simple enough for a bright hook melody.",
+        "Use as an original harmonic sketch, not a copied reference progression."
+      ]
+    },
+    {
+      "name": "two-chord pressure",
+      "key": "A5",
+      "roman": [
+        "i",
+        "VII"
+      ],
+      "section_use": "verse, intro, or rap pocket",
+      "feel": "loopable tension that leaves space for vocal and 808",
+      "confidence": "medium",
+      "notes": [
+        "Move energy with rhythm, counterline, and drum density instead of adding too many chords.",
+        "Confirm bass root by ear when key confidence is low."
+      ]
+    },
+    {
+      "name": "ambiguous major lift",
+      "key": "A5",
+      "roman": [
+        "VI",
+        "VII",
+        "i",
+        "III"
+      ],
+      "section_use": "pre-hook or post-hook variation",
+      "feel": "minor/major ambiguity for bright melancholic color",
+      "confidence": "medium",
+      "notes": [
+        "Works best when the melody chooses one strong landing note.",
+        "Avoid recreating any known reference melody or exact chord voicing."
+      ]
+    }
+  ],
+  "melody_ideas": [
+    {
+      "idea_id": "melody_01",
+      "role": "main_hook",
+      "source": "sample_motif",
+      "shape": "short bright motif with one memorable landing note",
+      "range_hint": "mid-high lead register; avoid masking lead vocal",
+      "rhythm_hint": "front-load hook within first 15 seconds when short-form is requested",
+      "confidence": "medium",
+      "safety_notes": [
+        "Create a new melody contour; do not copy exact reference melodies.",
+        "If vocal_to_code exists, use phrase placement cues only, not exact transcription."
+      ]
+    },
+    {
+      "idea_id": "melody_02",
+      "role": "counter_melody",
+      "source": "new_melody_guide",
+      "shape": "two-note answer phrase after the vocal or hook call",
+      "range_hint": "above bass and below vocal air band",
+      "rhythm_hint": "answer on empty beats, not over every vocal syllable",
+      "confidence": "medium",
+      "safety_notes": [
+        "Confirm against the estimated key by ear before committing."
+      ]
+    }
+  ],
+  "bassline_ideas": [
+    {
+      "idea_id": "bassline_01",
+      "role": "main_808",
+      "pattern": "root-weighted hits with short fills into hook downbeats",
+      "root_reference": [
+        "i",
+        "VI",
+        "III",
+        "VII"
+      ],
+      "tone": "simple_sub_bass",
+      "mono_center_required": true,
+      "upper_harmonics_width": "allowed only above the sub range",
+      "confidence": "medium",
+      "safety_notes": [
+        "Do not copy exact reference basslines or kick/bass samples.",
+        "Stereo-only source does not prove true kick/bass replacement."
+      ]
+    },
+    {
+      "idea_id": "bassline_02",
+      "role": "contrast",
+      "pattern": "half-time held root notes for verse or breakdown contrast",
+      "root_reference": [
+        "i",
+        "VI"
+      ],
+      "tone": "clean_sub_with_light_saturation",
+      "mono_center_required": true,
+      "upper_harmonics_width": "narrow unless hook needs extra lift",
+      "confidence": "medium",
+      "safety_notes": [
+        "Confirm roots by ear when key confidence is low."
+      ]
+    }
+  ],
+  "drum_ideas": [
+    {
+      "idea_id": "drum_01",
+      "role": "main_pattern",
+      "feel": "playful",
+      "kick": "short punchy kick supporting 808 without clipping",
+      "snare_clap": "bright tight center hit",
+      "hats": "game-like rhythmic color as high-level trait only",
+      "variation": "micro-fill before hook",
+      "confidence": "medium",
+      "safety_notes": [
+        "Do not copy exact reference drum patterns.",
+        "Avoid random AI glitch and cheap rage clipping."
+      ]
+    },
+    {
+      "idea_id": "drum_02",
+      "role": "breakdown_pattern",
+      "feel": "space_for_vocal_or_topline",
+      "kick": "reduced kick density",
+      "snare_clap": "alternate clap or rim layer",
+      "hats": "half-density or filtered hats",
+      "variation": "remove one drum lane before hook return",
+      "confidence": "medium",
+      "safety_notes": [
+        "Use as programming guidance only; no true drum rewrite is claimed."
+      ]
+    }
+  ],
+  "topline_ideas": [
+    {
+      "idea_id": "topline_01",
+      "role": "lead_vocal_hook",
+      "placement": "hook early; keep vocal/melody forward",
+      "phrase_hints": [
+        {
+          "phrase_id": "vocal_phrase_001",
+          "start": 9.92,
+          "end": 10.88,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_002",
+          "start": 11.44,
+          "end": 12.08,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_003",
+          "start": 12.4,
+          "end": 13.44,
+          "placement_use": "support hook placement; not exact transcription"
+        },
+        {
+          "phrase_id": "vocal_phrase_004",
+          "start": 13.68,
+          "end": 14.64,
+          "placement_use": "support hook placement; not exact transcription"
+        }
+      ],
+      "tuning_direction": "natural_clear",
+      "lyric_policy": "write original lyrics only; do not copy reference lyrics",
+      "confidence": "medium",
+      "safety_notes": [
+        "Use vocal_to_code for placement and contour hints only.",
+        "No living artist vocal identity clone is allowed."
+      ]
+    },
+    {
+      "idea_id": "topline_02",
+      "role": "adlib_or_answer",
+      "placement": "after hook call or bar-end gaps",
+      "phrase_hints": [],
+      "tuning_direction": "wider adlibs if style calls for hyperpop; keep sub and lead center clean",
+      "lyric_policy": "new adlib text or non-lexical texture only",
+      "confidence": "medium",
+      "safety_notes": [
+        "Do not imitate a living artist voice or exact delivery."
+      ]
+    }
+  ],
+  "child_guides": {
+    "chord_progression_guide": {
+      "schema_version": "chord_progression_guide.v1",
+      "status": "COMPOSITION_GUIDE_READY",
+      "style_target": "system_seoul_adjacent",
+      "key": {
+        "estimated_key": "A5",
+        "confidence": "medium",
+        "alternatives": [
+          "A5"
+        ]
+      },
+      "options": [
+        {
+          "name": "early hook lift",
+          "key": "A5",
+          "roman": [
+            "i",
+            "VI",
+            "III",
+            "VII"
+          ],
+          "section_use": "hook or first drop",
+          "feel": "playful digital motif color without exact sample or melody copy",
+          "confidence": "medium",
+          "notes": [
+            "Keep the top note simple enough for a bright hook melody.",
+            "Use as an original harmonic sketch, not a copied reference progression."
+          ]
+        },
+        {
+          "name": "two-chord pressure",
+          "key": "A5",
+          "roman": [
+            "i",
+            "VII"
+          ],
+          "section_use": "verse, intro, or rap pocket",
+          "feel": "loopable tension that leaves space for vocal and 808",
+          "confidence": "medium",
+          "notes": [
+            "Move energy with rhythm, counterline, and drum density instead of adding too many chords.",
+            "Confirm bass root by ear when key confidence is low."
+          ]
+        },
+        {
+          "name": "ambiguous major lift",
+          "key": "A5",
+          "roman": [
+            "VI",
+            "VII",
+            "i",
+            "III"
+          ],
+          "section_use": "pre-hook or post-hook variation",
+          "feel": "minor/major ambiguity for bright melancholic color",
+          "confidence": "medium",
+          "notes": [
+            "Works best when the melody chooses one strong landing note.",
+            "Avoid recreating any known reference melody or exact chord voicing."
+          ]
+        }
+      ],
+      "safety": {
+        "exact_reference_copy": false,
+        "notes": [
+          "Do not copy exact reference progressions, melodies, voicings, or recordings.",
+          "Chord options are original guide sketches and must be confirmed by ear."
+        ]
+      },
+      "limitations": [
+        "Key and harmony are guide-only when source confidence is low.",
+        "No MIDI import or Logic execution is claimed by this guide."
+      ]
+    },
+    "melody_idea_guide": {
+      "schema_version": "melody_idea_guide.v1",
+      "status": "COMPOSITION_GUIDE_READY",
+      "ideas": [
+        {
+          "idea_id": "melody_01",
+          "role": "main_hook",
+          "source": "sample_motif",
+          "shape": "short bright motif with one memorable landing note",
+          "range_hint": "mid-high lead register; avoid masking lead vocal",
+          "rhythm_hint": "front-load hook within first 15 seconds when short-form is requested",
+          "confidence": "medium",
+          "safety_notes": [
+            "Create a new melody contour; do not copy exact reference melodies.",
+            "If vocal_to_code exists, use phrase placement cues only, not exact transcription."
+          ]
+        },
+        {
+          "idea_id": "melody_02",
+          "role": "counter_melody",
+          "source": "new_melody_guide",
+          "shape": "two-note answer phrase after the vocal or hook call",
+          "range_hint": "above bass and below vocal air band",
+          "rhythm_hint": "answer on empty beats, not over every vocal syllable",
+          "confidence": "medium",
+          "safety_notes": [
+            "Confirm against the estimated key by ear before committing."
+          ]
+        }
+      ],
+      "safety": {
+        "exact_reference_copy": false,
+        "notes": [
+          "Melody ideas are original guide shapes; no exact melody, lyric, or recording copying is allowed."
+        ]
+      },
+      "limitations": [
+        "Guide-only melody plan; no generated audio or MIDI import is claimed."
+      ]
+    },
+    "bassline_guide": {
+      "schema_version": "bassline_guide.v1",
+      "status": "COMPOSITION_GUIDE_READY",
+      "ideas": [
+        {
+          "idea_id": "bassline_01",
+          "role": "main_808",
+          "pattern": "root-weighted hits with short fills into hook downbeats",
+          "root_reference": [
+            "i",
+            "VI",
+            "III",
+            "VII"
+          ],
+          "tone": "simple_sub_bass",
+          "mono_center_required": true,
+          "upper_harmonics_width": "allowed only above the sub range",
+          "confidence": "medium",
+          "safety_notes": [
+            "Do not copy exact reference basslines or kick/bass samples.",
+            "Stereo-only source does not prove true kick/bass replacement."
+          ]
+        },
+        {
+          "idea_id": "bassline_02",
+          "role": "contrast",
+          "pattern": "half-time held root notes for verse or breakdown contrast",
+          "root_reference": [
+            "i",
+            "VI"
+          ],
+          "tone": "clean_sub_with_light_saturation",
+          "mono_center_required": true,
+          "upper_harmonics_width": "narrow unless hook needs extra lift",
+          "confidence": "medium",
+          "safety_notes": [
+            "Confirm roots by ear when key confidence is low."
+          ]
+        }
+      ],
+      "safety": {
+        "exact_reference_copy": false,
+        "notes": [
+          "Bassline ideas are original MIDI/programming guidance only.",
+          "Sub, kick, and 808 should remain mono-centered unless a verified stem/manual mix supports otherwise."
+        ]
+      },
+      "limitations": [
+        "No true 808 replacement, stem separation, or rendered bass audio is claimed."
+      ]
+    },
+    "drum_pattern_guide": {
+      "schema_version": "drum_pattern_guide.v1",
+      "status": "COMPOSITION_GUIDE_READY",
+      "ideas": [
+        {
+          "idea_id": "drum_01",
+          "role": "main_pattern",
+          "feel": "playful",
+          "kick": "short punchy kick supporting 808 without clipping",
+          "snare_clap": "bright tight center hit",
+          "hats": "game-like rhythmic color as high-level trait only",
+          "variation": "micro-fill before hook",
+          "confidence": "medium",
+          "safety_notes": [
+            "Do not copy exact reference drum patterns.",
+            "Avoid random AI glitch and cheap rage clipping."
+          ]
+        },
+        {
+          "idea_id": "drum_02",
+          "role": "breakdown_pattern",
+          "feel": "space_for_vocal_or_topline",
+          "kick": "reduced kick density",
+          "snare_clap": "alternate clap or rim layer",
+          "hats": "half-density or filtered hats",
+          "variation": "remove one drum lane before hook return",
+          "confidence": "medium",
+          "safety_notes": [
+            "Use as programming guidance only; no true drum rewrite is claimed."
+          ]
+        }
+      ],
+      "safety": {
+        "exact_reference_copy": false,
+        "notes": [
+          "Drum ideas are high-level programming guidance and must not clone exact reference patterns."
+        ]
+      },
+      "limitations": [
+        "No rendered drums, Logic import, or stereo-to-stem drum rewrite is claimed."
+      ]
+    },
+    "topline_guide": {
+      "schema_version": "topline_guide.v1",
+      "status": "COMPOSITION_GUIDE_READY",
+      "ideas": [
+        {
+          "idea_id": "topline_01",
+          "role": "lead_vocal_hook",
+          "placement": "hook early; keep vocal/melody forward",
+          "phrase_hints": [
+            {
+              "phrase_id": "vocal_phrase_001",
+              "start": 9.92,
+              "end": 10.88,
+              "placement_use": "support hook placement; not exact transcription"
+            },
+            {
+              "phrase_id": "vocal_phrase_002",
+              "start": 11.44,
+              "end": 12.08,
+              "placement_use": "support hook placement; not exact transcription"
+            },
+            {
+              "phrase_id": "vocal_phrase_003",
+              "start": 12.4,
+              "end": 13.44,
+              "placement_use": "support hook placement; not exact transcription"
+            },
+            {
+              "phrase_id": "vocal_phrase_004",
+              "start": 13.68,
+              "end": 14.64,
+              "placement_use": "support hook placement; not exact transcription"
+            }
+          ],
+          "tuning_direction": "natural_clear",
+          "lyric_policy": "write original lyrics only; do not copy reference lyrics",
+          "confidence": "medium",
+          "safety_notes": [
+            "Use vocal_to_code for placement and contour hints only.",
+            "No living artist vocal identity clone is allowed."
+          ]
+        },
+        {
+          "idea_id": "topline_02",
+          "role": "adlib_or_answer",
+          "placement": "after hook call or bar-end gaps",
+          "phrase_hints": [],
+          "tuning_direction": "wider adlibs if style calls for hyperpop; keep sub and lead center clean",
+          "lyric_policy": "new adlib text or non-lexical texture only",
+          "confidence": "medium",
+          "safety_notes": [
+            "Do not imitate a living artist voice or exact delivery."
+          ]
+        }
+      ],
+      "safety": {
+        "voice_clone": false,
+        "exact_reference_copy": false,
+        "notes": [
+          "Topline guide does not claim exact vocal transcription.",
+          "No voice cloning, lyric copying, or living artist impersonation is allowed."
+        ]
+      },
+      "limitations": [
+        "Guide-only topline planning; no AutoTune, recording, or Logic processing is claimed."
+      ]
+    }
+  },
+  "safety": {
+    "exact_reference_copy": false,
+    "voice_clone": false,
+    "sample_use_allowed": false,
+    "notes": [
+      "Guide-only composition stage; no final WAV, MIDI import, Logic automation, or generated audio is claimed.",
+      "Do not copy exact reference melodies, progressions, basslines, drum patterns, lyrics, samples, or recordings.",
+      "Vocal_to_code supports topline placement only and is not exact transcription.",
+      "Sample/stem ownership is unconfirmed; direct sample use is blocked and traits must be recreated."
+    ]
+  },
+  "manual_logic_required": [
+    "Create MIDI regions manually from these guide notes or use a later verified MIDI export step.",
+    "Confirm key, chord roots, topline placement, and bass/sub interaction by ear.",
+    "Logic import, plugin insertion, automation, and bounce are not claimed until verified."
+  ],
+  "limitations": [
+    "COMPOSITION_GUIDE_READY is not COMPLETE.",
+    "No final WAV is generated by composition autopilot.",
+    "MIDI guide content may be generated later, but Logic import must not be claimed without verification."
+  ]
+}

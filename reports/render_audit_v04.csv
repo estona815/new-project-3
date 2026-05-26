@@ -1,0 +1,4 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+v04_clean,mgmg_mashup_v04_male_main_female_adlibs_clean_24-48.wav,48000,int32,109.6,-2.51,-12.09,9.58,0.944,-15.4,32.486,22.345,8.849,20.835,11.531,2.614,1.339,-9.7,1.5,-1.2,-19.7,-9.6,-8.5
+v04_loud,mgmg_mashup_v04_male_main_female_adlibs_loud_24-48.wav,48000,int32,109.6,-2.17,-10.99,8.82,0.9409,-15.16,31.566,21.733,9.195,21.432,11.965,2.711,1.399,-8.5,1.6,-1.2,-17.6,-8.5,-7.3
+v04_preview_mp3,mgmg_mashup_v04_preview.mp3,48000,float32 decoded_from_mp3,109.6,-1.5,-10.99,9.49,0.9408,-15.16,31.562,21.734,9.196,21.432,11.965,2.712,1.399,-8.5,1.6,-1.1,-17.7,-8.5,-7.3

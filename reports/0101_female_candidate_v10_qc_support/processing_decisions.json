@@ -1,0 +1,727 @@
+{
+  "female_accepted": true,
+  "chosen_candidate": {
+    "label": "candidate_1_0101_Stems",
+    "folder": "/Users/hantaeheuk/Downloads/0101 Stems",
+    "lead_path": "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_female_candidate_v10_qc_support/candidate_sources/candidate_1_0101_Stems/0 Lead Vocals.wav",
+    "lead_dtype": "int16",
+    "lead_duration_s": 139.8,
+    "vocal_best": {
+      "score": 0.6294,
+      "offset_s": -0.32,
+      "overlap_s": 139.44
+    },
+    "instrumental_best": {
+      "score": 0.5186,
+      "offset_s": -0.63,
+      "overlap_s": 139.17
+    },
+    "placement": {
+      "offset_s": -0.32,
+      "dst_start_s": 0.0,
+      "src_start_s": 0.32,
+      "placed_duration_s": 139.441
+    },
+    "mask": {
+      "coverage_pct": 46.63,
+      "events": 35,
+      "accepted_windows": 705,
+      "score_median": 0.366,
+      "score_p75": 0.5056,
+      "abs_lag_median_s": 0.08,
+      "pitch_global_match": 0.5069,
+      "pitch_window_median": 0.5,
+      "rule": "opens only on matching timing windows; pitch check is used where f0 is reliable"
+    },
+    "layer": {
+      "stage": "female_qc_support_layer",
+      "center_gain_db": -15.2,
+      "wide_gain_db": -11.3,
+      "reverb_wet_db": -20.5,
+      "delay_gain_db": -23.0,
+      "sidechain_duck_db": "2.6-3.5",
+      "high_tame": {
+        "low_hz": 5200,
+        "high_hz": 11800,
+        "threshold_db": -55.23,
+        "max_cut_db": 3.6,
+        "mean_gr_db": 0.403,
+        "p95_gr_db": 2.745
+      }
+    },
+    "score": 0.6803,
+    "accepted": true,
+    "decision": "use_as_tucked_qc_support",
+    "processed_clean": "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_female_candidate_v10_qc_support/processed/candidate_1_0101_Stems_clean_aligned.wav",
+    "processed_layer": "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_female_candidate_v10_qc_support/processed/candidate_1_0101_Stems_qc_support_layer.wav",
+    "processing_moves": [
+      {
+        "stage": "female_candidate_highpass",
+        "hz": 150,
+        "label": "candidate_1_0101_Stems"
+      },
+      {
+        "stage": "beep_artifact_suppress",
+        "label": "candidate_1_0101_Stems",
+        "events": 110,
+        "strength": 0.94,
+        "dynamic_tame": {
+          "low_hz": 3600,
+          "high_hz": 12500,
+          "threshold_db": -37.89,
+          "max_cut_db": 3.1,
+          "mean_gr_db": 0.519,
+          "p95_gr_db": 2.913
+        }
+      },
+      {
+        "stage": "sip_breath_suppress",
+        "label": "candidate_1_0101_Stems",
+        "events": 8,
+        "dynamic_tame": {
+          "low_hz": 5600,
+          "high_hz": 11800,
+          "threshold_db": -40.79,
+          "max_cut_db": 3.5,
+          "mean_gr_db": 0.362,
+          "p95_gr_db": 1.987
+        }
+      },
+      {
+        "stage": "spectral_denoise_vocal",
+        "label": "candidate_1_0101_Stems",
+        "reduction": 0.66,
+        "high_reduction": 0.84,
+        "floor": 0.42,
+        "high_floor": 0.28,
+        "noise_frames_per_channel": [
+          1573,
+          1573
+        ],
+        "mean_gain": 0.7371,
+        "mean_high_band_gain": 0.6923
+      },
+      {
+        "stage": "female_candidate_mud_cleanup",
+        "low_hz": 185,
+        "high_hz": 370,
+        "threshold_db": -25.2,
+        "max_cut_db": 1.8,
+        "mean_gr_db": 0.332,
+        "p95_gr_db": 1.8
+      },
+      {
+        "stage": "female_candidate_nasal_plastic_cleanup",
+        "low_hz": 690,
+        "high_hz": 1250,
+        "threshold_db": -30.42,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.328,
+        "p95_gr_db": 1.7
+      },
+      {
+        "stage": "female_candidate_harsh_attack_cleanup",
+        "low_hz": 2450,
+        "high_hz": 4800,
+        "threshold_db": -39.19,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.427,
+        "p95_gr_db": 2.6
+      },
+      {
+        "stage": "female_candidate_de_ess",
+        "low_hz": 5400,
+        "high_hz": 8500,
+        "threshold_db": -50.95,
+        "max_cut_db": 4.1,
+        "mean_gr_db": 0.543,
+        "p95_gr_db": 3.204
+      },
+      {
+        "stage": "female_candidate_metallic_ai_fizz_cleanup",
+        "low_hz": 8500,
+        "high_hz": 13200,
+        "threshold_db": -41.62,
+        "max_cut_db": 3.4,
+        "mean_gr_db": 0.285,
+        "p95_gr_db": 1.594
+      },
+      {
+        "stage": "vocal_level_ride",
+        "label": "candidate_1_0101_Stems",
+        "target_db": -24.4,
+        "active_windows": 4793,
+        "min_gain_db": -5.643,
+        "median_gain_db": -1.077,
+        "max_gain_db": 0.55
+      },
+      {
+        "stage": "female_candidate_final_gain",
+        "target_rms_dbfs": -24.6
+      }
+    ]
+  },
+  "candidate_count": 2,
+  "male_vocal": [
+    {
+      "stage": "male_highpass",
+      "hz": 92
+    },
+    {
+      "stage": "beep_artifact_suppress",
+      "label": "male_lead",
+      "events": 113,
+      "strength": 0.96,
+      "dynamic_tame": {
+        "low_hz": 3600,
+        "high_hz": 12500,
+        "threshold_db": -39.81,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.482,
+        "p95_gr_db": 2.661
+      }
+    },
+    {
+      "stage": "sip_breath_suppress",
+      "label": "male_lead_pre",
+      "events": 12,
+      "dynamic_tame": {
+        "low_hz": 5600,
+        "high_hz": 11800,
+        "threshold_db": -41.37,
+        "max_cut_db": 3.5,
+        "mean_gr_db": 0.322,
+        "p95_gr_db": 1.712
+      }
+    },
+    {
+      "stage": "spectral_denoise_vocal",
+      "label": "male_lead",
+      "reduction": 0.57,
+      "high_reduction": 0.78,
+      "floor": 0.48,
+      "high_floor": 0.34,
+      "noise_frames_per_channel": [
+        1569,
+        1569
+      ],
+      "mean_gain": 0.7421,
+      "mean_high_band_gain": 0.6978
+    },
+    {
+      "type": "hpf",
+      "freq_hz": 92,
+      "slope": "18 dB/oct"
+    },
+    {
+      "low_hz": 180,
+      "high_hz": 350,
+      "threshold_db": -32.81,
+      "max_cut_db": 2.1,
+      "mean_gr_db": 0.362,
+      "p95_gr_db": 2.1,
+      "type": "mud/body dynamic cleanup"
+    },
+    {
+      "low_hz": 700,
+      "high_hz": 1400,
+      "threshold_db": -34.0,
+      "max_cut_db": 1.8,
+      "mean_gr_db": 0.286,
+      "p95_gr_db": 1.8,
+      "type": "nasal/formant soften"
+    },
+    {
+      "low_hz": 2500,
+      "high_hz": 5500,
+      "threshold_db": -39.83,
+      "max_cut_db": 2.8,
+      "mean_gr_db": 0.367,
+      "p95_gr_db": 2.664,
+      "type": "metallic presence soften"
+    },
+    {
+      "low_hz": 5500,
+      "high_hz": 9000,
+      "threshold_db": -46.16,
+      "max_cut_db": 4.3,
+      "mean_gr_db": 0.421,
+      "p95_gr_db": 2.43,
+      "type": "primary de-ess"
+    },
+    {
+      "low_hz": 9000,
+      "high_hz": 12000,
+      "threshold_db": -44.03,
+      "max_cut_db": 1.7,
+      "mean_gr_db": 0.17,
+      "p95_gr_db": 1.329,
+      "type": "secondary glass soften"
+    },
+    {
+      "type": "tube/tape saturation",
+      "drive_db": 2.4,
+      "wet": 0.11
+    },
+    {
+      "type": "gentle vocal compression",
+      "ratio": 2.4,
+      "avg_target_gr_db": "1-3"
+    },
+    {
+      "low_hz": 5600,
+      "high_hz": 9200,
+      "threshold_db": -45.78,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.183,
+      "p95_gr_db": 1.215,
+      "type": "post-saturation de-ess"
+    },
+    {
+      "type": "polish",
+      "presence_db": 0.55,
+      "air_shelf_db": 0.55
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -16.6
+    },
+    {
+      "stage": "male_dynamic_eq_low_mud_ring",
+      "low_hz": 245,
+      "high_hz": 405,
+      "threshold_db": -28.52,
+      "max_cut_db": 2.0,
+      "mean_gr_db": 0.45,
+      "p95_gr_db": 2.0
+    },
+    {
+      "stage": "male_dynamic_eq_box_resonance",
+      "low_hz": 430,
+      "high_hz": 640,
+      "threshold_db": -25.2,
+      "max_cut_db": 1.5,
+      "mean_gr_db": 0.294,
+      "p95_gr_db": 1.5
+    },
+    {
+      "stage": "male_dynamic_eq_nasal_plastic_ring",
+      "low_hz": 690,
+      "high_hz": 960,
+      "threshold_db": -30.36,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.526,
+      "p95_gr_db": 2.2
+    },
+    {
+      "stage": "male_dynamic_eq_formant_honk",
+      "low_hz": 980,
+      "high_hz": 1360,
+      "threshold_db": -34.61,
+      "max_cut_db": 2.0,
+      "mean_gr_db": 0.463,
+      "p95_gr_db": 2.0
+    },
+    {
+      "stage": "male_dynamic_eq_forward_resonance",
+      "low_hz": 1550,
+      "high_hz": 2260,
+      "threshold_db": -30.32,
+      "max_cut_db": 1.2,
+      "mean_gr_db": 0.225,
+      "p95_gr_db": 1.2
+    },
+    {
+      "stage": "male_dynamic_eq_hard_attack_edge",
+      "low_hz": 2820,
+      "high_hz": 3920,
+      "threshold_db": -33.3,
+      "max_cut_db": 2.3,
+      "mean_gr_db": 0.415,
+      "p95_gr_db": 2.3
+    },
+    {
+      "stage": "male_dynamic_eq_scratch_presence",
+      "low_hz": 4100,
+      "high_hz": 5700,
+      "threshold_db": -44.09,
+      "max_cut_db": 2.0,
+      "mean_gr_db": 0.419,
+      "p95_gr_db": 2.0
+    },
+    {
+      "stage": "male_dynamic_eq_sibilance_hash",
+      "low_hz": 6100,
+      "high_hz": 8500,
+      "threshold_db": -40.7,
+      "max_cut_db": 3.8,
+      "mean_gr_db": 0.389,
+      "p95_gr_db": 1.895
+    },
+    {
+      "stage": "male_dynamic_eq_ai_air_fizz",
+      "low_hz": 8800,
+      "high_hz": 12800,
+      "threshold_db": -36.98,
+      "max_cut_db": 3.0,
+      "mean_gr_db": 0.324,
+      "p95_gr_db": 1.651
+    },
+    {
+      "stage": "male_static_finish_eq",
+      "presence_restore_db": 0.45,
+      "air_trim_db": -0.22
+    },
+    {
+      "stage": "sip_breath_suppress",
+      "label": "male_lead_post",
+      "events": 4,
+      "dynamic_tame": {
+        "low_hz": 5600,
+        "high_hz": 11800,
+        "threshold_db": -35.52,
+        "max_cut_db": 3.5,
+        "mean_gr_db": 0.153,
+        "p95_gr_db": 0.849
+      }
+    },
+    {
+      "stage": "strong_tune_density_layer",
+      "wet_layer_rms_dbfs": -23.2,
+      "mix_gain_db": -4.8,
+      "retune_feel": "fast hard-tune edge via compressed parallel harmonic-density layer",
+      "note": "DSP tune-feel layer; no Antares or paid pitch plugin used",
+      "bite_tame": {
+        "low_hz": 2700,
+        "high_hz": 5900,
+        "threshold_db": -40.38,
+        "max_cut_db": 2.0,
+        "mean_gr_db": 0.305,
+        "p95_gr_db": 2.0
+      },
+      "hiss_tame": {
+        "low_hz": 5900,
+        "high_hz": 9800,
+        "threshold_db": -73.39,
+        "max_cut_db": 2.9,
+        "mean_gr_db": 0.398,
+        "p95_gr_db": 2.9
+      }
+    },
+    {
+      "stage": "post_tune_edge_control",
+      "low_hz": 2650,
+      "high_hz": 6200,
+      "threshold_db": -28.26,
+      "max_cut_db": 1.35,
+      "mean_gr_db": 0.163,
+      "p95_gr_db": 1.278
+    },
+    {
+      "stage": "post_tune_air_control",
+      "low_hz": 6200,
+      "high_hz": 11800,
+      "threshold_db": -35.58,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.103,
+      "p95_gr_db": 0.629
+    },
+    {
+      "stage": "vocal_level_ride",
+      "label": "male_lead",
+      "target_db": -22.6,
+      "active_windows": 4974,
+      "min_gain_db": -7.339,
+      "median_gain_db": -4.456,
+      "max_gain_db": 0.215
+    },
+    {
+      "stage": "male_final_gain_stage",
+      "target_rms_dbfs": -20.35,
+      "female_tracks": "muted/excluded"
+    }
+  ],
+  "instrumental": {
+    "drums": [
+      {
+        "stage": "no_gate_drum_cleanup",
+        "note": "no noise gate to avoid beat cut"
+      },
+      {
+        "stage": "drum_low_mid_cleanup",
+        "low_hz": 240,
+        "high_hz": 560,
+        "threshold_db": -43.08,
+        "max_cut_db": 0.8,
+        "mean_gr_db": 0.077,
+        "p95_gr_db": 0.8
+      },
+      {
+        "stage": "clean_punch_light_sat",
+        "ratio": 1.25,
+        "sat_drive_db": 0.8
+      },
+      {
+        "stage": "round_kick_support",
+        "detected_onsets": 114,
+        "gain_db": -7.6
+      }
+    ],
+    "bass": [
+      {
+        "type": "bass mud dynamic cleanup",
+        "low_hz": 180,
+        "high_hz": 380,
+        "threshold_db": -39.22,
+        "max_cut_db": 1.6,
+        "mean_gr_db": 0.196,
+        "p95_gr_db": 1.6
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -18.1
+      },
+      {
+        "stage": "clean_bass_no_hard_grit",
+        "drive_db": 1.7,
+        "note": "removed rough clip layer to avoid breakup"
+      },
+      {
+        "stage": "mono_sub_reinforcement",
+        "lowpass_hz": 98,
+        "gain_db": -2.5
+      }
+    ],
+    "melody": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -32.56,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.345,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 1.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.6
+      },
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -44.73,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.18,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 1.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.2
+      },
+      {
+        "stage": "melody_forward_overlay",
+        "rms_target_dbfs": -20.6,
+        "mix_gain_db": 4.2
+      },
+      {
+        "stage": "melody_mud_control",
+        "low_hz": 220,
+        "high_hz": 640,
+        "threshold_db": -31.01,
+        "max_cut_db": 1.5,
+        "mean_gr_db": 0.274,
+        "p95_gr_db": 1.5
+      },
+      {
+        "stage": "melody_nasal_resonance_control",
+        "low_hz": 760,
+        "high_hz": 1280,
+        "threshold_db": -37.14,
+        "max_cut_db": 0.8,
+        "mean_gr_db": 0.152,
+        "p95_gr_db": 0.8
+      },
+      {
+        "stage": "melody_glass_control",
+        "low_hz": 3600,
+        "high_hz": 7800,
+        "threshold_db": -46.36,
+        "max_cut_db": 0.75,
+        "mean_gr_db": 0.113,
+        "p95_gr_db": 0.75
+      }
+    ],
+    "fx": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -64.37,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.115,
+        "p95_gr_db": 1.35
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 0.7
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      },
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -60.0,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.0,
+        "p95_gr_db": 0.0
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 0.7
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      },
+      {
+        "stage": "fx_tucked",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -66.49,
+        "max_cut_db": 1.8,
+        "mean_gr_db": 0.461,
+        "p95_gr_db": 1.8
+      }
+    ],
+    "instrumental": [
+      {
+        "stage": "raw_instrumental_cleanup",
+        "low_hz": 210,
+        "high_hz": 520,
+        "threshold_db": -33.24,
+        "max_cut_db": 1.2,
+        "mean_gr_db": 0.206,
+        "p95_gr_db": 1.2
+      },
+      {
+        "stage": "instrumental_nasal_cleanup",
+        "low_hz": 650,
+        "high_hz": 1180,
+        "threshold_db": -35.73,
+        "max_cut_db": 0.8,
+        "mean_gr_db": 0.135,
+        "p95_gr_db": 0.8
+      }
+    ]
+  },
+  "mix_master": [
+    {
+      "version": "female_qc_support",
+      "stage": "mix_low_mid_resonance",
+      "low_hz": 230,
+      "high_hz": 420,
+      "threshold_db": -33.56,
+      "max_cut_db": 0.8,
+      "mean_gr_db": 0.152,
+      "p95_gr_db": 0.8
+    },
+    {
+      "version": "female_qc_support",
+      "stage": "mix_nasal_resonance",
+      "low_hz": 680,
+      "high_hz": 1120,
+      "threshold_db": -35.89,
+      "max_cut_db": 0.7,
+      "mean_gr_db": 0.137,
+      "p95_gr_db": 0.7
+    },
+    {
+      "version": "female_qc_support",
+      "stage": "mix_presence_spike",
+      "low_hz": 2450,
+      "high_hz": 4200,
+      "threshold_db": -43.61,
+      "max_cut_db": 0.75,
+      "mean_gr_db": 0.15,
+      "p95_gr_db": 0.75
+    },
+    {
+      "version": "female_qc_support",
+      "stage": "mix_sibilance_hash",
+      "low_hz": 5400,
+      "high_hz": 9200,
+      "threshold_db": -51.3,
+      "max_cut_db": 0.95,
+      "mean_gr_db": 0.213,
+      "p95_gr_db": 0.95
+    },
+    {
+      "version": "female_qc_support",
+      "stage": "full_mix_static_finish",
+      "nasal_db": -0.1,
+      "air_trim_db": -0.08
+    },
+    {
+      "version": "male_only_safety",
+      "stage": "mix_low_mid_resonance",
+      "low_hz": 230,
+      "high_hz": 420,
+      "threshold_db": -33.7,
+      "max_cut_db": 0.8,
+      "mean_gr_db": 0.157,
+      "p95_gr_db": 0.8
+    },
+    {
+      "version": "male_only_safety",
+      "stage": "mix_nasal_resonance",
+      "low_hz": 680,
+      "high_hz": 1120,
+      "threshold_db": -35.91,
+      "max_cut_db": 0.7,
+      "mean_gr_db": 0.138,
+      "p95_gr_db": 0.7
+    },
+    {
+      "version": "male_only_safety",
+      "stage": "mix_presence_spike",
+      "low_hz": 2450,
+      "high_hz": 4200,
+      "threshold_db": -43.69,
+      "max_cut_db": 0.75,
+      "mean_gr_db": 0.152,
+      "p95_gr_db": 0.75
+    },
+    {
+      "version": "male_only_safety",
+      "stage": "mix_sibilance_hash",
+      "low_hz": 5400,
+      "high_hz": 9200,
+      "threshold_db": -51.3,
+      "max_cut_db": 0.95,
+      "mean_gr_db": 0.213,
+      "p95_gr_db": 0.95
+    },
+    {
+      "version": "male_only_safety",
+      "stage": "full_mix_static_finish",
+      "nasal_db": -0.1,
+      "air_trim_db": -0.08
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 0 0
+  RIPPLE 0 0
+  RENDER_FILE "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v04_female_instrument_space/badabonjok_eomneun_sarang_v04_female_instrument_space_reaper_print.wav"
+  RENDER_FMT 0 2 48000
+  RENDER_RANGE 1 0 76.040020833333 0 1000
+  SAMPLERATE 48000 1 0
+  TEMPO 84 4 4 0
+  PLAYRATE 1 0 0.25 4
+  MARKER 1 0 "v04: female voice placed as panned delay/reverb instrument layer" 0 0 1 B {00000000-0000-0000-0000-000000000101} 0 2
+  MARKER 2 0 "hard-tune feel and dynamic deharsh EQ applied; MP3-derived female source" 0 0 1 B {00000000-0000-0000-0000-000000000102} 0 2
+  <TRACK
+    NAME "lead_clear"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {21794BA6514B992D7A806E1D18592212}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_lead_clear.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {25145108323D876CAC72DAA886B67BCF}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_lead_clear.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "backing_clean"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {172153D05AF9005D42CCBDF6A6874727}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_backing_clean.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7349081288DB7BB41BB62DB126FABF8A}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_backing_clean.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "drums_v02"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {E4BA0C5DF39D1C95FD1A2DAF7F36EF05}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_drums_v02.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {ACF9640DFDD6B7142A692FF09F628088}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_drums_v02.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "bass_v02"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {30202A503DCA647B4E1DA6EE505F5250}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_bass_v02.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {69BB5D502728BB57C3C679F4E52FCD9D}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_bass_v02.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "synth_v02"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {A8A68C52078B3654E2EA8CEB2231065B}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_synth_v02.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9EA2EEEFA0D2689F38F7E226C0411D0A}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_synth_v02.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "other_v02"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {447AB1508570B48AAD0049236A12406F}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_other_v02.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DBC4AC72E0BA96A9D37819B9841A0653}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_other_v02.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "female_layer_mp3_derived_wide_fx"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {998C90CF7BD5CC03B7F8822A879E1BDA}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "processed_female_layer_mp3_derived_wide_fx.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2D300EDF6D2874F4EE51C2F6463BCF95}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/badabonjok_eomneun_sarang_v04_female_instrument_space/processed_female_layer_mp3_derived_wide_fx.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "PRINT clear vocal master muted reference"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {806BD0ED23FD23C7FD94E9AA494E3067}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "badabonjok_eomneun_sarang_v04_female_instrument_space_MASTER_clear_vocal_48k16.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {760935429DDC9383B62E61B6E3F8C07D}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v04_female_instrument_space/badabonjok_eomneun_sarang_v04_female_instrument_space_MASTER_clear_vocal_48k16.wav"
+      >
+    >
+  >
+  <TRACK
+    NAME "PRINT female layer mix muted reference"
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    ISBUS 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 -1 -1 -1
+    NCHAN 2
+    TRACKID {D040F369845B252BC0BB2B218CE974D4}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 76.040020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      NAME "badabonjok_eomneun_sarang_v04_female_instrument_space_MASTER_female_layer_mix_48k16.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BEEDA92D17BFB2A76A35EE5EC8C1D166}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v04_female_instrument_space/badabonjok_eomneun_sarang_v04_female_instrument_space_MASTER_female_layer_mix_48k16.wav"
+      >
+    >
+  >
+>

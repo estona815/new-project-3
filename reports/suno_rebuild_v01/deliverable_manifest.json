@@ -1,0 +1,29 @@
+{
+  "slug": "suno_rebuild_v01",
+  "status": "complete",
+  "policy": {
+    "suno_reference_only": true,
+    "active_final_mix_uses_suno_audio": false,
+    "no_antares": true,
+    "no_new_dependencies_installed": true
+  },
+  "paths": {
+    "full_mix": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/rebuilt_full_mix.wav",
+    "mp3": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/rebuilt_full_mix_320.mp3",
+    "drums": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/drums_stem.wav",
+    "bass": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/bass_808_stem.wav",
+    "melody": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/melody_stem.wav",
+    "fx": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/fx_stem.wav",
+    "reaper_sum": "/Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/rebuilt_full_mix_reaper_sum.wav",
+    "rpp": "/Users/hantaeheuk/Documents/New project 3/reaper/suno_rebuild_v01/reaper_project.rpp",
+    "midi_drums": "/Users/hantaeheuk/Documents/New project 3/reaper/suno_rebuild_v01/midi/rebuilt_drums.mid",
+    "midi_bass": "/Users/hantaeheuk/Documents/New project 3/reaper/suno_rebuild_v01/midi/rebuilt_bass_808.mid",
+    "midi_melody": "/Users/hantaeheuk/Documents/New project 3/reaper/suno_rebuild_v01/midi/rebuilt_melody.mid",
+    "midi_fx": "/Users/hantaeheuk/Documents/New project 3/reaper/suno_rebuild_v01/midi/rebuilt_fx.mid"
+  },
+  "reports": {
+    "reference_analysis": "/Users/hantaeheuk/Documents/New project 3/reports/suno_rebuild_v01/reference_analysis.md",
+    "decision_log": "/Users/hantaeheuk/Documents/New project 3/reports/suno_rebuild_v01/rebuild_decision_log.md",
+    "mix_qc": "/Users/hantaeheuk/Documents/New project 3/reports/suno_rebuild_v01/mix_qc_report.md"
+  }
+}

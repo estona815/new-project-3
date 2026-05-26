@@ -1,0 +1,253 @@
+{
+  "generated": "2026-05-24T18:42:42",
+  "project": "/Users/hantaeheuk/Documents/New project 3/reaper/FRESH_MIX_MASTER_PASS_04_SUNO_000000_ALL_INFO.rpp",
+  "suno": {
+    "voice_required": "000000",
+    "voice_confirmed_in_ui": true,
+    "credits": {
+      "generation": 10,
+      "all_detected_stems": 50,
+      "total_this_000000_pass": 60,
+      "observed_balance_after_extract": 9200
+    },
+    "links": [
+      "https://suno.com/song/6da5749b-9e26-49d3-a4cc-0eb738891537",
+      "https://suno.com/song/0ed0460d-42dc-42e9-b29d-33ee30a366d8"
+    ],
+    "zip": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/pass04_000000_voice_male_lead_A_all_detected_stems.zip",
+    "stems_dir": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems",
+    "stem_metrics": {
+      "0 Lead Vocals.wav": {
+        "path": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems/0 Lead Vocals.wav",
+        "exists": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_s": 39.92,
+        "sample_peak_dbfs": -4.47,
+        "rms_dbfs": -22.66,
+        "crest_db": 18.19,
+        "clip_sample_count": 0,
+        "approx_lufs_i": -19.8,
+        "approx_lra_lu": 3.89,
+        "stereo_correlation": 0.979
+      },
+      "1 Drums.wav": {
+        "path": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems/1 Drums.wav",
+        "exists": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_s": 39.92,
+        "sample_peak_dbfs": -3.97,
+        "rms_dbfs": -21.72,
+        "crest_db": 17.75,
+        "clip_sample_count": 0,
+        "approx_lufs_i": -18.24,
+        "approx_lra_lu": 8.13,
+        "stereo_correlation": 1.0
+      },
+      "2 Bass.wav": {
+        "path": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems/2 Bass.wav",
+        "exists": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_s": 39.92,
+        "sample_peak_dbfs": -5.76,
+        "rms_dbfs": -21.02,
+        "crest_db": 15.26,
+        "clip_sample_count": 0,
+        "approx_lufs_i": -18.66,
+        "approx_lra_lu": 65.62,
+        "stereo_correlation": 0.944
+      },
+      "3 Synth.wav": {
+        "path": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems/3 Synth.wav",
+        "exists": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_s": 39.92,
+        "sample_peak_dbfs": -10.01,
+        "rms_dbfs": -30.96,
+        "crest_db": 20.95,
+        "clip_sample_count": 0,
+        "approx_lufs_i": -25.13,
+        "approx_lra_lu": 39.39,
+        "stereo_correlation": 0.59
+      },
+      "4 Other.wav": {
+        "path": "/Users/hantaeheuk/Documents/New project 3/downloads/suno_pass04/stems/4 Other.wav",
+        "exists": true,
+        "sample_rate": 48000,
+        "channels": 2,
+        "duration_s": 39.92,
+        "sample_peak_dbfs": -2.72,
+        "rms_dbfs": -42.17,
+        "crest_db": 39.45,
+        "clip_sample_count": 0,
+        "approx_lufs_i": -22.25,
+        "approx_lra_lu": 82.93,
+        "stereo_correlation": 0.997
+      }
+    },
+    "active_use": "imported muted as candidate/reference; not active in render",
+    "reason_muted": "Candidate is 39.92s and the Chrome input path stripped Korean lyrics, so it is not a full aligned production replacement."
+  },
+  "metrics": {
+    "pass02_master": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS02_MASTER_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -1.0,
+      "rms_dbfs": -11.91,
+      "crest_db": 10.91,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -9.07,
+      "approx_lra_lu": 2.9,
+      "stereo_correlation": 0.992
+    },
+    "pass03_master": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS03_MASTER_BEAT_FORWARD_LOUD_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -1.0,
+      "rms_dbfs": -7.95,
+      "crest_db": 6.95,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -5.64,
+      "approx_lra_lu": 3.32,
+      "stereo_correlation": 0.99
+    },
+    "pass04_premaster": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS04_PREMASTER_ALL_INFO_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -13.19,
+      "rms_dbfs": -28.94,
+      "crest_db": 15.75,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -26.91,
+      "approx_lra_lu": 4.55,
+      "stereo_correlation": 0.99
+    },
+    "pass04_master": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS04_MASTER_ALL_INFO_LOUD_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -1.0,
+      "rms_dbfs": -8.53,
+      "crest_db": 7.53,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -6.49,
+      "approx_lra_lu": 4.37,
+      "stereo_correlation": 0.99
+    },
+    "technical_reference": {
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 185.706,
+      "sample_peak_dbfs": -0.1,
+      "rms_dbfs": -7.63,
+      "crest_db": 7.53,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -6.11,
+      "approx_lra_lu": 1.59,
+      "stereo_correlation": 0.938
+    }
+  },
+  "band_profiles": {
+    "pass03_master": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS03_MASTER_BEAT_FORWARD_LOUD_24bit_48k.wav",
+      "sub_20_120_db": -12.5,
+      "mud_120_350_db": -15.26,
+      "vocal_presence_1k_5k_db": -15.47,
+      "sibilance_5k5_9k_db": -30.89,
+      "hat_air_7k_11k_db": -30.01,
+      "side_150_400_db": -38.51,
+      "mid_150_400_db": -17.4
+    },
+    "pass04_master": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS04_MASTER_ALL_INFO_LOUD_24bit_48k.wav",
+      "sub_20_120_db": -12.19,
+      "mud_120_350_db": -15.9,
+      "vocal_presence_1k_5k_db": -16.81,
+      "sibilance_5k5_9k_db": -32.11,
+      "hat_air_7k_11k_db": -31.3,
+      "side_150_400_db": -38.81,
+      "mid_150_400_db": -18.11
+    },
+    "technical_reference": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "sub_20_120_db": -10.53,
+      "mud_120_350_db": -14.96,
+      "vocal_presence_1k_5k_db": -17.65,
+      "sibilance_5k5_9k_db": -26.51,
+      "hat_air_7k_11k_db": -27.26,
+      "side_150_400_db": -28.11,
+      "mid_150_400_db": -15.3
+    }
+  },
+  "validation": {
+    "failures": [],
+    "notes": [
+      "Session validation passed: routing, mute states, and item positions match pass 01 rules.",
+      "PASS04 validation passed: references, quarantine, guide MIDI, and Suno 000000 candidate tracks are muted."
+    ]
+  },
+  "track_levels": {
+    "12_Vocals": {
+      "index": 43,
+      "volume_db": -6.7,
+      "pan": 0.0,
+      "mute": false
+    },
+    "MALE_LEAD_VOX_BUS": {
+      "index": 4,
+      "volume_db": -0.4,
+      "pan": 0.0,
+      "mute": false
+    },
+    "MUSIC_BUS": {
+      "index": 3,
+      "volume_db": 1.9,
+      "pan": 0.0,
+      "mute": false
+    },
+    "DRUM_BUS": {
+      "index": 1,
+      "volume_db": -0.4,
+      "pan": 0.0,
+      "mute": false
+    },
+    "BASS_808_BUS": {
+      "index": 2,
+      "volume_db": -1.0,
+      "pan": 0.0,
+      "mute": false
+    },
+    "VOCAL_FX_BUS": {
+      "index": 6,
+      "volume_db": -9.5,
+      "pan": 0.0,
+      "mute": false
+    },
+    "SUNO_000000_CANDIDATE_BUS": {
+      "index": 48,
+      "volume_db": -18.0,
+      "pan": 0.0,
+      "mute": true
+    }
+  },
+  "mp3_note": "MP3 preview skipped: ffmpeg/lame unavailable in this shell; WAV master is the verified render."
+}

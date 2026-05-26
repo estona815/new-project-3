@@ -1,0 +1,31 @@
+{
+  "slug": "badabonjok_eomneun_sarang_v01_anime_rock",
+  "sample_rate": 48000,
+  "duration_seconds": 76.04,
+  "estimated_bpm": 84,
+  "rough_key_center": "C#",
+  "source_mix_metrics": {
+    "peak_dbfs": -2.31,
+    "rms_dbfs": -17.22,
+    "rough_integrated_lufs": -17.97,
+    "stereo_correlation": 0.974
+  },
+  "premaster_metrics": {
+    "peak_dbfs": -7.6,
+    "rms_dbfs": -16.84,
+    "rough_integrated_lufs": -17.56,
+    "stereo_correlation": 0.986
+  },
+  "master_metrics": {
+    "peak_dbfs": -1.0,
+    "rms_dbfs": -7.72,
+    "rough_integrated_lufs": -8.44,
+    "stereo_correlation": 0.985
+  },
+  "rendered_files": [
+    "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_MASTER_48k16.wav",
+    "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_premaster_48k16.wav",
+    "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_instrumental_mix_48k16.wav",
+    "/Users/hantaeheuk/Documents/New project 3/renders/badabonjok_eomneun_sarang_v01_anime_rock/badabonjok_eomneun_sarang_v01_anime_rock_vocal_reference_48k16.wav"
+  ]
+}

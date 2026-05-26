@@ -34,7 +34,7 @@ python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
 - Confirm final WAV duration is readable.
 - Confirm `06_QC_REPORT/qc_report.md` exists.
 - Confirm `06_QC_REPORT/final_verification.json` exists.
-- Confirm the CLI printed `COMPLETE` only after verification passed.
+- Confirm the CLI printed `COMPLETE` only from the centralized completion gate after final WAV, requested format, audio metrics, QC report, and any required master QC report passed.
 - Confirm QC report does not claim Logic processing if fallback was used.
 
 ## Clean Before Commit
@@ -48,4 +48,3 @@ python3 AI_BEAT_LOGIC_WORKFLOW/src/main.py \
 - Merge feature branches into `dev` in order.
 - Run tests again on `dev`.
 - Merge `dev` to `main` only after tests and dummy pipeline pass.
-

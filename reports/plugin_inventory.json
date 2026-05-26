@@ -1,5 +1,5 @@
 {
-  "schema_version": "reaper_plugin_inventory.v0.5",
+  "schema_version": "reaper_plugin_inventory.fresh_v0.6",
   "plugin_map": "/Users/hantaeheuk/Documents/New project 3/config/plugin_map.yaml",
   "scan_sources": [
     "/Library/Audio/Plug-Ins/Components/ASAF Channels Renderer.component",

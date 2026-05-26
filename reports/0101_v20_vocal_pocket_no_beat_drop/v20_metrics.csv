@@ -1,0 +1,9 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+raw_vocal_reference,0101_vocal_raw.wav,48000,float32,139.441,-5.82,-24.46,18.64,1.0,-46.2,0.019,15.134,26.275,37.954,14.911,3.935,1.772,-19.9,4.3,-5.8,-70.4,-20.0,-17.2
+v18_reference,0101_FINAL_v18_endpoint_throw_female_up.wav,48000,int32,139.441,-1.18,-12.8,11.62,0.9118,-13.36,19.807,15.922,22.771,26.443,14.424,0.377,0.255,-10.0,2.5,-1.2,-30.4,-9.9,-8.9
+v20_male_redesigned_stem,processed_male_vocal_v20_redesigned_stem.wav,48000,float32,139.441,-1.75,-21.78,20.03,0.9998,-40.58,0.001,10.436,27.843,33.47,27.615,0.392,0.243,-17.0,2.3,-1.7,-78.8,-17.0,-15.8
+v20_female_plus1_more_stem,processed_female_layer_v20_side_plus1db_more_stem.wav,48000,float32,139.441,-3.0,-23.95,20.95,0.4408,-4.0,0.0,0.016,24.981,40.611,34.105,0.201,0.086,-17.6,8.2,-3.0,-79.6,-19.5,-15.2
+v20_endpoint_throw_fx_stem,endpoint_throw_fx_v20_stem.wav,48000,float32,139.441,-31.02,-62.93,31.91,0.6525,-6.76,0.001,17.418,15.728,22.338,44.071,0.236,0.207,-46.5,6.8,-31.0,-79.9,-53.9,-50.4
+v20_instrumental_pocket_no_broadband_duck_stem,instrumental_pocket_v20_no_broadband_duck_stem.wav,48000,float32,139.441,-1.82,-22.12,20.29,0.8353,-10.46,28.891,20.597,19.632,26.381,3.476,0.643,0.38,-19.8,6.1,-1.8,-44.4,-20.4,-16.3
+v20_final_wav,0101_FINAL_v20_vocal_pocket_no_beat_drop.wav,48000,int32,139.441,-1.17,-12.68,11.51,0.8792,-11.92,26.16,18.081,18.846,26.857,9.3,0.465,0.291,-10.3,2.2,-1.2,-29.6,-10.2,-9.0
+v20_final_mp3,0101_FINAL_v20_vocal_pocket_no_beat_drop_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.08,-12.68,11.6,0.8792,-11.92,26.159,18.08,18.846,26.857,9.301,0.465,0.292,-10.3,2.2,-1.1,-29.6,-10.2,-9.0

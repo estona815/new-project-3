@@ -10,11 +10,14 @@ from audio_analysis import ANALYSIS_JSON, WORKING_WAV, read_wav_float
 from config import load_defaults
 from export_audio import ffmpeg_path, run_command, verify_wav, write_float_wav
 from ffmpeg_filters import build_filter_chain
+from humanization_rubric import render_style_match_qc
+from mix_master_autopilot import build_mix_master_plan
 from paths import PROJECT_ROOT
 
 
 FALLBACK_OUTPUT = PROJECT_ROOT / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
 PROCESSING_LOG = PROJECT_ROOT / "04_PROCESSED_AUDIO" / "processing_log.md"
+REFERENCE_PROFILE = PROJECT_ROOT / "08_REFERENCE_MATCH" / "reference_target_profile.json"
 
 
 @dataclass(frozen=True)
@@ -29,6 +32,12 @@ class FallbackDecision:
 def load_analysis(path: Path = ANALYSIS_JSON) -> dict[str, Any]:
     if not path.exists():
         return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_reference_profile(path: Path = REFERENCE_PROFILE) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
     return json.loads(path.read_text(encoding="utf-8"))
 
 
@@ -154,9 +163,25 @@ def unique_backup_path(output_path: Path) -> Path:
     return candidate
 
 
-def write_processing_log(path: Path, decision: FallbackDecision, notes: list[str], verification: dict[str, Any], command: list[str] | None) -> None:
+def write_processing_log(
+    path: Path,
+    decision: FallbackDecision,
+    notes: list[str],
+    verification: dict[str, Any],
+    command: list[str] | None,
+    reference_profile: dict[str, Any] | None = None,
+) -> None:
     command_text = " ".join(command) if command else "No ffmpeg command used."
     note_text = "\n".join(f"- {note}" for note in notes)
+    reference_text = ""
+    if reference_profile:
+        reference_text = (
+            "\n## Reference Target Handling\n\n"
+            "- Reference-inspired goals can guide broad low-end, transient, EQ, and arrangement decisions.\n"
+            "- Stereo fallback cannot replace drum patterns, rewrite MIDI, or layer exact kick/snare/hat parts.\n"
+            "- Manual Logic drum replacement or layering is required for real Love Blur-style drum programming changes.\n\n"
+            f"{render_style_match_qc(reference_profile, stereo_only=True)}\n"
+        )
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         "# Fallback Processing Log\n\n"
@@ -169,6 +194,7 @@ def write_processing_log(path: Path, decision: FallbackDecision, notes: list[str
         f"- reason: {decision.reason}\n\n"
         "## Gain / Fade / Filter Decisions\n\n"
         f"{note_text}\n\n"
+        f"{reference_text}"
         "## Limitations\n\n"
         "- Cannot truly rewrite arrangement in separate stems.\n"
         "- Cannot manually remove random FX without section edits.\n"
@@ -195,7 +221,13 @@ def run_fallback_processing(
     if not input_path.exists():
         raise FileNotFoundError(f"Fallback input missing: {input_path}")
     analysis = load_analysis(analysis_path)
+    reference_profile = load_reference_profile()
     resolved_options = options or load_defaults()
+    mix_plan = build_mix_master_plan(
+        input_mode=resolved_options.get("mode", "instrumental_beat"),
+        style_target=resolved_options.get("arrangement_genre", "commercial_digicore_hyperpop"),
+        master_target_mode=resolved_options.get("master_loudness", "master_ready_headroom"),
+    )
     decision = choose_section(analysis, resolved_options)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     if output_path.exists():
@@ -209,10 +241,12 @@ def run_fallback_processing(
         notes.append(f"ffmpeg path not used: {error}")
 
     verification = verify_wav(output_path)
+    verification["status"] = "FALLBACK_AUDIO_EXPORTED_UNVERIFIED"
+    verification["verified"] = False
     if verification["peak_dbfs"] > -0.1:
         raise ValueError("Fallback output peak is too close to clipping.")
-    write_processing_log(log_path, decision, notes, verification, command)
-    return {"decision": decision, "verification": verification, "notes": notes, "command": command}
+    write_processing_log(log_path, decision, notes, verification, command, reference_profile)
+    return {"decision": decision, "verification": verification, "notes": notes, "command": command, "mix_master_plan": mix_plan}
 
 
 def main() -> int:

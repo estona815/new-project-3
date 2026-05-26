@@ -1,7 +1,159 @@
 {
   "label": "technical_reference",
-  "source": "/mnt/data/Estona,Nib-Lovee_MASTER_24-48.wav.zip",
-  "available": false,
-  "note": "missing: /mnt/data/Estona,Nib-Lovee_MASTER_24-48.wav.zip",
-  "classification": "technical_mix_reference"
+  "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+  "resolved_audio": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+  "available": true,
+  "note": "direct audio",
+  "classification": "technical_mix_reference",
+  "format": {
+    "sample_rate": 48000,
+    "duration_s": 185.706,
+    "codec": "wav",
+    "bit_depth": "int32"
+  },
+  "metrics": {
+    "peak_dbfs": -0.1,
+    "oversampled_peak_proxy_dbfs": 1.06,
+    "rms_dbfs": -7.63,
+    "lufs_like_proxy_db": -10.09,
+    "crest_db": 7.53,
+    "clipping_count": 0,
+    "spectral_band_rms_dbfs": {
+      "sub_20_60": -12.96,
+      "bass_60_120": -13.83,
+      "low_mid_120_400": -14.19,
+      "mid_400_1500": -15.4,
+      "presence_1500_5000": -19.26,
+      "harsh_5000_9000": -25.49,
+      "air_9000_16000": -27.77
+    },
+    "side_mid_db": -14.92,
+    "mono_compatibility": {
+      "mono_level_delta_db": -0.14,
+      "left_right_correlation": 0.9376
+    },
+    "harshness_score_db": -6.23,
+    "sibilance_score_db": -18.11,
+    "rms_window_p10_dbfs": -9.03,
+    "rms_window_median_dbfs": -7.67,
+    "rms_window_p90_dbfs": -6.92,
+    "rms_window_movement_db": 2.11,
+    "spectral_centroid_hz": 4122.0,
+    "low_end_concentration_db": -2.56,
+    "high_frequency_harshness_db": -17.72,
+    "air_band_db": -20.0
+  },
+  "qc_issue_count": 11,
+  "qc_issues": [
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "clipping_risk",
+      "timestamp": 0.0,
+      "severity": "critical",
+      "likely_cause": "rendered source is too close to digital full scale",
+      "suggested_action": "do not use this as a production stem without gain staging or re-export",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "over_compression_low_loudness_range",
+      "timestamp": 0.0,
+      "severity": "medium",
+      "likely_cause": "Suno/fullmix-like limiting or flattened dynamics",
+      "suggested_action": "treat as reference only or rebuild from WAV stems with conservative levels",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "local_dropout_or_abrupt_cut",
+      "timestamp": 1.18,
+      "severity": "medium",
+      "likely_cause": "hard splice, sudden gate, or generated stem boundary artifact",
+      "suggested_action": "send the related stem to ARTIFACT_QUARANTINE and review the edit point",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "local_dropout_or_abrupt_cut",
+      "timestamp": 108.76,
+      "severity": "medium",
+      "likely_cause": "hard splice, sudden gate, or generated stem boundary artifact",
+      "suggested_action": "send the related stem to ARTIFACT_QUARANTINE and review the edit point",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "local_dropout_or_abrupt_cut",
+      "timestamp": 185.2,
+      "severity": "high",
+      "likely_cause": "hard splice, sudden gate, or generated stem boundary artifact",
+      "suggested_action": "send the related stem to ARTIFACT_QUARANTINE and review the edit point",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 1.04,
+      "severity": "medium",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 1.12,
+      "severity": "high",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 3.12,
+      "severity": "medium",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 44.72,
+      "severity": "medium",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 83.12,
+      "severity": "medium",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    },
+    {
+      "source": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "issue_type": "sudden_energy_spike",
+      "timestamp": 134.32,
+      "severity": "medium",
+      "likely_cause": "random transition impact, glitch burst, or unbalanced section entry",
+      "suggested_action": "lower/trim FX or quarantine the transient source before arranging",
+      "quarantine_related_stem": false,
+      "reaper_marker": false
+    }
+  ]
 }

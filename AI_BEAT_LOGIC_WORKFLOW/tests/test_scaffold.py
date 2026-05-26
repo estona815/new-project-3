@@ -5,6 +5,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -13,7 +14,7 @@ sys.path.insert(0, str(SRC_DIR))
 
 from config import load_defaults
 from paths import REQUIRED_DIRECTORIES, ensure_folder_structure
-from user_options import parse_bool, validate_input_path
+from user_options import options_from_questionnaire, parse_bool, validate_input_path
 
 
 class ScaffoldTests(unittest.TestCase):
@@ -25,6 +26,8 @@ class ScaffoldTests(unittest.TestCase):
         self.assertEqual(defaults["drum_808"], "strong_controlled")
         self.assertEqual(defaults["export_format"], "wav24_48k")
         self.assertIs(defaults["save_logic_project"], True)
+        self.assertEqual(defaults["mode"], "instrumental_beat")
+        self.assertEqual(defaults["vocal_style"], "polished")
 
     def test_folder_structure_is_created(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -51,11 +54,66 @@ class ScaffoldTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0)
         self.assertIn("--interactive", result.stdout)
+        self.assertIn("--workflow", result.stdout)
+        self.assertIn("--rough-request", result.stdout)
+        self.assertIn("--release-ready", result.stdout)
+        self.assertIn("--target-deliverable", result.stdout)
+        self.assertIn("--release-profile", result.stdout)
+        self.assertIn("--metadata-title", result.stdout)
+        self.assertIn("--owned-samples", result.stdout)
+        self.assertIn("--rescue-mode", result.stdout)
+        self.assertIn("--generate-lead", result.stdout)
+        self.assertIn("--demote-vocal-texture", result.stdout)
+        self.assertIn("--target-length", result.stdout)
+        self.assertIn("--style-cluster", result.stdout)
+
+    def test_interactive_questionnaire_writes_creative_brief(self) -> None:
+        defaults = load_defaults()
+        answers = iter(
+            [
+                "vocal + beat",
+                "/tmp/main.wav",
+                "/tmp/beat.wav",
+                "/tmp/vocal.wav",
+                "",
+                "",
+                "",
+                "bright emotional digicore",
+                "",
+                "false",
+                "false",
+                "under_2min",
+                "bright emotional digicore",
+                "lead vocal clarity",
+                "muddy 808, harsh sibilance",
+                "rap upfront",
+                "hard but controlled",
+                "",
+                "master-ready headroom",
+                "WAV 24-bit 48kHz",
+                "false",
+            ]
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            project_root = Path(tmp) / "AI_BEAT_LOGIC_WORKFLOW"
+            with mock.patch("builtins.input", side_effect=lambda _prompt: next(answers)):
+                options = options_from_questionnaire(defaults, project_root=project_root)
+
+            brief_json = project_root / "02_EDIT_PLAN" / "creative_brief.json"
+            brief_md = project_root / "02_EDIT_PLAN" / "creative_brief.md"
+            self.assertTrue(brief_json.exists())
+            self.assertTrue(brief_md.exists())
+            self.assertEqual(options.mode, "vocal_plus_beat")
+            self.assertEqual(options.creative_brief["priority"], "lead vocal clarity")
+            self.assertIn("bright emotional digicore", brief_md.read_text(encoding="utf-8"))
 
     def test_dummy_input_command_gives_clean_error(self) -> None:
         error_path = PROJECT_ROOT / "01_ANALYSIS" / "conversion_error.md"
+        capabilities_path = PROJECT_ROOT / "01_ANALYSIS" / "dependency_capabilities.json"
         if error_path.exists():
             error_path.unlink()
+        if capabilities_path.exists():
+            capabilities_path.unlink()
         result = subprocess.run(
             ["python3", str(PROJECT_ROOT / "src" / "main.py"), "--input", "dummy.wav"],
             check=False,
@@ -67,6 +125,8 @@ class ScaffoldTests(unittest.TestCase):
         self.assertIn("No converted working WAV is being claimed", result.stdout)
         self.assertTrue(error_path.exists())
         error_path.unlink()
+        if capabilities_path.exists():
+            capabilities_path.unlink()
 
 
 if __name__ == "__main__":

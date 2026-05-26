@@ -1,0 +1,35 @@
+{
+  "schema_version": "fresh_mix_rebuild.v0.6",
+  "production_rebuild_allowed": true,
+  "source_counts": {
+    "raw_stems": 14,
+    "external_female": 2,
+    "midi": 13,
+    "references": 4,
+    "archives": 4,
+    "media": 32
+  },
+  "qc_issue_count": 208,
+  "qc_marker_count": 83,
+  "paths": {
+    "json": "/Users/hantaeheuk/Documents/New project 3/reports/source_classification.json",
+    "md": "/Users/hantaeheuk/Documents/New project 3/reports/source_classification.md",
+    "build_fresh": "/Users/hantaeheuk/Documents/New project 3/reaper/build_fresh_mix.lua",
+    "apply_fresh": "/Users/hantaeheuk/Documents/New project 3/reaper/apply_fresh_mix_chains.lua",
+    "render_fresh": "/Users/hantaeheuk/Documents/New project 3/reaper/render_fresh_mix.lua",
+    "launch_fresh": "/Users/hantaeheuk/Documents/New project 3/reaper/launch_fresh_mix.sh",
+    "gain_staging_report": "/Users/hantaeheuk/Documents/New project 3/reports/gain_staging_report.md",
+    "vocal_tuning_plan": "/Users/hantaeheuk/Documents/New project 3/reports/vocal_tuning_plan.md",
+    "lead_vocal_chain": "/Users/hantaeheuk/Documents/New project 3/reports/lead_vocal_chain.md",
+    "female_bgv_chain": "/Users/hantaeheuk/Documents/New project 3/reports/female_bgv_chain.md",
+    "instrumental_mix_plan": "/Users/hantaeheuk/Documents/New project 3/reports/instrumental_mix_plan.md",
+    "reverb_delay_plan": "/Users/hantaeheuk/Documents/New project 3/reports/reverb_delay_plan.md",
+    "vocal_fx_settings": "/Users/hantaeheuk/Documents/New project 3/reports/vocal_fx_settings.md",
+    "stereo_ms_eq_plan": "/Users/hantaeheuk/Documents/New project 3/reports/stereo_ms_eq_plan.md",
+    "mix_master_plan": "/Users/hantaeheuk/Documents/New project 3/reports/mix_master_plan.md",
+    "master_settings": "/Users/hantaeheuk/Documents/New project 3/reports/master_settings.md",
+    "render_report": "/Users/hantaeheuk/Documents/New project 3/reports/render_report.md",
+    "reference_notes": "/Users/hantaeheuk/Documents/New project 3/renders/FRESH_REFERENCE_MATCH_NOTES.md",
+    "fresh_mix_rebuild_report": "/Users/hantaeheuk/Documents/New project 3/reports/fresh_mix_rebuild_report.md"
+  }
+}

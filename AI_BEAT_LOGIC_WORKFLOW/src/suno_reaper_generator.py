@@ -76,21 +76,21 @@ def category_track_defaults(category: str, female_index: int = 0) -> dict[str, o
     if category in {REFERENCE_ONLY, TECHNICAL_MIX_REFERENCE, PROBLEM_REFERENCE}:
         return {"vol_db": -18.0, "pan": 0.0, "mute": True, "notes": "reference muted by default"}
     if category == MALE_LEAD_VOCAL:
-        return {"vol_db": -5.5, "pan": 0.0, "mute": False, "notes": "center male lead vocal"}
+        return {"vol_db": -6.0, "pan": 0.0, "mute": False, "notes": "fresh center male lead vocal"}
     if category == FEMALE_BGV:
         pan = -0.4 if female_index % 2 == 0 else 0.4
         side = "L" if pan < 0 else "R"
-        return {"vol_db": -18.0, "pan": pan, "mute": False, "notes": f"female BGV {side}, low support"}
+        return {"vol_db": -21.0, "pan": pan, "mute": False, "notes": f"female BGV {side}, low support below male lead"}
     if category == DRUMS:
-        return {"vol_db": -8.0, "pan": 0.0, "mute": False, "notes": "punchy but conservative drums"}
+        return {"vol_db": -10.0, "pan": 0.0, "mute": False, "notes": "fresh conservative drums with headroom"}
     if category == BASS_OR_808:
-        return {"vol_db": -9.0, "pan": 0.0, "mute": False, "notes": "mono center bass/808"}
+        return {"vol_db": -10.5, "pan": 0.0, "mute": False, "notes": "mono center bass/808 with headroom"}
     if category == MUSIC_OR_SYNTH:
-        return {"vol_db": -11.5, "pan": 0.0, "mute": False, "notes": "supportive controlled stereo music"}
+        return {"vol_db": -13.0, "pan": 0.0, "mute": False, "notes": "supportive controlled stereo music"}
     if category == FX:
-        return {"vol_db": -16.0, "pan": 0.0, "mute": False, "notes": "fx below musical elements"}
+        return {"vol_db": -20.0, "pan": 0.0, "mute": False, "notes": "fx below musical elements"}
     if category == GUIDE_MIDI:
-        return {"vol_db": -18.0, "pan": 0.0, "mute": False, "notes": "guide MIDI only, no final-truth claim"}
+        return {"vol_db": -18.0, "pan": 0.0, "mute": True, "notes": "guide MIDI placeholder muted, no final-truth claim"}
     return {"vol_db": -24.0, "pan": 0.0, "mute": True, "notes": "artifact quarantine muted by default"}
 
 
@@ -188,6 +188,9 @@ def render_reaper_lua(
     *,
     bpm: int = 180,
     plugin_inventory: dict[str, object] | None = None,
+    harness_version: str = "v0.5",
+    project_save_path: str | Path | None = None,
+    undo_label: str = "Import Suno stems as commercial-production source layout",
 ) -> str:
     markers = markers or []
     bus_entries = "\n".join(f'  "{bus}",' for bus in BUSES)
@@ -206,8 +209,19 @@ def render_reaper_lua(
     delay = _selected_plugin(plugin_inventory, "delay", "ReaDelay")
     limiter_fx = _selected_plugin(plugin_inventory, "limiter", "ReaLimit")
     meter = _selected_plugin(plugin_inventory, "loudness_meter", "JS: Loudness Meter Peak/RMS/LUFS")
+    save_block = ""
+    if project_save_path is not None:
+        save_block = f'''
+local project_save_path = "{lua_escape(str(Path(project_save_path).resolve()))}"
+if reaper.Main_SaveProjectEx then
+  pcall(function()
+    reaper.Main_SaveProjectEx(0, project_save_path, 0)
+  end)
+end
+'''
     return f'''-- Auto-generated local import for cleaned Suno Studio stems and guide MIDI.
--- Harness v0.5: Suno is treated as idea/stem/MIDI source material, not a finished master.
+-- Harness {lua_escape(harness_version)}: fresh zero-state rebuild from raw Suno Studio WAV stems and guide MIDI.
+-- MP3/master/fullmix/reference files are muted analysis references only.
 local bpm = {int(bpm)}
 local buses = {{
 {bus_entries}
@@ -246,6 +260,14 @@ local function safe_add_fx(track, name, label)
   return index
 end
 
+local function log_step(message)
+  local f = io.open("/tmp/codex_fresh_reaper/build_fresh_mix.log", "a")
+  if f then
+    f:write(os.date("%Y-%m-%d %H:%M:%S"), " ", tostring(message), "\\n")
+    f:close()
+  end
+end
+
 local function add_fx(track, category)
   if category == "male_lead_vocal" then
     safe_add_fx(track, fx.surgical_eq, "lead_cleanup_eq")
@@ -278,14 +300,24 @@ local function add_fx(track, category)
   end
 end
 
+log_step("build script start")
 reaper.Undo_BeginBlock()
-reaper.Main_OnCommand(40023, 0)
+log_step("undo begin")
+if reaper.CountTracks and reaper.DeleteTrack then
+  for track_index = reaper.CountTracks(0) - 1, 0, -1 do
+    local tr = reaper.GetTrack(0, track_index)
+    if tr then reaper.DeleteTrack(tr) end
+  end
+end
+log_step("existing tracks cleared")
 if reaper.SetTempoTimeSigMarker then
   reaper.SetTempoTimeSigMarker(0, -1, 0, -1, -1, bpm, 4, 4, false)
 end
+log_step("tempo set")
 
 local bus_tracks = {{}}
 for i, bus_name in ipairs(buses) do
+  log_step("create bus " .. tostring(bus_name))
   reaper.InsertTrackAtIndex(i - 1, true)
   local tr = reaper.GetTrack(0, i - 1)
   reaper.GetSetMediaTrackInfo_String(tr, "P_NAME", bus_name, true)
@@ -297,6 +329,8 @@ end
 for _, bus_name in ipairs(buses) do
   reaper.SetMediaTrackInfo_Value(bus_tracks[bus_name], "B_MAINSEND", 0)
 end
+reaper.SetMediaTrackInfo_Value(bus_tracks["REF_BUS"], "B_MAINSEND", 1)
+reaper.SetMediaTrackInfo_Value(bus_tracks["PRINT_MASTER_BUS"], "B_MAINSEND", 1)
 for _, bus_name in ipairs(musical_buses) do
   reaper.CreateTrackSend(bus_tracks[bus_name], bus_tracks["MIX_BUS"])
 end
@@ -308,6 +342,7 @@ reaper.CreateTrackSend(bus_tracks["MIX_BUS"], bus_tracks["MASTER_PREMIX_BUS"])
 reaper.CreateTrackSend(bus_tracks["MASTER_PREMIX_BUS"], bus_tracks["PRINT_MASTER_BUS"])
 reaper.SetMediaTrackInfo_Value(bus_tracks["REF_BUS"], "B_MUTE", 1)
 reaper.SetMediaTrackInfo_Value(bus_tracks["ARTIFACT_QUARANTINE_BUS"], "B_MUTE", 1)
+log_step("bus routing complete")
 safe_add_fx(bus_tracks["VOCAL_PLATE_SEND"], fx.reverb_plate, "vocal_plate_send_predelay_20_35ms_decay_0_8_1_6s")
 safe_add_fx(bus_tracks["VOCAL_DELAY_SEND"], fx.delay, "vocal_delay_send_dotted_eighth_or_quarter_filtered_ducked")
 safe_add_fx(bus_tracks["SHORT_ROOM_SEND"], fx.reverb_room, "short_room_send_low_level_glue")
@@ -319,6 +354,7 @@ safe_add_fx(bus_tracks["PRINT_MASTER_BUS"], fx.loudness_meter, "print_master_lou
 
 local start_index = #buses
 for i, entry in ipairs(media) do
+  log_step("create media track " .. tostring(i) .. " " .. tostring(entry.name) .. " category=" .. tostring(entry.category))
   reaper.InsertTrackAtIndex(start_index + i - 1, true)
   local tr = reaper.GetTrack(0, start_index + i - 1)
   reaper.GetSetMediaTrackInfo_String(tr, "P_NAME", entry.name, true)
@@ -326,8 +362,24 @@ for i, entry in ipairs(media) do
   reaper.SetMediaTrackInfo_Value(tr, "D_PAN", entry.pan)
   reaper.SetMediaTrackInfo_Value(tr, "B_MAINSEND", 0)
   if entry.mute then reaper.SetMediaTrackInfo_Value(tr, "B_MUTE", 1) end
-  reaper.SetOnlyTrackSelected(tr)
-  reaper.InsertMedia(entry.path, 0)
+  if entry.category == "guide_midi" then
+    reaper.GetSetMediaTrackInfo_String(tr, "P_EXT:guide_midi_path", entry.path, true)
+    reaper.GetSetMediaTrackInfo_String(tr, "P_EXT:guide_midi_note", "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts.", true)
+    log_step("guide MIDI placeholder only " .. tostring(entry.path))
+  else
+    reaper.SetOnlyTrackSelected(tr)
+    if reaper.SetEditCurPos then reaper.SetEditCurPos(0.0, false, false) end
+    log_step("insert media start " .. tostring(entry.path))
+    reaper.InsertMedia(entry.path, 0)
+    if reaper.CountSelectedMediaItems and reaper.GetSelectedMediaItem and reaper.SetMediaItemInfo_Value then
+      local selected_count = reaper.CountSelectedMediaItems(0)
+      for selected_index = 0, selected_count - 1 do
+        local item = reaper.GetSelectedMediaItem(0, selected_index)
+        if item then reaper.SetMediaItemInfo_Value(item, "D_POSITION", 0.0) end
+      end
+    end
+    log_step("insert media done " .. tostring(entry.path))
+  end
   if bus_tracks[entry.bus] then
     reaper.CreateTrackSend(tr, bus_tracks[entry.bus])
   else
@@ -352,9 +404,13 @@ reaper.AddProjectMarker(0, false, 28.0, 28.0, "28s short-form checkpoint", -1)
 for _, marker in ipairs(qc_markers) do
   reaper.AddProjectMarker(0, false, marker.time, marker.time, marker.name, -1)
 end
+log_step("markers added")
 
 reaper.UpdateArrange()
-reaper.Undo_EndBlock("Import Suno stems as commercial-production source layout", -1)
+{save_block.rstrip()}
+log_step("project save attempted")
+reaper.Undo_EndBlock("{lua_escape(undo_label)}", -1)
+log_step("build script done")
 '''
 
 

@@ -1,0 +1,54 @@
+desc:Codex MS Melody Tuck
+//tags: mid-side eq melody tuck width
+//author: Codex
+
+slider1:1650<300,7000,1>Upper Split (Hz)
+slider2:-0.35<-3,3,0.1>Mid Upper Gain (dB)
+slider3:0.85<-3,3,0.1>Side Upper Gain (dB)
+slider4:330<120,900,1>Low-Mid Split (Hz)
+slider5:-0.25<-3,3,0.1>Mid Low-Mid Gain (dB)
+slider6:1<0.5,1.8,0.01>Side Width
+slider7:0<-12,12,0.1>Output Trim (dB)
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@init
+ext_tail_size = -1;
+db2lin = 0.1151292546497023;
+mid_hi_lp = side_hi_lp = mid_lm_lp = 0;
+
+@slider
+upper_freq = min(max(slider1, 80), srate * 0.45);
+lowmid_freq = min(max(slider4, 80), srate * 0.45);
+upper_coef = exp(-2 * $pi * upper_freq / srate);
+lowmid_coef = exp(-2 * $pi * lowmid_freq / srate);
+mid_hi_gain = exp(slider2 * db2lin);
+side_hi_gain = exp(slider3 * db2lin);
+mid_lowmid_gain = exp(slider5 * db2lin);
+width = slider6;
+out_gain = exp(slider7 * db2lin);
+
+@sample
+l = spl0;
+r = spl1;
+mid = (l + r) * 0.5;
+side = (l - r) * 0.5;
+
+mid_hi_lp = upper_coef * mid_hi_lp + (1 - upper_coef) * mid;
+side_hi_lp = upper_coef * side_hi_lp + (1 - upper_coef) * side;
+mid_lm_lp = lowmid_coef * mid_lm_lp + (1 - lowmid_coef) * mid;
+
+mid_hi = mid - mid_hi_lp;
+side_hi = side - side_hi_lp;
+mid_low = mid_lm_lp;
+
+mid += mid_hi * (mid_hi_gain - 1);
+side += side_hi * (side_hi_gain - 1);
+mid += mid_low * (mid_lowmid_gain - 1);
+side *= width;
+
+spl0 = (mid + side) * out_gain;
+spl1 = (mid - side) * out_gain;

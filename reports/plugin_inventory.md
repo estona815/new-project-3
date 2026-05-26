@@ -1,6 +1,6 @@
 # Plugin Inventory
 
-- Harness version: v0.5
+- Harness version: fresh_mix_rebuild.v0.6
 - Plugin map: `/Users/hantaeheuk/Documents/New project 3/config/plugin_map.yaml`
 - Safe scan sources inspected: 110
 - Available plugin name hints: 60

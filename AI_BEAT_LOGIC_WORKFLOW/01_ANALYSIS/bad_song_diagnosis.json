@@ -1,0 +1,414 @@
+{
+  "schema_version": "bad_song_diagnosis.v1",
+  "status": "RESCUE_PLAN_READY",
+  "complete": false,
+  "input": {
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/04_PROCESSED_AUDIO/working_input.wav",
+    "mode": "full_song_stereo"
+  },
+  "duration_seconds": 183.76,
+  "MIX_ONLY_NOT_ENOUGH": false,
+  "decision": "MIX_REPAIR_CAN_FOLLOW_RESCUE_PLAN",
+  "required_routes": [
+    "VOCAL_TEXTURE_CLEANUP_REQUIRED"
+  ],
+  "basic_metrics": {
+    "duration_seconds": 183.76,
+    "sample_rate": 48000,
+    "bit_depth": 32,
+    "channels": 2,
+    "peak_dbfs": 0.0,
+    "rms_dbfs": -8.52,
+    "clipping_count": 5669,
+    "side_mid_db": -6.85,
+    "low_side_mid_db": -13.87
+  },
+  "tempo": {
+    "bpm_candidates": [
+      {
+        "bpm": 75.0,
+        "confidence": "low"
+      },
+      {
+        "bpm": 150.0,
+        "confidence": "low"
+      }
+    ],
+    "confidence": "low",
+    "reason": "ambiguous onset intervals / possible half-time/double-time"
+  },
+  "musical_identity": {
+    "lead_melody_presence": 4,
+    "hook_identity": 4,
+    "motif_repetition_quality": 4,
+    "call_response_quality": 5,
+    "score": 4.25,
+    "diagnosis": "present"
+  },
+  "arrangement": {
+    "section_clarity": 5,
+    "energy_curve": 5,
+    "intro_strength": 2,
+    "transition_intentionality": 4,
+    "variation_every_4_8_bars": 2,
+    "score": 3.6,
+    "diagnosis": "coherent"
+  },
+  "vocal_texture": {
+    "weird_vocal_texture_risk": "high",
+    "vocal_chop_as_unwanted_lead": false,
+    "pitch_instability": "low",
+    "phrasing_confusion": "medium",
+    "candidate_regions": [
+      {
+        "start": 8.0,
+        "end": 10.0,
+        "confidence": "medium",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 10.0,
+        "end": 12.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 12.0,
+        "end": 14.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 14.0,
+        "end": 16.0,
+        "confidence": "medium",
+        "reason": "modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 16.0,
+        "end": 18.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 18.0,
+        "end": 20.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 20.0,
+        "end": 22.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 22.0,
+        "end": 24.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 24.0,
+        "end": 26.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 26.0,
+        "end": 28.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 28.0,
+        "end": 30.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 30.0,
+        "end": 32.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 32.0,
+        "end": 34.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 34.0,
+        "end": 36.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 36.0,
+        "end": 38.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      },
+      {
+        "start": 38.0,
+        "end": 40.0,
+        "confidence": "high",
+        "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+      }
+    ]
+  },
+  "mix": {
+    "low_end_balance": "excessive",
+    "stereo_width": "too_wide",
+    "harshness_risk": "high",
+    "overcompressed_risk": "medium"
+  },
+  "rescue_decision": {
+    "mix_only_not_enough": false,
+    "lead_melody_required": false,
+    "hook_identity_required": false,
+    "arrangement_rebuild_required": false,
+    "vocal_texture_cleanup_required": true,
+    "sample_motif_rebuild_required": false,
+    "manual_logic_recommended": false
+  },
+  "flags": {
+    "no_clear_lead_melody": false,
+    "no_hook_identity": false,
+    "no_arrangement_structure": false,
+    "weird_or_random_vocal_textures": true,
+    "sections_repeat_without_intention": false,
+    "ai_glitches_transitions_dominate": false,
+    "generated_audio_feel": false
+  },
+  "scores": {
+    "lead_melody_score": 4.0,
+    "hook_identity_score": 4.0,
+    "arrangement_structure_score": 3.6,
+    "vocal_texture_cleanliness_score": 1.0,
+    "sample_synth_motif_score": 4.0,
+    "ai_artifact_risk_score": 0.0
+  },
+  "ai_randomness": {
+    "randomness_risk": "low",
+    "randomness_score": 0.0,
+    "random_risers": [],
+    "glitch_bursts_not_tied_to_sections": [],
+    "sudden_texture_swaps": [],
+    "overly_long_static_regions": [],
+    "no_call_response": false,
+    "section_boundaries": [
+      2.0,
+      14.0,
+      18.0,
+      120.0,
+      134.0,
+      178.0,
+      180.0
+    ],
+    "limitations": [
+      "AI randomness detection is heuristic and should be confirmed by listening."
+    ]
+  },
+  "stereo_claim_guard": {
+    "stem_level_remix_claimed": false,
+    "vocal_removal_claimed": false,
+    "kick_replacement_claimed": false,
+    "drum_rewrite_claimed": false,
+    "plugin_insertion_claimed": false,
+    "logic_automation_success_claimed": false
+  },
+  "analysis_details": {
+    "lead_melody": {
+      "lead_melody_presence": 4,
+      "spectral_prominence": 0.7032,
+      "repeated_contour": 0.35,
+      "pitch_stability_proxy": 0.6456,
+      "motif_recurrence": 1.0,
+      "score": 4.0,
+      "diagnosis": "present",
+      "contour_points": 365,
+      "limitations": [
+        "Lead melody detection is heuristic and may confuse bright vocal chops, synth leads, or dense mixes."
+      ]
+    },
+    "hook_identity": {
+      "hook_identity": 4,
+      "motif_repetition_quality": 4,
+      "call_response_quality": 5,
+      "energy_melody_peak": 1,
+      "score": 4.0,
+      "diagnosis": "present",
+      "motif_return_score": 0.8212,
+      "energy_peak_clarity": 0.1134,
+      "contour_strength": 0.9459,
+      "hook_candidates": [
+        {
+          "start": 144.0,
+          "end": 148.0,
+          "energy": 0.402719,
+          "contour_strength": 0.5296
+        },
+        {
+          "start": 164.0,
+          "end": 168.0,
+          "energy": 0.396931,
+          "contour_strength": 0.5592
+        },
+        {
+          "start": 44.0,
+          "end": 48.0,
+          "energy": 0.39494,
+          "contour_strength": 0.4995
+        },
+        {
+          "start": 104.0,
+          "end": 108.0,
+          "energy": 0.392446,
+          "contour_strength": 0.6604
+        },
+        {
+          "start": 156.0,
+          "end": 160.0,
+          "energy": 0.390709,
+          "contour_strength": 0.4545
+        }
+      ],
+      "reason": "Repeated 4-second energy/pitch signatures with energy contrast and melodic contour heuristic."
+    },
+    "arrangement": {
+      "section_clarity": 5,
+      "energy_curve": 5,
+      "intro_strength": 2,
+      "transition_intentionality": 4,
+      "variation_every_4_8_bars": 2,
+      "score": 3.6,
+      "diagnosis": "coherent",
+      "sections": [
+        {
+          "name": "intro",
+          "start": 0.0,
+          "end": 2.0,
+          "energy": 1,
+          "confidence": "medium",
+          "reason": "energy/novelty/onset heuristic"
+        },
+        {
+          "name": "bridge",
+          "start": 2.0,
+          "end": 14.0,
+          "energy": 2,
+          "confidence": "medium",
+          "reason": "merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent energy/novelty/onset heuristic"
+        },
+        {
+          "name": "verse",
+          "start": 14.0,
+          "end": 18.0,
+          "energy": 3,
+          "confidence": "medium",
+          "reason": "merged adjacent energy/novelty/onset heuristic"
+        },
+        {
+          "name": "hook",
+          "start": 18.0,
+          "end": 120.0,
+          "energy": 5,
+          "confidence": "medium",
+          "reason": "merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent energy/novelty/onset heuristic"
+        },
+        {
+          "name": "verse",
+          "start": 120.0,
+          "end": 134.0,
+          "energy": 3,
+          "confidence": "medium",
+          "reason": "merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent energy/novelty/onset heuristic"
+        },
+        {
+          "name": "hook",
+          "start": 134.0,
+          "end": 178.0,
+          "energy": 5,
+          "confidence": "medium",
+          "reason": "merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent merged adjacent energy/novelty/onset heuristic"
+        },
+        {
+          "name": "bridge",
+          "start": 178.0,
+          "end": 180.0,
+          "energy": 2,
+          "confidence": "medium",
+          "reason": "energy/novelty/onset heuristic"
+        },
+        {
+          "name": "outro",
+          "start": 180.0,
+          "end": 183.76,
+          "energy": 1,
+          "confidence": "medium",
+          "reason": "merged adjacent energy/novelty/onset heuristic"
+        }
+      ],
+      "repeated_ai_loop_candidates": [
+        {
+          "start": 2.0,
+          "end": 6.0,
+          "confidence": "low",
+          "reason": "adjacent windows have nearly identical energy/onset contour; possible repeated AI loop"
+        },
+        {
+          "start": 4.0,
+          "end": 8.0,
+          "confidence": "low",
+          "reason": "adjacent windows have nearly identical energy/onset contour; possible repeated AI loop"
+        },
+        {
+          "start": 10.0,
+          "end": 14.0,
+          "confidence": "low",
+          "reason": "adjacent windows have nearly identical energy/onset contour; possible repeated AI loop"
+        },
+        {
+          "start": 180.0,
+          "end": 183.76,
+          "confidence": "low",
+          "reason": "adjacent windows have nearly identical energy/onset contour; possible repeated AI loop"
+        }
+      ],
+      "abrupt_transition_candidates": [
+        {
+          "start": 178.0,
+          "end": 180.0,
+          "novelty_score": 0.12206,
+          "confidence": "medium",
+          "reason": "abrupt energy/novelty change; audition transition manually"
+        }
+      ],
+      "weak_intro_candidates": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "confidence": "medium",
+          "reason": "intro energy is much lower than song peak"
+        }
+      ],
+      "dead_outro_candidates": [
+        {
+          "start": 182.0,
+          "end": 183.76,
+          "confidence": "medium",
+          "reason": "outro energy drops near silence/low activity"
+        }
+      ],
+      "energy_contrast": 1.0,
+      "static_region_ratio": 0.2967
+    }
+  },
+  "limitations": [
+    "Stereo-only analysis cannot fully isolate stems.",
+    "Lead melody detection is heuristic.",
+    "A new lead/hook may require synthesis, MIDI, stems, or manual Logic production."
+  ]
+}

@@ -1,0 +1,225 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 v12 clear dry revision. Vocal reverb and delay removed. Female layer muted. Male lead is dry, forward, and clarity-preserving.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 135.000000 4 4 0
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  MASTER_NCH 2 2
+  MARKER 1 0.000000 "intro" 0 0 1 B {8479fb06-94e0-4285-9409-c2da0da6797e} 0 2
+  MARKER 2 14.200000 "verse" 0 0 1 B {c8ca4415-eacb-4a8f-85c9-dd1785a4b0ac} 0 2
+  MARKER 3 42.700000 "hook" 0 0 1 B {db8ddb4c-72c4-49a9-b93c-d2175e46df82} 0 2
+  MARKER 4 72.000000 "section2" 0 0 1 B {f50e7a0c-4a05-47e0-8952-009ce4bcb01d} 0 2
+  MARKER 5 101.300000 "outro" 0 0 1 B {560e5036-54d2-44e0-ad61-15b8b14bec79} 0 2
+  MARKER 6 139.440937 "end" 0 0 1 B {045629a7-c895-4962-a4c3-1d6400fb3c03} 0 2
+  <TRACK {908da95c-5543-4839-8c8e-ec8df4bf9fa0}
+    NAME "V11_PREVIOUS muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {e36d211d-bdf6-4a9f-ac27-bcfdccf057a5}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {5bf043a1-8ece-4ade-bac7-c835a1e3391d}
+      IID 1
+      NAME 0101_FINAL_v11_vocal_front.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {c898a716-24fc-4ca4-8dda-98c885ef6afb}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v11_vocal_front_reference_rerender/0101_FINAL_v11_vocal_front.wav"
+      >
+    >
+  >
+  <TRACK {760147b2-8a0c-454b-8b18-1d07b4f2191a}
+    NAME "MALE_RAW muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {2fce0921-2475-49f6-aa25-5a3170473f55}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {88c2ecd7-a3c2-48ff-aaff-bac2846a9388}
+      IID 2
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {226727aa-9342-4935-9f7a-856438ebce54}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v01/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {6a874fcc-1612-4a41-af9d-1bd89ddac9da}
+    NAME "MALE_VOCAL_V12_CLEAR_DRY muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {c920096d-d5f0-486c-87aa-84a2ee449a9a}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {f5e0ff32-b292-46aa-b799-15e16d0ed181}
+      IID 3
+      NAME processed_male_vocal_v12_clear_dry_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {521a7a0a-7c7b-4ea1-a0b7-1426940fad28}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v12_clear_dry_vocal_rerender/processed_male_vocal_v12_clear_dry_stem.wav"
+      >
+    >
+  >
+  <TRACK {1650f775-959c-4ac6-9531-10db40856e8a}
+    NAME "INSTRUMENTAL_V12_DRY_POCKET muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {ec403f04-fd33-47f1-af86-be0c8576727b}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {761823e4-b531-41b4-a8a7-eb3e74f8d166}
+      IID 4
+      NAME processed_instrumental_v12_dry_pocket_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {06f1e6c1-832b-4a9e-879d-c2f7fdd6a70f}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v12_clear_dry_vocal_rerender/processed_instrumental_v12_dry_pocket_stem.wav"
+      >
+    >
+  >
+  <TRACK {84960b05-75a2-4232-bcbe-4748f27ca956}
+    NAME "MELODY_V12_FORWARD muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {08971e18-a2b4-4e0f-a653-2f82c2ecac12}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {b011d09c-f510-4c63-9ced-6ad5d74f2447}
+      IID 5
+      NAME melody_v12_forward_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {59390acb-e0da-42ed-9420-85c854e1943a}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v12_clear_dry_vocal_rerender/melody_v12_forward_stem.wav"
+      >
+    >
+  >
+  <TRACK {4deff68c-4dec-47d6-b9f3-31d43d4f6b2f}
+    NAME "MIX_BUS V12 CLEAR DRY ACTIVE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {69c8b011-f210-4171-ae1a-87854aaabd63}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {ea343dfa-fa67-457f-9d39-1dd32d9f2c96}
+      IID 6
+      NAME 0101_FINAL_v12_clear_dry_vocal.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {bf654cf4-15ec-4457-89ff-4efc16e6867b}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v12_clear_dry_vocal_rerender/0101_FINAL_v12_clear_dry_vocal.wav"
+      >
+    >
+  >
+  <TRACK {a4cd7b18-5da7-44cd-926e-0120157850c1}
+    NAME "MASTER_MP3_MONITOR muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {fd5c7cb7-21b9-4784-956d-d92694f616f0}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {a24cc288-3561-4246-8d93-ad4ccaf6abf0}
+      IID 7
+      NAME 0101_FINAL_v12_clear_dry_vocal_320.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {dc0269c9-19c9-48b4-b730-e3cb63639926}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v12_clear_dry_vocal_rerender/0101_FINAL_v12_clear_dry_vocal_320.mp3"
+      >
+    >
+  >
+>

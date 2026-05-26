@@ -24,6 +24,14 @@ def load_defaults(config_path: Path = DEFAULT_CONFIG_PATH) -> dict[str, Any]:
         "drum_808",
         "export_format",
         "save_logic_project",
+        "mode",
+        "vocal_style",
+        "mix_intensity",
+        "master_loudness",
+        "autotune",
+        "deess",
+        "reverb_space",
+        "delay_style",
     }
     missing_keys = sorted(required_keys - defaults.keys())
     if missing_keys:
@@ -31,4 +39,3 @@ def load_defaults(config_path: Path = DEFAULT_CONFIG_PATH) -> dict[str, Any]:
         raise ValueError(f"Default config is missing required keys: {joined}")
 
     return defaults
-

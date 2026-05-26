@@ -1,0 +1,6 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+v12_final_wav_clear_dry,0101_FINAL_v12_clear_dry_vocal.wav,48000,int32,139.441,-1.23,-13.26,12.04,0.9124,-13.38,26.704,19.194,19.3,26.392,7.396,0.595,0.419,-11.0,2.8,-1.2,-30.6,-10.9,-9.4
+v12_final_mp3_clear_dry,0101_FINAL_v12_clear_dry_vocal_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.13,-13.26,12.13,0.9123,-13.38,26.702,19.195,19.301,26.392,7.396,0.595,0.419,-11.0,2.8,-1.1,-30.6,-10.9,-9.4
+v12_processed_male_clear_dry,processed_male_vocal_v12_clear_dry_stem.wav,48000,float32,139.441,-1.7,-22.17,20.47,0.9999,-42.69,0.001,13.686,29.965,30.65,24.298,0.813,0.587,-17.5,3.0,-1.7,-67.8,-17.6,-16.0
+raw_male_reference,0101_vocal_raw.wav,48000,float32,139.441,-5.82,-24.46,18.64,1.0,-46.2,0.019,15.134,26.275,37.954,14.911,3.935,1.772,-19.9,4.3,-5.8,-70.4,-20.0,-17.2
+v11_previous_with_reverb,0101_FINAL_v11_vocal_front.wav,48000,int32,139.441,-1.23,-13.2,11.98,0.9101,-13.27,27.138,19.741,19.953,25.473,6.762,0.554,0.378,-11.0,2.9,-1.2,-30.6,-11.0,-9.3

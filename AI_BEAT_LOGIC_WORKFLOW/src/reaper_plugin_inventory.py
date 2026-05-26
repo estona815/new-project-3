@@ -173,7 +173,7 @@ def write_plugin_inventory(project_dir: str | Path) -> dict[str, object]:
     scanned = scan_plugin_names()
     roles = {role: resolve_role(role, scanned["names"]) for role in PLUGIN_ROLES}
     payload = {
-        "schema_version": "reaper_plugin_inventory.v0.5",
+        "schema_version": "reaper_plugin_inventory.fresh_v0.6",
         "plugin_map": str(plugin_map_path),
         "scan_sources": scanned["sources"],
         "available_plugin_name_count": len(scanned["names"]),
@@ -186,7 +186,7 @@ def write_plugin_inventory(project_dir: str | Path) -> dict[str, object]:
     lines = [
         "# Plugin Inventory",
         "",
-        "- Harness version: v0.5",
+        "- Harness version: fresh_mix_rebuild.v0.6",
         f"- Plugin map: `{plugin_map_path}`",
         f"- Safe scan sources inspected: {len(scanned['sources'])}",
         f"- Available plugin name hints: {len(scanned['names'])}",
@@ -206,16 +206,23 @@ def write_plugin_inventory(project_dir: str | Path) -> dict[str, object]:
         "# Manual Plugin Notes",
         "",
         "REAPER Lua will attempt safe plugin insertion by name. If a premium plugin is not present or REAPER uses a different exact name, the project still opens with stock fallbacks/placeholders.",
+        "Detected means available-name hint only; it does not prove the plugin was inserted or used in a verified render.",
         "",
-        "| role | manual instruction |",
-        "| --- | --- |",
+        "| role | status | manual instruction |",
+        "| --- | --- | --- |",
     ]
     for role, item in roles.items():
-        action = (
-            f"Use `{item['selected_plugin']}` if it appears on the track. "
-            f"If missing, insert `{item['fallback']}` and follow the role-specific settings in the mix reports."
-        )
-        manual_lines.append(f"| {role} | {action} |")
+        status = "fallback" if item["uses_fallback"] else "detected candidate"
+        if role == "loudness_meter" and str(item["selected_plugin"]).startswith("ffmpeg"):
+            action = (
+                "REAPER may not insert an ffmpeg meter as an FX. Use a JS loudness meter if present, "
+                "or run ffmpeg ebur128 after rendering and document the measured LUFS/true-peak result."
+            )
+        else:
+            action = (
+                f"Attempt `{item['selected_plugin']}` in REAPER. "
+                f"If the inserted FX is missing or appears as a placeholder, insert `{item['fallback']}` and follow the role-specific settings in the mix reports."
+            )
+        manual_lines.append(f"| {role} | {status} | {action} |")
     (report_dir / "manual_plugin_notes.md").write_text("\n".join(manual_lines) + "\n", encoding="utf-8")
     return payload
-

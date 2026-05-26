@@ -1,0 +1,1296 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779619031 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 0
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE ""
+  RENDER_PATTERN ""
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 0 0 144.89414583333334 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 1 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 120 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0 0
+  SELECTION2 0 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {703601BC-4976-3C48-B484-25CC4F2E499F}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {3E9968E0-C997-8F4F-AD1D-EC4CD2EEC54C}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  MARKER 1 0 START 0 0 1 B {3565668E-BB29-574F-AF51-196CFC229C1A} 0 2
+  MARKER 2 36.22353645833334 "ENERGY CHECK 1" 0 0 1 B {104F3C68-6DBA-AE4E-893D-1A3C68DCD6D6} 0 2
+  MARKER 3 72.44707291666667 "MID BALANCE CHECK" 0 0 1 B {5BB05B4E-3DDE-1246-A6D8-70B4EA16ACF8} 0 2
+  MARKER 4 108.670609375 "FINAL LIFT CHECK" 0 0 1 B {36CBB619-8067-E943-9CD2-86267EBD09DF} 0 2
+  MARKER 5 141.39414583333334 TAIL 0 0 1 B {845A1EF6-D491-CC4F-9E59-121B9D27C234} 0 2
+  <PROJBAY
+  >
+  <TRACK {9191B1C5-2572-C346-A5CC-29E87039893C}
+    NAME REF_BUS_MUTED
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9191B1C5-2572-C346-A5CC-29E87039893C}
+    PERF 0
+    AUXRECV 18 0 0.12589254117942 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 19 0 0.12589254117942 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 20 0 0.12589254117942 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {EB28D736-87CD-F64C-ACBF-C1E7E4A346D1}
+    NAME MALE_MAIN_VOCAL_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.15478198468946 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EB28D736-87CD-F64C-ACBF-C1E7E4A346D1}
+    PERF 0
+    <EXT
+      v22_fx_vocal_bus_harshness_tame "JS: Codex Dynamic EQ Band"
+      v22_fx_vocal_bus_polish "JS: Codex V20 Channel Polish"
+    >
+    AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 6 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        85 180 0.1 330 -0.5 0.85 3850 0.5 0.9 10200 0.3 -22 1.4 24 170 0.3 0.6 0.05 0.97 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {782F2685-3A07-4F46-88C8-8E10CB1EA596}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        4300 1 -35 1.5 8 120 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {DC7CDEF4-2A8E-8946-A0D4-F9C256914502}
+      WAK 0 0
+    >
+  >
+  <TRACK {832487CD-FE49-6349-BE4B-7BF1E90440E4}
+    NAME FEMALE_DOUBLE_LAYER_BUS_LOW
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.21134890398366 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {832487CD-FE49-6349-BE4B-7BF1E90440E4}
+    PERF 0
+    AUXRECV 7 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {3D41F5BA-FECA-A042-BBC7-75EB72F28F13}
+    NAME FULL_STEM_MUSIC_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.99426007395296 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3D41F5BA-FECA-A042-BBC7-75EB72F28F13}
+    PERF 0
+    <EXT
+      v22_fx_music_bus_polish "JS: Codex V20 Channel Polish"
+      v22_fx_music_bus_vocal_space "JS: Codex Dynamic EQ Band"
+      v22_fx_music_high_tail_tamer "JS: Codex Noise Floor Tamer"
+    >
+    AUXRECV 8 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 9 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 10 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 11 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 12 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 13 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 14 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 15 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 16 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 17 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        24 90 -0.1 290 -0.3 0.75 1700 -0.2 0.9 11200 0.3 -21.5 1.15 42 260 0.1 0.3 0.04 1.04 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {FB364D5F-ADB7-B841-BC3D-C558CF77B36E}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        2300 0.9 -35 1.1 16 190 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E5818499-E215-2D45-8333-4CD855A10CAF}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_noise_floor_tamer.jsfx ""
+        9200 -49 1.5 24 320 0.55 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {10E43931-4205-D647-AE92-6A886E99E647}
+      WAK 0 0
+    >
+  >
+  <TRACK {1E3C787C-3E37-0D42-9B2F-DD58AC4345F9}
+    NAME MIX_BUS_MALE_MAIN_COMMERCIAL
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.75857757502918 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1E3C787C-3E37-0D42-9B2F-DD58AC4345F9}
+    PERF 0
+    <EXT
+      v22_fx_mix_bus_low_mid_tighten "JS: Codex Dynamic EQ Band"
+      v22_fx_mix_bus_polish "JS: Codex V20 Channel Polish"
+    >
+    AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        22 95 -0.1 310 -0.3 0.95 3300 0.2 1 11600 0.2 -19 1.2 35 240 0.2 0.4 0.04 1 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {980E7CEC-1951-5D4E-84EE-1441B7434EB8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        310 0.95 -29 1.2 18 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {44540F9E-6EF0-914A-BD5A-3E6FBCF13EC0}
+      WAK 0 0
+    >
+  >
+  <TRACK {B4AFC714-3A69-324C-9248-CE737E953DEF}
+    NAME PRINT_MASTER_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B4AFC714-3A69-324C-9248-CE737E953DEF}
+    PERF 0
+    <EXT
+      v22_fx_event_horizon_final_catch "JS: Event Horizon Limiter/Clipper"
+      v22_fx_loudness_meter "JS: Loudness Meter Peak/RMS/LUFS"
+      v22_fx_master_glue "JS: Codex V20 Master Glue"
+    >
+    AUXRECV 4 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_master_glue.jsfx ""
+        24 -0.3 88 -0.2 320 -0.2 3850 0.2 11200 -17.5 1.2 34 185 1.1 2 -1.2 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {24F25F47-3E67-5447-A6A7-6560475956C5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/eventhorizon2 ""
+        -2.6 -1 320 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E92FFB87-574B-3B4B-BACD-B64B44824FD3}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS analysis/loudness_meter ""
+        4 0 0 2 1 1 1 0 -12 -6 1 0 0 1.8 0 - - - - - - - - - - - - - - -150 -100 -100 -100 -100 -100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1BB9AE77-1B32-ED48-96F5-9586E80E8985}
+      WAK 0 0
+    >
+  >
+  <TRACK {A63936F0-E270-8D48-92F1-533C844A5A02}
+    NAME "MALE MAIN - 12 Vocals"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.49545019080479 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A63936F0-E270-8D48-92F1-533C844A5A02}
+    PERF 0
+    <EXT
+      v22_fx_lead_polish "JS: Codex V20 Channel Polish"
+      v22_fx_lead_presence_tilt "JS: Codex Presence Tilt"
+      v22_fx_lead_sibilance_dynamic_tame "JS: Codex Dynamic EQ Band"
+      v22_fx_lead_stock_comp_marker ReaComp
+      v22_fx_lead_stock_eq_marker ReaEQ
+      v22_fx_lead_subtle_tune_marker ReaTune
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B6522258-348D-1D4D-BE2D-38EC6ED57AE4}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaTune (Cockos)" reatune.vst.dylib 0 "" 1919251566<5653547265746E72656174756E650000> ""
+        bnRlcu5e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAGgAAAABAAAAAAAQAA==
+        AAAAAAAAAAAeAAAAuAEAAAAAAAD/DwAA+gAAADIAAAAyAAAAAAAAAAAAAAAAAAAAAACAQgAAQEEAAAAAAAAgQgEAAAABAAAAAAALAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4D2852A2-66FE-8346-9E31-2A1D154D44AC}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B5851E39-9641-0E42-8C46-E1695A757F89}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        92 150 -0.3 285 -0.8 0.95 3150 1.1 0.9 10800 0.6 -25.5 1.7 14 135 0.6 0.9 0.08 0.98 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {A28BFF33-E5D4-144E-99C7-B21D57F32929}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        6800 1.35 -38.5 2.2 6 85 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C3818603-1FC6-B44F-B1C0-7CA07641DFE6}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_presence_tilt.jsfx ""
+        2500 0.3 0.65 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F90FBA8C-970B-7B4E-BE8B-D61C0EC078AE}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8A7D64A6-7D3D-4547-B664-4BA1C272F0F2}
+      IID 1
+      NAME "12 Vocals.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4C6CC7F5-2483-D94F-9EDB-FD546986D0FF}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/12 Vocals.wav"
+      >
+    >
+  >
+  <TRACK {EB748FF0-4E65-5140-B0B2-8BFA80FAB416}
+    NAME "FEMALE DOUBLE LOW - 11 Backing_Vocals"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12302687708124 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EB748FF0-4E65-5140-B0B2-8BFA80FAB416}
+    PERF 0
+    <EXT
+      v22_fx_female_double_deess_tucked "JS: Codex Dynamic EQ Band"
+      v22_fx_female_double_tucked_polish "JS: Codex V20 Channel Polish"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        185 220 -0.8 520 -1.4 1 3600 -0.4 0.9 8800 -0.9 -29 1.55 20 210 -0.4 0.3 0.04 1.16 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {BE9C5718-46CD-5649-B672-614AB4507661}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        6200 1.2 -43 3 8 120 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {ECB657DF-4383-334A-A5EA-30084297C2A1}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {101D02F1-C23C-7348-A7F3-4FD5FD72E7D8}
+      IID 2
+      NAME "11 Backing_Vocals.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {900EC0A9-5AE2-2142-9FED-61B8981EFAD0}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/11 Backing_Vocals.wav"
+      >
+    >
+  >
+  <TRACK {8A401D4E-4877-8D48-B504-237FEF28AF59}
+    NAME "MUSIC - Woodwinds"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.29174270140012 -0.04 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8A401D4E-4877-8D48-B504-237FEF28AF59}
+    PERF 0
+    <EXT
+      v22_fx_woodwinds_mseq_back_edge "JS: Codex MS Melody Tuck"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_ms_melody_tuck.jsfx ""
+        1700 -0.4 0.8 360 -0.2 1.08 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {697057E4-1F13-4240-A99A-B63031CCE40E}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {352FE4A6-641D-C94E-B625-ACBD17567579}
+      IID 3
+      NAME "1 Woodwinds.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BDF0620D-3095-AC42-9F6B-8E265252E4C0}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/1 Woodwinds.wav"
+      >
+    >
+  >
+  <TRACK {C7C09404-D688-E848-BEDD-53756A00AE39}
+    NAME "MUSIC - Brass"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.27227013080779 0.04 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C7C09404-D688-E848-BEDD-53756A00AE39}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E5C30A8D-EA17-C949-873B-7EEAAD11A089}
+      IID 4
+      NAME "2 Brass.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {972618E1-04E3-734A-97B0-05A5D570D9C8}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/2 Brass.wav"
+      >
+    >
+  >
+  <TRACK {BBE39BF4-59ED-5647-A136-BC1AF8C92F8E}
+    NAME "MUSIC - FX low"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.17782794100389 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BBE39BF4-59ED-5647-A136-BC1AF8C92F8E}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {005C4F81-343D-9441-97B1-39450C49D2C5}
+      IID 5
+      NAME "3 FX.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FA772851-7E12-BE45-87A6-4828BA1392B3}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/3 FX.wav"
+      >
+    >
+  >
+  <TRACK {6EF01E8A-E46B-B740-AA8E-F7C276B45FF4}
+    NAME "MUSIC - Synth"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.38018939632056 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6EF01E8A-E46B-B740-AA8E-F7C276B45FF4}
+    PERF 0
+    <EXT
+      v22_fx_synth_mseq_audible_buried "JS: Codex MS Melody Tuck"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_ms_melody_tuck.jsfx ""
+        1650 -0.3 1.1 330 -0.2 1.12 0.1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {0E768B51-B13D-E446-8591-E16DD10B29B9}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C88C572A-91A7-8E46-8D29-FAA23BAC1926}
+      IID 6
+      NAME "4 Synth.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D04209B7-2DFB-2941-93E7-F8DF27D77ECB}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/4 Synth.wav"
+      >
+    >
+  >
+  <TRACK {7F97BEAC-AF9F-E94A-B8F0-6511F6A7D2E6}
+    NAME "MUSIC - Strings"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.28840315031266 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {7F97BEAC-AF9F-E94A-B8F0-6511F6A7D2E6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4B6D9178-312D-D949-A601-F88F70020636}
+      IID 7
+      NAME "5 Strings.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A9F910EE-AC61-4740-9D45-9B5516091634}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/5 Strings.wav"
+      >
+    >
+  >
+  <TRACK {EB2AF32D-CF98-1B46-AD3A-9D4B8064F4D7}
+    NAME "MUSIC - Percussion"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.32734069487884 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EB2AF32D-CF98-1B46-AD3A-9D4B8064F4D7}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {9A3C75AE-26A2-D34F-9BD2-7278BF5B5F7C}
+      IID 8
+      NAME "6 Percussion.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E967281F-4181-0148-8D9F-3B40AE8DC33E}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/6 Percussion.wav"
+      >
+    >
+  >
+  <TRACK {DA622ABB-37D1-2D42-8467-680CEDC44591}
+    NAME "MUSIC - Keyboard"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.3630780547701 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DA622ABB-37D1-2D42-8467-680CEDC44591}
+    PERF 0
+    <EXT
+      v22_fx_keyboard_mseq_audible_buried "JS: Codex MS Melody Tuck"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_ms_melody_tuck.jsfx ""
+        1550 -0.3 0.9 330 -0.2 1.1 0.1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {63A6533F-6CD1-034C-8FFB-C6966E59E9FA}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {06945093-389D-D24F-96D2-D1C526A98211}
+      IID 9
+      NAME "7 Keyboard.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E3D66E2E-5EAD-C448-A10E-4F4FEE058FE6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/7 Keyboard.wav"
+      >
+    >
+  >
+  <TRACK {BC0C5855-783F-F441-B254-5B654244826A}
+    NAME "MUSIC - Bass"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.3981071705535 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BC0C5855-783F-F441-B254-5B654244826A}
+    PERF 0
+    <EXT
+      v22_fx_bass_low_mid_control_after_sat "JS: Codex Dynamic EQ Band"
+      v22_fx_bass_saturation_texture "JS: Codex V20 Channel Polish"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        26 78 0.7 230 -0.3 0.8 1050 0.6 0.9 7600 -0.2 -24 1.25 35 260 0.3 2.4 0.16 0.78 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {FA7A8E05-A86A-154D-B544-4528B9F8FBC8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        210 0.9 -32 1.2 18 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C226753E-EC82-F347-982E-6DF728A2BB02}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4C157DCD-4F66-BF45-BC61-168184D4D298}
+      IID 10
+      NAME "9 Bass.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0B55E6B4-A691-A64A-B7A1-293F6D40F002}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/9 Bass.wav"
+      >
+    >
+  >
+  <TRACK {9629BCE7-6901-8646-9B3B-E4C23CE7664D}
+    NAME "MUSIC - Drums"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.45708818961488 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9629BCE7-6901-8646-9B3B-E4C23CE7664D}
+    PERF 0
+    <EXT
+      v22_fx_drum_kick_saturation_punch "JS: Codex V20 Channel Polish"
+      v22_fx_kick_body_transient_tighten "JS: Codex Dynamic EQ Band"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_v20_channel_polish.jsfx ""
+        26 74 0.9 285 -0.2 0.85 2300 0.7 0.85 9800 0.1 -22 1.2 24 180 0.2 1.8 0.12 0.95 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {18B90D68-E9C7-3045-BE90-501A918B5E15}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        95 1 -29 0.9 8 120 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {99707DE4-AAFF-3E48-B08D-A82EF0A1F1DE}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E432F284-BDE6-AC4E-B97A-5811B3E69121}
+      IID 11
+      NAME "10 Drums.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F751C83E-BFA5-634A-8D88-78C1DFE233F6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/10 Drums.wav"
+      >
+    >
+  >
+  <TRACK {0FC55DE4-7522-F040-AF97-219AF7097D48}
+    NAME "MUTED ARTIFACT CANDIDATE - 8 Guitar"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.06309573444802 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0FC55DE4-7522-F040-AF97-219AF7097D48}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {C5F9EB01-F3FC-5446-8AB1-5A22EF1F10A7}
+      IID 12
+      NAME "8 Guitar.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {18251F16-331E-0A46-83FC-46DE04ABD899}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/8 Guitar.wav"
+      >
+    >
+  >
+  <TRACK {768AF324-BB3C-2D4D-8E2C-DBC38D1C49B6}
+    NAME "FULL STEM REF - muted original mix"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {768AF324-BB3C-2D4D-8E2C-DBC38D1C49B6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {7205C86D-D235-E14C-BA10-08ECF766F408}
+      IID 13
+      NAME "0 한강 Shadow x 얇은 Shadow (Mashup).wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F35EFEC4-D5FA-0D44-86F1-18F065E6B4B6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/0 한강 Shadow x 얇은 Shadow (Mashup).wav"
+      >
+    >
+  >
+  <TRACK {8A56C2DB-81F2-BA49-B4A2-A9B05840AFD0}
+    NAME "MUTED FEMALE LEAD CANDIDATE - v19 0 Lead Vocals"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8A56C2DB-81F2-BA49-B4A2-A9B05840AFD0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {FDB729AB-C029-8745-9ECA-A3520B4DAB87}
+      IID 14
+      NAME "0 Lead Vocals.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {95F86F7E-F8ED-394F-A353-4650ABC05D8A}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_v19_2stem/0 Lead Vocals.wav"
+      >
+    >
+  >
+  <TRACK {03FC879E-EC7E-DF4E-A17E-27861E9ED4A8}
+    NAME "MUTED V19 INSTRUMENTAL REF"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {03FC879E-EC7E-DF4E-A17E-27861E9ED4A8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {41296A66-A017-2843-B8C5-42E6F83C49DB}
+      IID 15
+      NAME "1 Instrumental.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C8E85704-78DC-184F-B901-6B43FDA2BAC6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_v19_2stem/1 Instrumental.wav"
+      >
+    >
+  >
+>

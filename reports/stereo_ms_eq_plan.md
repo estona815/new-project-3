@@ -1,9 +1,9 @@
 
 # Stereo M/S EQ Plan
 
-- Keep lead vocal, kick, snare, and bass in the mid channel.
+- Kick, snare, bass/808, and male lead stay centered.
 - Mono-control low end below 120 Hz.
 - Reduce muddy side energy around 150-400 Hz.
-- Widen synths and BGV only above the low-mid range.
-- Check mono compatibility and avoid fake super-wide AI stereo.
-- Keep hook elements audible when collapsed to mono.
+- Widen synths and female BGV only above low-mid range.
+- Check stereo correlation before rendering; reduce anti-phase or phasey side material.
+- Hook elements must remain useful in mono.

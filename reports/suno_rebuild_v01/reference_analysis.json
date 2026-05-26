@@ -1,0 +1,416 @@
+{
+  "reference_file": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/00_REF_Full_Mix.wav",
+  "duration_s": 141.394,
+  "estimated_bars_at_bpm": 95.44,
+  "bpm": 162.0,
+  "key": {
+    "key": "B minor",
+    "confidence": "guide_midi_pitch_class_profile",
+    "analyzed_midis": [
+      "04_Synth_synth_cleaned_guide.mid",
+      "09_Bass_bass_cleaned_guide.mid"
+    ],
+    "top_scores": [
+      {
+        "key": "B minor",
+        "score": 10.229
+      },
+      {
+        "key": "B major",
+        "score": 8.399
+      },
+      {
+        "key": "F# minor",
+        "score": 8.008
+      },
+      {
+        "key": "D major",
+        "score": 6.211
+      },
+      {
+        "key": "F# major",
+        "score": 5.852
+      },
+      {
+        "key": "E major",
+        "score": 5.234
+      }
+    ],
+    "pitch_class_weights": {
+      "C": 104640.0,
+      "C#": 1255560.0,
+      "D": 1513680.0,
+      "Eb": 253560.0,
+      "E": 1082400.0,
+      "F": 407400.0,
+      "F#": 2579040.0,
+      "G": 285240.0,
+      "Ab": 290880.0,
+      "A": 965640.0,
+      "Bb": 65760.0,
+      "B": 2725680.0
+    }
+  },
+  "sections": [
+    {
+      "section": "intro / filtered melody sketch",
+      "bars": "1-8",
+      "start_s": 0.0,
+      "end_s": 11.85,
+      "energy_label": "low",
+      "full_mix_rms_dbfs": -20.55,
+      "drums_rms_dbfs": -29.66,
+      "bass_808_rms_dbfs": -36.92,
+      "melody_synth_rms_dbfs": -25.09,
+      "fx_rms_dbfs": -38.37
+    },
+    {
+      "section": "verse 1 / drums enter light",
+      "bars": "9-24",
+      "start_s": 11.85,
+      "end_s": 35.56,
+      "energy_label": "medium",
+      "full_mix_rms_dbfs": -19.58,
+      "drums_rms_dbfs": -24.59,
+      "bass_808_rms_dbfs": -29.04,
+      "melody_synth_rms_dbfs": -30.19,
+      "fx_rms_dbfs": -37.14
+    },
+    {
+      "section": "hook 1 / full melody-forward lift",
+      "bars": "25-40",
+      "start_s": 35.56,
+      "end_s": 59.26,
+      "energy_label": "high",
+      "full_mix_rms_dbfs": -17.79,
+      "drums_rms_dbfs": -22.15,
+      "bass_808_rms_dbfs": -25.3,
+      "melody_synth_rms_dbfs": -32.79,
+      "fx_rms_dbfs": -55.02
+    },
+    {
+      "section": "verse 2 / tighter groove variation",
+      "bars": "41-56",
+      "start_s": 59.26,
+      "end_s": 82.96,
+      "energy_label": "medium-high",
+      "full_mix_rms_dbfs": -18.67,
+      "drums_rms_dbfs": -23.97,
+      "bass_808_rms_dbfs": -29.39,
+      "melody_synth_rms_dbfs": -32.01,
+      "fx_rms_dbfs": -100.14
+    },
+    {
+      "section": "bridge / half-drop and space",
+      "bars": "57-64",
+      "start_s": 82.96,
+      "end_s": 94.81,
+      "energy_label": "low-medium",
+      "full_mix_rms_dbfs": -17.28,
+      "drums_rms_dbfs": -21.27,
+      "bass_808_rms_dbfs": -23.48,
+      "melody_synth_rms_dbfs": -38.29,
+      "fx_rms_dbfs": -101.12
+    },
+    {
+      "section": "hook 2 / full rebuild return",
+      "bars": "65-80",
+      "start_s": 94.81,
+      "end_s": 118.52,
+      "energy_label": "high",
+      "full_mix_rms_dbfs": -18.15,
+      "drums_rms_dbfs": -24.09,
+      "bass_808_rms_dbfs": -27.1,
+      "melody_synth_rms_dbfs": -31.96,
+      "fx_rms_dbfs": -39.4
+    },
+    {
+      "section": "final lift / densest drums and counter melody",
+      "bars": "81-88",
+      "start_s": 118.52,
+      "end_s": 130.37,
+      "energy_label": "highest",
+      "full_mix_rms_dbfs": -15.36,
+      "drums_rms_dbfs": -18.79,
+      "bass_808_rms_dbfs": -20.86,
+      "melody_synth_rms_dbfs": -31.97,
+      "fx_rms_dbfs": -50.46
+    },
+    {
+      "section": "outro / melody decay",
+      "bars": "89-96",
+      "start_s": 130.37,
+      "end_s": 141.39,
+      "energy_label": "low",
+      "full_mix_rms_dbfs": -15.54,
+      "drums_rms_dbfs": -19.36,
+      "bass_808_rms_dbfs": -22.02,
+      "melody_synth_rms_dbfs": -24.74,
+      "fx_rms_dbfs": -28.24
+    }
+  ],
+  "midi_density": {
+    "drums": {
+      "file": "10_Drums_drums_cleaned_guide.mid",
+      "notes": 1361,
+      "last_bar": 95.22,
+      "avg_notes_per_active_bar": 14.18,
+      "top_notes": [
+        {
+          "midi": 42,
+          "count": 782
+        },
+        {
+          "midi": 36,
+          "count": 292
+        },
+        {
+          "midi": 38,
+          "count": 287
+        }
+      ],
+      "active_bars_sample": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "bass_808": {
+      "file": "09_Bass_bass_cleaned_guide.mid",
+      "notes": 152,
+      "last_bar": 94.69,
+      "avg_notes_per_active_bar": 2.81,
+      "top_notes": [
+        {
+          "midi": 30,
+          "count": 34
+        },
+        {
+          "midi": 35,
+          "count": 18
+        },
+        {
+          "midi": 26,
+          "count": 18
+        },
+        {
+          "midi": 28,
+          "count": 13
+        },
+        {
+          "midi": 37,
+          "count": 12
+        },
+        {
+          "midi": 42,
+          "count": 12
+        },
+        {
+          "midi": 25,
+          "count": 8
+        },
+        {
+          "midi": 38,
+          "count": 8
+        }
+      ],
+      "active_bars_sample": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31
+      ]
+    },
+    "melody_synth": {
+      "file": "04_Synth_synth_cleaned_guide.mid",
+      "notes": 284,
+      "last_bar": 94.0,
+      "avg_notes_per_active_bar": 3.94,
+      "top_notes": [
+        {
+          "midi": 95,
+          "count": 51
+        },
+        {
+          "midi": 50,
+          "count": 20
+        },
+        {
+          "midi": 49,
+          "count": 19
+        },
+        {
+          "midi": 45,
+          "count": 17
+        },
+        {
+          "midi": 40,
+          "count": 16
+        },
+        {
+          "midi": 42,
+          "count": 15
+        },
+        {
+          "midi": 47,
+          "count": 14
+        },
+        {
+          "midi": 73,
+          "count": 13
+        }
+      ],
+      "active_bars_sample": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "fx": {
+      "file": "03_FX_fx_cleaned_guide.mid",
+      "notes": 1643,
+      "last_bar": 95.09,
+      "avg_notes_per_active_bar": 17.11,
+      "top_notes": [
+        {
+          "midi": 82,
+          "count": 1585
+        },
+        {
+          "midi": 39,
+          "count": 58
+        }
+      ],
+      "active_bars_sample": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  "stem_inventory": [
+    {
+      "file": "00_REF_Full_Mix.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "01_Woodwinds.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "02_Brass.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "03_FX.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "04_Synth.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "05_Strings.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "06_Percussion.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "07_Keyboard.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "08_Guitar.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "09_Bass.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "10_Drums.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "11_Backing_Vocals.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "12_Vocals.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    },
+    {
+      "file": "female_vocal_candidate_clean.wav",
+      "duration_s": 141.394,
+      "sample_rate": 48000
+    }
+  ],
+  "metrics": {
+    "path": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/00_REF_Full_Mix.wav",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 141.394,
+    "peak_dbfs": -4.61,
+    "approx_true_peak_dbfs": -4.604,
+    "rms_dbfs": -17.853,
+    "approx_lufs_i": -19.831,
+    "stereo_correlation": 0.9407,
+    "20_60_hz_db_share": -5.94,
+    "60_120_hz_db_share": -5.63,
+    "120_350_hz_db_share": -6.99,
+    "1k_5k_db_share": -10.33,
+    "5k_8k_db_share": -25.44,
+    "8k_20k_db_share": -24.04
+  },
+  "bpm_source": "MIDI tempo meta from combined_suno_audio_derived_guides_cleaned_guide.mid"
+}

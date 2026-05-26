@@ -1,0 +1,1243 @@
+{
+  "style_target": "digicore_hyperpop_system_seoul_nate_sib_adjacent_broad_target_no_clone",
+  "exact_artist_clone_claimed": false,
+  "tempo_bpm": 136.0,
+  "duration_seconds": 95.92710416666667,
+  "input_files": {
+    "beat": "/Users/hantaeheuk/Desktop/plugg/SahBabii-Type-Beat---BLUE-SQUID_1.wav",
+    "sample": "/Users/hantaeheuk/Desktop/\u110b\u1173\u11b7\u110b\u1161\u11a8\u1109\u1162\u11b7\u1111\u1173\u11af/15_U.N.Owen_source.mp3",
+    "vocals": [
+      "/Users/hantaeheuk/Desktop/plugg/main2_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/main 1_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub1 girl_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub2 girl_1.wav"
+    ]
+  },
+  "outputs": {
+    "pre_master": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/09_MIX_MASTER/plugg_reference_matched_v3_pre_master.wav",
+    "final_master": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_reference_matched_v3_24bit_48k.wav",
+    "preview": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_reference_matched_v3_preview.m4a",
+    "qc_json": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/06_QC_REPORT/plugg_reference_matched_v3_qc.json",
+    "qc_markdown": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/06_QC_REPORT/plugg_reference_matched_v3_qc.md"
+  },
+  "processing": {
+    "pre_master_gain": 0.448504355895538,
+    "rms_match_gain": 1.7044457042517702,
+    "master_gain": 1.0,
+    "notes": [
+      "original beat was section-arranged with intro filtering, hooks, bridge drop, and outro tail",
+      "reference comparison pushed the render wider, brighter, and denser than v2",
+      "beat mids were gently pocketed instead of over-carved so the tone stays musical",
+      "lead and doubles were made vocal-forward with brighter presence, stronger leveling, and smoother synthetic tune gloss",
+      "doubles aligned against the lead using envelope cross-correlation when confidence was usable",
+      "short melodic sample chops from the Desktop sample folder were pitch-varied and used as intro, hook, bridge, and final-hook material",
+      "master tonal match reduced excessive sub-only weight and restored bass, bite, and air bands",
+      "parallel density bus added before limiting so the quieter arranged sections still feel glued",
+      "master bus peak-normalized, gently compressed, softly saturated, and limited"
+    ],
+    "arrangement_notes": [
+      "0-4 bars: intro filtered low, sample leads, beat gain -13 dB",
+      "4-12 bars: hook with light gated beat under sample melody, beat gain -7.8 dB",
+      "12-20 bars: verse pocket, vocal center stays clear, beat gain -8.9 dB",
+      "20-24 bars: pre-bridge filtered break, beat gain -12 dB",
+      "24-28 bars: sample bridge, original beat heavily reduced, beat gain -18 dB",
+      "28-36 bars: second hook with wider top, beat gain -7.9 dB",
+      "36-44 bars: sample-forward final hook, beat gain -8.2 dB",
+      "44-999 bars: outro tail, beat gain -11 dB"
+    ],
+    "reference_analysis_path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/08_REFERENCE_MATCH/reference_texture_analysis.json",
+    "reference_match_targets": {
+      "rms_dbfs_range": [
+        -9.7,
+        -8.4
+      ],
+      "side_mid_db_range": [
+        -13.6,
+        -7.95
+      ],
+      "restore_bite_air": true,
+      "avoid_exact_copy": true
+    },
+    "true_pitch_correction_applied": false,
+    "hard_tune_style_layer_applied": true,
+    "pitch_note": "No verified Auto-Tune plugin or note-by-note pitch editor is available here; this render uses a synthetic hard-tune color layer, brighter vocal presence, doubled width, and timing alignment without claiming real plugin correction.",
+    "rights_note": "Local sample file was used for a demo render; release use still needs sample/license clearance."
+  },
+  "track_reports": [
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/main2_1.wav",
+      "duration_seconds": 84.66891666666666,
+      "normalize_gain": 0.39343979078614305,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -3.2,
+      "pan": 0.0,
+      "hard_tune_blend": 0.16,
+      "mix_gain_db": 2.5,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.0,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -18.5,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -22.5,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -25.5,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -27.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -29.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -31.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -33.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/main 1_1.wav",
+      "duration_seconds": 77.15958333333333,
+      "normalize_gain": 0.4552869428965387,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -4.8,
+      "pan": 0.04,
+      "hard_tune_blend": 0.1,
+      "mix_gain_db": -1.8,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": -0.2909,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -20.5,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -24.5,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -27.5,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub_1.wav",
+      "duration_seconds": 84.65620833333334,
+      "normalize_gain": 0.463022660733922,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -6.2,
+      "pan": -0.28,
+      "hard_tune_blend": 0.0,
+      "mix_gain_db": -6.4,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.2612,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -22.0,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -26.0,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -29.0,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub1 girl_1.wav",
+      "duration_seconds": 85.338875,
+      "normalize_gain": 0.3805457761425769,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -6.8,
+      "pan": 0.52,
+      "hard_tune_blend": 0.0,
+      "mix_gain_db": -8.8,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.0143,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -22.5,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -26.5,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -29.5,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub2 girl_1.wav",
+      "duration_seconds": 83.98625,
+      "normalize_gain": 0.30870612679876697,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -6.8,
+      "pan": -0.5,
+      "hard_tune_blend": 0.0,
+      "mix_gain_db": -9.0,
+      "alignment_shift_frames": 480,
+      "alignment_shift_ms": 10.0,
+      "alignment_score": 0.3171,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -23.0,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -27.0,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -30.0,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.5,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.5,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.5,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.5,
+          "pan": 0.24
+        }
+      ]
+    }
+  ],
+  "sample_report": {
+    "decode_status": {
+      "decoded": true,
+      "reused": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/04_PROCESSED_AUDIO/plugg_un_owen_sample_source_48k.wav"
+    },
+    "source": "/Users/hantaeheuk/Desktop/\u110b\u1173\u11b7\u110b\u1161\u11a8\u1109\u1162\u11b7\u1111\u1173\u11af/15_U.N.Owen_source.mp3",
+    "chops": [
+      {
+        "index": 0,
+        "source_start_seconds": 42.0,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 1,
+        "source_start_seconds": 42.5,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 2,
+        "source_start_seconds": 43.0,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 3,
+        "source_start_seconds": 43.75,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 4,
+        "source_start_seconds": 44.25,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 5,
+        "source_start_seconds": 45.0,
+        "duration_seconds": 0.415
+      }
+    ],
+    "motif_placements": [
+      {
+        "bar": 0,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 0,
+        "beat_offset": 1.5,
+        "chop_index": 1,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 0,
+        "beat_offset": 3.0,
+        "chop_index": 2,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 2,
+        "beat_offset": 0.0,
+        "chop_index": 2,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 2,
+        "beat_offset": 1.5,
+        "chop_index": 3,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 2,
+        "beat_offset": 3.0,
+        "chop_index": 4,
+        "gain_db": -6.5,
+        "section": "sample intro calls"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 0.0,
+        "chop_index": 4,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 1.0,
+        "chop_index": 5,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 2.0,
+        "chop_index": 6,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 3.0,
+        "chop_index": 7,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 4.5,
+        "chop_index": 0,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 4,
+        "beat_offset": 5.5,
+        "chop_index": 1,
+        "gain_db": -9.5,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 0.0,
+        "chop_index": 6,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 1.0,
+        "chop_index": 7,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 2.0,
+        "chop_index": 0,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 3.0,
+        "chop_index": 1,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 4.5,
+        "chop_index": 2,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 6,
+        "beat_offset": 5.5,
+        "chop_index": 3,
+        "gain_db": -9.5,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 8,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -9.5,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 0.0,
+        "chop_index": 2,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 1.0,
+        "chop_index": 3,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 2.0,
+        "chop_index": 4,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 3.0,
+        "chop_index": 5,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 4.5,
+        "chop_index": 6,
+        "gain_db": -7.0,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 10,
+        "beat_offset": 5.5,
+        "chop_index": 7,
+        "gain_db": -9.5,
+        "section": "main hook chop lead"
+      },
+      {
+        "bar": 12,
+        "beat_offset": 1.5,
+        "chop_index": 4,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 12,
+        "beat_offset": 3.5,
+        "chop_index": 5,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 12,
+        "beat_offset": 6.0,
+        "chop_index": 6,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 14,
+        "beat_offset": 1.5,
+        "chop_index": 6,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 14,
+        "beat_offset": 3.5,
+        "chop_index": 7,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 14,
+        "beat_offset": 6.0,
+        "chop_index": 0,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 16,
+        "beat_offset": 1.5,
+        "chop_index": 0,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 16,
+        "beat_offset": 3.5,
+        "chop_index": 1,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 16,
+        "beat_offset": 6.0,
+        "chop_index": 2,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 18,
+        "beat_offset": 1.5,
+        "chop_index": 2,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 18,
+        "beat_offset": 3.5,
+        "chop_index": 3,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 18,
+        "beat_offset": 6.0,
+        "chop_index": 4,
+        "gain_db": -11.5,
+        "section": "verse answer chops"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 0.0,
+        "chop_index": 4,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 1.0,
+        "chop_index": 5,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 2.0,
+        "chop_index": 6,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 3.5,
+        "chop_index": 7,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 5.0,
+        "chop_index": 0,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 20,
+        "beat_offset": 6.5,
+        "chop_index": 1,
+        "gain_db": -11.7,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 0.0,
+        "chop_index": 6,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 1.0,
+        "chop_index": 7,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 2.0,
+        "chop_index": 0,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 3.5,
+        "chop_index": 1,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 5.0,
+        "chop_index": 2,
+        "gain_db": -9.2,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 22,
+        "beat_offset": 6.5,
+        "chop_index": 3,
+        "gain_db": -11.7,
+        "section": "pre-bridge sample answer"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 5.0,
+        "chop_index": 4,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 24,
+        "beat_offset": 6.0,
+        "chop_index": 5,
+        "gain_db": -9.2,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 0.0,
+        "chop_index": 2,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 1.0,
+        "chop_index": 3,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 2.0,
+        "chop_index": 4,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 3.0,
+        "chop_index": 5,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 5.0,
+        "chop_index": 6,
+        "gain_db": -6.7,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 26,
+        "beat_offset": 6.0,
+        "chop_index": 7,
+        "gain_db": -9.2,
+        "section": "sample bridge takes over"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 0.0,
+        "chop_index": 4,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 1.0,
+        "chop_index": 5,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 2.0,
+        "chop_index": 6,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 3.0,
+        "chop_index": 7,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 4.5,
+        "chop_index": 0,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 5.5,
+        "chop_index": 1,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 28,
+        "beat_offset": 6.75,
+        "chop_index": 2,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 0.0,
+        "chop_index": 6,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 1.0,
+        "chop_index": 7,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 2.0,
+        "chop_index": 0,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 3.0,
+        "chop_index": 1,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 4.5,
+        "chop_index": 2,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 5.5,
+        "chop_index": 3,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 30,
+        "beat_offset": 6.75,
+        "chop_index": 4,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 32,
+        "beat_offset": 6.75,
+        "chop_index": 6,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 0.0,
+        "chop_index": 2,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 1.0,
+        "chop_index": 3,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 2.0,
+        "chop_index": 4,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 3.0,
+        "chop_index": 5,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 4.5,
+        "chop_index": 6,
+        "gain_db": -7.1,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 5.5,
+        "chop_index": 7,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 34,
+        "beat_offset": 6.75,
+        "chop_index": 0,
+        "gain_db": -9.6,
+        "section": "second hook chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 0.0,
+        "chop_index": 4,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 1.0,
+        "chop_index": 5,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 1.5,
+        "chop_index": 6,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 3.0,
+        "chop_index": 7,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 4.5,
+        "chop_index": 0,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 5.5,
+        "chop_index": 1,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 36,
+        "beat_offset": 7.0,
+        "chop_index": 2,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 0.0,
+        "chop_index": 6,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 1.0,
+        "chop_index": 7,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 1.5,
+        "chop_index": 0,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 3.0,
+        "chop_index": 1,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 4.5,
+        "chop_index": 2,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 5.5,
+        "chop_index": 3,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 38,
+        "beat_offset": 7.0,
+        "chop_index": 4,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 1.5,
+        "chop_index": 2,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 40,
+        "beat_offset": 7.0,
+        "chop_index": 6,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 0.0,
+        "chop_index": 2,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 1.0,
+        "chop_index": 3,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 1.5,
+        "chop_index": 4,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 3.0,
+        "chop_index": 5,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 4.5,
+        "chop_index": 6,
+        "gain_db": -6.8,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 5.5,
+        "chop_index": 7,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      },
+      {
+        "bar": 42,
+        "beat_offset": 7.0,
+        "chop_index": 0,
+        "gain_db": -9.3,
+        "section": "final hook dense chop lead"
+      }
+    ]
+  },
+  "preview": {
+    "created": true,
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_reference_matched_v3_preview.m4a",
+    "stderr": ""
+  },
+  "master_metrics": {
+    "peak_dbfs": -0.7800001702522453,
+    "rms_dbfs": -9.2500918602043,
+    "clipping_count": 0
+  },
+  "verification": {
+    "ok": true,
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_reference_matched_v3_24bit_48k.wav",
+    "exists": true,
+    "file_size": 27627050,
+    "duration_seconds": 95.92710416666667,
+    "sample_rate": 48000,
+    "expected_sample_rate": 48000,
+    "channels": 2,
+    "codec_name": "pcm_s24le",
+    "bit_depth_verified": true,
+    "bit_depth": 24,
+    "format_verified": true,
+    "peak_dbfs": -0.7799996038898559,
+    "rms_dbfs": -9.250091848285019,
+    "clipping_count": 0,
+    "errors": []
+  }
+}

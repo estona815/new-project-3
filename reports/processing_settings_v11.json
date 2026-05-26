@@ -1,0 +1,926 @@
+{
+  "direction": "female vocal should appear across about 70 percent of the song, wide-panned and M/S separated from centered male main",
+  "male_moves": [
+    {
+      "type": "hpf",
+      "freq_hz": 92,
+      "slope": "18 dB/oct"
+    },
+    {
+      "low_hz": 180,
+      "high_hz": 350,
+      "threshold_db": -37.92,
+      "max_cut_db": 2.1,
+      "mean_gr_db": 0.429,
+      "p95_gr_db": 2.1,
+      "type": "mud/body dynamic cleanup"
+    },
+    {
+      "low_hz": 700,
+      "high_hz": 1400,
+      "threshold_db": -31.58,
+      "max_cut_db": 1.8,
+      "mean_gr_db": 0.298,
+      "p95_gr_db": 1.8,
+      "type": "nasal/formant soften"
+    },
+    {
+      "low_hz": 2500,
+      "high_hz": 5500,
+      "threshold_db": -38.5,
+      "max_cut_db": 2.8,
+      "mean_gr_db": 0.429,
+      "p95_gr_db": 2.8,
+      "type": "metallic presence soften"
+    },
+    {
+      "low_hz": 5500,
+      "high_hz": 9000,
+      "threshold_db": -40.8,
+      "max_cut_db": 4.3,
+      "mean_gr_db": 0.613,
+      "p95_gr_db": 3.732,
+      "type": "primary de-ess"
+    },
+    {
+      "low_hz": 9000,
+      "high_hz": 12000,
+      "threshold_db": -39.56,
+      "max_cut_db": 1.7,
+      "mean_gr_db": 0.248,
+      "p95_gr_db": 1.7,
+      "type": "secondary glass soften"
+    },
+    {
+      "type": "tube/tape saturation",
+      "drive_db": 2.4,
+      "wet": 0.11
+    },
+    {
+      "type": "gentle vocal compression",
+      "ratio": 2.4,
+      "avg_target_gr_db": "1-3"
+    },
+    {
+      "low_hz": 5600,
+      "high_hz": 9200,
+      "threshold_db": -40.33,
+      "max_cut_db": 2.2,
+      "mean_gr_db": 0.291,
+      "p95_gr_db": 2.121,
+      "type": "post-saturation de-ess"
+    },
+    {
+      "type": "polish",
+      "presence_db": 0.55,
+      "air_shelf_db": 0.55
+    },
+    {
+      "type": "gain stage",
+      "target_rms_dbfs": -16.6
+    },
+    {
+      "stage": "v10_clean_clarity_layer",
+      "band_hz": "1200-5200",
+      "return_db": -8.5,
+      "sat_drive_db": 1.45,
+      "sat_mix": 0.1
+    },
+    {
+      "stage": "v10_no_hard_vocal_clip",
+      "note": "removed heavy v07 Decapitator/clip layer to avoid crackle"
+    },
+    {
+      "stage": "male_center_lock",
+      "pan": "mono center"
+    },
+    {
+      "stage": "male_level_up",
+      "gain_db": 3.0
+    },
+    {
+      "stage": "male_back_center_low",
+      "gain_db": -5.5
+    }
+  ],
+  "female_moves": {
+    "lead": [
+      {
+        "type": "hpf",
+        "freq_hz": 132,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -32.62,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.432,
+        "p95_gr_db": 2.6,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -30.43,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.31,
+        "p95_gr_db": 2.2,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -39.7,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.468,
+        "p95_gr_db": 3.1,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -44.49,
+        "max_cut_db": 4.8,
+        "mean_gr_db": 0.825,
+        "p95_gr_db": 4.8,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -41.5,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.23,
+        "p95_gr_db": 1.7,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 1.8,
+        "wet": 0.08
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.0,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -45.19,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.368,
+        "p95_gr_db": 2.2,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "backing tuck",
+        "presence_db": -0.65,
+        "air_shelf_db": -0.75
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -25.0
+      }
+    ],
+    "backing": [
+      {
+        "type": "hpf",
+        "freq_hz": 132,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -56.5,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.048,
+        "p95_gr_db": 0.0,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -50.89,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.036,
+        "p95_gr_db": 0.0,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -73.26,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.04,
+        "p95_gr_db": 0.0,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -78.32,
+        "max_cut_db": 4.8,
+        "mean_gr_db": 0.044,
+        "p95_gr_db": 0.0,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -55.21,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.007,
+        "p95_gr_db": 0.0,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 1.8,
+        "wet": 0.08
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.0,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -76.2,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.017,
+        "p95_gr_db": 0.0,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "backing tuck",
+        "presence_db": -0.65,
+        "air_shelf_db": -0.75
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -25.0
+      }
+    ],
+    "events": [
+      {
+        "time_s": 3.837,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 4.707,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 5.245,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 6.115,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 14.567,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 15.437,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 16.061,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 16.931,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 17.49,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 18.36,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 20.007,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 20.877,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 21.117,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 21.987,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 23.335,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 24.205,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 27.581,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 28.451,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 29.117,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 29.987,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 30.439,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 31.309,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 33.49,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 34.36,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 36.135,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 37.005,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 38.29,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 39.16,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 39.741,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 40.611,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 46.695,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 47.565,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 68.669,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 69.539,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 70.674,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 71.544,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 73.597,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 74.467,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 74.685,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 75.555,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 90.151,
+        "type": "female wide phrase layer",
+        "pan": -0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 91.021,
+        "type": "female side chop",
+        "pan": 0.72,
+        "gain_db": -3.8
+      },
+      {
+        "time_s": 92.05,
+        "type": "female wide phrase layer",
+        "pan": 0.58,
+        "gain_db": -1.4
+      },
+      {
+        "time_s": 92.92,
+        "type": "female side chop",
+        "pan": -0.72,
+        "gain_db": -3.8
+      }
+    ],
+    "coverage_ratio": 0.854
+  },
+  "instrument_moves": {
+    "drums": [
+      {
+        "stage": "no_gate_drum_cleanup",
+        "note": "no noise gate to avoid beat cut"
+      },
+      {
+        "stage": "drum_low_mid_cleanup",
+        "low_hz": 240,
+        "high_hz": 560,
+        "threshold_db": -48.06,
+        "max_cut_db": 0.8,
+        "mean_gr_db": 0.112,
+        "p95_gr_db": 0.8
+      },
+      {
+        "stage": "clean_punch_light_sat",
+        "ratio": 1.25,
+        "sat_drive_db": 0.8
+      }
+    ],
+    "bass": [
+      {
+        "type": "bass mud dynamic cleanup",
+        "low_hz": 180,
+        "high_hz": 380,
+        "threshold_db": -40.35,
+        "max_cut_db": 1.6,
+        "mean_gr_db": 0.276,
+        "p95_gr_db": 1.6
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -18.1
+      },
+      {
+        "stage": "clean_bass_no_hard_grit",
+        "drive_db": 1.7,
+        "note": "removed rough clip layer to avoid breakup"
+      }
+    ],
+    "keys": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -39.17,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.299,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.6
+      }
+    ],
+    "percussion": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -71.78,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.034,
+        "p95_gr_db": 0.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      }
+    ],
+    "synth": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -39.7,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.372,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.2
+      }
+    ],
+    "other": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -62.97,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.034,
+        "p95_gr_db": 0.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      }
+    ]
+  },
+  "mseq": {
+    "female": "mid 900-5200 Hz reduced, side 2.1/4.3 kHz boosted, side gain +3.2 dB",
+    "music_pocket": "static 0.22 dB mid pocket",
+    "low_end": "under 120 Hz kept mono/center"
+  },
+  "master_render": {
+    "target_lufs": -8.2,
+    "static_gain_db": 16.8,
+    "clip_drive_db": 0.65,
+    "clip_ceiling": 0.8,
+    "oversample": 4,
+    "metrics": {
+      "label": "v09_static_master",
+      "file": "mgmg_mashup_v11_female_70_mseq_layers_24-48.wav",
+      "sample_rate": 48000,
+      "dtype": "int32",
+      "duration_s": 109.6,
+      "peak_dbfs": -1.3,
+      "rms_dbfs": -12.5,
+      "crest_db": 11.2,
+      "stereo_corr": 0.8806,
+      "side_mid_db": -11.97,
+      "sub_20_80_pct": 15.395,
+      "bass_body_80_200_pct": 13.683,
+      "body_200_500_pct": 13.008,
+      "formant_500_1500_pct": 29.209,
+      "presence_1500_5000_pct": 23.683,
+      "sibilance_5000_10000_pct": 3.211,
+      "air_10000_16000_pct": 1.81,
+      "integrated_lufs": -9.0,
+      "lra_lu": 3.9,
+      "true_peak_dbfs": -0.8,
+      "short_term_lufs_min": -21.9,
+      "short_term_lufs_median": -8.8,
+      "short_term_lufs_max": -7.6
+    }
+  },
+  "phrase_events": [
+    {
+      "time_s": 4.587,
+      "previous_phrase_s": 0.555,
+      "following_pause_s": 0.171,
+      "confidence": 0.522,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.776
+    },
+    {
+      "time_s": 5.995,
+      "previous_phrase_s": 0.32,
+      "following_pause_s": 0.213,
+      "confidence": 0.497,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.769
+    },
+    {
+      "time_s": 15.317,
+      "previous_phrase_s": 0.32,
+      "following_pause_s": 0.192,
+      "confidence": 0.488,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.766
+    },
+    {
+      "time_s": 16.811,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.213,
+      "confidence": 0.466,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.76
+    },
+    {
+      "time_s": 18.24,
+      "previous_phrase_s": 0.235,
+      "following_pause_s": 0.384,
+      "confidence": 0.554,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.786
+    },
+    {
+      "time_s": 20.757,
+      "previous_phrase_s": 0.192,
+      "following_pause_s": 0.213,
+      "confidence": 0.474,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.762
+    },
+    {
+      "time_s": 21.867,
+      "previous_phrase_s": 0.171,
+      "following_pause_s": 0.277,
+      "confidence": 0.497,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.769
+    },
+    {
+      "time_s": 24.085,
+      "previous_phrase_s": 0.235,
+      "following_pause_s": 0.363,
+      "confidence": 0.545,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.783
+    },
+    {
+      "time_s": 28.331,
+      "previous_phrase_s": 0.192,
+      "following_pause_s": 0.277,
+      "confidence": 0.501,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.77
+    },
+    {
+      "time_s": 29.867,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.277,
+      "confidence": 0.493,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.768
+    },
+    {
+      "time_s": 31.189,
+      "previous_phrase_s": 0.619,
+      "following_pause_s": 0.171,
+      "confidence": 0.533,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.78
+    },
+    {
+      "time_s": 34.24,
+      "previous_phrase_s": 0.192,
+      "following_pause_s": 0.256,
+      "confidence": 0.492,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.768
+    },
+    {
+      "time_s": 36.885,
+      "previous_phrase_s": 0.256,
+      "following_pause_s": 0.384,
+      "confidence": 0.557,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.787
+    },
+    {
+      "time_s": 39.04,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.213,
+      "confidence": 0.466,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.76
+    },
+    {
+      "time_s": 40.491,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.256,
+      "confidence": 0.484,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.765
+    },
+    {
+      "time_s": 47.445,
+      "previous_phrase_s": 0.213,
+      "following_pause_s": 0.235,
+      "confidence": 0.487,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.766
+    },
+    {
+      "time_s": 69.419,
+      "previous_phrase_s": 0.363,
+      "following_pause_s": 0.299,
+      "confidence": 0.541,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.782
+    },
+    {
+      "time_s": 71.424,
+      "previous_phrase_s": 0.213,
+      "following_pause_s": 0.363,
+      "confidence": 0.541,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.782
+    },
+    {
+      "time_s": 74.347,
+      "previous_phrase_s": 0.32,
+      "following_pause_s": 0.427,
+      "confidence": 0.587,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.796
+    },
+    {
+      "time_s": 75.435,
+      "previous_phrase_s": 0.192,
+      "following_pause_s": 0.213,
+      "confidence": 0.474,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.762
+    },
+    {
+      "time_s": 90.901,
+      "previous_phrase_s": 0.491,
+      "following_pause_s": 0.213,
+      "confidence": 0.528,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.778
+    },
+    {
+      "time_s": 92.8,
+      "previous_phrase_s": 0.235,
+      "following_pause_s": 16.811,
+      "confidence": 1.0,
+      "throw": true,
+      "long_tail": true,
+      "send_gain": 0.92
+    }
+  ],
+  "metrics": [
+    {
+      "label": "v11_female_70_mseq",
+      "file": "mgmg_mashup_v11_female_70_mseq_layers_24-48.wav",
+      "sample_rate": 48000,
+      "dtype": "int32",
+      "duration_s": 109.6,
+      "peak_dbfs": -1.3,
+      "rms_dbfs": -12.5,
+      "crest_db": 11.2,
+      "stereo_corr": 0.8806,
+      "side_mid_db": -11.97,
+      "sub_20_80_pct": 15.395,
+      "bass_body_80_200_pct": 13.683,
+      "body_200_500_pct": 13.008,
+      "formant_500_1500_pct": 29.209,
+      "presence_1500_5000_pct": 23.683,
+      "sibilance_5000_10000_pct": 3.211,
+      "air_10000_16000_pct": 1.81,
+      "integrated_lufs": -9.0,
+      "lra_lu": 3.9,
+      "true_peak_dbfs": -0.8,
+      "short_term_lufs_min": -21.9,
+      "short_term_lufs_median": -8.8,
+      "short_term_lufs_max": -7.6
+    },
+    {
+      "label": "v11_preview_mp3",
+      "file": "mgmg_mashup_v11_female_70_mseq_layers_preview_320.mp3",
+      "sample_rate": 48000,
+      "dtype": "float32 decoded_from_mp3",
+      "duration_s": 109.6,
+      "peak_dbfs": -1.06,
+      "rms_dbfs": -12.5,
+      "crest_db": 11.45,
+      "stereo_corr": 0.8805,
+      "side_mid_db": -11.97,
+      "sub_20_80_pct": 15.394,
+      "bass_body_80_200_pct": 13.683,
+      "body_200_500_pct": 13.009,
+      "formant_500_1500_pct": 29.207,
+      "presence_1500_5000_pct": 23.684,
+      "sibilance_5000_10000_pct": 3.212,
+      "air_10000_16000_pct": 1.811,
+      "integrated_lufs": -9.0,
+      "lra_lu": 3.9,
+      "true_peak_dbfs": -0.4,
+      "short_term_lufs_min": -21.9,
+      "short_term_lufs_median": -8.8,
+      "short_term_lufs_max": -7.6
+    }
+  ]
+}

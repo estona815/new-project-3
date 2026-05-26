@@ -1,0 +1,176 @@
+{
+  "mix_moves": [
+    {
+      "stage": "v17_required_tune_noise_chain",
+      "policy": "required by user, parallel/controlled so raw core remains main"
+    },
+    {
+      "stage": "shiik_noise_suppress",
+      "label": "v17_required_tune_noise_pre",
+      "events": 137,
+      "strength": 0.3,
+      "hiss_guard": {
+        "low_hz": 5600,
+        "high_hz": 10400,
+        "threshold_db": -47.47,
+        "max_cut_db": 2.05,
+        "mean_gr_db": 0.296,
+        "p95_gr_db": 1.798
+      },
+      "glass_guard": {
+        "low_hz": 9800,
+        "high_hz": 14200,
+        "threshold_db": -49.24,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.247,
+        "p95_gr_db": 1.7
+      }
+    },
+    {
+      "stage": "v17_required_chain_sibilance_guard",
+      "low_hz": 5450,
+      "high_hz": 9000,
+      "threshold_db": -49.65,
+      "max_cut_db": 0.8,
+      "mean_gr_db": 0.125,
+      "p95_gr_db": 0.8
+    },
+    {
+      "stage": "v17_required_chain_fizz_guard",
+      "low_hz": 9000,
+      "high_hz": 13200,
+      "threshold_db": -48.53,
+      "max_cut_db": 0.55,
+      "mean_gr_db": 0.09,
+      "p95_gr_db": 0.55
+    },
+    {
+      "stage": "strong_tune_density_layer",
+      "wet_layer_rms_dbfs": -23.2,
+      "mix_gain_db": -7.8,
+      "retune_feel": "fast hard-tune edge via compressed parallel harmonic-density layer",
+      "note": "DSP tune-feel layer; no Antares or paid pitch plugin used",
+      "bite_tame": {
+        "low_hz": 2700,
+        "high_hz": 5900,
+        "threshold_db": -39.14,
+        "max_cut_db": 2.0,
+        "mean_gr_db": 0.325,
+        "p95_gr_db": 2.0
+      },
+      "hiss_tame": {
+        "low_hz": 5900,
+        "high_hz": 9800,
+        "threshold_db": -79.79,
+        "max_cut_db": 2.9,
+        "mean_gr_db": 0.441,
+        "p95_gr_db": 2.9
+      }
+    },
+    {
+      "stage": "v17_required_tune_layer_deess",
+      "low_hz": 5400,
+      "high_hz": 9800,
+      "threshold_db": -68.91,
+      "max_cut_db": 1.35,
+      "mean_gr_db": 0.288,
+      "p95_gr_db": 1.35
+    },
+    {
+      "stage": "v17_mix_revision",
+      "male_gain_db": -2.05,
+      "v16_male_gain_db": -3.05,
+      "female_side_gain_db": -2.95,
+      "melody_gain_db": 0.7,
+      "v16_melody_gain_db": 1.12
+    },
+    {
+      "stage": "v17_instrumental_pocket",
+      "full_duck_db": 0.74,
+      "lowmid_duck_db": 0.72,
+      "presence_duck_db": 1.05
+    },
+    {
+      "stage": "v17_instrumental_edge_tame",
+      "low_hz": 2600,
+      "high_hz": 5200,
+      "threshold_db": -43.64,
+      "max_cut_db": 0.42,
+      "mean_gr_db": 0.091,
+      "p95_gr_db": 0.42
+    },
+    {
+      "stage": "v17_instrumental_fizz_tame",
+      "low_hz": 8200,
+      "high_hz": 12800,
+      "threshold_db": -53.11,
+      "max_cut_db": 0.65,
+      "mean_gr_db": 0.164,
+      "p95_gr_db": 0.65
+    },
+    {
+      "stage": "v17_melody_synth_vocal_duck",
+      "full_duck_db": 0.2,
+      "presence_band_duck_db": 0.72
+    },
+    {
+      "stage": "v17_synth_edge_tame",
+      "low_hz": 2600,
+      "high_hz": 5000,
+      "threshold_db": -45.08,
+      "max_cut_db": 0.82,
+      "mean_gr_db": 0.181,
+      "p95_gr_db": 0.82
+    },
+    {
+      "stage": "v17_synth_fizz_tame",
+      "low_hz": 7800,
+      "high_hz": 12200,
+      "threshold_db": -56.33,
+      "max_cut_db": 1.1,
+      "mean_gr_db": 0.213,
+      "p95_gr_db": 1.1
+    },
+    {
+      "stage": "mix_low_mid_resonance",
+      "low_hz": 230,
+      "high_hz": 420,
+      "threshold_db": -30.82,
+      "max_cut_db": 0.8,
+      "mean_gr_db": 0.151,
+      "p95_gr_db": 0.8
+    },
+    {
+      "stage": "mix_nasal_resonance",
+      "low_hz": 680,
+      "high_hz": 1120,
+      "threshold_db": -34.01,
+      "max_cut_db": 0.7,
+      "mean_gr_db": 0.129,
+      "p95_gr_db": 0.7
+    },
+    {
+      "stage": "mix_presence_spike",
+      "low_hz": 2450,
+      "high_hz": 4200,
+      "threshold_db": -35.27,
+      "max_cut_db": 0.75,
+      "mean_gr_db": 0.14,
+      "p95_gr_db": 0.75
+    },
+    {
+      "stage": "mix_sibilance_hash",
+      "low_hz": 5400,
+      "high_hz": 9200,
+      "threshold_db": -49.96,
+      "max_cut_db": 0.95,
+      "mean_gr_db": 0.205,
+      "p95_gr_db": 0.95
+    },
+    {
+      "stage": "full_mix_static_finish",
+      "nasal_db": -0.1,
+      "air_trim_db": -0.08
+    }
+  ]
+}

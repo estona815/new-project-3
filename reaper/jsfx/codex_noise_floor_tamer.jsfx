@@ -1,0 +1,58 @@
+desc:Codex Noise Floor Tamer
+//tags: dynamics denoise hiss tamer
+//author: Codex
+
+slider1:6500<1000,16000,1>High Split (Hz)
+slider2:-44<-80,-15,0.1>Close Threshold (dB)
+slider3:5<0,18,0.1>Max High Attenuation (dB)
+slider4:18<1,120,0.1>Attack (ms)
+slider5:260<20,1200,1>Release (ms)
+slider6:1<0,1,0.01>Mix
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@init
+db2lin = 0.1151292546497023;
+lin2db = 8.685889638065037;
+tiny = 0.000000000001;
+lp_l = 0;
+lp_r = 0;
+env = 0;
+ext_tail_size = -1;
+
+@slider
+freq = min(max(slider1, 100), srate * 0.45);
+lp_coef = exp(-2 * $pi * freq / srate);
+threshold_db = slider2;
+max_atten_db = max(slider3, 0);
+attack_ms = max(slider4, 0.1);
+release_ms = max(slider5, 1);
+wet = min(max(slider6, 0), 1);
+att = exp(-1 / (attack_ms * 0.001 * srate));
+rel = exp(-1 / (release_ms * 0.001 * srate));
+
+@sample
+in_l = spl0;
+in_r = spl1;
+
+lp_l = lp_coef * lp_l + (1 - lp_coef) * in_l;
+lp_r = lp_coef * lp_r + (1 - lp_coef) * in_r;
+hi_l = in_l - lp_l;
+hi_r = in_r - lp_r;
+
+det = max(abs(in_l), abs(in_r));
+det > env ? env = det + att * (env - det) : env = det + rel * (env - det);
+env_db = lin2db * log(max(env, tiny));
+
+below = max(threshold_db - env_db, 0);
+atten_db = min(max_atten_db, below * 0.55);
+hi_gain = exp(-atten_db * db2lin);
+
+out_l = lp_l + hi_l * hi_gain;
+out_r = lp_r + hi_r * hi_gain;
+
+spl0 = in_l + (out_l - in_l) * wet;
+spl1 = in_r + (out_r - in_r) * wet;

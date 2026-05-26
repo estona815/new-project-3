@@ -23,8 +23,45 @@ GENERATED_PATHS = [
     PROJECT_ROOT / "05_FINAL_WAV" / "final_suno_logic_processed_24bit_44k.wav",
     PROJECT_ROOT / "05_FINAL_WAV" / "final_preview.mp3",
     PROJECT_ROOT / "06_QC_REPORT" / "final_verification.json",
+    PROJECT_ROOT / "06_QC_REPORT" / "audio_render_manifest.json",
+    PROJECT_ROOT / "06_QC_REPORT" / "arrangement_qc_report.md",
+    PROJECT_ROOT / "06_QC_REPORT" / "commercial_readiness_report.md",
+    PROJECT_ROOT / "06_QC_REPORT" / "autopilot_qc_report.md",
+    PROJECT_ROOT / "06_QC_REPORT" / "autopilot_qc_report.json",
+    PROJECT_ROOT / "tests" / "fixtures" / "dummy_suno_like.wav",
+    PROJECT_ROOT / "07_VOCAL_PROCESSING" / "vocal_analysis.json",
+    PROJECT_ROOT / "07_VOCAL_PROCESSING" / "vocal_processing_log.md",
+    PROJECT_ROOT / "07_VOCAL_PROCESSING" / "vocal_chain_plan.md",
+    PROJECT_ROOT / "08_REFERENCE_MATCH" / "reference_analysis.json",
+    PROJECT_ROOT / "08_REFERENCE_MATCH" / "reference_target_profile.json",
+    PROJECT_ROOT / "08_REFERENCE_MATCH" / "style_translation.md",
+    PROJECT_ROOT / "09_MIX_MASTER" / "mix_session_plan.md",
+    PROJECT_ROOT / "09_MIX_MASTER" / "master_qc_report.md",
+    PROJECT_ROOT / "09_MIX_MASTER" / "mix_master_plan.json",
+    PROJECT_ROOT / "09_MIX_MASTER" / "mix_master_plan.md",
     PROJECT_ROOT / "01_ANALYSIS" / "input_metadata.json",
     PROJECT_ROOT / "01_ANALYSIS" / "conversion_error.md",
+    PROJECT_ROOT / "01_ANALYSIS" / "dependency_capabilities.json",
+    PROJECT_ROOT / "01_ANALYSIS" / "sample_analysis.json",
+    PROJECT_ROOT / "01_ANALYSIS" / "sample_analysis_summary.md",
+    PROJECT_ROOT / "01_ANALYSIS" / "vocal_to_code.json",
+    PROJECT_ROOT / "01_ANALYSIS" / "vocal_to_code_summary.md",
+    PROJECT_ROOT / "01_ANALYSIS" / "song_structure_analysis.json",
+    PROJECT_ROOT / "01_ANALYSIS" / "song_structure_summary.md",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "vocal_pitch_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "arrangement_plan.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "arrangement_plan.md",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "section_progression_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "chord_progression_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "bass_808_midi_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "drum_programming_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "sample_chop_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "melody_variation_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "midi_region_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "automation_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "drum_midi_guide.json",
+    PROJECT_ROOT / "02_EDIT_PLAN" / "logic_arrangement_plan.md",
+    PROJECT_ROOT / "03_LOGIC_PROJECT" / "logic_autopilot_status.json",
 ]
 
 TRACKED_GENERATED_FILES = [
@@ -98,6 +135,9 @@ class FullPipelineTests(unittest.TestCase):
                 "04_PROCESSED_AUDIO",
                 "05_FINAL_WAV",
                 "06_QC_REPORT",
+                "07_VOCAL_PROCESSING",
+                "08_REFERENCE_MATCH",
+                "09_MIX_MASTER",
                 "tools",
                 "scripts",
                 "src",
@@ -113,6 +153,7 @@ class FullPipelineTests(unittest.TestCase):
             final_wav = PROJECT_ROOT / "05_FINAL_WAV" / "final_suno_logic_processed_24bit_48k.wav"
             self.assertTrue(final_wav.exists())
             self.assertTrue((PROJECT_ROOT / "06_QC_REPORT" / "qc_report.md").exists())
+            self.assertTrue((PROJECT_ROOT / "09_MIX_MASTER" / "mix_session_plan.md").exists())
 
             verification = verify_wav(final_wav)
             self.assertGreater(verification["duration_seconds"], 0.0)

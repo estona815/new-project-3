@@ -1,0 +1,169 @@
+{
+  "offset_s": 8.269,
+  "accepted": true,
+  "vocal_score": 0.343,
+  "instrumental_score": 0.2342,
+  "checks": [
+    {
+      "check": "vocal_full",
+      "kind": "full",
+      "best": {
+        "score": 0.343010812997818,
+        "offset_s": 8.26,
+        "overlap_s": 117.28
+      },
+      "candidates": [
+        {
+          "score": 0.343010812997818,
+          "offset_s": 8.26,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.3321170210838318,
+          "offset_s": 9.06,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.3305686116218567,
+          "offset_s": 9.42,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.32758456468582153,
+          "offset_s": 8.78,
+          "overlap_s": 117.28
+        }
+      ]
+    },
+    {
+      "check": "vocal_mid",
+      "kind": "mid",
+      "best": {
+        "score": 0.28358885645866394,
+        "offset_s": 8.28,
+        "overlap_s": 117.28
+      },
+      "candidates": [
+        {
+          "score": 0.28358885645866394,
+          "offset_s": 8.28,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.26649725437164307,
+          "offset_s": 9.56,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.2645091414451599,
+          "offset_s": 8.76,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.2620696723461151,
+          "offset_s": 6.28,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.2617482841014862,
+          "offset_s": 9.4,
+          "overlap_s": 117.28
+        }
+      ]
+    },
+    {
+      "check": "instrumental_low",
+      "kind": "low",
+      "best": {
+        "score": 0.23415438830852509,
+        "offset_s": 7.0,
+        "overlap_s": 117.28
+      },
+      "candidates": [
+        {
+          "score": 0.23415438830852509,
+          "offset_s": 7.0,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.23008297383785248,
+          "offset_s": 7.16,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.22749878466129303,
+          "offset_s": 6.84,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.21512793004512787,
+          "offset_s": 1.98,
+          "overlap_s": 117.28
+        }
+      ]
+    },
+    {
+      "check": "instrumental_mid",
+      "kind": "mid",
+      "best": {
+        "score": 0.1137581467628479,
+        "offset_s": 9.02,
+        "overlap_s": 117.28
+      },
+      "candidates": [
+        {
+          "score": 0.1137581467628479,
+          "offset_s": 9.02,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.1002868041396141,
+          "offset_s": 9.2,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.09428343921899796,
+          "offset_s": 18.9,
+          "overlap_s": 117.28
+        }
+      ]
+    },
+    {
+      "check": "instrumental_full",
+      "kind": "full",
+      "best": {
+        "score": 0.17530040442943573,
+        "offset_s": -5.5,
+        "overlap_s": 111.78
+      },
+      "candidates": [
+        {
+          "score": 0.17530040442943573,
+          "offset_s": -5.5,
+          "overlap_s": 111.78
+        },
+        {
+          "score": 0.17316004633903503,
+          "offset_s": 9.2,
+          "overlap_s": 117.28
+        },
+        {
+          "score": 0.16403828561306,
+          "offset_s": -4.66,
+          "overlap_s": 112.62
+        },
+        {
+          "score": 0.16380856931209564,
+          "offset_s": -5.04,
+          "overlap_s": 112.24
+        },
+        {
+          "score": 0.15634457767009735,
+          "offset_s": 9.04,
+          "overlap_s": 117.28
+        }
+      ]
+    }
+  ],
+  "decision": "use_new_dual_voice_layer"
+}

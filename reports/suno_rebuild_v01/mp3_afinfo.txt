@@ -1,0 +1,16 @@
+File:           /Users/hantaeheuk/Documents/New project 3/renders/suno_rebuild_v01/rebuilt_full_mix_320.mp3
+File type ID:   MPG3
+Num Tracks:     1
+----
+Data format:     2 ch,  48000 Hz, .mp3 (0x00000000) 0 bits/channel, 0 bytes/packet, 1152 frames/packet, 0 bytes/frame
+                no channel layout.
+estimated duration: 141.432000 sec
+audio bytes: 5657280
+audio packets: 5893
+bit rate: 319999 bits per second
+packet size upper bound: 968
+maximum packet size: 960
+audio data file offset: 1005
+optimized
+audio 6786912 valid frames + 576 priming + 1248 remainder = 6788736
+----

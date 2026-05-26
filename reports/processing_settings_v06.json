@@ -1,0 +1,1303 @@
+{
+  "direction": "male main mono center, all female vocals used as panned layers and phrase-end overlaps",
+  "male_moves": {
+    "lead_base": [
+      {
+        "type": "hpf",
+        "freq_hz": 92,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -37.92,
+        "max_cut_db": 2.1,
+        "mean_gr_db": 0.429,
+        "p95_gr_db": 2.1,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -31.58,
+        "max_cut_db": 1.8,
+        "mean_gr_db": 0.298,
+        "p95_gr_db": 1.8,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -38.5,
+        "max_cut_db": 2.8,
+        "mean_gr_db": 0.429,
+        "p95_gr_db": 2.8,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -40.8,
+        "max_cut_db": 4.3,
+        "mean_gr_db": 0.613,
+        "p95_gr_db": 3.732,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -39.56,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.248,
+        "p95_gr_db": 1.7,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 2.4,
+        "wet": 0.11
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.4,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -40.33,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.291,
+        "p95_gr_db": 2.121,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "polish",
+        "presence_db": 0.55,
+        "air_shelf_db": 0.55
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -16.6
+      }
+    ],
+    "lead_match": [
+      {
+        "stage": "cleanup_hpf",
+        "freq_hz": 82,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -30.55,
+        "max_cut_db": 2.0,
+        "mean_gr_db": 0.373,
+        "p95_gr_db": 2.0,
+        "stage": "dynamic_low_mid_body_control"
+      },
+      {
+        "low_hz": 720,
+        "high_hz": 1450,
+        "threshold_db": -24.37,
+        "max_cut_db": 1.9,
+        "mean_gr_db": 0.302,
+        "p95_gr_db": 1.9,
+        "stage": "reference_formant_nasal_control"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -29.8,
+        "max_cut_db": 2.1,
+        "mean_gr_db": 0.24,
+        "p95_gr_db": 1.92,
+        "stage": "presence_harsh_dynamic_control"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9200,
+        "threshold_db": -33.75,
+        "max_cut_db": 3.4,
+        "mean_gr_db": 0.32,
+        "p95_gr_db": 1.825,
+        "stage": "main_de_ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -33.26,
+        "max_cut_db": 1.8,
+        "mean_gr_db": 0.244,
+        "p95_gr_db": 1.8,
+        "stage": "glassy_ai_air_control"
+      },
+      {
+        "stage": "commercial_tune_parallel_layer",
+        "retune_speed_equivalent_ms": {
+          "verse": "22-35",
+          "hook": "10-18",
+          "adlib": "25-40"
+        },
+        "humanize_equivalent_pct": 58,
+        "formant_shift": 0,
+        "wet_db": -8.5,
+        "note": "DSP tune-impression layer; no note-by-note pitch engine available."
+      },
+      {
+        "stage": "decapitator_style_saturation",
+        "style": "A/E style approximation",
+        "drive": 2.6,
+        "mix_pct": 13,
+        "parallel_bus_drive": 5.2,
+        "parallel_return_pct": 8,
+        "hp_hz": 150,
+        "lp_hz": 6800
+      },
+      {
+        "stage": "two_stage_compression",
+        "stage1_ratio": 2.6,
+        "stage2_opto_ratio": 1.7,
+        "avg_target_gr_db": "1-3 + 1-2"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -36.8,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.296,
+        "p95_gr_db": 2.089,
+        "stage": "post_saturation_de_ess"
+      },
+      {
+        "stage": "final_tone_eq",
+        "body_230_hz_db": 0.55,
+        "formant_1050_hz_db": -0.55,
+        "presence_2850_hz_db": 0.55,
+        "top_air_db": -0.18
+      }
+    ],
+    "backing": [
+      {
+        "type": "hpf",
+        "freq_hz": 132,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -45.98,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.149,
+        "p95_gr_db": 1.691,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -47.83,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.125,
+        "p95_gr_db": 1.452,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -63.83,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.181,
+        "p95_gr_db": 2.025,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -63.71,
+        "max_cut_db": 4.8,
+        "mean_gr_db": 0.236,
+        "p95_gr_db": 2.174,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -58.88,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.072,
+        "p95_gr_db": 0.466,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 1.8,
+        "wet": 0.08
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.0,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -63.0,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.093,
+        "p95_gr_db": 0.672,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "backing tuck",
+        "presence_db": -0.65,
+        "air_shelf_db": -0.75
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -25.0
+      }
+    ]
+  },
+  "female_moves": {
+    "lead": [
+      {
+        "type": "hpf",
+        "freq_hz": 132,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -32.62,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.432,
+        "p95_gr_db": 2.6,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -30.43,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.31,
+        "p95_gr_db": 2.2,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -39.7,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.468,
+        "p95_gr_db": 3.1,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -44.49,
+        "max_cut_db": 4.8,
+        "mean_gr_db": 0.825,
+        "p95_gr_db": 4.8,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -41.5,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.23,
+        "p95_gr_db": 1.7,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 1.8,
+        "wet": 0.08
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.0,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -45.19,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.368,
+        "p95_gr_db": 2.2,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "backing tuck",
+        "presence_db": -0.65,
+        "air_shelf_db": -0.75
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -25.0
+      }
+    ],
+    "backing": [
+      {
+        "type": "hpf",
+        "freq_hz": 132,
+        "slope": "18 dB/oct"
+      },
+      {
+        "low_hz": 180,
+        "high_hz": 350,
+        "threshold_db": -56.5,
+        "max_cut_db": 2.6,
+        "mean_gr_db": 0.048,
+        "p95_gr_db": 0.0,
+        "type": "mud/body dynamic cleanup"
+      },
+      {
+        "low_hz": 700,
+        "high_hz": 1400,
+        "threshold_db": -50.89,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.036,
+        "p95_gr_db": 0.0,
+        "type": "nasal/formant soften"
+      },
+      {
+        "low_hz": 2500,
+        "high_hz": 5500,
+        "threshold_db": -73.26,
+        "max_cut_db": 3.1,
+        "mean_gr_db": 0.04,
+        "p95_gr_db": 0.0,
+        "type": "metallic presence soften"
+      },
+      {
+        "low_hz": 5500,
+        "high_hz": 9000,
+        "threshold_db": -78.32,
+        "max_cut_db": 4.8,
+        "mean_gr_db": 0.044,
+        "p95_gr_db": 0.0,
+        "type": "primary de-ess"
+      },
+      {
+        "low_hz": 9000,
+        "high_hz": 12000,
+        "threshold_db": -55.21,
+        "max_cut_db": 1.7,
+        "mean_gr_db": 0.007,
+        "p95_gr_db": 0.0,
+        "type": "secondary glass soften"
+      },
+      {
+        "type": "tube/tape saturation",
+        "drive_db": 1.8,
+        "wet": 0.08
+      },
+      {
+        "type": "gentle vocal compression",
+        "ratio": 2.0,
+        "avg_target_gr_db": "1-3"
+      },
+      {
+        "low_hz": 5600,
+        "high_hz": 9200,
+        "threshold_db": -76.2,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.017,
+        "p95_gr_db": 0.0,
+        "type": "post-saturation de-ess"
+      },
+      {
+        "type": "backing tuck",
+        "presence_db": -0.65,
+        "air_shelf_db": -0.75
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -25.0
+      }
+    ]
+  },
+  "phrase_events": [
+    {
+      "time_s": 4.587,
+      "previous_phrase_s": 0.555,
+      "following_pause_s": 0.171,
+      "confidence": 0.522,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.776
+    },
+    {
+      "time_s": 5.995,
+      "previous_phrase_s": 0.32,
+      "following_pause_s": 0.192,
+      "confidence": 0.488,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.766
+    },
+    {
+      "time_s": 15.317,
+      "previous_phrase_s": 0.171,
+      "following_pause_s": 0.192,
+      "confidence": 0.461,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.758
+    },
+    {
+      "time_s": 18.24,
+      "previous_phrase_s": 0.256,
+      "following_pause_s": 0.363,
+      "confidence": 0.548,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.785
+    },
+    {
+      "time_s": 20.736,
+      "previous_phrase_s": 0.171,
+      "following_pause_s": 0.235,
+      "confidence": 0.479,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.764
+    },
+    {
+      "time_s": 21.845,
+      "previous_phrase_s": 0.235,
+      "following_pause_s": 0.256,
+      "confidence": 0.5,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.77
+    },
+    {
+      "time_s": 24.064,
+      "previous_phrase_s": 0.192,
+      "following_pause_s": 0.384,
+      "confidence": 0.546,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.784
+    },
+    {
+      "time_s": 29.867,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.256,
+      "confidence": 0.484,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.765
+    },
+    {
+      "time_s": 31.189,
+      "previous_phrase_s": 0.277,
+      "following_pause_s": 0.171,
+      "confidence": 0.472,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.761
+    },
+    {
+      "time_s": 40.491,
+      "previous_phrase_s": 0.149,
+      "following_pause_s": 0.235,
+      "confidence": 0.475,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.763
+    },
+    {
+      "time_s": 43.627,
+      "previous_phrase_s": 0.384,
+      "following_pause_s": 0.171,
+      "confidence": 0.491,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.767
+    },
+    {
+      "time_s": 47.445,
+      "previous_phrase_s": 0.213,
+      "following_pause_s": 0.192,
+      "confidence": 0.469,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.761
+    },
+    {
+      "time_s": 55.04,
+      "previous_phrase_s": 0.235,
+      "following_pause_s": 0.171,
+      "confidence": 0.464,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.759
+    },
+    {
+      "time_s": 56.32,
+      "previous_phrase_s": 0.299,
+      "following_pause_s": 0.171,
+      "confidence": 0.475,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.763
+    },
+    {
+      "time_s": 60.992,
+      "previous_phrase_s": 0.299,
+      "following_pause_s": 0.32,
+      "confidence": 0.538,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.781
+    },
+    {
+      "time_s": 69.355,
+      "previous_phrase_s": 0.299,
+      "following_pause_s": 0.363,
+      "confidence": 0.556,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.787
+    },
+    {
+      "time_s": 71.424,
+      "previous_phrase_s": 0.213,
+      "following_pause_s": 0.171,
+      "confidence": 0.46,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.758
+    },
+    {
+      "time_s": 73.088,
+      "previous_phrase_s": 0.448,
+      "following_pause_s": 0.235,
+      "confidence": 0.529,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.779
+    },
+    {
+      "time_s": 77.44,
+      "previous_phrase_s": 0.576,
+      "following_pause_s": 0.213,
+      "confidence": 0.543,
+      "throw": true,
+      "long_tail": false,
+      "send_gain": 0.783
+    },
+    {
+      "time_s": 90.859,
+      "previous_phrase_s": 0.427,
+      "following_pause_s": 0.256,
+      "confidence": 0.534,
+      "throw": false,
+      "long_tail": false,
+      "send_gain": 0.78
+    },
+    {
+      "time_s": 92.779,
+      "previous_phrase_s": 0.213,
+      "following_pause_s": 7.936,
+      "confidence": 1.0,
+      "throw": true,
+      "long_tail": true,
+      "send_gain": 0.92
+    },
+    {
+      "time_s": 101.248,
+      "previous_phrase_s": 0.171,
+      "following_pause_s": 0.256,
+      "confidence": 0.488,
+      "throw": true,
+      "long_tail": true,
+      "send_gain": 0.766
+    }
+  ],
+  "female_events": [
+    {
+      "time_s": 3.967,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 4.657,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 4.726,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 4.796,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 5.375,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 6.065,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 6.134,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 14.697,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 15.387,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 15.456,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 17.62,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 18.31,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 18.379,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 18.449,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 20.116,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 20.806,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 20.875,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 21.225,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 21.915,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 21.984,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 23.444,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 24.134,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 24.203,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 24.273,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 29.247,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 29.937,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 30.006,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 30.569,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 31.259,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 31.328,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 39.871,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 40.561,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 40.63,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 40.7,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 43.007,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 43.697,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 43.766,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 46.825,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 47.515,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 47.584,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 54.42,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 55.11,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 55.179,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 55.249,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 55.7,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 56.39,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 56.459,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 60.372,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 61.062,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 61.131,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 68.735,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 69.425,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 69.494,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 69.564,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 70.804,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 71.494,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 71.563,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 72.468,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 73.158,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 73.227,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 76.82,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 77.51,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 77.579,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 77.649,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 90.239,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 90.929,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 90.998,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 92.159,
+      "type": "female full phrase overlap",
+      "pan": -0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 92.849,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 92.918,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -3.5,
+      "reversed": true
+    },
+    {
+      "time_s": 92.988,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    },
+    {
+      "time_s": 100.628,
+      "type": "female full phrase overlap",
+      "pan": 0.7,
+      "gain_db": 0.8
+    },
+    {
+      "time_s": 101.318,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -2.6,
+      "reversed": false
+    },
+    {
+      "time_s": 101.387,
+      "type": "female vocal chop",
+      "pan": -0.64,
+      "gain_db": -3.5,
+      "reversed": false
+    },
+    {
+      "time_s": 101.457,
+      "type": "female vocal chop",
+      "pan": 0.64,
+      "gain_db": -4.4,
+      "reversed": false
+    }
+  ],
+  "instrument_moves": {
+    "drums": [
+      {
+        "type": "drum low-mid cleanup",
+        "low_hz": 250,
+        "high_hz": 520,
+        "threshold_db": -50.07,
+        "max_cut_db": 1.5,
+        "mean_gr_db": 0.245,
+        "p95_gr_db": 1.5
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -16.8
+      }
+    ],
+    "keys": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -39.17,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.299,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 1.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.6
+      }
+    ],
+    "percussion": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -71.78,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.034,
+        "p95_gr_db": 0.0
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 0.7
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      }
+    ],
+    "synth": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -39.7,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.372,
+        "p95_gr_db": 2.2
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 1.0
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -24.2
+      }
+    ],
+    "other": [
+      {
+        "type": "music low-mid dynamic cleanup",
+        "low_hz": 220,
+        "high_hz": 700,
+        "threshold_db": -62.97,
+        "max_cut_db": 2.2,
+        "mean_gr_db": 0.034,
+        "p95_gr_db": 0.0
+      },
+      {
+        "type": "vocal presence pocket",
+        "band_hz": "1500-4200",
+        "amount_db": 0.7
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -26.2
+      }
+    ],
+    "bass": [
+      {
+        "type": "bass mud dynamic cleanup",
+        "low_hz": 180,
+        "high_hz": 380,
+        "threshold_db": -40.35,
+        "max_cut_db": 1.6,
+        "mean_gr_db": 0.276,
+        "p95_gr_db": 1.6
+      },
+      {
+        "type": "drum-triggered low duck",
+        "band_hz": "35-115",
+        "amount_db": 1.4
+      },
+      {
+        "type": "gain stage",
+        "target_rms_dbfs": -18.1
+      },
+      {
+        "stage": "rougher_reference_bass_grit",
+        "mid_band": "115-850 Hz",
+        "drive_db": 6.4,
+        "grit_gain_db": 1.2
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "label": "v06_loud",
+      "file": "mgmg_mashup_v06_main_center_female_full_pan_loud_24-48.wav",
+      "sample_rate": 48000,
+      "dtype": "int32",
+      "duration_s": 109.6,
+      "peak_dbfs": -2.05,
+      "rms_dbfs": -11.07,
+      "crest_db": 9.02,
+      "stereo_corr": 0.8954,
+      "side_mid_db": -12.58,
+      "sub_20_80_pct": 21.008,
+      "bass_body_80_200_pct": 26.311,
+      "body_200_500_pct": 12.786,
+      "formant_500_1500_pct": 23.656,
+      "presence_1500_5000_pct": 13.435,
+      "sibilance_5000_10000_pct": 1.93,
+      "air_10000_16000_pct": 0.875,
+      "integrated_lufs": -8.4,
+      "lra_lu": 1.3,
+      "true_peak_dbfs": -1.2,
+      "short_term_lufs_min": -16.7,
+      "short_term_lufs_median": -8.3,
+      "short_term_lufs_max": -7.3
+    },
+    {
+      "label": "v06_preview_mp3",
+      "file": "mgmg_mashup_v06_main_center_female_full_pan_preview_320.mp3",
+      "sample_rate": 48000,
+      "dtype": "float32 decoded_from_mp3",
+      "duration_s": 109.6,
+      "peak_dbfs": -1.35,
+      "rms_dbfs": -11.07,
+      "crest_db": 9.72,
+      "stereo_corr": 0.8953,
+      "side_mid_db": -12.58,
+      "sub_20_80_pct": 21.003,
+      "bass_body_80_200_pct": 26.314,
+      "body_200_500_pct": 12.785,
+      "formant_500_1500_pct": 23.656,
+      "presence_1500_5000_pct": 13.435,
+      "sibilance_5000_10000_pct": 1.931,
+      "air_10000_16000_pct": 0.876,
+      "integrated_lufs": -8.4,
+      "lra_lu": 1.3,
+      "true_peak_dbfs": -1.0,
+      "short_term_lufs_min": -16.7,
+      "short_term_lufs_median": -8.3,
+      "short_term_lufs_max": -7.3
+    }
+  ]
+}

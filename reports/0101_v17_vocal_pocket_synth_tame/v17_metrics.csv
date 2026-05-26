@@ -1,0 +1,6 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+v16_reference,0101_FINAL_v16_raw_core_sat_clarity.wav,48000,int32,139.441,-1.18,-12.85,11.67,0.8882,-12.28,26.819,19.009,19.494,25.682,8.054,0.559,0.384,-10.5,2.5,-1.2,-29.9,-10.5,-9.1
+v17_final_wav,0101_FINAL_v17_vocal_pocket_synth_tame.wav,48000,int32,139.441,-1.18,-12.92,11.74,0.9159,-13.57,19.794,16.014,22.788,26.499,14.265,0.381,0.26,-10.1,2.6,-1.2,-30.6,-10.0,-9.0
+v17_final_mp3,0101_FINAL_v17_vocal_pocket_synth_tame_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.12,-12.92,11.8,0.9158,-13.57,19.793,16.015,22.788,26.498,14.265,0.382,0.26,-10.1,2.6,-1.1,-30.6,-10.0,-9.0
+v17_male_plus1db_tune_noise_stem,processed_male_vocal_v17_raw_core_plus1db_stem.wav,48000,float32,139.441,-1.8,-17.04,15.24,0.9998,-40.86,0.001,9.616,33.803,26.677,29.503,0.215,0.185,-12.2,2.9,-1.5,-75.6,-12.3,-10.7
+v17_melody_synth_tamed_stem,processed_melody_synth_v17_tamed_stem.wav,48000,float32,139.441,-2.0,-25.4,23.4,0.8845,-12.12,0.001,14.64,34.181,44.524,5.203,0.888,0.563,-22.0,6.1,-2.0,-73.8,-22.8,-16.4

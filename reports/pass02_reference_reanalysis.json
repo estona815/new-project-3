@@ -1,0 +1,122 @@
+{
+  "generated": "2026-05-24T18:11:42",
+  "metrics": {
+    "previous_master": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/FRESH_MASTER_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -1.0,
+      "rms_dbfs": -12.75,
+      "crest_db": 11.75,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -10.08,
+      "approx_lra_lu": 2.16,
+      "stereo_correlation": 0.873
+    },
+    "pass02_premaster": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS02_PREMASTER_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -9.75,
+      "rms_dbfs": -27.5,
+      "crest_db": 17.75,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -24.66,
+      "approx_lra_lu": 2.89,
+      "stereo_correlation": 0.992
+    },
+    "pass02_master": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS02_MASTER_24bit_48k.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 145.394,
+      "sample_peak_dbfs": -1.0,
+      "rms_dbfs": -11.91,
+      "crest_db": 10.91,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -9.07,
+      "approx_lra_lu": 2.9,
+      "stereo_correlation": 0.992
+    },
+    "technical_reference": {
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "exists": true,
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_s": 185.706,
+      "sample_peak_dbfs": -0.1,
+      "rms_dbfs": -7.63,
+      "crest_db": 7.53,
+      "clip_sample_count": 0,
+      "approx_lufs_i": -6.11,
+      "approx_lra_lu": 1.59,
+      "stereo_correlation": 0.938
+    }
+  },
+  "band_profiles": {
+    "previous_master": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/FRESH_MASTER_24bit_48k.wav",
+      "sub_20_120_db": -19.97,
+      "mud_120_350_db": -19.56,
+      "vocal_presence_1k_5k_db": -19.92,
+      "sibilance_5k5_9k_db": -34.46,
+      "hat_air_7k_11k_db": -33.76,
+      "side_150_400_db": -29.52,
+      "mid_150_400_db": -20.93
+    },
+    "pass02_master": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/renders/PASS02_MASTER_24bit_48k.wav",
+      "sub_20_120_db": -19.2,
+      "mud_120_350_db": -19.04,
+      "vocal_presence_1k_5k_db": -18.15,
+      "sibilance_5k5_9k_db": -34.28,
+      "hat_air_7k_11k_db": -33.2,
+      "side_150_400_db": -43.42,
+      "mid_150_400_db": -21.03
+    },
+    "technical_reference": {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav",
+      "sub_20_120_db": -10.53,
+      "mud_120_350_db": -14.96,
+      "vocal_presence_1k_5k_db": -17.65,
+      "sibilance_5k5_9k_db": -26.51,
+      "hat_air_7k_11k_db": -27.26,
+      "side_150_400_db": -28.11,
+      "mid_150_400_db": -15.3
+    }
+  },
+  "bgv_timing": {
+    "11_Backing_Vocals": {
+      "exists": true,
+      "reference": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/12_Vocals.wav",
+      "candidate": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/11_Backing_Vocals.wav",
+      "lag_s": 0.0,
+      "correlation": 0.101,
+      "note": "positive lag means the candidate envelope trails the male lead"
+    },
+    "female_vocal_candidate_clean": {
+      "exists": true,
+      "reference": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/12_Vocals.wav",
+      "candidate": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/female_vocal_candidate_clean.wav",
+      "lag_s": 0.03,
+      "correlation": 0.092,
+      "note": "positive lag means the candidate envelope trails the male lead"
+    },
+    "external_0_Lead_Vocals": {
+      "exists": true,
+      "reference": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/12_Vocals.wav",
+      "candidate": "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems/0 Lead Vocals.wav",
+      "lag_s": 1.26,
+      "correlation": 0.111,
+      "note": "positive lag means the candidate envelope trails the male lead"
+    }
+  }
+}

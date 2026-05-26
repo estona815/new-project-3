@@ -1,0 +1,8 @@
+/Users/hantaeheuk/Documents/New project 3/renders/hangang_shadow_v29_vocal_ai_artifact_reduced/final_mix_vocal_ai_artifact_reduced_reaperprint_unmastered.wav	/Users/hantaeheuk/Documents/New project 3/renders/hangang_shadow_v29_vocal_ai_artifact_reduced/final_mix_vocal_ai_artifact_reduced.wav
+<CONFIG
+  SRATE 48000
+  NCH 2
+  DITHER 3
+  NORMALIZE 3 -10.5 0
+  BRICKWALL 2 -1.0
+>

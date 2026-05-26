@@ -17,6 +17,13 @@ sys.path.insert(0, str(SRC_DIR))
 from final_verify import expected_final_name, verify_final_export  # noqa: E402
 from paths import ensure_folder_structure  # noqa: E402
 from qc_report import run_final_export_and_qc  # noqa: E402
+from reference_profile import build_reference_target_profile  # noqa: E402
+
+
+def write_master_qc(project_root: Path) -> None:
+    path = project_root / "09_MIX_MASTER" / "master_qc_report.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("# Master QC Report\n\n- status: test fixture\n", encoding="utf-8")
 
 
 def write_source_wav(path: Path, seconds: float = 2.0, sample_rate: int = 48000) -> None:
@@ -68,6 +75,7 @@ class QCReportTests(unittest.TestCase):
             fallback = project_root / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
             write_source_wav(fallback)
             write_metadata(project_root)
+            write_master_qc(project_root)
 
             result = run_final_export_and_qc(
                 options={"export_format": "wav24_48k", "length_mode": "under_2min"},
@@ -93,6 +101,7 @@ class QCReportTests(unittest.TestCase):
             fallback = project_root / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
             write_source_wav(fallback, sample_rate=44100)
             write_metadata(project_root)
+            write_master_qc(project_root)
 
             result = run_final_export_and_qc(
                 options={"export_format": "wav24_44k", "length_mode": "keep_original"},
@@ -100,6 +109,23 @@ class QCReportTests(unittest.TestCase):
             )
             self.assertEqual(Path(result["final_path"]).name, "final_suno_logic_processed_24bit_44k.wav")
             self.assertEqual(result["verification"]["sample_rate"], 44100)
+            self.assertTrue(result["complete"])
+
+    def test_missing_master_qc_blocks_completion(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            project_root = Path(tmp) / "AI_BEAT_LOGIC_WORKFLOW"
+            ensure_folder_structure(project_root)
+            fallback = project_root / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
+            write_source_wav(fallback)
+            write_metadata(project_root)
+
+            result = run_final_export_and_qc(
+                options={"export_format": "wav24_48k", "length_mode": "under_2min"},
+                project_root=project_root,
+            )
+
+            self.assertFalse(result["complete"])
+            self.assertIn("master QC report missing", " ".join(result["completion_gate"].blocking_reasons))
 
     def test_missing_source_fails_before_complete(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -126,6 +152,45 @@ class QCReportTests(unittest.TestCase):
                             options={"export_format": "wav24_48k", "length_mode": "under_2min"},
                             project_root=project_root,
                         )
+
+    def test_qc_report_includes_creative_reference_scoring_and_limits(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            project_root = Path(tmp) / "AI_BEAT_LOGIC_WORKFLOW"
+            ensure_folder_structure(project_root)
+            fallback = project_root / "04_PROCESSED_AUDIO" / "fallback_processed.wav"
+            write_source_wav(fallback)
+            write_metadata(project_root)
+            write_master_qc(project_root)
+            phrase = "ㅇㅇㅇ이라는 곡 베이스처럼 쳐줘"
+            brief = {
+                "mode": "full_song_stereo",
+                "input_files": {"main_input": str(fallback), "reference_audio": ""},
+                "creative_target": phrase,
+                "priority": "808/bass",
+                "avoid": ["muddy 808", "generic trap loop"],
+                "drum_808_direction": "strong_controlled",
+                "master_direction": "master_ready_headroom",
+            }
+            profile = build_reference_target_profile(phrase, None, brief)
+            profile_path = project_root / "08_REFERENCE_MATCH" / "reference_target_profile.json"
+            profile_path.parent.mkdir(parents=True, exist_ok=True)
+            profile_path.write_text(json.dumps(profile, ensure_ascii=False), encoding="utf-8")
+
+            result = run_final_export_and_qc(
+                options={"export_format": "wav24_48k", "length_mode": "under_2min", "creative_brief": brief},
+                project_root=project_root,
+            )
+            report = Path(result["qc_report"]).read_text(encoding="utf-8")
+
+            self.assertIn("## Creative Target Review", report)
+            self.assertIn(f"User creative target: {phrase}", report)
+            self.assertIn("target support: text-only", report)
+            self.assertIn("## Reference Match QC", report)
+            self.assertIn("Bass/808 reference direction match", report)
+            self.assertIn("Stereo-only limitation impact", report)
+            self.assertIn("heuristic/text-only", report)
+            self.assertIn("NEEDS_MANUAL_LOGIC_EDIT", report)
+            self.assertIn("exact reference song match: not claimed", report)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,103 @@
+from __future__ import annotations
+
+from typing import Any
+
+
+SUPPORTED_DELIVERABLE_PROFILES = (
+    "final_master_wav24_48k",
+    "final_master_wav24_44k",
+    "instrumental_mix",
+    "performance_mix",
+    "acapella_if_available",
+    "stems_if_provided",
+    "mp3_preview",
+    "reels_15sec_cut",
+    "short_30sec_cut",
+    "headroom_premaster",
+)
+
+
+def _profile(profile_id: str, *, requested: bool, available: bool, claim: str, blocking: list[str] | None = None) -> dict[str, Any]:
+    return {
+        "profile_id": profile_id,
+        "requested": requested,
+        "available": available,
+        "claim": claim,
+        "blocking_reasons": list(blocking or []),
+    }
+
+
+def build_deliverable_profiles(
+    *,
+    requested_profiles: list[str] | None = None,
+    input_mode: str = "instrumental_beat",
+    isolated_vocal_available: bool = False,
+    stems_provided: bool = False,
+    stem_separation_verified: bool = False,
+    mp3_preview_created: bool = False,
+    final_wav_verified: bool = False,
+    final_format: str = "wav24_48k",
+) -> dict[str, Any]:
+    requested = set(requested_profiles or ["final_master_wav24_48k", "mp3_preview"])
+    stems_available = bool(stems_provided or stem_separation_verified or input_mode == "stems")
+    vocal_available = bool(isolated_vocal_available or stems_available or input_mode == "vocal_plus_beat")
+    profiles = [
+        _profile(
+            "final_master_wav24_48k",
+            requested="final_master_wav24_48k" in requested,
+            available=final_wav_verified and final_format == "wav24_48k",
+            claim="verified final 24-bit 48k WAV" if final_wav_verified and final_format == "wav24_48k" else "requires final_verify before verified claim",
+            blocking=[] if final_wav_verified and final_format == "wav24_48k" else ["final 24-bit 48k WAV not verified"],
+        ),
+        _profile(
+            "final_master_wav24_44k",
+            requested="final_master_wav24_44k" in requested,
+            available=final_wav_verified and final_format == "wav24_44k",
+            claim="verified final 24-bit 44.1k WAV" if final_wav_verified and final_format == "wav24_44k" else "requires final_verify before verified claim",
+            blocking=[] if final_wav_verified and final_format == "wav24_44k" else ["final 24-bit 44.1k WAV not verified"],
+        ),
+        _profile("instrumental_mix", requested="instrumental_mix" in requested, available=input_mode in {"instrumental_beat", "stems"}, claim="available only when source supports instrumental mix or stems"),
+        _profile("performance_mix", requested="performance_mix" in requested, available=input_mode in {"vocal_plus_beat", "stems"}, claim="available when vocal/beat or stems support a performance mix"),
+        _profile(
+            "acapella_if_available",
+            requested="acapella_if_available" in requested,
+            available=vocal_available,
+            claim="isolated vocal/stem available" if vocal_available else "not created; isolated vocal or stems required",
+            blocking=[] if vocal_available else ["isolated vocal or stems required"],
+        ),
+        _profile(
+            "stems_if_provided",
+            requested="stems_if_provided" in requested,
+            available=stems_available,
+            claim="stems provided or verified stem separation exists" if stems_available else "not created; stems were not provided and stem separation is not verified",
+            blocking=[] if stems_available else ["stems not provided and verified stem separation missing"],
+        ),
+        _profile(
+            "mp3_preview",
+            requested="mp3_preview" in requested,
+            available=mp3_preview_created,
+            claim="optional MP3 preview created" if mp3_preview_created else "optional MP3 preview not created; does not block final WAV unless requested",
+            blocking=[] if mp3_preview_created or "mp3_preview" not in requested else ["requested MP3 preview not created"],
+        ),
+        _profile("reels_15sec_cut", requested="reels_15sec_cut" in requested, available=False, claim="requires explicit rendered 15-second cut verification", blocking=["15-second cut not verified"]),
+        _profile("short_30sec_cut", requested="short_30sec_cut" in requested, available=False, claim="requires explicit rendered 30-second cut verification", blocking=["30-second cut not verified"]),
+        _profile("headroom_premaster", requested="headroom_premaster" in requested, available=False, claim="requires exported headroom pre-master artifact", blocking=["headroom pre-master not verified"]),
+    ]
+    return {
+        "schema_version": "deliverable_audio_profiles.v1",
+        "supported_profiles": list(SUPPORTED_DELIVERABLE_PROFILES),
+        "profiles": profiles,
+        "honesty_rules": [
+            "Only create acapella if isolated vocal or stems exist.",
+            "Only create stems if stems were provided or generated by verified stem separation.",
+            "Do not claim stem generation if not performed.",
+            "MP3 preview failure does not block final WAV unless requested.",
+        ],
+    }
+
+
+def profile_by_id(payload: dict[str, Any], profile_id: str) -> dict[str, Any] | None:
+    for profile in payload.get("profiles", []):
+        if profile.get("profile_id") == profile_id:
+            return profile
+    return None

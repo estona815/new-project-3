@@ -1,0 +1,638 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 dual voice mix. New Suno vocal aligned at +8.269s. Reference tracks muted; active playback is MIX_BUS main dual voice.
+  >
+  RIPPLE 0 0
+  AUTOXFADE 129
+  PEAKGAIN 1
+  PANLAW 1
+  PROJOFFS 0 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  ITEMMIX 1
+  SAMPLERATE 48000 1 0
+  RENDER_FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/0101_REAPER_project_sum.wav"
+  RENDER_FMT 0 2 48000
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  TEMPO 135.000000 4 4 0
+  PLAYRATE 1 0 0.25 4
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MARKER 1 0.000000 "intro" 0 0 1 B {04a51851-ca2d-4943-a1ea-643ca254804a} 0 2
+  MARKER 2 14.200000 "verse" 0 0 1 B {0e8abfba-31a2-424d-9b0f-91b2ee3dbaa5} 0 2
+  MARKER 3 42.700000 "hook lift" 0 0 1 B {814ca7ee-4b7c-4a83-9107-dfbfe8e98884} 0 2
+  MARKER 4 72.000000 "second section" 0 0 1 B {de71f505-6db7-4e15-a66c-7741a6ee71aa} 0 2
+  MARKER 5 101.300000 "final lift/outro" 0 0 1 B {fef664fc-9ab7-40bd-82f7-ca2cab464382} 0 2
+  MARKER 6 139.440937 "render end" 0 0 1 B {231b6ba9-ca3f-4e42-afe8-e3ecf3f19ae2} 0 2
+  <TRACK {326b9f54-6c22-4ffb-903f-81fcb2a37aad}
+    NAME "ORIGINAL_REFERENCE muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {13e20584-7d5e-4335-a90d-9062dfd801ab}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {700353d6-0c14-4d09-a741-eeb19c233154}
+      IID 1
+      NAME 0101_original_reference.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3dde7b89-eb7f-4c5d-a930-34649665baa0}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_dual_voice_v08_male_clear_strict_female_timing/stems/0101_original_reference.wav"
+      >
+    >
+  >
+  <TRACK {32709eb4-5172-4986-87d8-947bd862d878}
+    NAME "BASE_INSTRUMENTAL_RAW muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {c4ce9ba9-f668-40c1-a002-7a8f8965b7d4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {ea35b142-5123-48dd-b209-ccb262c466b5}
+      IID 2
+      NAME 0101_instrumental_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {47aaab62-5a6d-4a74-a56b-4109594d53e2}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_dual_voice_v08_male_clear_strict_female_timing/stems/0101_instrumental_raw.wav"
+      >
+    >
+  >
+  <TRACK {98299b05-0908-48d5-960d-72c2fda6a70b}
+    NAME "NEW_SUNO_INSTRUMENTAL_REFERENCE muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {73f912e4-1270-4a99-9822-abf5eb165725}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 8.269000000000
+      SNAPOFFS 0
+      LENGTH 117.280020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {129df05e-bd2a-4ef3-918d-8b420768db72}
+      IID 3
+      NAME 0101_new_suno_instrumental_reference.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {cdd2fb56-44ab-4c9c-8f11-4c774b0aaade}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_dual_voice_v08_male_clear_strict_female_timing/stems/0101_new_suno_instrumental_reference.wav"
+      >
+    >
+  >
+  <TRACK {66e53d05-89a3-40bd-9e3a-e6630dfbc085}
+    NAME "MALE_VOCAL_RAW muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3d23e599-8216-4a35-b8d8-110bfb7535a5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {12078c3b-2cd8-4c24-852b-a3a4e9111515}
+      IID 4
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {09948d87-404c-462d-8f63-ab519a13d142}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_dual_voice_v08_male_clear_strict_female_timing/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {952ec93b-e4e7-45d9-8a4c-11a2132cb49c}
+    NAME "NEW_DUAL_VOICE_RAW aligned muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3cfd9552-6073-4d94-97f7-4fe6115a8eb4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 8.269000000000
+      SNAPOFFS 0
+      LENGTH 117.280020833333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {4cab38c2-128b-4d90-b6bb-a26b48d14098}
+      IID 5
+      NAME 0101_new_suno_dual_voice_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8dc27a5a-009c-4562-a4c3-180ded92cf51}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_dual_voice_v08_male_clear_strict_female_timing/stems/0101_new_suno_dual_voice_raw.wav"
+      >
+    >
+  >
+  <TRACK {51c3149a-3be3-4f98-ba9e-4c98823e3193}
+    NAME "MALE_VOCAL_PROCESSED muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6d9fde3f-6da1-4dbc-9734-a1caef325084}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {00496a85-dc51-4b05-b058-a083909ca80c}
+      IID 6
+      NAME processed_male_vocal_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39ec8fee-e449-4313-a7f5-3cf05c7a12e4}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/processed_male_vocal_stem.wav"
+      >
+    >
+  >
+  <TRACK {5578e9e7-0fad-4869-b5a9-e59e9e162019}
+    NAME "NEW_DUAL_VOICE_PROCESSED muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {945cc586-823f-449e-adcd-1d87057c4751}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {f7bb06b5-3b95-4d23-939a-969265d322ee}
+      IID 7
+      NAME processed_new_dual_voice_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0b2b1171-9457-4b2d-a48e-b8ef55ce19c4}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/processed_new_dual_voice_stem.wav"
+      >
+    >
+  >
+  <TRACK {2173555a-ff89-4154-a80c-cb784ba6eab1}
+    NAME "DRUM_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4b1c22a9-72b5-4dec-a2c6-7864b35c70ea}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {9401b17b-6708-4402-98e3-99a50d7d4160}
+      IID 8
+      NAME drums_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {f83c84b0-e902-4d01-8378-9f81ba06a83d}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/drums_stem.wav"
+      >
+    >
+  >
+  <TRACK {869f9964-b8fb-415a-a110-0c616118d2af}
+    NAME "BASS_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {281a4708-8bea-488a-ad19-973b28408d1d}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {3c186e88-a0f1-437d-b75f-4e22cbb45807}
+      IID 9
+      NAME bass808_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4169b930-ff2a-4083-9ef2-d71760c567b1}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/bass808_stem.wav"
+      >
+    >
+  >
+  <TRACK {8af0c597-473d-4c90-93c4-8b4971873d6e}
+    NAME "MELODY_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {1ccc831f-6957-4650-9e08-a5c1774a3fc7}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {5da5245d-a428-4493-9258-1e454cbbae4a}
+      IID 10
+      NAME melody_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {e2299096-5d9c-47c6-b192-da0b78e3926a}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/melody_stem.wav"
+      >
+    >
+  >
+  <TRACK {c1db5a8c-bc67-460c-a6a5-4c31d0d42785}
+    NAME "MIX_BUS main dual voice ACTIVE"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {19ee1055-5bed-4e90-a407-7735ce4b401a}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {25902cb6-c4d5-4b0a-aa5d-5b458ae7aa58}
+      IID 11
+      NAME 0101_FINAL_male_ref_female_overlap.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {f7c50ccf-849c-40ff-9c37-f942aa6ee11f}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/0101_FINAL_male_ref_female_overlap.wav"
+      >
+    >
+  >
+  <TRACK {54dacb90-aba3-4919-852e-31accd35403a}
+    NAME "ALT new dual voice muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {5c366efb-e2e3-4601-83ab-33110ea705f8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {099bd0bf-435c-4e95-a2e8-9b38610b6314}
+      IID 12
+      NAME 0101_FINAL_overlap_layer_louder_check.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {90b66996-be17-48f0-b82d-cd6987515cbc}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/0101_FINAL_overlap_layer_louder_check.wav"
+      >
+    >
+  >
+  <TRACK {6fa34689-f4d4-4c3f-8f8f-b487205bd0ce}
+    NAME "ALT male lead support muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0374e5e2-e67a-4da8-8479-66e80442844a}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0.000000000000
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.018 0 1 0 0 0
+      FADEOUT 1 0.018 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {cae3fad6-6ee2-4ab6-b101-d899459e1738}
+      IID 13
+      NAME 0101_FINAL_male_lead_reference_balance.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7cfb1cb5-d1e2-46b0-8da5-e38d00d874ad}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_suno_dual_voice_v08_male_clear_strict_female_timing/0101_FINAL_male_lead_reference_balance.wav"
+      >
+    >
+  >
+>

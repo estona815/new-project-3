@@ -1,0 +1,22 @@
+{
+  "male_file": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/12 Vocals.wav",
+  "female_file": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/11 Backing_Vocals.wav",
+  "same_sample_rate": true,
+  "duration_s": 141.394,
+  "length_difference_samples": 0,
+  "envelope_best_lag_ms_positive_female_late": 0.0,
+  "envelope_lag_corr": 0.0843,
+  "male_active_frames_100hz": 6354,
+  "female_active_frames_100hz": 3372,
+  "overlap_frames_100hz": 1370,
+  "female_active_overlaps_male_ratio": 0.4063,
+  "male_active_has_female_ratio": 0.2156,
+  "pitch_class_similarity_frame_count": 313,
+  "pitch_class_similarity_median": 0.8934,
+  "pitch_class_similarity_p10": 0.7441,
+  "pitch_class_similarity_p90": 0.9627,
+  "timing_likely_aligned": false,
+  "pitch_class_likely_compatible": true,
+  "female_safe_as_low_double": false,
+  "verdict": "not_safe_as_audible_double_without_manual_edit"
+}

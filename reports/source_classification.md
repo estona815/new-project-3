@@ -1,12 +1,12 @@
 # Source Classification
 
 - Production rebuild allowed: true
-- Production audio files: 14
-- Reference-only files: 5
-- Technical mix references: 0
-- Problem references: 3
+- Production audio files: 12
+- Reference-only files: 7
+- Technical mix references: 1
+- Problem references: 4
 - Guide MIDI files: 13
-- Quarantined files: 0
+- Quarantined files: 2
 
 | file | category | production | muted/quarantine reason |
 | --- | --- | --- | --- |
@@ -29,12 +29,12 @@
 | 00_REF_Full_Mix.wav | reference_only | false | master/fullmix/final/mp3-like source is reference-only |
 | 01_Woodwinds.wav | music_or_synth | true | music/synth/harmonic source |
 | 02_Brass.wav | music_or_synth | true | music/synth/harmonic source |
-| 03_FX.wav | fx | true | transition/fx/noise source |
+| 03_FX.wav | vocal_artifact_quarantine | false | audio QC quarantine override; original category was fx |
 | 04_Synth.wav | music_or_synth | true | music/synth/harmonic source |
 | 05_Strings.wav | music_or_synth | true | music/synth/harmonic source |
 | 06_Percussion.wav | drums | true | drum/percussion source |
 | 07_Keyboard.wav | music_or_synth | true | music/synth/harmonic source |
-| 08_Guitar.wav | music_or_synth | true | music/synth/harmonic source |
+| 08_Guitar.wav | vocal_artifact_quarantine | false | audio QC quarantine override; original category was music_or_synth |
 | 09_Bass.wav | bass_or_808 | true | bass/808/sub source |
 | 10_Drums.wav | drums | true | drum/percussion source |
 | 11_Backing_Vocals.wav | female_bgv | true | female/backing/adlib/double material is backing support only |
@@ -44,3 +44,6 @@
 | hangang_shadow_mashup_v21_clear_male_blended_female_MASTER_320k.mp3.zip | problem_reference | false | current/problem master or mp3-like source is analysis-only |
 | hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav | problem_reference | false | current/problem master or mp3-like source is analysis-only |
 | hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k.mp3 | problem_reference | false | current/problem master or mp3-like source is analysis-only |
+| hangang_shadow_mashup_v19_polished_balance_melody_vocal_MASTER_320k Stems.zip | problem_reference | false | current/problem master or mp3-like source is analysis-only |
+| 동반자살 WAV.wav | technical_mix_reference | false | commercial mix reference for technical analysis only |
+| 한강 Shadow x 얇은 Shadow (Mashup).zip | uncertain | false | archive must be safely unpacked and classified by contained files |

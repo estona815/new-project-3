@@ -1,0 +1,6 @@
+label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
+v14_final_wav,0101_FINAL_v14_reference_clean_tuned_panned_female.wav,48000,int32,139.441,-1.23,-13.62,12.4,0.8962,-12.62,19.492,16.707,22.796,24.56,16.098,0.207,0.14,-10.8,2.6,-1.2,-31.4,-10.7,-9.5
+v14_final_mp3,0101_FINAL_v14_reference_clean_tuned_panned_female_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.18,-13.62,12.44,0.8961,-12.61,19.49,16.708,22.796,24.561,16.098,0.207,0.14,-10.8,2.6,-1.2,-31.4,-10.7,-9.5
+v14_processed_male_clean_tuned,processed_male_vocal_v14_reference_clean_tuned_stem.wav,48000,float32,139.441,-1.55,-16.01,14.46,0.9998,-39.16,0.001,11.584,33.787,19.898,34.613,0.054,0.062,-11.1,2.1,-1.2,-77.3,-11.2,-10.1
+v14_processed_female_panned,processed_female_layer_v14_panned_support_stem.wav,48000,float32,139.441,-4.6,-25.25,20.65,0.44,-3.99,0.0,0.015,24.891,40.638,34.17,0.2,0.086,-18.9,7.9,-4.6,-71.1,-20.8,-16.9
+v13_previous,0101_FINAL_v13_clear_tuned_female_layer.wav,48000,int32,139.441,-1.23,-13.55,12.32,0.9156,-13.55,23.363,16.613,17.777,23.733,17.613,0.548,0.353,-10.7,2.3,-1.2,-30.5,-10.6,-9.2

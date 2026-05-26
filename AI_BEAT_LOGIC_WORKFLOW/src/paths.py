@@ -13,6 +13,10 @@ REQUIRED_DIRECTORIES = (
     "04_PROCESSED_AUDIO",
     "05_FINAL_WAV",
     "06_QC_REPORT",
+    "07_VOCAL_PROCESSING",
+    "08_REFERENCE_MATCH",
+    "09_MIX_MASTER",
+    "10_RELEASE_PACKAGE",
     "tools",
     "scripts",
     "src",
@@ -31,4 +35,3 @@ def ensure_folder_structure(project_root: Path = PROJECT_ROOT) -> list[Path]:
         folder.mkdir(parents=True, exist_ok=True)
         folders.append(folder)
     return folders
-

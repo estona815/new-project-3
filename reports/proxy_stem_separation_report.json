@@ -1,0 +1,979 @@
+{
+  "status": "proxy_stems_created",
+  "policy": {
+    "analysis_only": true,
+    "not_release_quality_stems": true,
+    "do_not_use_to_copy_reference_creative_elements": true,
+    "demucs_not_used": true
+  },
+  "results": [
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Broken_MASTER_24-48.wav",
+      "slug": "estona_nib-broken_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 101.4130625,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112127083,
+            "rms_dbfs": -10.38396774100801,
+            "crest_factor_db": 9.468817929795302,
+            "band_20_120_db": -0.040600247322743484,
+            "band_120_350_db": -21.325023063747924,
+            "band_350_1000_db": -93.60302605810745,
+            "band_1k_4k_db": -101.9191646748343,
+            "band_4k_8k_db": -101.92576146757516,
+            "band_8k_20k_db": -101.92576708676354
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112134133,
+            "rms_dbfs": -16.92799901498758,
+            "crest_factor_db": 16.012849203774167,
+            "band_20_120_db": -24.335945605530526,
+            "band_120_350_db": -3.7890708099663377,
+            "band_350_1000_db": -3.950034529524083,
+            "band_1k_4k_db": -8.486552743693748,
+            "band_4k_8k_db": -14.701810282654378,
+            "band_8k_20k_db": -40.04969422231662
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112134605,
+            "rms_dbfs": -16.55286605059827,
+            "crest_factor_db": 15.637716239384808,
+            "band_20_120_db": -3.8731023657745967,
+            "band_120_350_db": -5.696907471899884,
+            "band_350_1000_db": -7.989388499171794,
+            "band_1k_4k_db": -10.923017756364452,
+            "band_4k_8k_db": -12.493543511099254,
+            "band_8k_20k_db": -16.098447119626627
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -2.7537054010395585,
+            "rms_dbfs": -17.931012166646834,
+            "crest_factor_db": 15.177306765607275,
+            "band_20_120_db": -11.190171864419549,
+            "band_120_350_db": -3.216079101156998,
+            "band_350_1000_db": -4.760937150330069,
+            "band_1k_4k_db": -11.161913624296433,
+            "band_4k_8k_db": -15.922816302334757,
+            "band_8k_20k_db": -19.64379275312309
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -1.6545427866720395,
+            "rms_dbfs": -19.795255439823126,
+            "crest_factor_db": 18.14071265315109,
+            "band_20_120_db": -7.126438407563944,
+            "band_120_350_db": -3.3547518333127395,
+            "band_350_1000_db": -6.385915932707662,
+            "band_1k_4k_db": -10.43768256683907,
+            "band_4k_8k_db": -18.07913396115982,
+            "band_8k_20k_db": -20.788872991346487
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -0.9858350078355481,
+            "rms_dbfs": -25.195482388358286,
+            "crest_factor_db": 24.20964738052274,
+            "band_20_120_db": -87.1130733137278,
+            "band_120_350_db": -87.11307331334976,
+            "band_350_1000_db": -87.11307299427952,
+            "band_1k_4k_db": -60.06424318164107,
+            "band_4k_8k_db": -5.4998916089967125,
+            "band_8k_20k_db": -1.437826378118185
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-broken_master_24-48/estona_nib-broken_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -7.1282530304979685,
+            "rms_dbfs": -25.929070527106937,
+            "crest_factor_db": 18.80081749660897,
+            "band_20_120_db": -80.61077198638034,
+            "band_120_350_db": -15.919307329498643,
+            "band_350_1000_db": -2.32872604147991,
+            "band_1k_4k_db": -5.9076800023535325,
+            "band_4k_8k_db": -10.288639309906976,
+            "band_8k_20k_db": -14.057361180792011
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Dough_MASTER_24-48.wav",
+      "slug": "estona_nib-dough_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 139.34783333333334,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112116743,
+            "rms_dbfs": -11.416497939829924,
+            "crest_factor_db": 10.501348128618249,
+            "band_20_120_db": -0.03833509116201495,
+            "band_120_350_db": -22.368761491578702,
+            "band_350_1000_db": -96.0734870483843,
+            "band_1k_4k_db": -100.89295836979429,
+            "band_4k_8k_db": -100.89801280064961,
+            "band_8k_20k_db": -100.89801719600558
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112125658,
+            "rms_dbfs": -17.747484393059096,
+            "crest_factor_db": 16.83233458184653,
+            "band_20_120_db": -29.355313601298615,
+            "band_120_350_db": -5.968336039804028,
+            "band_350_1000_db": -4.239411429171614,
+            "band_1k_4k_db": -4.928642181401107,
+            "band_4k_8k_db": -13.234838840182535,
+            "band_8k_20k_db": -39.9890284099343
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112117129,
+            "rms_dbfs": -19.296951052289806,
+            "crest_factor_db": 18.381801241078094,
+            "band_20_120_db": -4.78140492257881,
+            "band_120_350_db": -6.21429396691097,
+            "band_350_1000_db": -8.136166919298814,
+            "band_1k_4k_db": -7.3356117394290585,
+            "band_4k_8k_db": -11.848776759667576,
+            "band_8k_20k_db": -16.090088407477165
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -2.984323886674116,
+            "rms_dbfs": -18.600856010599323,
+            "crest_factor_db": 15.616532123925207,
+            "band_20_120_db": -15.533933381064656,
+            "band_120_350_db": -5.121367610962764,
+            "band_350_1000_db": -4.191979412866723,
+            "band_1k_4k_db": -6.572109351937084,
+            "band_4k_8k_db": -13.064142147601387,
+            "band_8k_20k_db": -18.52544507700462
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112126237,
+            "rms_dbfs": -18.000829670563444,
+            "crest_factor_db": 17.085679859350822,
+            "band_20_120_db": -8.94412013667383,
+            "band_120_350_db": -10.005037946558629,
+            "band_350_1000_db": -4.797996030776378,
+            "band_1k_4k_db": -5.098392943282832,
+            "band_4k_8k_db": -10.228974684313831,
+            "band_8k_20k_db": -14.331433560051487
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -2.632002773247841,
+            "rms_dbfs": -25.992562650123567,
+            "crest_factor_db": 23.360559876875726,
+            "band_20_120_db": -86.32445888627338,
+            "band_120_350_db": -86.32445888586071,
+            "band_350_1000_db": -86.32445797862025,
+            "band_1k_4k_db": -55.77316737462232,
+            "band_4k_8k_db": -4.787454956562177,
+            "band_8k_20k_db": -1.7528318832232843
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-dough_master_24-48/estona_nib-dough_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -2.364016573230228,
+            "rms_dbfs": -20.908353454682537,
+            "crest_factor_db": 18.54433688145231,
+            "band_20_120_db": -88.52004107019121,
+            "band_120_350_db": -24.31402255253915,
+            "band_350_1000_db": -3.911480901952087,
+            "band_1k_4k_db": -3.6941197778158115,
+            "band_4k_8k_db": -8.795079961104177,
+            "band_8k_20k_db": -15.106508015654663
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-IMnK_MASTER_24-48.wav",
+      "slug": "estona_nib-imnk_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 183.09375,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -1.4775760796519444,
+            "rms_dbfs": -12.53195068872168,
+            "crest_factor_db": 11.054374609069736,
+            "band_20_120_db": -0.1163157420268573,
+            "band_120_350_db": -16.06115943003936,
+            "band_350_1000_db": -92.81787203605032,
+            "band_1k_4k_db": -99.77306344424531,
+            "band_4k_8k_db": -99.77708432043643,
+            "band_8k_20k_db": -99.77708777222362
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -1.2575454299802198,
+            "rms_dbfs": -15.25408440140523,
+            "crest_factor_db": 13.99653897142501,
+            "band_20_120_db": -32.18280349303512,
+            "band_120_350_db": -6.077073886944952,
+            "band_350_1000_db": -4.586581108928663,
+            "band_1k_4k_db": -4.377511254513936,
+            "band_4k_8k_db": -14.00700024839876,
+            "band_8k_20k_db": -40.280428688301456
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -1.0738940265905503,
+            "rms_dbfs": -17.207540343742775,
+            "crest_factor_db": 16.133646317152227,
+            "band_20_120_db": -7.03793543642483,
+            "band_120_350_db": -7.150139173152948,
+            "band_350_1000_db": -6.852944501541561,
+            "band_1k_4k_db": -5.51113625588929,
+            "band_4k_8k_db": -10.689794586626459,
+            "band_8k_20k_db": -14.36983343545123
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -1.1143290563038373,
+            "rms_dbfs": -16.496914641954806,
+            "crest_factor_db": 15.38258558565097,
+            "band_20_120_db": -20.69896446156347,
+            "band_120_350_db": -4.428981943274227,
+            "band_350_1000_db": -5.1806876369985115,
+            "band_1k_4k_db": -5.605659447040756,
+            "band_4k_8k_db": -14.427200277135967,
+            "band_8k_20k_db": -17.874684521603715
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112133523,
+            "rms_dbfs": -19.950643706830267,
+            "crest_factor_db": 19.035493895616916,
+            "band_20_120_db": -25.31719820445389,
+            "band_120_350_db": -6.9280502071987895,
+            "band_350_1000_db": -6.361586307191449,
+            "band_1k_4k_db": -5.955028875979157,
+            "band_4k_8k_db": -8.9090460486431,
+            "band_8k_20k_db": -7.43724296201187
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -0.9804151510318,
+            "rms_dbfs": -23.46981704765429,
+            "crest_factor_db": 22.48940189662249,
+            "band_20_120_db": -88.84097918690978,
+            "band_120_350_db": -88.84097918631119,
+            "band_350_1000_db": -88.84097734981853,
+            "band_1k_4k_db": -56.57444969285013,
+            "band_4k_8k_db": -6.151394760096193,
+            "band_8k_20k_db": -1.2066630609505709
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-imnk_master_24-48/estona_nib-imnk_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -4.891428925225735,
+            "rms_dbfs": -23.106864197123382,
+            "crest_factor_db": 18.215435271897647,
+            "band_20_120_db": -87.28696350394114,
+            "band_120_350_db": -20.359734438458354,
+            "band_350_1000_db": -4.439146169688149,
+            "band_1k_4k_db": -3.883292582973623,
+            "band_4k_8k_db": -8.687229159808464,
+            "band_8k_20k_db": -10.61836558690949
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Lovee_MASTER_24-48.wav",
+      "slug": "estona_nib-lovee_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 152.11539583333334,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112115994,
+            "rms_dbfs": -11.416114604252538,
+            "crest_factor_db": 10.500964793040941,
+            "band_20_120_db": -0.054670469357989485,
+            "band_120_350_db": -19.486990092496452,
+            "band_350_1000_db": -93.05089847307158,
+            "band_1k_4k_db": -100.88794536851651,
+            "band_4k_8k_db": -100.89241373453207,
+            "band_8k_20k_db": -100.89241759178883
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112107401,
+            "rms_dbfs": -19.38437931033625,
+            "crest_factor_db": 18.46922949912551,
+            "band_20_120_db": -27.75556377046305,
+            "band_120_350_db": -4.142285744783393,
+            "band_350_1000_db": -4.561419225549207,
+            "band_1k_4k_db": -6.351866087572367,
+            "band_4k_8k_db": -15.019051042871661,
+            "band_8k_20k_db": -41.43913526487534
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112112435,
+            "rms_dbfs": -17.907376094485066,
+            "crest_factor_db": 16.992226283273823,
+            "band_20_120_db": -3.977626766725757,
+            "band_120_350_db": -5.459700406330462,
+            "band_350_1000_db": -8.780267921437822,
+            "band_1k_4k_db": -8.806505200157318,
+            "band_4k_8k_db": -14.197024867612459,
+            "band_8k_20k_db": -18.816786908059136
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -2.1837251160063733,
+            "rms_dbfs": -17.951430767784252,
+            "crest_factor_db": 15.767705651777879,
+            "band_20_120_db": -15.544042199343753,
+            "band_120_350_db": -2.8758359662868456,
+            "band_350_1000_db": -5.227725457209587,
+            "band_1k_4k_db": -9.167854098206297,
+            "band_4k_8k_db": -16.01913322777734,
+            "band_8k_20k_db": -19.940073462095846
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112125379,
+            "rms_dbfs": -21.072995720710193,
+            "crest_factor_db": 20.157845909497656,
+            "band_20_120_db": -17.047938137961523,
+            "band_120_350_db": -8.756191233715931,
+            "band_350_1000_db": -5.073867099130188,
+            "band_1k_4k_db": -4.765395096665079,
+            "band_4k_8k_db": -9.190844766480584,
+            "band_8k_20k_db": -10.88720134404079
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -2.0830808324705625,
+            "rms_dbfs": -26.556909440516456,
+            "crest_factor_db": 24.473828608045896,
+            "band_20_120_db": -85.7506648747241,
+            "band_120_350_db": -85.75066487440814,
+            "band_350_1000_db": -85.75066427512026,
+            "band_1k_4k_db": -57.745548551187575,
+            "band_4k_8k_db": -5.424360852808635,
+            "band_8k_20k_db": -1.467835934665322
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-lovee_master_24-48/estona_nib-lovee_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -3.575681058025684,
+            "rms_dbfs": -23.47821625527315,
+            "crest_factor_db": 19.902535197247467,
+            "band_20_120_db": -86.23372602927502,
+            "band_120_350_db": -21.119701208179226,
+            "band_350_1000_db": -3.85845551187879,
+            "band_1k_4k_db": -4.0551444153399405,
+            "band_4k_8k_db": -8.73236390773598,
+            "band_8k_20k_db": -12.676454661972901
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Missu_MASTER_24-48.wav",
+      "slug": "estona_nib-missu_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 114.08452083333333,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112121672,
+            "rms_dbfs": -11.957138363468555,
+            "crest_factor_db": 11.041988552256388,
+            "band_20_120_db": -0.03438027176366854,
+            "band_120_350_db": -22.360446584785958,
+            "band_350_1000_db": -94.22767997772067,
+            "band_1k_4k_db": -100.35092864643667,
+            "band_4k_8k_db": -100.35609376014764,
+            "band_8k_20k_db": -100.35609821836132
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112127459,
+            "rms_dbfs": -17.040135607198067,
+            "crest_factor_db": 16.124985795985324,
+            "band_20_120_db": -29.877386881454182,
+            "band_120_350_db": -3.4896840160821903,
+            "band_350_1000_db": -4.552548011162882,
+            "band_1k_4k_db": -7.659016590838349,
+            "band_4k_8k_db": -15.351746471829397,
+            "band_8k_20k_db": -41.923073495012446
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112122186,
+            "rms_dbfs": -18.281003114288207,
+            "crest_factor_db": 17.365853303075987,
+            "band_20_120_db": -3.7913800170421963,
+            "band_120_350_db": -5.774276021940733,
+            "band_350_1000_db": -8.008484247298043,
+            "band_1k_4k_db": -10.589769187854357,
+            "band_4k_8k_db": -12.698908679280612,
+            "band_8k_20k_db": -17.37128743172651
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -1.7782292144282366,
+            "rms_dbfs": -16.899883624124932,
+            "crest_factor_db": 15.121654409696694,
+            "band_20_120_db": -18.615918191050326,
+            "band_120_350_db": -2.5465728349379555,
+            "band_350_1000_db": -5.522940501912269,
+            "band_1k_4k_db": -9.170038870359246,
+            "band_4k_8k_db": -16.666205658677107,
+            "band_8k_20k_db": -21.598134292152373
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112126827,
+            "rms_dbfs": -15.398712308396782,
+            "crest_factor_db": 14.4835624971841,
+            "band_20_120_db": -12.583957516607356,
+            "band_120_350_db": -2.4419398418923715,
+            "band_350_1000_db": -5.482196069530778,
+            "band_1k_4k_db": -11.446689795614205,
+            "band_4k_8k_db": -18.43867708924413,
+            "band_8k_20k_db": -22.42606895910932
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -1.8164561184727464,
+            "rms_dbfs": -26.805330395719402,
+            "crest_factor_db": 24.98887427724665,
+            "band_20_120_db": -85.50475130804244,
+            "band_120_350_db": -85.50475130771757,
+            "band_350_1000_db": -85.50475092883724,
+            "band_1k_4k_db": -56.21961077987614,
+            "band_4k_8k_db": -4.751806677718731,
+            "band_8k_20k_db": -1.7706639512063522
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-missu_master_24-48/estona_nib-missu_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -4.421468083694048,
+            "rms_dbfs": -21.857980733464824,
+            "crest_factor_db": 17.43651264977078,
+            "band_20_120_db": -86.53858637320448,
+            "band_120_350_db": -15.15570981684541,
+            "band_350_1000_db": -1.65304805662208,
+            "band_1k_4k_db": -6.67854673717891,
+            "band_4k_8k_db": -12.585547152145711,
+            "band_8k_20k_db": -17.941864898169968
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Phobia_MASTER_24-48.wav",
+      "slug": "estona_nib-phobia_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 88.17258333333334,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112127459,
+            "rms_dbfs": -11.279575630677295,
+            "crest_factor_db": 10.364425819464548,
+            "band_20_120_db": -0.02526017119004149,
+            "band_120_350_db": -23.174353378188123,
+            "band_350_1000_db": -92.48498357087311,
+            "band_1k_4k_db": -101.02117916341676,
+            "band_4k_8k_db": -101.025363812671,
+            "band_8k_20k_db": -101.02536741150467
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112126709,
+            "rms_dbfs": -15.193078680361543,
+            "crest_factor_db": 14.277928869148873,
+            "band_20_120_db": -33.26117923181806,
+            "band_120_350_db": -5.813873491127113,
+            "band_350_1000_db": -3.6211480069894115,
+            "band_1k_4k_db": -5.5667392533531626,
+            "band_4k_8k_db": -15.96116498511488,
+            "band_8k_20k_db": -42.999853590041724
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112128262,
+            "rms_dbfs": -16.49234072196592,
+            "crest_factor_db": 15.577190910753096,
+            "band_20_120_db": -5.6751348973810885,
+            "band_120_350_db": -6.568544786562638,
+            "band_350_1000_db": -6.522859721294556,
+            "band_1k_4k_db": -6.851842741805064,
+            "band_4k_8k_db": -12.19638256001514,
+            "band_8k_20k_db": -17.12367385087237
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -2.4192741553500006,
+            "rms_dbfs": -16.465316686060333,
+            "crest_factor_db": 14.04604253071033,
+            "band_20_120_db": -22.399845795065122,
+            "band_120_350_db": -5.2974846790403465,
+            "band_350_1000_db": -3.3308367224534354,
+            "band_1k_4k_db": -6.726518067073224,
+            "band_4k_8k_db": -17.68182257073823,
+            "band_8k_20k_db": -23.039235136106242
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -1.4471729026693894,
+            "rms_dbfs": -20.0894272558187,
+            "crest_factor_db": 18.642254353149312,
+            "band_20_120_db": -12.927276674573662,
+            "band_120_350_db": -6.376650819569246,
+            "band_350_1000_db": -4.496545052220931,
+            "band_1k_4k_db": -5.008509013782234,
+            "band_4k_8k_db": -14.628122295897285,
+            "band_8k_20k_db": -18.711976475006836
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -1.1887157010979352,
+            "rms_dbfs": -26.24517069764151,
+            "crest_factor_db": 25.05645499654357,
+            "band_20_120_db": -86.10277331659772,
+            "band_120_350_db": -86.10277331619321,
+            "band_350_1000_db": -86.10277105526689,
+            "band_1k_4k_db": -56.15759408920728,
+            "band_4k_8k_db": -4.7419536770627015,
+            "band_8k_20k_db": -1.7756330208019637
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-phobia_master_24-48/estona_nib-phobia_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -3.117100269586015,
+            "rms_dbfs": -22.12453099192568,
+            "crest_factor_db": 19.007430722339667,
+            "band_20_120_db": -88.38119375810963,
+            "band_120_350_db": -21.312405717375466,
+            "band_350_1000_db": -2.951013561128646,
+            "band_1k_4k_db": -3.901451326571184,
+            "band_4k_8k_db": -12.132045195344336,
+            "band_8k_20k_db": -17.62393752425328
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "slug": "estona_nib-stuck_in_seoul_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 185.7064375,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112129474,
+            "rms_dbfs": -11.224811274611532,
+            "crest_factor_db": 10.309661463398585,
+            "band_20_120_db": -0.07748022615185642,
+            "band_120_350_db": -18.489668613683527,
+            "band_350_1000_db": -90.31550902141099,
+            "band_1k_4k_db": -101.07709939366504,
+            "band_4k_8k_db": -101.08416031658805,
+            "band_8k_20k_db": -101.08416641647528
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112133544,
+            "rms_dbfs": -14.535740364213767,
+            "crest_factor_db": 13.620590553000412,
+            "band_20_120_db": -31.43238222707033,
+            "band_120_350_db": -4.917740874600706,
+            "band_350_1000_db": -3.893713259648467,
+            "band_1k_4k_db": -6.160385781686219,
+            "band_4k_8k_db": -15.70397492477301,
+            "band_8k_20k_db": -43.02758990129305
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -1.8267503359016204,
+            "rms_dbfs": -17.125466400832202,
+            "crest_factor_db": 15.298716064930584,
+            "band_20_120_db": -6.862924997277817,
+            "band_120_350_db": -6.498923755089104,
+            "band_350_1000_db": -5.941463423854368,
+            "band_1k_4k_db": -6.35983071651863,
+            "band_4k_8k_db": -12.21838768148819,
+            "band_8k_20k_db": -16.155691199428247
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -1.088775707509644,
+            "rms_dbfs": -15.343461667617229,
+            "crest_factor_db": 14.254685960107585,
+            "band_20_120_db": -19.354463839080825,
+            "band_120_350_db": -3.5728574607601655,
+            "band_350_1000_db": -4.327976479524537,
+            "band_1k_4k_db": -8.166232748584246,
+            "band_4k_8k_db": -16.852379685895073,
+            "band_8k_20k_db": -21.67933110377431
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -1.820150559018698,
+            "rms_dbfs": -22.684951858903133,
+            "crest_factor_db": 20.86480129988444,
+            "band_20_120_db": -17.348181551161186,
+            "band_120_350_db": -5.994941689838024,
+            "band_350_1000_db": -4.1189460261895725,
+            "band_1k_4k_db": -5.992827653243442,
+            "band_4k_8k_db": -13.422189306003844,
+            "band_8k_20k_db": -13.416785256745666
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -2.6418423164901332,
+            "rms_dbfs": -25.644947047764393,
+            "crest_factor_db": 23.003104731274256,
+            "band_20_120_db": -86.66409491164828,
+            "band_120_350_db": -86.66409491131196,
+            "band_350_1000_db": -86.66409360644576,
+            "band_1k_4k_db": -55.2200694204772,
+            "band_4k_8k_db": -6.158680253913778,
+            "band_8k_20k_db": -1.2043373370925623
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-stuck_in_seoul_master_24-48/estona_nib-stuck_in_seoul_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -5.735364131303411,
+            "rms_dbfs": -23.212337275098804,
+            "crest_factor_db": 17.47697314379539,
+            "band_20_120_db": -86.24938698884783,
+            "band_120_350_db": -17.115670014305497,
+            "band_350_1000_db": -2.762424642133108,
+            "band_1k_4k_db": -4.476304962693162,
+            "band_4k_8k_db": -11.925260311942015,
+            "band_8k_20k_db": -15.192028641360885
+          }
+        }
+      ]
+    },
+    {
+      "source_file": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Why_MASTER_24-48.wav",
+      "slug": "estona_nib-why_master_24-48",
+      "sample_rate": 48000,
+      "duration_sec": 163.85497916666668,
+      "output_dir": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48",
+      "outputs": [
+        {
+          "proxy_type": "sub_bass_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_sub_bass_proxy.flac",
+          "warning": "Low-frequency proxy for mono/bass analysis, not separate 808/kick.",
+          "features": {
+            "peak_dbfs": -0.9151498112115158,
+            "rms_dbfs": -11.428926383700684,
+            "crest_factor_db": 10.513776572489169,
+            "band_20_120_db": -0.03196013478015929,
+            "band_120_350_db": -22.17607655400091,
+            "band_350_1000_db": -92.32159660711358,
+            "band_1k_4k_db": -100.87461176434206,
+            "band_4k_8k_db": -100.87940544556594,
+            "band_8k_20k_db": -100.87940959429497
+          }
+        },
+        {
+          "proxy_type": "center_vocal_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_center_vocal_proxy.flac",
+          "warning": "Center mid-band proxy only; not an isolated vocal stem.",
+          "features": {
+            "peak_dbfs": -0.9151498112119218,
+            "rms_dbfs": -17.53200644311669,
+            "crest_factor_db": 16.616856631904767,
+            "band_20_120_db": -28.260568517459753,
+            "band_120_350_db": -6.044750177250639,
+            "band_350_1000_db": -3.514882487495743,
+            "band_1k_4k_db": -5.631452683523712,
+            "band_4k_8k_db": -15.057353683951968,
+            "band_8k_20k_db": -40.82554410284654
+          }
+        },
+        {
+          "proxy_type": "percussive_drum_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_percussive_drum_proxy.flac",
+          "warning": "HPSS percussive proxy; transients from vocal/instruments may leak.",
+          "features": {
+            "peak_dbfs": -0.9151498112131818,
+            "rms_dbfs": -18.22661429497131,
+            "crest_factor_db": 17.311464483758126,
+            "band_20_120_db": -6.430683759003838,
+            "band_120_350_db": -6.637657708623427,
+            "band_350_1000_db": -6.168075121862007,
+            "band_1k_4k_db": -6.66727243133138,
+            "band_4k_8k_db": -11.885765215211565,
+            "band_8k_20k_db": -14.723057234033273
+          }
+        },
+        {
+          "proxy_type": "harmonic_music_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_harmonic_music_proxy.flac",
+          "warning": "HPSS harmonic proxy; vocal and sustained synth/guitar may overlap.",
+          "features": {
+            "peak_dbfs": -1.0677427876719479,
+            "rms_dbfs": -16.920127482726425,
+            "crest_factor_db": 15.852384695054475,
+            "band_20_120_db": -14.118500673735879,
+            "band_120_350_db": -4.88495070234848,
+            "band_350_1000_db": -3.7332269574455252,
+            "band_1k_4k_db": -7.422992460824124,
+            "band_4k_8k_db": -16.348123299672025,
+            "band_8k_20k_db": -20.458878822708204
+          }
+        },
+        {
+          "proxy_type": "side_space_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_side_space_proxy.flac",
+          "warning": "Side channel proxy for width/reverb analysis, not musical stem.",
+          "features": {
+            "peak_dbfs": -2.8419723886291086,
+            "rms_dbfs": -21.876471714848375,
+            "crest_factor_db": 19.03449932621926,
+            "band_20_120_db": -8.753880122856604,
+            "band_120_350_db": -5.274187617019372,
+            "band_350_1000_db": -5.6497526821264135,
+            "band_1k_4k_db": -7.121216782040044,
+            "band_4k_8k_db": -12.32867736881386,
+            "band_8k_20k_db": -13.474881770403515
+          }
+        },
+        {
+          "proxy_type": "air_hash_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_air_hash_proxy.flac",
+          "warning": "High-band proxy for fizz/hash/de-ess analysis.",
+          "features": {
+            "peak_dbfs": -1.3939052299922128,
+            "rms_dbfs": -25.80595509730363,
+            "crest_factor_db": 24.41204986731142,
+            "band_20_120_db": -86.49143610998675,
+            "band_120_350_db": -86.49143610964299,
+            "band_350_1000_db": -86.49143548911226,
+            "band_1k_4k_db": -56.16471533134267,
+            "band_4k_8k_db": -6.190995694610502,
+            "band_8k_20k_db": -1.1940567332764875
+          }
+        },
+        {
+          "proxy_type": "reverb_tail_proxy",
+          "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/proxy_stems/estona_nib-why_master_24-48/estona_nib-why_master_24-48_reverb_tail_proxy.flac",
+          "warning": "Sustain/side-tail proxy; not an actual reverb return.",
+          "features": {
+            "peak_dbfs": -4.747717856496336,
+            "rms_dbfs": -24.81149133405255,
+            "crest_factor_db": 20.063773477556218,
+            "band_20_120_db": -83.20660729961914,
+            "band_120_350_db": -18.99517513774364,
+            "band_350_1000_db": -3.1367976542108575,
+            "band_1k_4k_db": -4.3738278647445314,
+            "band_4k_8k_db": -10.367037623861691,
+            "band_8k_20k_db": -13.508726162661455
+          }
+        }
+      ]
+    }
+  ]
+}

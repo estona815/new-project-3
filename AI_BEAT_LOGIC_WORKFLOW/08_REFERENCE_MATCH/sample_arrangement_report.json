@@ -1,0 +1,304 @@
+{
+  "candidate_analysis": [
+    {
+      "index": 0,
+      "duration_seconds": 0.415,
+      "level_dbfs": -18.77,
+      "spectral_brightness_db": -8.19,
+      "transient_density_per_sec": 16.88,
+      "loopability": 0.461,
+      "boundary_click_risk": 0.084,
+      "tonal_stability_proxy": 0.633,
+      "motif_score": 0.63,
+      "frequency_conflict": {
+        "beat": 1.0,
+        "vocal": 0.835
+      },
+      "ownership_safety_status": "unknown"
+    },
+    {
+      "index": 1,
+      "duration_seconds": 0.415,
+      "level_dbfs": -18.8,
+      "spectral_brightness_db": -7.32,
+      "transient_density_per_sec": 21.703,
+      "loopability": 0.516,
+      "boundary_click_risk": 0.006,
+      "tonal_stability_proxy": 0.817,
+      "motif_score": 0.701,
+      "frequency_conflict": {
+        "beat": 1.0,
+        "vocal": 0.857
+      },
+      "ownership_safety_status": "unknown"
+    },
+    {
+      "index": 2,
+      "duration_seconds": 0.415,
+      "level_dbfs": -20.47,
+      "spectral_brightness_db": -7.94,
+      "transient_density_per_sec": 12.057,
+      "loopability": 0.55,
+      "boundary_click_risk": 0.067,
+      "tonal_stability_proxy": 0.665,
+      "motif_score": 0.673,
+      "frequency_conflict": {
+        "beat": 0.923,
+        "vocal": 0.757
+      },
+      "ownership_safety_status": "unknown"
+    },
+    {
+      "index": 3,
+      "duration_seconds": 0.415,
+      "level_dbfs": -19.14,
+      "spectral_brightness_db": -6.18,
+      "transient_density_per_sec": 19.292,
+      "loopability": 0.517,
+      "boundary_click_risk": 0.002,
+      "tonal_stability_proxy": 0.825,
+      "motif_score": 0.702,
+      "frequency_conflict": {
+        "beat": 1.0,
+        "vocal": 0.868
+      },
+      "ownership_safety_status": "unknown"
+    },
+    {
+      "index": 4,
+      "duration_seconds": 0.415,
+      "level_dbfs": -19.06,
+      "spectral_brightness_db": -4.82,
+      "transient_density_per_sec": 26.526,
+      "loopability": 0.483,
+      "boundary_click_risk": 0.044,
+      "tonal_stability_proxy": 0.834,
+      "motif_score": 0.699,
+      "frequency_conflict": {
+        "beat": 1.0,
+        "vocal": 0.836
+      },
+      "ownership_safety_status": "unknown"
+    },
+    {
+      "index": 5,
+      "duration_seconds": 0.415,
+      "level_dbfs": -18.86,
+      "spectral_brightness_db": -6.83,
+      "transient_density_per_sec": 19.292,
+      "loopability": 0.47,
+      "boundary_click_risk": 0.035,
+      "tonal_stability_proxy": 0.79,
+      "motif_score": 0.679,
+      "frequency_conflict": {
+        "beat": 1.0,
+        "vocal": 0.866
+      },
+      "ownership_safety_status": "unknown"
+    }
+  ],
+  "selected_samples": {
+    "blocked": false,
+    "selected": {
+      "main_motif": {
+        "index": 3,
+        "duration_seconds": 0.415,
+        "level_dbfs": -19.14,
+        "spectral_brightness_db": -6.18,
+        "transient_density_per_sec": 19.292,
+        "loopability": 0.517,
+        "boundary_click_risk": 0.002,
+        "tonal_stability_proxy": 0.825,
+        "motif_score": 0.702,
+        "frequency_conflict": {
+          "beat": 1.0,
+          "vocal": 0.868
+        },
+        "ownership_safety_status": "unknown"
+      },
+      "response_motif": {
+        "index": 1,
+        "duration_seconds": 0.415,
+        "level_dbfs": -18.8,
+        "spectral_brightness_db": -7.32,
+        "transient_density_per_sec": 21.703,
+        "loopability": 0.516,
+        "boundary_click_risk": 0.006,
+        "tonal_stability_proxy": 0.817,
+        "motif_score": 0.701,
+        "frequency_conflict": {
+          "beat": 1.0,
+          "vocal": 0.857
+        },
+        "ownership_safety_status": "unknown"
+      },
+      "texture_chop": {
+        "index": 2,
+        "duration_seconds": 0.415,
+        "level_dbfs": -20.47,
+        "spectral_brightness_db": -7.94,
+        "transient_density_per_sec": 12.057,
+        "loopability": 0.55,
+        "boundary_click_risk": 0.067,
+        "tonal_stability_proxy": 0.665,
+        "motif_score": 0.673,
+        "frequency_conflict": {
+          "beat": 0.923,
+          "vocal": 0.757
+        },
+        "ownership_safety_status": "unknown"
+      },
+      "transition_chop": {
+        "index": 4,
+        "duration_seconds": 0.415,
+        "level_dbfs": -19.06,
+        "spectral_brightness_db": -4.82,
+        "transient_density_per_sec": 26.526,
+        "loopability": 0.483,
+        "boundary_click_risk": 0.044,
+        "tonal_stability_proxy": 0.834,
+        "motif_score": 0.699,
+        "frequency_conflict": {
+          "beat": 1.0,
+          "vocal": 0.836
+        },
+        "ownership_safety_status": "unknown"
+      }
+    }
+  },
+  "section_sample_plan": [
+    {
+      "section": "intro",
+      "bars": [
+        0,
+        4
+      ],
+      "role": "filtered_motif_or_stab",
+      "chop_index": 3,
+      "density": "low",
+      "beat_offsets": [
+        0.0,
+        2.0
+      ],
+      "gain_db": -11.5,
+      "pitch_semitones": 0.0,
+      "note": "small pitch variants only; by-ear confirmation needed"
+    },
+    {
+      "section": "hook",
+      "bars": [
+        4,
+        12
+      ],
+      "role": "main_motif_full",
+      "chop_index": 3,
+      "density": "medium",
+      "beat_offsets": [
+        0.0,
+        2.0
+      ],
+      "gain_db": -7.8,
+      "pitch_semitones": 0.0,
+      "note": "main motif defines hook identity"
+    },
+    {
+      "section": "verse",
+      "bars": [
+        12,
+        20
+      ],
+      "role": "texture_support",
+      "chop_index": 2,
+      "density": "low",
+      "beat_offsets": [
+        1.5
+      ],
+      "gain_db": -14.0,
+      "pitch_semitones": 0.0,
+      "note": "reduced density to avoid random chop clutter"
+    },
+    {
+      "section": "pre_hook",
+      "bars": [
+        20,
+        24
+      ],
+      "role": "response_motif",
+      "chop_index": 1,
+      "density": "medium_low",
+      "beat_offsets": [
+        1.0,
+        3.0
+      ],
+      "gain_db": -10.2,
+      "pitch_semitones": 1.0,
+      "note": "call-response setup before hook"
+    },
+    {
+      "section": "bridge_transition",
+      "bars": [
+        24,
+        28
+      ],
+      "role": "transition_chop",
+      "chop_index": 4,
+      "density": "intentional",
+      "beat_offsets": [
+        0.0,
+        2.75
+      ],
+      "gain_db": -9.8,
+      "pitch_semitones": -1.0,
+      "note": "transition hit, not random glitch"
+    },
+    {
+      "section": "final_hook",
+      "bars": [
+        28,
+        44
+      ],
+      "role": "main_plus_response_width",
+      "chop_index": 3,
+      "response_chop_index": 1,
+      "density": "medium_high",
+      "beat_offsets": [
+        0.0,
+        2.0
+      ],
+      "response_offsets": [
+        3.0
+      ],
+      "gain_db": -7.4,
+      "response_gain_db": -11.2,
+      "pitch_semitones": 0.0,
+      "response_pitch_semitones": 1.0,
+      "note": "main plus response, slightly wider"
+    },
+    {
+      "section": "outro",
+      "bars": [
+        44,
+        999
+      ],
+      "role": "clean_tail",
+      "chop_index": 2,
+      "density": "low",
+      "beat_offsets": [
+        0.0
+      ],
+      "gain_db": -15.0,
+      "pitch_semitones": 0.0,
+      "note": "clean tail"
+    }
+  ],
+  "placement_count": 57,
+  "arrangement_rules": [
+    "fewer stronger motifs over many random chops",
+    "main motif defines hook",
+    "response motif creates call-response",
+    "texture chop supports verse/breakdown",
+    "transitions are intentional",
+    "small pitch variants only unless musical"
+  ],
+  "key_note": "key confidence low; by-ear confirmation needed"
+}

@@ -1,0 +1,1162 @@
+{
+  "analysis_status": "partial_no_current_mix",
+  "project_root": "/Users/hantaeheuk/Documents/New project 3",
+  "expected_input_dir": "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT",
+  "provided_external_dir": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48.",
+  "safety_policy": {
+    "technical_reference_only": true,
+    "do_not_copy_creative_elements": true,
+    "do_not_remove_provenance_or_metadata_for_deception": true,
+    "no_antares": true,
+    "no_paid_tools_required": true
+  },
+  "missing_expected_inputs": [
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/current_mix.wav",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/vocal_stem.wav",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/instrumental_stem.wav",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/reference_01.wav",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/reference_02.wav",
+    "/Users/hantaeheuk/Documents/New project 3/00_AUDIO_INPUT/reference_03.wav"
+  ],
+  "files": [
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Broken_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Broken_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 29207042,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 101.4130625,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 4867827,
+            "duration": "101.413062",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Broken_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "101.413063",
+          "size": "29207042",
+          "bit_rate": "2304006",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.0640939949583235,
+        "peak_dbfs": 0.0,
+        "approx_true_peak_dbfs": 1.8815757888301414,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.602923662180934,
+        "crest_factor_db": 7.602923662180934,
+        "dynamic_range_proxy_db": 15.423949273741238,
+        "short_term_rms_db_distribution": {
+          "min": -29.506111259606534,
+          "p10": -19.425696288887995,
+          "median": -6.80825410030145,
+          "p90": -6.068579184408683,
+          "max": -5.646129460945523
+        },
+        "momentary_rms_db_distribution": {
+          "min": -40.17963479444519,
+          "p10": -20.78640760107976,
+          "median": -7.1078318524105235,
+          "p90": -5.538854058829723,
+          "max": -4.388429399091433
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.00046088326475037016
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -4.125181345013075,
+        "low_end_energy_60_120_db": -5.015181203345041,
+        "low_mid_mud_120_350_db": -8.173896918593778,
+        "vocal_body_150_500_db": -8.389498726776665,
+        "presence_2_5k_db": -18.097632654299872,
+        "harshness_5_8k_db": -18.78603328147988,
+        "air_noise_8_20k_db": -18.937819863427624,
+        "spectral_centroid_hz": 4279.4934944520555,
+        "spectral_rolloff_85_hz": 10252.94117647059,
+        "spectral_flatness": 0.2739118824034577,
+        "high_frequency_energy_ratio_8k_20k": 0.012781425880855214,
+        "top_octave_energy_ratio_12k_20k": 0.0037724356941505497,
+        "high_band_flatness_8k_20k": 0.3545946169783512,
+        "possible_ai_high_end_hash_score": 0.7050622559100388,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.8861665904358769,
+        "mid_side_energy_ratio": 16.566592043430777,
+        "side_to_mid_db": -12.192331777642194,
+        "low_side_to_mid_db_20_120": -17.774799314853755,
+        "high_side_to_mid_db_8k_20k": -14.03653667204182,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Dough_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Dough_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 40132256,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 139.34783333333334,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 6688696,
+            "duration": "139.347833",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Dough_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "139.347833",
+          "size": "40132256",
+          "bit_rate": "2304004",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.25634394427294,
+        "peak_dbfs": -0.000981651388216993,
+        "approx_true_peak_dbfs": 1.1721198246819002,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.908364743556216,
+        "crest_factor_db": 7.907383092167999,
+        "dynamic_range_proxy_db": 13.56271986749975,
+        "short_term_rms_db_distribution": {
+          "min": -25.183084754583067,
+          "p10": -13.371533171262776,
+          "median": -9.138330521300494,
+          "p90": -5.054829812150417,
+          "max": -4.539678874345202
+        },
+        "momentary_rms_db_distribution": {
+          "min": -81.2666639863117,
+          "p10": -18.06443985406983,
+          "median": -9.260794603122147,
+          "p90": -4.787901653536812,
+          "max": -3.8853486202676075
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.013408667399445273
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -2.8563747345661024,
+        "low_end_energy_60_120_db": -7.185476557695017,
+        "low_mid_mud_120_350_db": -10.058028135560308,
+        "vocal_body_150_500_db": -10.178515068424987,
+        "presence_2_5k_db": -14.442363616422767,
+        "harshness_5_8k_db": -18.20234449079151,
+        "air_noise_8_20k_db": -19.691270537921888,
+        "spectral_centroid_hz": 4080.2961532983604,
+        "spectral_rolloff_85_hz": 9141.176470588236,
+        "spectral_flatness": 0.3546546499678771,
+        "high_frequency_energy_ratio_8k_20k": 0.010762649418482586,
+        "top_octave_energy_ratio_12k_20k": 0.002378026990342166,
+        "high_band_flatness_8k_20k": 0.5720611835920126,
+        "possible_ai_high_end_hash_score": 1.0,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.7881638190689507,
+        "mid_side_energy_ratio": 8.44126967283291,
+        "side_to_mid_db": -9.264077748760629,
+        "low_side_to_mid_db_20_120": -16.717925572349724,
+        "high_side_to_mid_db_8k_20k": -3.9061376803847585,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-IMnK_MASTER_24-48.wav",
+      "filename": "Estona,Nib-IMnK_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 52731080,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 183.09375,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 8788500,
+            "duration": "183.093750",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-IMnK_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "183.093750",
+          "size": "52731080",
+          "bit_rate": "2304003",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.04529041534776,
+        "peak_dbfs": -0.09998365831163523,
+        "approx_true_peak_dbfs": 1.5152363699639007,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -8.940036284659111,
+        "crest_factor_db": 8.840052626347477,
+        "dynamic_range_proxy_db": 5.4615359698916555,
+        "short_term_rms_db_distribution": {
+          "min": -23.19347317447778,
+          "p10": -10.5247433216773,
+          "median": -8.927362251288397,
+          "p90": -7.137805995415829,
+          "max": -6.878870514509762
+        },
+        "momentary_rms_db_distribution": {
+          "min": -39.940164151633006,
+          "p10": -12.29729301200732,
+          "median": -8.910494776529582,
+          "p90": -7.051879546589642,
+          "max": -6.375492435803277
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.0
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -5.607528426380282,
+        "low_end_energy_60_120_db": -7.571528467197,
+        "low_mid_mud_120_350_db": -7.161674722065569,
+        "vocal_body_150_500_db": -8.064041575269382,
+        "presence_2_5k_db": -12.222859264858712,
+        "harshness_5_8k_db": -16.138478619460088,
+        "air_noise_8_20k_db": -15.614242726244264,
+        "spectral_centroid_hz": 4654.000860449685,
+        "spectral_rolloff_85_hz": 10617.64705882353,
+        "spectral_flatness": 0.3366544549216285,
+        "high_frequency_energy_ratio_8k_20k": 0.027486766262846508,
+        "top_octave_energy_ratio_12k_20k": 0.008567089345193743,
+        "high_band_flatness_8k_20k": 0.42980218859812236,
+        "possible_ai_high_end_hash_score": 0.95055785071958,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.8488522690624571,
+        "mid_side_energy_ratio": 12.232532672409128,
+        "side_to_mid_db": -10.875163844097438,
+        "low_side_to_mid_db_20_120": -32.72072147070297,
+        "high_side_to_mid_db_8k_20k": -2.6956634023013644,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Lovee_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Lovee_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 43809314,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 152.11539583333334,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 7301539,
+            "duration": "152.115396",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Lovee_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "152.115396",
+          "size": "43809314",
+          "bit_rate": "2304004",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.300074426158685,
+        "peak_dbfs": -0.000981651388216993,
+        "approx_true_peak_dbfs": 1.4809100873233505,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.58382240581022,
+        "crest_factor_db": 7.582840754422003,
+        "dynamic_range_proxy_db": 11.226109962942724,
+        "short_term_rms_db_distribution": {
+          "min": -21.715176466553082,
+          "p10": -16.409398878022845,
+          "median": -6.802936396091855,
+          "p90": -5.480125478277707,
+          "max": -4.942810163955004
+        },
+        "momentary_rms_db_distribution": {
+          "min": -67.17010838151339,
+          "p10": -16.29589259689632,
+          "median": -6.900399082594216,
+          "p90": -5.326222556820176,
+          "max": -4.153682091077464
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.022182446741707468
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -3.0494400288410173,
+        "low_end_energy_60_120_db": -7.436955852883644,
+        "low_mid_mud_120_350_db": -7.8232077864058365,
+        "vocal_body_150_500_db": -8.474387193610037,
+        "presence_2_5k_db": -16.790450651243603,
+        "harshness_5_8k_db": -19.587683735337563,
+        "air_noise_8_20k_db": -20.35178762697968,
+        "spectral_centroid_hz": 3915.001694548635,
+        "spectral_rolloff_85_hz": 9300.0,
+        "spectral_flatness": 0.3418038793193206,
+        "high_frequency_energy_ratio_8k_20k": 0.009237443753981561,
+        "top_octave_energy_ratio_12k_20k": 0.002456447398635632,
+        "high_band_flatness_8k_20k": 0.5633883053628985,
+        "possible_ai_high_end_hash_score": 1.0,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.8952465788734193,
+        "mid_side_energy_ratio": 18.092645290415668,
+        "side_to_mid_db": -12.57502068852185,
+        "low_side_to_mid_db_20_120": -27.920914616789382,
+        "high_side_to_mid_db_8k_20k": -3.109294071256916,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Missu_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Missu_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 32856422,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 114.08452083333333,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 5476057,
+            "duration": "114.084521",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Missu_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "114.084521",
+          "size": "32856422",
+          "bit_rate": "2304005",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.037262301773635,
+        "peak_dbfs": 0.0,
+        "approx_true_peak_dbfs": 1.4203271208935653,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -8.417791999087225,
+        "crest_factor_db": 8.417791999087225,
+        "dynamic_range_proxy_db": 13.01215366568747,
+        "short_term_rms_db_distribution": {
+          "min": -33.966434041458044,
+          "p10": -15.365262489239788,
+          "median": -9.0515792894834,
+          "p90": -5.474374305212724,
+          "max": -4.563610318354716
+        },
+        "momentary_rms_db_distribution": {
+          "min": -47.575779005597255,
+          "p10": -17.60328106311788,
+          "median": -9.018345876972086,
+          "p90": -4.905510127356774,
+          "max": -3.3191004639506785
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.0010494777537925556
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -3.2896694869953285,
+        "low_end_energy_60_120_db": -7.898919280437026,
+        "low_mid_mud_120_350_db": -7.227156130838509,
+        "vocal_body_150_500_db": -7.340750095775768,
+        "presence_2_5k_db": -15.87818887100248,
+        "harshness_5_8k_db": -18.332755452179423,
+        "air_noise_8_20k_db": -20.063664177649414,
+        "spectral_centroid_hz": 3904.9343536059514,
+        "spectral_rolloff_85_hz": 9100.0,
+        "spectral_flatness": 0.269888269985887,
+        "high_frequency_energy_ratio_8k_20k": 0.009858409922437847,
+        "top_octave_energy_ratio_12k_20k": 0.002297064352237941,
+        "high_band_flatness_8k_20k": 0.4035851042622266,
+        "possible_ai_high_end_hash_score": 0.764961956625288,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.6137663642083274,
+        "mid_side_energy_ratio": 4.178332005680114,
+        "side_to_mid_db": -6.210029455787471,
+        "low_side_to_mid_db_20_120": -16.800462996718913,
+        "high_side_to_mid_db_8k_20k": -8.578131943999308,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Phobia_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Phobia_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 25393784,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 88.17258333333334,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 4232284,
+            "duration": "88.172583",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Phobia_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "88.172583",
+          "size": "25393784",
+          "bit_rate": "2304007",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -5.994058860342737,
+        "peak_dbfs": -0.008306117970009116,
+        "approx_true_peak_dbfs": 1.375657271685029,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.822754102807304,
+        "crest_factor_db": 7.814447984837294,
+        "dynamic_range_proxy_db": 4.585932925385263,
+        "short_term_rms_db_distribution": {
+          "min": -9.873166877993903,
+          "p10": -9.673589412302572,
+          "median": -7.960789181860957,
+          "p90": -6.2410416406510745,
+          "max": -6.062673140769702
+        },
+        "momentary_rms_db_distribution": {
+          "min": -70.88989539570638,
+          "p10": -10.524691542988093,
+          "median": -7.883364052158814,
+          "p90": -6.124016107804179,
+          "max": -5.581728701596706
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.0008398538472370947
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -4.21483721210128,
+        "low_end_energy_60_120_db": -7.527910450527509,
+        "low_mid_mud_120_350_db": -8.663077343952386,
+        "vocal_body_150_500_db": -7.56621361823699,
+        "presence_2_5k_db": -14.056660720720185,
+        "harshness_5_8k_db": -18.47927627500087,
+        "air_noise_8_20k_db": -19.998275844099627,
+        "spectral_centroid_hz": 3809.8256117759165,
+        "spectral_rolloff_85_hz": 8711.764705882353,
+        "spectral_flatness": 0.29202277912729047,
+        "high_frequency_energy_ratio_8k_20k": 0.010036278356555633,
+        "top_octave_energy_ratio_12k_20k": 0.0026074493958109838,
+        "high_band_flatness_8k_20k": 0.47893740079157104,
+        "possible_ai_high_end_hash_score": 0.8944838081981158,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.8879546076324686,
+        "mid_side_energy_ratio": 16.85261561747798,
+        "side_to_mid_db": -12.266673153011393,
+        "low_side_to_mid_db_20_120": -22.64230567240797,
+        "high_side_to_mid_db_8k_20k": -10.98125180142316,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 53483534,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 185.7064375,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 8913909,
+            "duration": "185.706437",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "185.706438",
+          "size": "53483534",
+          "bit_rate": "2304003",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.035494602383248,
+        "peak_dbfs": -0.09998261088512073,
+        "approx_true_peak_dbfs": 1.0620628695131187,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.763859071115481,
+        "crest_factor_db": 7.66387646023036,
+        "dynamic_range_proxy_db": 2.3582031461159803,
+        "short_term_rms_db_distribution": {
+          "min": -14.326662564327592,
+          "p10": -8.682739092375224,
+          "median": -7.6207755226923,
+          "p90": -7.1409193289433865,
+          "max": -5.304812296003721
+        },
+        "momentary_rms_db_distribution": {
+          "min": -72.19996115190982,
+          "p10": -9.0275657937307,
+          "median": -7.665045052139307,
+          "p90": -6.920869659303646,
+          "max": -4.927333966465852
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.0
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -4.995432438076916,
+        "low_end_energy_60_120_db": -6.903885750282948,
+        "low_mid_mud_120_350_db": -7.095229232399454,
+        "vocal_body_150_500_db": -6.647951059574419,
+        "presence_2_5k_db": -13.674068057403215,
+        "harshness_5_8k_db": -19.048258025886078,
+        "air_noise_8_20k_db": -18.89970958064688,
+        "spectral_centroid_hz": 4095.32040704066,
+        "spectral_rolloff_85_hz": 9647.058823529413,
+        "spectral_flatness": 0.27072125666304553,
+        "high_frequency_energy_ratio_8k_20k": 0.012922332784984123,
+        "top_octave_energy_ratio_12k_20k": 0.004001184027382674,
+        "high_band_flatness_8k_20k": 0.37906107767204034,
+        "possible_ai_high_end_hash_score": 0.7477824943223416,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.9376041512872425,
+        "mid_side_energy_ratio": 31.053408671483584,
+        "side_to_mid_db": -14.921092787787655,
+        "low_side_to_mid_db_20_120": -29.436564956834044,
+        "high_side_to_mid_db_8k_20k": -9.440820220815334,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    },
+    {
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Why_MASTER_24-48.wav",
+      "filename": "Estona,Nib-Why_MASTER_24-48.wav",
+      "role": "reference",
+      "file_size_bytes": 47190314,
+      "format": "WAV",
+      "subtype": "PCM_24",
+      "duration_sec": 163.85497916666668,
+      "sample_rate": 48000,
+      "channels": 2,
+      "bit_depth_or_subtype": "PCM_24",
+      "metadata": {
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s24le",
+            "codec_long_name": "PCM signed 24-bit little-endian",
+            "codec_type": "audio",
+            "codec_tag_string": "[1][0][0][0]",
+            "codec_tag": "0x0001",
+            "sample_fmt": "s32",
+            "sample_rate": "48000",
+            "channels": 2,
+            "bits_per_sample": 24,
+            "initial_padding": 0,
+            "r_frame_rate": "0/0",
+            "avg_frame_rate": "0/0",
+            "time_base": "1/48000",
+            "duration_ts": 7865039,
+            "duration": "163.854979",
+            "bit_rate": "2304000",
+            "bits_per_raw_sample": "24",
+            "disposition": {
+              "default": 0,
+              "dub": 0,
+              "original": 0,
+              "comment": 0,
+              "lyrics": 0,
+              "karaoke": 0,
+              "forced": 0,
+              "hearing_impaired": 0,
+              "visual_impaired": 0,
+              "clean_effects": 0,
+              "attached_pic": 0,
+              "timed_thumbnails": 0,
+              "non_diegetic": 0,
+              "captions": 0,
+              "descriptions": 0,
+              "metadata": 0,
+              "dependent": 0,
+              "still_image": 0
+            }
+          }
+        ],
+        "format": {
+          "filename": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Why_MASTER_24-48.wav",
+          "nb_streams": 1,
+          "nb_programs": 0,
+          "nb_stream_groups": 0,
+          "format_name": "wav",
+          "format_long_name": "WAV / WAVE (Waveform Audio)",
+          "duration": "163.854979",
+          "size": "47190314",
+          "bit_rate": "2304003",
+          "probe_score": 99
+        }
+      },
+      "loudness": {
+        "integrated_lufs": -6.004478299333236,
+        "peak_dbfs": -0.0999784211803257,
+        "approx_true_peak_dbfs": 0.5315694293475777,
+        "true_peak_note": "4x oversampled proxy, not a certified true-peak meter.",
+        "rms_dbfs": -7.556133102128502,
+        "crest_factor_db": 7.456154680948176,
+        "dynamic_range_proxy_db": 16.0377916289047,
+        "short_term_rms_db_distribution": {
+          "min": -24.554136714432374,
+          "p10": -14.984185756863177,
+          "median": -8.322037923925496,
+          "p90": -3.418084827474246,
+          "max": -2.9083647100307894
+        },
+        "momentary_rms_db_distribution": {
+          "min": -92.42466691055078,
+          "p10": -18.67912605399216,
+          "median": -8.346504539250963,
+          "p90": -3.269474143499586,
+          "max": -2.0698705170908878
+        },
+        "clipping_risk": true,
+        "mp3_overshoot_risk": true,
+        "silence_or_headroom_problem": false,
+        "near_digital_full_scale_sample_ratio": 0.0
+      },
+      "spectral": {
+        "low_end_energy_20_60_db": -3.0228805802680054,
+        "low_end_energy_60_120_db": -7.35735056087459,
+        "low_mid_mud_120_350_db": -9.729718939116927,
+        "vocal_body_150_500_db": -9.52351611744214,
+        "presence_2_5k_db": -15.833690053069237,
+        "harshness_5_8k_db": -19.824487756762224,
+        "air_noise_8_20k_db": -19.377637211901128,
+        "spectral_centroid_hz": 3991.5662664317124,
+        "spectral_rolloff_85_hz": 9417.64705882353,
+        "spectral_flatness": 0.3183270170592465,
+        "high_frequency_energy_ratio_8k_20k": 0.011548389701936453,
+        "top_octave_energy_ratio_12k_20k": 0.002719307762437185,
+        "high_band_flatness_8k_20k": 0.48426888218353453,
+        "possible_ai_high_end_hash_score": 0.9156442173275003,
+        "sudden_high_frequency_cutoff_risk": false
+      },
+      "stereo": {
+        "stereo_correlation": 0.9286770807144255,
+        "mid_side_energy_ratio": 27.041691957976923,
+        "side_to_mid_db": -14.320338612719873,
+        "low_side_to_mid_db_20_120": -21.40676021996083,
+        "high_side_to_mid_db_8k_20k": -8.410246151930917,
+        "low_end_mono_compatibility_risk": false,
+        "excessive_side_high_frequency_energy": false,
+        "unstable_center_image_risk": false
+      }
+    }
+  ],
+  "reference_target_profile": {
+    "status": "ok",
+    "reference_count": 8,
+    "source_files": [
+      "Estona,Nib-Broken_MASTER_24-48.wav",
+      "Estona,Nib-Dough_MASTER_24-48.wav",
+      "Estona,Nib-IMnK_MASTER_24-48.wav",
+      "Estona,Nib-Lovee_MASTER_24-48.wav",
+      "Estona,Nib-Missu_MASTER_24-48.wav",
+      "Estona,Nib-Phobia_MASTER_24-48.wav",
+      "Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "Estona,Nib-Why_MASTER_24-48.wav"
+    ],
+    "target_lufs_range": {
+      "median": -6.0412763585606974,
+      "low": -6.112156482286977,
+      "high": -6.027740526620745,
+      "min": -6.300074426158685,
+      "max": -5.994058860342737
+    },
+    "target_true_peak_ceiling_dbfs": -1.0,
+    "target_peak_range": {
+      "median": 1.3979921962892972,
+      "low": 1.1446055858897048,
+      "high": 1.489491657983488,
+      "min": 0.5315694293475777,
+      "max": 1.8815757888301414
+    },
+    "low_end_target_behavior": {
+      "20_60_db": {
+        "median": -3.707425416004202,
+        "low": -4.409986018595189,
+        "high": -3.042800166697764,
+        "min": -5.607528426380282,
+        "max": -2.8563747345661024
+      },
+      "60_120_db": {
+        "median": -7.397153206879117,
+        "low": -7.538814954694882,
+        "high": -7.1150788558419995,
+        "min": -7.898919280437026,
+        "max": -5.015181203345041
+      },
+      "guidance": "Keep sub controlled and mono-safe; add 808 harmonics rather than only pushing sub level."
+    },
+    "vocal_presence_behavior": {
+      "body_150_500_db": {
+        "median": -8.226770151023024,
+        "low": -8.736669424568063,
+        "high": -7.509847737621684,
+        "min": -10.178515068424987,
+        "max": -6.647951059574419
+      },
+      "presence_2_5k_db": {
+        "median": -15.138026834746002,
+        "low": -16.10625431606276,
+        "high": -13.961012554890942,
+        "min": -18.097632654299872,
+        "max": -12.222859264858712
+      },
+      "guidance": "Presence should stay readable without a hard 3-8 kHz glare spike."
+    },
+    "high_end_smoothness_target": {
+      "harshness_5_8k_db": {
+        "median": -18.632654778240376,
+        "low": -19.183114453248947,
+        "high": -18.300152711832446,
+        "min": -19.824487756762224,
+        "max": -16.138478619460088
+      },
+      "air_noise_8_20k_db": {
+        "median": -19.534453874911506,
+        "low": -20.014622927487075,
+        "high": -18.928292292732436,
+        "min": -20.35178762697968,
+        "max": -15.614242726244264
+      },
+      "ai_hash_score": {
+        "median": 0.905064012762808,
+        "low": 0.7606670910495514,
+        "high": 0.962918388039685,
+        "min": 0.7050622559100388,
+        "max": 1.0
+      },
+      "guidance": "Smooth top first, then add air; avoid bright exciter if hash score is high."
+    },
+    "stereo_width_target": {
+      "correlation": {
+        "median": 0.8870605990341727,
+        "low": 0.8336801565640806,
+        "high": 0.9036042043336708,
+        "min": 0.6137663642083274,
+        "max": 0.9376041512872425
+      },
+      "side_to_mid_db": {
+        "median": -12.229502465326792,
+        "low": -13.011350169571354,
+        "high": -10.472392320263236,
+        "min": -14.921092787787655,
+        "max": -6.210029455787471
+      },
+      "guidance": "Music bed can be wide, but low end should stay centered."
+    },
+    "saturation_glue_target": {
+      "crest_factor_db": {
+        "median": 7.739162222533826,
+        "low": 7.597902935241201,
+        "high": 8.034985318897805,
+        "min": 7.456154680948176,
+        "max": 8.840052626347477
+      },
+      "dynamic_range_proxy_db": {
+        "median": 12.119131814315097,
+        "low": 5.242635208765058,
+        "high": 14.028027219060121,
+        "min": 2.3582031461159803,
+        "max": 16.0377916289047
+      },
+      "spectral_flatness": {
+        "median": 0.3051748980932685,
+        "low": 0.27311422596835466,
+        "high": 0.33794181102105153,
+        "min": 0.269888269985887,
+        "max": 0.3546546499678771
+      },
+      "guidance": "Use controlled saturation/soft clipping for density without flattening transients."
+    },
+    "master_density_target": {
+      "integrated_lufs": {
+        "median": -6.0412763585606974,
+        "low": -6.112156482286977,
+        "high": -6.027740526620745,
+        "min": -6.300074426158685,
+        "max": -5.994058860342737
+      },
+      "rms_dbfs": {
+        "median": -7.793306586961393,
+        "low": -8.035721557438968,
+        "high": -7.598148348088255,
+        "min": -8.940036284659111,
+        "max": -7.556133102128502
+      },
+      "guidance": "Reference median is a direction, not a mandate. Do not chase unsafe clipping."
+    }
+  },
+  "current_mix": null,
+  "vocal_instrument_relationship": {
+    "status": "missing_stems",
+    "message": "vocal_stem.wav and instrumental_stem.wav were not both found.",
+    "available": {
+      "vocal_stem": false,
+      "instrumental_stem": false
+    }
+  },
+  "current_mix_ranked_issues": [
+    {
+      "priority": 1,
+      "issue": "current_mix.wav missing",
+      "evidence": "No current mix was found in 00_AUDIO_INPUT or the provided Desktop directory.",
+      "recommendation": "Place the current Suno/AI-assisted mix in 00_AUDIO_INPUT/current_mix.wav, then rerun analysis."
+    }
+  ]
+}

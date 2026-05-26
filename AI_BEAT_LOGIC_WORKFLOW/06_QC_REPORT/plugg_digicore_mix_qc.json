@@ -1,0 +1,788 @@
+{
+  "style_target": "digicore_hyperpop_system_seoul_adjacent_broad_target",
+  "exact_artist_clone_claimed": false,
+  "tempo_bpm": 136.0,
+  "duration_seconds": 95.92710416666667,
+  "input_files": {
+    "beat": "/Users/hantaeheuk/Desktop/plugg/SahBabii-Type-Beat---BLUE-SQUID_1.wav",
+    "sample": "/Users/hantaeheuk/Desktop/\u110b\u1173\u11b7\u110b\u1161\u11a8\u1109\u1162\u11b7\u1111\u1173\u11af/15_U.N.Owen_source.mp3",
+    "vocals": [
+      "/Users/hantaeheuk/Desktop/plugg/main2_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/main 1_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub1 girl_1.wav",
+      "/Users/hantaeheuk/Desktop/plugg/doub2 girl_1.wav"
+    ]
+  },
+  "outputs": {
+    "pre_master": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/09_MIX_MASTER/plugg_digicore_pre_master.wav",
+    "final_master": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_digicore_mix_master_24bit_48k.wav",
+    "preview": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_digicore_mix_master_preview.m4a",
+    "qc_json": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/06_QC_REPORT/plugg_digicore_mix_qc.json",
+    "qc_markdown": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/06_QC_REPORT/plugg_digicore_mix_qc.md"
+  },
+  "processing": {
+    "pre_master_gain": 0.5216569608651624,
+    "master_gain": 1.5154579623023134,
+    "notes": [
+      "beat trimmed to vocal arrangement plus 6 bars of tail",
+      "beat gain staged, sub-rumble high-pass, subtle saturation",
+      "lead and doubles high-passed, leveled, compressed, softly saturated",
+      "doubles aligned against the lead using envelope cross-correlation when confidence was usable",
+      "short melodic sample chops from the Desktop sample folder added as hook motifs",
+      "master bus peak-normalized, gently compressed, softly saturated, and limited"
+    ],
+    "true_pitch_correction_applied": false,
+    "pitch_note": "No verified pitch-editor or Auto-Tune plugin is available here; the render uses leveling, tone shaping, doubled width, and timing alignment without claiming true note correction.",
+    "rights_note": "Local sample file was used for a demo render; release use still needs sample/license clearance."
+  },
+  "track_reports": [
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/main2_1.wav",
+      "duration_seconds": 84.66891666666666,
+      "normalize_gain": 0.39343979078614305,
+      "safety_gain": 1.9952623149688795,
+      "target_peak_db": -5.0,
+      "pan": 0.0,
+      "mix_gain_db": -1.5,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.0,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -17.5,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -21.5,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -24.5,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -25.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -27.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -29.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -31.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/main 1_1.wav",
+      "duration_seconds": 77.15958333333333,
+      "normalize_gain": 0.4552869428965387,
+      "safety_gain": 1.7091947522889264,
+      "target_peak_db": -7.0,
+      "pan": 0.04,
+      "mix_gain_db": -5.0,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": -0.2726,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -20.0,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -24.0,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -27.0,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -27.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -29.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -31.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -33.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub_1.wav",
+      "duration_seconds": 84.65620833333334,
+      "normalize_gain": 0.463022660733922,
+      "safety_gain": 1.8213750913941804,
+      "target_peak_db": -8.0,
+      "pan": -0.28,
+      "mix_gain_db": -8.5,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.2611,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -22.0,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -26.0,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -29.0,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub1 girl_1.wav",
+      "duration_seconds": 85.338875,
+      "normalize_gain": 0.3805457761425769,
+      "safety_gain": 1.815592693876459,
+      "target_peak_db": -8.5,
+      "pan": 0.52,
+      "mix_gain_db": -10.5,
+      "alignment_shift_frames": 0,
+      "alignment_shift_ms": 0.0,
+      "alignment_score": 0.0225,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -22.5,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -26.5,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -29.5,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.0,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.0,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.0,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.0,
+          "pan": 0.24
+        }
+      ]
+    },
+    {
+      "input": "/Users/hantaeheuk/Desktop/plugg/doub2 girl_1.wav",
+      "duration_seconds": 83.98625,
+      "normalize_gain": 0.30870612679876697,
+      "safety_gain": 1.8691727817269594,
+      "target_peak_db": -8.5,
+      "pan": -0.5,
+      "mix_gain_db": -11.0,
+      "alignment_shift_frames": 480,
+      "alignment_shift_ms": 10.0,
+      "alignment_score": 0.3222,
+      "delay_and_room_taps": [
+        {
+          "delay_seconds": 0.221,
+          "gain_db": -23.0,
+          "pan": -0.62
+        },
+        {
+          "delay_seconds": 0.441,
+          "gain_db": -27.0,
+          "pan": 0.64
+        },
+        {
+          "delay_seconds": 0.662,
+          "gain_db": -30.0,
+          "pan": -0.35
+        },
+        {
+          "delay_seconds": 0.031,
+          "gain_db": -28.5,
+          "pan": -0.42
+        },
+        {
+          "delay_seconds": 0.057,
+          "gain_db": -30.5,
+          "pan": 0.37
+        },
+        {
+          "delay_seconds": 0.089,
+          "gain_db": -32.5,
+          "pan": -0.18
+        },
+        {
+          "delay_seconds": 0.144,
+          "gain_db": -34.5,
+          "pan": 0.24
+        }
+      ]
+    }
+  ],
+  "sample_report": {
+    "decode_status": {
+      "decoded": true,
+      "reused": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/04_PROCESSED_AUDIO/plugg_un_owen_sample_source_48k.wav"
+    },
+    "source": "/Users/hantaeheuk/Desktop/\u110b\u1173\u11b7\u110b\u1161\u11a8\u1109\u1162\u11b7\u1111\u1173\u11af/15_U.N.Owen_source.mp3",
+    "chops": [
+      {
+        "index": 0,
+        "source_start_seconds": 42.0,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 1,
+        "source_start_seconds": 42.5,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 2,
+        "source_start_seconds": 43.0,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 3,
+        "source_start_seconds": 43.75,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 4,
+        "source_start_seconds": 44.25,
+        "duration_seconds": 0.415
+      },
+      {
+        "index": 5,
+        "source_start_seconds": 45.0,
+        "duration_seconds": 0.415
+      }
+    ],
+    "motif_placements": [
+      {
+        "bar": 4,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 4,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 4,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 4,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 4,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 4,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 6,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 6,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 6,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 6,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 6,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 6,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 8,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 8,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 8,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 8,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 8,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 8,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 10,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 10,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 10,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 10,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 10,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 10,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 20,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 20,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 20,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 20,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 20,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 20,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 22,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 22,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 22,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 22,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 22,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 22,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 24,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 24,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 24,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 24,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 24,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 24,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 26,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 26,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 26,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 26,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 26,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 26,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 36,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 36,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 36,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 36,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 36,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 36,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 38,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 38,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 38,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 38,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 38,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 38,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 40,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 40,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 40,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 40,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 40,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 40,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 42,
+        "beat_offset": 0.0,
+        "chop_index": 0,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 42,
+        "beat_offset": 1.0,
+        "chop_index": 1,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 42,
+        "beat_offset": 2.0,
+        "chop_index": 2,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 42,
+        "beat_offset": 3.0,
+        "chop_index": 3,
+        "gain_db": -13.0
+      },
+      {
+        "bar": 42,
+        "beat_offset": 4.5,
+        "chop_index": 4,
+        "gain_db": -16.5
+      },
+      {
+        "bar": 42,
+        "beat_offset": 5.5,
+        "chop_index": 5,
+        "gain_db": -16.5
+      }
+    ]
+  },
+  "preview": {
+    "created": true,
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_digicore_mix_master_preview.m4a",
+    "stderr": ""
+  },
+  "master_metrics": {
+    "peak_dbfs": -1.050000030698375,
+    "rms_dbfs": -9.687951920972328,
+    "clipping_count": 0
+  },
+  "verification": {
+    "ok": true,
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/05_FINAL_WAV/plugg_digicore_mix_master_24bit_48k.wav",
+    "exists": true,
+    "file_size": 27627050,
+    "duration_seconds": 95.92710416666667,
+    "sample_rate": 48000,
+    "expected_sample_rate": 48000,
+    "channels": 2,
+    "codec_name": "pcm_s24le",
+    "bit_depth_verified": true,
+    "bit_depth": 24,
+    "format_verified": true,
+    "peak_dbfs": -1.0500001637480672,
+    "rms_dbfs": -9.6879518883128,
+    "clipping_count": 0,
+    "errors": []
+  }
+}

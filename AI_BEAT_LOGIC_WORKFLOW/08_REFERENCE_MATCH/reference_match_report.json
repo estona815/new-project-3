@@ -1,0 +1,161 @@
+{
+  "matched_traits": {
+    "spectral_band_energy": true,
+    "stereo_by_band_analyzed": true,
+    "transient_density_analyzed": true,
+    "low_end_tightness_analyzed": true,
+    "harshness_sibilance_guarded": true,
+    "mono_compatibility_guarded": true
+  },
+  "ignored_traits": [
+    "RMS/crest numeric match is advisory only; no extra compression is applied here",
+    "no sample, melody, pattern, or vocal identity extraction from references"
+  ],
+  "correction_amounts": [
+    {
+      "band": "sub_20_60",
+      "low_hz": 20.0,
+      "high_hz": 60.0,
+      "gain_db": -0.88
+    },
+    {
+      "band": "bass_60_150",
+      "low_hz": 60.0,
+      "high_hz": 150.0,
+      "gain_db": 0.14
+    },
+    {
+      "band": "low_mid_150_400",
+      "low_hz": 150.0,
+      "high_hz": 400.0,
+      "gain_db": 1.35
+    },
+    {
+      "band": "mid_400_1500",
+      "low_hz": 400.0,
+      "high_hz": 1500.0,
+      "gain_db": 0.38
+    },
+    {
+      "band": "presence_1500_4500",
+      "low_hz": 1500.0,
+      "high_hz": 4500.0,
+      "gain_db": 1.5
+    }
+  ],
+  "stereo_delta_by_band_db": {
+    "sub_20_60": -24.92,
+    "bass_60_150": -1.83,
+    "low_mid_150_400": -1.03,
+    "mid_400_1500": -2.49,
+    "presence_1500_4500": -0.52,
+    "bite_4500_8000": 4.54,
+    "air_8000_16000": 3.56
+  },
+  "warnings": [
+    "ignored bite_4500_8000 boost to avoid harsher/sibilant top-end chasing",
+    "ignored air_8000_16000 boost to avoid harsher/sibilant top-end chasing",
+    "width differences reported only; no fake widening applied by reference matcher"
+  ],
+  "limitations": [
+    "reference tracks are used for broad tone and texture only",
+    "single-bus matching cannot infer stems or vocal arrangement decisions",
+    "corrections are intentionally capped and may leave numeric deltas unresolved"
+  ],
+  "before": {
+    "peak_dbfs": -2.03,
+    "rms_dbfs": -16.9,
+    "crest_db": 14.87,
+    "side_mid_db": -15.47,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -3.05,
+      "bass_60_150": -5.35,
+      "low_mid_150_400": -10.57,
+      "mid_400_1500": -8.86,
+      "presence_1500_4500": -16.31,
+      "bite_4500_8000": -18.99,
+      "air_8000_16000": -19.91
+    },
+    "band_delta_vs_reference_average_db": {
+      "sub_20_60": 1.96,
+      "bass_60_150": -0.31,
+      "low_mid_150_400": -3.0,
+      "mid_400_1500": -0.85,
+      "presence_1500_4500": -4.37,
+      "bite_4500_8000": -3.36,
+      "air_8000_16000": -3.76
+    },
+    "stereo_delta_by_band_db": {
+      "sub_20_60": -24.92,
+      "bass_60_150": -1.83,
+      "low_mid_150_400": -1.03,
+      "mid_400_1500": -2.49,
+      "presence_1500_4500": -0.52,
+      "bite_4500_8000": 4.54,
+      "air_8000_16000": 3.56
+    },
+    "loudness_density_delta": {
+      "rms_db": -7.93,
+      "crest_db": 5.9,
+      "transient_density_per_sec": -6.628
+    },
+    "harshness_sibilance_delta": {
+      "harshness_db": 0.75,
+      "sibilance_db": -3.44
+    },
+    "low_end_tightness_delta": {
+      "sub_to_bass_db": 2.1,
+      "bass_to_low_mid_db": 1.45,
+      "sub_crest_db": -2.44
+    },
+    "vocal_presence_proxy_delta_db": -1.71
+  },
+  "after": {
+    "peak_dbfs": -1.68,
+    "rms_dbfs": -17.11,
+    "crest_db": 15.43,
+    "side_mid_db": -15.01,
+    "band_db_rel_to_mono_rms": {
+      "sub_20_60": -3.42,
+      "bass_60_150": -5.21,
+      "low_mid_150_400": -9.7,
+      "mid_400_1500": -8.64,
+      "presence_1500_4500": -15.5,
+      "bite_4500_8000": -19.01,
+      "air_8000_16000": -19.82
+    },
+    "band_delta_vs_reference_average_db": {
+      "sub_20_60": 1.59,
+      "bass_60_150": -0.17,
+      "low_mid_150_400": -2.13,
+      "mid_400_1500": -0.63,
+      "presence_1500_4500": -3.56,
+      "bite_4500_8000": -3.38,
+      "air_8000_16000": -3.67
+    },
+    "stereo_delta_by_band_db": {
+      "sub_20_60": -23.89,
+      "bass_60_150": -1.31,
+      "low_mid_150_400": -0.95,
+      "mid_400_1500": -2.5,
+      "presence_1500_4500": -0.5,
+      "bite_4500_8000": 4.56,
+      "air_8000_16000": 3.55
+    },
+    "loudness_density_delta": {
+      "rms_db": -8.14,
+      "crest_db": 6.46,
+      "transient_density_per_sec": -6.805
+    },
+    "harshness_sibilance_delta": {
+      "harshness_db": -0.04,
+      "sibilance_db": -3.47
+    },
+    "low_end_tightness_delta": {
+      "sub_to_bass_db": 1.58,
+      "bass_to_low_mid_db": 0.93,
+      "sub_crest_db": -2.62
+    },
+    "vocal_presence_proxy_delta_db": -1.41
+  }
+}

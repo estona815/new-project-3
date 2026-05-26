@@ -1,0 +1,189 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 v19 final vocal redesign. Applies source redesign 2/3/6: harmonic density, consonant layer, noise/clarity separation. Female side layer +1 dB over v18.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 135.000000 4 4 0
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  MASTER_NCH 2 2
+  <TRACK {4ce4d6ed-34a7-4587-b393-83ffbe5757df}
+    NAME "V18_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {1eafaa60-8715-46fb-8af7-bc18c2618041}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {919b3c15-d005-4aea-9aa0-8587d8588244}
+      IID 1
+      NAME 0101_FINAL_v18_endpoint_throw_female_up.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {64a80e8c-29a7-4407-a0e0-172dc9a0b8c6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v18_endpoint_throw_female_up/0101_FINAL_v18_endpoint_throw_female_up.wav"
+      >
+    >
+  >
+  <TRACK {d52f3997-acd8-4d61-8481-c5cfdda084ca}
+    NAME "RAW_VOCAL_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {21de7efb-4ab7-4e0b-b152-4ef999dd1f65}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {d05a89a1-4463-40f3-9480-6e85bfa4533b}
+      IID 2
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7499235f-3fbe-4345-b11f-54c51218d413}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v01/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {f11fdc33-4b57-400e-9322-c6d07809af60}
+    NAME "MALE_V19_REDESIGNED muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {7a6c813b-368d-4d69-b4f7-116800dfc96d}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {472546bd-34e4-4937-a794-d57753962756}
+      IID 3
+      NAME processed_male_vocal_v19_redesigned_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1e2aaaac-e6fd-4158-a249-1b416d009f1d}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v19_final_vocal_redesign/processed_male_vocal_v19_redesigned_stem.wav"
+      >
+    >
+  >
+  <TRACK {99a7b249-7bb7-4d92-9c88-9b62c1983474}
+    NAME "FEMALE_V19_SIDE_PLUS1_MORE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {7a3cd418-22a6-4da3-a4b3-2a2c902e5e00}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {48507c19-e898-4d9d-9fd9-97f51176acb8}
+      IID 4
+      NAME processed_female_layer_v19_side_plus1db_more_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {14100705-8a1a-4205-92b1-5a785cccbc0c}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v19_final_vocal_redesign/processed_female_layer_v19_side_plus1db_more_stem.wav"
+      >
+    >
+  >
+  <TRACK {39c7883c-bff2-418c-b285-d461445f5e2f}
+    NAME "ENDPOINT_THROW_V19 muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {188a9cb9-4a21-4969-a8e8-052fe7b4f70e}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {7b595124-4218-47aa-b2b8-3e2605caf31e}
+      IID 5
+      NAME endpoint_throw_fx_v19_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {b75abb50-42e5-4bcb-aebc-d5e619ad0424}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v19_final_vocal_redesign/endpoint_throw_fx_v19_stem.wav"
+      >
+    >
+  >
+  <TRACK {44080b7e-521b-4cbb-9fda-842ba435b66e}
+    NAME "V19_FINAL_ACTIVE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {79c2be8d-8ed8-457d-a988-a67cf8141ea0}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {a6c5c954-f979-442f-9f1f-b712cc41aa27}
+      IID 6
+      NAME 0101_FINAL_v19_final_vocal_redesign.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {dceef3e2-45ee-49ce-a97e-0c36a914aba7}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v19_final_vocal_redesign/0101_FINAL_v19_final_vocal_redesign.wav"
+      >
+    >
+  >
+>

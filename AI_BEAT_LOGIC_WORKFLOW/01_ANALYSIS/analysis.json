@@ -1,19 +1,1159 @@
 {
-  "status": "pending_audio_analysis",
-  "note": "Detailed audio analysis will be implemented in the audio-analysis branch.",
-  "required_metrics": [
-    "duration",
-    "sample_rate",
-    "channels",
-    "peak",
-    "rms",
-    "lufs_estimate",
-    "clipping",
-    "silence",
-    "over_compressed_sections",
-    "excessive_low_end",
-    "vocal_like_texture_candidates",
-    "melody_buried_candidates",
-    "intro_hook_drop_outro_candidates"
-  ]
+  "metadata": {
+    "path": "/Users/hantaeheuk/Documents/New project 3/AI_BEAT_LOGIC_WORKFLOW/04_PROCESSED_AUDIO/working_input.wav",
+    "duration_seconds": 183.759625,
+    "sample_rate": 48000,
+    "channels": 2,
+    "file_size": 70567792,
+    "bit_depth": 32,
+    "audio_format": "ieee_float",
+    "frame_count": 8820462
+  },
+  "level_analysis": {
+    "peak_dbfs": 0.0,
+    "rms_dbfs": -8.522779189401472,
+    "estimated_integrated_loudness_dbfs": -8.522779189401472,
+    "estimated_loudness_note": "Heuristic RMS-based estimate, not gated K-weighted LUFS.",
+    "short_term_loudness_windows": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "loudness_dbfs": -17.39711314969272
+      },
+      {
+        "start": 1.0,
+        "end": 4.0,
+        "loudness_dbfs": -17.533174037230552
+      },
+      {
+        "start": 2.0,
+        "end": 5.0,
+        "loudness_dbfs": -17.67487881524993
+      },
+      {
+        "start": 3.0,
+        "end": 6.0,
+        "loudness_dbfs": -17.74358211808646
+      },
+      {
+        "start": 4.0,
+        "end": 7.0,
+        "loudness_dbfs": -17.641238534419738
+      },
+      {
+        "start": 5.0,
+        "end": 8.0,
+        "loudness_dbfs": -17.825486570975965
+      },
+      {
+        "start": 6.0,
+        "end": 9.0,
+        "loudness_dbfs": -18.063576112031324
+      },
+      {
+        "start": 7.0,
+        "end": 10.0,
+        "loudness_dbfs": -18.609949403730784
+      },
+      {
+        "start": 8.0,
+        "end": 11.0,
+        "loudness_dbfs": -15.58862136905853
+      },
+      {
+        "start": 9.0,
+        "end": 12.0,
+        "loudness_dbfs": -14.30765266478964
+      },
+      {
+        "start": 10.0,
+        "end": 13.0,
+        "loudness_dbfs": -13.11119512463408
+      },
+      {
+        "start": 11.0,
+        "end": 14.0,
+        "loudness_dbfs": -13.443673020267617
+      },
+      {
+        "start": 12.0,
+        "end": 15.0,
+        "loudness_dbfs": -13.200221262128107
+      },
+      {
+        "start": 13.0,
+        "end": 16.0,
+        "loudness_dbfs": -12.402927015898687
+      },
+      {
+        "start": 14.0,
+        "end": 17.0,
+        "loudness_dbfs": -12.11795679007811
+      },
+      {
+        "start": 15.0,
+        "end": 18.0,
+        "loudness_dbfs": -12.064322201697951
+      },
+      {
+        "start": 16.0,
+        "end": 19.0,
+        "loudness_dbfs": -12.51439926802767
+      },
+      {
+        "start": 17.0,
+        "end": 20.0,
+        "loudness_dbfs": -10.79102421364567
+      },
+      {
+        "start": 18.0,
+        "end": 21.0,
+        "loudness_dbfs": -9.802511966995596
+      },
+      {
+        "start": 19.0,
+        "end": 22.0,
+        "loudness_dbfs": -9.01654857949769
+      },
+      {
+        "start": 20.0,
+        "end": 23.0,
+        "loudness_dbfs": -9.025756401688202
+      },
+      {
+        "start": 21.0,
+        "end": 24.0,
+        "loudness_dbfs": -9.234211007123399
+      },
+      {
+        "start": 22.0,
+        "end": 25.0,
+        "loudness_dbfs": -8.950490993370554
+      },
+      {
+        "start": 23.0,
+        "end": 26.0,
+        "loudness_dbfs": -9.255159703117116
+      },
+      {
+        "start": 24.0,
+        "end": 27.0,
+        "loudness_dbfs": -8.950166881941753
+      },
+      {
+        "start": 25.0,
+        "end": 28.0,
+        "loudness_dbfs": -9.034119501348389
+      },
+      {
+        "start": 26.0,
+        "end": 29.0,
+        "loudness_dbfs": -9.074163429449646
+      },
+      {
+        "start": 27.0,
+        "end": 30.0,
+        "loudness_dbfs": -9.004540613096605
+      },
+      {
+        "start": 28.0,
+        "end": 31.0,
+        "loudness_dbfs": -9.047021559090542
+      },
+      {
+        "start": 29.0,
+        "end": 32.0,
+        "loudness_dbfs": -8.829004665181992
+      },
+      {
+        "start": 30.0,
+        "end": 33.0,
+        "loudness_dbfs": -8.790872556517222
+      },
+      {
+        "start": 31.0,
+        "end": 34.0,
+        "loudness_dbfs": -8.91270318302478
+      },
+      {
+        "start": 32.0,
+        "end": 35.0,
+        "loudness_dbfs": -8.826776602486689
+      },
+      {
+        "start": 33.0,
+        "end": 36.0,
+        "loudness_dbfs": -8.987260828663372
+      },
+      {
+        "start": 34.0,
+        "end": 37.0,
+        "loudness_dbfs": -8.925098795237357
+      },
+      {
+        "start": 35.0,
+        "end": 38.0,
+        "loudness_dbfs": -9.115361001205777
+      },
+      {
+        "start": 36.0,
+        "end": 39.0,
+        "loudness_dbfs": -9.148316582503295
+      },
+      {
+        "start": 37.0,
+        "end": 40.0,
+        "loudness_dbfs": -9.013868389917013
+      },
+      {
+        "start": 38.0,
+        "end": 41.0,
+        "loudness_dbfs": -8.725127455026591
+      },
+      {
+        "start": 39.0,
+        "end": 42.0,
+        "loudness_dbfs": -8.4670963430745
+      },
+      {
+        "start": 40.0,
+        "end": 43.0,
+        "loudness_dbfs": -8.616262689683746
+      },
+      {
+        "start": 41.0,
+        "end": 44.0,
+        "loudness_dbfs": -8.764115747537595
+      },
+      {
+        "start": 42.0,
+        "end": 45.0,
+        "loudness_dbfs": -8.615357379084724
+      },
+      {
+        "start": 43.0,
+        "end": 46.0,
+        "loudness_dbfs": -8.39996225748832
+      },
+      {
+        "start": 44.0,
+        "end": 47.0,
+        "loudness_dbfs": -8.087564594143972
+      },
+      {
+        "start": 45.0,
+        "end": 48.0,
+        "loudness_dbfs": -8.038801731052606
+      },
+      {
+        "start": 46.0,
+        "end": 49.0,
+        "loudness_dbfs": -7.822891340225512
+      },
+      {
+        "start": 47.0,
+        "end": 50.0,
+        "loudness_dbfs": -7.981430237180131
+      },
+      {
+        "start": 48.0,
+        "end": 51.0,
+        "loudness_dbfs": -8.274525576216412
+      },
+      {
+        "start": 49.0,
+        "end": 52.0,
+        "loudness_dbfs": -8.549265955578552
+      },
+      {
+        "start": 50.0,
+        "end": 53.0,
+        "loudness_dbfs": -8.706766949901237
+      },
+      {
+        "start": 51.0,
+        "end": 54.0,
+        "loudness_dbfs": -8.752458263925693
+      },
+      {
+        "start": 52.0,
+        "end": 55.0,
+        "loudness_dbfs": -8.63207155515038
+      },
+      {
+        "start": 53.0,
+        "end": 56.0,
+        "loudness_dbfs": -8.491904934129478
+      },
+      {
+        "start": 54.0,
+        "end": 57.0,
+        "loudness_dbfs": -8.117312537865521
+      },
+      {
+        "start": 55.0,
+        "end": 58.0,
+        "loudness_dbfs": -8.016916286179402
+      },
+      {
+        "start": 56.0,
+        "end": 59.0,
+        "loudness_dbfs": -8.032408111039302
+      },
+      {
+        "start": 57.0,
+        "end": 60.0,
+        "loudness_dbfs": -8.562316233075828
+      },
+      {
+        "start": 58.0,
+        "end": 61.0,
+        "loudness_dbfs": -9.384217763686546
+      },
+      {
+        "start": 59.0,
+        "end": 62.0,
+        "loudness_dbfs": -9.408183765381144
+      },
+      {
+        "start": 60.0,
+        "end": 63.0,
+        "loudness_dbfs": -9.27538393615982
+      },
+      {
+        "start": 61.0,
+        "end": 64.0,
+        "loudness_dbfs": -9.119733812554735
+      },
+      {
+        "start": 62.0,
+        "end": 65.0,
+        "loudness_dbfs": -9.061230608252313
+      },
+      {
+        "start": 63.0,
+        "end": 66.0,
+        "loudness_dbfs": -9.334594948968192
+      },
+      {
+        "start": 64.0,
+        "end": 67.0,
+        "loudness_dbfs": -9.067928536432705
+      },
+      {
+        "start": 65.0,
+        "end": 68.0,
+        "loudness_dbfs": -9.548066089789087
+      },
+      {
+        "start": 66.0,
+        "end": 69.0,
+        "loudness_dbfs": -9.165702647717746
+      },
+      {
+        "start": 67.0,
+        "end": 70.0,
+        "loudness_dbfs": -9.25292893751944
+      },
+      {
+        "start": 68.0,
+        "end": 71.0,
+        "loudness_dbfs": -9.340763266049057
+      },
+      {
+        "start": 69.0,
+        "end": 72.0,
+        "loudness_dbfs": -9.431829615432589
+      },
+      {
+        "start": 70.0,
+        "end": 73.0,
+        "loudness_dbfs": -9.51563206575026
+      },
+      {
+        "start": 71.0,
+        "end": 74.0,
+        "loudness_dbfs": -9.327312422333167
+      },
+      {
+        "start": 72.0,
+        "end": 75.0,
+        "loudness_dbfs": -8.78111071720819
+      },
+      {
+        "start": 73.0,
+        "end": 76.0,
+        "loudness_dbfs": -8.90254914142645
+      },
+      {
+        "start": 74.0,
+        "end": 77.0,
+        "loudness_dbfs": -8.865247319892578
+      },
+      {
+        "start": 75.0,
+        "end": 78.0,
+        "loudness_dbfs": -9.45160447520898
+      },
+      {
+        "start": 76.0,
+        "end": 79.0,
+        "loudness_dbfs": -9.11409156536264
+      },
+      {
+        "start": 77.0,
+        "end": 80.0,
+        "loudness_dbfs": -9.239120115145043
+      },
+      {
+        "start": 78.0,
+        "end": 81.0,
+        "loudness_dbfs": -9.071001090520706
+      },
+      {
+        "start": 79.0,
+        "end": 82.0,
+        "loudness_dbfs": -8.93963028511545
+      },
+      {
+        "start": 80.0,
+        "end": 83.0,
+        "loudness_dbfs": -8.90013557616776
+      },
+      {
+        "start": 81.0,
+        "end": 84.0,
+        "loudness_dbfs": -9.240273749597442
+      },
+      {
+        "start": 82.0,
+        "end": 85.0,
+        "loudness_dbfs": -9.209999060694116
+      },
+      {
+        "start": 83.0,
+        "end": 86.0,
+        "loudness_dbfs": -9.14675498176279
+      },
+      {
+        "start": 84.0,
+        "end": 87.0,
+        "loudness_dbfs": -8.821850782570401
+      },
+      {
+        "start": 85.0,
+        "end": 88.0,
+        "loudness_dbfs": -9.280204575366577
+      },
+      {
+        "start": 86.0,
+        "end": 89.0,
+        "loudness_dbfs": -9.265039095372895
+      },
+      {
+        "start": 87.0,
+        "end": 90.0,
+        "loudness_dbfs": -9.345196438204658
+      },
+      {
+        "start": 88.0,
+        "end": 91.0,
+        "loudness_dbfs": -9.167213819618958
+      },
+      {
+        "start": 89.0,
+        "end": 92.0,
+        "loudness_dbfs": -9.207088718945794
+      },
+      {
+        "start": 90.0,
+        "end": 93.0,
+        "loudness_dbfs": -9.086627234429224
+      },
+      {
+        "start": 91.0,
+        "end": 94.0,
+        "loudness_dbfs": -9.092084809259987
+      },
+      {
+        "start": 92.0,
+        "end": 95.0,
+        "loudness_dbfs": -8.945092100805487
+      },
+      {
+        "start": 93.0,
+        "end": 96.0,
+        "loudness_dbfs": -8.940677941581496
+      },
+      {
+        "start": 94.0,
+        "end": 97.0,
+        "loudness_dbfs": -8.908225624772687
+      },
+      {
+        "start": 95.0,
+        "end": 98.0,
+        "loudness_dbfs": -8.95278018435247
+      },
+      {
+        "start": 96.0,
+        "end": 99.0,
+        "loudness_dbfs": -8.843187043634472
+      },
+      {
+        "start": 97.0,
+        "end": 100.0,
+        "loudness_dbfs": -8.611234472070565
+      },
+      {
+        "start": 98.0,
+        "end": 101.0,
+        "loudness_dbfs": -8.432295809316594
+      },
+      {
+        "start": 99.0,
+        "end": 102.0,
+        "loudness_dbfs": -8.46143587906121
+      },
+      {
+        "start": 100.0,
+        "end": 103.0,
+        "loudness_dbfs": -8.60598194000893
+      },
+      {
+        "start": 101.0,
+        "end": 104.0,
+        "loudness_dbfs": -8.633620028663055
+      },
+      {
+        "start": 102.0,
+        "end": 105.0,
+        "loudness_dbfs": -8.482236861253364
+      },
+      {
+        "start": 103.0,
+        "end": 106.0,
+        "loudness_dbfs": -8.414839824809295
+      },
+      {
+        "start": 104.0,
+        "end": 107.0,
+        "loudness_dbfs": -8.29020793334655
+      },
+      {
+        "start": 105.0,
+        "end": 108.0,
+        "loudness_dbfs": -8.12897658930959
+      },
+      {
+        "start": 106.0,
+        "end": 109.0,
+        "loudness_dbfs": -7.857584893070664
+      },
+      {
+        "start": 107.0,
+        "end": 110.0,
+        "loudness_dbfs": -8.020100907494628
+      },
+      {
+        "start": 108.0,
+        "end": 111.0,
+        "loudness_dbfs": -8.262785474904359
+      },
+      {
+        "start": 109.0,
+        "end": 112.0,
+        "loudness_dbfs": -8.528275149534148
+      },
+      {
+        "start": 110.0,
+        "end": 113.0,
+        "loudness_dbfs": -8.535275283224017
+      },
+      {
+        "start": 111.0,
+        "end": 114.0,
+        "loudness_dbfs": -8.629286181095882
+      },
+      {
+        "start": 112.0,
+        "end": 115.0,
+        "loudness_dbfs": -8.385219301574
+      },
+      {
+        "start": 113.0,
+        "end": 116.0,
+        "loudness_dbfs": -8.363927143897335
+      },
+      {
+        "start": 114.0,
+        "end": 117.0,
+        "loudness_dbfs": -8.174734294383873
+      },
+      {
+        "start": 115.0,
+        "end": 118.0,
+        "loudness_dbfs": -8.193038086134553
+      },
+      {
+        "start": 116.0,
+        "end": 119.0,
+        "loudness_dbfs": -8.014454100692614
+      },
+      {
+        "start": 117.0,
+        "end": 120.0,
+        "loudness_dbfs": -8.893765808214134
+      },
+      {
+        "start": 118.0,
+        "end": 121.0,
+        "loudness_dbfs": -10.257701965892565
+      },
+      {
+        "start": 119.0,
+        "end": 122.0,
+        "loudness_dbfs": -12.086646811738502
+      },
+      {
+        "start": 120.0,
+        "end": 123.0,
+        "loudness_dbfs": -12.250031039258374
+      },
+      {
+        "start": 121.0,
+        "end": 124.0,
+        "loudness_dbfs": -12.147838875431106
+      },
+      {
+        "start": 122.0,
+        "end": 125.0,
+        "loudness_dbfs": -12.092156431875448
+      },
+      {
+        "start": 123.0,
+        "end": 126.0,
+        "loudness_dbfs": -12.328330676606212
+      },
+      {
+        "start": 124.0,
+        "end": 127.0,
+        "loudness_dbfs": -12.169091520285937
+      },
+      {
+        "start": 125.0,
+        "end": 128.0,
+        "loudness_dbfs": -12.085392291191198
+      },
+      {
+        "start": 126.0,
+        "end": 129.0,
+        "loudness_dbfs": -11.529480507229621
+      },
+      {
+        "start": 127.0,
+        "end": 130.0,
+        "loudness_dbfs": -11.25419459031379
+      },
+      {
+        "start": 128.0,
+        "end": 131.0,
+        "loudness_dbfs": -10.9584427827334
+      },
+      {
+        "start": 129.0,
+        "end": 132.0,
+        "loudness_dbfs": -10.676772782318773
+      },
+      {
+        "start": 130.0,
+        "end": 133.0,
+        "loudness_dbfs": -10.866855584347583
+      },
+      {
+        "start": 131.0,
+        "end": 134.0,
+        "loudness_dbfs": -10.432858978526339
+      },
+      {
+        "start": 132.0,
+        "end": 135.0,
+        "loudness_dbfs": -10.14212448345077
+      },
+      {
+        "start": 133.0,
+        "end": 136.0,
+        "loudness_dbfs": -9.557732268685985
+      },
+      {
+        "start": 134.0,
+        "end": 137.0,
+        "loudness_dbfs": -9.71599433475847
+      },
+      {
+        "start": 135.0,
+        "end": 138.0,
+        "loudness_dbfs": -9.769760825038162
+      },
+      {
+        "start": 136.0,
+        "end": 139.0,
+        "loudness_dbfs": -9.521399402622437
+      },
+      {
+        "start": 137.0,
+        "end": 140.0,
+        "loudness_dbfs": -8.838018185600422
+      },
+      {
+        "start": 138.0,
+        "end": 141.0,
+        "loudness_dbfs": -8.492598150097837
+      },
+      {
+        "start": 139.0,
+        "end": 142.0,
+        "loudness_dbfs": -8.530306674657368
+      },
+      {
+        "start": 140.0,
+        "end": 143.0,
+        "loudness_dbfs": -8.783819557811384
+      },
+      {
+        "start": 141.0,
+        "end": 144.0,
+        "loudness_dbfs": -8.69673865257411
+      },
+      {
+        "start": 142.0,
+        "end": 145.0,
+        "loudness_dbfs": -8.445937884701081
+      },
+      {
+        "start": 143.0,
+        "end": 146.0,
+        "loudness_dbfs": -8.151680019497963
+      },
+      {
+        "start": 144.0,
+        "end": 147.0,
+        "loudness_dbfs": -7.975208220791261
+      },
+      {
+        "start": 145.0,
+        "end": 148.0,
+        "loudness_dbfs": -7.813820597037202
+      },
+      {
+        "start": 146.0,
+        "end": 149.0,
+        "loudness_dbfs": -7.806590246697426
+      },
+      {
+        "start": 147.0,
+        "end": 150.0,
+        "loudness_dbfs": -8.13409456895027
+      },
+      {
+        "start": 148.0,
+        "end": 151.0,
+        "loudness_dbfs": -8.269516108205794
+      },
+      {
+        "start": 149.0,
+        "end": 152.0,
+        "loudness_dbfs": -8.469480343516503
+      },
+      {
+        "start": 150.0,
+        "end": 153.0,
+        "loudness_dbfs": -8.401468686408025
+      },
+      {
+        "start": 151.0,
+        "end": 154.0,
+        "loudness_dbfs": -8.419576703300752
+      },
+      {
+        "start": 152.0,
+        "end": 155.0,
+        "loudness_dbfs": -8.2352165686567
+      },
+      {
+        "start": 153.0,
+        "end": 156.0,
+        "loudness_dbfs": -8.045372545748885
+      },
+      {
+        "start": 154.0,
+        "end": 157.0,
+        "loudness_dbfs": -7.9416701480349605
+      },
+      {
+        "start": 155.0,
+        "end": 158.0,
+        "loudness_dbfs": -7.996372716930441
+      },
+      {
+        "start": 156.0,
+        "end": 159.0,
+        "loudness_dbfs": -8.08835193544028
+      },
+      {
+        "start": 157.0,
+        "end": 160.0,
+        "loudness_dbfs": -8.290922937235866
+      },
+      {
+        "start": 158.0,
+        "end": 161.0,
+        "loudness_dbfs": -8.403424078689191
+      },
+      {
+        "start": 159.0,
+        "end": 162.0,
+        "loudness_dbfs": -8.678426626738425
+      },
+      {
+        "start": 160.0,
+        "end": 163.0,
+        "loudness_dbfs": -8.774268632803059
+      },
+      {
+        "start": 161.0,
+        "end": 164.0,
+        "loudness_dbfs": -8.589355319088428
+      },
+      {
+        "start": 162.0,
+        "end": 165.0,
+        "loudness_dbfs": -8.333219725007519
+      },
+      {
+        "start": 163.0,
+        "end": 166.0,
+        "loudness_dbfs": -8.246348802635397
+      },
+      {
+        "start": 164.0,
+        "end": 167.0,
+        "loudness_dbfs": -8.082668432391426
+      },
+      {
+        "start": 165.0,
+        "end": 168.0,
+        "loudness_dbfs": -7.9372073955762446
+      },
+      {
+        "start": 166.0,
+        "end": 169.0,
+        "loudness_dbfs": -7.906527420132176
+      },
+      {
+        "start": 167.0,
+        "end": 170.0,
+        "loudness_dbfs": -8.32206754224079
+      },
+      {
+        "start": 168.0,
+        "end": 171.0,
+        "loudness_dbfs": -8.410857553788878
+      },
+      {
+        "start": 169.0,
+        "end": 172.0,
+        "loudness_dbfs": -8.646185923079807
+      },
+      {
+        "start": 170.0,
+        "end": 173.0,
+        "loudness_dbfs": -8.515821319360535
+      },
+      {
+        "start": 171.0,
+        "end": 174.0,
+        "loudness_dbfs": -8.450906669846411
+      },
+      {
+        "start": 172.0,
+        "end": 175.0,
+        "loudness_dbfs": -8.180261986041003
+      },
+      {
+        "start": 173.0,
+        "end": 176.0,
+        "loudness_dbfs": -8.124483900756523
+      },
+      {
+        "start": 174.0,
+        "end": 177.0,
+        "loudness_dbfs": -8.202156957194381
+      },
+      {
+        "start": 175.0,
+        "end": 178.0,
+        "loudness_dbfs": -8.253656849109754
+      },
+      {
+        "start": 176.0,
+        "end": 179.0,
+        "loudness_dbfs": -9.272103069497156
+      },
+      {
+        "start": 177.0,
+        "end": 180.0,
+        "loudness_dbfs": -11.676269953528259
+      },
+      {
+        "start": 178.0,
+        "end": 181.0,
+        "loudness_dbfs": -17.251663296686942
+      },
+      {
+        "start": 179.0,
+        "end": 182.0,
+        "loudness_dbfs": -31.248828977418285
+      },
+      {
+        "start": 180.0,
+        "end": 183.0,
+        "loudness_dbfs": -44.51376213255716
+      },
+      {
+        "start": 181.0,
+        "end": 183.759625,
+        "loudness_dbfs": -66.9955220174944
+      }
+    ],
+    "clipping_count": 5669,
+    "possible_intersample_risk_note": "Peak is close to full scale; true-peak verification is recommended."
+  },
+  "silence_detection": {
+    "intro_silence": null,
+    "outro_silence": {
+      "start": 181.76529166666666,
+      "end": 183.759625
+    },
+    "internal_silence_candidates": []
+  },
+  "over_compression_detection": {
+    "possible_over_compression": false,
+    "crest_factor_db": 8.522779189401472,
+    "similar_loudness_window_count": 169,
+    "reason": "repeated short-term windows have similar loudness"
+  },
+  "low_end_excess_candidates": [],
+  "vocal_like_texture_candidates": [
+    {
+      "start": 8.0,
+      "end": 10.0,
+      "confidence": "medium",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 10.0,
+      "end": 12.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 12.0,
+      "end": 14.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 14.0,
+      "end": 16.0,
+      "confidence": "medium",
+      "reason": "modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 16.0,
+      "end": 18.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 18.0,
+      "end": 20.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 20.0,
+      "end": 22.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 22.0,
+      "end": 24.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 24.0,
+      "end": 26.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 26.0,
+      "end": 28.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 28.0,
+      "end": 30.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 30.0,
+      "end": 32.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 32.0,
+      "end": 34.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 34.0,
+      "end": 36.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 36.0,
+      "end": 38.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    },
+    {
+      "start": 38.0,
+      "end": 40.0,
+      "confidence": "high",
+      "reason": "heuristic high-mid/formant-like activity range; modulated texture pattern; mono-centered texture (heuristic only, not model-based vocal detection)"
+    }
+  ],
+  "melody_buried_candidates": [],
+  "arrangement_candidates": {
+    "intro": {
+      "start": 0.0,
+      "end": 10.0
+    },
+    "first_hook_or_main_motif_entrance": {
+      "start": 99.0,
+      "end": 100.0,
+      "confidence": "medium"
+    },
+    "drop": {
+      "start": 178.0,
+      "end": 179.0,
+      "confidence": "medium"
+    },
+    "repeated_loop_blocks": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 1.0,
+        "end": 3.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 2.0,
+        "end": 4.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 4.0,
+        "end": 6.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 5.0,
+        "end": 7.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 7.0,
+        "end": 9.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 8.0,
+        "end": 10.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 12.0,
+        "end": 14.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 13.0,
+        "end": 15.0,
+        "reason": "similar adjacent loudness/energy windows"
+      },
+      {
+        "start": 25.0,
+        "end": 27.0,
+        "reason": "similar adjacent loudness/energy windows"
+      }
+    ],
+    "outro": {
+      "start": 179.0,
+      "end": 183.759625
+    },
+    "ai_random_transition_or_glitch_candidates": [
+      {
+        "start": 19.0,
+        "end": 20.0,
+        "reason": "abrupt heuristic spectral/loudness novelty change"
+      },
+      {
+        "start": 119.0,
+        "end": 120.0,
+        "reason": "abrupt heuristic spectral/loudness novelty change"
+      },
+      {
+        "start": 178.0,
+        "end": 179.0,
+        "reason": "abrupt heuristic spectral/loudness novelty change"
+      }
+    ],
+    "main_melody_strongest_region": {
+      "start": 99.0,
+      "end": 100.0,
+      "reason": "highest combined energy and onset density heuristic"
+    }
+  },
+  "producer_notes": {
+    "human_arrangement_cleanup": "Review heuristic hook/drop/glitch candidates manually. Tighten random transitions and remove meaningless repetition.",
+    "main_melody_strongest": {
+      "start": 99.0,
+      "end": 100.0,
+      "reason": "highest combined energy and onset density heuristic"
+    },
+    "heuristic_disclaimer": "Vocal texture, low-end, melody burial, and arrangement detections are heuristic only."
+  }
 }

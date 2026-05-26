@@ -4,6 +4,13 @@
   "melody_focus": "front",
   "drum_808": "strong_controlled",
   "export_format": "wav24_48k",
-  "save_logic_project": true
+  "save_logic_project": true,
+  "mode": "instrumental_beat",
+  "vocal_style": "polished",
+  "mix_intensity": "standard",
+  "master_loudness": "master_ready_headroom",
+  "autotune": "subtle",
+  "deess": "medium",
+  "reverb_space": "plate",
+  "delay_style": "throw_only"
 }
-

@@ -1,0 +1,1 @@
+2026-05-26 00:08:06.601 REAPER[70871:2806992] swell-cocoa: creating metal device context for 0x15503f000 Apple M1 Pro

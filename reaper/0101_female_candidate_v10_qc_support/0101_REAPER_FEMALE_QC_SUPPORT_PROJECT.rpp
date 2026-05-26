@@ -1,0 +1,497 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 female candidate QC support revision. Female candidate is only active after timing/pitch QC mask and ducked under male lead.
+  >
+  RIPPLE 0 0
+  AUTOXFADE 129
+  PEAKGAIN 1
+  PANLAW 1
+  PROJOFFS 0 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  ITEMMIX 1
+  SAMPLERATE 48000 1 0
+  RENDER_FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/0101_REAPER_project_sum.wav"
+  RENDER_FMT 0 2 48000
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  TEMPO 135.000000 4 4 0
+  PLAYRATE 1 0 0.25 4
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MARKER 1 0.000000 "intro" 0 0 1 B {b5e78a1b-729e-44d1-8bee-13ad9b772df2} 0 2
+  MARKER 2 14.200000 "verse" 0 0 1 B {2d2717b3-7f9c-486c-a722-92dbbf05cc88} 0 2
+  MARKER 3 42.700000 "hook lift" 0 0 1 B {8fdfada6-5699-4c81-be97-5def4fb822b8} 0 2
+  MARKER 4 72.000000 "second section" 0 0 1 B {a218026e-916c-486f-a7e2-c09f6c3c115e} 0 2
+  MARKER 5 101.300000 "final lift/outro" 0 0 1 B {f9ce60f9-6e3c-4015-829a-fca7611d4004} 0 2
+  MARKER 6 139.440937 "render end" 0 0 1 B {96e94d12-0551-44d0-9dba-32d4e1f1c1b3} 0 2
+  <TRACK {4f757e20-18fb-4880-9896-352d7e75ac5c}
+    NAME "ORIGINAL_REFERENCE muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {532f4f01-46d3-4371-b13c-e0d4e32372e6}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {af988656-915f-4ea7-b5bf-893a2f380919}
+      IID 1
+      NAME 0101_original_reference.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {e9356d76-4760-49f1-830b-a37d8ea59383}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_female_candidate_v10_qc_support/stems/0101_original_reference.wav"
+      >
+    >
+  >
+  <TRACK {4a72ab09-6d28-40d8-adf9-0c9aa6dc7b42}
+    NAME "MALE_VOCAL_RAW muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {ffd57463-b55c-4e60-be53-adb8553c2dea}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {42096f4b-aab1-4ca3-9bcd-d1c990ede8d2}
+      IID 2
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1c8f417a-1ab0-4e1e-88a6-5634ac17de84}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_female_candidate_v10_qc_support/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {3b62479d-8849-4db0-80b9-550984db6f57}
+    NAME "FEMALE_CANDIDATE_QC_SUPPORT processed muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {c3b0e1e5-4cf2-4373-b267-25b63aa1b94e}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {6246cebd-5b82-4d42-851a-1cbdd3f21bad}
+      IID 3
+      NAME processed_female_qc_support_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {c0c70f3f-d400-4794-b894-b82846ae46c8}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/processed_female_qc_support_stem.wav"
+      >
+    >
+  >
+  <TRACK {44ce3375-7168-4420-b2e7-7e52e7e00657}
+    NAME "MALE_VOCAL_PROCESSED strong tune muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {f04cc6ef-2acd-4203-a559-0634f50430fa}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {434e36be-f6d3-4871-b617-e048737f16fc}
+      IID 4
+      NAME processed_male_vocal_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {db07d8be-1b17-4f44-8e08-8bac497445d2}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/processed_male_vocal_stem.wav"
+      >
+    >
+  >
+  <TRACK {479df4e1-7c24-4880-b360-d69f066bdaf7}
+    NAME "DRUM_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {573b3415-6454-4b84-bd45-3cebb9f3bf1b}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {643aa625-5c3c-40a9-ad08-4c70735413dd}
+      IID 5
+      NAME drums_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {92be0069-443b-422e-92b9-2a4dd3019f41}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/drums_stem.wav"
+      >
+    >
+  >
+  <TRACK {a43022c3-2c89-4c7b-b563-3c852af200bc}
+    NAME "BASS_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {a7972d49-70f1-426e-a499-ce727056f2d4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {09a27e6e-52b3-402b-bbe8-6fa76841b9f5}
+      IID 6
+      NAME bass808_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {96329e20-af07-4618-b686-2b003ae822e1}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/bass808_stem.wav"
+      >
+    >
+  >
+  <TRACK {28364f52-fef0-4644-abbb-0807523ceabe}
+    NAME "MELODY_BUS print muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4eac9bfc-1e18-4e14-bc8f-adac1869c2f0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {415bcc5e-d031-4898-9424-55afc07891c7}
+      IID 7
+      NAME melody_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {11b0c4ab-f4b2-4ea5-8cfb-30e04a6b0cd3}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/melody_stem.wav"
+      >
+    >
+  >
+  <TRACK {012da878-c53d-472b-806b-482823237825}
+    NAME "INSTRUMENTAL_PROCESSED muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {48b3a9bb-6554-443d-897c-2a82516659fd}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {65642574-f983-4a9c-a5f7-1612480f4f6c}
+      IID 8
+      NAME processed_instrumental_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {bdd6d7e9-dafb-43fc-a570-ddc227eb110f}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/processed_instrumental_stem.wav"
+      >
+    >
+  >
+  <TRACK {71118bba-8ae7-4145-b5f8-f52516ad93c4}
+    NAME "MIX_BUS female qc support ACTIVE"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {86a05d2b-9301-4263-ace4-972d03a8d0e3}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {36b9c4ac-c7c7-469c-ba78-4e05d0eef2bc}
+      IID 9
+      NAME 0101_FINAL_female_qc_support.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {c710dbd6-3b45-4bf4-8199-deddf2663c20}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/0101_FINAL_female_qc_support.wav"
+      >
+    >
+  >
+  <TRACK {25791361-79a8-4234-9a8b-6b7c5eaf7107}
+    NAME "ALT male only safety muted"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {45857881-66ae-4ea4-843d-f500b779b268}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.012 0 1 0 0 0
+      FADEOUT 1 0.012 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {8e56bc86-be99-4825-aadb-bfe62b25fe7e}
+      IID 10
+      NAME 0101_FINAL_male_only_safety.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0c84a604-8fb1-443c-9a26-67612d3388a8}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_female_candidate_v10_qc_support/0101_FINAL_male_only_safety.wav"
+      >
+    >
+  >
+>

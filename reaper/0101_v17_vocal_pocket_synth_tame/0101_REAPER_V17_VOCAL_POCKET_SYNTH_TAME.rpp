@@ -1,0 +1,219 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779750000 0
+  <NOTES 0 2
+    |0101 v17 vocal pocket and synth tame. Built from v16 raw-core vocal, +1 dB vocal gain, stronger dynamic instrumental pocket, melody/synth edge tamed.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 135.000000 4 4 0
+  RENDER_RANGE 0 0 139.440937500000 0 1000
+  MASTER_NCH 2 2
+  <TRACK {d2e65696-2a7c-4e74-abdf-6683e8f6a7fa}
+    NAME "V16_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {2b41611f-fe8a-49a4-aefa-1e24c466d65f}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {cb2fe1f4-560b-45fe-b4dc-39ff001fb4c5}
+      IID 1
+      NAME 0101_FINAL_v16_raw_core_sat_clarity.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {646c15a2-aae1-4ae0-93c9-e3f59e9a2aef}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v16_raw_core_sat_clarity/0101_FINAL_v16_raw_core_sat_clarity.wav"
+      >
+    >
+  >
+  <TRACK {5d3abef2-37e7-4bdf-9789-d6b5b3bd6bd2}
+    NAME "RAW_VOCAL_REFERENCE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {88a14400-629f-460a-aa38-8d0e1f2d6d34}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {8b782349-4cb2-4f83-97be-ebc33eba9286}
+      IID 2
+      NAME 0101_vocal_raw.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5a2f0dd2-85dc-435f-9fbd-0b9de511390d}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/0101_suno_studio_v01/stems/0101_vocal_raw.wav"
+      >
+    >
+  >
+  <TRACK {53518952-283e-449f-a2e3-e02a59db237b}
+    NAME "MALE_V17_PLUS1DB muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {dcd63272-19a8-483b-920c-a310b081c412}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {b60dec77-8880-4fcf-8791-227b6d580bf4}
+      IID 3
+      NAME processed_male_vocal_v17_raw_core_plus1db_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9f2de4b9-45e8-48e4-b071-124da0668231}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v17_vocal_pocket_synth_tame/processed_male_vocal_v17_raw_core_plus1db_stem.wav"
+      >
+    >
+  >
+  <TRACK {eb7ca816-eee8-43f4-abff-518a217eb58c}
+    NAME "FEMALE_V17_SIDE muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {bc684c9d-a2ae-4270-ba7c-f271d033b07f}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {391e8e8b-32fc-4ee5-91c8-32c0767dae8f}
+      IID 4
+      NAME processed_female_layer_v17_side_support_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2c298088-137b-494f-b4b1-cd6542d34514}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v17_vocal_pocket_synth_tame/processed_female_layer_v17_side_support_stem.wav"
+      >
+    >
+  >
+  <TRACK {351cc4cd-1b01-4a25-ac11-7d7626f043d0}
+    NAME "INSTRUMENTAL_V17_POCKET muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {faf6ed10-2645-4674-a66d-3beded9c2098}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {7d021d7e-d949-40af-b051-feac36348cbc}
+      IID 5
+      NAME processed_instrumental_v17_pocket_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5954fb82-3276-48ca-8d16-39874d4dfe79}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v17_vocal_pocket_synth_tame/processed_instrumental_v17_pocket_stem.wav"
+      >
+    >
+  >
+  <TRACK {7a5503f7-a3eb-48b8-88fa-ed691f806427}
+    NAME "MELODY_SYNTH_V17_TAMED muted"
+    VOLPAN 0.70794578438414 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {5305daa8-9a38-44eb-a56b-fc064df34dc6}
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 1 0
+      SEL 0
+      IGUID {9bdbc6cc-8374-4b8f-bb7a-c0ec183b2b7c}
+      IID 6
+      NAME processed_melody_synth_v17_tamed_stem.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {d43d54e5-e702-477a-9a18-60edbe7ad5b5}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v17_vocal_pocket_synth_tame/processed_melody_synth_v17_tamed_stem.wav"
+      >
+    >
+  >
+  <TRACK {21d0af43-adb3-4314-af91-dc16e46af96e}
+    NAME "V17_FINAL_ACTIVE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    FX 1
+    TRACKID {b2e54267-e56c-4740-b052-ea9121bbc07a}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      LENGTH 139.440937500000
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.010 0 1 0 0 0
+      FADEOUT 1 0.010 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {b60f5c90-3f85-4e40-9ab7-0efa0ee52878}
+      IID 7
+      NAME 0101_FINAL_v17_vocal_pocket_synth_tame.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {64118c12-7747-4ead-aca3-357f564ed61b}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/0101_v17_vocal_pocket_synth_tame/0101_FINAL_v17_vocal_pocket_synth_tame.wav"
+      >
+    >
+  >
+>

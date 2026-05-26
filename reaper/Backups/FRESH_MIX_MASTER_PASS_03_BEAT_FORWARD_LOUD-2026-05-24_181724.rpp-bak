@@ -1,0 +1,3176 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 1779614244 0
+  <NOTES 0 2
+  >
+  RIPPLE 0 0
+  GROUPOVERRIDE 0 0 0 0
+  AUTOXFADE 129
+  ENVATTACH 3
+  POOLEDENVATTACH 0
+  TCPUIFLAGS 0
+  MIXERUIFLAGS 11 48
+  ENVFADESZ10 40
+  PEAKGAIN 1
+  FEEDBACK 0
+  PANLAW 1
+  PROJOFFS 0 0 0
+  MAXPROJLEN 0 0
+  GRID 3199 8 1 8 1 0 0 0
+  TIMEMODE 1 5 -1 30 0 0 -1 0
+  VIDEO_CONFIG 0 0 65792
+  PANMODE 3
+  PANLAWFLAGS 3
+  CURSOR 185.7064375
+  ZOOM 100 0 0
+  VZOOMEX 6 0
+  USE_REC_CFG 0
+  RECMODE 1
+  SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
+  LOOP 0
+  LOOPGRAN 0 4
+  RECORD_PATH "Media" ""
+  <RECORD_CFG
+    ZXZhdxgAAQ==
+  >
+  <APPLYFX_CFG
+  >
+  RENDER_FILE "/Users/hantaeheuk/Documents/New project 3/renders/PASS03_MASTER_BEAT_FORWARD_LOUD_24bit_48k.wav"
+  RENDER_FMT 0 2 48000
+  RENDER_1X 0
+  RENDER_RANGE 0 0 145.39414583333334 0 1000
+  RENDER_RESAMPLE 3 0 1
+  RENDER_ADDTOPROJ 0
+  RENDER_STEMS 0
+  RENDER_DITHER 0
+  RENDER_TRIM 0.000001 0.000001 0 0
+  TIMELOCKMODE 1
+  TEMPOENVLOCKMODE 1
+  ITEMMIX 1
+  DEFPITCHMODE 589824 0
+  TAKELANE 1
+  SAMPLERATE 48000 1 0
+  <RENDER_CFG
+    ZXZhdxgAAQ==
+  >
+  LOCK 1
+  <METRONOME 6 2
+    VOL 0.25 0.125
+    BEATLEN 4
+    FREQ 1760 880 1
+    SAMPLES "" "" "" ""
+    SPLIGNORE 0 0
+    SPLDEF 2 660 "" 0 ""
+    SPLDEF 3 440 "" 0 ""
+    PATTERN 0 169
+    PATTERNSTR ABBB
+    MULT 1
+  >
+  GLOBAL_AUTO -1
+  TEMPO 180 4 4 0
+  PLAYRATE 1 0 0.25 4
+  SELECTION 0 0
+  SELECTION2 0 0
+  MASTERAUTOMODE 0
+  MASTERTRACKHEIGHT 0 0
+  MASTERPEAKCOL 16576
+  MASTERMUTESOLO 0
+  MASTERTRACKVIEW 0 0.6667 0.5 0.5 0 0 0 0 0 0 0 0 0 0 1
+  MASTERHWOUT 0 0 1 0 0 0 0 -1
+  MASTER_NCH 2 2
+  MASTER_VOLUME 1 0 -1 -1 1
+  MASTER_PANMODE 3
+  MASTER_PANLAWFLAGS 3
+  MASTER_FX 1
+  MASTER_SEL 0
+  <MASTERPLAYSPEEDENV
+    EGUID {0C151F81-359B-3C47-BD98-3B44DE19C4A1}
+    ACT 0 -1
+    VIS 0 1 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 0 -1 -1
+  >
+  <TEMPOENVEX
+    EGUID {3C4CAE5B-648C-3F42-A2D6-0AE84E8F271D}
+    ACT 1 -1
+    VIS 1 0 1
+    LANEHEIGHT 0 0
+    ARM 0
+    DEFSHAPE 1 -1 -1
+    PT 0.000000000000 180.0000000000 1 262148 0 1 0 "" 0 169 0 ABBB
+  >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1 0
+  RULERLANE 2 8 "" 0 -1 0
+  MARKER 1 0 "0s immediate hook check" 0 0 1 B {3018E3A8-33C6-4840-9790-C01A93A19EB4} 0 2
+  MARKER 5 0 "QC critical: phase_or_stereo_width_anomaly (08_Guitar.wav)" 0 0 1 B {C1BEC852-3FB0-1541-977E-5E7E8F3D76FD} 0 2
+  MARKER 6 0 "QC critical: excessive_high_frequency_harshness (08_Guitar.wav)" 0 0 1 B {B98F2857-5163-D744-A5D8-9B6226D83EF5} 0 2
+  MARKER 20 0 "QC high: excessive_high_frequency_harshness (03_FX.wav)" 0 0 1 B {8D9A5815-903C-614E-83DE-4663D8079C31} 0 2
+  MARKER 21 0 "QC high: low_end_mud_or_vocal_masking (09_Bass.wav)" 0 0 1 B {C85AB75E-33F1-F847-9918-7B5F15E1E510} 0 2
+  MARKER 121 0 "PASS03: beat-forward loud review pass" 0 0 1 B {85310C2A-3046-1747-9FC7-522CB5502807} 0 2
+  MARKER 7 0.02 "QC critical: local_dropout_or_abrupt_cut (female_vocal_candidate_clean.wav)" 0 0 1 B {41AF9C78-18A3-9741-AB6C-7666FB4C178D} 0 2
+  MARKER 22 1.04 "QC high: sudden_energy_spike (03_FX.wav)" 0 0 1 B {A6B3D62C-E114-414D-9D6D-59247A0D42D8} 0 2
+  MARKER 23 1.2 "QC high: sudden_energy_spike (04_Synth.wav)" 0 0 1 B {F0B7CFB9-0DF7-DD4F-B6D6-911D9E7EAECC} 0 2
+  MARKER 24 1.2 "QC high: sudden_energy_spike (11_Backing_Vocals.wav)" 0 0 1 B {C31F4F94-D83B-E044-B6E3-CEE845C7DDF3} 0 2
+  MARKER 25 1.2 "QC high: sudden_energy_spike (female_vocal_candidate_clean.wav)" 0 0 1 B {AE922513-D95E-5941-950D-91EC7214FF1A} 0 2
+  MARKER 26 1.28 "QC high: sudden_energy_spike (04_Synth.wav)" 0 0 1 B {451CC884-2749-E942-91EE-7C03700F2FE0} 0 2
+  MARKER 27 1.28 "QC high: sudden_energy_spike (female_vocal_candidate_clean.wav)" 0 0 1 B {3E81FED4-CD0E-F14A-AF63-C8F43911406B} 0 2
+  MARKER 28 1.56 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {27D4F0EB-E39F-C043-99C1-B0C705F889EB} 0 2
+  MARKER 29 1.76 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {7803E168-3B90-D34C-94D7-3A72054DAE0B} 0 2
+  MARKER 8 1.84 "QC critical: local_dropout_or_abrupt_cut (10_Drums.wav)" 0 0 1 B {162142E0-C43E-1F4F-92F8-EE4FC3F106AC} 0 2
+  MARKER 30 1.94 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {BA3CBBFE-ACBD-E842-9259-2C8025B0A52E} 0 2
+  MARKER 31 2.48 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {25157161-69B4-7B4D-A732-10ED9B2C9839} 0 2
+  MARKER 9 2.58 "QC critical: local_dropout_or_abrupt_cut (10_Drums.wav)" 0 0 1 B {B7867726-BF52-CE40-9093-2188BB2E268D} 0 2
+  MARKER 32 2.7 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {6F60C802-3B5B-AF49-AA6A-4FC8561A3099} 0 2
+  MARKER 33 3.2 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {11ED60A4-E70E-724A-A313-CD4578205299} 0 2
+  MARKER 34 3.28 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {F90B16D9-89C6-9B43-872A-DE5CBF003CB6} 0 2
+  MARKER 10 3.32 "QC critical: local_dropout_or_abrupt_cut (10_Drums.wav)" 0 0 1 B {4AB1B89A-DBD5-AC4A-B85B-9527B2B9A8F4} 0 2
+  MARKER 35 3.4 "QC high: near_silence_hole (04_Synth.wav)" 0 0 1 B {28DDDB81-DE5D-EE43-9D8A-37C0487CE515} 0 2
+  MARKER 36 3.44 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {E09F5E5F-E52D-0F4F-A83B-700A3D8634D5} 0 2
+  MARKER 37 3.44 "QC high: sudden_energy_spike (11_Backing_Vocals.wav)" 0 0 1 B {1E5D21E0-85AD-2841-A2C1-83456A5C2506} 0 2
+  MARKER 38 3.52 "QC high: local_dropout_or_abrupt_cut (11_Backing_Vocals.wav)" 0 0 1 B {142A2406-8EFB-654B-9753-C1E8CB813671} 0 2
+  MARKER 39 3.6 "QC high: sudden_energy_spike (04_Synth.wav)" 0 0 1 B {67A83054-AC8A-3B42-B3EC-1E2602D69BBA} 0 2
+  MARKER 40 3.68 "QC high: local_dropout_or_abrupt_cut (04_Synth.wav)" 0 0 1 B {C68D71AC-CFEC-CC4A-BB66-890D2FB3E069} 0 2
+  MARKER 11 3.72 "QC critical: local_dropout_or_abrupt_cut (0 Lead Vocals.wav)" 0 0 1 B {281A23A3-8635-C646-8EDD-5F06F85D06CF} 0 2
+  MARKER 118 3.72 "PASS02 BGV MUTED: external female has cut/timing risk" 0 0 1 B {9EF65F96-B0C0-CA4F-83A2-37AAF2FD10AF} 0 2
+  MARKER 41 4 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {B2574EFD-BAF4-114C-8644-E0183657D390} 0 2
+  MARKER 42 4.18 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {EEB6D3D5-C3CA-4D43-9DCC-BB6B835C6465} 0 2
+  MARKER 90 4.587 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {63804165-711D-2542-A47B-25729903C3AC} 0 2
+  MARKER 104 4.587 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {8DD61634-A329-AF4A-BDFE-883AFB19FEDE} 0 2
+  MARKER 43 4.72 "QC high: sudden_energy_spike (10_Drums.wav)" 0 0 1 B {9F13799A-C1AF-0B4E-B382-4B7FBB2DE315} 0 2
+  MARKER 44 4.92 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {EBF343AB-30C6-4B4E-926F-AB24D74E85C1} 0 2
+  MARKER 45 5.66 "QC high: near_silence_hole (10_Drums.wav)" 0 0 1 B {7BC32C36-1276-024E-8E6D-75B1A5576430} 0 2
+  MARKER 46 5.84 "QC high: sudden_energy_spike (female_vocal_candidate_clean.wav)" 0 0 1 B {561297AE-2A22-2B46-AD33-05FBCE00BA29} 0 2
+  MARKER 91 5.995 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {0948886A-A802-434F-8FEE-E2CA28A4A980} 0 2
+  MARKER 105 5.995 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {930B5AEA-0289-8740-9DF1-AB5E6B9716B7} 0 2
+  MARKER 47 6.48 "QC high: local_dropout_or_abrupt_cut (04_Synth.wav)" 0 0 1 B {383A1744-509F-8847-AF13-33B3CB69F106} 0 2
+  MARKER 48 6.5 "QC high: local_dropout_or_abrupt_cut (female_vocal_candidate_clean.wav)" 0 0 1 B {FC5D3506-BE91-864C-85B6-903C182F1D97} 0 2
+  MARKER 49 6.72 "QC high: sudden_energy_spike (03_FX.wav)" 0 0 1 B {33D1AA2C-763E-B546-9A74-1FFAA7378CB3} 0 2
+  MARKER 50 6.88 "QC high: local_dropout_or_abrupt_cut (0 Lead Vocals.wav)" 0 0 1 B {21B9EA25-32AF-CA4E-A86E-E469F54C053A} 0 2
+  MARKER 51 7.1 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {F012F4A5-A01C-5C4E-BA87-2E1AA3AAAEE3} 0 2
+  MARKER 12 7.8 "QC critical: local_dropout_or_abrupt_cut (0 Lead Vocals.wav)" 0 0 1 B {703C5B0F-ABEB-364A-B0F2-1CC96BFE85FE} 0 2
+  MARKER 2 8 "8s arrangement continuity" 0 0 1 B {17E3F836-B422-B940-8E3A-1965C7A4CAFD} 0 2
+  MARKER 52 8.72 "QC high: local_dropout_or_abrupt_cut (0 Lead Vocals.wav)" 0 0 1 B {F3AE8B84-577F-E045-AE46-91BAF20D735B} 0 2
+  MARKER 53 8.72 "QC high: local_dropout_or_abrupt_cut (11_Backing_Vocals.wav)" 0 0 1 B {4C2202FB-C1F8-DB47-AEC9-3B6327617B33} 0 2
+  MARKER 54 10.16 "QC high: sudden_energy_spike (03_FX.wav)" 0 0 1 B {B62B1348-55B5-A642-BDE5-D236ABC2799C} 0 2
+  MARKER 55 10.32 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {4C9EF40F-ADBA-3748-BC95-920BCC3EBAA8} 0 2
+  MARKER 13 10.38 "QC critical: local_dropout_or_abrupt_cut (09_Bass.wav)" 0 0 1 B {96419454-F15F-3D4D-B992-7AB54FFE30EF} 0 2
+  MARKER 56 10.62 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {81781F85-9550-0E43-ADB2-D84E0D92F5E0} 0 2
+  MARKER 57 10.62 "QC high: near_silence_hole (09_Bass.wav)" 0 0 1 B {96C375EB-D7EC-B843-B3F6-1820B04BF745} 0 2
+  MARKER 58 10.68 "QC high: near_silence_hole (04_Synth.wav)" 0 0 1 B {D1DC1380-F7E9-0B42-9466-679A893AC56E} 0 2
+  MARKER 59 11.04 "QC high: sudden_energy_spike (03_FX.wav)" 0 0 1 B {9CDB7622-1F60-7444-ADF7-F024F04F3155} 0 2
+  MARKER 60 11.04 "QC high: sudden_energy_spike (04_Synth.wav)" 0 0 1 B {1A98779B-B3B2-FE4C-A3EA-64900D89BD60} 0 2
+  MARKER 14 11.1 "QC critical: local_dropout_or_abrupt_cut (03_FX.wav)" 0 0 1 B {0F5DFED9-2927-6840-8EF2-28896C9618B3} 0 2
+  MARKER 61 11.34 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {FAB0C674-8D44-9C41-93D3-F9E887594C34} 0 2
+  MARKER 62 11.6 "QC high: sudden_energy_spike (04_Synth.wav)" 0 0 1 B {732099FC-9C3F-BA4C-A021-CD2D5496637B} 0 2
+  MARKER 15 11.66 "QC critical: local_dropout_or_abrupt_cut (04_Synth.wav)" 0 0 1 B {24CB2EDF-3349-404D-A07C-A3094B25406A} 0 2
+  MARKER 63 12.3 "QC high: near_silence_hole (04_Synth.wav)" 0 0 1 B {265F5363-2EBA-F548-92F6-A890CEB29872} 0 2
+  MARKER 64 12.56 "QC high: sudden_energy_spike (0 Lead Vocals.wav)" 0 0 1 B {555262FA-497C-D544-A327-7D65045F9F39} 0 2
+  MARKER 65 13.2 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {893C6729-EC94-1441-9016-08515A1F8B43} 0 2
+  MARKER 66 13.28 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {67B868DA-D653-054F-B7D1-52E1A7280E92} 0 2
+  MARKER 16 13.32 "QC critical: local_dropout_or_abrupt_cut (09_Bass.wav)" 0 0 1 B {AF8C51DD-2CA3-7A48-B236-7009E2CFF95D} 0 2
+  MARKER 67 13.44 "QC high: sudden_energy_spike (08_Guitar.wav)" 0 0 1 B {1292C523-4C9E-0F48-A4AD-E47F9416E231} 0 2
+  MARKER 68 14.32 "QC high: near_silence_hole (09_Bass.wav)" 0 0 1 B {33CB0C30-AE62-2A46-9CBD-775486B43727} 0 2
+  MARKER 69 14.36 "QC high: near_silence_hole (04_Synth.wav)" 0 0 1 B {289D532C-3E13-D640-B11B-2E7DA68A384F} 0 2
+  MARKER 70 14.72 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {24FE0CAE-5DF2-F84B-9C78-E81DDA7CBDAE} 0 2
+  MARKER 17 14.8 "QC critical: local_dropout_or_abrupt_cut (09_Bass.wav)" 0 0 1 B {CE8847EE-6FA8-614B-9354-5FF3E3DE4105} 0 2
+  MARKER 71 15.68 "QC high: local_dropout_or_abrupt_cut (12_Vocals.wav)" 0 0 1 B {5A0D3F00-410E-DD45-BAD4-CD6573F13034} 0 2
+  MARKER 88 15.68 "LEAD REPAIR: check abrupt cut / pitch stability" 0 0 1 B {1E65B1EA-E7E0-8443-AA15-CE993D6B4B70} 0 2
+  MARKER 119 15.68 "PASS02 LEAD REPAIR: pitch/cut review" 0 0 1 B {3C57BFDD-52D6-8040-B496-FFDA56DDA0E5} 0 2
+  MARKER 122 15.68 "PASS03 CHECK: vocal lower, beat should dominate without burying lyric" 0 0 1 B {93476797-1E0D-9D47-8BC4-0552F7039DBE} 0 2
+  MARKER 3 16 "16s hook/transition QC" 0 0 1 B {02F9E40A-D338-F541-9249-25D744037935} 0 2
+  MARKER 72 16.56 "QC high: sudden_energy_spike (08_Guitar.wav)" 0 0 1 B {064DAC02-4E6E-5B4F-9876-E882FFA07F56} 0 2
+  MARKER 73 16.66 "QC high: local_dropout_or_abrupt_cut (08_Guitar.wav)" 0 0 1 B {FDEF6A4D-EBFD-4843-9994-87649CAB4691} 0 2
+  MARKER 74 18.02 "QC high: near_silence_hole (09_Bass.wav)" 0 0 1 B {B6F7A3C0-C261-1749-89E2-7914968FB126} 0 2
+  MARKER 75 18.02 "QC high: local_dropout_or_abrupt_cut (09_Bass.wav)" 0 0 1 B {727A8071-538A-1C4B-93D8-FCF71364D282} 0 2
+  MARKER 92 18.24 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {A77A70B7-6D98-B147-B606-4C1EF92CE7A9} 0 2
+  MARKER 106 18.24 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {28669C58-BA23-964D-92BC-944BBDB09E4D} 0 2
+  MARKER 76 18.96 "QC high: sudden_energy_spike (03_FX.wav)" 0 0 1 B {B57D892A-9F20-1D4E-A95B-DDBA5BA1173C} 0 2
+  MARKER 77 19.06 "QC high: local_dropout_or_abrupt_cut (03_FX.wav)" 0 0 1 B {91ED33EC-C649-5A41-B83F-DA04C8DC2A2E} 0 2
+  MARKER 78 19.52 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {E6F43FE4-95C0-DB4A-A09D-8B03E065F0EB} 0 2
+  MARKER 79 21.04 "QC high: sudden_energy_spike (0 Lead Vocals.wav)" 0 0 1 B {78E91C7D-86BF-7943-962F-C2533D608310} 0 2
+  MARKER 93 21.845 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {7E877C8A-00CA-6740-B3C1-0FAC83FC44E1} 0 2
+  MARKER 107 21.845 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {BCAC94BF-17F5-744D-BE3B-692C3249305E} 0 2
+  MARKER 80 22.46 "QC high: near_silence_hole (03_FX.wav)" 0 0 1 B {76D096BB-997B-494E-A553-051A4DA2CAAB} 0 2
+  MARKER 94 24.064 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {A3AEBE78-12F4-2344-846E-C5370CCC4865} 0 2
+  MARKER 108 24.064 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {839F4AD7-3019-8A49-B17F-2BFD16ED760F} 0 2
+  MARKER 4 28 "28s short-form checkpoint" 0 0 1 B {51F5F710-DA66-3440-9060-D7320A4B682A} 0 2
+  MARKER 95 28.395 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {11CB4DED-C185-5C41-8ED9-918712E534C0} 0 2
+  MARKER 109 28.395 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {7FBC47E9-EF6E-5445-B85E-CC7A2D38188B} 0 2
+  MARKER 18 29.92 "QC critical: local_dropout_or_abrupt_cut (08_Guitar.wav)" 0 0 1 B {D31BA6C6-6E95-374D-9AAC-5446BA2A35F4} 0 2
+  MARKER 81 30.64 "QC high: sudden_energy_spike (08_Guitar.wav)" 0 0 1 B {0486990B-998C-EE45-A251-EABB3DC6B17D} 0 2
+  MARKER 82 31.04 "QC high: sudden_energy_spike (08_Guitar.wav)" 0 0 1 B {E65CD44F-AF6F-CB4C-888E-B7E61ADCFA22} 0 2
+  MARKER 83 31.68 "QC high: sudden_energy_spike (08_Guitar.wav)" 0 0 1 B {672B7E9D-34EB-714F-B8D6-3BFCB291AE3F} 0 2
+  MARKER 84 34 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {D99A1EB6-A501-624F-8BC6-4AA647110F77} 0 2
+  MARKER 19 34.06 "QC critical: local_dropout_or_abrupt_cut (09_Bass.wav)" 0 0 1 B {1FF74987-7A33-9846-ABA3-0E97B97DAFC1} 0 2
+  MARKER 96 34.197 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {ACFD5A79-3F46-D043-BBB7-904734967E59} 0 2
+  MARKER 110 34.197 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {13865B28-9ACC-3F44-821F-06A12A282E1E} 0 2
+  MARKER 85 34.42 "QC high: near_silence_hole (09_Bass.wav)" 0 0 1 B {BC1DC8F2-B19A-0549-A621-12694194502E} 0 2
+  MARKER 86 34.72 "QC high: sudden_energy_spike (09_Bass.wav)" 0 0 1 B {7B07670E-F2B1-8744-A26A-103617B38F97} 0 2
+  MARKER 87 38.64 "QC high: sudden_energy_spike (12_Vocals.wav)" 0 0 1 B {06CA9B7A-E39F-1B42-A50A-DE1293C5963B} 0 2
+  MARKER 89 38.64 "LEAD REPAIR: check energy spike / harsh consonant" 0 0 1 B {BC4D3794-6DBB-C84F-B3E9-E00F62709959} 0 2
+  MARKER 120 38.64 "PASS02 LEAD REPAIR: harsh consonant / energy spike" 0 0 1 B {F1FE9777-AC77-9048-A0BB-E4AA02B2823D} 0 2
+  MARKER 123 60 "PASS03 CHECK: hook melody/beat forward" 0 0 1 B {7110F640-26D1-384D-B6C8-FEF6D8CF60CE} 0 2
+  MARKER 97 60.992 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {833A3E3C-CB0D-0A40-9BDB-E28889B95BBE} 0 2
+  MARKER 111 60.992 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {856D0353-524F-F447-967E-0BAE79097CD0} 0 2
+  MARKER 98 69.355 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {68081376-FC9A-F04A-9D2E-B116B4BCC599} 0 2
+  MARKER 112 69.355 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {E33AC794-FEB8-6747-949D-B49E18DA538C} 0 2
+  MARKER 99 72.32 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {4E671433-F6D8-224A-851E-2F18EBE362F8} 0 2
+  MARKER 113 72.32 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {5F10CDA2-9FE9-BF4A-9380-EC3D3CEB8231} 0 2
+  MARKER 100 77.44 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {D5F6440C-ECEA-1A45-B586-CEF8A86C5003} 0 2
+  MARKER 114 77.44 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {4D1B5684-BBD4-8F43-B1E5-15C9CEE6D41F} 0 2
+  MARKER 101 90.859 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {A16D798D-1A41-9A4A-A59A-1ED1095236E5} 0 2
+  MARKER 115 90.859 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {FC0D5F4C-2010-CD47-B5EC-938E6554767E} 0 2
+  MARKER 102 92.779 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {19A6A7FE-6AD2-D947-A254-1C9B8933EEA2} 0 2
+  MARKER 116 92.779 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {C16887E3-4383-F34C-B5C3-1CBED282971D} 0 2
+  MARKER 103 101.248 "DELAY THROW CANDIDATE: phrase end" 0 0 1 B {0B9C5B57-E4BA-FA45-A163-0B3CC5E7A0F3} 0 2
+  MARKER 117 101.248 "PASS02 DELAY THROW: open delay only at phrase end" 0 0 1 B {57D32636-0056-2A46-93FA-100C0F3F5591} 0 2
+  <PROJBAY
+  >
+  <TRACK {3B93242C-7B9F-E64F-AA4D-31A6313D077F}
+    NAME REF_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3B93242C-7B9F-E64F-AA4D-31A6313D077F}
+    PERF 0
+    AUXRECV 17 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 31 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 45 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 46 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 47 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 1 0
+  >
+  <TRACK {F657CE91-BE31-6449-B54D-F9A7F4971BC5}
+    NAME DRUM_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.93325430079699 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F657CE91-BE31-6449-B54D-F9A7F4971BC5}
+    PERF 0
+    <EXT
+      pass01_fx_drum_bus_hat_tone_eq ReaEQ
+      pass01_fx_drum_bus_punch_glue ReaComp
+      pass02_dynamic_eq_drum_hat_harsh_8500 "Codex Dynamic EQ: 8500 Hz Q 1.20 threshold -38.0 dB max cut 2.2 dB attack 4.0 ms release 130.0 ms"
+      pass02_fx_drum_hat_harsh_8500 "JS: Codex Dynamic EQ Band"
+    >
+    AUXRECV 37 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 41 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {DCD05D84-AB4A-2A41-88FD-A0D8FACCABC1}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4A36425A-6C90-FD45-BD3F-B38EFF0E0962}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        8500 1.2 -38 2.2 4 130 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {ADF5AACC-8704-454F-9E42-FB6EAF580078}
+      WAK 0 0
+    >
+  >
+  <TRACK {6279F09F-7414-C040-B6EB-AB505A3BDE35}
+    NAME BASS_808_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.87096358995608 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {6279F09F-7414-C040-B6EB-AB505A3BDE35}
+    PERF 0
+    <EXT
+      pass01_fx_bass_bus_dynamic_control ReaXcomp
+      pass01_fx_bass_bus_mono_low_mud_eq ReaEQ
+      pass02_dynamic_eq_bass_lowmid_280 "Codex Dynamic EQ: 280 Hz Q 1.10 threshold -36.0 dB max cut 2.0 dB attack 18.0 ms release 220.0 ms"
+      pass02_dynamic_eq_bass_mud_180 "Codex Dynamic EQ: 180 Hz Q 1.00 threshold -34.0 dB max cut 2.5 dB attack 18.0 ms release 220.0 ms"
+      pass02_fx_bass_lowmid_280 "JS: Codex Dynamic EQ Band"
+      pass02_fx_bass_mud_180 "JS: Codex Dynamic EQ Band"
+    >
+    AUXRECV 40 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {7ADF3016-B172-F245-B250-C8237AD66A0B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {66753F66-76EF-B845-B1E5-C951B8F2FC3D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        180 1 -34 2.5 18 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B2B1CCDD-8586-024D-A040-1BEF256D5109}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        280 1.1 -36 2 18 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F335D85A-B1B5-D64E-B943-CF90A4C31EFB}
+      WAK 0 0
+    >
+  >
+  <TRACK {9EF591D6-4AD0-F24C-9793-C269D959B4A6}
+    NAME MUSIC_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.20226443461741 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9EF591D6-4AD0-F24C-9793-C269D959B4A6}
+    PERF 0
+    <EXT
+      pass01_fx_music_bus_masking_dynamic_control ReaXcomp
+      pass01_fx_music_bus_vocal_pocket_eq ReaEQ
+      pass01_fx_music_bus_width_control "JS: Stereo Width"
+      pass02_automation_music_vocal_duck "Volume duck -1.4 dB during lead vocal phrases."
+      pass02_dynamic_eq_music_side_mud_proxy_260 "Codex Dynamic EQ: 260 Hz Q 0.80 threshold -36.0 dB max cut 1.6 dB attack 24.0 ms release 280.0 ms"
+      pass02_dynamic_eq_music_upper_mask_4200 "Codex Dynamic EQ: 4200 Hz Q 0.95 threshold -38.0 dB max cut 1.5 dB attack 18.0 ms release 240.0 ms"
+      pass02_dynamic_eq_music_vocal_pocket_2200 "Codex Dynamic EQ: 2200 Hz Q 0.90 threshold -37.0 dB max cut 1.8 dB attack 20.0 ms release 260.0 ms"
+      pass02_fx_music_side_mud_proxy_260 "JS: Codex Dynamic EQ Band"
+      pass02_fx_music_upper_mask_4200 "JS: Codex Dynamic EQ Band"
+      pass02_fx_music_vocal_pocket_2200 "JS: Codex Dynamic EQ Band"
+      pass03_music_presence "Music envelope nearly removes PASS02 ducking: +0.8 dB baseline, +0.2 dB under vocals so the beat melody stays present."
+    >
+    AUXRECV 18 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 19 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 20 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 21 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 22 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 23 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 24 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 25 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 26 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 27 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 28 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 29 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 30 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 32 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 33 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 35 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 36 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 38 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <VOLENV2
+      EGUID {32333C74-3DE5-7442-AC35-700713AC98BD}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 0 0
+      PT 3.8 0 0
+      PT 4 0 0
+      PT 35.6 0 0
+      PT 35.85 0 0
+      PT 59.6 0 0
+      PT 59.8 0 0
+      PT 79.4 0 0
+      PT 79.65 0 0
+      PT 89.5 0 0
+      PT 89.7 0 0
+      PT 103.7 0 0
+      PT 103.95 0 0
+      PT 160 0 0
+    >
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8A53B8E7-D8EF-614E-AAEA-49CA2E5FD4B4}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {048FB301-ED05-8D45-86A2-E82BFCB41B5E}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {BDD29A3B-5D52-9C4C-9BE7-F585E76AA023}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        2200 0.9 -37 1.8 20 260 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {39D386F6-1446-7348-B521-F41F9DEBDFE3}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        4200 0.95 -38 1.5 18 240 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4EB85325-803E-6D4D-A731-DAD51BBC571B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        260 0.8 -36 1.6 24 280 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {90E40BC5-629B-5F48-8F5E-FA2FD905C39D}
+      WAK 0 0
+    >
+  >
+  <TRACK {92E9CAB0-A5C0-8C44-AECD-F892FED77B92}
+    NAME MALE_LEAD_VOX_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1.02329299228075 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {92E9CAB0-A5C0-8C44-AECD-F892FED77B92}
+    PERF 0
+    <EXT
+      pass01_dynamic_eq_intent "Control 180-350 Hz mud, 3-5 kHz harshness, and 5.5-9 kHz sibilance using ReaXcomp or manual plugin upgrade."
+      pass01_fx_lead_bus_cleanup_tone_eq ReaEQ
+      pass01_fx_lead_bus_dynamic_eq_deess ReaXcomp
+      pass01_fx_lead_bus_light_saturation "JS: Saturation"
+      pass01_fx_lead_bus_serial_leveling ReaComp
+      pass01_tuning_status "ReaTune fallback present/anchored; key uncertain, manual pitch correction still required for unstable sections."
+      pass02_dynamic_eq_lead_harsh_3800 "Codex Dynamic EQ: 3800 Hz Q 1.10 threshold -36.0 dB max cut 2.8 dB attack 5.0 ms release 120.0 ms"
+      pass02_dynamic_eq_lead_mud_260 "Codex Dynamic EQ: 260 Hz Q 1.20 threshold -35.0 dB max cut 2.5 dB attack 12.0 ms release 180.0 ms"
+      pass02_dynamic_eq_lead_nasal_950 "Codex Dynamic EQ: 950 Hz Q 1.35 threshold -34.0 dB max cut 2.0 dB attack 10.0 ms release 160.0 ms"
+      pass02_dynamic_eq_lead_sibilance_7200 "Codex Dynamic EQ: 7200 Hz Q 1.65 threshold -40.0 dB max cut 3.2 dB attack 3.0 ms release 110.0 ms"
+      pass02_fx_lead_harsh_3800 "JS: Codex Dynamic EQ Band"
+      pass02_fx_lead_mud_260 "JS: Codex Dynamic EQ Band"
+      pass02_fx_lead_nasal_950 "JS: Codex Dynamic EQ Band"
+      pass02_fx_lead_sibilance_7200 "JS: Codex Dynamic EQ Band"
+      pass02_intent "Lead is the anchor. Dynamic bands control mud, nasal edge, 3-5 kHz harshness, and sibilance while preserving consonants."
+    >
+    AUXRECV 43 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {013F7BA5-6366-4D42-9A80-B920C570E827}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {BCD14052-4B63-B840-978D-B6E3A43AADCB}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {63378882-2DF0-A849-84B1-F6CC40F04A7D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS loser/Saturation ""
+        0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F2709DE2-85A1-3D42-810F-096F801BDC11}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        260 1.2 -35 2.5 12 180 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {63A2DC33-8080-3241-96DE-74E1547081C5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        950 1.35 -34 2 10 160 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {2C467E35-99BC-C742-A002-9B47918922D1}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        3800 1.1 -36 2.8 5 120 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {07E5E088-C720-4846-A93D-D9F4188D37FB}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        7200 1.65 -40 3.2 3 110 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8C39C575-99EA-EE46-934C-A2BE6407130C}
+      WAK 0 0
+    >
+  >
+  <TRACK {EFF3F82D-CDA3-4B4A-B13E-CAF86471DA3E}
+    NAME FEMALE_BGV_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.37583740428844 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EFF3F82D-CDA3-4B4A-B13E-CAF86471DA3E}
+    PERF 0
+    <EXT
+      pass01_fx_bgv_bus_deess_control ReaXcomp
+      pass01_fx_bgv_bus_hpf_soften_eq ReaEQ
+      pass01_fx_bgv_bus_smooth_compression ReaComp
+      pass01_fx_bgv_bus_width_control "JS: Stereo Width"
+      pass02_bgv_status "Only 11_Backing_Vocals remains active as quiet support. External/candidate female lead layers are muted due timing and AI/dropout risk."
+      pass02_dynamic_eq_bgv_compete_3200 "Codex Dynamic EQ: 3200 Hz Q 1.10 threshold -42.0 dB max cut 3.0 dB attack 7.0 ms release 160.0 ms"
+      pass02_dynamic_eq_bgv_sibilance_7600 "Codex Dynamic EQ: 7600 Hz Q 1.55 threshold -45.0 dB max cut 2.5 dB attack 4.0 ms release 130.0 ms"
+      pass02_fx_bgv_compete_3200 "JS: Codex Dynamic EQ Band"
+      pass02_fx_bgv_sibilance_7600 "JS: Codex Dynamic EQ Band"
+    >
+    AUXRECV 16 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 42 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 44 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {86337AD4-E941-664C-97F2-44EE9DBF4A99}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {605B3355-382A-8748-BB1E-A47873339A0B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {64E29922-8219-6B48-95DA-6940F9855502}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {9E6BBEA2-0564-EF49-8F62-C4A31C5AF37A}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        3200 1.1 -42 3 7 160 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {912CCD25-868E-BA49-83CF-B2C68B282249}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        7600 1.55 -45 2.5 4 130 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {387FBA14-45F2-384A-BE49-C0790D84073A}
+      WAK 0 0
+    >
+  >
+  <TRACK {751AA65B-9745-5D4E-8A53-8A54BAEDF4CB}
+    NAME VOCAL_FX_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.3630780547701 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {751AA65B-9745-5D4E-8A53-8A54BAEDF4CB}
+    PERF 0
+    <EXT
+      pass01_fx_vocal_fx_ducking_placeholder ReaComp
+      pass01_fx_vocal_fx_return_filter_eq ReaEQ
+      pass02_automation_vocal_fx_duck "Volume duck -1.8 dB during lead vocal phrases."
+    >
+    AUXRECV 12 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 13 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 14 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 15 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <VOLENV2
+      EGUID {7192ADAC-2744-1E4C-BE72-E3B078F38EA1}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 0 0
+      PT 3.8 0 0
+      PT 4 0 0
+      PT 35.6 0 0
+      PT 35.85 0 0
+      PT 59.6 0 0
+      PT 59.8 0 0
+      PT 79.4 0 0
+      PT 79.65 0 0
+      PT 89.5 0 0
+      PT 89.7 0 0
+      PT 103.7 0 0
+      PT 103.95 0 0
+      PT 160 0 0
+    >
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E5FA3517-418C-844C-9F3E-4133275B857E}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8EA47F44-F430-3340-AD3A-F7CA13DC6AF2}
+      WAK 0 0
+    >
+  >
+  <TRACK {79AA303C-A293-304D-B7A8-9038FF2DA057}
+    NAME FX_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.3981071705535 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {79AA303C-A293-304D-B7A8-9038FF2DA057}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {8D2B7460-FD65-8C4E-8BBA-13A3FFD33226}
+    NAME ARTIFACT_QUARANTINE_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8D2B7460-FD65-8C4E-8BBA-13A3FFD33226}
+    PERF 0
+    AUXRECV 34 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 39 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {AC585935-1314-6548-A962-2F30BB85A38B}
+    NAME MIX_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {AC585935-1314-6548-A962-2F30BB85A38B}
+    PERF 0
+    <EXT
+      pass02_dynamic_eq_mix_lowmid_bloom_300 "Codex Dynamic EQ: 300 Hz Q 0.75 threshold -32.0 dB max cut 1.1 dB attack 25.0 ms release 320.0 ms"
+      pass02_dynamic_eq_mix_upper_edge_7800 "Codex Dynamic EQ: 7800 Hz Q 0.85 threshold -39.0 dB max cut 1.0 dB attack 8.0 ms release 220.0 ms"
+      pass02_fx_mix_lowmid_bloom_300 "JS: Codex Dynamic EQ Band"
+      pass02_fx_mix_upper_edge_7800 "JS: Codex Dynamic EQ Band"
+    >
+    AUXRECV 1 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 2 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 3 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 4 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 5 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 6 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 7 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D91F99BE-DE53-6546-8D9E-F68DBCDC3590}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1496F7B2-B0CA-5048-A3C3-98660DFC813C}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        300 0.75 -32 1.1 25 320 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8EFAD8C9-E2AD-4E4C-B6D1-6DB20353C972}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS codex_fresh_mix/codex_dynamic_eq_band.jsfx ""
+        7800 0.85 -39 1 8 220 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {3E918E6C-69A2-A043-A589-37AFD155BC70}
+      WAK 0 0
+    >
+  >
+  <TRACK {78063087-3037-4E4B-88FC-7E40C7CBD4C4}
+    NAME MASTER_PREMIX_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {78063087-3037-4E4B-88FC-7E40C7CBD4C4}
+    PERF 0
+    AUXRECV 9 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {32BB64BA-3DE2-B24B-A1BD-CE3CA152A1CE}
+      WAK 0 0
+    >
+  >
+  <TRACK {4455980F-981C-C744-B1C3-4586BC832C80}
+    NAME PRINT_MASTER_BUS
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4455980F-981C-C744-B1C3-4586BC832C80}
+    PERF 0
+    <EXT
+      pass01_event_horizon_settings "Threshold -16 dB, ceiling -1 dB, release 250 ms. Used as stock short-form pop loudness stage; verify by ear for pumping."
+      pass01_fx_print_master_event_horizon_limiter "JS: Event Horizon Limiter/Clipper"
+      pass02_event_horizon_settings "Threshold -16.6 dB, ceiling -1 dB, release 320 ms. Final review loudness is applied only after balance repair; premaster render bypasses this chain."
+      pass03_event_horizon_settings "Threshold -20 dB, ceiling -1 dB, release 360 ms. Aggressive -6 LUFS review target; reject if pumping/distortion is audible."
+    >
+    AUXRECV 10 0 1 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaLimit (Cockos)" realimit.vst.dylib 0 "" 1919708532<565354726C6D747265616C696D697400> ""
+        dG1scu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAMAAAAAEAAAAAABAA
+        AwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAAAAAAD+fduMQw8Y/
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B2DE9909-4144-9043-8DBF-E12C8881D9E9}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS analysis/loudness_meter ""
+        4 0 0 2 1 1 1 0 -12 -6 1 0 0 1.8 0 - - - - - - - - - - - - - - -150 -100 -100 -100 -100 -100 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1C68799E-8E66-3240-A463-75701DB960BA}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/eventhorizon2 ""
+        -20 -1 360 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C0FDA612-457D-204B-B22E-06A912B5FCDF}
+      WAK 0 0
+    >
+  >
+  <TRACK {B0E2231F-8B6B-954C-B17A-34A87E062149}
+    NAME VOCAL_PLATE_SEND
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.3981071705535 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B0E2231F-8B6B-954C-B17A-34A87E062149}
+    PERF 0
+    <EXT
+      pass01_fx_plate_return_filter ReaEQ
+    >
+    AUXRECV 16 0 0.00316227766017 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 42 0 0.1 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 43 0 0.05623413251903 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 44 0 0.00316227766017 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaVerbate (Cockos)" reaverbate.vst.dylib 0 "" 1920361016<56535472766238726561766572626174> ""
+        OGJ2cu9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAKAAAAAAAAAAAABAA
+        776t3g3wrd5DAgA/AACAP5eWlj4AAAA/AACAPwAAAAAAAIA/AAAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F5424C9F-278E-AB4A-B7AC-E2F9552FEE0E}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {088E7F8A-6D0C-5D48-94EE-51C75DAAE69E}
+      WAK 0 0
+    >
+  >
+  <TRACK {2E349169-2237-D744-B26B-59B5EE8580BC}
+    NAME VOCAL_DELAY_SEND
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.23713737056617 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 1
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {2E349169-2237-D744-B26B-59B5EE8580BC}
+    PERF 0
+    <EXT
+      pass01_fx_delay_return_filter ReaEQ
+      pass02_automation_delay_throws "Delay return stays tucked down and opens only around phrase-end throw markers."
+    >
+    AUXRECV 43 0 0.02818382931264 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <VOLENV2
+      EGUID {6DC5315E-95E8-0D42-87D7-08C14D3A7CEE}
+      ACT 1 -1
+      VIS 1 1 1
+      LANEHEIGHT 0 0
+      ARM 1
+      DEFSHAPE 0 -1 -1
+      VOLTYPE 1
+      PT 0 0 0
+      PT 4.387 0 0
+      PT 4.557 0 0
+      PT 4.867 0 0
+      PT 5.127 0 0
+      PT 5.795 0 0
+      PT 5.965 0 0
+      PT 6.275 0 0
+      PT 6.535 0 0
+      PT 18.04 0 0
+      PT 18.21 0 0
+      PT 18.52 0 0
+      PT 18.78 0 0
+      PT 21.645 0 0
+      PT 21.815 0 0
+      PT 22.125 0 0
+      PT 22.385 0 0
+      PT 23.864 0 0
+      PT 24.034 0 0
+      PT 24.344 0 0
+      PT 24.604 0 0
+      PT 28.195 0 0
+      PT 28.365 0 0
+      PT 28.675 0 0
+      PT 28.935 0 0
+      PT 33.997 0 0
+      PT 34.167 0 0
+      PT 34.477 0 0
+      PT 34.737 0 0
+      PT 60.792 0 0
+      PT 60.962 0 0
+      PT 61.272 0 0
+      PT 61.532 0 0
+      PT 69.155 0 0
+      PT 69.325 0 0
+      PT 69.635 0 0
+      PT 69.895 0 0
+      PT 72.12 0 0
+      PT 72.29 0 0
+      PT 72.6 0 0
+      PT 72.86 0 0
+      PT 77.24 0 0
+      PT 77.41 0 0
+      PT 77.72 0 0
+      PT 77.98 0 0
+      PT 90.659 0 0
+      PT 90.829 0 0
+      PT 91.139 0 0
+      PT 91.399 0 0
+      PT 92.579 0 0
+      PT 92.749 0 0
+      PT 93.059 0 0
+      PT 93.319 0 0
+      PT 101.048 0 0
+      PT 101.218 0 0
+      PT 101.528 0 0
+      PT 101.788 0 0
+      PT 160 0 0
+      PT 160 0 0
+    >
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaDelay (Cockos)" readelay.vst.dylib 0 "" 1919247468<5653547265646C72656164656C617900> ""
+        bGRlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAAAAAAABAAAALAAAAAIAAAAAAAAAQwIAPwAAgD8AAAAAAACAPwAAAAAAAAA8nNEHMwAAgD8AAAAAAACAPwAAgD8AAIA/AAAAPw==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {DBEC86FD-01B1-034C-B3C1-94685CDF327D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {90EE8245-DD9E-2345-B642-7933F208AEEB}
+      WAK 0 0
+    >
+  >
+  <TRACK {EED5E173-FFA7-1B4D-B617-4C24F1F734A9}
+    NAME SHORT_ROOM_SEND
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.17782794100389 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {EED5E173-FFA7-1B4D-B617-4C24F1F734A9}
+    PERF 0
+    <EXT
+      pass01_fx_short_room_return_filter ReaEQ
+    >
+    AUXRECV 16 0 0.00316227766017 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 42 0 0.06309573444802 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 43 0 0.01258925411794 0 0 0 0 0 0 -1:U 0 -1 ''
+    AUXRECV 44 0 0.00316227766017 0 0 0 0 0 0 -1:U 0 -1 ''
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaVerbate (Cockos)" reaverbate.vst.dylib 0 "" 1920361016<56535472766238726561766572626174> ""
+        OGJ2cu9e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAKAAAAAAAAAAAABAA
+        776t3g3wrd5DAgA/AACAP5eWlj4AAAA/AACAPwAAAAAAAIA/AAAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {08CEBBD8-3D69-6B4E-BA1A-BB9E3030DCC2}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {799EDE6F-ED29-2446-BD28-580F304F6950}
+      WAK 0 0
+    >
+  >
+  <TRACK {20326EE2-5451-F945-836F-AE83F2A8F619}
+    NAME OPTIONAL_WIDE_THROW_SEND
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {20326EE2-5451-F945-836F-AE83F2A8F619}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {D494A824-1536-FE47-9891-1A0E99B264D5}
+    NAME "Female BGV L - 0 Lead Vocals"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.00794328234724 -0.4 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D494A824-1536-FE47-9891-1A0E99B264D5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {EB62F1A0-3FF5-D547-BB91-59B0E3E21819}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {A2E4DA20-EE15-E54D-AD00-9A783E3495FB}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {18DB0045-9DDA-6145-8572-7336D04C1673}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8E4BCE27-D3B3-DD44-BB73-5E98E011478C}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {10F54A38-B517-4341-AB3E-0E54CDB27829}
+      IID 1
+      NAME "0 Lead Vocals.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6F78BB84-E0E4-9B43-8E8D-A7E8656230E1}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems/0 Lead Vocals.wav"
+      >
+    >
+  >
+  <TRACK {D4C2C261-2FE3-CB43-AA2F-E6E61C4E41E7}
+    NAME "1 Instrumental"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {D4C2C261-2FE3-CB43-AA2F-E6E61C4E41E7}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 131.4
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {542716D7-63D9-B34B-8B2E-8D9C223DE3ED}
+      IID 2
+      NAME "1 Instrumental.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4D90CBB7-D1E2-D040-8EC4-741A37358CC4}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/external_female_v20_stems/1 Instrumental.wav"
+      >
+    >
+  >
+  <TRACK {02BA3F35-1C81-8345-B0EE-B4C8BF1C895E}
+    NAME "Guide MIDI - 01_Woodwinds_woodwinds"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {02BA3F35-1C81-8345-B0EE-B4C8BF1C895E}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/01_Woodwinds_woodwinds.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {9FDD160D-5AFD-3848-A64F-2D9CF950AB8A}
+    NAME "Guide MIDI - 02_Brass_brass"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9FDD160D-5AFD-3848-A64F-2D9CF950AB8A}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/02_Brass_brass.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {BB49D98B-3B54-D14D-8D60-C941358DBF3E}
+    NAME "Guide MIDI - 03_FX_fx"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BB49D98B-3B54-D14D-8D60-C941358DBF3E}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/03_FX_fx.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {B4CE747E-FDB6-A04A-B5C6-B7D81CF89872}
+    NAME "Guide MIDI - 04_Synth_synth"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {B4CE747E-FDB6-A04A-B5C6-B7D81CF89872}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/04_Synth_synth.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {20019499-C454-8C43-A9E3-4C6FE7C0F4A9}
+    NAME "Guide MIDI - 05_Strings_strings"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {20019499-C454-8C43-A9E3-4C6FE7C0F4A9}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/05_Strings_strings.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {9A243923-7E63-694F-A21F-4851C558EF8A}
+    NAME "Guide MIDI - 06_Percussion_percussion"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9A243923-7E63-694F-A21F-4851C558EF8A}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/06_Percussion_percussion.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {AC2D98F2-1C10-E944-ADD0-C2415C90401A}
+    NAME "Guide MIDI - 07_Keyboard_keyboard"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {AC2D98F2-1C10-E944-ADD0-C2415C90401A}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/07_Keyboard_keyboard.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {3921C416-EF8D-0448-A474-F6B4C2513E30}
+    NAME "Guide MIDI - 08_Guitar_guitar"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3921C416-EF8D-0448-A474-F6B4C2513E30}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/08_Guitar_guitar.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {441ABCD4-EC69-BD4C-A0F2-6A20ABEBA682}
+    NAME "Guide MIDI - 09_Bass_bass"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {441ABCD4-EC69-BD4C-A0F2-6A20ABEBA682}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/09_Bass_bass.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {F6A9BA8D-9C86-BB4B-B22B-74194DDE0F2B}
+    NAME "Guide MIDI - 10_Drums_drums"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F6A9BA8D-9C86-BB4B-B22B-74194DDE0F2B}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/10_Drums_drums.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {F7718550-ADE9-4843-8CF4-F96A0AB0C5CE}
+    NAME "Guide MIDI - 11_Backing_Vocals_female_vocal_candidate"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {F7718550-ADE9-4843-8CF4-F96A0AB0C5CE}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/11_Backing_Vocals_female_vocal_candidate.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {C80BD30A-0573-014B-80BA-DD8DED24CE23}
+    NAME "Guide MIDI - 12_Vocals_lead_vocal"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {C80BD30A-0573-014B-80BA-DD8DED24CE23}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/12_Vocals_lead_vocal.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {DFCB4D9A-7BF7-F946-9ED1-880111C38CF9}
+    NAME "Guide MIDI - combined_suno_audio_derived_guides"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {DFCB4D9A-7BF7-F946-9ED1-880111C38CF9}
+    PERF 0
+    <EXT
+      guide_midi_note "Guide MIDI placeholder only; import manually if needed to avoid REAPER MIDI import modal prompts."
+      guide_midi_path "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/midi_guides/combined_suno_audio_derived_guides.mid"
+    >
+    MIDIOUT -1
+    MAINSEND 0 0
+  >
+  <TRACK {ADD73E20-AFAB-BB4A-AB7E-8E4311640145}
+    NAME 00_REF_Full_Mix
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {ADD73E20-AFAB-BB4A-AB7E-8E4311640145}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {23D9C7B2-4BEA-0043-8A99-0A82FF6D4004}
+      IID 3
+      NAME 00_REF_Full_Mix.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0A5ACE14-4770-7848-9003-B5ED457D7539}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/00_REF_Full_Mix.wav"
+      >
+    >
+  >
+  <TRACK {E07C80D8-CF03-0B42-B9C3-049D7F22D471}
+    NAME 01_Woodwinds
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.21379620895022 -0.05 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {E07C80D8-CF03-0B42-B9C3-049D7F22D471}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {511D201E-E56B-DE45-B698-769279904D34}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {76285497-7461-D44E-87E9-3F5C3556D974}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {63875EFE-D2CA-4E4D-A2A5-43516A891549}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {64DEE434-58E1-B74D-8FC0-FD2E0555E881}
+      IID 4
+      NAME 01_Woodwinds.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3608181E-DF15-0345-9114-17AEB4E6DA3D}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/01_Woodwinds.wav"
+      >
+    >
+  >
+  <TRACK {4BFCB8A3-4F4B-5D47-BD5B-3D8BC19EB24A}
+    NAME 02_Brass
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.19952623149689 0.05 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {4BFCB8A3-4F4B-5D47-BD5B-3D8BC19EB24A}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {459C3EDE-70DB-7E46-9D5A-54CDA8F22589}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {448DEB2C-005D-714A-BA51-FA2E600059C3}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {6A1BCB0B-39A5-234D-A51D-73E144B0F2F0}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {83B652F6-C490-D44A-960F-C08574DA6B1E}
+      IID 5
+      NAME 02_Brass.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6608BE84-172F-7E4D-BAD7-105C6B032651}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/02_Brass.wav"
+      >
+    >
+  >
+  <TRACK {0C59CF52-A1B8-4747-A814-5971FF03AB4C}
+    NAME "QUARANTINE - 03_FX"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.06309573444802 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0C59CF52-A1B8-4747-A814-5971FF03AB4C}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D507FF8A-4DC5-1C43-8032-71F30E313753}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {9730F0C5-31FF-0C47-A6D5-E55F25BC8CF0}
+      IID 6
+      NAME 03_FX.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8EE99540-A860-E34A-9A61-BED1B60404AC}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/03_FX.wav"
+      >
+    >
+  >
+  <TRACK {8F1FD455-FAA5-6A4D-859E-37A31C0C0DD4}
+    NAME 04_Synth
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.25703957827689 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8F1FD455-FAA5-6A4D-859E-37A31C0C0DD4}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4849B7CF-5321-4B49-B631-DE4866B0FB28}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {8C3A53EB-D53F-EC47-8A09-AD5719CCE14C}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {9EF3F875-6A2B-1D48-BF59-3E3EAF70BDA1}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {4254B335-F70E-4E45-9214-C134A4FD0210}
+      IID 7
+      NAME 04_Synth.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {79EC7A93-1B6A-724D-B72F-7B7C0401A93C}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/04_Synth.wav"
+      >
+    >
+  >
+  <TRACK {BC6A0539-E5DC-AC43-B749-699C4A2E1FEC}
+    NAME 05_Strings
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.20417379446695 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {BC6A0539-E5DC-AC43-B749-699C4A2E1FEC}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {407B0A77-C8F7-3A48-83BB-6C316A0862D8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {ACBD7B73-210D-7040-B170-756FD7C4408B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {35A06F4B-395C-E244-B9C9-3F9E0D6EFFF9}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {1A3C1D1D-06CA-8641-90F9-66202EDAEE43}
+      IID 8
+      NAME 05_Strings.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3D894998-ED5C-ED4E-9440-DC31B8A1509E}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/05_Strings.wav"
+      >
+    >
+  >
+  <TRACK {872D1C60-1592-974F-8518-492F8FEBFA6B}
+    NAME 06_Percussion
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.23988329190195 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {872D1C60-1592-974F-8518-492F8FEBFA6B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C7BC995D-A1ED-7644-B079-1475041B7B89}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {FE249B16-651C-E645-82C0-2F47986827E1}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {6F270890-150A-8F45-ABAC-82A3495226C6}
+      IID 9
+      NAME 06_Percussion.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BFCB8526-850A-7049-B3AA-0DDE9CD61200}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/06_Percussion.wav"
+      >
+    >
+  >
+  <TRACK {941A5F44-3455-4045-A0DB-A18C04D91BCB}
+    NAME 07_Keyboard
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.2454708915685 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {941A5F44-3455-4045-A0DB-A18C04D91BCB}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E1EE5351-1A80-5640-A9DE-7406FA95C5B3}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D60302B2-C2B7-CD42-90BF-2F3F88103C16}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {0D155D39-7D82-3444-9399-70F7B3E280DA}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {DFBE88FE-9CC8-8E44-95B1-F11015B17545}
+      IID 10
+      NAME 07_Keyboard.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {41375EB6-A59A-C540-AE9F-DB42240171A5}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/07_Keyboard.wav"
+      >
+    >
+  >
+  <TRACK {A60E1868-6DA8-344A-AFBC-DAF1AFC07B23}
+    NAME "QUARANTINE - 08_Guitar"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.06309573444802 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {A60E1868-6DA8-344A-AFBC-DAF1AFC07B23}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {CE5C4AFB-EABD-CE45-9DF0-62767D0ACEE7}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {8BE2C66F-97EF-DD43-A069-D57DDAC3A318}
+      IID 11
+      NAME 08_Guitar.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {49613D29-3EFE-0F44-A392-3203260664B6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/08_Guitar.wav"
+      >
+    >
+  >
+  <TRACK {604A4F7E-8BC6-A44E-8948-7DDE5C4E8066}
+    NAME 09_Bass
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.26302679918954 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {604A4F7E-8BC6-A44E-8948-7DDE5C4E8066}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {DE51B7B0-8199-C44F-856D-A8CF2EF0B06D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {382ED637-27C2-DA46-9D4D-8BA9C0AB612E}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {68C675B7-DDB4-C24B-80F4-C725158BFB21}
+      IID 12
+      NAME 09_Bass.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {359E3707-D296-3B48-A34E-E6B1FE8DA048}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/09_Bass.wav"
+      >
+    >
+  >
+  <TRACK {9483AB06-E218-0047-B605-AADEA5AF2445}
+    NAME 10_Drums
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.31622776601684 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {9483AB06-E218-0047-B605-AADEA5AF2445}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {BBCBEC48-212D-2F4E-879A-559E183F9A48}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {70552C15-0362-6F40-8A87-1000555698C8}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {7E38E32E-8958-C748-991C-A6FB566B706F}
+      IID 13
+      NAME 10_Drums.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D2417F64-877C-B947-A491-9F169FD74E5C}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/10_Drums.wav"
+      >
+    >
+  >
+  <TRACK {534AF0A2-19CE-4141-B80D-0DE020885DE8}
+    NAME "Female BGV R - 11_Backing_Vocals"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.03162277660168 0.38 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {534AF0A2-19CE-4141-B80D-0DE020885DE8}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D5783243-556F-FD43-9E32-B5989052D5D5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {698B9361-BD5E-7449-9409-68FB68475037}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E0B80583-BFAE-EB4D-BC7A-CB19C130D16D}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {F98959B6-3DFE-A94D-9E44-B81B5EAB1E3E}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {CF9216FF-8FB9-BA40-BFA0-F0A8EC3AE839}
+      IID 14
+      NAME 11_Backing_Vocals.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {01A73564-D515-7C48-B8B4-C61465304A2E}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/11_Backing_Vocals.wav"
+      >
+    >
+  >
+  <TRACK {5140795B-03CA-8B4F-B61A-F81CBF005531}
+    NAME 12_Vocals
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.51286138399136 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {5140795B-03CA-8B4F-B61A-F81CBF005531}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {799461CC-5B4B-E54B-BFA3-97C52123AC13}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaTune (Cockos)" reatune.vst.dylib 0 "" 1919251566<5653547265746E72656174756E650000> ""
+        bnRlcu5e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAGgAAAABAAAAAAAQAA==
+        AAAAAAAAAAAeAAAAuAEAAAAAAAD/DwAA+gAAADIAAAAyAAAAAAAAAAAAAAAAAAAAAACAQgAAQEEAAAAAAAAgQgEAAAABAAAAAAALAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {AAD7F214-7936-AB42-A205-2F8163DEF54F}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {1C60729F-56C9-8E44-8A9E-34B70EDADE57}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {74AA46D5-0829-3A4B-9072-2FB6FD0BA1F8}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {B66D66C0-F8FF-4F42-B714-D2C0B4628FCB}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {D2011225-3800-9C47-9899-30F3D4141041}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {162AB321-F4E9-F14A-B9F2-81793EFF6F49}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS loser/Saturation ""
+        0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4F137651-5BFD-EE47-A717-CF2DC7832FBB}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {2B3668C0-D312-1041-A137-E13D12B3BE9A}
+      IID 15
+      NAME 12_Vocals.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {14C97180-F891-6F41-BFED-B0E8E21AEA24}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/12_Vocals.wav"
+      >
+    >
+  >
+  <TRACK {03871BC5-F760-9F41-9236-0EB8086F851B}
+    NAME "Female BGV L - female_vocal_candidate_clean"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.00794328234724 -0.35 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {03871BC5-F760-9F41-9236-0EB8086F851B}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729<56535472656571726561657100000000> ""
+        cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAzQAAAAEAAAAAABAA
+        IQAAAAUAAAAAAAAAAQAAAAAAAAAAAFlAAAAAAAAA8D+amZmZmZnpPwEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
+        8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAiLNAAAAAAAAA8D+amZmZmZnpPwEEAAAAAAAAAAAAAAAAAFlAAAAAAAAA8D8AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAA
+        AAAAAAAAAAAAAgABAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {3CBA2B91-271B-9147-A56E-032B69496D3B}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaXcomp (Cockos)" reaxcomp.vst.dylib 0 "" 1919252579<5653547265786372656178636F6D7000> ""
+        Y3hlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAADAEAAAEAAAAAABAA
+        OAAAAAQAAAAAAAAAAABpQAAAAAAAAPA/AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAAAAAAAQI9AAAAAAAAA8D8AAAAAAADwPwAAAAAAAABA
+        AAAAAAAAAAAPAAAAlgAAAAUAAAARAAAAAAAAAACIs0AAAAAAAADwPwAAAAAAAPA/AAAAAAAAAEAAAAAAAAAAAA8AAACWAAAABQAAABEAAAAAAAAAAHDXQAAAAAAAAPA/
+        AAAAAAAA8D8AAAAAAAAAQAAAAAAAAAAADwAAAJYAAAAFAAAAEQAAAAEAAAABAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAgAAAA==
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {FFEA80E4-070E-C141-BC2A-8489CC6C3E9C}
+      WAK 0 0
+      BYPASS 0 0 0
+      <VST "VST: ReaComp (Cockos)" reacomp.vst.dylib 0 "" 1919247213<5653547265636D726561636F6D700000> ""
+        bWNlcu9e7f4EAAAAAQAAAAAAAAACAAAAAAAAAAQAAAAAAAAACAAAAAAAAAACAAAAAQAAAAAAAAACAAAAAAAAAFwAAAAAAAAAAAAQAA==
+        776t3g3wrd4AAIA/ED74PKabxDsK16M8AAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAnNEHMwAAgD8AAAAAzcxMPQAAAAAAAAAAAAAAAAAAgD4AAAAAAAAAAAAAAAA=
+        AFByb2dyYW0gMQAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {47B2B7FA-7A46-3A42-9550-8F622A0143A5}
+      WAK 0 0
+      BYPASS 0 0 0
+      <JS sstillwell/stereowidth ""
+        0 0 0 0 0 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+      >
+      FLOATPOS 0 0 0 0
+      FXID {22FEBA66-F9D2-1F45-9DDD-06DF096523D0}
+      WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {6831CADC-19B2-B74A-9B5C-5496B36EABC6}
+      IID 16
+      NAME female_vocal_candidate_clean.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BB052920-E148-714F-86E5-201196F193E6}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/raw_stems/female_vocal_candidate_clean.wav"
+      >
+    >
+  >
+  <TRACK {0B85DBD8-99DD-CA41-87E0-6917BFB33538}
+    NAME "PROBLEM REF - hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {0B85DBD8-99DD-CA41-87E0-6917BFB33538}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {69EC6B3B-83F5-EB41-8C9E-C9B339583845}
+      IID 17
+      NAME hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BAC02233-A390-EC4A-AB6B-03A0191F9F13}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_24-48.wav"
+      >
+    >
+  >
+  <TRACK {3B2771D4-3CE7-8346-9797-EDBD28E84617}
+    NAME "PROBLEM REF - hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {3B2771D4-3CE7-8346-9797-EDBD28E84617}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 141.39414583333334
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {53389C9A-A87B-B248-B635-AD64505CD0C4}
+      IID 18
+      NAME hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k.mp3
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DFF2AEAA-77D6-704E-AEB2-532A7DA2067D}
+      <SOURCE MP3
+        FILE "/Users/hantaeheuk/Documents/New project 3/suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v23_vocal_clarity_rebalance_MASTER_320k.mp3" 1
+      >
+    >
+  >
+  <TRACK {7AA10867-EB03-9B40-BBFD-FAD6558CC032}
+    NAME "TECH REF - 동반자살 WAV"
+    PEAKCOL 16576
+    BEAT -1
+    AUTOMODE 0
+    PANLAWFLAGS 3
+    VOLPAN 0.12589254117942 0 -1 -1 1
+    MUTESOLO 1 0 0
+    IPHASE 0
+    PLAYOFFS 0 1
+    ISBUS 0 0
+    BUSCOMP 0 0 0 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
+    FIXEDLANES 9 0 0 0 0
+    LANEREC -1 -1 -1 0
+    SEL 0
+    REC 0 0 1 0 0 0 0 0
+    VU 64
+    TRACKHEIGHT 0 0 0 0 0 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {7AA10867-EB03-9B40-BBFD-FAD6558CC032}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 0 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 185.7064375
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.005 0 1 0 0 0
+      FADEOUT 1 0.02 0 1 0 0 0
+      MUTE 0 0
+      SEL 1
+      IGUID {21E192C3-A192-7D4F-8E8B-1D08226E1907}
+      IID 19
+      NAME "동반자살 WAV.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {0531EE94-502C-7940-A2AB-DFD9F260498F}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Downloads/발매곡 완성본/동반자살 완성본/동반자살 WAV.wav"
+      >
+    >
+  >
+>

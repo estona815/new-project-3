@@ -1,0 +1,30 @@
+{
+  "male_source": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v20_commercial_polish/source_full_stems/12 Vocals.wav",
+  "female_source": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v23_new_female_gated_pan/source_new_female_2stem/0 Lead Vocals.wav",
+  "output": "/Users/hantaeheuk/Documents/New project 3/audio_work/hangang_shadow_v23_new_female_gated_pan/processed_stems/female_double_new_gated_pan_24-48.wav",
+  "global_best_lag_samples": 10080,
+  "global_best_lag_ms": 210.0,
+  "global_envelope_corr": 0.5169,
+  "female_source_duration_s": 141.16,
+  "male_duration_s": 141.394,
+  "duration_s": 141.394,
+  "tested_overlap_frames": 1749,
+  "kept_frames": 786,
+  "kept_seconds_mask_gt_0_08": 22.523,
+  "kept_ratio_of_song": 0.1593,
+  "median_chroma_similarity_tested": 0.9291,
+  "p10_chroma_similarity_tested": 0.8094,
+  "median_local_timing_corr_tested": 0.2508,
+  "p10_local_timing_corr_tested": -0.8137,
+  "chroma_threshold": 0.84,
+  "local_timing_corr_threshold": 0.18,
+  "deess": {
+    "low_hz": 5600,
+    "high_hz": 8800,
+    "threshold_db": -42.62,
+    "max_cut_db": 2.2,
+    "mean_gr_db": 0.388,
+    "p95_gr_db": 2.2
+  },
+  "policy": "The new female file was globally envelope-aligned to the male lead. Only overlapping male/female active frames with octave-insensitive chroma similarity >= 0.84 and local envelope correlation >= 0.18 were kept. Everything else was cut."
+}
