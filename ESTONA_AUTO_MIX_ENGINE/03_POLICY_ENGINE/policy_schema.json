@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ESTONA Mix/Master Policy",
+  "type": "object",
+  "required": ["engine", "policy_type", "mode", "policy"],
+  "properties": {
+    "engine": { "const": "ESTONA_AUTO_MIX_ENGINE" },
+    "policy_type": { "type": "string" },
+    "mode": { "enum": ["conservative", "normal", "aggressive"] },
+    "policy": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "reason"],
+        "properties": {
+          "value": {},
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

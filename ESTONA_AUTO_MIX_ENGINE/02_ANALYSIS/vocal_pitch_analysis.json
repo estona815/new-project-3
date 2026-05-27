@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "tracks": [
+    {
+      "file": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/01_CURRENT_SONG/stems/female_adlib_dummy.wav",
+      "stem_type": "backing_vocal",
+      "f0_coverage_ratio": 1.0,
+      "pitch_stability_score": 1.0,
+      "pitch_jump_rate": 0.0,
+      "note_transition_smoothness": 1.0,
+      "phrase_end_instability": 0.0,
+      "vibrato_depth_proxy": 0.0,
+      "vibrato_rate_proxy": 0.0,
+      "pitch_snap_artifact_score": 0.0,
+      "formant_shift_suspicion_proxy": 0.0,
+      "confidence": "medium",
+      "policy_hints": []
+    },
+    {
+      "file": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/01_CURRENT_SONG/stems/lead_vocal_dummy.wav",
+      "stem_type": "lead_vocal",
+      "f0_coverage_ratio": 1.0,
+      "pitch_stability_score": 1.0,
+      "pitch_jump_rate": 0.0,
+      "note_transition_smoothness": 1.0,
+      "phrase_end_instability": 0.0,
+      "vibrato_depth_proxy": 0.0,
+      "vibrato_rate_proxy": 0.0,
+      "pitch_snap_artifact_score": 0.0,
+      "formant_shift_suspicion_proxy": 0.0,
+      "confidence": "medium",
+      "policy_hints": []
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "harmonic_density_low": -1.1629066498765988e-08,
+  "harmonic_density_mid": 35.354070304114295,
+  "harmonic_density_high": -16.215708086570256,
+  "spectral_flatness": 0.5860243364642965,
+  "crest_factor": 1.8866004169763464,
+  "transient_density": 2205.0,
+  "perceived_body_proxy": -0.0266294065998097,
+  "808_harmonic_visibility": -90.31422232045625,
+  "beat_harmonic_body": 4.298713580147632,
+  "vocal_harmonic_body": 7.139225760835632,
+  "drum_transient_hardness": 0,
+  "reference_harmonic_density_median": 8.310048592285044,
+  "saturation_shortage_score": 0.35417124439989667,
+  "overbright_saturation_risk": 1.0,
+  "scoring_note": "Inspired by open DSP mastering references, but implemented as an original proxy from crest, flatness, high-band energy, transient density, and harmonic density.",
+  "policy_hints": [
+    "beat bus saturation",
+    "drum bus soft clip",
+    "instrument bus harmonic excite",
+    "808 upper harmonic saturation",
+    "100~250Hz mud 제어",
+    "avoid bright exciter; control 3k-9k before adding air"
+  ]
+}

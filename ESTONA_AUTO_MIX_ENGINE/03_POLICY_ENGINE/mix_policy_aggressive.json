@@ -1,0 +1,71 @@
+{
+  "engine": "ESTONA_AUTO_MIX_ENGINE",
+  "policy_type": "mix",
+  "mode": "aggressive",
+  "policy": {
+    "lead_vocal_gain_db": {
+      "value": 2.0,
+      "reason": "Current vocal-to-beat ratio is -1.08 dB; target is a conservative user-approved balance around 1.5 dB."
+    },
+    "backing_vocal_gain_db": {
+      "value": -5.47,
+      "reason": "Backing intrusion score is 1.89; female backing must not take over the male lead."
+    },
+    "adlib_gate_strength": {
+      "value": 1.0,
+      "reason": "Gate strength follows backing overlap so adlibs stay in phrase gaps where possible."
+    },
+    "backing_center_reduction": {
+      "value": 1.0,
+      "reason": "Center reduction protects lead-vocal dominance when backing presence overlaps 1k-4k."
+    },
+    "backing_width_increase": {
+      "value": 0.8,
+      "reason": "Wider backing keeps doubles/adlibs supportive instead of lead-like."
+    },
+    "vocal_body_boost_db": {
+      "value": 0.0,
+      "reason": "Vocal thin/AI score is 0.00; add body while avoiding harsh top boost."
+    },
+    "vocal_harsh_dynamic_cut_db": {
+      "value": 0.0,
+      "reason": "Harshness band proxy is -30.91 dB and pitch snap score is 0.00."
+    },
+    "deess_amount": {
+      "value": 0.0,
+      "reason": "Sibilance band proxy is -30.75 dB relative to safety threshold."
+    },
+    "vocal_parallel_saturation_amount": {
+      "value": 0.0,
+      "reason": "Parallel saturation restores body without making the vocal a new melodic source."
+    },
+    "beat_bus_saturation_amount": {
+      "value": 2.04,
+      "reason": "Beat harmonic body 4.30 is compared to reference median 8.31."
+    },
+    "drum_clip_drive": {
+      "value": 1.02,
+      "reason": "Soft clip drive supports digicore energy while avoiding a flat overcompressed master."
+    },
+    "808_upper_harmonic_amount": {
+      "value": 1.0,
+      "reason": "808 phone translation proxy is -90.31; upper harmonics help small-speaker audibility."
+    },
+    "808_mud_reduction_db": {
+      "value": 0.0,
+      "reason": "Mud reduction is applied only when 100-250 Hz energy appears excessive."
+    },
+    "mono_sub_crossover_hz": {
+      "value": 120,
+      "reason": "Sub below 120 Hz defaults to mono-compatible protection."
+    },
+    "mono_sub_amount": {
+      "value": 1.0,
+      "reason": "Mono sub guard prevents side low-end from weakening translation."
+    },
+    "vocal_beat_glue_amount": {
+      "value": 1.0,
+      "reason": "Vocal/beat glue score is 0.00; apply gentle bus glue only as needed."
+    }
+  }
+}

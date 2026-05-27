@@ -1,0 +1,13 @@
+male_lead_vocal_priority: true
+female_backing_only: true
+female_lead_takeover_forbidden: true
+vocal_chops_as_lead_forbidden: true
+random_ai_intro_forbidden: true
+melody_sample_should_remain_central: true
+drums_and_808_support_melody_not_dominate: true
+avoid_overcompressed_flat_master: true
+avoid_harsh_3k_6k_glare: true
+avoid_excessive_6k_9k_sibilance: true
+keep_digicore_hyperpop_energy: true
+maintain_emotional_melodic_underground_tone: true
+reference_is_direction_not_copy: true
