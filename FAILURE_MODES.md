@@ -25,6 +25,10 @@
 - FFmpeg missing.
 - Demucs/UVR model missing or too large.
 - Python package mismatch.
+- Safety gate false positive.
+- Manifest schema drift.
+- Runner mode accidentally attempts real execution.
+- Dummy fixture accidentally written outside `local_only/`.
 
 ## Public PC Contamination Risk
 
@@ -33,6 +37,7 @@
 - Private audio added to repo.
 - Install script accidentally run.
 - Real generated reports expose filenames or artist material.
+- `local_only/` content accidentally staged.
 
 ## Response
 

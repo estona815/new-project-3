@@ -66,6 +66,31 @@ Plugin groups:
 
 The intended vocal repair chain is conservative denoise, dynamic EQ, de-ess, body restoration, gentle compression, parallel original vocal blend, metering/QC, and safe preview limiting. Pitch tools are disabled by default because they can change vocal identity.
 
+## v0.2 Safety + Decision Engine + Local Runner
+
+v0.2 adds safety gates, GitHub Actions, pre-commit hooks, a plugin capability matrix, candidate scoring schema, decision rules, dummy fixture generators, and a unified runner.
+
+Public PC mode cannot install tools or process audio. Real audio must live only in ignored `local_only/` folders on the main computer and must never be committed.
+
+Runner examples:
+
+```bash
+python scripts/runner/runner.py --mode safety-check
+python scripts/runner/runner.py --mode manifest-check
+python scripts/runner/runner.py --mode local-install-dry-run
+python scripts/runner/runner.py --mode plugin-scan-dry-run
+```
+
+Real execution later requires `LOCAL_PRODUCTION_MACHINE=1`, `EXECUTE_INSTALL=1`, and `--execute`.
+
+Pre-commit can be enabled later on the main computer with:
+
+```bash
+python -m pip install pre-commit
+pre-commit install
+pre-commit run --all-files
+```
+
 ## Quick Public PC Check
 
 PowerShell:

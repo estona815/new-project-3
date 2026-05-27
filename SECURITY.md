@@ -56,6 +56,12 @@ The `.gitignore` excludes audio/video files, installers, archives, local-only fo
 
 Plugin installers must not be committed. Any account-based or license-activated plugin is optional/manual and must be handled only on the trusted main computer.
 
+## v0.2 Safety Gates
+
+The repo includes local scripts, pre-commit configuration, and GitHub Actions for no-audio, no-video, no-installer, no-secret, public-PC mode, and manifest integrity checks.
+
+Real audio must stay in ignored `local_only/` folders. Do not commit generated fixtures, renders, plugin inventories with private paths, or real QC reports.
+
 ## Manual Pre-Commit Checks
 
 Run:

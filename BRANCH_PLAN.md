@@ -15,6 +15,7 @@
 | `feature/qc-reporting-harness` | QC script stubs | Report generation from dummy/safe inputs |
 | `feature/local-machine-bootstrap` | Trusted machine setup | Local setup checks documented |
 | `feature/plugin-expansion-layer` | Free/recommended plugin registry and dry-run harness | Docs, manifests, dry-run scripts, checks pass |
+| `feature/v0.2-safety-decision-runner` | Safety gates, decision engine, CI, local runner | Safety checks pass, no audio/installers/secrets, runner works |
 | `feature/mixing-knowledge-base` | Public-source mixing/mastering knowledge base layer | Source index, schemas, rule cards, prompts, and copyright-safe policies; no copied source dumps |
 | `release/v0.1-public-harness` | First public scaffold release | Safe checks pass, no install performed |
 | `release/v0.2-main-computer-install` | Future local install release | Only after main computer dry-run/execute validation |

@@ -18,6 +18,10 @@ Use plugin candidates conservatively:
 - LoudMax: preview/final safety limiter only
 - GSnap and Graillon: disabled by default because pitch correction can change vocal identity
 
+## v0.2 Runner Directive
+
+Use `scripts/runner/runner.py` for structured operations. On public PCs, only run safety checks, manifest checks, dry-run install checks, plugin-scan dry-runs, and QC templates. Real fixture generation, installation, REAPER automation, and real audio processing require the main computer environment flags plus explicit approval.
+
 ## Knowledge Base Directive
 
 Use the knowledge base layer to convert public mixing/mastering resources into original operating rules. Do not copy source material into the repo.

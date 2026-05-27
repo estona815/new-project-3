@@ -50,9 +50,11 @@ secrets/
 credentials/
 
 # Local-only and generated data
-local_only/*
-!local_only/README.md
+local_only/
 reports/private/
+reports/plugin_inventory*.json
+reports/*local*.json
+reports/*private*.md
 renders/
 output/
 exports/

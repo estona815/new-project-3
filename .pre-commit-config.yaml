@@ -1,0 +1,34 @@
+repos:
+  - repo: local
+    hooks:
+      - id: harness-no-audio
+        name: block audio files
+        entry: python scripts/safety/verify_no_audio_files.py
+        language: system
+        pass_filenames: false
+      - id: harness-no-video
+        name: block video files
+        entry: python scripts/safety/verify_no_video_files.py
+        language: system
+        pass_filenames: false
+      - id: harness-no-installers
+        name: block installers and plugin binaries
+        entry: python scripts/safety/verify_no_installers.py
+        language: system
+        pass_filenames: false
+      - id: harness-no-secrets
+        name: block obvious secrets and licenses
+        entry: python scripts/safety/verify_no_secrets.py
+        language: system
+        pass_filenames: false
+      - id: harness-public-pc-mode
+        name: verify public PC guardrails
+        entry: python scripts/safety/verify_public_pc_mode.py
+        language: system
+        pass_filenames: false
+      - id: harness-manifest-integrity
+        name: verify plugin manifests
+        entry: python scripts/safety/verify_manifest_integrity.py
+        language: system
+        pass_filenames: false
+

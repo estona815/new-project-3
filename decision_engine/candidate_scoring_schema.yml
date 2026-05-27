@@ -1,0 +1,27 @@
+version: 0.2
+fields:
+  - candidate_id
+  - source_type
+  - denoise_method
+  - dynamic_eq_method
+  - deess_method
+  - body_restore_method
+  - parallel_blend_percent
+  - lufs_integrated
+  - true_peak_db
+  - rms
+  - crest_factor
+  - sibilance_energy_6_10k
+  - fizz_energy_12_16k
+  - low_mid_mud_200_500
+  - spectral_centroid
+  - noise_floor_estimate
+  - phase_risk
+  - vocal_thinning_risk
+  - metallic_artifact_risk
+  - watery_artifact_risk
+  - consonant_damage_risk
+  - subjective_notes
+  - final_rank
+  - decision
+

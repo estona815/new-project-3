@@ -1,0 +1,275 @@
+version: 0.2
+plugins:
+  - id: bertom_denoiser_classic
+    name: Bertom Denoiser Classic
+    group: core
+    category: denoise
+    priority: 1
+    role: conservative_noise_reduction
+    primary_use: reduce steady noise without stripping vocal identity
+    chain_role: conservative_denoise
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_over_denoise
+    fallback: skip denoise or use light ReaEQ/ReaGate only
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: true
+    notes: Use lightly and compare against original.
+  - id: tdr_nova
+    name: TDR Nova
+    group: core
+    category: dynamic_eq
+    priority: 2
+    role: de_fizz_resonance_control
+    primary_use: dynamic EQ for fizz, mud, and harshness
+    chain_role: dynamic_eq
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: low_hollowing_if_overused
+    fallback: ReaEQ automation
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: true
+    notes: Prefer dynamic EQ when denoise damages the vocal.
+  - id: techivation_t_de_esser_2
+    name: Techivation T-De-Esser 2
+    group: core
+    category: de_ess
+    priority: 3
+    role: sibilance_control
+    primary_use: reduce harsh sibilance while keeping consonants
+    chain_role: de_ess
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: low_consonant_damage_if_overused
+    fallback: ReaXcomp or dynamic EQ
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: true
+    notes: Check S/T/K/P/CH after use.
+  - id: voxengo_span
+    name: Voxengo SPAN
+    group: core
+    category: qc_metering
+    priority: 4
+    role: spectrum_correlation_meter
+    primary_use: spectrum and stereo inspection
+    chain_role: metering_qc
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: low_not_tone_tool
+    fallback: Python spectrum report
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: false
+    default_enabled: true
+    notes: QC tool, not tone shaping.
+  - id: youlean_loudness_meter
+    name: Youlean Loudness Meter
+    group: core
+    category: qc_metering
+    priority: 5
+    role: loudness_true_peak_meter
+    primary_use: loudness and true peak checks
+    chain_role: metering_qc
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: low_not_tone_tool
+    fallback: pyloudnorm or ffmpeg ebur128
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: true
+    notes: QC tool, not tone shaping.
+  - id: loudmax
+    name: LoudMax
+    group: core
+    category: limiter
+    priority: 6
+    role: preview_final_safety_limiter
+    primary_use: catch peaks on preview or final safety pass
+    chain_role: safe_preview_limiting
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_masks_bad_balance
+    fallback: REAPER JS limiter
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: true
+    notes: Not a repair tool or balance fix.
+  - id: klanghelm_ivgi
+    name: Klanghelm IVGI
+    group: recommended
+    category: saturation
+    priority: 7
+    role: body_restoration
+    primary_use: restore body after cleanup
+    chain_role: body_restore
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_can_exaggerate_fizz
+    fallback: no saturation or REAPER stock saturation
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: false
+    notes: Saturation is not denoise.
+  - id: klanghelm_dc1a
+    name: Klanghelm DC1A
+    group: recommended
+    category: compression
+    priority: 8
+    role: gentle_leveling
+    primary_use: smooth repaired vocal level
+    chain_role: gentle_compression
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_can_raise_noise
+    fallback: ReaComp
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: false
+    notes: Use after cleanup, not as a repair substitute.
+  - id: klanghelm_mjuc_jr
+    name: Klanghelm MJUC jr
+    group: recommended
+    category: compression
+    priority: 9
+    role: gentle_character_leveling
+    primary_use: smooth vocal body or bus feel
+    chain_role: gentle_compression
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_can_over_color
+    fallback: ReaComp
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: false
+    notes: Optional character, not denoise.
+  - id: tal_reverb_4
+    name: TAL-Reverb-4
+    group: optional
+    category: reverb
+    priority: 10
+    role: optional_space
+    primary_use: add subtle send space
+    chain_role: optional_space
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_hides_artifacts
+    fallback: ReaVerbate or no space
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: false
+    notes: Space tool, not cleanup.
+  - id: valhalla_supermassive
+    name: Valhalla Supermassive
+    group: optional
+    category: reverb_delay
+    priority: 11
+    role: optional_space
+    primary_use: optional delay/reverb texture
+    chain_role: optional_space
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_hides_artifacts
+    fallback: REAPER delay/reverb sends
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: manual
+    default_enabled: false
+    notes: Manual install if account or installer friction exists.
+  - id: blue_cat_freeware_pack
+    name: Blue Cat Freeware Pack
+    group: optional
+    category: utility_bundle
+    priority: 12
+    role: optional_utility
+    primary_use: optional meters, EQ, modulation, gain utilities
+    chain_role: optional_utility
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_bundle_scope
+    fallback: stock REAPER utilities
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: unknown
+    default_enabled: false
+    notes: Install manually only if useful.
+  - id: melda_mfreefxbundle
+    name: Melda MFreeFXBundle
+    group: optional
+    category: utility_bundle
+    priority: 13
+    role: optional_utility
+    primary_use: optional utility and analysis plugins
+    chain_role: optional_utility
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_high_bundle_and_upsell
+    fallback: stock REAPER utilities
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: manual
+    default_enabled: false
+    notes: Confirm free-only installation and avoid unwanted extras.
+  - id: airwindows
+    name: Airwindows
+    group: optional
+    category: specialist_tools
+    priority: 14
+    role: optional_specialist_processing
+    primary_use: optional specialist processing after manual review
+    chain_role: optional_utility
+    install_on_public_pc: false
+    install_on_main_computer: true
+    risk: medium_high_large_collection
+    fallback: skip Airwindows-specific chains
+    public_pc_allowed: false
+    main_computer_install: true
+    requires_login: false
+    default_enabled: false
+    notes: Use only specific reviewed tools.
+  - id: gsnap
+    name: GSnap
+    group: disabled_by_default
+    category: pitch_correction
+    priority: 99
+    role: disabled_pitch_correction
+    primary_use: pitch correction only after explicit approval
+    chain_role: disabled_identity_sensitive
+    install_on_public_pc: false
+    install_on_main_computer: false
+    risk: high_identity_change
+    fallback: manual pitch review, no correction
+    public_pc_allowed: false
+    main_computer_install: false
+    requires_login: unknown
+    default_enabled: false
+    notes: Disabled because pitch correction can change vocal identity.
+  - id: graillon
+    name: Graillon
+    group: disabled_by_default
+    category: pitch_correction
+    priority: 100
+    role: disabled_pitch_correction
+    primary_use: pitch correction or pitch shift only after explicit approval
+    chain_role: disabled_identity_sensitive
+    install_on_public_pc: false
+    install_on_main_computer: false
+    risk: high_identity_change
+    fallback: manual pitch review, no correction
+    public_pc_allowed: false
+    main_computer_install: false
+    requires_login: unknown
+    default_enabled: false
+    notes: Disabled because pitch correction can change vocal identity.
+

@@ -13,6 +13,8 @@
 - Confirm no private files are in repo.
 - Run dry-run scripts.
 - Confirm REAPER and plugin paths.
+- Run `python scripts/runner/runner.py --mode safety-check`.
+- Enable pre-commit on the main computer if desired.
 
 ## Phase 2: REAPER Extension Installation
 
@@ -50,6 +52,8 @@
 - Use synthetic dummy audio only.
 - Validate routing, render filenames, and QC report creation.
 - Do not use real Suno or artist material yet.
+- Use `scripts/test_fixtures/` only with explicit local execution.
+- Keep generated fixtures inside ignored `local_only/`.
 
 ## Phase 6: Real Suno Vocal Workflow
 

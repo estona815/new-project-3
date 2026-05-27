@@ -86,6 +86,8 @@ Capture:
 - Consonant integrity notes
 - Stem bleed notes
 - Manual listening decision
+- Candidate scoring fields from `decision_engine/candidate_scoring_schema.yml`
+- Decision rules from `decision_engine/decision_rules.md`
 
 ## 7. Final Export
 
@@ -96,3 +98,4 @@ Final export is allowed only on the main trusted computer after:
 - No broken consonants
 - No unacceptable phase smear
 - QC report exists
+- Final decision report exists

@@ -21,3 +21,13 @@
 - Added plugin docs, dry-run installer stubs, path verification stubs, and plugin-aware REAPER FX chain blueprints.
 - Kept pitch correction tools disabled by default.
 - No plugin installation, download, scan, or audio processing performed.
+
+## v0.2.0 - Safety + Decision Engine + Local Runner Scaffold
+
+- Added safety scripts, GitHub Actions, and pre-commit hook config.
+- Added plugin capability matrix and manifest integrity check.
+- Added candidate scoring schema and decision rules.
+- Added synthetic dummy fixture generators that default to dry-run.
+- Added unified runner scaffold.
+- Added REAPER runner blueprint and v0.2 main-computer prompts.
+- No real installation, REAPER scan, download, or audio processing performed.

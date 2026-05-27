@@ -35,4 +35,5 @@ A public PC session is successful only if:
 - No real audio files exist in the repo.
 - No secrets are detected by the local scanners.
 - `reports/bootstrap_report.md` states that work was harness-only.
-
+- `scripts/runner/runner.py --mode safety-check` passes.
+- No `local_only/` content is tracked or committed.

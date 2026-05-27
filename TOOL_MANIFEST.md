@@ -28,6 +28,8 @@
 | Klanghelm IVGI/DC1A/MJUC jr | Body restore and gentle level | main-computer-only | https://klanghelm.com/contents/freeware.html | medium | ReaComp/saturation fallback |
 | TAL-Reverb-4 / Valhalla Supermassive | Optional space | manual optional | official vendor pages | medium | REAPER stock reverb/delay |
 | GSnap / Graillon | Pitch correction | disabled by default | official vendor pages | high | Manual pitch review only |
+| v0.2 Safety Runner | Unified safety and dry-run command entrypoint | repository script | scripts/runner/runner.py | low | Manual safety scripts |
+| Candidate Decision Engine | Schema and rules for A/B/C/D decisions | repository docs | decision_engine/ | low | Manual listening notes |
 
 ## Knowledge Base Research Tools
 

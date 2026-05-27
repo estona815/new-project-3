@@ -1,0 +1,34 @@
+name: safety-check
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  safety:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify no audio files
+        run: python scripts/safety/verify_no_audio_files.py
+      - name: Verify no video files
+        run: python scripts/safety/verify_no_video_files.py
+      - name: Verify no installers
+        run: python scripts/safety/verify_no_installers.py
+      - name: Verify no secrets
+        run: python scripts/safety/verify_no_secrets.py
+      - name: Verify public PC mode
+        run: python scripts/safety/verify_public_pc_mode.py
+      - name: Verify manifest integrity
+        run: python scripts/safety/verify_manifest_integrity.py
+      - name: Parse Python scripts
+        run: python -m compileall scripts
+

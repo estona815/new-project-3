@@ -15,6 +15,7 @@ Run safety checks before installing anything:
 python scripts/public_pc/verify_no_audio_files.py
 python scripts/public_pc/verify_no_secrets.py
 python scripts/local_install/verify_local_install.py
+python scripts/runner/runner.py --mode safety-check
 ```
 
 ## Installation Order
@@ -61,3 +62,13 @@ Execute intentionally:
 .\scripts\local_install\install_audio_tools_windows.ps1 -Execute
 ```
 
+## v0.2 Local Runner
+
+Set these only on the trusted main computer when you are ready for real execution:
+
+```powershell
+$env:LOCAL_PRODUCTION_MACHINE="1"
+$env:EXECUTE_INSTALL="1"
+```
+
+Even with those variables, runner modes that perform real work still require `--execute`.
