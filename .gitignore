@@ -22,10 +22,14 @@
 *.p12
 *.pfx
 *.lic
-*license*
-*secret*
-*token*
-*credential*
+*.license
+*.secrets
+*.secret
+*.token
+*.credentials
+*.credential
+secrets/
+credentials/
 
 # Local-only and generated data
 local_only/*
