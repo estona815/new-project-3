@@ -1,0 +1,136 @@
+version: 0.1
+policy: public_pc_dry_run_only
+groups:
+  core:
+    - id: bertom_denoiser_classic
+      name: Bertom Denoiser Classic
+      role: conservative_noise_reduction
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: medium
+      official_url: https://bertomaudio.com/denoiser-classic.html
+      fallback: REAPER stock ReaEQ plus light gate, or no denoise
+    - id: tdr_nova
+      name: TDR Nova
+      role: dynamic_eq
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: low
+      official_url: https://www.tokyodawn.net/tdr-nova/
+      fallback: ReaEQ manual automation
+    - id: techivation_t_de_esser_2
+      name: Techivation T-De-Esser 2
+      role: de_ess
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: low
+      official_url: https://techivation.com/t-de-esser-plus
+      fallback: ReaXcomp or dynamic EQ de-ess band
+    - id: voxengo_span
+      name: Voxengo SPAN
+      role: spectrum_metering
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: low
+      official_url: https://www.voxengo.com/product/span/
+      fallback: REAPER spectrum analyzer or Python QC
+    - id: youlean_loudness_meter
+      name: Youlean Loudness Meter
+      role: loudness_metering
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: low
+      official_url: https://youlean.co/youlean-loudness-meter/
+      fallback: pyloudnorm or ffmpeg ebur128
+    - id: loudmax
+      name: LoudMax
+      role: safety_limiter
+      status: install_on_main_computer_only
+      default_enabled: true
+      risk: medium
+      official_url: https://loudmax.blogspot.com/
+      fallback: REAPER JS limiter, used only for preview/final safety
+  recommended:
+    - id: klanghelm_ivgi
+      name: Klanghelm IVGI
+      role: body_restoration_saturation
+      status: install_on_main_computer_only
+      default_enabled: false
+      risk: medium
+      official_url: https://klanghelm.com/contents/freeware.html
+      fallback: REAPER saturation or no saturation
+    - id: klanghelm_dc1a
+      name: Klanghelm DC1A
+      role: gentle_compression
+      status: install_on_main_computer_only
+      default_enabled: false
+      risk: medium
+      official_url: https://klanghelm.com/contents/freeware.html
+      fallback: ReaComp
+    - id: klanghelm_mjuc_jr
+      name: Klanghelm MJUC jr
+      role: gentle_leveling
+      status: install_on_main_computer_only
+      default_enabled: false
+      risk: medium
+      official_url: https://klanghelm.com/contents/freeware.html
+      fallback: ReaComp
+  optional:
+    - id: tal_reverb_4
+      name: TAL-Reverb-4
+      role: optional_space
+      status: manual_install_if_needed
+      default_enabled: false
+      risk: medium
+      official_url: https://tal-software.com/products/tal-reverb-4
+      fallback: ReaVerbate or no added space
+    - id: valhalla_supermassive
+      name: Valhalla Supermassive
+      role: optional_delay_reverb_space
+      status: manual_install_if_needed
+      default_enabled: false
+      risk: medium
+      official_url: https://valhalladsp.com/shop/reverb/valhalla-supermassive/
+      fallback: REAPER delay/reverb sends
+    - id: blue_cat_freeware_pack
+      name: Blue Cat Freeware Pack
+      role: optional_utility_bundle
+      status: manual_install_if_needed
+      default_enabled: false
+      risk: medium
+      official_url: https://www.bluecataudio.com/Products/Bundle_FreewarePack/
+      fallback: stock REAPER utilities
+    - id: melda_mfreefxbundle
+      name: Melda MFreeFXBundle
+      role: optional_utility_bundle
+      status: manual_install_if_needed
+      default_enabled: false
+      risk: medium_high
+      official_url: https://www.meldaproduction.com/MFreeFXBundle
+      fallback: stock REAPER utilities
+    - id: airwindows
+      name: Airwindows
+      role: optional_specialist_tools
+      status: manual_install_if_needed
+      default_enabled: false
+      risk: medium_high
+      official_url: https://www.airwindows.com/vsts/
+      fallback: skip Airwindows-specific chains
+  disabled_by_default:
+    - id: gsnap
+      name: GSnap
+      role: pitch_correction
+      status: disabled_by_default
+      default_enabled: false
+      risk: high_identity_change
+      official_url: https://www.gvst.co.uk/gsnap.htm
+      fallback: manual pitch review, no pitch correction
+    - id: graillon
+      name: Graillon
+      role: pitch_correction_and_pitch_shift
+      status: disabled_by_default
+      default_enabled: false
+      risk: high_identity_change
+      official_url: https://www.auburnsounds.com/products/Graillon.html
+      fallback: manual pitch review, no pitch correction
+

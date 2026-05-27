@@ -14,6 +14,22 @@
 *.mkv
 *.avi
 
+# Installers, archives, plugin binaries
+*.zip
+*.7z
+*.rar
+*.dmg
+*.pkg
+*.mpkg
+*.exe
+*.msi
+*.app
+*.vst
+*.vst3
+*.component
+*.aaxplugin
+*.clap
+
 # Secrets and credentials
 .env
 .env.*
@@ -23,6 +39,8 @@
 *.pfx
 *.lic
 *.license
+*.licensekey
+*.serial
 *.secrets
 *.secret
 *.token

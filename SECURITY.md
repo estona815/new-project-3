@@ -39,7 +39,9 @@ Do not log into:
 
 ## `.gitignore` Policy
 
-The `.gitignore` excludes audio/video files, local-only folders, secrets, virtual environments, REAPER media folders, and generated reports that may contain private paths.
+The `.gitignore` excludes audio/video files, installers, archives, local-only folders, secrets, licenses, credentials, virtual environments, REAPER media folders, and generated reports that may contain private paths.
+
+Plugin installers must not be committed. Any account-based or license-activated plugin is optional/manual and must be handled only on the trusted main computer.
 
 ## Manual Pre-Commit Checks
 
@@ -51,4 +53,3 @@ python scripts/public_pc/verify_no_secrets.py
 git status --short --branch
 git diff --check -- .
 ```
-

@@ -37,6 +37,20 @@ The harness prepares:
 - Render automation stubs
 - QC report generation stubs
 - Local-machine bootstrap instructions
+- Free/recommended plugin expansion planning for future REAPER vocal repair
+
+## Plugin Expansion Layer
+
+The plugin layer lives in `plugin_registry/`, `docs/plugins/`, `scripts/local_install/plugins/`, and additional `reaper/fx_chain_blueprints/`.
+
+Plugin groups:
+
+- Core: Bertom Denoiser Classic, TDR Nova, Techivation T-De-Esser 2, Voxengo SPAN, Youlean Loudness Meter, LoudMax
+- Recommended: Klanghelm IVGI, DC1A, MJUC jr
+- Optional: TAL-Reverb-4, Valhalla Supermassive, Blue Cat Freeware Pack, Melda MFreeFXBundle, Airwindows
+- Disabled by default: GSnap, Graillon
+
+The intended vocal repair chain is conservative denoise, dynamic EQ, de-ess, body restoration, gentle compression, parallel original vocal blend, metering/QC, and safe preview limiting. Pitch tools are disabled by default because they can change vocal identity.
 
 ## Quick Public PC Check
 
@@ -55,4 +69,3 @@ bash scripts/public_pc/check_safe_environment.sh
 python scripts/public_pc/verify_no_audio_files.py
 python scripts/public_pc/verify_no_secrets.py
 ```
-

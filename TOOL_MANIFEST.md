@@ -19,4 +19,12 @@
 | soundfile | WAV read/write for QC | placeholder | PyPI placeholder | low | wave module only |
 | librosa | Higher-level MIR/spectrum checks | placeholder | PyPI placeholder | medium | scipy/numpy analysis |
 | pyloudnorm | Loudness measurement | placeholder | PyPI placeholder | low | Approximate RMS/peak only |
-
+| Bertom Denoiser Classic | Conservative vocal noise reduction | main-computer-only | https://bertomaudio.com/denoiser-classic.html | medium | Skip denoise or use stock EQ/gate |
+| TDR Nova | Dynamic EQ and de-fizz | main-computer-only | https://www.tokyodawn.net/tdr-nova/ | low | ReaEQ automation |
+| Techivation T-De-Esser 2 | De-ess and harshness control | main-computer-only | https://techivation.com/t-de-esser-plus | low | ReaXcomp/dynamic EQ |
+| Voxengo SPAN | Spectrum/correlation QC | main-computer-only | https://www.voxengo.com/product/span/ | low | Python spectrum QC |
+| Youlean Loudness Meter | Loudness/true-peak QC | main-computer-only | https://youlean.co/youlean-loudness-meter/ | low | pyloudnorm/ffmpeg ebur128 |
+| LoudMax | Preview/final safety limiter | main-computer-only | https://loudmax.blogspot.com/ | medium | REAPER JS limiter |
+| Klanghelm IVGI/DC1A/MJUC jr | Body restore and gentle level | main-computer-only | https://klanghelm.com/contents/freeware.html | medium | ReaComp/saturation fallback |
+| TAL-Reverb-4 / Valhalla Supermassive | Optional space | manual optional | official vendor pages | medium | REAPER stock reverb/delay |
+| GSnap / Graillon | Pitch correction | disabled by default | official vendor pages | high | Manual pitch review only |

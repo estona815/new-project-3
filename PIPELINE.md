@@ -35,6 +35,14 @@ Avoid destroying consonants, air, vibrato, and identity.
 Suggested stages:
 
 - Input trim
+- Conservative denoise
+- Dynamic EQ
+- De-ess
+- Body restoration
+- Gentle compression
+- Parallel original vocal blend
+- Metering/QC
+- Safe preview limiting
 - High-pass only if needed
 - Dynamic de-fizz
 - De-ess
@@ -42,6 +50,8 @@ Suggested stages:
 - Parallel restore bus
 - Light saturation or harmonic restore
 - Final blend bus
+
+Plugin-aware candidates may use Bertom Denoiser Classic, TDR Nova, Techivation T-De-Esser 2, Klanghelm IVGI/DC1A/MJUC jr, Voxengo SPAN, Youlean, and LoudMax after they are installed and verified on the main computer.
 
 ## 5. Render Candidates
 
@@ -74,4 +84,3 @@ Final export is allowed only on the main trusted computer after:
 - No broken consonants
 - No unacceptable phase smear
 - QC report exists
-

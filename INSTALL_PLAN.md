@@ -30,6 +30,15 @@
 - Install UVR only if GUI workflow is desired.
 - Install DeepFilterNet/RNNoise candidates only after reviewing model/storage impact.
 
+## Phase 3B: Plugin Expansion Installation
+
+- Run `scripts/local_install/plugins/install_free_plugins_*` in dry-run mode.
+- Review `plugin_registry/plugin_source_urls.md`.
+- Install core plugins only from official sources on the main computer.
+- Treat any plugin requiring account login, plugin manager, or license activation as optional/manual.
+- Keep pitch correction tools disabled unless explicitly approved.
+- Verify plugin paths before scanning REAPER.
+
 ## Phase 4: REAPER Template Setup
 
 - Create source, separated stems, cleanup candidates, FX buses, render print, and reference tracks.
@@ -48,4 +57,3 @@
 - Generate A/B/C/D cleanup candidates.
 - Compare listening and QC metrics.
 - Export selected final only after manual approval.
-

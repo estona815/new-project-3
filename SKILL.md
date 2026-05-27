@@ -6,6 +6,18 @@ Use this skill to prepare, operate, and audit a REAPER-based Suno vocal repair w
 
 Do not over-denoise. Preserve vocal identity, phrasing, consonants, breath shape, and emotional contour. Prefer A/B/C candidate workflows over destructive single-pass processing.
 
+## Plugin Layer Directive
+
+Use plugin candidates conservatively:
+
+- Bertom Denoiser Classic: denoise only, light first
+- TDR Nova: dynamic EQ and resonance/fizz control
+- Techivation T-De-Esser 2: de-ess without breaking consonants
+- Klanghelm IVGI/DC1A/MJUC jr: body and level restoration, not denoise
+- Voxengo SPAN and Youlean: QC tools, not tone tools
+- LoudMax: preview/final safety limiter only
+- GSnap and Graillon: disabled by default because pitch correction can change vocal identity
+
 ## Operating Principles
 
 - Always keep the original vocal or full mix untouched.
@@ -50,4 +62,3 @@ Banned:
 8. Render and compare.
 9. Write QC report.
 10. Export final only after listening and metrics agree.
-
