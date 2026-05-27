@@ -28,6 +28,10 @@ exports/
 output/
 renders/
 suno_studio_extract/
+ESTONA_AUTO_MIX_ENGINE/00_EXTERNAL_REFS/
+ESTONA_AUTO_MIX_ENGINE/00_REFERENCES/approved_tracks/
+ESTONA_AUTO_MIX_ENGINE/01_CURRENT_SONG/stems/
+ESTONA_AUTO_MIX_ENGINE/06_OUTPUTS/
 
 # Generated office deliverables
 *.docx

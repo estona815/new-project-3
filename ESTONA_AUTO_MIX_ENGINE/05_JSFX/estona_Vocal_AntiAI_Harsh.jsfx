@@ -1,0 +1,44 @@
+desc:estona_Vocal_AntiAI_Harsh
+// Purpose: Reduce AI/Suno-like harshness, sibilance, and thin digital glare.
+// Use: lead vocal and backing vocal tracks before ambience/saturation sends.
+// Defaults: threshold -24 dB, amount 45%, attack 5 ms, release 90 ms, mix 100%.
+// Overuse risk: dull lispy vocal, lost presence, over-smoothed emotion.
+
+slider1:threshold_db=-24<-60,0,0.1>Threshold (dB)
+slider2:amount=0.45<0,1,0.01>Amount
+slider3:attack_ms=5<0.5,50,0.1>Attack (ms)
+slider4:release_ms=90<10,500,1>Release (ms)
+slider5:mix=1<0,1,0.01>Mix
+slider6:out_db=0<-12,12,0.1>Output trim (dB)
+slider7:bypass=0<0,1,1>Bypass
+
+@init
+env_h = env_s = 0;
+hp1l = hp1r = hp2l = hp2r = 0;
+
+@slider
+threshold = 10^(threshold_db/20);
+atk = exp(-1/(srate*attack_ms/1000));
+rel = exp(-1/(srate*release_ms/1000));
+out = 10^(out_db/20);
+
+@sample
+dry0 = spl0; dry1 = spl1;
+bypass < 0.5 ? (
+  // Lightweight high-band proxy using one-pole differences. This is a control
+  // signal for dynamic reduction, not a surgical EQ clone.
+  hp_h0 = dry0 - hp1l; hp1l += (dry0 - hp1l) * 0.08;
+  hp_h1 = dry1 - hp1r; hp1r += (dry1 - hp1r) * 0.08;
+  hp_s0 = hp_h0 - hp2l; hp2l += (hp_h0 - hp2l) * 0.18;
+  hp_s1 = hp_h1 - hp2r; hp2r += (hp_h1 - hp2r) * 0.18;
+  level_h = max(abs(hp_h0), abs(hp_h1));
+  level_s = max(abs(hp_s0), abs(hp_s1));
+  env_h = level_h > env_h ? env_h*atk + level_h*(1-atk) : env_h*rel + level_h*(1-rel);
+  env_s = level_s > env_s ? env_s*atk + level_s*(1-atk) : env_s*rel + level_s*(1-rel);
+  gr_h = min(0.65, max(0, (env_h - threshold) / max(threshold, 0.00001)) * amount * 0.25);
+  gr_s = min(0.75, max(0, (env_s - threshold) / max(threshold, 0.00001)) * amount * 0.35);
+  wet0 = dry0 - hp_h0*gr_h - hp_s0*gr_s;
+  wet1 = dry1 - hp_h1*gr_h - hp_s1*gr_s;
+  spl0 = (dry0*(1-mix) + wet0*mix) * out;
+  spl1 = (dry1*(1-mix) + wet1*mix) * out;
+);
