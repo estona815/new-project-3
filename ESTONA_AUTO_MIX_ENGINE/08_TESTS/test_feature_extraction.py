@@ -23,11 +23,20 @@ if __name__ == "__main__":
     run("02_ANALYSIS/stereo_phase_analyzer.py")
     assert (ROOT / "00_REFERENCES/reference_profiles/estona_reference_profile.json").exists()
     assert (ROOT / "02_ANALYSIS/current_song_analysis.json").exists()
+    profile = json.loads((ROOT / "00_REFERENCES/reference_profiles/estona_reference_profile.json").read_text(encoding="utf-8"))
     reference_features = json.loads((ROOT / "00_REFERENCES/reference_profiles/raw_reference_features.json").read_text(encoding="utf-8"))
     current_features = json.loads((ROOT / "02_ANALYSIS/current_song_analysis.json").read_text(encoding="utf-8"))
+    assert profile.get("profile_version")
+    assert profile.get("feature_backend")
+    assert profile.get("acceptable_ranges")
+    for section_name in ("loudest_15s", "quiet_15s", "high_vocal_presence_15s"):
+        assert section_name in profile.get("section_summaries", {}), section_name
+    assert "unknown_stems_requiring_user_confirmation" in current_features
     feature_items = reference_features.get("tracks", []) + current_features.get("stems", [])
     assert feature_items, "expected generated test audio features"
     for item in feature_items:
         assert item.get("spectral_backend") in {"librosa", "numpy_fft"}, item
         assert item.get("loudness_backend") in {"pyloudnorm_bs1770", "rms_proxy"}, item
+        if "stem_type" in item:
+            assert 0.0 <= item.get("stem_classification_confidence", -1.0) <= 1.0, item
     print("feature extraction smoke test passed")

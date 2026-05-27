@@ -10,15 +10,15 @@
 
 ## P1
 
-- Improve `reference_feature_extractor.py` profile:
+- Done 2026-05-27: improve `reference_feature_extractor.py` profile:
   - Add per-section summaries: loudest 15s, quiet 15s, high-vocal-presence 15s.
   - Add `profile_version` and `feature_backend` fields.
   - Store acceptable ranges using p25/p75/IQR, already available from `audio_utils.summarize_feature_set`.
-- Improve `current_song_analyzer.py`:
+- Done 2026-05-27: improve `current_song_analyzer.py`:
   - Add confidence score per stem classification.
   - Emit `unknown_stems_requiring_user_confirmation`.
   - Better conflict scoring for kick vs 808 using low-band envelope correlation.
-- Improve `generate_mix_policy.py`:
+- Done 2026-05-27: improve `generate_mix_policy.py`:
   - Read new `saturation_shortage_score`.
   - Adjust clip/saturation policies from shortage/risk pair.
   - Add policy version hash and source analysis file timestamps.

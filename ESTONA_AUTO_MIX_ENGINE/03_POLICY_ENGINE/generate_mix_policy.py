@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Generate conservative/normal/aggressive mix policies with reasons."""
 
+import hashlib
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -12,6 +14,7 @@ from audio_utils import clamp, read_json, resolve_path, write_json
 
 
 SCALE = {"conservative": 0.6, "normal": 1.0, "aggressive": 1.45}
+POLICY_VERSION = "2026-05-27-p1"
 
 
 def item(value, reason):
@@ -47,6 +50,8 @@ def build_policy(mode: str = "normal") -> dict:
     beat_body = float(sat.get("beat_harmonic_body", 2.0))
     ref_body = float(sat.get("reference_harmonic_density_median", 2.0))
     upper_808 = float(sat.get("808_harmonic_visibility", 0.0))
+    saturation_shortage = float(sat.get("saturation_shortage_score", 0.0))
+    saturation_risk = float(sat.get("overbright_saturation_risk", 0.0))
     snap = max([float(t.get("pitch_snap_artifact_score", 0.0)) for t in pitch.get("tracks", [])] or [0.0])
 
     lead_gain = clamp(-(vbr - 1.5) * 0.45 * scale + buried * 1.0 * scale, -3.0, 2.0)
@@ -54,7 +59,12 @@ def build_policy(mode: str = "normal") -> dict:
     harsh_cut = clamp(max(0.0, harsh + 20.0) * 0.35 * scale + snap * 1.2, 0.0, 4.5)
     deess = clamp(max(0.0, sib + 24.0) * 0.4 * scale, 0.0, 5.0)
     body = clamp(thin * 2.0 * scale, 0.0, 3.0)
-    beat_sat = clamp(max(0.0, ref_body - beat_body) * 0.35 * scale, 0.0, 5.0)
+    beat_sat = clamp(
+        (max(0.0, ref_body - beat_body) * 0.25 + saturation_shortage * 2.0 - saturation_risk * 1.2) * scale,
+        0.0,
+        5.0,
+    )
+    vocal_parallel_sat = clamp((thin * 0.45 + saturation_shortage * 0.35 - saturation_risk * 0.25) * scale, 0.0, 1.0)
     policy = {
         "lead_vocal_gain_db": item(round(lead_gain, 2), f"Current vocal-to-beat ratio is {vbr:.2f} dB; target is a conservative user-approved balance around 1.5 dB."),
         "backing_vocal_gain_db": item(round(backing_gain, 2), f"Backing intrusion score is {intrusion:.2f}; female backing must not take over the male lead."),
@@ -64,8 +74,8 @@ def build_policy(mode: str = "normal") -> dict:
         "vocal_body_boost_db": item(round(body, 2), f"Vocal thin/AI score is {thin:.2f}; add body while avoiding harsh top boost."),
         "vocal_harsh_dynamic_cut_db": item(round(harsh_cut, 2), f"Harshness band proxy is {harsh:.2f} dB and pitch snap score is {snap:.2f}."),
         "deess_amount": item(round(deess, 2), f"Sibilance band proxy is {sib:.2f} dB relative to safety threshold."),
-        "vocal_parallel_saturation_amount": item(round(clamp(thin * 0.65 * scale, 0.0, 1.0), 2), "Parallel saturation restores body without making the vocal a new melodic source."),
-        "beat_bus_saturation_amount": item(round(beat_sat, 2), f"Beat harmonic body {beat_body:.2f} is compared to reference median {ref_body:.2f}."),
+        "vocal_parallel_saturation_amount": item(round(vocal_parallel_sat, 2), f"Parallel saturation follows vocal thinness {thin:.2f}, saturation shortage {saturation_shortage:.2f}, and overbright risk {saturation_risk:.2f}."),
+        "beat_bus_saturation_amount": item(round(beat_sat, 2), f"Beat harmonic body {beat_body:.2f}, reference median {ref_body:.2f}, saturation shortage {saturation_shortage:.2f}, and overbright risk {saturation_risk:.2f} set drive conservatively."),
         "drum_clip_drive": item(round(clamp(beat_sat * 0.5, 0.0, 2.5), 2), "Soft clip drive supports digicore energy while avoiding a flat overcompressed master."),
         "808_upper_harmonic_amount": item(round(clamp(max(0.0, -upper_808 - 5.0) * 0.12 * scale, 0.0, 1.0), 2), f"808 phone translation proxy is {upper_808:.2f}; upper harmonics help small-speaker audibility."),
         "808_mud_reduction_db": item(round(clamp(max(0.0, upper_808 + 4.0) * 0.25 * scale, 0.0, 3.0), 2), "Mud reduction is applied only when 100-250 Hz energy appears excessive."),
@@ -73,8 +83,48 @@ def build_policy(mode: str = "normal") -> dict:
         "mono_sub_amount": item(round(clamp(0.75 * scale, 0.4, 1.0), 2), "Mono sub guard prevents side low-end from weakening translation."),
         "vocal_beat_glue_amount": item(round(clamp((1.0 - glue) * scale, 0.0, 1.0), 2), f"Vocal/beat glue score is {glue:.2f}; apply gentle bus glue only as needed."),
     }
-    result = {"engine": "ESTONA_AUTO_MIX_ENGINE", "policy_type": "mix", "mode": mode, "policy": policy}
+    source_files = source_analysis_files()
+    result = {
+        "engine": "ESTONA_AUTO_MIX_ENGINE",
+        "policy_type": "mix",
+        "policy_version": POLICY_VERSION,
+        "policy_version_hash": policy_hash(mode, policy, source_files),
+        "mode": mode,
+        "source_analysis_files": source_files,
+        "policy": policy,
+    }
     return result
+
+
+def source_analysis_files() -> dict:
+    paths = {
+        "current_song_analysis": resolve_path("02_ANALYSIS", "current_song_analysis.json"),
+        "vocal_beat_masking_analysis": resolve_path("02_ANALYSIS", "vocal_beat_masking_analysis.json"),
+        "saturation_analysis": resolve_path("02_ANALYSIS", "saturation_analysis.json"),
+        "vocal_pitch_analysis": resolve_path("02_ANALYSIS", "vocal_pitch_analysis.json"),
+        "user_preference_rules": resolve_path("03_POLICY_ENGINE", "user_preference_rules.yaml"),
+    }
+    result = {}
+    for key, path in paths.items():
+        result[key] = {
+            "path": str(path),
+            "mtime": os.path.getmtime(path) if path.exists() else None,
+        }
+    return result
+
+
+def policy_hash(mode: str, policy: dict, source_files: dict) -> str:
+    payload = json.dumps(
+        {
+            "policy_version": POLICY_VERSION,
+            "mode": mode,
+            "policy": policy,
+            "source_analysis_files": source_files,
+        },
+        sort_keys=True,
+        ensure_ascii=True,
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:16]
 
 
 def generate_all() -> dict:

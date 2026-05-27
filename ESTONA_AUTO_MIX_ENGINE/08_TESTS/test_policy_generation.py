@@ -24,6 +24,10 @@ if __name__ == "__main__":
     for name in ["mix_policy.json", "master_policy.json"]:
         data = json.loads((ROOT / "03_POLICY_ENGINE" / name).read_text(encoding="utf-8"))
         assert data["policy"]
+        if name == "mix_policy.json":
+            assert data.get("policy_version")
+            assert data.get("policy_version_hash")
+            assert data.get("source_analysis_files")
         for key, value in data["policy"].items():
             assert "reason" in value and value["reason"], f"{key} missing reason"
     mp3_check = ROOT / "06_OUTPUTS" / "mp3_check"

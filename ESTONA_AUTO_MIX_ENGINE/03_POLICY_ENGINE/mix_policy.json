@@ -1,7 +1,31 @@
 {
   "engine": "ESTONA_AUTO_MIX_ENGINE",
   "policy_type": "mix",
+  "policy_version": "2026-05-27-p1",
+  "policy_version_hash": "4d041ee670429552",
   "mode": "normal",
+  "source_analysis_files": {
+    "current_song_analysis": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/02_ANALYSIS/current_song_analysis.json",
+      "mtime": 1779857191.5267186
+    },
+    "vocal_beat_masking_analysis": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/02_ANALYSIS/vocal_beat_masking_analysis.json",
+      "mtime": 1779857192.1100123
+    },
+    "saturation_analysis": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/02_ANALYSIS/saturation_analysis.json",
+      "mtime": 1779857193.393441
+    },
+    "vocal_pitch_analysis": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/02_ANALYSIS/vocal_pitch_analysis.json",
+      "mtime": 1779857192.8036609
+    },
+    "user_preference_rules": {
+      "path": "/Users/hantaeheuk/Documents/New project 3/ESTONA_AUTO_MIX_ENGINE/03_POLICY_ENGINE/user_preference_rules.yaml",
+      "mtime": 1779717555.8834856
+    }
+  },
   "policy": {
     "lead_vocal_gain_db": {
       "value": 2.0,
@@ -37,14 +61,14 @@
     },
     "vocal_parallel_saturation_amount": {
       "value": 0.0,
-      "reason": "Parallel saturation restores body without making the vocal a new melodic source."
+      "reason": "Parallel saturation follows vocal thinness 0.00, saturation shortage 0.35, and overbright risk 1.00."
     },
     "beat_bus_saturation_amount": {
-      "value": 1.4,
-      "reason": "Beat harmonic body 4.30 is compared to reference median 8.31."
+      "value": 0.51,
+      "reason": "Beat harmonic body 4.30, reference median 8.31, saturation shortage 0.35, and overbright risk 1.00 set drive conservatively."
     },
     "drum_clip_drive": {
-      "value": 0.7,
+      "value": 0.26,
       "reason": "Soft clip drive supports digicore energy while avoiding a flat overcompressed master."
     },
     "808_upper_harmonic_amount": {

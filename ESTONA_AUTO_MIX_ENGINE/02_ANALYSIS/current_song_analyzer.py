@@ -3,11 +3,12 @@
 
 from __future__ import annotations
 
-from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List
+from typing import List
 
-from audio_utils import analyze_audio_file, band_energy, find_audio_files, load_audio, mono_signal, resolve_path, scalar_feature, write_json
+import numpy as np
+
+from audio_utils import analyze_audio_file, find_audio_files, frame_rms, load_audio, mono_signal, resolve_path, write_json
 
 
 TYPE_KEYWORDS = {
@@ -23,16 +24,22 @@ TYPE_KEYWORDS = {
 def guess_stem_type(path: Path) -> tuple:
     name = path.stem.lower()
     hits = []
+    matched_keywords = {}
     for stem_type, words in TYPE_KEYWORDS.items():
-        if any(word in name for word in words):
+        matched = [word for word in words if word in name]
+        if matched:
             hits.append(stem_type)
+            matched_keywords[stem_type] = matched
     if not hits:
-        return "unknown", True
+        return "unknown", True, 0.0, {}
     if "backing_vocal" in hits:
-        return "backing_vocal", len(hits) > 1
+        confidence = 0.68 if len(hits) > 1 else 0.9
+        return "backing_vocal", len(hits) > 1, confidence, matched_keywords
     if "lead_vocal" in hits:
-        return "lead_vocal", len(hits) > 1
-    return hits[0], len(hits) > 1
+        confidence = 0.68 if len(hits) > 1 else 0.88
+        return "lead_vocal", len(hits) > 1, confidence, matched_keywords
+    confidence = 0.62 if len(hits) > 1 else 0.86
+    return hits[0], len(hits) > 1, confidence, matched_keywords
 
 
 def _first_by_type(stems: List[dict], stem_type: str) -> dict:
@@ -56,6 +63,7 @@ def analyze_current_song() -> dict:
         "input_dir": str(stem_dir),
         "stems": [],
         "relationship_analysis": {},
+        "unknown_stems_requiring_user_confirmation": [],
         "warnings": [],
     }
     if not files:
@@ -63,16 +71,33 @@ def analyze_current_song() -> dict:
         write_json(output, report)
         return report
     for path in files:
-        stem_type, uncertain = guess_stem_type(path)
+        stem_type, uncertain, confidence, matched_keywords = guess_stem_type(path)
         try:
             features = analyze_audio_file(path)
             features["stem_type"] = stem_type
+            features["stem_classification_confidence"] = confidence
+            features["stem_classification_matches"] = matched_keywords
             features["guessed_stem_type"] = uncertain or stem_type == "unknown"
             if features["guessed_stem_type"]:
                 features["user_confirmation_needed"] = "사용자 확인 필요"
+                report["unknown_stems_requiring_user_confirmation"].append(
+                    {
+                        "file": str(path),
+                        "suggested_stem_type": stem_type,
+                        "confidence": confidence,
+                        "reason": "ambiguous filename match" if stem_type != "unknown" else "no stem keyword match",
+                    }
+                )
             report["stems"].append(features)
         except Exception as exc:
-            report["stems"].append({"file": str(path), "stem_type": stem_type, "error": str(exc)})
+            report["stems"].append(
+                {
+                    "file": str(path),
+                    "stem_type": stem_type,
+                    "stem_classification_confidence": confidence,
+                    "error": str(exc),
+                }
+            )
     lead = _first_by_type(report["stems"], "lead_vocal")
     beat = _first_by_type(report["stems"], "beat")
     backing = [s for s in report["stems"] if s.get("stem_type") == "backing_vocal" and "error" not in s]
@@ -96,6 +121,12 @@ def analyze_current_song() -> dict:
     if bass:
         rel["808_phone_translation_proxy"] = bass["low_mid_energy_120_350hz"] - bass["low_band_energy_20_120hz"]
         rel["kick_808_conflict_proxy"] = max(0.0, bass["low_band_energy_20_120hz"] - (drums or bass)["low_band_energy_20_120hz"] + 3.0)
+    if bass and drums:
+        rel["kick_808_low_envelope_correlation"] = low_envelope_correlation(drums["file"], bass["file"])
+        rel["kick_808_conflict_score"] = max(
+            rel.get("kick_808_conflict_proxy", 0.0),
+            rel["kick_808_low_envelope_correlation"] * 4.0,
+        )
     if lead and backing:
         lead_lufs = lead["integrated_lufs"]
         backing_loud = max(s["integrated_lufs"] for s in backing)
@@ -129,6 +160,24 @@ def estimate_overlap(lead_file: str, backing_files: List[str]) -> float:
             b_active = b_env[:n] > max(0.01, float(b_env.mean() * 2.0))
             overlaps.append(float((lead_active[:n] & b_active).sum() / max(1, lead_active[:n].sum())))
         return max(overlaps) if overlaps else 0.0
+    except Exception:
+        return 0.0
+
+
+def low_envelope_correlation(kick_or_drums_file: str, bass_file: str) -> float:
+    try:
+        drum_audio, sr = load_audio(Path(kick_or_drums_file), mono=True, target_sr=8000)
+        bass_audio, _ = load_audio(Path(bass_file), mono=True, target_sr=8000)
+        drum_env = frame_rms(mono_signal(drum_audio), sr, 0.08, 0.02)
+        bass_env = frame_rms(mono_signal(bass_audio), sr, 0.08, 0.02)
+        n = min(drum_env.size, bass_env.size)
+        if n < 3:
+            return 0.0
+        a = drum_env[:n]
+        b = bass_env[:n]
+        if float(np.std(a)) == 0.0 or float(np.std(b)) == 0.0:
+            return 0.0
+        return float(max(0.0, np.corrcoef(a, b)[0, 1]))
     except Exception:
         return 0.0
 
