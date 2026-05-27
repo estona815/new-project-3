@@ -1,0 +1,57 @@
+# Audio/video and media
+*.wav
+*.wave
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.aif
+*.aiff
+*.ogg
+*.opus
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# Secrets and credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.lic
+*license*
+*secret*
+*token*
+*credential*
+
+# Local-only and generated data
+local_only/*
+!local_only/README.md
+reports/private/
+renders/
+output/
+exports/
+audio_work/
+downloads/
+REAPER Media/
+Media/
+Peaks/
+*.reapeaks
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
