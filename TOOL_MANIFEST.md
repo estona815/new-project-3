@@ -28,3 +28,15 @@
 | Klanghelm IVGI/DC1A/MJUC jr | Body restore and gentle level | main-computer-only | https://klanghelm.com/contents/freeware.html | medium | ReaComp/saturation fallback |
 | TAL-Reverb-4 / Valhalla Supermassive | Optional space | manual optional | official vendor pages | medium | REAPER stock reverb/delay |
 | GSnap / Graillon | Pitch correction | disabled by default | official vendor pages | high | Manual pitch review only |
+
+## Knowledge Base Research Tools
+
+| Tool/Layer | Purpose | Install Status | Official Source | Risk | Fallback |
+|---|---|---:|---|---|---|
+| Source index | Track public resource metadata without copying content | repo-text-only | `knowledge_base/00_source_index/source_index.yml` | low | Manual markdown notes |
+| Lesson card schema | Convert source notes into structured original lessons | repo-text-only | `decision_engine/mix_lesson_card_schema.yml` | low | Plain markdown lesson notes |
+| REAPER rule schema | Convert lessons into actionable chain rules | repo-text-only | `decision_engine/reaper_rule_card_schema.yml` | low | Manual REAPER checklist |
+| QC rule schema | Convert lessons into listening/metering decisions | repo-text-only | `decision_engine/qc_rule_card_schema.yml` | low | Manual QC checklist |
+| YouTube source references | Store title, creator, URL, timestamp notes, and original summaries only | no-download | Public video pages | medium | Skip video source |
+
+Knowledge base tools do not install software, download media, process audio, or scrape full content. Their final purpose is REAPER execution and QC: lesson cards must become chain rules, report fields, and rejection conditions.

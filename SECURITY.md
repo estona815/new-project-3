@@ -26,6 +26,19 @@ Do not commit:
 - Reference tracks
 - Voice recordings
 
+## No Copyrighted Source Dumps
+
+Do not commit:
+
+- Full YouTube transcripts
+- Downloaded YouTube video or audio
+- Full copied articles
+- Full copied manuals
+- Paywalled course content
+- Third-party lesson worksheets
+
+Public resources may be tracked as links, metadata, short paraphrased notes, and original rule cards only. Lesson cards must transform source ideas into REAPER workflow rules, plugin-chain rules, QC rules, or Suno repair rejection conditions.
+
 ## No Account Login On Public PC
 
 Do not log into:

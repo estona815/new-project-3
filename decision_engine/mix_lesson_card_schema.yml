@@ -1,0 +1,35 @@
+schema_name: "mix_lesson_card"
+schema_version: "1.0"
+description: "A copyright-safe lesson card distilled from a public source into original workflow knowledge."
+required_fields:
+  - lesson_id
+  - source_id
+  - topic
+  - problem_addressed
+  - core_idea
+  - plugin_type
+  - suggested_chain_position
+  - rough_parameter_range
+  - genre_relevance
+  - suno_relevance
+  - reaper_translation
+  - failure_modes
+  - qc_check
+  - confidence_level
+  - notes
+fields:
+  lesson_id: ""
+  source_id: ""
+  topic: ""
+  problem_addressed: ""
+  core_idea: ""
+  plugin_type: ""
+  suggested_chain_position: ""
+  rough_parameter_range: ""
+  genre_relevance: []
+  suno_relevance: ""
+  reaper_translation: ""
+  failure_modes: []
+  qc_check: ""
+  confidence_level: "unknown"
+  notes: ""

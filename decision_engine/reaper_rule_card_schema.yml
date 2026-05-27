@@ -1,0 +1,27 @@
+schema_name: "reaper_rule_card"
+schema_version: "1.0"
+description: "An actionable REAPER workflow rule converted from one or more lesson cards."
+required_fields:
+  - rule_id
+  - source_lessons
+  - reaper_context
+  - target_track_type
+  - plugin_candidates
+  - action_steps
+  - render_candidate_required
+  - bypass_comparison_required
+  - expected_improvement
+  - rejection_conditions
+  - report_fields
+fields:
+  rule_id: ""
+  source_lessons: []
+  reaper_context: ""
+  target_track_type: ""
+  plugin_candidates: []
+  action_steps: []
+  render_candidate_required: true
+  bypass_comparison_required: true
+  expected_improvement: ""
+  rejection_conditions: []
+  report_fields: []

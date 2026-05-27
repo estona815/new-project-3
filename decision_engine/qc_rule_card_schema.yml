@@ -1,0 +1,21 @@
+schema_name: "qc_rule_card"
+schema_version: "1.0"
+description: "A listening or metering rule used to accept, reject, or escalate a candidate render."
+required_fields:
+  - qc_rule_id
+  - metric_or_listening_check
+  - target_problem
+  - tool
+  - warning_threshold
+  - human_listening_check
+  - auto_reject_condition
+  - report_template_field
+fields:
+  qc_rule_id: ""
+  metric_or_listening_check: ""
+  target_problem: ""
+  tool: ""
+  warning_threshold: ""
+  human_listening_check: ""
+  auto_reject_condition: ""
+  report_template_field: ""

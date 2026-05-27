@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.0.3 - Public Mixing Knowledge Base Layer
+
+- Added public-source mixing/mastering knowledge base scaffold.
+- Added source index, research method policies, lesson/rule/QC schemas, initial rule cards, REAPER translation notes, and future Codex prompts.
+- Defined copyright-safe conversion from public resources into original actionable REAPER and QC rules.
+- Confirmed YouTube videos are references only and must not be downloaded, transcribed in full, or committed.
+- No software installation, audio download, video download, transcript dump, or real audio processing performed.
+
 ## v0.0.1 - Public Harness Scaffold
 
 - Created public-PC-safe repository harness.

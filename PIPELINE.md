@@ -53,6 +53,18 @@ Suggested stages:
 
 Plugin-aware candidates may use Bertom Denoiser Classic, TDR Nova, Techivation T-De-Esser 2, Klanghelm IVGI/DC1A/MJUC jr, Voxengo SPAN, Youlean, and LoudMax after they are installed and verified on the main computer.
 
+## 4A. Knowledge Base Rule Conversion
+
+Public mixing/mastering sources are collected as metadata and short notes only. They are converted through this chain:
+
+1. Source index entry
+2. Copyright-safe lesson card
+3. Actionable REAPER rule card
+4. Candidate chain or QC checklist item
+5. Report field and rejection condition
+
+Do not store full transcripts, full articles, downloaded videos, downloaded audio, or copied manuals. The knowledge base exists to drive REAPER execution and QC decisions, not to archive source content.
+
 ## 5. Render Candidates
 
 Render:

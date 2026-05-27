@@ -38,6 +38,20 @@ The harness prepares:
 - QC report generation stubs
 - Local-machine bootstrap instructions
 - Free/recommended plugin expansion planning for future REAPER vocal repair
+- Public-source mixing/mastering knowledge base scaffolding
+
+## Mixing Knowledge Base Layer
+
+The knowledge base layer lives in `knowledge_base/`, `decision_engine/`, `docs/research_method/`, and `codex_prompts/15_*` through `codex_prompts/19_*`.
+
+It is a public-safe research and decision layer. Public resources are tracked as links, metadata, short paraphrased notes, and original workflow conclusions. They are not copied into the repo as full articles, manuals, YouTube transcripts, course dumps, audio, or video.
+
+The purpose is REAPER execution and QC, not passive note storage:
+
+- Source entries become copyright-safe lesson cards.
+- Lesson cards become actionable REAPER chain rules.
+- REAPER chain rules become candidate renders, bypass comparisons, rejection conditions, and QC report fields.
+- YouTube lessons may be referenced by title, creator, URL, and timestamp notes only. Videos, audio, and full transcripts are not downloaded or committed.
 
 ## Plugin Expansion Layer
 

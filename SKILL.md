@@ -18,6 +18,17 @@ Use plugin candidates conservatively:
 - LoudMax: preview/final safety limiter only
 - GSnap and Graillon: disabled by default because pitch correction can change vocal identity
 
+## Knowledge Base Directive
+
+Use the knowledge base layer to convert public mixing/mastering resources into original operating rules. Do not copy source material into the repo.
+
+- Track resources in `knowledge_base/00_source_index/source_index.yml`.
+- Extract only short paraphrases, timestamp notes, and original workflow conclusions.
+- Convert lesson cards into actionable REAPER chain rules, plugin-chain rules, QC rules, and Suno-specific repair rules.
+- Treat YouTube as reference metadata only: no video downloads, no audio downloads, and no full transcript commits.
+- Prefer official manuals and plugin documentation before articles, videos, or community tips.
+- Do not keep lessons as passive notes if they can be turned into action steps, rejection conditions, or report fields.
+
 ## Operating Principles
 
 - Always keep the original vocal or full mix untouched.
