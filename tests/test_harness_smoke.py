@@ -10,6 +10,7 @@ import wave
 from pathlib import Path
 
 from harness.audio_qc import compare_before_after
+from harness.reaper_project_audit import audit_project
 from harness.severity import has_warn_plus, max_severity
 
 
@@ -133,7 +134,39 @@ class HarnessSmokeTests(unittest.TestCase):
             self.assertTrue((root / "reports" / "music_pipeline_report.json").exists())
             self.assertTrue((root / "reports" / "music_pipeline_report.md").exists())
 
+    def test_rpp_audit_detects_unquoted_jsfx_paths(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "vocal.wav"
+            write_sine(source)
+            project = root / "jsfx_project.rpp"
+            project.write_text(
+                "\n".join(
+                    [
+                        "<REAPER_PROJECT 0.1 \"7.0\" 0",
+                        "  <TRACK",
+                        "    NAME \"04_LEAD_VOCAL_CODEX_TUNE_EQ_SUBSTITUTE\"",
+                        "    <ITEM",
+                        "      <SOURCE WAVE",
+                        f"        FILE \"{source}\"",
+                        "      >",
+                        "    >",
+                        "    <FXCHAIN",
+                        "      <JS codex_fresh_mix/codex_pro_dynamic_ms_eq.jsfx \"\"",
+                        "      >",
+                        "    >",
+                        "  >",
+                        ">",
+                    ]
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            payload = audit_project(project, [], mode="vocal_repair")
+
+            self.assertIn("JS: codex_fresh_mix/codex_pro_dynamic_ms_eq.jsfx", payload["fx_names"])
+
 
 if __name__ == "__main__":
     unittest.main()
-

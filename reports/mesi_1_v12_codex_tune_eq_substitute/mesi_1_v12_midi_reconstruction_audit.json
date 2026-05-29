@@ -1,0 +1,173 @@
+{
+  "bass_note_count": 0,
+  "bus_renders": {
+    "bass": [],
+    "drums": [],
+    "master": [],
+    "mix": [],
+    "music": []
+  },
+  "classification_recommendation": "master_only",
+  "findings": [
+    {
+      "affected_file": "reaper/mesi_1_v12_codex_tune_eq_substitute/mesi_1_v12_CODEX_TUNE_EQ_SUBSTITUTE.rpp",
+      "code": "REBEAT_BUS_RENDERS_MISSING",
+      "command_to_rerun": "",
+      "evidence": "{\"bass\": [], \"drums\": [], \"master\": [], \"mix\": [], \"music\": []}",
+      "failed_assumption": "Role bus render evidence exists.",
+      "human_listening_required": false,
+      "message": "Separate bus renders required for true_rebeat are missing.",
+      "recommendation": "Render drums, bass, music/support, mix, and master buses, then rerun audit.",
+      "severity": "WARN"
+    }
+  ],
+  "fullmix_dependency_level": "low",
+  "has_bass_midi": false,
+  "has_drum_audio_support": false,
+  "has_drum_midi": false,
+  "has_music_midi": false,
+  "has_separate_bus_renders": false,
+  "has_stem_tracks": false,
+  "hat_note_count": 0,
+  "kick_note_count": 0,
+  "max_severity": "WARN",
+  "music_note_count": 0,
+  "original_fullmix_active": false,
+  "rebuild_roles": [],
+  "rpp": "reaper/mesi_1_v12_codex_tune_eq_substitute/mesi_1_v12_CODEX_TUNE_EQ_SUBSTITUTE.rpp",
+  "schema_version": 1,
+  "snare_note_count": 0,
+  "source_media_references": [
+    "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_bass_raw.wav",
+    "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_drums_raw.wav",
+    "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_full_mix_original.wav",
+    "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_keyboard_b_raw.wav",
+    "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav",
+    "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v11_reaper_pipeline/mesi_1_v11_MASTER_24-48.wav"
+  ],
+  "track_count": 9,
+  "tracks": [
+    {
+      "has_audio": true,
+      "has_midi": false,
+      "index": 1,
+      "media_files": [
+        "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v11_reaper_pipeline/mesi_1_v11_MASTER_24-48.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_full_mix_original.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_keyboard_b_raw.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_drums_raw.wav",
+        "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_bass_raw.wav"
+      ],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "01_REF_V11_CURRENT_FAVORITE_MUTED",
+      "note_numbers": [],
+      "roles": []
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 2,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "02_FULL_MIX_ORIGINAL_REF_MUTED",
+      "note_numbers": [],
+      "roles": []
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 3,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "03_LEAD_VOCAL_RAW_MUTED",
+      "note_numbers": [],
+      "roles": [
+        "music",
+        "vocal"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 4,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": false,
+      "name": "04_LEAD_VOCAL_CODEX_TUNE_EQ_SUBSTITUTE",
+      "note_numbers": [],
+      "roles": [
+        "music",
+        "vocal"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 5,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": false,
+      "name": "05_VOCAL_BUS_CODEX",
+      "note_numbers": [],
+      "roles": [
+        "vocal"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 6,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "06_MUSIC_SUPPORT_LOW_MUTED",
+      "note_numbers": [],
+      "roles": [
+        "music"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 7,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "07_DRUMS_SUPPORT_MUTED",
+      "note_numbers": [],
+      "roles": [
+        "drums"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 8,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "08_BASS_SUPPORT_MUTED",
+      "note_numbers": [],
+      "roles": [
+        "bass"
+      ]
+    },
+    {
+      "has_audio": false,
+      "has_midi": false,
+      "index": 9,
+      "media_files": [],
+      "midi_note_count": 0,
+      "muted": true,
+      "name": "09_PRINT_TARGET",
+      "note_numbers": [],
+      "roles": []
+    }
+  ],
+  "true_rebeat_allowed": false
+}

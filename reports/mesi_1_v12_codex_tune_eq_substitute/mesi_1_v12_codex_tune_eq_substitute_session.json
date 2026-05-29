@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "song": "mesi_1",
+  "version": "v12",
+  "classification": "vocal_repair_chain_prepared + Codex_tune_EQ_substitute_session",
+  "claim_status": "not_vocal_tuned_until_pitch_QC_and_human_AB",
+  "rpp": "/Users/hantaeheuk/Documents/New project 3/reaper/mesi_1_v12_codex_tune_eq_substitute/mesi_1_v12_CODEX_TUNE_EQ_SUBSTITUTE.rpp",
+  "source_vocal": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav",
+  "max_severity": "PASS",
+  "forbidden_claims": ["Antares-quality tuning", "FabFilter clone", "vocal tuned", "professional final master"],
+  "rows": [
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "01_REF_V11_CURRENT_FAVORITE_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v11_reaper_pipeline/mesi_1_v11_MASTER_24-48.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "02_FULL_MIX_ORIGINAL_REF_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_full_mix_original.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "03_LEAD_VOCAL_RAW_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "04_LEAD_VOCAL_CODEX_TUNE_EQ_SUBSTITUTE",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "06_MUSIC_SUPPORT_LOW_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_keyboard_b_raw.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "07_DRUMS_SUPPORT_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_drums_raw.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "media",
+      "status": "inserted",
+      "target": "08_BASS_SUPPORT_MUTED",
+      "detail": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_bass_raw.wav"
+    },
+    {
+      "severity": "PASS",
+      "stage": "pitch monitor",
+      "status": "loaded",
+      "target": "JS: codex_fresh_mix/codex_vocal_pitch_monitor.jsfx",
+      "detail": "fx_index=0"
+    },
+    {
+      "severity": "PASS",
+      "stage": "ReaTune pitch engine",
+      "status": "loaded",
+      "target": "ReaTune",
+      "detail": "fx_index=1"
+    },
+    {
+      "severity": "PASS",
+      "stage": "dynamic M/S EQ",
+      "status": "loaded",
+      "target": "JS: codex_fresh_mix/codex_pro_dynamic_ms_eq.jsfx",
+      "detail": "fx_index=2"
+    },
+    {
+      "severity": "PASS",
+      "stage": "extra resonance dynamic EQ",
+      "status": "loaded",
+      "target": "JS: codex_fresh_mix/codex_dynamic_eq_band.jsfx",
+      "detail": "fx_index=3"
+    },
+    {
+      "severity": "PASS",
+      "stage": "noise/fizz floor tamer",
+      "status": "loaded",
+      "target": "JS: codex_fresh_mix/codex_noise_floor_tamer.jsfx",
+      "detail": "fx_index=4"
+    },
+    {
+      "severity": "PASS",
+      "stage": "vocal bus polish",
+      "status": "loaded",
+      "target": "JS: codex_fresh_mix/codex_v20_channel_polish.jsfx",
+      "detail": "fx_index=0"
+    },
+    {
+      "severity": "PASS",
+      "stage": "project",
+      "status": "saved",
+      "target": "/Users/hantaeheuk/Documents/New project 3/reaper/mesi_1_v12_codex_tune_eq_substitute/mesi_1_v12_CODEX_TUNE_EQ_SUBSTITUTE.rpp",
+      "detail": "RPP contains ReaTune and Codex substitute JSFX chain."
+    }
+  ]
+}

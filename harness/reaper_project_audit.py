@@ -80,10 +80,15 @@ def _source_files(block: str) -> list[str]:
 
 
 def _fx_names(block: str) -> list[str]:
-    return [
+    quoted_fx = [
         match.group(2)
         for match in re.finditer(r'(?m)^\s*<(VST|VST3|JS|AU|CLAP|LV2)[^"]*"([^"]+)"', block)
     ]
+    unquoted_jsfx = [
+        "JS: " + match.group(1).strip()
+        for match in re.finditer(r"(?m)^\s*<JS\s+([^\s\"]+)", block)
+    ]
+    return quoted_fx + unquoted_jsfx
 
 
 def _role_from_name(name: str) -> str:
