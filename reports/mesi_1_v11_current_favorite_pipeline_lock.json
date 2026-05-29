@@ -1,0 +1,53 @@
+{
+  "actual_classification": "fullmix_rescue + Suno_DeAI_repair + master processing",
+  "allowed_language": [
+    "fullmix rescue",
+    "Suno DeAI repair",
+    "lossy-source processed print",
+    "candidate C_punch_preserve selected",
+    "drum reinforcement candidate/audit only",
+    "human listening required before stronger final claims"
+  ],
+  "findings": [
+    {
+      "affected_file": "",
+      "code": "PREFERENCE_LOCK_WARN_PLUS_SURFACED",
+      "command_to_rerun": "",
+      "evidence": "EXTERNAL_VALIDATOR_WARN,FULLMIX_ACTIVE_WITH_REBUILD_ITEMS,FULLMIX_DEESSER_RISK,GRID_CONFIDENCE_FAIL,INTEGRATED_LOUDNESS_UNAVAILABLE,LOSSY_SOURCE_REBEAT_LIMITATION,REAPER_RENDER_FALLBACK,REBEAT_BUS_RENDERS_MISSING",
+      "failed_assumption": "A preferred style lock clears validation limitations.",
+      "human_listening_required": true,
+      "message": "Existing WARN/FAIL/BLOCKER evidence remains visible; this lock does not upgrade the render to final-success language.",
+      "recommendation": "Keep WARN+ language in reports; fix unknown WARN+ codes before treating this as a stronger delivery claim.",
+      "severity": "INFO"
+    }
+  ],
+  "forbidden_language": [
+    "true_rebeat",
+    "true rebeat",
+    "비트 다 새로 찍음",
+    "stem rebuild",
+    "vocal tuned",
+    "lossless restoration",
+    "professional final master",
+    "noise completely removed"
+  ],
+  "lock_name": "mesi_current_favorite_mix_master_lock",
+  "lock_status": "locked_with_known_limitations",
+  "locked_song": "mesi_1",
+  "max_severity": "INFO",
+  "metric_summary": {
+    "air_fizz_delta_db": -0.07,
+    "duration_after": 105.850688,
+    "duration_before": 105.850688,
+    "harshness_delta_db": -0.06,
+    "peak_after_dbfs": -1.4253022379948799,
+    "punch_delta_db": 0.025,
+    "sibilance_delta_db": -0.094,
+    "side_mid_delta_db": -0.314,
+    "transient_ratio": 0.9971,
+    "true_peak_after_dbfs": -1.4253022379948799
+  },
+  "preferred_candidate": "C_punch_preserve",
+  "schema_version": 1,
+  "selected_candidate": "C_punch_preserve"
+}
