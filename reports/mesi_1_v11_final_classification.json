@@ -1,0 +1,85 @@
+{
+  "allowed_claims": [
+    "drum_reinforcement",
+    "kick/snare support layer",
+    "lossy-source processed print",
+    "partial drum MIDI reconstruction"
+  ],
+  "classification": "drum_reinforcement",
+  "evidence_summary": {
+    "bus_renders_complete": false,
+    "fullmix_active": true,
+    "grid_confidence": "FAIL",
+    "has_bass_reconstruction": false,
+    "has_drum_reconstruction": true,
+    "has_midi_files": false,
+    "has_music_reconstruction": false,
+    "has_stems": false,
+    "machine_separated_stems": false,
+    "qc_failed": false,
+    "source_lossy": true,
+    "stems_available": true
+  },
+  "findings": [
+    {
+      "affected_file": "{\"format\": \"mp3\", \"lossy\": true, \"path\": \"/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v03_mp3_piano_vocal_noise_tuck/mesi_1_v03_MASTER_320k.mp3\"}",
+      "code": "LOSSY_SOURCE_REBEAT_LIMITATION",
+      "command_to_rerun": "",
+      "evidence": "source_is_lossy=true",
+      "failed_assumption": "Lossy source can support lossless restoration language.",
+      "human_listening_required": false,
+      "message": "Source is lossy; MP3-derived processing cannot be called lossless restoration.",
+      "recommendation": "Use lossy-source processed print language and avoid lossless restoration claims.",
+      "severity": "WARN"
+    },
+    {
+      "affected_file": "",
+      "code": "STEMS_DISCOVERED_NOT_ACTIVE",
+      "command_to_rerun": "",
+      "evidence": "[\"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v08_stem_assisted_deai_master_repair/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v02_original_mix_master/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v03_mp3_piano_vocal_noise_tuck/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v03_mp3_piano_vocal_noise_tuck/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v03_mp3_piano_vocal_noise_tuck/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v04_rebeat_noise_reduced_master/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v08_precision_vocal_noise_hot_master/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v06_natural_vocal_master_reset/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v09_tuned_ducked_space_dynamic_master/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_main_vocal_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_full_mix_reference.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v01_mix_master/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v07_vocal_clear_master_repair/source_stems/mesi_1_backing_vocals_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_main_vocal_trigger.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_bass_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_vocals_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_studio_selection_reference.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_fx_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_keyboard_a_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_drums_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_keyboard_b_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_synth_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_full_mix_original.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_guitar_raw.wav\", \"audio_work/mesi_1_v05_full_rebeat_stronger_tune/source_stems/mesi_1_backing_vocals_raw.wav\"]",
+      "failed_assumption": "Discovered stems are automatically active in the current render.",
+      "human_listening_required": false,
+      "message": "Stems were discovered, but the audited REAPER project does not show active stem tracks.",
+      "recommendation": "Use stem-assisted rebuild language only after stems are imported/routed and the RPP audit confirms them.",
+      "severity": "INFO"
+    },
+    {
+      "affected_file": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v11_reaper_pipeline/intermediate/mesi_1_v11_WORKING_FROM_MP3_48k.wav",
+      "code": "GRID_CONFIDENCE_FAIL",
+      "command_to_rerun": "",
+      "evidence": "grid_confidence=FAIL, grid_score=0.241",
+      "failed_assumption": "Detected grid is safe for reconstruction.",
+      "human_listening_required": true,
+      "message": "Tempo/grid confidence limits rebeat claims.",
+      "recommendation": "Use manual tempo map or light reinforcement only; do not hard-quantize or claim true rebeat unless justified.",
+      "severity": "FAIL"
+    }
+  ],
+  "forbidden_claims": [
+    "beat fully re-created",
+    "full MIDI reconstruction",
+    "lossless restoration",
+    "professional final master",
+    "remade instrumental",
+    "stem rebuild",
+    "true_rebeat",
+    "vocal tuned",
+    "\ube44\ud2b8 \ub2e4 \uc0c8\ub85c \ucc0d\uc74c",
+    "\uc0c8 beat print"
+  ],
+  "max_severity": "FAIL",
+  "missing_evidence_for_true_rebeat": [
+    "bass MIDI/audio reconstruction",
+    "music/chord/lead MIDI/audio support",
+    "separate drums/bass/music/mix/master bus renders",
+    "PASS tempo grid or justified WARN"
+  ],
+  "next_actions": [
+    "Add bass MIDI/audio support only from reliable pitch/stem/MIDI evidence.",
+    "Import MIDI/stems or manually place chord/lead support; do not fabricate dense fullmix transcription.",
+    "Create or import drum MIDI/audio items, then rerun MIDI reconstruction audit.",
+    "Run tempo_grid_analyzer.py or create a manual tempo map before quantized reconstruction."
+  ],
+  "schema_version": 1,
+  "true_rebeat_possible": false
+}

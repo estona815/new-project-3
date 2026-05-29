@@ -1,0 +1,732 @@
+<REAPER_PROJECT 0.1 "7.73/macOS-arm64" 0 0
+  <NOTES 0 2
+    |mesi_1_v11 REAPER pipeline. Final selected classification: fullmix_rescue + Suno_DeAI_repair + master processing. Source was lossy MP3; output is processed print, not lossless restoration. Drum MIDI/audio support exists as reinforcement candidate evidence only and is muted unless candidate E is selected. Bass/music rebuild unavailable. No vocal tuning.
+  >
+  SAMPLERATE 48000 1 0
+  TEMPO 129.496000 4 4 0
+  RENDER_RANGE 0 0 105.850687500000 0 1000
+  <TRACK {6aba3007-0193-4b79-8bb1-0100d338ea87}
+    NAME "01_REF_ORIGINAL"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {fc33bc98-188c-45b0-98c2-7e62639c748b}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 1 0
+      IID 1
+      NAME mesi_1_v03_MASTER_320k.mp3
+      GUID {76c00d5a-6141-4586-b8d1-8b1bb723b15d}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v03_mp3_piano_vocal_noise_tuck/mesi_1_v03_MASTER_320k.mp3"
+      >
+    >
+
+  >
+  <TRACK {735efac9-3f74-45ab-bb73-0cba0461e9c3}
+    NAME "02_WORKING_FULLMIX_MP3_DECODED"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    NCHAN 2
+    TRACKID {045498be-b4b6-4698-bf77-d0bab345c21b}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 0 0
+      IID 2
+      NAME mesi_1_v11_WORKING_FROM_MP3_48k.wav
+      GUID {fea06820-1bac-4d0a-a22b-aefcbff9fb8a}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v11_reaper_pipeline/intermediate/mesi_1_v11_WORKING_FROM_MP3_48k.wav"
+      >
+    >
+
+  >
+  <TRACK {fb78feef-cf83-46a6-9e9e-15b1bcde5d81}
+    NAME "03_GRID_MARKERS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {1ade6915-86e4-4e34-a504-a328842173d1}
+    MAINSEND 1 0
+
+
+  >
+  <TRACK {eac63931-bd2a-4a62-9ace-f8218a91dfa1}
+    NAME "04_KICK_REBUILD_MIDI"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {c10a9264-286e-4f8b-9357-ed2b1c14fca4}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 0 0
+      IID 4
+      NAME kick_reinforcement.mid
+      GUID {b3a48208-ee0b-413f-b677-91330ed53c84}
+      <SOURCE MIDI
+        HASDATA 1 480 QN
+        CCINTERP 32
+        E 7873 99 24 5c
+        E 80 89 24 00
+        E 1805 99 24 5b
+        E 80 89 24 00
+        E 511 99 24 54
+        E 80 89 24 00
+        E 3090 99 24 62
+        E 80 89 24 00
+        E 386 99 24 62
+        E 80 89 24 00
+        E 1329 99 24 65
+        E 80 89 24 00
+        E 106 99 24 58
+        E 80 89 24 00
+        E 905 99 24 61
+        E 80 89 24 00
+        E 624 99 24 5a
+        E 80 89 24 00
+        E 272 99 24 66
+        E 80 89 24 00
+        E 842 99 24 58
+        E 80 89 24 00
+        E 521 99 24 5a
+        E 80 89 24 00
+        E 1101 99 24 67
+        E 80 89 24 00
+        E 2210 99 24 59
+        E 80 89 24 00
+        E 210 99 24 57
+        E 80 89 24 00
+        E 1784 99 24 59
+        E 80 89 24 00
+        E 283 99 24 58
+        E 80 89 24 00
+        E 1433 99 24 5f
+        E 80 89 24 00
+        E 1805 99 24 60
+        E 80 89 24 00
+        E 272 99 24 6b
+        E 80 89 24 00
+        E 273 99 24 57
+        E 80 89 24 00
+        E 3898 99 24 50
+        E 80 89 24 00
+        E 831 99 24 5d
+        E 80 89 24 00
+        E 894 99 24 64
+        E 80 89 24 00
+        E 863 99 24 55
+        E 80 89 24 00
+        E 148 99 24 57
+        E 80 89 24 00
+        E 158 99 24 5d
+        E 80 89 24 00
+        E 148 99 24 5f
+        E 80 89 24 00
+        E 158 99 24 5f
+        E 80 89 24 00
+        E 34 99 24 50
+        E 80 89 24 00
+        E 44 99 24 58
+        E 80 89 24 00
+        E 2510 99 24 57
+        E 80 89 24 00
+        E 1091 99 24 63
+        E 80 89 24 00
+        E 386 99 24 63
+        E 80 89 24 00
+        E 355 99 24 5a
+        E 80 89 24 00
+        E 1827 99 24 59
+        E 80 89 24 00
+        E 158 99 24 58
+        E 80 89 24 00
+        E 386 99 24 5e
+        E 80 89 24 00
+        E 34 99 24 59
+        E 80 89 24 00
+        E 44 99 24 50
+        E 80 89 24 00
+        E 625 99 24 54
+        E 80 89 24 00
+        E 75 99 24 53
+        E 80 89 24 00
+        E 3525 99 24 5f
+        E 80 89 24 00
+        E 76 99 24 53
+        E 80 89 24 00
+        E 4809 99 24 54
+        E 80 89 24 00
+        E 449 99 24 51
+        E 80 89 24 00
+        E 583 99 24 57
+        E 80 89 24 00
+        E 842 99 24 51
+        E 80 89 24 00
+        E 34 99 24 5a
+        E 80 89 24 00
+        E 624 99 24 54
+        E 80 89 24 00
+        E 179 99 24 55
+        E 80 89 24 00
+        E 2003 99 24 5e
+        E 80 89 24 00
+        E 1038 99 24 55
+        E 80 89 24 00
+        E 687 99 24 56
+        E 80 89 24 00
+        E 386 99 24 5e
+        E 80 89 24 00
+        E 521 99 24 57
+        E 80 89 24 00
+        E 44 99 24 5a
+        E 80 89 24 00
+        E 1329 99 24 53
+        E 80 89 24 00
+        E 407 99 24 63
+        E 80 89 24 00
+        E 3049 99 24 56
+        E 80 89 24 00
+        E 1494 99 24 5f
+        E 80 89 24 00
+        E 3 99 24 69
+        E 80 89 24 00
+        E 407 99 24 5e
+        E 80 89 24 00
+        E 728 99 24 60
+        E 80 89 24 00
+        E 739 99 24 64
+        E 80 89 24 00
+        E 272 99 24 65
+        E 80 89 24 00
+        E 624 99 24 60
+        E 80 89 24 00
+        E 397 99 24 52
+        E 80 89 24 00
+        E 262 99 24 59
+        E 80 89 24 00
+        E 44 99 24 58
+        E 80 89 24 00
+        E 148 99 24 68
+        E 80 89 24 00
+        E 624 99 24 60
+        E 80 89 24 00
+        E 148 99 24 5d
+        E 80 89 24 00
+        E 397 99 24 56
+        E 80 89 24 00
+        E 34 99 24 52
+        E 80 89 24 00
+        E 4022 99 24 5f
+        E 80 89 24 00
+        E 387 99 24 58
+        E 80 89 24 00
+        E 396 99 24 55
+        E 80 89 24 00
+        E 625 99 24 53
+        E 80 89 24 00
+        E 147 99 24 5d
+        E 80 89 24 00
+        E 86 99 24 59
+        E 80 89 24 00
+        E 231 99 24 59
+        E 80 89 24 00
+        E 75 99 24 6a
+        E 80 89 24 00
+        E 76 99 24 73
+        E 80 89 24 00
+        E 75 99 24 66
+        E 80 89 24 00
+        E 386 99 24 59
+        E 80 89 24 00
+        E 242 99 24 5e
+        E 80 89 24 00
+        E 85 99 24 51
+        E 80 89 24 00
+        E 2956 99 24 55
+        E 80 89 24 00
+        E 883 99 24 61
+        E 80 89 24 00
+        E 283 99 24 55
+        E 80 89 24 00
+        E 593 99 24 5c
+        E 80 89 24 00
+        E 511 99 24 6c
+        E 80 89 24 00
+        E 75 99 24 61
+        E 80 89 24 00
+        E 386 99 24 64
+        E 80 89 24 00
+        E 76 99 24 5a
+        E 80 89 24 00
+        E 396 99 24 60
+        E 80 89 24 00
+        E 3473 99 24 5f
+        E 80 89 24 00
+        E 148 99 24 64
+        E 80 89 24 00
+        E 159 99 24 61
+        E 80 89 24 00
+        E 44 99 24 67
+        E 80 89 24 00
+        E 966 99 24 5b
+        E 80 89 24 00
+        E 438 99 24 61
+        E 80 89 24 00
+        E 790 99 24 51
+        E 80 89 24 00
+        E 770 99 24 70
+        E 80 89 24 00
+        E 624 99 24 63
+        E 80 89 24 00
+        E 397 99 24 5a
+        E 80 89 24 00
+        E 189 99 24 57
+        E 80 89 24 00
+        E 34 99 24 54
+        E 80 89 24 00
+        E 1868 99 24 71
+        E 80 89 24 00
+        E 158 99 24 61
+        E 80 89 24 00
+        E 500 99 24 54
+        E 80 89 24 00
+        E 4437 99 24 52
+        E 80 89 24 00
+        E 863 99 24 51
+        E 80 89 24 00
+        E 55 99 24 52
+        E 80 89 24 00
+        E 469 99 24 54
+        E 80 89 24 00
+        E 261 99 24 63
+        E 80 89 24 00
+        E 397 99 24 55
+        E 80 89 24 00
+      >
+    >
+
+  >
+  <TRACK {2303ccdf-1402-4eda-8ae4-aa62df56dfe4}
+    NAME "05_SNARE_CLAP_REBUILD_MIDI"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {990785d5-8787-43b6-bd79-1eb5580e3820}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 0 0
+      IID 5
+      NAME snare_clap_reinforcement.mid
+      GUID {735c48aa-7766-488d-998e-348cd43dfed7}
+      <SOURCE MIDI
+        HASDATA 1 480 QN
+        CCINTERP 32
+        E 31 99 26 73
+        E 80 89 26 00
+        E 9627 99 26 59
+        E 80 89 26 00
+        E 717 99 26 53
+        E 80 89 26 00
+        E 1101 99 26 58
+        E 80 89 26 00
+        E 2034 99 26 51
+        E 80 89 26 00
+        E 2271 99 26 5c
+        E 80 89 26 00
+        E 770 99 26 54
+        E 80 89 26 00
+        E 2002 99 26 50
+        E 80 89 26 00
+        E 635 99 26 57
+        E 80 89 26 00
+        E 117 99 26 64
+        E 80 89 26 00
+        E 997 99 26 55
+        E 80 89 26 00
+        E 1464 99 26 59
+        E 80 89 26 00
+        E 158 99 26 59
+        E 80 89 26 00
+        E 7534 99 26 52
+        E 80 89 26 00
+        E 1754 99 26 57
+        E 80 89 26 00
+        E 86 99 26 51
+        E 80 89 26 00
+        E 800 99 26 55
+        E 80 89 26 00
+        E 967 99 26 51
+        E 80 89 26 00
+        E 34 99 26 54
+        E 80 89 26 00
+        E 2520 99 26 50
+        E 80 89 26 00
+        E 2292 99 26 55
+        E 80 89 26 00
+        E 407 99 26 60
+        E 80 89 26 00
+        E 1754 99 26 58
+        E 80 89 26 00
+        E 34 99 26 55
+        E 80 89 26 00
+        E 2562 99 26 58
+        E 80 89 26 00
+        E 842 99 26 55
+        E 80 89 26 00
+        E 3742 99 26 54
+        E 80 89 26 00
+        E 915 99 26 50
+        E 80 89 26 00
+        E 479 99 26 51
+        E 80 89 26 00
+        E 2096 99 26 52
+        E 80 89 26 00
+        E 3 99 26 51
+        E 80 89 26 00
+        E 13 99 26 5b
+        E 80 89 26 00
+        E 34 99 26 54
+        E 80 89 26 00
+        E 2075 99 26 56
+        E 80 89 26 00
+        E 1090 99 26 5c
+        E 80 89 26 00
+        E 853 99 26 52
+        E 80 89 26 00
+        E 1391 99 26 57
+        E 80 89 26 00
+        E 1370 99 26 50
+        E 80 89 26 00
+        E 1702 99 26 55
+        E 80 89 26 00
+        E 55 99 26 55
+        E 80 89 26 00
+        E 1826 99 26 50
+        E 80 89 26 00
+        E 3 99 26 5a
+        E 80 89 26 00
+        E 386 99 26 69
+        E 80 89 26 00
+        E 1298 99 26 56
+        E 80 89 26 00
+        E 137 99 26 50
+        E 80 89 26 00
+        E 2500 99 26 5a
+        E 80 89 26 00
+        E 1142 99 26 54
+        E 80 89 26 00
+        E 1713 99 26 50
+        E 80 89 26 00
+        E 220 99 26 51
+        E 80 89 26 00
+        E 448 99 26 55
+        E 80 89 26 00
+        E 241 99 26 5b
+        E 80 89 26 00
+        E 2137 99 26 57
+        E 80 89 26 00
+        E 387 99 26 5c
+        E 80 89 26 00
+        E 4271 99 26 52
+        E 80 89 26 00
+        E 572 99 26 5a
+        E 80 89 26 00
+        E 314 99 26 54
+        E 80 89 26 00
+        E 75 99 26 58
+        E 80 89 26 00
+        E 2904 99 26 56
+        E 80 89 26 00
+        E 1557 99 26 50
+        E 80 89 26 00
+        E 780 99 26 54
+        E 80 89 26 00
+        E 3 99 26 51
+        E 80 89 26 00
+        E 44 99 26 51
+        E 80 89 26 00
+        E 96 99 26 52
+        E 80 89 26 00
+        E 200 99 26 5f
+        E 80 89 26 00
+        E 1039 99 26 57
+        E 80 89 26 00
+        E 655 99 26 58
+        E 80 89 26 00
+        E 573 99 26 5a
+        E 80 89 26 00
+        E 34 99 26 5b
+        E 80 89 26 00
+        E 34 99 26 51
+        E 80 89 26 00
+        E 2686 99 26 60
+        E 80 89 26 00
+        E 96 99 26 64
+        E 80 89 26 00
+        E 262 99 26 5f
+        E 80 89 26 00
+        E 251 99 26 51
+        E 80 89 26 00
+        E 179 99 26 52
+        E 80 89 26 00
+        E 148 99 26 53
+        E 80 89 26 00
+        E 490 99 26 55
+        E 80 89 26 00
+        E 34 99 26 50
+        E 80 89 26 00
+        E 572 99 26 57
+        E 80 89 26 00
+        E 231 99 26 50
+        E 80 89 26 00
+        E 739 99 26 55
+        E 80 89 26 00
+        E 54 99 26 59
+        E 80 89 26 00
+        E 863 99 26 52
+        E 80 89 26 00
+        E 521 99 26 56
+        E 80 89 26 00
+        E 1650 99 26 50
+        E 80 89 26 00
+        E 386 99 26 50
+        E 80 89 26 00
+        E 511 99 26 5f
+        E 80 89 26 00
+        E 34 99 26 57
+        E 80 89 26 00
+        E 365 99 26 57
+        E 80 89 26 00
+        E 2406 99 26 5c
+        E 80 89 26 00
+        E 55 99 26 51
+        E 80 89 26 00
+        E 863 99 26 52
+        E 80 89 26 00
+        E 604 99 26 58
+        E 80 89 26 00
+        E 914 99 26 50
+        E 80 89 26 00
+        E 117 99 26 52
+        E 80 89 26 00
+        E 65 99 26 5e
+        E 80 89 26 00
+        E 355 99 26 57
+        E 80 89 26 00
+        E 780 99 26 54
+        E 80 89 26 00
+      >
+    >
+
+  >
+  <TRACK {ce3dd171-6857-4c94-bc85-15fa20f9e23b}
+    NAME "06_HAT_PERC_REBUILD_MIDI"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {7db02e40-ba3c-424f-ad6a-3b2b2215e92a}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 0 0
+      IID 6
+      NAME hat_perc_reinforcement.mid
+      GUID {d402f18f-c6cd-492a-a999-8a9fc108c219}
+      <SOURCE MIDI
+        HASDATA 1 480 QN
+        CCINTERP 32
+        E 9686 99 2a 73
+        E 80 89 2a 00
+      >
+    >
+
+  >
+  <TRACK {873131bd-dc83-4bfa-95ac-4df83c3d3eb7}
+    NAME "07_DRUMS_AUDIO_SUPPORT"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {a170ebf6-0b3d-4996-b6a0-e9505456b295}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 0 0
+      IID 7
+      NAME mesi_1_v11_drum_reinforcement_support.wav
+      GUID {8ceef844-fe1d-4235-a777-c5a215f54902}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v11_reaper_pipeline/processed/mesi_1_v11_drum_reinforcement_support.wav"
+      >
+    >
+
+  >
+  <TRACK {6dcd44ea-27b6-4b6f-a858-a0e48c707530}
+    NAME "08_BASS_REBUILD_UNAVAILABLE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {45c48645-9b2a-462a-8c2c-99094dcc2489}
+    MAINSEND 1 0
+
+
+  >
+  <TRACK {118f4468-99ef-41e5-88f2-afee114b8208}
+    NAME "09_MUSIC_REBUILD_UNAVAILABLE"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {1f2cab6c-81fa-4b4a-8b6d-9422be0ac0db}
+    MAINSEND 1 0
+
+
+  >
+  <TRACK {2a61fb1c-eaef-4bb9-8880-91b399e8b0c0}
+    NAME "10_VOCAL_STEM_MISSING"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {14ffed9f-ea57-4d99-acff-f02237e49791}
+    MAINSEND 1 0
+
+
+  >
+  <TRACK {4170ea2f-4d2d-48de-96da-17a41a1e1f98}
+    NAME "11_FULLMIX_DERIVED_VOCAL_FOCUS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {6788bcbe-f71b-47dd-9d44-64209ef65dc7}
+    MAINSEND 1 0
+
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      <JS "suno_dynamic_notch_deai.jsfx" ""
+      >
+    >
+  >
+  <TRACK {a1210e09-4c0f-460c-801b-a55ed131710a}
+    NAME "12_DEAI_NOISE_REDUCTION_BUS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {7d1bd2d9-3c87-40a6-86b8-7a2614296b5a}
+    MAINSEND 1 0
+
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      <JS "suno_artifact_suppressor.jsfx" ""
+      >
+    >
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      <JS "suno_dynamic_notch_deai.jsfx" ""
+      >
+    >
+  >
+  <TRACK {739a213d-830a-48e6-aaca-6dc20650a119}
+    NAME "13_PARALLEL_DRUM_COMP"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {a9c466a1-0150-4a96-b60f-21a4560e5949}
+    MAINSEND 1 0
+
+
+  >
+  <TRACK {fe521025-e07b-462e-9c56-9f21f77d3a5d}
+    NAME "14_MID_SIDE_REPAIR_BUS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {cc4e78f3-2dc2-443f-902f-705fd1e887c1}
+    MAINSEND 1 0
+
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      <JS "suno_side_reverb_cleaner.jsfx" ""
+      >
+    >
+  >
+  <TRACK {98d10add-0c96-40d5-b1cc-6b78dd8d6053}
+    NAME "15_MIX_BUS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {37c98b1e-548f-4c31-b83b-625752e0fe8c}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 1 0
+      IID 15
+      NAME mesi_1_v11_candidate_C_punch_preserve.wav
+      GUID {3cee9ae7-bc86-4d18-bdc8-466ed7eda293}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v11_reaper_pipeline/mesi_1_v11_candidate_C_punch_preserve.wav"
+      >
+    >
+
+  >
+  <TRACK {5aea3dda-d0f4-4991-b626-8c168a2a69c2}
+    NAME "16_MASTER_BUS"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {1a41d072-cc76-42cb-b871-59d101d027d5}
+    MAINSEND 1 0
+
+    <FXCHAIN
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      <JS "suno_output_guard.jsfx" ""
+      >
+    >
+  >
+  <TRACK {47a93be0-6288-473b-8fbf-e9e0cb7bc0f1}
+    NAME "17_MASTER_PRINT"
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 1 0 0
+    NCHAN 2
+    TRACKID {62f3cf52-6e28-44da-8eee-99a754ccf253}
+    MAINSEND 1 0
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 105.850687500000
+      MUTE 1 0
+      IID 17
+      NAME mesi_1_v11_MASTER_24-48.wav
+      GUID {85df4c1a-6785-4559-b19f-2f2a40ba5d81}
+      <SOURCE WAVE
+        FILE "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v11_reaper_pipeline/mesi_1_v11_MASTER_24-48.wav"
+      >
+    >
+
+  >
+>
