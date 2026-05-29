@@ -1,0 +1,15 @@
+{
+  "name": "dnb",
+  "eq_intent": "Keep sub/kick weight controlled, remove harsh upper-mid buildup, preserve break transient detail.",
+  "compression_intent": "Fast but not flattening; protect drum attack with 2:1 to 4:1 bus compression and 1 to 3 dB gain reduction.",
+  "de_esser_intent": "Vocal-only where present, 5.5 to 8.5 kHz detection, max 3 dB gain reduction.",
+  "ms_eq_intent": "Mono-control low side energy below 120 Hz, keep snare/vocal mid intact, reduce side harshness above 5 kHz if needed.",
+  "resonance_control_bands_hz": [180, 330, 1200, 2600, 4200, 7600],
+  "deai_intensity_range": [0.05, 0.35],
+  "loudness_target_lufs": -8.5,
+  "true_peak_target_dbfs": -1.0,
+  "max_acceptable_brightness_loss_db": 2.5,
+  "max_acceptable_transient_loss_ratio": 0.2,
+  "max_acceptable_side_mid_change_db": 2.5
+}
+

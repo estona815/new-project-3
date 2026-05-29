@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "profile_name": "dnb",
+  "profile_intent": "DnB and bass-heavy material: preserve kick, snare, sub weight, bass punch, and transient motion while controlling harsh tops and side wash.",
+  "inherits": "default",
+  "thresholds": {
+    "brightness_loss_warn_db": 1.0,
+    "brightness_loss_fail_db": 2.25,
+    "transient_loss_warn_ratio": 0.97,
+    "transient_loss_fail_ratio": 0.92,
+    "side_mid_change_warn_db": 1.25,
+    "side_mid_change_fail_db": 2.75,
+    "punch_loss_warn_db": 0.5,
+    "punch_loss_fail_db": 1.0,
+    "true_peak_target_dbfs": -1.0,
+    "master_bus_max_gain_reduction_db": 1.5
+  },
+  "genre_rules": [
+    "Preserve 45-140 Hz punch unless clipping or bloat is proven.",
+    "Control sub side energy before limiter movement becomes audible.",
+    "Use dynamic harsh-hat/snare control instead of broad top dulling.",
+    "Reject limiter-driven loudness when transient proxy or punch falls."
+  ]
+}

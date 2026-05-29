@@ -1,0 +1,238 @@
+{
+  "audit": {
+    "custom_jsfx_names": [],
+    "fullmix_primary_tracks": [
+      "02_WORKING_FULLMIX_MP3_DECODED",
+      "11_FULLMIX_DERIVED_VOCAL_FOCUS",
+      "16_MASTER_BUS",
+      "17_MASTER_PRINT"
+    ],
+    "fullmix_reference_tracks": [
+      "01_REF_ORIGINAL"
+    ],
+    "fx_chain_presence": true,
+    "fx_names": [
+      "suno_artifact_suppressor.jsfx",
+      "suno_dynamic_notch_deai.jsfx",
+      "suno_output_guard.jsfx",
+      "suno_side_reverb_cleaner.jsfx"
+    ],
+    "item_count": 8,
+    "midi_item_count": 3,
+    "missing_required_tracks": [
+      "04_DRUMS_AUDIO_SUPPORT",
+      "05_BASS",
+      "06_MUSIC",
+      "07_VOCAL_REPAIR",
+      "08_FX_NOISE_REDUCTION",
+      "09_PARALLEL_COMP",
+      "10_MID_SIDE_REPAIR",
+      "11_MIX_BUS",
+      "12_MASTER_BUS",
+      "13_MASTER_PRINT"
+    ],
+    "project": "/Users/hantaeheuk/Documents/New project 3/reaper/mesi_1_v10_reaper_pipeline/mesi_1_v10_REAPER_PIPELINE.rpp",
+    "render_metadata_keys": [
+      "RENDER_RANGE"
+    ],
+    "source_media_references": [
+      "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v03_mp3_piano_vocal_noise_tuck/mesi_1_v03_MASTER_320k.mp3",
+      "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v10_reaper_pipeline/intermediate/mesi_1_v10_WORKING_FROM_MP3_48k.wav",
+      "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v10_reaper_pipeline/processed/mesi_1_v10_drum_reinforcement_support.wav",
+      "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v10_reaper_pipeline/mesi_1_v10_candidate_C_punch_preserve.wav",
+      "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v10_reaper_pipeline/mesi_1_v10_MASTER_24-48.wav"
+    ],
+    "stem_track_roles": [
+      "drums"
+    ],
+    "track_count": 17,
+    "tracks": [
+      {
+        "fx_names": [],
+        "index": 1,
+        "item_count": 1,
+        "midi_item_count": 0,
+        "name": "01_REF_ORIGINAL",
+        "role": "other",
+        "source_files": [
+          "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v03_mp3_piano_vocal_noise_tuck/mesi_1_v03_MASTER_320k.mp3"
+        ]
+      },
+      {
+        "fx_names": [],
+        "index": 2,
+        "item_count": 1,
+        "midi_item_count": 0,
+        "name": "02_WORKING_FULLMIX_MP3_DECODED",
+        "role": "other",
+        "source_files": [
+          "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v10_reaper_pipeline/intermediate/mesi_1_v10_WORKING_FROM_MP3_48k.wav"
+        ]
+      },
+      {
+        "fx_names": [],
+        "index": 3,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "03_GRID_MARKERS",
+        "role": "other",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 4,
+        "item_count": 1,
+        "midi_item_count": 1,
+        "name": "04_KICK_REBUILD_MIDI",
+        "role": "drums",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 5,
+        "item_count": 1,
+        "midi_item_count": 1,
+        "name": "05_SNARE_CLAP_REBUILD_MIDI",
+        "role": "drums",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 6,
+        "item_count": 1,
+        "midi_item_count": 1,
+        "name": "06_HAT_PERC_REBUILD_MIDI",
+        "role": "drums",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 7,
+        "item_count": 1,
+        "midi_item_count": 0,
+        "name": "07_DRUMS_AUDIO_SUPPORT",
+        "role": "drums",
+        "source_files": [
+          "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v10_reaper_pipeline/processed/mesi_1_v10_drum_reinforcement_support.wav"
+        ]
+      },
+      {
+        "fx_names": [],
+        "index": 8,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "08_BASS_REBUILD_UNAVAILABLE",
+        "role": "bass",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 9,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "09_MUSIC_REBUILD_UNAVAILABLE",
+        "role": "music",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 10,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "10_VOCAL_STEM_MISSING",
+        "role": "vocal",
+        "source_files": []
+      },
+      {
+        "fx_names": [
+          "suno_dynamic_notch_deai.jsfx"
+        ],
+        "index": 11,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "11_FULLMIX_DERIVED_VOCAL_FOCUS",
+        "role": "vocal",
+        "source_files": []
+      },
+      {
+        "fx_names": [
+          "suno_artifact_suppressor.jsfx",
+          "suno_dynamic_notch_deai.jsfx"
+        ],
+        "index": 12,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "12_DEAI_NOISE_REDUCTION_BUS",
+        "role": "other",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 13,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "13_PARALLEL_DRUM_COMP",
+        "role": "drums",
+        "source_files": []
+      },
+      {
+        "fx_names": [
+          "suno_side_reverb_cleaner.jsfx"
+        ],
+        "index": 14,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "14_MID_SIDE_REPAIR_BUS",
+        "role": "other",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 15,
+        "item_count": 1,
+        "midi_item_count": 0,
+        "name": "15_MIX_BUS",
+        "role": "other",
+        "source_files": [
+          "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v10_reaper_pipeline/mesi_1_v10_candidate_C_punch_preserve.wav"
+        ]
+      },
+      {
+        "fx_names": [
+          "suno_output_guard.jsfx"
+        ],
+        "index": 16,
+        "item_count": 0,
+        "midi_item_count": 0,
+        "name": "16_MASTER_BUS",
+        "role": "other",
+        "source_files": []
+      },
+      {
+        "fx_names": [],
+        "index": 17,
+        "item_count": 1,
+        "midi_item_count": 0,
+        "name": "17_MASTER_PRINT",
+        "role": "other",
+        "source_files": [
+          "/Users/hantaeheuk/Documents/New project 3/renders/mesi_1_v10_reaper_pipeline/mesi_1_v10_MASTER_24-48.wav"
+        ]
+      }
+    ]
+  },
+  "findings": [
+    {
+      "affected_file": "/Users/hantaeheuk/Documents/New project 3/reaper/mesi_1_v10_reaper_pipeline/mesi_1_v10_REAPER_PIPELINE.rpp",
+      "code": "RPP_AUDIT_COMPLETED",
+      "command_to_rerun": "",
+      "evidence": "tracks=17, items=8, midi_items=3, fx=5",
+      "failed_assumption": "",
+      "human_listening_required": false,
+      "message": "REAPER project text audit completed.",
+      "recommendation": "Keep this audit report attached to any render claim.",
+      "severity": "PASS"
+    }
+  ],
+  "max_severity": "PASS"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "hyperpop",
+  "eq_intent": "Keep intentional brightness while controlling 3 to 9 kHz pain and boxy low-mid buildup.",
+  "compression_intent": "Forward vocal and energetic bus compression; 2:1 to 6:1 depending on source with attack chosen to keep consonants readable.",
+  "de_esser_intent": "Vocal-first, 5 to 10 kHz detection, max 4 dB gain reduction with brightness guard.",
+  "ms_eq_intent": "Protect centered vocal/kick/snare, clean stereo fizz without collapsing synth width.",
+  "resonance_control_bands_hz": [240, 480, 1100, 2500, 3600, 6900, 9200],
+  "deai_intensity_range": [0.05, 0.45],
+  "loudness_target_lufs": -9.0,
+  "true_peak_target_dbfs": -1.0,
+  "max_acceptable_brightness_loss_db": 2.0,
+  "max_acceptable_transient_loss_ratio": 0.25,
+  "max_acceptable_side_mid_change_db": 3.0
+}
+

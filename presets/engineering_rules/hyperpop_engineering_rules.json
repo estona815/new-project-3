@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "profile_name": "hyperpop",
+  "profile_intent": "Hyperpop and bright sample-based material: control painful resonances without erasing intentional brightness, synthetic texture, or lead focus.",
+  "inherits": "default",
+  "thresholds": {
+    "brightness_loss_warn_db": 1.25,
+    "brightness_loss_fail_db": 2.75,
+    "transient_loss_warn_ratio": 0.95,
+    "transient_loss_fail_ratio": 0.9,
+    "side_mid_change_warn_db": 1.5,
+    "side_mid_change_fail_db": 3.0,
+    "punch_loss_warn_db": 0.75,
+    "punch_loss_fail_db": 1.5
+  },
+  "genre_rules": [
+    "Bright high end can be intentional; detect painful resonances before cutting air.",
+    "Prefer dynamic control for 3-8 kHz shards and 10-16 kHz fake fizz.",
+    "Do not over-smooth AI texture if it is part of the style.",
+    "Protect vocal and lead intelligibility against de-essing and side cleanup."
+  ]
+}

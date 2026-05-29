@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "profile_name": "mp3_source_rescue",
+  "profile_intent": "Lossy MP3 source rescue: decoded WAV is only a working print; never call the result lossless restoration.",
+  "inherits": "default",
+  "thresholds": {
+    "brightness_loss_warn_db": 0.9,
+    "brightness_loss_fail_db": 2.0,
+    "transient_loss_warn_ratio": 0.96,
+    "transient_loss_fail_ratio": 0.91,
+    "side_mid_change_warn_db": 1.25,
+    "side_mid_change_fail_db": 2.5,
+    "punch_loss_warn_db": 0.75,
+    "punch_loss_fail_db": 1.25,
+    "master_bus_max_gain_reduction_db": 1.25
+  },
+  "source_rules": [
+    "Decode MP3 to WAV only as a working format.",
+    "Avoid aggressive high-frequency reconstruction.",
+    "Avoid repeated lossy encoding.",
+    "Final WAV is a lossy-source processed print, not a recovered original.",
+    "Final MP3 should be encoded once from the final WAV."
+  ],
+  "forbidden_language": {
+    "lossless restoration": "MP3-derived processing cannot be called lossless restoration.",
+    "true original-resolution master": "MP3-derived WAV cannot become an original-resolution master."
+  }
+}

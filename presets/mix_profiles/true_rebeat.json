@@ -1,0 +1,15 @@
+{
+  "name": "true_rebeat",
+  "eq_intent": "Shape recreated drums, bass, music, and FX on their own buses before master tone.",
+  "compression_intent": "Source-specific compression: drums 2:1 to 4:1, bass leveling 2:1 to 3:1, music bus light glue.",
+  "de_esser_intent": "Vocal-only if vocals exist; never placed on the whole rebeat unless measured as necessary.",
+  "ms_eq_intent": "Mono low-end, preserve centered groove, widen music only after mono compatibility check.",
+  "resonance_control_bands_hz": [120, 220, 440, 1200, 2700, 5100, 8500],
+  "deai_intensity_range": [0.0, 0.2],
+  "loudness_target_lufs": -9.0,
+  "true_peak_target_dbfs": -1.0,
+  "max_acceptable_brightness_loss_db": 2.5,
+  "max_acceptable_transient_loss_ratio": 0.15,
+  "max_acceptable_side_mid_change_db": 3.0
+}
+

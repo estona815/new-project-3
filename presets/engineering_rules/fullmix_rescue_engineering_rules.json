@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "profile_name": "fullmix_rescue",
+  "profile_intent": "Fullmix rescue: conservative fullmix processing with no fake stem, rebeat, or vocal-tuning claims.",
+  "inherits": "default",
+  "thresholds": {
+    "brightness_loss_warn_db": 1.0,
+    "brightness_loss_fail_db": 2.25,
+    "transient_loss_warn_ratio": 0.96,
+    "transient_loss_fail_ratio": 0.91,
+    "side_mid_change_warn_db": 1.25,
+    "side_mid_change_fail_db": 2.5,
+    "punch_loss_warn_db": 0.75,
+    "punch_loss_fail_db": 1.25,
+    "fullmix_deesser_max_reduction_db": 1.5,
+    "master_bus_max_gain_reduction_db": 1.5
+  },
+  "genre_rules": [
+    "No stem rebuild or true rebeat claims without project evidence.",
+    "Use M/S carefully and report side/mid before/after.",
+    "Prefer reversible master bus moves.",
+    "Human listening is required for DeAI and fullmix de-essing tradeoffs."
+  ]
+}

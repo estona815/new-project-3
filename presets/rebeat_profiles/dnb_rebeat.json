@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "profile_name": "dnb_rebeat",
+  "tempo_bpm_range": [160, 190],
+  "half_time_bpm_range": [80, 95],
+  "double_time_awareness": true,
+  "onset": {
+    "kick_band_hz": [45, 140],
+    "snare_band_hz": [150, 5000],
+    "hat_band_hz": [6000, 14000],
+    "min_event_confidence": 0.34,
+    "hat_min_confidence": 0.55,
+    "peak_pick_distance_sec": 0.07
+  },
+  "midi": {
+    "kick_note": 36,
+    "snare_note": 38,
+    "clap_note": 40,
+    "closed_hat_note": 42,
+    "open_hat_note": 46,
+    "percussion_notes": [39, 51],
+    "velocity_range": [45, 115],
+    "quantize_strength": 0.45
+  },
+  "qc": {
+    "grid_pass_score": 0.68,
+    "grid_warn_score": 0.42,
+    "flam_warn_sec": 0.025,
+    "flam_fail_sec": 0.045,
+    "punch_improvement_target_db": 0.3,
+    "harshness_increase_warn_db": 0.8,
+    "true_peak_target_dbfs": -1.0,
+    "side_mid_change_warn_db": 1.5
+  },
+  "classification": {
+    "true_rebeat_requires_bus_renders": ["drums", "bass", "music", "mix", "master"],
+    "machine_separated_stems_warn": true
+  }
+}
