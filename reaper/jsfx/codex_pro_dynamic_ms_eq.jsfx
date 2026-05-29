@@ -1,0 +1,196 @@
+desc:Codex Pro Dynamic MS EQ
+//tags: dynamic-eq mid-side resonance de-esser deai vocal
+//author: Codex
+
+slider1:1<0,1,1>Band 1 Enable
+slider2:280<40,1200,1>Band 1 Freq (Hz)
+slider3:1.00<0.20,8.00,0.01>Band 1 Q
+slider4:-32<-72,0,0.1>Band 1 Threshold (dB)
+slider5:2.0<0,9,0.1>Band 1 Max Cut (dB)
+slider6:0<0,2,1{Stereo,Mid,Side}>Band 1 Mode
+
+slider7:1<0,1,1>Band 2 Enable
+slider8:3600<400,9000,1>Band 2 Freq (Hz)
+slider9:1.30<0.20,8.00,0.01>Band 2 Q
+slider10:-34<-72,0,0.1>Band 2 Threshold (dB)
+slider11:2.4<0,9,0.1>Band 2 Max Cut (dB)
+slider12:0<0,2,1{Stereo,Mid,Side}>Band 2 Mode
+
+slider13:1<0,1,1>Band 3 Enable
+slider14:6800<1500,12000,1>Band 3 Freq (Hz)
+slider15:1.60<0.20,8.00,0.01>Band 3 Q
+slider16:-38<-72,0,0.1>Band 3 Threshold (dB)
+slider17:2.6<0,9,0.1>Band 3 Max Cut (dB)
+slider18:0<0,2,1{Stereo,Mid,Side}>Band 3 Mode
+
+slider19:1<0,1,1>Band 4 Enable
+slider20:11200<4000,18000,1>Band 4 Freq (Hz)
+slider21:1.10<0.20,8.00,0.01>Band 4 Q
+slider22:-42<-80,0,0.1>Band 4 Threshold (dB)
+slider23:2.0<0,9,0.1>Band 4 Max Cut (dB)
+slider24:2<0,2,1{Stereo,Mid,Side}>Band 4 Mode
+
+slider25:8<0.5,120,0.1>Attack (ms)
+slider26:140<10,1200,1>Release (ms)
+slider27:0<-12,12,0.1>Output Trim (dB)
+slider28:0<0,1,1>Audition Removed Signal
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@init
+ext_tail_size = -1;
+db2lin = 0.1151292546497023;
+lin2db = 8.685889638065037;
+tiny = 0.000000000001;
+
+b1_m_z1 = b1_m_z2 = b1_s_z1 = b1_s_z2 = b1_env = 0;
+b2_m_z1 = b2_m_z2 = b2_s_z1 = b2_s_z2 = b2_env = 0;
+b3_m_z1 = b3_m_z2 = b3_s_z1 = b3_s_z2 = b3_env = 0;
+b4_m_z1 = b4_m_z2 = b4_s_z1 = b4_s_z2 = b4_env = 0;
+
+@slider
+attack_ms = max(slider25, 0.1);
+release_ms = max(slider26, 1);
+att = exp(-1 / (attack_ms * 0.001 * srate));
+rel = exp(-1 / (release_ms * 0.001 * srate));
+out_gain = exp(slider27 * db2lin);
+audition = slider28;
+
+b1_freq = min(max(slider2, 20), srate * 0.45);
+b1_q = max(slider3, 0.05);
+w0 = 2 * $pi * b1_freq / srate;
+cosw = cos(w0); sinw = sin(w0); alpha = sinw / (2 * b1_q);
+b0 = alpha; b1 = 0; b2 = -alpha; a0 = 1 + alpha; a1 = -2 * cosw; a2 = 1 - alpha;
+b1_b0 = b0 / a0; b1_b1 = b1 / a0; b1_b2 = b2 / a0; b1_a1 = a1 / a0; b1_a2 = a2 / a0;
+
+b2_freq = min(max(slider8, 20), srate * 0.45);
+b2_q = max(slider9, 0.05);
+w0 = 2 * $pi * b2_freq / srate;
+cosw = cos(w0); sinw = sin(w0); alpha = sinw / (2 * b2_q);
+b0 = alpha; b1 = 0; b2 = -alpha; a0 = 1 + alpha; a1 = -2 * cosw; a2 = 1 - alpha;
+b2_b0 = b0 / a0; b2_b1 = b1 / a0; b2_b2 = b2 / a0; b2_a1 = a1 / a0; b2_a2 = a2 / a0;
+
+b3_freq = min(max(slider14, 20), srate * 0.45);
+b3_q = max(slider15, 0.05);
+w0 = 2 * $pi * b3_freq / srate;
+cosw = cos(w0); sinw = sin(w0); alpha = sinw / (2 * b3_q);
+b0 = alpha; b1 = 0; b2 = -alpha; a0 = 1 + alpha; a1 = -2 * cosw; a2 = 1 - alpha;
+b3_b0 = b0 / a0; b3_b1 = b1 / a0; b3_b2 = b2 / a0; b3_a1 = a1 / a0; b3_a2 = a2 / a0;
+
+b4_freq = min(max(slider20, 20), srate * 0.45);
+b4_q = max(slider21, 0.05);
+w0 = 2 * $pi * b4_freq / srate;
+cosw = cos(w0); sinw = sin(w0); alpha = sinw / (2 * b4_q);
+b0 = alpha; b1 = 0; b2 = -alpha; a0 = 1 + alpha; a1 = -2 * cosw; a2 = 1 - alpha;
+b4_b0 = b0 / a0; b4_b1 = b1 / a0; b4_b2 = b2 / a0; b4_a1 = a1 / a0; b4_a2 = a2 / a0;
+
+@sample
+in_l = spl0;
+in_r = spl1;
+mid = (in_l + in_r) * 0.5;
+side = (in_l - in_r) * 0.5;
+removed_mid = 0;
+removed_side = 0;
+
+slider1 >= 0.5 ? (
+  b1_m = b1_b0 * mid + b1_m_z1;
+  b1_m_z1 = b1_b1 * mid - b1_a1 * b1_m + b1_m_z2;
+  b1_m_z2 = b1_b2 * mid - b1_a2 * b1_m;
+  b1_s = b1_b0 * side + b1_s_z1;
+  b1_s_z1 = b1_b1 * side - b1_a1 * b1_s + b1_s_z2;
+  b1_s_z2 = b1_b2 * side - b1_a2 * b1_s;
+  slider6 < 0.5 ? det = max(abs(b1_m), abs(b1_s)) : slider6 < 1.5 ? det = abs(b1_m) : det = abs(b1_s);
+  det > b1_env ? b1_env = det + att * (b1_env - det) : b1_env = det + rel * (b1_env - det);
+  env_db = lin2db * log(max(b1_env, tiny));
+  cut_db = min(slider5, max(env_db - slider4, 0) * 0.65);
+  gain = exp(-cut_db * db2lin);
+  delta_m = (gain - 1) * b1_m;
+  delta_s = (gain - 1) * b1_s;
+  slider6 < 0.5 ? (
+    mid += delta_m; side += delta_s; removed_mid -= delta_m; removed_side -= delta_s;
+  ) : slider6 < 1.5 ? (
+    mid += delta_m; removed_mid -= delta_m;
+  ) : (
+    side += delta_s; removed_side -= delta_s;
+  );
+);
+
+slider7 >= 0.5 ? (
+  b2_m = b2_b0 * mid + b2_m_z1;
+  b2_m_z1 = b2_b1 * mid - b2_a1 * b2_m + b2_m_z2;
+  b2_m_z2 = b2_b2 * mid - b2_a2 * b2_m;
+  b2_s = b2_b0 * side + b2_s_z1;
+  b2_s_z1 = b2_b1 * side - b2_a1 * b2_s + b2_s_z2;
+  b2_s_z2 = b2_b2 * side - b2_a2 * b2_s;
+  slider12 < 0.5 ? det = max(abs(b2_m), abs(b2_s)) : slider12 < 1.5 ? det = abs(b2_m) : det = abs(b2_s);
+  det > b2_env ? b2_env = det + att * (b2_env - det) : b2_env = det + rel * (b2_env - det);
+  env_db = lin2db * log(max(b2_env, tiny));
+  cut_db = min(slider11, max(env_db - slider10, 0) * 0.65);
+  gain = exp(-cut_db * db2lin);
+  delta_m = (gain - 1) * b2_m;
+  delta_s = (gain - 1) * b2_s;
+  slider12 < 0.5 ? (
+    mid += delta_m; side += delta_s; removed_mid -= delta_m; removed_side -= delta_s;
+  ) : slider12 < 1.5 ? (
+    mid += delta_m; removed_mid -= delta_m;
+  ) : (
+    side += delta_s; removed_side -= delta_s;
+  );
+);
+
+slider13 >= 0.5 ? (
+  b3_m = b3_b0 * mid + b3_m_z1;
+  b3_m_z1 = b3_b1 * mid - b3_a1 * b3_m + b3_m_z2;
+  b3_m_z2 = b3_b2 * mid - b3_a2 * b3_m;
+  b3_s = b3_b0 * side + b3_s_z1;
+  b3_s_z1 = b3_b1 * side - b3_a1 * b3_s + b3_s_z2;
+  b3_s_z2 = b3_b2 * side - b3_a2 * b3_s;
+  slider18 < 0.5 ? det = max(abs(b3_m), abs(b3_s)) : slider18 < 1.5 ? det = abs(b3_m) : det = abs(b3_s);
+  det > b3_env ? b3_env = det + att * (b3_env - det) : b3_env = det + rel * (b3_env - det);
+  env_db = lin2db * log(max(b3_env, tiny));
+  cut_db = min(slider17, max(env_db - slider16, 0) * 0.65);
+  gain = exp(-cut_db * db2lin);
+  delta_m = (gain - 1) * b3_m;
+  delta_s = (gain - 1) * b3_s;
+  slider18 < 0.5 ? (
+    mid += delta_m; side += delta_s; removed_mid -= delta_m; removed_side -= delta_s;
+  ) : slider18 < 1.5 ? (
+    mid += delta_m; removed_mid -= delta_m;
+  ) : (
+    side += delta_s; removed_side -= delta_s;
+  );
+);
+
+slider19 >= 0.5 ? (
+  b4_m = b4_b0 * mid + b4_m_z1;
+  b4_m_z1 = b4_b1 * mid - b4_a1 * b4_m + b4_m_z2;
+  b4_m_z2 = b4_b2 * mid - b4_a2 * b4_m;
+  b4_s = b4_b0 * side + b4_s_z1;
+  b4_s_z1 = b4_b1 * side - b4_a1 * b4_s + b4_s_z2;
+  b4_s_z2 = b4_b2 * side - b4_a2 * b4_s;
+  slider24 < 0.5 ? det = max(abs(b4_m), abs(b4_s)) : slider24 < 1.5 ? det = abs(b4_m) : det = abs(b4_s);
+  det > b4_env ? b4_env = det + att * (b4_env - det) : b4_env = det + rel * (b4_env - det);
+  env_db = lin2db * log(max(b4_env, tiny));
+  cut_db = min(slider23, max(env_db - slider22, 0) * 0.65);
+  gain = exp(-cut_db * db2lin);
+  delta_m = (gain - 1) * b4_m;
+  delta_s = (gain - 1) * b4_s;
+  slider24 < 0.5 ? (
+    mid += delta_m; side += delta_s; removed_mid -= delta_m; removed_side -= delta_s;
+  ) : slider24 < 1.5 ? (
+    mid += delta_m; removed_mid -= delta_m;
+  ) : (
+    side += delta_s; removed_side -= delta_s;
+  );
+);
+
+audition >= 0.5 ? (
+  spl0 = (removed_mid + removed_side) * out_gain;
+  spl1 = (removed_mid - removed_side) * out_gain;
+) : (
+  spl0 = (mid + side) * out_gain;
+  spl1 = (mid - side) * out_gain;
+);

@@ -1,0 +1,130 @@
+desc:Codex Vocal Pitch Monitor
+//tags: pitch vocal meter autotune-helper reatune
+//author: Codex
+
+slider1:0<0,11,1{C,C#,D,D#,E,F,F#,G,G#,A,A#,B}>Key Root
+slider2:0<0,2,1{Major,Minor,Chromatic}>Scale
+slider3:70<40,220,1>Min Vocal Hz
+slider4:900<180,1400,1>Max Vocal Hz
+slider5:-42<-80,-10,0.1>Detector Gate (dB)
+slider6:35<1,120,1>Retune Target Display (ms)
+slider7:1<0,1,1>Dry Through
+slider8:0<-12,12,0.1>Output Trim (dB)
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@init
+ext_tail_size = -1;
+db2lin = 0.1151292546497023;
+lin2db = 8.685889638065037;
+tiny = 0.000000000001;
+zc_count = 0;
+last_sign = 0;
+period_samples = 0;
+estimated_hz = 0;
+target_hz = 0;
+cents_error = 0;
+gate_env = 0;
+gate_count = 0;
+update_count = 0;
+note_index = 0;
+
+@slider
+min_hz = max(slider3, 20);
+max_hz = min(max(slider4, min_hz + 10), srate * 0.45);
+gate_db = slider5;
+retune_ms = slider6;
+dry = slider7;
+out_gain = exp(slider8 * db2lin);
+root = floor(slider1 + 0.5);
+scale = floor(slider2 + 0.5);
+att = exp(-1 / (2 * 0.001 * srate));
+rel = exp(-1 / (80 * 0.001 * srate));
+
+@sample
+in_l = spl0;
+in_r = spl1;
+mono = (in_l + in_r) * 0.5;
+
+det = abs(mono);
+det > gate_env ? gate_env = det + att * (gate_env - det) : gate_env = det + rel * (gate_env - det);
+gate_db_now = lin2db * log(max(gate_env, tiny));
+
+sign_now = mono >= 0 ? 1 : -1;
+period_samples += 1;
+gate_db_now > gate_db ? (
+  sign_now != last_sign && last_sign != 0 ? (
+    zc_count += 1;
+    zc_count >= 2 ? (
+      raw_hz = srate / max(period_samples, 1);
+      raw_hz >= min_hz && raw_hz <= max_hz ? (
+        estimated_hz = estimated_hz <= 0 ? raw_hz : estimated_hz * 0.85 + raw_hz * 0.15;
+        midi_note = 69 + 12 * log(max(estimated_hz, tiny) / 440) / log(2);
+        nearest = floor(midi_note + 0.5);
+        scale == 2 ? (
+          target_note = nearest;
+        ) : (
+          best_note = nearest;
+          best_dist = 128;
+          offset = -12;
+          loop(25,
+            test_note = nearest + offset;
+            pc = (test_note % 12 + 12) % 12;
+            rel_pc = (pc - root + 12) % 12;
+            in_scale = scale == 0 ? (
+              rel_pc == 0 || rel_pc == 2 || rel_pc == 4 || rel_pc == 5 || rel_pc == 7 || rel_pc == 9 || rel_pc == 11
+            ) : (
+              rel_pc == 0 || rel_pc == 2 || rel_pc == 3 || rel_pc == 5 || rel_pc == 7 || rel_pc == 8 || rel_pc == 10
+            );
+            dist = abs(test_note - midi_note);
+            in_scale && dist < best_dist ? (
+              best_dist = dist;
+              best_note = test_note;
+            );
+            offset += 1;
+          );
+          target_note = best_note;
+        );
+        target_hz = 440 * exp((target_note - 69) * log(2) / 12);
+        cents_error = 1200 * log(max(estimated_hz, tiny) / max(target_hz, tiny)) / log(2);
+        note_index = target_note;
+      );
+      period_samples = 0;
+      zc_count = 0;
+    );
+  );
+);
+last_sign = sign_now;
+
+dry >= 0.5 ? (
+  spl0 = in_l * out_gain;
+  spl1 = in_r * out_gain;
+) : (
+  spl0 = 0;
+  spl1 = 0;
+);
+
+@gfx 560 170
+gfx_clear = 0x101014;
+gfx_setfont(1, "Arial", 16);
+gfx_r = 0.85; gfx_g = 0.9; gfx_b = 0.95; gfx_a = 1;
+gfx_x = 16; gfx_y = 14;
+gfx_printf("Codex Vocal Pitch Monitor");
+gfx_y += 26; gfx_x = 16;
+gfx_printf("Detected: %.1f Hz", estimated_hz);
+gfx_y += 22; gfx_x = 16;
+gfx_printf("Target: %.1f Hz  MIDI %.0f", target_hz, note_index);
+gfx_y += 22; gfx_x = 16;
+gfx_printf("Pitch error: %.1f cents", cents_error);
+gfx_y += 22; gfx_x = 16;
+gfx_printf("Gate: %.1f dB  Retune display: %.0f ms", gate_db_now, retune_ms);
+gfx_y += 28; gfx_x = 16;
+gfx_r = abs(cents_error) > 35 ? 1 : 0.25;
+gfx_g = abs(cents_error) <= 35 ? 0.9 : 0.45;
+gfx_b = 0.25;
+bar = min(abs(cents_error) / 100, 1) * 500;
+gfx_rect(16, 132, 500, 12, 0);
+gfx_rect(16, 132, bar, 12, 1);

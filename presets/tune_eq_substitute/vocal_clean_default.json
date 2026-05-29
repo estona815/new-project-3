@@ -1,0 +1,55 @@
+{
+  "name": "vocal_clean_default",
+  "schema_version": 1,
+  "purpose": "No-paid-plugin substitute for Antares/FabFilter-style vocal repair inside REAPER.",
+  "pitch_route": {
+    "engine": "ReaTune",
+    "helper_jsfx": "codex_vocal_pitch_monitor.jsfx",
+    "requires_isolated_vocal": true,
+    "key_scale_required": true,
+    "claim_policy": "Do not claim vocal tuned without pitch contour, settings, render, and before/after validation."
+  },
+  "dynamic_eq_route": {
+    "engine": "codex_pro_dynamic_ms_eq.jsfx",
+    "bands": [
+      {
+        "role": "low_mid_mud",
+        "freq_hz": 280,
+        "q": 1.0,
+        "mode": "Mid",
+        "max_cut_db": 2.0,
+        "risk": "hollow vocal body"
+      },
+      {
+        "role": "harshness_resonance",
+        "freq_hz": 3600,
+        "q": 1.3,
+        "mode": "Stereo",
+        "max_cut_db": 2.4,
+        "risk": "vocal presence loss"
+      },
+      {
+        "role": "sibilance_deess",
+        "freq_hz": 6800,
+        "q": 1.6,
+        "mode": "Stereo",
+        "max_cut_db": 2.6,
+        "risk": "lisp or dull consonants"
+      },
+      {
+        "role": "ai_fizz_side_air",
+        "freq_hz": 11200,
+        "q": 1.1,
+        "mode": "Side",
+        "max_cut_db": 2.0,
+        "risk": "width or air loss"
+      }
+    ]
+  },
+  "qc_guards": {
+    "max_brightness_loss_db": 1.0,
+    "max_transient_loss_ratio": 0.05,
+    "max_side_mid_change_db": 1.5,
+    "requires_human_ab": true
+  }
+}
