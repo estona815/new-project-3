@@ -5,6 +5,7 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 .venv/
+.venv_suno_rescue/
 venv/
 
 # Large generated media and transfer artifacts
@@ -20,13 +21,30 @@ venv/
 *.mov
 *.mkv
 *.zip
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.ass
+*.srt
+*.vtt
+*.rpp
+*.RPP
+*.rpp-bak
+*.RPP-bak
 
 # Local render/download work areas
 audio_work/
+deliverables/
 downloads/
 exports/
+drive_handoff/
 output/
+processed_audio/
 renders/
+tmp/
+external_models/audio-separator/
 suno_studio_extract/
 ESTONA_AUTO_MIX_ENGINE/00_EXTERNAL_REFS/
 ESTONA_AUTO_MIX_ENGINE/00_REFERENCES/approved_tracks/
@@ -36,3 +54,34 @@ ESTONA_AUTO_MIX_ENGINE/06_OUTPUTS/
 # Generated office deliverables
 *.docx
 *.pdf
+
+# Codex mix/master harness inputs and runtime output
+input/stems/*
+!input/stems/.gitkeep
+input/reference/*
+!input/reference/.gitkeep
+work/assets/*
+!work/assets/.gitkeep
+work/reaper_project/*
+!work/reaper_project/.gitkeep
+work/traces/*
+!work/traces/.gitkeep
+work/renders/*
+!work/renders/.gitkeep
+work/qc/*
+!work/qc/.gitkeep
+work/logs/*
+!work/logs/.gitkeep
+delivery/*
+!delivery/.gitkeep
+
+# REAPER local/cache artifacts
+*.reapeaks
+*.reapindex
+reaper_plugin_scan*.json
+plugin_inventory_local*.json
+
+# Sanitized REAPER templates may be tracked only from this explicit location.
+!reaper/templates/
+!reaper/templates/**/*.rpp
+!reaper/templates/**/*.RPP
