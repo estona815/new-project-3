@@ -1,0 +1,31 @@
+{
+  "accepted_observations_total": 0,
+  "blocked_observations_total": 9,
+  "blockers": [
+    "accepted_runtime_observations_missing"
+  ],
+  "checklist_path": "automix/review/plugin_semantic_validation_runtime_report_authoring_checklist.md",
+  "created_at": "2026-06-05T11:10:32Z",
+  "creates_validation_reports": false,
+  "limits": [
+    "This package writes review-only authoring templates, not validation reports.",
+    "No files are written under automix/analysis_reports by this package.",
+    "safe_to_write_parameters remains false until authored reports pass runtime evidence and semantic validation gates."
+  ],
+  "observation_gate_path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+  "observation_gate_status": "runtime_observations_missing",
+  "output_dir": "automix",
+  "project_name": "project",
+  "ready_for_manual_report_authoring": false,
+  "ready_for_runtime_evidence_gate": false,
+  "request_path": "automix/review/plugin_semantic_validation_runtime_report_authoring_package_request.md",
+  "runtime_report_authoring_package_ready": false,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-report-authoring-package-v1",
+  "status": "no_accepted_runtime_observations",
+  "template_dir": "automix/review/plugin_semantic_validation_runtime_report_authoring_templates",
+  "template_results": [],
+  "templates_total": 0,
+  "warnings": [],
+  "writes_analysis_reports": false
+}

@@ -1,0 +1,464 @@
+{
+  "blockers": [],
+  "created_at": "2026-06-30T16:40:48Z",
+  "git": {
+    "deleted_tracked_files": [
+      "AI_BEAT_LOGIC_WORKFLOW/00_INPUT_SUNO/.gitkeep",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/analysis.json",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/analysis_summary.md",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/bad_song_diagnosis.json",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/bad_song_diagnosis.md",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/session_options.json",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/song_structure_analysis.json",
+      "AI_BEAT_LOGIC_WORKFLOW/01_ANALYSIS/song_structure_summary.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/bassline_guide.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/composition_guide.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/composition_guide.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/creative_brief.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/creative_brief.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/drum_pattern_guide.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/edit_plan.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/hook_identity_plan.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/lead_melody_plan.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/logic_rescue_plan.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/production_intent.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/production_intent.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/rescue_arrangement_plan.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/rescue_arrangement_plan.md",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/sample_motif_rebuild_plan.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/topline_guide.json",
+      "AI_BEAT_LOGIC_WORKFLOW/02_EDIT_PLAN/vocal_texture_rescue_plan.json"
+    ],
+    "deleted_tracked_total": 1246,
+    "git_available": true,
+    "modified_or_deleted_short_status_total": 1253,
+    "tracked_sensitive_files": [
+      "reaper/0101_female_candidate_v10_qc_support/0101_REAPER_FEMALE_QC_SUPPORT_PROJECT.rpp",
+      "reaper/0101_suno_dual_voice_v06/0101_REAPER_DUAL_VOICE_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_dual_voice_v07_male_ref_overlap/0101_REAPER_DUAL_VOICE_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_dual_voice_v08_male_clear_strict_female_timing/0101_REAPER_DUAL_VOICE_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_studio_v01/0101_REAPER_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_studio_v02_balance_fix/0101_REAPER_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_studio_v03_vocal_down_melody_female_up/0101_REAPER_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_suno_studio_v04_real_female_audible_vocal_ride/0101_REAPER_MIX_MASTER_PROJECT.rpp",
+      "reaper/0101_v11_vocal_front_reference_rerender/0101_REAPER_V11_VOCAL_FRONT_PROJECT.rpp",
+      "reaper/0101_v12_clear_dry_vocal_rerender/0101_REAPER_V12_CLEAR_DRY_PROJECT.rpp",
+      "reaper/0101_v13_clear_tuned_female_layer_rerender/0101_REAPER_V13_CLEAR_TUNED_FEMALE_LAYER.rpp",
+      "reaper/0101_v14_reference_clean_tuned_panned_female/0101_REAPER_V14_REFERENCE_CLEAN_TUNED_PANNED_FEMALE.rpp",
+      "reaper/0101_v15_dry_vocal_clarity_final/reaper_session_clarity_pass.rpp",
+      "reaper/0101_v16_raw_core_sat_clarity/0101_REAPER_V16_RAW_CORE_SAT_CLARITY.rpp",
+      "reaper/0101_v17_vocal_pocket_synth_tame/0101_REAPER_V17_VOCAL_POCKET_SYNTH_TAME.rpp",
+      "reaper/0101_v18_endpoint_throw_female_up/0101_REAPER_V18_ENDPOINT_THROW_FEMALE_UP.rpp",
+      "reaper/0101_v19_final_vocal_redesign/0101_REAPER_V19_FINAL_VOCAL_REDESIGN.rpp",
+      "reaper/0101_v20_vocal_pocket_no_beat_drop/0101_REAPER_V20_VOCAL_POCKET_NO_BEAT_DROP.rpp",
+      "reaper/0101_v21_loud_side_mask_final/0101_REAPER_V21_LOUD_SIDE_MASK_FINAL.rpp",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_01-2026-05-24_173035.rpp-bak",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_01-2026-05-24_173232.rpp-bak",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_02_COMMERCIAL_BALANCE-2026-05-24_180512.rpp-bak",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_02_COMMERCIAL_BALANCE-2026-05-24_180628.rpp-bak",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_03_BEAT_FORWARD_LOUD-2026-05-24_181724.rpp-bak",
+      "reaper/Backups/FRESH_MIX_MASTER_PASS_05_CLEAN_MELODY_FORWARD-2026-05-24_185350.rpp-bak"
+    ],
+    "tracked_sensitive_total": 58,
+    "untracked_unignored_sensitive_files": [],
+    "untracked_unignored_sensitive_total": 0
+  },
+  "limits": [
+    "This audit is report-only and does not open REAPER, render audio, write plugin parameters, stage files, commit, or push.",
+    "A clean public upload still requires manual review of already tracked legacy media or REAPER project files.",
+    "Git ignore coverage protects future untracked files only; it does not remove files that are already tracked."
+  ],
+  "missing_ignore_patterns": [],
+  "missing_required_any_globs": [],
+  "missing_required_globs": [],
+  "missing_required_paths": [],
+  "output_dir": "automix",
+  "passed": true,
+  "project_name": "reaper-automix",
+  "readiness": {
+    "clean_public_upload_ready": false,
+    "opens_reaper": false,
+    "renders_audio": false,
+    "report_only": true,
+    "requires_manual_staging_review": true,
+    "safe_to_git_add_all": true,
+    "source_handoff_ready": true,
+    "writes_parameters": false
+  },
+  "required_any_globs": [
+    {
+      "count": 5,
+      "examples": [
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_ai_artifact_split_tamer.jsfx",
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_air_guard.jsfx",
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_demud_dynamic_eq.jsfx",
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_output_guard.jsfx",
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_presence_enhancer.jsfx"
+      ],
+      "name": "codex_jsfx",
+      "pattern_results": [
+        {
+          "count": 5,
+          "examples": [
+            "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_ai_artifact_split_tamer.jsfx",
+            "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_air_guard.jsfx",
+            "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_demud_dynamic_eq.jsfx",
+            "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_output_guard.jsfx",
+            "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_presence_enhancer.jsfx"
+          ],
+          "name": "codex_jsfx",
+          "pattern": "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/*.jsfx"
+        },
+        {
+          "count": 0,
+          "examples": [],
+          "name": "codex_jsfx",
+          "pattern": "reaper/jsfx/*"
+        }
+      ],
+      "patterns": [
+        "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/*.jsfx",
+        "reaper/jsfx/*"
+      ]
+    }
+  ],
+  "required_globs": [
+    {
+      "count": 131,
+      "examples": [
+        "automix/analyze_ai_pitch_source.py",
+        "automix/batch/__init__.py",
+        "automix/batch/batch_pitch_triage.py",
+        "automix/context/__init__.py",
+        "automix/context/compact_mix_context.py",
+        "automix/feedback/__init__.py",
+        "automix/feedback/feedback_action_mapping.py",
+        "automix/feedback/feedback_intake.py",
+        "automix/feedback/feedback_qc_integration.py",
+        "automix/feedback/revision_memory.py",
+        "automix/final_vocal_space_finish.py",
+        "automix/github_integration/__init__.py",
+        "automix/github_integration/audio_diagnostics.py",
+        "automix/github_integration/integration_manifest.py",
+        "automix/github_integration/reaper_dry_run_adapter.py",
+        "automix/github_integration/smoke.py",
+        "automix/harness/__init__.py",
+        "automix/harness/fixture_coverage_audit.py",
+        "automix/harness/github_upload_readiness.py",
+        "automix/harness/local_device_qc.py",
+        "automix/harness/mix_master_quality_harness.py",
+        "automix/harness/public_pc_handoff_package_audit.py",
+        "automix/harness/public_pc_legacy_api_regression_gate.py",
+        "automix/harness/public_pc_legacy_fixture_plan.py",
+        "automix/harness/public_pc_legacy_semantic_firewall_gate.py"
+      ],
+      "name": "automix_python_modules",
+      "pattern": "automix/**/*.py"
+    },
+    {
+      "count": 10,
+      "examples": [
+        "automix/apply_conservative_pitch_draft.lua",
+        "automix/apply_final_vocal_space_placement_draft.lua",
+        "automix/apply_final_vocal_space_placement_draft_configured.lua",
+        "automix/apply_premaster_draft.lua",
+        "automix/apply_vocal_placement_draft.lua",
+        "automix/apply_vocal_recovery_draft.lua",
+        "automix/chain_plans/final_vocal_space_applicator_plan.lua",
+        "automix/plugin_aliases.lua",
+        "automix/reaper_scripts/collect_plugin_semantic_validation_runtime.lua",
+        "automix/scan_reaper_plugin_inventory.lua"
+      ],
+      "name": "reaper_lua_scripts",
+      "pattern": "automix/**/*.lua"
+    },
+    {
+      "count": 94,
+      "examples": [
+        "tests/test_ab_quality_harness.py",
+        "tests/test_compact_mix_context.py",
+        "tests/test_final_placement_adapter_validation.py",
+        "tests/test_final_vocal_space_finish.py",
+        "tests/test_github_integration.py",
+        "tests/test_github_upload_readiness.py",
+        "tests/test_goal02_completion_audit.py",
+        "tests/test_goal02_final_delivery_package.py",
+        "tests/test_goal02_loudness_tools.py",
+        "tests/test_goal02_reference_match.py",
+        "tests/test_goal02_review_package.py",
+        "tests/test_install_reaper_jsfx.py",
+        "tests/test_local_device_qc.py",
+        "tests/test_manifest.py",
+        "tests/test_mix_master_quality_harness.py",
+        "tests/test_model_output_contract.py",
+        "tests/test_mwolla_v11_final_level_lock.py",
+        "tests/test_no_raw_full_mix_active.py",
+        "tests/test_plugin_trace_schema.py",
+        "tests/test_prompt10_developer_handoff.py",
+        "tests/test_prompt11_signal_path_audit.py",
+        "tests/test_prompt12_first_safety_patch.py",
+        "tests/test_prompt13_stft_mask_model_safety.py",
+        "tests/test_prompt14_conservative_soft_mask.py",
+        "tests/test_prompt15_source_preserve_guards.py"
+      ],
+      "name": "tests",
+      "pattern": "tests/test_*.py"
+    }
+  ],
+  "required_ignore_patterns": [
+    "*.wav",
+    "*.mp3",
+    "*.mp4",
+    "*.zip",
+    "*.rpp",
+    "*.RPP",
+    "*.jpg",
+    "*.png",
+    "*.ass",
+    "audio_work/",
+    "deliverables/",
+    "delivery/*",
+    "drive_handoff/",
+    "input/stems/*",
+    "input/reference/*",
+    "input/target/*",
+    "output/",
+    "processed_audio/",
+    "renders/",
+    "tmp/",
+    "tools/bin/",
+    "hwp_extract/",
+    "*.odt",
+    "work/assets/*",
+    "work/logs/*",
+    "work/qc/*",
+    "work/renders/*",
+    "work/reaper_project/*",
+    "work/traces/*"
+  ],
+  "required_paths": [
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "README.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "QUICKSTART.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "AGENTS.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "MIXMASTER_SPEC.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "PLUGIN_POLICY.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "QC_TARGETS.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "TESTING_AND_HARNESS.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "docs/automix_runbook.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "docs/github_integration_pipeline.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "docs/github_upload_readiness.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "prompts/new_computer_codex_bootstrap.md"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "configs/mix_profile.yaml"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "configs/plugin_allowlist.yaml"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "configs/qc_targets.yaml"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "configs/render_targets.yaml"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "requirements.txt"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "requirements-harness.txt"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "scripts/run_github_integration_smoke.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "scripts/run_github_upload_readiness.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "scripts/run_local_device_qc.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/detect_environment.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/build_asset_manifest.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/install_reaper_jsfx.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/run_reaper_pipeline.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/qc_audio.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "tools/package_delivery.py"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "delivery/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "input/reference/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "input/stems/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "input/target/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/assets/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/logs/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/qc/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/reaper_project/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/renders/.gitkeep"
+    },
+    {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "work/traces/.gitkeep"
+    }
+  ],
+  "schema": "automix-github-upload-readiness-v1",
+  "status": "github_upload_source_ready",
+  "warnings": [
+    "deleted_tracked_files_present_stage_or_review_before_upload",
+    "tracked_sensitive_files_present_manual_history_cleanup_recommended"
+  ],
+  "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+}

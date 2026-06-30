@@ -1,0 +1,70 @@
+{
+  "actions": [
+    {
+      "mode": "offline",
+      "reason": "ZIP handoff source-of-truth files, recipes, scripts, and tools must be complete before integration.",
+      "status": "passed",
+      "step": "restore_validate_handoff"
+    },
+    {
+      "mode": "offline",
+      "reason": "Use target_mix_recipe plus Lua recipe/scripts as the dry-run mix/master contract.",
+      "status": "ready",
+      "step": "recipe_script_consistency_pass"
+    },
+    {
+      "mode": "reaper_dry_run_only",
+      "reason": "Classify stems, build role buses, and verify reference/full-mix tracks stay out of PREMASTER BUS.",
+      "status": "ready",
+      "step": "dry_run_stem_classification_and_routing"
+    },
+    {
+      "mode": "reaper_observed_validation",
+      "reason": "High-quality automation must not write FX parameters until controls are semantically validated.",
+      "status": "blocked",
+      "step": "semantic_plugin_validation"
+    },
+    {
+      "mode": "operator_evidence",
+      "reason": "Accepted stems/source exports are required before applied mix or premaster claims.",
+      "status": "blocked",
+      "step": "source_acceptance"
+    },
+    {
+      "mode": "offline_plan",
+      "reason": "Build vocal-first balance, role-bus routing, conservative FX, send returns, and premaster headroom plan.",
+      "status": "planning_ready",
+      "step": "high_quality_mix_plan"
+    },
+    {
+      "mode": "offline_plan",
+      "reason": "Premaster remains draft-only until measured render, A/B, rollback, and final QC evidence exist.",
+      "status": "planning_ready",
+      "step": "premaster_safety_plan"
+    },
+    {
+      "mode": "post_render_evidence",
+      "reason": "Delivery or high-confidence quality claims require final render evidence, QC metrics, and loudness-matched A/B.",
+      "status": "blocked",
+      "step": "render_qc_ab_delivery_gates"
+    }
+  ],
+  "claim_limits": [
+    "offline_readiness_plan_only",
+    "does_not_apply_fx_or_render_audio",
+    "does_not_approve_delivery_or_reference_match_claims"
+  ],
+  "contains_master_limiter_on_original": false,
+  "contains_master_widening": false,
+  "contains_reference_audio_content": false,
+  "draft_only": true,
+  "modifies_original_master": false,
+  "modifies_original_tracks": false,
+  "no_fixed_parameter_indexes": true,
+  "original_master_must_remain_untouched": true,
+  "original_tracks_must_remain_untouched": true,
+  "plugin_chain": [],
+  "project_name": "project",
+  "safe_to_apply": false,
+  "schema": "automix-high-quality-mix-master-readiness-plan-v1"
+}

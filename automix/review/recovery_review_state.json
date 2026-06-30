@@ -1,0 +1,17 @@
+{
+  "accepted_drafts": [],
+  "created_at": "2026-05-31T09:49:08Z",
+  "drafts": [],
+  "global_downstream_allowed": false,
+  "manual_cleanup_required": [],
+  "needs_revision": [],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "rejected_drafts": [],
+  "review_status": "completed",
+  "schema": "automix-recovery-review-state-v1",
+  "stem_required": [],
+  "updated_at": "2026-05-31T09:49:08Z",
+  "warnings": [
+    "no_recovery_drafts_to_review"
+  ]
+}

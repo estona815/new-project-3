@@ -1,0 +1,19 @@
+{
+  "accepted_recovery_drafts_not_overwritten": true,
+  "failures": [],
+  "no_limiter_inserted_on_master": true,
+  "no_pitch_plugin_inserted": true,
+  "original_master_unchanged": true,
+  "original_media_unchanged": true,
+  "original_routing_unchanged": true,
+  "original_tracks_unchanged": true,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "protection_passed": true,
+  "rollback_exists_for_all_changes": true,
+  "rollback_instructions": "Delete draft buses/tracks and sends listed in final_vocal_space_carving_rollback.json if any draft was created.",
+  "schema": "automix-final-vocal-space-protection-report-v1",
+  "strict_protection": true,
+  "warnings": [
+    "track_audit_loaded_from_analysis_reports_compatibility_path"
+  ]
+}

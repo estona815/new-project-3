@@ -1,0 +1,27 @@
+{
+  "disabled_plugins": [
+    {
+      "automatic_parameter_writes_allowed": false,
+      "fallback_candidate": "ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "plugin_name": "OTT (Xfer Records)",
+      "resolution": "disable_for_automatic_drafts"
+    },
+    {
+      "automatic_parameter_writes_allowed": false,
+      "fallback_candidate": "ReaEQ plus ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "resolution": "disable_for_automatic_drafts"
+    }
+  ],
+  "limits": [
+    "This template is not accepted evidence until operator_acknowledged is true for each disabled plugin.",
+    "Disabled plugins are not proof that fallback plugins are safe to write.",
+    "Fallback parameter writes still require semantic validation reports."
+  ],
+  "operator_acknowledgement_required": true,
+  "schema": "automix-plugin-availability-disable-manifest-template-v1"
+}

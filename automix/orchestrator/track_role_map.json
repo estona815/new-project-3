@@ -1,0 +1,8 @@
+{
+  "project_name": "project",
+  "roles": [],
+  "schema": "automix-track-role-map-v1",
+  "warnings": [
+    "no_tracks_available_for_role_detection"
+  ]
+}

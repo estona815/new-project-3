@@ -1,0 +1,6 @@
+{
+  "schema": "automix-orchestrator-vocal-placement-analysis-v1",
+  "warnings": [
+    "placement analysis report-only"
+  ]
+}

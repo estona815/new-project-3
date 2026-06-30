@@ -1,0 +1,11 @@
+{
+  "formant_drift_score_reject": 0.35,
+  "metallic_increase_score_reject": 0.30,
+  "tail_warble_score_reject": 0.25,
+  "reverb_tail_pitch_drag_score_reject": 0.25,
+  "clarity_loss_db_reject": -1.5,
+  "air_loss_db_reject": -2.0,
+  "transient_loss_reject": 0.25,
+  "stereo_width_change_reject": 0.20,
+  "difference_source_energy_reject": 0.35
+}

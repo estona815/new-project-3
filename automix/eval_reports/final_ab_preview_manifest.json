@@ -1,0 +1,12 @@
+{
+  "schema": "automix-final-ab-preview-v1",
+  "source_original": "",
+  "source_final": "",
+  "segments": [],
+  "loudness_matched": false,
+  "output_path": "",
+  "created": false,
+  "warnings": [
+    "ab_preview_not_requested_or_missing_sources"
+  ]
+}

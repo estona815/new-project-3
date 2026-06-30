@@ -1,0 +1,16 @@
+{
+  "human_reviewed": false,
+  "limits": [
+    "Do not mark human_reviewed true without actual matched-loudness listening.",
+    "This review is not final export approval.",
+    "If the preview sounds worse at matched loudness, keep the export blocked."
+  ],
+  "loudness_matched_reviewed": false,
+  "notes": "",
+  "preview_output_path": "",
+  "review_decision": "pending",
+  "reviewer": "",
+  "schema": "automix-ab-preview-review-manifest-template-v1",
+  "source_final": "",
+  "source_original": ""
+}

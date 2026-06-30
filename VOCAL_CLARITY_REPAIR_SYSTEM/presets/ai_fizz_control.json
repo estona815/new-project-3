@@ -1,0 +1,7 @@
+{
+  "hpf_hz": 90,
+  "presence_db": 1.0,
+  "air_db": 0.0,
+  "deess_hz": 7200,
+  "fizz_guard_hz": 12000
+}

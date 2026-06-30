@@ -1,0 +1,7 @@
+{
+  "pitch_drafts_created": 0,
+  "schema": "automix-orchestrator-pitch-triage-v1",
+  "warnings": [
+    "pitch_triage_report_only_no_audio"
+  ]
+}

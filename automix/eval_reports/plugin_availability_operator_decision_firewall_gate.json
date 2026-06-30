@@ -1,0 +1,81 @@
+{
+  "accepted_entries": [],
+  "accepted_manifest": {
+    "exists": false,
+    "safe_to_write_parameters": false,
+    "schema": ""
+  },
+  "blockers": [],
+  "candidate_entries": [
+    {
+      "automatic_parameter_writes_allowed": false,
+      "blockers": [],
+      "fallback_candidate": "ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "plugin_name": "OTT (Xfer Records)",
+      "resolution": "disable_for_automatic_drafts",
+      "status": "candidate_safe",
+      "warnings": []
+    },
+    {
+      "automatic_parameter_writes_allowed": false,
+      "blockers": [],
+      "fallback_candidate": "ReaEQ plus ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "resolution": "disable_for_automatic_drafts",
+      "status": "candidate_safe",
+      "warnings": []
+    }
+  ],
+  "candidate_manifest": {
+    "candidate_only": true,
+    "exists": true,
+    "safe_to_write_parameters": false,
+    "schema": "automix-plugin-availability-disable-manifest-candidate-v1"
+  },
+  "counts": {
+    "accepted_decisions_total": 0,
+    "candidate_decisions_total": 2,
+    "missing_accepted_decisions_total": 2,
+    "required_decisions_total": 2
+  },
+  "created_at": "2026-06-05T12:32:36Z",
+  "limits": [
+    "This gate does not install plugins, open REAPER, write parameters, render, or approve audio.",
+    "Candidate manifests are operator drafts only and must not count as accepted decisions.",
+    "Accepted disable manifests still do not grant fallback parameter write safety.",
+    "Fallback writes remain blocked until semantic validation reports pass."
+  ],
+  "output_dir": "automix",
+  "passed": true,
+  "project_name": "project",
+  "readiness": {
+    "accepted_operator_manifest_ready": false,
+    "availability_decisions_ready": false,
+    "candidate_counts_as_accepted_operator_evidence": false,
+    "candidate_manifest_firewalled_from_accepted_evidence": true,
+    "ready_for_plugin_preflight_rerun": false,
+    "report_only": true,
+    "safe_to_claim_final_audio_or_delivery": false,
+    "safe_to_write_parameters": false
+  },
+  "required_decisions": [
+    "OTT (Xfer Records)",
+    "TDR Nova (Tokyo Dawn Labs)"
+  ],
+  "schema": "automix-plugin-availability-operator-decision-firewall-gate-v1",
+  "sources": {
+    "accepted_manifest_path": "automix/review/plugin_availability_disable_manifest.json",
+    "candidate_manifest_path": "automix/review/plugin_availability_disable_manifest_candidate.json",
+    "decision_gate_path": "automix/eval_reports/plugin_availability_decision_gate.json",
+    "operator_decision_package_path": "automix/eval_reports/plugin_availability_operator_decision_package.json",
+    "resolution_plan_path": "automix/eval_reports/plugin_availability_resolution_plan.json"
+  },
+  "status": "operator_decision_candidate_firewalled_pending_acknowledgement",
+  "warnings": [
+    "accepted_operator_decision_manifest_missing:2"
+  ]
+}

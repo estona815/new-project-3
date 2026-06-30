@@ -1,0 +1,21 @@
+{
+  "blocked_reasons": [
+    "placement_review_not_accepted_or_premaster_not_requested",
+    "premaster_plugin_mapping_not_ready"
+  ],
+  "chain": [],
+  "created": false,
+  "disallowed": [
+    "pitch_correction",
+    "master_widening",
+    "high_end_boost",
+    "final_export",
+    "loudness_chasing"
+  ],
+  "draft_only": true,
+  "final_export_allowed": false,
+  "original_master_untouched": true,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "schema": "automix-final-safe-premaster-chain-plan-v1",
+  "selected_profile": "blocked_until_placement_review"
+}

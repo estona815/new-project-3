@@ -1,0 +1,80 @@
+{
+  "schema": "automix-prompt32-audit-report-v1",
+  "prompt31_files_found": [
+    {
+      "component": "source_classification",
+      "file": "automix/analyze_ai_pitch_source.py",
+      "functions": ["analyze_source", "run_analysis"]
+    },
+    {
+      "component": "pitch_analysis",
+      "file": "automix/analyze_ai_pitch_source.py",
+      "functions": ["estimate_pitch_contour", "pitch_metrics"]
+    },
+    {
+      "component": "pitch_correction_decision_policy",
+      "file": "automix/analyze_ai_pitch_source.py",
+      "functions": ["build_chain_plan"]
+    },
+    {
+      "component": "plugin_adapter_semantic_mapping",
+      "file": "automix/pitch_adapter_semantics.json",
+      "functions": ["semantic contract only"]
+    },
+    {
+      "component": "draft_track_creation",
+      "file": "automix/apply_conservative_pitch_draft.lua",
+      "functions": ["duplicate_selected_track_as_muted_draft"]
+    },
+    {
+      "component": "ab_evaluation",
+      "file": "automix/analyze_ai_pitch_source.py",
+      "functions": ["evaluate_pitch_ab"]
+    },
+    {
+      "component": "human_review_report",
+      "file": "automix/analyze_ai_pitch_source.py",
+      "functions": ["write_human_report"]
+    },
+    {
+      "component": "tests",
+      "file": "tests/test_prompt31_ai_pitch_workflow.py",
+      "functions": ["prompt31 regression tests"]
+    },
+    {
+      "component": "already_mixed_ai_docs",
+      "file": "docs/already_mixed_ai_pitch_correction.md",
+      "functions": ["documentation"]
+    },
+    {
+      "component": "automix_runbook",
+      "file": "docs/automix_runbook.md",
+      "functions": ["documentation"]
+    }
+  ],
+  "missing_prompt31_components": [],
+  "unsafe_behaviors_found": [
+    {
+      "issue": "Prompt 31 decision policy was local to analyze_ai_pitch_source.py instead of a central reusable safety gate.",
+      "patched_by_prompt32": "automix/pitch/pitch_safety_gate.py"
+    },
+    {
+      "issue": "Prompt 31 A/B metrics did not explicitly fail when loudness-matched or difference renders were missing.",
+      "patched_by_prompt32": "automix/pitch/pitch_evaluation.py"
+    },
+    {
+      "issue": "Prompt 31 draft rollback metadata did not include original/draft GUIDs and source report paths.",
+      "patched_by_prompt32": "automix/apply_conservative_pitch_draft.lua"
+    }
+  ],
+  "test_framework_detected": true,
+  "test_framework_notes": "Python test files are present. pytest is not installed in the local system Python, so direct test-function execution is used for validation.",
+  "recommended_patch_plan": [
+    "Add central fail-closed PitchSafetyGate.",
+    "Move conservative semantic settings into source-aware profiles.",
+    "Require high-confidence adapter semantic controls before parameter writes.",
+    "Make missing A/B renders fail evaluation.",
+    "Add rollback metadata and original-track modification assertions for the REAPER draft applicator.",
+    "Add Prompt 32 regression fixtures and tests."
+  ]
+}

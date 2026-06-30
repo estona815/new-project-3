@@ -1,0 +1,10 @@
+{
+  "blockers": [],
+  "created_at": "2026-06-05T12:48:26Z",
+  "files_scanned": 240,
+  "findings": [],
+  "output_dir": "automix",
+  "passed": true,
+  "schema": "automix-claim-language-guard-v1",
+  "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+}

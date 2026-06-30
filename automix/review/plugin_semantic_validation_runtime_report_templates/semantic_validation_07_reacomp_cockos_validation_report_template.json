@@ -1,0 +1,34 @@
+{
+  "adapter_id": "",
+  "controls": {
+    "example_semantic_control": {
+      "confidence": 0.0,
+      "notes": "Replace this template control only after REAPER runtime response is observed by parameter name or verified helper.",
+      "target_name": "",
+      "validated": false,
+      "write_allowed": false
+    }
+  },
+  "job_id": "semantic_validation_07_reacomp_cockos",
+  "limits": [
+    "This template is not a validation report.",
+    "Do not place this template in automix/analysis_reports as passing evidence.",
+    "Do not write parameters from this template."
+  ],
+  "no_fake_success": false,
+  "plugin_name": "ReaComp (Cockos)",
+  "required_fields_for_real_report": [
+    "schema=automix-plugin-parameter-validation-report-v1",
+    "status=passed only after observed parameter response",
+    "safe_for_automix=true only when at least one semantic control is validated and write-safe",
+    "no_fake_success=true only when the report is not claiming success without safe controls",
+    "controls.<semantic>.target_name",
+    "controls.<semantic>.confidence>=0.85",
+    "controls.<semantic>.write_allowed=true",
+    "controls.<semantic>.validated=true"
+  ],
+  "safe_for_automix": false,
+  "schema": "automix-plugin-parameter-validation-report-template-v1",
+  "status": "template_not_runtime_observed",
+  "target_runtime_report_schema": "automix-plugin-parameter-validation-report-v1"
+}

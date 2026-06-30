@@ -1,0 +1,21 @@
+{
+  "expected_reports": [
+    "automix/eval_reports/final_qc_metrics.json",
+    "automix/eval_reports/final_qc_evidence_gate.json",
+    "automix/eval_reports/final_render_evidence_gate.json",
+    "automix/export/final_render_manifest.json"
+  ],
+  "limits": [
+    "This template is not final approval.",
+    "Final QC evidence does not replace loudness-matched A/B review or human listening.",
+    "Do not use missing, diagnostic, or mismatched QC metrics as delivery evidence."
+  ],
+  "required_checks": [
+    "final_qc_metrics.json uses schema automix-final-qc-metrics-v1",
+    "final_audio_path exists, is a readable nonempty WAV, and matches final render evidence",
+    "file_integrity values match the actual WAV header",
+    "qc_passed is true and failures is empty",
+    "clipping, digital black, unexpected silence, and true-peak ceiling blockers are absent"
+  ],
+  "schema": "automix-final-qc-evidence-manifest-template-v1"
+}

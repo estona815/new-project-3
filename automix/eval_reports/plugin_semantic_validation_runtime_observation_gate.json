@@ -1,0 +1,282 @@
+{
+  "accepted_observations_total": 0,
+  "blocked_observations_total": 9,
+  "blocked_queue_jobs": [
+    {
+      "blockers": [
+        "availability_decision_missing:OTT (Xfer Records)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "OTT (Xfer Records)"
+    },
+    {
+      "blockers": [
+        "availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)"
+    }
+  ],
+  "blocked_queue_jobs_total": 2,
+  "blockers": [
+    "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "runtime_observation_missing:semantic_validation_02_reaverbate_cockos",
+    "runtime_observation_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+    "runtime_observation_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+    "runtime_observation_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+    "runtime_observation_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+    "runtime_observation_missing:semantic_validation_07_reacomp_cockos",
+    "runtime_observation_missing:semantic_validation_08_readelay_cockos",
+    "runtime_observation_missing:semantic_validation_09_reaeq_cockos"
+  ],
+  "collector_jobs_total": 9,
+  "collector_package_path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+  "created_at": "2026-06-05T11:08:07Z",
+  "creates_validation_reports": false,
+  "job_results": [
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_02_reaverbate_cockos"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_02_reaverbate_cockos",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "ReaVerbate (Cockos)",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_02_reaverbate_cockos_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_07_reacomp_cockos"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_07_reacomp_cockos",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "ReaComp (Cockos)",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_07_reacomp_cockos_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_08_readelay_cockos"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_08_readelay_cockos",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "ReaDelay (Cockos)",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_08_readelay_cockos_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_09_reaeq_cockos"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_09_reaeq_cockos",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "ReaEQ (Cockos)",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_09_reaeq_cockos_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    }
+  ],
+  "limits": [
+    "This gate validates raw collector observations only.",
+    "Raw observations are not passing plugin parameter validation reports.",
+    "safe_to_write_parameters remains false; report authoring, runtime evidence, and semantic validation gates must pass later."
+  ],
+  "next_blocked_observation": {
+    "actual_fx_name": "",
+    "add_inserted": false,
+    "blockers": [
+      "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+    ],
+    "creates_validation_reports": false,
+    "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "job_status": "blocked",
+    "json_valid": false,
+    "observation_exists": false,
+    "observation_schema": "",
+    "observation_status": "",
+    "param_count": 0,
+    "parameters_observed_total": 0,
+    "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+    "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_observation.json",
+    "raw_parameters_only": true,
+    "ready_for_manual_report_authoring": false,
+    "safe_to_write_parameters": false,
+    "warnings": []
+  },
+  "observation_request_path": "automix/review/plugin_semantic_validation_runtime_observation_request.md",
+  "output_dir": "automix",
+  "project_name": "project",
+  "ready_for_manual_report_authoring": false,
+  "ready_for_runtime_evidence_gate": false,
+  "report_authoring_request_path": "automix/review/plugin_semantic_validation_runtime_report_authoring_request.md",
+  "requires_operator_review": true,
+  "requires_reaper_runtime": true,
+  "runtime_observations_ready": false,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-observation-gate-v1",
+  "status": "runtime_observations_missing",
+  "warnings": [
+    "blocked_queue_jobs_remain:2"
+  ]
+}

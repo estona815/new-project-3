@@ -1,0 +1,75 @@
+custom_jsfx:
+  - JS: Codex Vocal AI Artifact Split Tamer
+  - JS: Codex Dynamic EQ Band
+  - JS: Codex Pro Dynamic MS EQ
+  - JS: Codex MS Melody Tuck
+  - JS: Codex Presence Tilt
+  - JS: Codex Noise Floor Tamer
+  - JS: Codex V20 Channel Polish
+  - JS: Codex V20 Master Glue
+  - JS: Codex Vocal Gate Expander
+  - JS: Codex Vocal Pitch Monitor
+  - JS: Codex Glitch Diffuse Spread
+  - JS: Vocal Clarity De-Mud Dynamic EQ
+  - JS: Vocal Clarity Presence Enhancer
+  - JS: Vocal Clarity Air Guard
+  - JS: Vocal Clarity Output Guard
+
+cockos:
+  - VST: ReaEQ (Cockos)
+  - VST: ReaComp (Cockos)
+  - VST: ReaXcomp (Cockos)
+  - VST: ReaFIR (Cockos)
+  - VST: ReaGate (Cockos)
+  - VST: ReaDelay (Cockos)
+  - VST: ReaVerb (Cockos)
+  - VST: ReaVerbate (Cockos)
+  - VST: ReaLimit (Cockos)
+  - VST: ReaPitch (Cockos)
+  - VST: ReaTune (Cockos)
+  - VST: ReaVocode (Cockos)
+  - VST: ReaVoice (Cockos)
+  - VST: ReaStream (Cockos)
+  - VST: ReaSurround (Cockos)
+  - VST: ReaSurroundPan (Cockos)
+  - VSTi: ReaSamplOmatic5000 (Cockos)
+  - VSTi: ReaSynth (Cockos)
+  - VSTi: ReaSynDr (Cockos)
+  - VST: ReaControlMIDI (Cockos)
+  - VST: ReaInsert (Cockos)
+  - VST: ReaCast (Cockos)
+
+stock_jsfx:
+  - JS: De-esser
+  - JS: Delay/time_adjustment
+
+external_insert_only:
+  - VST3: OTT
+  - VST3: TDR Nova (Tokyo Dawn Labs)
+  - VST3: TDR Kotelnikov (Tokyo Dawn Labs)
+  - VST3: ClearMaster Audit
+  - VST3: Graillon 3
+  - VST3: BYOD
+  - VST3: Decapitator
+  - VST3: FreeClip
+  - VST3: Fresh Air
+  - VST3: IVGI2
+  - VST3: Krush
+  - VST3: MAutoPitch
+  - VST3: mvMeter2
+  - VST3: Ozone 12 Equalizer
+  - VST3: Ozone Imager 2
+  - VST3: Raum
+  - VST3: UADx LA-2A Tube Compressor
+  - VST3: UADx 1176 FET Compressor
+  - VST3: ValhallaSupermassive
+  - VST3: ValhallaVintageVerb
+  - VST3: Vocal Doubler
+  - VST3: Wider
+
+parameter_write_policy:
+  custom_jsfx: allowed
+  cockos_verified_mapping: allowed
+  external_uncalibrated: blocked
+  external_insert_only_requires_trace: true
+  missing_plugins_must_be_logged: true

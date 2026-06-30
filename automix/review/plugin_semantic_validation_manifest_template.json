@@ -1,0 +1,164 @@
+{
+  "limits": [
+    "Do not mark reports passed unless REAPER runtime validation observed the parameter response.",
+    "Plugin availability alone is not semantic write safety.",
+    "Unknown or preset/license/random/quality parameters must remain skipped."
+  ],
+  "required_reports": [
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx*.json",
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_ott_xfer_records*.json",
+      "plugin_name": "OTT (Xfer Records)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos*.json",
+      "plugin_name": "ReaComp (Cockos)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos*.json",
+      "plugin_name": "ReaDelay (Cockos)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos*.json",
+      "plugin_name": "ReaEQ (Cockos)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos*.json",
+      "plugin_name": "ReaVerbate (Cockos)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_tdr_nova_tokyo_dawn_labs*.json",
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx*.json",
+      "plugin_name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx*.json",
+      "plugin_name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx*.json",
+      "plugin_name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    },
+    {
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx*.json",
+      "plugin_name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "required_fields": [
+        "schema=automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "controls.<semantic>.validated=true",
+        "controls.<semantic>.write_allowed=true",
+        "controls.<semantic>.confidence>=0.85",
+        "controls.<semantic>.target_name present"
+      ]
+    }
+  ],
+  "schema": "automix-plugin-semantic-validation-manifest-template-v1"
+}

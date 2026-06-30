@@ -1,0 +1,37 @@
+{
+  "adapter_id": "readelay_adapter",
+  "controls": {
+    "delay_time_ms": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    },
+    "dry_wet": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    },
+    "feedback": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    }
+  },
+  "no_fake_success": true,
+  "plugin_name": "ReaDelay",
+  "reason_codes": [
+    "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+  ],
+  "safe_for_automix": false,
+  "scan_time": "2026-05-31T08:41:11Z",
+  "schema": "automix-plugin-parameter-validation-report-v1",
+  "schema_errors": [],
+  "status": "validation_unavailable",
+  "validator_version": "automix-plugin-parameter-validator-v1"
+}

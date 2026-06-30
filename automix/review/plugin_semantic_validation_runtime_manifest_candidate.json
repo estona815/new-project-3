@@ -1,0 +1,94 @@
+{
+  "candidate_only": true,
+  "limits": [
+    "This candidate is not operator evidence until every queued job is actually observed in REAPER.",
+    "Keep this file as a draft or copy it to plugin_semantic_validation_runtime_manifest.json only after completing the runtime collection.",
+    "safe_to_write_parameters must remain false."
+  ],
+  "operator_ready_to_run": false,
+  "queue_jobs": [
+    {
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "operator_acknowledged": false,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_02_reaverbate_cockos",
+      "operator_acknowledged": false,
+      "plugin_name": "ReaVerbate (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_07_reacomp_cockos",
+      "operator_acknowledged": false,
+      "plugin_name": "ReaComp (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos_rerun_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_08_readelay_cockos",
+      "operator_acknowledged": false,
+      "plugin_name": "ReaDelay (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos_rerun_reaper_observed.json"
+    },
+    {
+      "job_id": "semantic_validation_09_reaeq_cockos",
+      "operator_acknowledged": false,
+      "plugin_name": "ReaEQ (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos_rerun_reaper_observed.json"
+    }
+  ],
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-manifest-v1"
+}

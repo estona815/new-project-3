@@ -1,0 +1,19 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "missing required semantic control",
+  "coverage_tags": [
+    "missing_plugin",
+    "semantic_control_missing"
+  ],
+  "input": {
+    "missing_controls": [
+      "dry_wet"
+    ]
+  },
+  "expected_stage_status": "requires_plugin_mapping",
+  "expected_decision": "plugin_mapping_required",
+  "expected_blockers": [
+    "SEMANTIC_CONTROL_MISSING"
+  ],
+  "expected_reports": []
+}

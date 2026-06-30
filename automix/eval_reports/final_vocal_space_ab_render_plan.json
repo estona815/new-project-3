@@ -1,0 +1,18 @@
+{
+  "blocked": true,
+  "evaluation_passed_without_renders": false,
+  "loudness_matched_required": true,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "render_enabled": false,
+  "renders": {
+    "current_accepted_mix": "",
+    "difference_render": "",
+    "loudness_matched_placement_draft": "",
+    "vocal_space_placement_draft": ""
+  },
+  "requires_human_ab_review": true,
+  "schema": "automix-final-vocal-space-ab-render-plan-v1",
+  "warnings": [
+    "render not enabled; plan only"
+  ]
+}

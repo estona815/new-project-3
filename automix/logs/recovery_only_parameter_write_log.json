@@ -1,0 +1,11 @@
+{
+  "commercial_plugins_require_validated_adapter": true,
+  "created_at": "2026-05-31T09:36:55Z",
+  "fixed_parameter_indexes_used": false,
+  "individual_logs": [],
+  "low_confidence_parameters_skipped": false,
+  "parameters_skipped": [],
+  "parameters_written": [],
+  "schema": "automix-recovery-only-parameter-write-log-v1",
+  "unknown_parameters_skipped": true
+}

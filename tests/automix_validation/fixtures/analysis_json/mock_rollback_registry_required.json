@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "rollback registry required",
+  "coverage_tags": [
+    "rollback"
+  ],
+  "input": {
+    "rollback_registry_missing": true,
+    "safe_to_apply": false
+  },
+  "expected_stage_status": "requires_rollback",
+  "expected_decision": "rollback_required",
+  "expected_blockers": [
+    "ROLLBACK_METADATA_MISSING"
+  ],
+  "expected_reports": []
+}

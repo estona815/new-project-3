@@ -1,0 +1,9 @@
+{
+  "drafts_created": 0,
+  "project_name": "project",
+  "schema": "automix-orchestrator-vocal-recovery-analysis-v1",
+  "tracks_analyzed": 0,
+  "warnings": [
+    "analysis_only_no_audio_recovery_rendered"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "expected_registry": "automix/rollback/global_rollback_registry.json",
+  "limits": [
+    "This template is not final approval.",
+    "Rollback evidence does not prove audio quality.",
+    "Scan-only/report-only runs may have no applied stages, but must still prove originals are protected."
+  ],
+  "required_checks": [
+    "original_tracks_protected is true",
+    "original_master_protected is true",
+    "validation.passed is true",
+    "each applied stage has a rollback_file",
+    "each rollback_file exists and is nonempty",
+    "each entry has safe_to_rollback true"
+  ],
+  "schema": "automix-rollback-evidence-manifest-template-v1"
+}

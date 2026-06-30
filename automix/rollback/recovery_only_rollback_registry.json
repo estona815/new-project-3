@@ -1,0 +1,10 @@
+{
+  "all_entries_valid": true,
+  "created_at": "2026-05-31T09:36:55Z",
+  "entries": [],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "schema": "automix-recovery-only-rollback-registry-v1",
+  "warnings": [
+    "no_recovery_drafts_created_no_rollback_entries"
+  ]
+}

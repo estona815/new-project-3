@@ -1,0 +1,242 @@
+{
+  "accepted_lead_vocal": "",
+  "accepted_recovery_draft_must_remain_untouched": true,
+  "apply_requested": false,
+  "blocked_adjustments": [
+    "pitch_correction",
+    "full_mix_pitch_experiment",
+    "robotic_autotune",
+    "stereo_widening_on_vocal",
+    "heavy_compression",
+    "ott",
+    "aggressive_saturation",
+    "master_limiter_on_original_master",
+    "final_delivery_export"
+  ],
+  "contains_master_limiter": false,
+  "contains_pitch_correction": false,
+  "draft_only": true,
+  "fragile_source": false,
+  "original_lead_vocal_reference": "",
+  "original_tracks_must_remain_untouched": true,
+  "plugin_chain": [
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "utility_gain",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "REAPER utility gain on draft bus only",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "max_vocal_gain_db": 1.0,
+        "vocal_gain_db": 0.3
+      },
+      "target_role": "lead_vocal"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "sidechain_dynamic_eq",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated ReaEQ/ReaXcomp/TDR Nova-style dynamic EQ adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "duck_attack_ms": 20,
+        "duck_release_ms": 180,
+        "instrumental_duck_db": -0.9,
+        "low_mid_duck_db": -0.7,
+        "presence_duck_db": -1.2,
+        "sibilance_conflict_duck_db": -0.5
+      },
+      "target_role": "instrumental_bus"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "multiband_ducker",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated ReaXcomp sidechain draft adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "duck_attack_ms": 20,
+        "duck_release_ms": 180,
+        "instrumental_duck_db": -0.9
+      },
+      "target_role": "instrumental_bus"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "ms_cleanup",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated JS M/S utility adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "ms_mid_cleanup": 0.1,
+        "ms_side_cleanup": 0.06
+      },
+      "target_role": "instrumental_bus"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "sidechain_ducker",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated ReaComp/ReaXcomp sidechain adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "backing_vocal_duck_db": -1.3,
+        "duck_attack_ms": 20,
+        "duck_release_ms": 180
+      },
+      "target_role": "backing_vocals"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "send_return_ducker",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated ReaComp send-return ducking adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "duck_attack_ms": 20,
+        "duck_release_ms": 180,
+        "send_duck_db": -1.0
+      },
+      "target_role": "send_returns"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "harshness_guard",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "validated dynamic EQ/de-esser adapter",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "vocal_harshness_guard": 0.12,
+        "vocal_sibilance_guard": 0.1
+      },
+      "target_role": "lead_vocal"
+    },
+    {
+      "adapter_confidence": 0.0,
+      "adapter_confidence_gate_enforced": true,
+      "category": "output_gain",
+      "no_fixed_parameter_indexes": true,
+      "plugin": "REAPER utility gain on draft bus only",
+      "requires_parameter_discovery": true,
+      "safe_to_apply": false,
+      "semantic_settings": {
+        "vocal_gain_db": 0.3
+      },
+      "target_role": "lead_vocal"
+    }
+  ],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "safe_to_apply": false,
+  "schema": "automix-final-vocal-space-carving-chain-plan-v1",
+  "selected_profile": "vocal_forward_space_carve",
+  "semantic_controls_skipped": {
+    "backing_vocal_duck_db": {
+      "category": "sidechain_ducker",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -1.3
+    },
+    "duck_attack_ms": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 20
+    },
+    "duck_release_ms": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 180
+    },
+    "instrumental_duck_db": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -0.9
+    },
+    "low_mid_duck_db": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -0.7
+    },
+    "max_vocal_gain_db": {
+      "category": "utility_gain",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 1.0
+    },
+    "ms_mid_cleanup": {
+      "category": "ms_cleanup",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 0.1
+    },
+    "ms_side_cleanup": {
+      "category": "ms_cleanup",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 0.06
+    },
+    "presence_duck_db": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -1.2
+    },
+    "send_duck_db": {
+      "category": "send_return_ducker",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -1.0
+    },
+    "sibilance_conflict_duck_db": {
+      "category": "sidechain_dynamic_eq",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": -0.5
+    },
+    "vocal_gain_db": {
+      "category": "utility_gain",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 0.3
+    },
+    "vocal_harshness_guard": {
+      "category": "harshness_guard",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 0.12
+    },
+    "vocal_sibilance_guard": {
+      "category": "harshness_guard",
+      "reason": "draft_not_applied_or_adapter_unavailable",
+      "value": 0.1
+    }
+  },
+  "semantic_controls_written": {},
+  "semantic_settings": {
+    "backing_vocal_duck_db": -1.3,
+    "duck_attack_ms": 20,
+    "duck_release_ms": 180,
+    "instrumental_duck_db": -0.9,
+    "low_mid_duck_db": -0.7,
+    "max_vocal_gain_db": 1.0,
+    "ms_mid_cleanup": 0.1,
+    "ms_side_cleanup": 0.06,
+    "no_pitch": true,
+    "no_widening": true,
+    "presence_duck_db": -1.2,
+    "send_duck_db": -1.0,
+    "sibilance_conflict_duck_db": -0.5,
+    "vocal_gain_db": 0.3,
+    "vocal_harshness_guard": 0.12,
+    "vocal_sibilance_guard": 0.1
+  },
+  "warnings": [
+    "no accepted recovery vocal source; analysis is blocked placeholder",
+    "no_accepted_recovery_sources",
+    "plugin_adapter_gate_not_ready_for_placement"
+  ]
+}

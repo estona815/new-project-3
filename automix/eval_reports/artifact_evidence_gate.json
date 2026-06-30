@@ -1,0 +1,315 @@
+{
+  "artifact_evidence_established": false,
+  "blockers": [
+    "artifact_evidence_not_established",
+    "measured_artifact_metrics_missing"
+  ],
+  "created_at": "2026-06-02T15:39:29Z",
+  "feedback_candidate": {
+    "ai_artifact_feedback_count": 0,
+    "baseline_status": "no_feedback_recorded",
+    "blockers": [
+      "feedback_baseline_is_not_user_evidence",
+      "user_artifact_feedback_missing"
+    ],
+    "evidence_type": "user_feedback",
+    "feedback_memory_exists": true,
+    "no_feedback_fabricated": true,
+    "passed": false,
+    "pending_unresolved_count": 0,
+    "total_entries": 0,
+    "warnings": []
+  },
+  "limits": [
+    "This gate validates artifact evidence only; it does not process audio or claim cleanup.",
+    "Measured metrics must come from real render/QC reports, not report-only placeholders.",
+    "Human A/B review and plugin/source gates remain required before artifact suppression."
+  ],
+  "manifest_path": "",
+  "manifest_results": [],
+  "measured_artifact_metrics_established": false,
+  "metric_candidates": [
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "final_qc.vocal_preservation.ai_fizz_score",
+      "passed": false,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    },
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "final_qc.vocal_preservation.metallic_artifact_score",
+      "passed": false,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    },
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "final_qc.vocal_preservation.sibilance_splatter_score",
+      "passed": false,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    },
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "premaster.ai_artifact_risk_profile.high_fizz_risk",
+      "passed": false,
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    },
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "premaster.ai_artifact_risk_profile.metallic_harshness_risk",
+      "passed": false,
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    },
+    {
+      "blockers": [
+        "artifact_metric_below_threshold",
+        "artifact_metric_report_only"
+      ],
+      "evidence_type": "measured_metric",
+      "metric": "premaster.ai_artifact_risk_profile.sibilance_splatter_risk",
+      "passed": false,
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "threshold": 0.25,
+      "value": 0.0,
+      "warnings": [
+        "metric_exists_but_not_from_measured_render"
+      ]
+    }
+  ],
+  "output_dir": "automix",
+  "project_name": "project",
+  "ready_for_artifact_review": false,
+  "safe_to_run_artifact_suppression": false,
+  "schema": "automix-artifact-evidence-gate-v1",
+  "source_candidates": [
+    {
+      "blockers": [
+        "ai_or_already_processed_vocals_not_present"
+      ],
+      "count": 0,
+      "evidence_type": "source_classification",
+      "passed": false,
+      "signal": "ai_or_already_processed_vocals",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "source_separated_vocals_not_present"
+      ],
+      "count": 0,
+      "evidence_type": "source_classification",
+      "passed": false,
+      "signal": "source_separated_vocals",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "safe_vocal_candidates",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "raw_vocal",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "safe_vocal_candidates",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "raw_vocal",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "stem_required_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "stem_required_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "unknown_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 PRINTED VOCAL REVERB SEND",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "unknown_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 PRINTED VOCAL DELAY SEND",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "unknown_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 RETURN ReaVerbate dark send",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "unknown_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 RETURN ReaDelay filtered throw",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "high_risk_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": []
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "blockers": [
+        "track_artifact_signal_below_threshold"
+      ],
+      "evidence_type": "source_classification",
+      "group": "high_risk_tracks",
+      "passed": false,
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": []
+    }
+  ],
+  "summary": {
+    "artifact_evidence_established": false,
+    "measured_artifact_metrics_established": false,
+    "passed_feedback_evidence": 0,
+    "passed_metric_evidence": 0,
+    "passed_source_evidence": 0,
+    "ready_for_artifact_review": false
+  },
+  "template_path": "automix/review/artifact_evidence_manifest_template.json",
+  "warnings": [
+    "feedback:feedback_baseline_is_not_user_evidence",
+    "feedback:user_artifact_feedback_missing",
+    "report_only_metric:final_qc.vocal_preservation.ai_fizz_score",
+    "report_only_metric:final_qc.vocal_preservation.metallic_artifact_score",
+    "report_only_metric:final_qc.vocal_preservation.sibilance_splatter_score",
+    "report_only_metric:premaster.ai_artifact_risk_profile.high_fizz_risk",
+    "report_only_metric:premaster.ai_artifact_risk_profile.metallic_harshness_risk",
+    "report_only_metric:premaster.ai_artifact_risk_profile.sibilance_splatter_risk"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "final_fallback": "bypass_placement_fx_and_mark_manual_mix_required",
+  "iterations": [
+    {
+      "decision": "initial_review_required",
+      "iteration": 0,
+      "metrics": {
+        "damage_scores": {
+          "ai_artifact_exposure_increase": 0.0,
+          "beat_impact_loss": 0.0,
+          "drum_pump_score": 0.0,
+          "instrumental_hollowing": 0.0,
+          "lead_melody_damage": 0.0,
+          "low_end_loss_db": 0.0,
+          "phase_worsening": 0.0,
+          "sibilance_worsening": 0.0,
+          "stereo_shift": 0.0,
+          "vocal_harshness_increase": 0.0,
+          "vocal_thinness_increase": 0.0
+        },
+        "evaluation_passed": false,
+        "improvement_scores": {
+          "backing_conflict_reduction": 0.0,
+          "masking_reduction": 0.0,
+          "send_tail_masking_reduction": 0.0,
+          "vocal_center_stability_delta": 0.0,
+          "vocal_clarity_delta": 0.0,
+          "vocal_forwardness_delta": 0.0
+        },
+        "recommended_action": "manual_review_required",
+        "renders_created": {
+          "current_mix": false,
+          "difference": false,
+          "loudness_matched": false,
+          "placement_draft": false
+        },
+        "schema": "automix-final-vocal-space-eval-metrics-v1",
+        "warnings": [
+          "missing render means no pass"
+        ]
+      },
+      "settings": {
+        "backing_vocal_duck_db": -1.3,
+        "duck_attack_ms": 20,
+        "duck_release_ms": 180,
+        "instrumental_duck_db": -0.9,
+        "low_mid_duck_db": -0.7,
+        "max_vocal_gain_db": 1.0,
+        "ms_mid_cleanup": 0.1,
+        "ms_side_cleanup": 0.06,
+        "no_pitch": true,
+        "no_widening": true,
+        "presence_duck_db": -1.2,
+        "send_duck_db": -1.0,
+        "sibilance_conflict_duck_db": -0.5,
+        "vocal_gain_db": 0.3,
+        "vocal_harshness_guard": 0.12,
+        "vocal_sibilance_guard": 0.1
+      },
+      "stop_if_still_failing": false
+    },
+    {
+      "decision": "reduce_ducking_gain_release_ms_cleanup",
+      "iteration": 1,
+      "metrics": {},
+      "settings": {
+        "backing_vocal_duck_db": -0.91,
+        "duck_attack_ms": 20,
+        "duck_release_ms": 216.0,
+        "instrumental_duck_db": -0.63,
+        "low_mid_duck_db": -0.49,
+        "max_vocal_gain_db": 1.0,
+        "ms_mid_cleanup": 0.07,
+        "ms_side_cleanup": 0.042,
+        "no_pitch": true,
+        "no_widening": true,
+        "presence_duck_db": -0.84,
+        "send_duck_db": -0.7,
+        "sibilance_conflict_duck_db": -0.35,
+        "vocal_gain_db": 0.105,
+        "vocal_harshness_guard": 0.084,
+        "vocal_sibilance_guard": 0.07
+      },
+      "stop_if_still_failing": false
+    },
+    {
+      "decision": "switch_to_fragile_or_minimal_disable_problem_blocks",
+      "iteration": 2,
+      "metrics": {},
+      "settings": {
+        "backing_vocal_duck_db": -0.91,
+        "disable_ms_cleanup_if_stereo_shift": true,
+        "disable_send_ducking_if_pumping": true,
+        "duck_attack_ms": 20,
+        "duck_release_ms": 216.0,
+        "instrumental_duck_db": -0.63,
+        "low_mid_duck_db": -0.49,
+        "max_vocal_gain_db": 1.0,
+        "ms_mid_cleanup": 0.07,
+        "ms_side_cleanup": 0.042,
+        "no_pitch": true,
+        "no_widening": true,
+        "presence_duck_db": -0.84,
+        "preserve_lead_melody_if_damaged": true,
+        "send_duck_db": -0.7,
+        "sibilance_conflict_duck_db": -0.35,
+        "switch_profile": "fragile_ai_vocal_space",
+        "vocal_gain_db": 0.105,
+        "vocal_harshness_guard": 0.084,
+        "vocal_sibilance_guard": 0.07
+      },
+      "stop_if_still_failing": true
+    }
+  ],
+  "max_iterations": 2,
+  "never_intensify_after_damage": true,
+  "schema": "automix-final-vocal-space-iteration-history-v1"
+}

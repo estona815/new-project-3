@@ -1,0 +1,18 @@
+{
+  "schema": "automix-reference-match-rollback-v1",
+  "original_tracks": [],
+  "draft_tracks": [],
+  "created_buses": [],
+  "created_sends": [],
+  "plugins_inserted": [],
+  "parameters_written": [],
+  "routing_changes": [],
+  "adjustment_plan": "automix/chain_plans/project_reference_match_adjustment_plan.json",
+  "comparison_report": "automix/eval_reports/reference_match_comparison.json",
+  "created_at": "2026-05-31T08:23:01Z",
+  "safe_to_delete_draft": true,
+  "original_mix_untouched": true,
+  "original_master_untouched": true,
+  "contains_pitch_correction": false,
+  "contains_reference_audio_content": false
+}

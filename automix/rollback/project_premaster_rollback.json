@@ -1,0 +1,19 @@
+{
+  "schema": "automix-premaster-rollback-v1",
+  "created_at": "2026-05-31T08:00:53Z",
+  "project_name": "project",
+  "original_master_snapshot": {
+    "source_mix_path": "",
+    "original_master_must_remain_untouched": true
+  },
+  "draft_tracks": [],
+  "plugins_inserted": [],
+  "parameters_written": [],
+  "routing_changes": [],
+  "chain_plan": "automix/chain_plans/project_premaster_chain_plan.json",
+  "analysis_report": "automix/analysis_reports/project_premaster_safety_analysis.json",
+  "safe_to_delete_draft": true,
+  "original_master_untouched": true,
+  "contains_pitch_correction": false,
+  "contains_master_limiter_on_original": false
+}

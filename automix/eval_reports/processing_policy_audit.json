@@ -1,0 +1,113 @@
+{
+  "blockers": [],
+  "created_at": "2026-06-05T11:41:25Z",
+  "dry_wet_cap": 0.3,
+  "output_dir": "automix",
+  "passed": true,
+  "plan_results": [
+    {
+      "blockers": [],
+      "draft_only": true,
+      "passed": true,
+      "path": "automix/chain_plans/final_safe_premaster_chain_plan.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/final_safe_premaster_chain_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-final-safe-premaster-chain-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:final_safe_premaster_chain_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": false,
+      "passed": true,
+      "path": "automix/chain_plans/final_vocal_space_applicator_plan.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/final_vocal_space_applicator_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-final-vocal-space-applicator-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:final_vocal_space_applicator_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": true,
+      "passed": true,
+      "path": "automix/chain_plans/final_vocal_space_carving_chain_plan.json",
+      "plugin_chain_count": 8,
+      "relative_path": "automix/chain_plans/final_vocal_space_carving_chain_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-final-vocal-space-carving-chain-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:final_vocal_space_carving_chain_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": true,
+      "passed": true,
+      "path": "automix/chain_plans/high_quality_mix_master_readiness_plan.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/high_quality_mix_master_readiness_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-high-quality-mix-master-readiness-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:high_quality_mix_master_readiness_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": true,
+      "passed": true,
+      "path": "automix/chain_plans/project_premaster_chain_plan.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/project_premaster_chain_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-premaster-chain-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:project_premaster_chain_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": true,
+      "passed": true,
+      "path": "automix/chain_plans/project_reference_match_adjustment_plan.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/project_reference_match_adjustment_plan.json",
+      "safe_to_apply": false,
+      "schema": "automix-reference-adjustment-plan-v1",
+      "warnings": [
+        "chain_plan_policy_clean:project_reference_match_adjustment_plan.json"
+      ]
+    },
+    {
+      "blockers": [],
+      "draft_only": false,
+      "passed": true,
+      "path": "automix/chain_plans/real_project_dry_run_chain_proposals.json",
+      "plugin_chain_count": 0,
+      "relative_path": "automix/chain_plans/real_project_dry_run_chain_proposals.json",
+      "safe_to_apply": false,
+      "schema": "automix-real-project-dry-run-chain-proposals-v1",
+      "warnings": [
+        "chain_plan_policy_clean:real_project_dry_run_chain_proposals.json"
+      ]
+    }
+  ],
+  "plans_checked": 7,
+  "project_name": "project",
+  "safe_to_apply": true,
+  "schema": "automix-processing-policy-audit-v1",
+  "warnings": [
+    "chain_plan_policy_clean:final_safe_premaster_chain_plan.json",
+    "chain_plan_policy_clean:final_vocal_space_applicator_plan.json",
+    "chain_plan_policy_clean:final_vocal_space_carving_chain_plan.json",
+    "chain_plan_policy_clean:high_quality_mix_master_readiness_plan.json",
+    "chain_plan_policy_clean:project_premaster_chain_plan.json",
+    "chain_plan_policy_clean:project_reference_match_adjustment_plan.json",
+    "chain_plan_policy_clean:real_project_dry_run_chain_proposals.json"
+  ]
+}

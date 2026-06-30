@@ -1,0 +1,13 @@
+{
+  "classification_source": "offline_track_name_heuristic",
+  "full_mix_unsafe_tracks": 0,
+  "project_name": "project",
+  "schema": "automix-orchestrator-source-classification-summary-v1",
+  "stem_required_tracks": 0,
+  "tracks_total": 0,
+  "unknown_tracks_skipped": 0,
+  "vocal_like_tracks": 0,
+  "warnings": [
+    "audio_source_classification_not_run_no_track_audio"
+  ]
+}

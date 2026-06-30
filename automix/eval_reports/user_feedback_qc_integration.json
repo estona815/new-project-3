@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-06-05T11:41:25Z",
+  "feedback_summary": {
+    "baseline_status": "no_feedback_recorded",
+    "category_counts": {},
+    "dry_run_only": true,
+    "exists": true,
+    "latest_entry_id": "",
+    "latest_pass_id": "",
+    "no_feedback_fabricated": true,
+    "path": "automix/review/user_feedback_revision_memory.json",
+    "pending_unresolved_count": 0,
+    "repeated_categories": [],
+    "requires_human_review": false,
+    "resolution_records_count": 0,
+    "resolved_feedback_count": 0,
+    "schema": "automix-user-feedback-summary-v1",
+    "total_entries": 0,
+    "warnings": []
+  },
+  "items": [],
+  "output_dir": "automix",
+  "project_name": "project",
+  "qc_evidence_files": {
+    "ab_preview": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_ab_preview_manifest.json",
+      "relative_path": "eval_reports/final_ab_preview_manifest.json"
+    },
+    "final_qc": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "relative_path": "eval_reports/final_qc_metrics.json"
+    },
+    "global_qc": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/global_qc_summary.json",
+      "relative_path": "eval_reports/global_qc_summary.json"
+    },
+    "premaster_eval": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/project_premaster_eval_metrics.json",
+      "relative_path": "eval_reports/project_premaster_eval_metrics.json"
+    },
+    "translation_check": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/project_translation_check.json",
+      "relative_path": "eval_reports/project_translation_check.json"
+    },
+    "vocal_placement_eval": {
+      "exists": false,
+      "json_valid": false,
+      "path": "automix/eval_reports/vocal_placement_eval_metrics.json",
+      "relative_path": "eval_reports/vocal_placement_eval_metrics.json"
+    },
+    "vocal_recovery_eval": {
+      "exists": false,
+      "json_valid": false,
+      "path": "automix/eval_reports/vocal_recovery_eval_metrics.json",
+      "relative_path": "eval_reports/vocal_recovery_eval_metrics.json"
+    }
+  },
+  "schema": "automix-user-feedback-qc-integration-v1",
+  "summary": {
+    "dry_run_only_until_resolved": false,
+    "items_with_missing_qc_metrics": 0,
+    "requires_human_review": false,
+    "resolved_with_evidence_count": 0,
+    "total_feedback_items": 0,
+    "unresolved_or_incomplete_count": 0
+  },
+  "warnings": []
+}

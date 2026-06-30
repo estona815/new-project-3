@@ -1,4 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-v13_balanced,mgmg_mashup_v13_vocal_blended_stems_clear_balanced_24-48.wav,48000,int32,109.6,-1.65,-11.31,9.66,0.9754,-19.05,28.675,22.754,10.303,22.6,11.112,2.831,1.725,-8.8,2.4,-1.0,-16.0,-8.9,-6.5
-v13_loud,mgmg_mashup_v13_vocal_blended_stems_clear_loud_24-48.wav,48000,int32,109.6,-1.65,-10.68,9.03,0.9747,-18.92,28.27,22.291,10.539,22.923,11.359,2.873,1.746,-8.1,2.3,-1.0,-15.2,-8.2,-5.9
-v13_preview_mp3,mgmg_mashup_v13_preview_320.mp3,48000,float32 decoded_from_mp3,109.6,-1.11,-11.31,10.2,0.9753,-19.03,28.673,22.755,10.303,22.596,11.113,2.833,1.727,-8.8,2.4,-0.9,-16.0,-8.9,-6.5

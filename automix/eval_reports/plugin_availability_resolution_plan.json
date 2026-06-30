@@ -1,0 +1,79 @@
+{
+  "blockers": [],
+  "created_at": "2026-06-05T11:07:45Z",
+  "disable_manifest_plugins_total": 2,
+  "disable_manifest_template": "automix/review/plugin_availability_disable_manifest_template.json",
+  "limits": [
+    "This plan does not install plugins, open REAPER, write parameters, render, or approve audio.",
+    "Disabling an unavailable plugin only removes it from automatic drafts after explicit operator acknowledgement.",
+    "Fallback candidates require their own semantic validation before parameter writes."
+  ],
+  "output_dir": "automix",
+  "pending_operator_decisions": [
+    "OTT (Xfer Records)",
+    "TDR Nova (Tokyo Dawn Labs)"
+  ],
+  "project_name": "project",
+  "resolutions": [
+    {
+      "automatic_parameter_writes_allowed": false,
+      "available": false,
+      "category": "third_party_or_unknown",
+      "disallowed_actions": [
+        "claim this plugin was used while unavailable",
+        "replace it with a fallback without semantic validation evidence",
+        "write parameters to any substitute based on catalog fallback text alone"
+      ],
+      "fallback_candidate": "ReaXcomp",
+      "fallback_requires_validation": true,
+      "family": "ott",
+      "install_or_disable_allowed": true,
+      "operator_decision_required": true,
+      "plugin_name": "OTT (Xfer Records)",
+      "rationale": "Optional third-party plugins are not required for safe automation; disable them unless the user installs and validates them.",
+      "recommended_resolution": "disable_for_automatic_drafts",
+      "required_evidence": [
+        "explicit operator choice to install, disable, or keep manual-review only",
+        "updated plugin validation preflight after installation or disable decision",
+        "semantic validation report before any fallback or installed plugin parameter writes"
+      ],
+      "severity": "review",
+      "source_action_id": "install_or_disable_unavailable_plugin"
+    },
+    {
+      "automatic_parameter_writes_allowed": false,
+      "available": false,
+      "category": "third_party_or_unknown",
+      "disallowed_actions": [
+        "claim this plugin was used while unavailable",
+        "replace it with a fallback without semantic validation evidence",
+        "write parameters to any substitute based on catalog fallback text alone"
+      ],
+      "fallback_candidate": "ReaEQ plus ReaXcomp",
+      "fallback_requires_validation": true,
+      "family": "tdr_nova",
+      "install_or_disable_allowed": true,
+      "operator_decision_required": true,
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "rationale": "Optional third-party plugins are not required for safe automation; disable them unless the user installs and validates them.",
+      "recommended_resolution": "disable_for_automatic_drafts",
+      "required_evidence": [
+        "explicit operator choice to install, disable, or keep manual-review only",
+        "updated plugin validation preflight after installation or disable decision",
+        "semantic validation report before any fallback or installed plugin parameter writes"
+      ],
+      "severity": "review",
+      "source_action_id": "install_or_disable_unavailable_plugin"
+    }
+  ],
+  "safe_to_continue_report_only": true,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-availability-resolution-plan-v1",
+  "source_action_plan": "automix/eval_reports/plugin_validation_action_plan.json",
+  "source_capability_catalog": "automix/plugin_capability_catalog.json",
+  "status": "operator_resolution_required",
+  "unavailable_plugins_total": 2,
+  "warnings": [
+    "operator_disable_or_install_decision_required"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "evaluation_passed": false,
+  "premaster_passed": false,
+  "recommended_action": "manual_review_required",
+  "renders_created": {
+    "difference": false,
+    "loudness_matched": false,
+    "placement_draft": false,
+    "premaster_draft": false
+  },
+  "schema": "automix-final-safe-premaster-eval-metrics-v1",
+  "warnings": [
+    "premaster A/B render not enabled; no pass"
+  ]
+}

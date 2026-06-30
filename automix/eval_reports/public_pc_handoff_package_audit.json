@@ -1,0 +1,316 @@
+{
+  "blockers": [],
+  "bundle_path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350",
+  "created_at": "2026-06-05T12:16:35Z",
+  "import_candidates": [
+    {
+      "id": "legacy_reaper_lua_as_regression_fixtures",
+      "ready": true,
+      "required_paths": [
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/apply_mix_recipe.lua",
+          "relative_path": "scripts/apply_mix_recipe.lua",
+          "size_bytes": 4265
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/plugin_registry.lua",
+          "relative_path": "scripts/plugin_registry.lua",
+          "size_bytes": 3527
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/validate_project_routing.lua",
+          "relative_path": "scripts/validate_project_routing.lua",
+          "size_bytes": 2903
+        }
+      ],
+      "safe_import_mode": "read_only_fixture_or_manual_review",
+      "summary": "Use legacy REAPER Lua scripts as read-only fixtures for API safety and routing regression tests."
+    },
+    {
+      "id": "recipe_schema_regression",
+      "ready": true,
+      "required_paths": [
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/mix_recipe.schema.json",
+          "relative_path": "recipes/schemas/mix_recipe.schema.json",
+          "size_bytes": 11280
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/qc_actions.schema.json",
+          "relative_path": "recipes/schemas/qc_actions.schema.json",
+          "size_bytes": 4177
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/json/target_mix_recipe.json",
+          "relative_path": "recipes/json/target_mix_recipe.json",
+          "size_bytes": 50480
+        }
+      ],
+      "safe_import_mode": "read_only_fixture_or_manual_review",
+      "summary": "Use legacy mix/qc schemas and recipes as schema-compatibility fixtures."
+    },
+    {
+      "id": "historical_validation_evidence_review",
+      "ready": true,
+      "required_paths": [
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/handoff_validation_actual_targets_20260605.json",
+          "relative_path": "review/handoff_validation_actual_targets_20260605.json",
+          "size_bytes": 1669
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/red_team_report.md",
+          "relative_path": "review/red_team_report.md",
+          "size_bytes": 13360
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/mix_risk_report.md",
+          "relative_path": "review/mix_risk_report.md",
+          "size_bytes": 5906
+        }
+      ],
+      "safe_import_mode": "read_only_fixture_or_manual_review",
+      "summary": "Review historical handoff validation and red-team notes before merging any legacy behavior."
+    },
+    {
+      "id": "public_pc_handoff_docs",
+      "ready": true,
+      "required_paths": [
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/HANDOFF.md",
+          "relative_path": "HANDOFF.md",
+          "size_bytes": 9133
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/PROJECT_STATE.md",
+          "relative_path": "PROJECT_STATE.md",
+          "size_bytes": 5540
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/NEXT_CODEX_PROMPT.md",
+          "relative_path": "NEXT_CODEX_PROMPT.md",
+          "size_bytes": 3269
+        },
+        {
+          "exists": true,
+          "is_file": true,
+          "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/RESTORE_ON_OTHER_COMPUTER.md",
+          "relative_path": "RESTORE_ON_OTHER_COMPUTER.md",
+          "size_bytes": 3885
+        }
+      ],
+      "safe_import_mode": "read_only_fixture_or_manual_review",
+      "summary": "Use handoff docs to preserve intent, restore notes, and next-step prompts without importing secrets or caches."
+    }
+  ],
+  "inventory": {
+    "audio_file_count": 1,
+    "audio_files": [
+      "source_workspaces/tttt/data/assets/audio/phase1_sample.wav"
+    ],
+    "by_extension": {
+      ".ass": 1,
+      ".csv": 1,
+      ".jsfx": 2,
+      ".json": 51,
+      ".lua": 23,
+      ".md": 79,
+      ".ps1": 2,
+      ".py": 88,
+      ".sha256": 8,
+      ".srt": 2,
+      ".toml": 1,
+      ".txt": 4,
+      ".wav": 1,
+      ".yaml": 7,
+      ".zip": 11,
+      "<none>": 1
+    },
+    "code_like_file_count": 253,
+    "reaper_project_file_count": 0,
+    "reaper_project_files": [],
+    "total_files": 282
+  },
+  "limits": [
+    "This audit only evaluates the public-PC handoff package as development evidence.",
+    "The package does not prove final audio quality, REAPER runtime behavior, or user approval.",
+    "Legacy code from this bundle must remain read-only fixture material until reviewed against current fail-closed gates."
+  ],
+  "manifest": {
+    "collected_archive_count": 19,
+    "created_at": "2026-06-05T15:23:52",
+    "error": "",
+    "excluded_source_file_count": 34,
+    "included_source_file_count": 259,
+    "loaded": true,
+    "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/PACKAGE_MANIFEST.json"
+  },
+  "passed": true,
+  "project_name": "project",
+  "readiness": {
+    "opens_reaper": false,
+    "ready_for_targeted_fixture_import": true,
+    "renders_audio": false,
+    "report_only": true,
+    "safe_to_claim_final_audio_or_delivery": false,
+    "safe_to_merge_code_without_review": false,
+    "usable_for_development_planning": true,
+    "usable_for_runtime_audio_qc": false,
+    "writes_parameters": false
+  },
+  "ready_import_candidates": [
+    "legacy_reaper_lua_as_regression_fixtures",
+    "recipe_schema_regression",
+    "historical_validation_evidence_review",
+    "public_pc_handoff_docs"
+  ],
+  "reaper_auto_mix_required_files": [
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/README.md",
+      "relative_path": "README.md",
+      "size_bytes": 4529
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/HANDOFF.md",
+      "relative_path": "HANDOFF.md",
+      "size_bytes": 9133
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/PROJECT_STATE.md",
+      "relative_path": "PROJECT_STATE.md",
+      "size_bytes": 5540
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/NEXT_CODEX_PROMPT.md",
+      "relative_path": "NEXT_CODEX_PROMPT.md",
+      "size_bytes": 3269
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/project_manifest.json",
+      "relative_path": "project_manifest.json",
+      "size_bytes": 2218
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/handoff_validation_actual_targets_20260605.json",
+      "relative_path": "review/handoff_validation_actual_targets_20260605.json",
+      "size_bytes": 1669
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/red_team_report.md",
+      "relative_path": "review/red_team_report.md",
+      "size_bytes": 13360
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/apply_mix_recipe.lua",
+      "relative_path": "scripts/apply_mix_recipe.lua",
+      "size_bytes": 4265
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/plugin_registry.lua",
+      "relative_path": "scripts/plugin_registry.lua",
+      "size_bytes": 3527
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/validate_project_routing.lua",
+      "relative_path": "scripts/validate_project_routing.lua",
+      "size_bytes": 2903
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/tools/validate_recipe.py",
+      "relative_path": "tools/validate_recipe.py",
+      "size_bytes": 9303
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/mix_recipe.schema.json",
+      "relative_path": "recipes/schemas/mix_recipe.schema.json",
+      "size_bytes": 11280
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/qc_actions.schema.json",
+      "relative_path": "recipes/schemas/qc_actions.schema.json",
+      "size_bytes": 4177
+    }
+  ],
+  "reaper_auto_mix_root": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix",
+  "schema": "automix-public-pc-handoff-package-audit-v1",
+  "source_workspace": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt",
+  "status": "handoff_package_ready_for_targeted_development",
+  "top_level_required_files": [
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/README_FIRST.md",
+      "relative_path": "README_FIRST.md",
+      "size_bytes": 1103
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/SCAN_AND_SCOPE_REPORT.md",
+      "relative_path": "SCAN_AND_SCOPE_REPORT.md",
+      "size_bytes": 1528
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/PACKAGE_MANIFEST.json",
+      "relative_path": "PACKAGE_MANIFEST.json",
+      "size_bytes": 24980
+    }
+  ],
+  "warnings": [
+    "windows_origin_paths_detected",
+    "no_rpp_project_file_in_bundle",
+    "limited_audio_evidence_in_bundle"
+  ]
+}

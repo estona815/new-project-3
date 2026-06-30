@@ -1,0 +1,21 @@
+{
+  "apply_allowed": false,
+  "chain_plan_path": "automix/chain_plans/final_vocal_space_carving_chain_plan.json",
+  "created_at": "2026-05-31T10:24:37Z",
+  "draft_buses": [
+    "FINAL VOCAL SPACE BUS"
+  ],
+  "draft_tracks": [
+    "FINAL VOCAL SPACE LEAD DRAFT"
+  ],
+  "final_export_blocked": true,
+  "fx_to_insert": [],
+  "mapping_report_path": "automix/eval_reports/final_placement_adapter_mapping_report.json",
+  "master_modification_blocked": true,
+  "no_fixed_parameter_indexes": true,
+  "parameter_writes_require_name_match": true,
+  "pitch_correction_blocked": true,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "rollback_output_path": "automix/rollback/final_vocal_space_reaper_applicator_rollback.json",
+  "schema": "automix-final-vocal-space-applicator-plan-v1"
+}

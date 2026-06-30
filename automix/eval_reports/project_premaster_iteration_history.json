@@ -1,0 +1,7 @@
+{
+  "schema": "automix-premaster-iteration-history-v1",
+  "max_iterations": 3,
+  "iterations": [],
+  "final_decision": "mix_revision_required",
+  "never_intensify_loudness_after_damage": true
+}

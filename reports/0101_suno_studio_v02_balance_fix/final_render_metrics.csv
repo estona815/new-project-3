@@ -1,4 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-male_lead_wav,0101_FINAL_male_lead.wav,48000,int32,139.441,-1.23,-12.14,10.92,0.9277,-14.25,43.589,21.571,11.012,16.126,6.29,0.917,0.496,-10.3,2.6,-1.2,-42.0,-10.1,-9.0
-female_alt_wav,0101_FINAL_female_alt.wav,48000,int32,139.441,-1.23,-13.57,12.34,0.7719,-8.9,52.039,21.995,8.188,14.838,2.333,0.356,0.251,-11.8,4.1,-1.2,-42.3,-12.1,-9.9
-dual_vocal_wav,0101_FINAL_dual_vocal.wav,48000,int32,139.441,-1.22,-13.02,11.8,0.9128,-13.41,43.384,20.418,11.426,18.308,5.303,0.732,0.428,-11.2,3.4,-1.2,-41.9,-11.2,-9.2

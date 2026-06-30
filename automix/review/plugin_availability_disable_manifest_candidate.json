@@ -1,0 +1,32 @@
+{
+  "candidate_only": true,
+  "disabled_plugins": [
+    {
+      "automatic_parameter_writes_allowed": false,
+      "fallback_candidate": "ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "operator_note": "",
+      "plugin_name": "OTT (Xfer Records)",
+      "resolution": "disable_for_automatic_drafts"
+    },
+    {
+      "automatic_parameter_writes_allowed": false,
+      "fallback_candidate": "ReaEQ plus ReaXcomp",
+      "fallback_requires_validation": true,
+      "operator_acknowledged": false,
+      "operator_note": "",
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "resolution": "disable_for_automatic_drafts"
+    }
+  ],
+  "limits": [
+    "This candidate is not accepted evidence.",
+    "Copy decisions into plugin_availability_disable_manifest.json only after explicit operator acknowledgement.",
+    "Fallback parameter writes remain blocked until semantic validation reports pass."
+  ],
+  "operator_acknowledgement_required": true,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-availability-disable-manifest-candidate-v1",
+  "target_schema_after_operator_acceptance": "automix-plugin-availability-disable-manifest-v1"
+}

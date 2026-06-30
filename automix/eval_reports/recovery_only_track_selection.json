@@ -1,0 +1,162 @@
+{
+  "blocked_tracks": [
+    {
+      "blocked_reason_codes": [
+        "FULL_MIX_UNSAFE_FOR_VOCAL_RECOVERY",
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "provide_isolated_stem",
+      "role": "full_mix_reference",
+      "source_classification": "full_mix",
+      "stem_required": true,
+      "track_guid": "{8617EFFB-D580-4F47-92BA-01F68788AAD9}",
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": [
+        "audio_read_failed:source_full_mix_reference.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "FULL_MIX_UNSAFE_FOR_VOCAL_RECOVERY",
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "provide_isolated_stem",
+      "role": "instrumental_bus",
+      "source_classification": "full_mix",
+      "stem_required": true,
+      "track_guid": "{789EE8C5-6F76-0B46-AD9E-C49C912834DD}",
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": [
+        "audio_read_failed:instrumental_vocal_pocket.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "lead_vocal",
+      "source_classification": "raw_vocal",
+      "stem_required": false,
+      "track_guid": "{66FD05FC-C225-9F40-B4F0-DCA7650D3957}",
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "warnings": [
+        "audio_read_failed:lead_vocal_clarity_processed.wav:Error",
+        "pitch_plugin_mapping_required"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "backing_vocal",
+      "source_classification": "raw_vocal",
+      "stem_required": false,
+      "track_guid": "{7CA69CA0-EF3B-494B-95F8-3B82050D24AF}",
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "warnings": [
+        "audio_read_failed:backing_vocal_side_support.wav:Error",
+        "pitch_plugin_mapping_required"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "UNKNOWN_SOURCE_BLOCKED",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "reverb_send",
+      "source_classification": "unknown",
+      "stem_required": false,
+      "track_guid": "{87AA7D9A-736A-964C-A207-C7C3FD67CF91}",
+      "track_name": "V37 PRINTED VOCAL REVERB SEND",
+      "warnings": [
+        "audio_read_failed:vocal_reverb_send_print.wav:Error",
+        "unknown_source_skipped"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "UNKNOWN_SOURCE_BLOCKED",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "delay_send",
+      "source_classification": "unknown",
+      "stem_required": false,
+      "track_guid": "{CC2B5F66-254D-FD4D-B845-E6DDAC6FD868}",
+      "track_name": "V37 PRINTED VOCAL DELAY SEND",
+      "warnings": [
+        "audio_read_failed:vocal_delay_send_print.wav:Error",
+        "unknown_source_skipped"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "UNKNOWN_SOURCE_BLOCKED",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "unknown",
+      "source_classification": "unknown",
+      "stem_required": false,
+      "track_guid": "{7C0D06FA-41DA-A54F-8AE6-49E40A875FBD}",
+      "track_name": "V37 RETURN ReaVerbate dark send",
+      "warnings": [
+        "unknown_source_skipped"
+      ]
+    },
+    {
+      "blocked_reason_codes": [
+        "PLUGIN_MAPPING_UNSAFE",
+        "ROLE_NOT_RECOVERY_ELIGIBLE",
+        "UNKNOWN_SOURCE_BLOCKED",
+        "VOCAL_LIKELIHOOD_LOW",
+        "validated_plugin_mapping_required"
+      ],
+      "recommended_action": "validate_plugins_first",
+      "role": "delay_send",
+      "source_classification": "unknown",
+      "stem_required": false,
+      "track_guid": "{0A85E797-01C7-4544-A75C-FE77C16529A6}",
+      "track_name": "V37 RETURN ReaDelay filtered throw",
+      "warnings": [
+        "unknown_source_skipped"
+      ]
+    }
+  ],
+  "eligible_tracks": [],
+  "manual_review_tracks": [],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "schema": "automix-recovery-only-track-selection-v1",
+  "summary": {
+    "blocked_count": 8,
+    "eligible_count": 0,
+    "manual_review_count": 0,
+    "total_tracks_considered": 8
+  }
+}

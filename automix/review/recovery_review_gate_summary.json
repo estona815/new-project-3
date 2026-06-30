@@ -1,0 +1,36 @@
+{
+  "ab_complete_tracks": 0,
+  "ab_review_tracks": 0,
+  "accepted_drafts": 0,
+  "blocker_report": {},
+  "decisions_imported": 0,
+  "downstream_allowed": [],
+  "downstream_gate_status": "completed",
+  "drafts": [],
+  "drafts_to_review": 0,
+  "errors": [],
+  "final_recommendation": "no_recovery_drafts_to_review",
+  "form": "automix/review/recovery_review_form.md",
+  "manual_cleanup_required": 0,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+  "prompt43_blockers": [],
+  "prompt43_precondition_ok": true,
+  "rejected_drafts": 0,
+  "reports": {
+    "ab_review_status": "automix/review/recovery_ab_review_status.json",
+    "accepted_sources": "automix/review/accepted_recovery_sources.json",
+    "downstream_gate": "automix/orchestrator/downstream_recovery_gate.json",
+    "rejected_drafts": "automix/review/rejected_recovery_drafts.json",
+    "review_report": "automix/eval_reports/recovery_review_report.md",
+    "review_state": "automix/review/recovery_review_state.json",
+    "revision_request": "automix/review/recovery_revision_request.md"
+  },
+  "review_status": "completed",
+  "revision_requests": 0,
+  "schema": "automix-recovery-review-gate-summary-v1",
+  "stem_requests": 0,
+  "warnings": [
+    "no_recovery_drafts_to_review"
+  ]
+}

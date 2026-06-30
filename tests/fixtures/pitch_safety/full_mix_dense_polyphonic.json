@@ -1,0 +1,18 @@
+{
+  "classification_metrics": {
+    "classification": "full_mix",
+    "already_mixed_score": 0.90,
+    "already_tuned_score": 0.35,
+    "baked_reverb_score": 0.50,
+    "full_mix_likelihood": 0.82,
+    "source_separated_likelihood": 0.25,
+    "pitch_correction_risk": "unsafe"
+  },
+  "pitch_metrics": {
+    "monophonic_pitch_confidence": 0.30,
+    "scale_key_confidence": 0.40,
+    "polyphonic_contamination_score": 0.85
+  },
+  "adapter_confidence": 0.95,
+  "expected_decision": "full_mix_unsafe"
+}

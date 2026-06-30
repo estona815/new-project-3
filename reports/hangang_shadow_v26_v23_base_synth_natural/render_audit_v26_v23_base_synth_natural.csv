@@ -1,9 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-source_full_mix_reference,0 한강 Shadow x 얇은 Shadow (Mashup).wav,48000,float32,141.394,-2.62,-16.99,14.37,0.9278,-14.26,37.044,27.26,6.604,17.963,6.812,2.904,1.413,-14.9,3.2,-2.6,-17.6,-15.1,-12.8
-synth_source_reference,4 Synth.wav,48000,float32,141.394,-3.05,-27.83,24.79,0.4489,-4.2,13.7,26.87,14.359,31.411,6.139,3.136,4.384,-23.7,12.2,-3.0,-36.6,-25.4,-17.1
-new_female_raw_candidate,0 Lead Vocals.wav,48000,int16,141.16,-2.22,-21.21,18.99,0.9552,-16.39,0.003,2.953,12.19,50.207,27.901,5.3,1.446,-17.0,5.1,-2.2,-73.3,-17.2,-14.2
-new_female_gated_no_intro_chops_layer,female_double_no_intro_chops_24-48.wav,48000,int32,141.394,-11.1,-38.16,27.05,0.99,-13.02,0.0,0.214,8.447,57.411,32.608,1.289,0.031,-28.0,12.1,-11.1,-78.6,-33.9,-25.1
-v26_reaper_premaster,hangang_shadow_mashup_v26_v23_base_synth_natural_PREMASTER_24-48.wav,48000,int32,144.894,-10.67,-27.91,17.24,0.9541,-16.3,37.433,26.446,6.22,19.676,7.324,2.017,0.884,-25.8,3.6,-10.7,-70.7,-26.0,-23.5
-v26_reaper_print,hangang_shadow_mashup_v26_v23_base_synth_natural_REAPERPRINT_24-48.wav,48000,int32,144.894,-9.07,-26.31,17.24,0.9541,-16.3,37.433,26.446,6.22,19.676,7.324,2.017,0.884,-24.2,3.6,-9.1,-69.1,-24.4,-21.9
-v26_final_master_loud,hangang_shadow_mashup_v26_v23_base_synth_natural_MASTER_loud_24-48.wav,48000,int32,144.894,-1.0,-11.29,10.29,0.951,-16.0,34.858,25.304,6.719,22.037,7.93,2.193,0.959,-9.1,2.1,-1.0,-53.0,-9.0,-8.0
-v26_final_master_loud_mp3,hangang_shadow_mashup_v26_v23_base_synth_natural_MASTER_loud_320k.mp3,48000,float32 decoded_from_mp3,144.894,-0.7,-11.29,10.59,0.9508,-15.98,34.854,25.304,6.72,22.037,7.931,2.194,0.959,-9.1,2.1,-0.7,-53.0,-9.0,-8.0

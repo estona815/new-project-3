@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "low adapter confidence",
+  "coverage_tags": [
+    "missing_plugin",
+    "plugin_mapping_uncertain"
+  ],
+  "input": {
+    "adapter_confidence": 0.4
+  },
+  "expected_stage_status": "requires_plugin_mapping",
+  "expected_decision": "plugin_mapping_required",
+  "expected_blockers": [
+    "PLUGIN_MAPPING_UNCERTAIN"
+  ],
+  "expected_reports": []
+}

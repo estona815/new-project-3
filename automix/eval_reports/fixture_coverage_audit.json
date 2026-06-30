@@ -1,0 +1,504 @@
+{
+  "analysis": {
+    "analysis_dir": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json",
+    "analysis_dir_found": true,
+    "fixtures_checked": 16,
+    "invalid_analysis_fixtures": []
+  },
+  "audio": {
+    "fixtures_checked": 14,
+    "invalid_audio_fixtures": [],
+    "manifest_error": null,
+    "manifest_found": true,
+    "manifest_path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio_fixture_manifest.json",
+    "missing_audio_files": []
+  },
+  "blockers": [],
+  "category_evidence": {
+    "already_tuned_ai_vocal": [
+      {
+        "expected": "already_tuned_score high; pitch skipped or micro",
+        "name": "already_tuned_ai_like_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/already_tuned_ai_like_vocal.wav",
+        "source": "audio"
+      },
+      {
+        "expected_decision": "reject_pitch_correction",
+        "name": "already tuned 0.90",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_already_tuned_090.json",
+        "source": "analysis"
+      }
+    ],
+    "buried_vocal": [
+      {
+        "expected": "vocal masking; dynamic space preferred",
+        "name": "vocal_buried_mix.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/vocal_buried_mix.wav",
+        "source": "audio"
+      }
+    ],
+    "clean_instrumental_bus": [
+      {
+        "expected": "instrumental role; pitch ineligible",
+        "name": "clean_instrumental_bus.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/clean_instrumental_bus.wav",
+        "source": "audio"
+      }
+    ],
+    "clean_vocal": [
+      {
+        "expected": "raw_vocal; low full_mix_likelihood; high pitch confidence",
+        "name": "raw_vocal_like_mono.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/raw_vocal_like_mono.wav",
+        "source": "audio"
+      },
+      {
+        "expected": "clean vocal baseline for conservative comparison",
+        "name": "clean_vocal_fixture.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/clean_vocal_fixture.wav",
+        "source": "audio"
+      }
+    ],
+    "corrupted_config": [
+      {
+        "expected_decision": "configuration_repair_required",
+        "name": "corrupted config",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_corrupted_config.json",
+        "source": "analysis"
+      }
+    ],
+    "dense_polyphonic": [
+      {
+        "expected": "full_mix_likelihood high; pitch blocked",
+        "name": "full_mix_dense_polyphonic.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/full_mix_dense_polyphonic.wav",
+        "source": "audio"
+      }
+    ],
+    "dry_run": [
+      {
+        "expected_decision": "draft_plan_only",
+        "name": "dry-run required",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_dry_run_required.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "feedback_revision_dry_run",
+        "name": "feedback mapping",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_feedback_mapping.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "drafts_created_review_required",
+        "name": "safe draft pass",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_safe_draft_pass.json",
+        "source": "analysis"
+      }
+    ],
+    "fake_stereo_halo": [
+      {
+        "expected": "source separated/watery risk high; conservative recovery",
+        "name": "source_separated_watery_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/source_separated_watery_vocal.wav",
+        "source": "audio"
+      },
+      {
+        "expected": "fake stereo halo should trigger phase-aware conservative treatment",
+        "name": "fake_stereo_halo_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/fake_stereo_halo_vocal.wav",
+        "source": "audio"
+      }
+    ],
+    "feedback_mapping": [
+      {
+        "expected_decision": "feedback_revision_dry_run",
+        "name": "feedback mapping",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_feedback_mapping.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected placement",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_placement.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected premaster",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_premaster.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected recovery",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_recovery.json",
+        "source": "analysis"
+      }
+    ],
+    "final_approval": [
+      {
+        "expected_decision": "final_export_blocked",
+        "name": "final approval missing",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_final_approval_missing.json",
+        "source": "analysis"
+      }
+    ],
+    "fragile_ai_vocal": [
+      {
+        "expected": "thin/fizz risk; body preservation",
+        "name": "fragile_thin_ai_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/fragile_thin_ai_vocal.wav",
+        "source": "audio"
+      }
+    ],
+    "full_mix": [
+      {
+        "expected": "full_mix_likelihood high; pitch blocked",
+        "name": "full_mix_dense_polyphonic.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/full_mix_dense_polyphonic.wav",
+        "source": "audio"
+      },
+      {
+        "expected_decision": "full_mix_unsafe",
+        "name": "full mix likelihood 0.90",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_full_mix_likelihood_090.json",
+        "source": "analysis"
+      }
+    ],
+    "harsh_vocal": [
+      {
+        "expected": "sibilance and harshness guard",
+        "name": "harsh_sibilant_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/harsh_sibilant_vocal.wav",
+        "source": "audio"
+      }
+    ],
+    "human_review": [
+      {
+        "expected_decision": "final_export_blocked",
+        "name": "final approval missing",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_final_approval_missing.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected placement",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_placement.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected premaster",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_premaster.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected recovery",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_recovery.json",
+        "source": "analysis"
+      }
+    ],
+    "low_confidence_analysis": [
+      {
+        "expected_decision": "skip",
+        "name": "low pitch confidence 0.40",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_low_pitch_confidence_040.json",
+        "source": "analysis"
+      }
+    ],
+    "low_end_buildup": [
+      {
+        "expected": "low-end buildup should favor conservative cleanup over heavy mastering",
+        "name": "low_end_buildup_mix.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/low_end_buildup_mix.wav",
+        "source": "audio"
+      }
+    ],
+    "masking_balance": [
+      {
+        "expected": "vocal masking; dynamic space preferred",
+        "name": "vocal_buried_mix.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/vocal_buried_mix.wav",
+        "source": "audio"
+      }
+    ],
+    "missing_plugin": [
+      {
+        "expected_decision": "plugin_mapping_required",
+        "name": "low adapter confidence",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_low_adapter_confidence.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "plugin_mapping_required",
+        "name": "missing required semantic control",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_missing_required_control.json",
+        "source": "analysis"
+      }
+    ],
+    "muddy_vocal": [
+      {
+        "expected": "muddy/boxy low-mid vocal cleanup target",
+        "name": "muddy_vocal_fixture.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/muddy_vocal_fixture.wav",
+        "source": "audio"
+      }
+    ],
+    "over_limited_master": [
+      {
+        "expected": "over-limited master should block aggressive final limiting claims",
+        "name": "over_limited_master.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/over_limited_master.wav",
+        "source": "audio"
+      }
+    ],
+    "phase_issue": [
+      {
+        "expected": "fake stereo halo should trigger phase-aware conservative treatment",
+        "name": "fake_stereo_halo_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/fake_stereo_halo_vocal.wav",
+        "source": "audio"
+      },
+      {
+        "expected": "phase issue should require mono compatibility and human review",
+        "name": "phase_issue_stereo.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/phase_issue_stereo.wav",
+        "source": "audio"
+      }
+    ],
+    "plugin_mapping_uncertain": [
+      {
+        "expected_decision": "plugin_mapping_required",
+        "name": "low adapter confidence",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_low_adapter_confidence.json",
+        "source": "analysis"
+      }
+    ],
+    "qc_failure": [
+      {
+        "expected_decision": "final_delivery_failed",
+        "name": "QC failed",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_qc_failed.json",
+        "source": "analysis"
+      }
+    ],
+    "raw_vocal": [
+      {
+        "expected": "raw_vocal; low full_mix_likelihood; high pitch confidence",
+        "name": "raw_vocal_like_mono.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/raw_vocal_like_mono.wav",
+        "source": "audio"
+      }
+    ],
+    "rejected_revision": [
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected placement",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_placement.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected premaster",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_premaster.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "manual_review_required",
+        "name": "rejected recovery",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rejected_recovery.json",
+        "source": "analysis"
+      }
+    ],
+    "render_failure": [
+      {
+        "expected_decision": "render_failed_manual_review",
+        "name": "render failure",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_render_failure.json",
+        "source": "analysis"
+      }
+    ],
+    "rollback": [
+      {
+        "expected_decision": "rollback_required",
+        "name": "rollback registry required",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_rollback_registry_required.json",
+        "source": "analysis"
+      }
+    ],
+    "safe_draft": [
+      {
+        "expected_decision": "drafts_created_review_required",
+        "name": "safe draft pass",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_safe_draft_pass.json",
+        "source": "analysis"
+      }
+    ],
+    "semantic_control_missing": [
+      {
+        "expected_decision": "plugin_mapping_required",
+        "name": "missing required semantic control",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_missing_required_control.json",
+        "source": "analysis"
+      }
+    ],
+    "sibilant_vocal": [
+      {
+        "expected": "sibilance and harshness guard",
+        "name": "harsh_sibilant_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/harsh_sibilant_vocal.wav",
+        "source": "audio"
+      }
+    ],
+    "suno_high_fizz": [
+      {
+        "expected": "already_tuned_score high; pitch skipped or micro",
+        "name": "already_tuned_ai_like_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/already_tuned_ai_like_vocal.wav",
+        "source": "audio"
+      },
+      {
+        "expected": "thin/fizz risk; body preservation",
+        "name": "fragile_thin_ai_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/fragile_thin_ai_vocal.wav",
+        "source": "audio"
+      },
+      {
+        "expected_decision": "reject_pitch_correction",
+        "name": "already tuned 0.90",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_already_tuned_090.json",
+        "source": "analysis"
+      },
+      {
+        "expected_decision": "feedback_revision_dry_run",
+        "name": "feedback mapping",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/analysis_json/mock_feedback_mapping.json",
+        "source": "analysis"
+      }
+    ],
+    "watery_smear": [
+      {
+        "expected": "source separated/watery risk high; conservative recovery",
+        "name": "source_separated_watery_vocal.wav",
+        "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures/audio/source_separated_watery_vocal.wav",
+        "source": "audio"
+      }
+    ]
+  },
+  "covered_categories": [
+    "buried_vocal",
+    "clean_vocal",
+    "corrupted_config",
+    "dry_run",
+    "fake_stereo_halo",
+    "feedback_mapping",
+    "harsh_vocal",
+    "low_end_buildup",
+    "missing_plugin",
+    "muddy_vocal",
+    "over_limited_master",
+    "phase_issue",
+    "render_failure",
+    "rollback",
+    "sibilant_vocal",
+    "suno_high_fizz",
+    "watery_smear"
+  ],
+  "created_at": "2026-06-05T10:46:34Z",
+  "fixture_root": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/fixtures",
+  "missing_categories": [],
+  "passed": true,
+  "project_name": "project",
+  "required_categories": [
+    {
+      "category": "clean_vocal",
+      "description": "clean vocal baseline",
+      "source": "audio"
+    },
+    {
+      "category": "buried_vocal",
+      "description": "vocal buried by instrumental masking",
+      "source": "audio"
+    },
+    {
+      "category": "muddy_vocal",
+      "description": "low-mid/boxy vocal cleanup target",
+      "source": "audio"
+    },
+    {
+      "category": "harsh_vocal",
+      "description": "harsh vocal tone",
+      "source": "audio"
+    },
+    {
+      "category": "sibilant_vocal",
+      "description": "sibilance guard",
+      "source": "audio"
+    },
+    {
+      "category": "suno_high_fizz",
+      "description": "AI/Suno-like high fizz",
+      "source": "audio"
+    },
+    {
+      "category": "watery_smear",
+      "description": "source-separated watery smear",
+      "source": "audio"
+    },
+    {
+      "category": "fake_stereo_halo",
+      "description": "fake stereo halo or wide AI smear",
+      "source": "audio"
+    },
+    {
+      "category": "over_limited_master",
+      "description": "over-limited master-like fixture",
+      "source": "audio"
+    },
+    {
+      "category": "low_end_buildup",
+      "description": "low-end buildup",
+      "source": "audio"
+    },
+    {
+      "category": "phase_issue",
+      "description": "phase or mono-compatibility issue",
+      "source": "audio"
+    },
+    {
+      "category": "missing_plugin",
+      "description": "missing or uncertain plugin mapping",
+      "source": "analysis"
+    },
+    {
+      "category": "corrupted_config",
+      "description": "corrupted configuration/error fixture",
+      "source": "analysis"
+    },
+    {
+      "category": "dry_run",
+      "description": "dry-run only behavior",
+      "source": "analysis"
+    },
+    {
+      "category": "rollback",
+      "description": "rollback metadata requirement",
+      "source": "analysis"
+    },
+    {
+      "category": "render_failure",
+      "description": "render failure handling",
+      "source": "analysis"
+    },
+    {
+      "category": "feedback_mapping",
+      "description": "user feedback to safe action mapping",
+      "source": "analysis"
+    }
+  ],
+  "schema": "automix-fixture-coverage-audit-v1",
+  "warnings": [
+    "fixture_coverage_complete_static_only"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "automix-reference-match-iteration-history-v1",
+  "max_iterations": 3,
+  "iterations": [],
+  "final_decision": "target_profile_only_used",
+  "never_intensify_after_damage": true
+}

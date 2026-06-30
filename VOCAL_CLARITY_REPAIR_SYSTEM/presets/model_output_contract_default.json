@@ -1,0 +1,45 @@
+{
+  "schema": "codex-vocal-ai-model-output-contract-v1",
+  "default_mode": "DSP Only",
+  "allowed_quality_modes": [
+    "DSP Only",
+    "AI Assist",
+    "AI Strong",
+    "Debug Research"
+  ],
+  "model_metadata_required": {
+    "model_version": true,
+    "expected_sample_rate": true,
+    "expected_channels": true,
+    "input_tensor_shape": true,
+    "output_tensor_shape": true,
+    "output_type": true,
+    "normalization": true,
+    "latency_samples": true,
+    "dataset_version": true
+  },
+  "allowed_output_types": [
+    "GainMask",
+    "NoiseProbabilityMask",
+    "ResidualEstimate",
+    "MagnitudeEstimate",
+    "ComplexMask",
+    "Waveform"
+  ],
+  "blocked_output_type_behavior": {
+    "Unknown": "dry_or_dsp_fallback",
+    "invalid_shape": "dry_or_dsp_fallback",
+    "nan_or_inf": "dry_or_dsp_fallback",
+    "unsupported_sample_rate": "reduce_model_confidence",
+    "unsupported_channels": "reduce_model_confidence"
+  },
+  "safety_contract": [
+    "Model output is advisory only.",
+    "Model output cannot bypass MaxSuppressionDb.",
+    "Model output cannot bypass VocalPreserve, ClarityPreserve, AirPreserve, TransientPreserve, or HarmonicPreserve.",
+    "Direct waveform output is never sent directly to speakers.",
+    "Residual estimates are RMS-limited before subtraction.",
+    "Total attenuation budget remains active after model postprocessing.",
+    "Clean and near-clean inputs must remain close to input."
+  ]
+}

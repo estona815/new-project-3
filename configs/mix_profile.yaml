@@ -1,0 +1,56 @@
+project:
+  name: codex_mix_master
+  status: genre_based_draft
+  lead_policy: male_center_lead
+  female_policy: side_shadow_support
+  goal: suno_ai_artifact_reduction_with_digicore_texture_preserved
+  ai_detection_evasion_goal: false
+
+tracks:
+  reference_name: SOURCE full mix reference muted - not in master
+  male_main: 08 MALE_NONHOOK_CENTER
+  female_side_bus_gain_db_relative_to_male: -5.0
+  female_r_delay_ms: 6.0
+  vocal_throw_gain_db: -12.0
+
+routing:
+  buses:
+    - REF BUS
+    - VOX BUS
+    - DRUM BUS
+    - 808/BASS BUS
+    - MUSIC BUS
+    - MIX BUS
+    - PREMASTER
+    - PRINT MASTER
+  active_print_path:
+    - VOX BUS
+    - DRUM BUS
+    - 808/BASS BUS
+    - MUSIC BUS
+    - MIX BUS
+    - PREMASTER
+    - PRINT MASTER
+  reference_bus: REF BUS
+  reference_bus_default_muted: true
+  reference_bus_master_send: false
+  allow_optional_sidechain: true
+  full_mix_reference_must_be_muted: true
+  full_mix_reference_master_send: false
+  full_mix_reference_active_sends_allowed: false
+
+master_profiles:
+  loud_reference_master:
+    target_lufs_i_min: -9.5
+    target_lufs_i_max: -8.0
+    true_peak_db_tp_max: -1.0
+    use_case: loud A/B or short preview only when mix bus is stable
+  safe_streaming_master:
+    target_lufs_i_min: -14.5
+    target_lufs_i_max: -12.5
+    true_peak_db_tp_max: -1.0
+    use_case: safer upload and review copy
+
+master_safety:
+  sustained_master_bus_gain_reduction_db_max: 2.0
+  if_exceeded: return_to_mix_bus_or_source_buses

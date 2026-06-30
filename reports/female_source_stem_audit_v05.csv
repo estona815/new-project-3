@@ -1,3 +1,0 @@
-file,role,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct
-0 Lead Vocals.wav,female_lead_source,48000,int16,109.6,-3.05,-23.71,20.66,0.9744,-18.87,0.001,0.034,30.846,42.408,18.893,6.159,1.66
-1 Backing Vocals.wav,female_backing_source,48000,int16,109.6,-14.19,-48.31,34.12,0.065,-0.57,0.0,0.005,53.254,40.211,1.249,3.98,1.301

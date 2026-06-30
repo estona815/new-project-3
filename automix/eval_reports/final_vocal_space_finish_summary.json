@@ -1,0 +1,128 @@
+{
+  "ab_evaluation_passed": false,
+  "ab_render_status": "planned_only",
+  "accepted_recovery_source": "",
+  "accepted_recovery_sources": 0,
+  "blockers": [
+    "no_accepted_recovery_sources",
+    "plugin_adapter_gate_not_ready_for_placement"
+  ],
+  "dry_run": true,
+  "final_export_created": false,
+  "final_recommendation": "do_not_continue_until_review",
+  "fragile_source": false,
+  "pitch_correction_blocked": true,
+  "placement_draft_created": false,
+  "preconditions_ok": false,
+  "premaster_draft_created": false,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+  "protection_passed": true,
+  "reports": {
+    "ab_plan": "automix/eval_reports/final_vocal_space_ab_render_plan.json",
+    "blocked_stages": "automix/eval_reports/finalizing_blocked_stages.json",
+    "chain_plan": "automix/chain_plans/final_vocal_space_carving_chain_plan.json",
+    "eval_metrics": "automix/eval_reports/final_vocal_space_eval_metrics.json",
+    "iteration_history": "automix/eval_reports/final_vocal_space_iteration_history.json",
+    "main_report": "automix/eval_reports/finalizing_vocal_space_and_review_package_report.md",
+    "parameter_log": "automix/logs/final_vocal_space_parameter_write_log.json",
+    "premaster_chain_plan": "automix/chain_plans/final_safe_premaster_chain_plan.json",
+    "premaster_eval_metrics": "automix/eval_reports/final_safe_premaster_eval_metrics.json",
+    "premaster_report": "automix/eval_reports/final_safe_premaster_report.md",
+    "protection": "automix/eval_reports/final_vocal_space_protection_report.json",
+    "review_form": "automix/review/final_vocal_space_review_form.md",
+    "review_state": "automix/review/final_vocal_space_review_state.json",
+    "rollback": "automix/rollback/final_vocal_space_carving_rollback.json",
+    "routing_log": "automix/logs/final_vocal_space_routing_log.json",
+    "target_resolution": "automix/analysis_reports/finalizing_target_resolution.json",
+    "vocal_space_analysis": "automix/analysis_reports/final_vocal_space_analysis.json"
+  },
+  "review_package_path": "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02",
+  "review_package_zip": "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02.zip",
+  "rollback_status": "available",
+  "schema": "automix-final-vocal-space-finish-summary-v1",
+  "selected_placement_profile": "vocal_forward_space_carve",
+  "target_resolution": {
+    "accepted_lead_vocal_guid": "",
+    "accepted_lead_vocal_recovery_draft": "",
+    "adlibs": [],
+    "backing_vocal_tracks": [
+      "V37 BACKGROUND DOUBLE SUPPORT L/R"
+    ],
+    "bass_808_tracks": [],
+    "delay_send": "V37 PRINTED VOCAL DELAY SEND",
+    "do_not_modify_full_mix_reference": true,
+    "do_not_modify_master_directly": true,
+    "do_not_modify_original_tracks": true,
+    "drum_bus": "",
+    "fragile_source": false,
+    "full_mix_references_for_listening_only": [
+      "SOURCE full mix reference muted"
+    ],
+    "guitar_tracks": [],
+    "instrumental_bus": "V37 INSTRUMENTAL BUS free EQ pocket",
+    "master_track_for_measurement_only": "Master",
+    "missing_targets": [
+      "accepted_lead_vocal_recovery_draft",
+      "no_accepted_recovery_sources",
+      "plugin_adapter_gate_not_ready_for_placement"
+    ],
+    "original_lead_vocal_guid": "",
+    "original_lead_vocal_reference": "",
+    "piano_tracks": [],
+    "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+    "requires_manual_review": true,
+    "reverb_send": "V37 PRINTED VOCAL REVERB SEND",
+    "schema": "automix-finalizing-target-resolution-v1",
+    "synth_sample_lead_tracks": [],
+    "target_confidence": 0.35,
+    "vocal_doubles": [],
+    "warnings": [
+      "target confidence is low; manual review required"
+    ]
+  },
+  "vocal_space_analysis": {
+    "ai_artifact_exposure_risk": 0.0,
+    "ai_fizz_metallic_artifact_risk": 0.0,
+    "backing_masking_score": 0.22,
+    "backing_vocal_masking_800_6khz": 0.22,
+    "bass_808_masking_80_200_hz": 0.0,
+    "center_crowding": 0.528,
+    "fragile_source": false,
+    "instrumental_masking_score": 0.88,
+    "lead_vocal_source": "",
+    "main_masking_bands": [
+      "250-600 Hz low-mid",
+      "1-4 kHz presence",
+      "post-phrase reverb/delay tails"
+    ],
+    "piano_guitar_masking_200_1500_hz": 0.0,
+    "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+    "recommended_strategy": "carve_space_not_gain",
+    "reverb_delay_tail_masking_after_phrases": 0.65,
+    "schema": "automix-final-vocal-space-analysis-v1",
+    "send_tail_masking_score": 0.65,
+    "snare_hihat_masking_2_10_khz": 0.0,
+    "stereo_side_clutter": 0.3575,
+    "synth_sample_lead_masking_1_5_khz": 0.0,
+    "vocal_air_10_16_khz": 0.0,
+    "vocal_body_120_350_hz": 0.0,
+    "vocal_center_stability": 0.0,
+    "vocal_clarity_1_4_khz": 0.0,
+    "vocal_forwardness": 0.0,
+    "vocal_harshness_2k5_6_khz": 0.0,
+    "vocal_loudness": 0.0,
+    "vocal_mud_250_600_hz": 0.0,
+    "vocal_sibilance_5_10_khz": 0.0,
+    "vocal_thinness": 0.0,
+    "warnings": [
+      "no accepted recovery vocal source; analysis is blocked placeholder"
+    ]
+  },
+  "warnings": [
+    "no accepted recovery vocal source; analysis is blocked placeholder",
+    "no_accepted_recovery_sources",
+    "plugin_adapter_gate_not_ready_for_placement",
+    "track_audit_loaded_from_analysis_reports_compatibility_path"
+  ]
+}

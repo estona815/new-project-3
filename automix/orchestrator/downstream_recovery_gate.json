@@ -1,0 +1,18 @@
+{
+  "accepted_sources_available": false,
+  "allowed_downstream_stages": [],
+  "blocked_downstream_stages": [
+    "pitch",
+    "placement",
+    "premaster",
+    "final_export",
+    "reference_matching"
+  ],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "recovery_review_required": true,
+  "review_status": "completed",
+  "schema": "automix-downstream-recovery-gate-v1",
+  "warnings": [
+    "recovery_review_incomplete_or_no_acceptance"
+  ]
+}

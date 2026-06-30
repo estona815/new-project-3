@@ -1,0 +1,820 @@
+desc:Codex Vocal AI Artifact Split Tamer
+//tags: vocal ai artifact suno fizz sibilance dynamic eq repair
+//author: Codex
+
+slider1:32<0,100,1>Attack Harsh Tame
+slider2:38<0,100,1>Sandy Sibilance Tame
+slider3:44<0,100,1>Digital Fizz Tame
+slider4:28<0,100,1>Tail Warble Hide
+slider5:20<0,100,1>Body Preserve
+slider6:70<0,100,1>Dry/Wet
+slider7:0<-18,18,0.1>Output Trim (dB)
+slider8:0<0,1,1{Off,On}>Bypass
+slider9:30<0,100,1>Amount
+slider10:8<0,24,0.1>Max Reduction (dB)
+slider11:50<1,200,1>Detector Attack (ms)
+slider12:12<1,500,1>Detector Release (ms)
+slider13:1<0,1,1{Off,On}>Processing Enabled
+slider14:0.35<0,1,0.01>Mask Strength
+slider15:9<1,24,0.1>Soft Knee (dB)
+slider16:0.85<0,1,0.01>Vocal Preserve
+slider17:0.85<0,1,0.01>Clarity Preserve
+slider18:0.80<0,1,0.01>Air Preserve
+slider19:0.80<0,1,0.01>Transient Preserve
+slider20:1<0,1,1{Off,On}>Multiband Enabled
+slider21:1<0,1,1{Off,On}>M/S Enabled
+slider22:0<0,3,1{Preserve,Balanced,Surgical AI,Strong Test}>Multiband Mode
+slider23:0.25<0,1,0.01>Mid Amount
+slider24:0.40<0,1,0.01>Side Amount
+slider25:0.45<0,1,0.01>Side Artifact Reduction
+slider26:0.25<0,1,0.01>Surgical Artifact Reduction
+slider27:0<0,2,1{Off,Processed,Residual}>Residual Monitor
+slider28:0.85<0,1,0.01>Mid Preserve
+
+in_pin:left input
+in_pin:right input
+out_pin:left output
+out_pin:right output
+
+@init
+db2lin = 0.1151292546497023;
+lin2db = 8.685889638065037;
+eps = 0.00000001;
+abs_limit = 1000000;
+// Prompt 13 numerical safety constants for the existing mask-equivalent gain
+// path. These do not add denoise strength; they only make floor/collapse
+// guards explicit and reviewable.
+mask_floor_ratio = 1.122018; // within 1 dB of a per-band minimum gain floor
+suspicious_drop_power_ratio = 0.0158489; // -18 dB RMS drop guard as power ratio
+collapse_gain_floor = 0.398107; // -8 dB active-spectrum average gain floor
+mb_collapse_gain_floor = 0.50;
+// Prompt 14 conservative soft-mask caps. These are broad upper limits for the
+// existing time-domain mask equivalent: presence bands are capped below the
+// global Max Reduction, and air/fizz bands are capped lower still.
+presence_soft_cap_db = 4;
+air_soft_cap_db = 3;
+full_band_floor_count_limit = 2;
+lp250_l = lp250_r = 0;
+lp1200_l = lp1200_r = 0;
+lp2500_l = lp2500_r = 0;
+lp5000_l = lp5000_r = 0;
+lp8000_l = lp8000_r = 0;
+lp12000_l = lp12000_r = 0;
+env = tail_env = 0;
+in_pow_env = proc_pow_env = 0;
+wet_state = 0;
+attack_gain_sm = sandy_gain_sm = fizz_gain_sm = air_gain_sm = 1;
+mb_mid_low_sm = mb_mid_body_sm = mb_mid_rest_sm = 1;
+mb_mid_attack_sm = mb_mid_sandy_sm = mb_mid_fizz_sm = mb_mid_air_sm = 1;
+mb_side_low_sm = mb_side_body_sm = mb_side_rest_sm = 1;
+mb_side_attack_sm = mb_side_sandy_sm = mb_side_fizz_sm = mb_side_air_sm = 1;
+prev_det = prev_attack_energy = prev_sandy_energy = prev_fizz_energy = prev_air_energy = 0;
+transient_score_sm = tilt_guard_sm = air_guard_sm = 0;
+last_safe_l = last_safe_r = 0;
+status = 0; // 0 ok, 1 bypassed, 2 disabled, 3 dry/wet zero, 4 numerical error, 5 dry fallback
+ext_tail_size = -1;
+
+@slider
+// Preservation-first defaults: the legacy band sliders remain in place for
+// preset compatibility, while Amount and Max Reduction cap destructive cleanup.
+amount = max(0, min(slider9 / 100, 1));
+mapped_amount = pow(amount, 1.6);
+attack_amt = max(0, min(slider1 / 100, 1));
+sandy_amt = max(0, min(slider2 / 100, 1));
+fizz_amt = max(0, min(slider3 / 100, 1));
+tail_amt = max(0, min(slider4 / 100, 1));
+body_amt = max(0, min(slider5 / 100, 1));
+wet = max(0, min(slider6 / 100, 1));
+out_gain = exp(max(min(slider7, 18), -18) * db2lin);
+bypass = slider8 >= 0.5;
+max_reduction_db = max(0, min(slider10, 24));
+min_gain = exp(-max_reduction_db * db2lin);
+attack_ms = max(1, min(slider11, 200));
+release_ms = max(1, min(slider12, 500));
+processing_enabled = slider13 >= 0.5;
+mask_strength = max(0, min(slider14, 1));
+knee_db = max(1, min(slider15, 24));
+vocal_preserve = max(0, min(slider16, 1));
+clarity_preserve = max(0, min(slider17, 1));
+air_preserve = max(0, min(slider18, 1));
+transient_preserve = max(0, min(slider19, 1));
+harmonic_preserve = 0.75;
+mb_enabled = slider20 >= 0.5;
+ms_enabled = slider21 >= 0.5;
+mb_mode = floor(max(0, min(slider22, 3)) + 0.5);
+mid_amount = max(0, min(slider23, 1));
+side_amount = max(0, min(slider24, 1));
+side_artifact_reduction = max(0, min(slider25, 1));
+surgical_artifact_reduction = max(0, min(slider26, 1));
+residual_monitor = floor(max(0, min(slider27, 2)) + 0.5);
+mid_preserve = max(0, min(slider28, 1));
+
+// Prompt 5 M/S dynamic multiband suppressor. This JSFX has no C++ class,
+// STFT model, or APVTS; the processor is a bounded time-domain filter-bank
+// extension that reuses the Prompt 3 preservation guards.
+mb_mode == 0 ? (
+  mb_band_count = 14;      // 7 grouped bands x Mid/Side, Preserve default.
+  mb_mode_scale = 0.55;
+  mb_presence_budget_db = 1.5;
+  mb_air_budget_db = 2.0;
+  mb_surgical_gate = 0;
+  mb_low_mode_max_db = 2.0;
+  mb_body_mode_max_db = 1.5;
+  mb_rest_mode_max_db = 1.2;
+  mb_attack_mode_max_db = 0.8;
+  mb_sandy_mode_max_db = 1.0;
+  mb_fizz_mode_max_db = 1.2;
+  mb_air_mode_max_db = 1.0;
+) : mb_mode == 1 ? (
+  mb_band_count = 28;
+  mb_mode_scale = 0.75;
+  mb_presence_budget_db = 2.0;
+  mb_air_budget_db = 3.0;
+  mb_surgical_gate = 0;
+  mb_low_mode_max_db = 3.0;
+  mb_body_mode_max_db = 2.5;
+  mb_rest_mode_max_db = 2.0;
+  mb_attack_mode_max_db = 1.2;
+  mb_sandy_mode_max_db = 1.5;
+  mb_fizz_mode_max_db = 2.0;
+  mb_air_mode_max_db = 1.5;
+) : mb_mode == 2 ? (
+  mb_band_count = 48;
+  mb_mode_scale = 0.85;
+  mb_presence_budget_db = 2.0;
+  mb_air_budget_db = 3.0;
+  mb_surgical_gate = surgical_artifact_reduction;
+  mb_low_mode_max_db = 4.0;
+  mb_body_mode_max_db = 3.0;
+  mb_rest_mode_max_db = 2.5;
+  mb_attack_mode_max_db = 1.5;
+  mb_sandy_mode_max_db = 2.0;
+  mb_fizz_mode_max_db = 2.5;
+  mb_air_mode_max_db = 2.0;
+) : (
+  mb_band_count = 64;
+  mb_mode_scale = 1.0;
+  mb_presence_budget_db = 3.0;
+  mb_air_budget_db = 4.0;
+  mb_surgical_gate = surgical_artifact_reduction;
+  mb_low_mode_max_db = 6.0;
+  mb_body_mode_max_db = 4.0;
+  mb_rest_mode_max_db = 3.5;
+  mb_attack_mode_max_db = 2.0;
+  mb_sandy_mode_max_db = 2.5;
+  mb_fizz_mode_max_db = 3.5;
+  mb_air_mode_max_db = 3.0;
+);
+
+mid_reduction_scale = mid_amount * max(0.15, min(0.75, 1 - 0.55 * max(mid_preserve, vocal_preserve)));
+side_reduction_scale = side_amount * max(0.20, min(1.20, 0.55 + 0.65 * side_artifact_reduction));
+
+mb_low_max_db = min(max_reduction_db, mb_low_mode_max_db);
+mb_body_max_db = min(max_reduction_db, mb_body_mode_max_db);
+mb_rest_max_db = min(max_reduction_db, mb_rest_mode_max_db);
+mb_attack_max_db = min(max_reduction_db, mb_attack_mode_max_db);
+mb_sandy_max_db = min(max_reduction_db, mb_sandy_mode_max_db);
+mb_fizz_max_db = min(max_reduction_db, mb_fizz_mode_max_db);
+mb_air_max_db = min(max_reduction_db, mb_air_mode_max_db);
+
+attack_band_max_db = min(max_reduction_db, presence_soft_cap_db);
+sandy_band_max_db = min(max_reduction_db, presence_soft_cap_db);
+fizz_band_max_db = min(max_reduction_db, air_soft_cap_db);
+air_band_max_db = min(max_reduction_db, air_soft_cap_db);
+
+// Preserve guards only reduce attenuation limits. They never boost or
+// synthesize missing source content.
+attack_band_max_db *= max(0.25, min(1, (1 - 0.65 * vocal_preserve) * (1 - 0.25 * clarity_preserve)));
+sandy_band_max_db *= max(0.25, min(1, (1 - 0.55 * clarity_preserve) * (1 - 0.20 * vocal_preserve)));
+fizz_band_max_db *= max(0.25, min(1, (1 - 0.50 * air_preserve) * (1 - 0.15 * clarity_preserve)));
+air_band_max_db *= max(0.25, min(1, 1 - 0.50 * air_preserve));
+
+attack_min_gain = exp(-attack_band_max_db * db2lin);
+sandy_min_gain = exp(-sandy_band_max_db * db2lin);
+fizz_min_gain = exp(-fizz_band_max_db * db2lin);
+air_min_gain = exp(-air_band_max_db * db2lin);
+
+attack_threshold_db = -8;
+sandy_threshold_db = -14;
+fizz_threshold_db = -18;
+air_threshold_db = -20;
+
+sr_safe = max(srate, 1000);
+c250 = exp(-2 * $pi * min(250, sr_safe * 0.45) / sr_safe);
+c1200 = exp(-2 * $pi * min(1200, sr_safe * 0.45) / sr_safe);
+c2500 = exp(-2 * $pi * min(2500, sr_safe * 0.45) / sr_safe);
+c5000 = exp(-2 * $pi * min(5000, sr_safe * 0.45) / sr_safe);
+c8000 = exp(-2 * $pi * min(8000, sr_safe * 0.45) / sr_safe);
+c12000 = exp(-2 * $pi * min(12000, sr_safe * 0.45) / sr_safe);
+env_att = exp(-1 / max(eps, (attack_ms * 0.001) * sr_safe));
+env_rel = exp(-1 / max(eps, (release_ms * 0.001) * sr_safe));
+tail_release_ms = max(80, min(500, release_ms * 8));
+tail_rel = exp(-1 / max(eps, (tail_release_ms * 0.001) * sr_safe));
+rms_rel = exp(-1 / max(eps, 0.050 * sr_safe));
+wet_rel = exp(-1 / max(eps, 0.010 * sr_safe));
+suppression_attack_coeff = exp(-1 / max(eps, (attack_ms * 0.001) * sr_safe));
+recovery_release_coeff = exp(-1 / max(eps, (release_ms * 0.001) * sr_safe));
+transient_rel = exp(-1 / max(eps, 0.020 * sr_safe));
+guard_rel = exp(-1 / max(eps, 0.040 * sr_safe));
+
+@sample
+in_l = spl0;
+in_r = spl1;
+// JSFX equivalent of a processBlock parameter snapshot. Host sliders are
+// already clamped in @slider; these copies keep fallback decisions deterministic
+// for this sample without allocation, logging, locks, or UI calls.
+snap_wet = max(0, min(wet, 1));
+snap_bypass = bypass >= 0.5;
+snap_processing_enabled = processing_enabled >= 0.5;
+snap_mapped_amount = max(0, min(mapped_amount, 1));
+snap_attack_amt = max(0, min(attack_amt, 1));
+snap_sandy_amt = max(0, min(sandy_amt, 1));
+snap_fizz_amt = max(0, min(fizz_amt, 1));
+snap_tail_amt = max(0, min(tail_amt, 1));
+snap_body_amt = max(0, min(body_amt, 1));
+snap_mask_strength = max(0, min(mask_strength, 1));
+snap_min_gain = max(0, min(min_gain, 1));
+snap_vocal_preserve = max(0, min(vocal_preserve, 1));
+snap_clarity_preserve = max(0, min(clarity_preserve, 1));
+snap_air_preserve = max(0, min(air_preserve, 1));
+snap_transient_preserve = max(0, min(transient_preserve, 1));
+snap_harmonic_preserve = max(0, min(harmonic_preserve, 1));
+snap_mid_preserve = max(0, min(mid_preserve, 1));
+snap_residual_monitor = floor(max(0, min(residual_monitor, 2)) + 0.5);
+snap_out_gain = out_gain;
+((snap_out_gain != snap_out_gain) || (abs(snap_out_gain) > abs_limit)) ? snap_out_gain = 1;
+
+bad_input = (in_l != in_l) || (in_r != in_r) || (abs(in_l) > abs_limit) || (abs(in_r) > abs_limit);
+silent_input = (abs(in_l) + abs(in_r)) <= eps;
+
+bad_input ? (
+  spl0 = last_safe_l;
+  spl1 = last_safe_r;
+  wet_state = 0;
+  status = 4;
+) : silent_input ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  lp250_l = lp250_r = lp1200_l = lp1200_r = lp2500_l = lp2500_r = 0;
+  lp5000_l = lp5000_r = lp8000_l = lp8000_r = lp12000_l = lp12000_r = 0;
+  env = tail_env = in_pow_env = proc_pow_env = wet_state = 0;
+  attack_gain_sm = sandy_gain_sm = fizz_gain_sm = air_gain_sm = 1;
+  mb_mid_low_sm = mb_mid_body_sm = mb_mid_rest_sm = 1;
+  mb_mid_attack_sm = mb_mid_sandy_sm = mb_mid_fizz_sm = mb_mid_air_sm = 1;
+  mb_side_low_sm = mb_side_body_sm = mb_side_rest_sm = 1;
+  mb_side_attack_sm = mb_side_sandy_sm = mb_side_fizz_sm = mb_side_air_sm = 1;
+  prev_det = prev_attack_energy = prev_sandy_energy = prev_fizz_energy = prev_air_energy = 0;
+  transient_score_sm = tilt_guard_sm = air_guard_sm = 0;
+  status = 0;
+) : snap_bypass ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  wet_state = 0;
+  status = 1;
+) : (snap_wet <= eps) ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  wet_state = 0;
+  status = 3;
+) : (!snap_processing_enabled) ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  wet_state = 0;
+  status = 2;
+) : (
+mono = 0.5 * (in_l + in_r);
+
+lp250_l = c250 * lp250_l + (1 - c250) * in_l;
+lp250_r = c250 * lp250_r + (1 - c250) * in_r;
+lp1200_l = c1200 * lp1200_l + (1 - c1200) * in_l;
+lp1200_r = c1200 * lp1200_r + (1 - c1200) * in_r;
+lp2500_l = c2500 * lp2500_l + (1 - c2500) * in_l;
+lp2500_r = c2500 * lp2500_r + (1 - c2500) * in_r;
+lp5000_l = c5000 * lp5000_l + (1 - c5000) * in_l;
+lp5000_r = c5000 * lp5000_r + (1 - c5000) * in_r;
+lp8000_l = c8000 * lp8000_l + (1 - c8000) * in_l;
+lp8000_r = c8000 * lp8000_r + (1 - c8000) * in_r;
+lp12000_l = c12000 * lp12000_l + (1 - c12000) * in_l;
+lp12000_r = c12000 * lp12000_r + (1 - c12000) * in_r;
+
+body_l = lp1200_l - lp250_l;
+body_r = lp1200_r - lp250_r;
+attack_l = lp5000_l - lp2500_l;
+attack_r = lp5000_r - lp2500_r;
+sandy_l = lp8000_l - lp5000_l;
+sandy_r = lp8000_r - lp5000_r;
+fizz_l = lp12000_l - lp8000_l;
+fizz_r = lp12000_r - lp8000_r;
+air_l = in_l - lp12000_l;
+air_r = in_r - lp12000_r;
+low_l = lp250_l;
+low_r = lp250_r;
+rest_l = lp2500_l - lp1200_l;
+rest_r = lp2500_r - lp1200_r;
+
+det = abs(mono);
+sample_in_pow = max(0, in_l * in_l + in_r * in_r);
+det > env ? env = det + env_att * (env - det) : env = det + env_rel * (env - det);
+tail_env = max(env, tail_env * tail_rel);
+tail_factor = max(min((tail_env - env) * 18, 1), 0);
+
+attack_det = min((abs(attack_l) + abs(attack_r)) * 5.5, 1);
+sandy_det = min((abs(sandy_l) + abs(sandy_r)) * 7.5, 1);
+fizz_det = min((abs(fizz_l) + abs(fizz_r)) * 10.0, 1);
+air_det = min((abs(air_l) + abs(air_r)) * 12.0, 1);
+
+attack_energy = abs(attack_l) + abs(attack_r);
+sandy_energy = abs(sandy_l) + abs(sandy_r);
+fizz_energy = abs(fizz_l) + abs(fizz_r);
+air_energy = abs(air_l) + abs(air_r);
+high_energy = attack_energy + sandy_energy + fizz_energy + air_energy;
+prev_high_energy = prev_attack_energy + prev_sandy_energy + prev_fizz_energy + prev_air_energy;
+energy_rise_db = 8.685889638065037 * log(max(det, eps) / max(prev_det, eps));
+high_flux = max(0, high_energy - prev_high_energy) / max(prev_high_energy + eps, eps);
+energy_rise_norm = max(0, min(1, (energy_rise_db - 1.5) / 10));
+flux_norm = max(0, min(1, high_flux * 2.5));
+transient_score = max(0, min(1, 0.6 * flux_norm + 0.4 * energy_rise_norm));
+transient_score_sm = transient_score + transient_rel * (transient_score_sm - transient_score);
+prev_det = det;
+prev_attack_energy = attack_energy;
+prev_sandy_energy = sandy_energy;
+prev_fizz_energy = fizz_energy;
+prev_air_energy = air_energy;
+
+// Prompt 15 source-preserve guards operate on per-sample local suppression
+// limits. They only reduce attenuation and never raise gain above dry.
+sample_attack_band_max_db = attack_band_max_db;
+sample_sandy_band_max_db = sandy_band_max_db;
+sample_fizz_band_max_db = fizz_band_max_db;
+sample_air_band_max_db = air_band_max_db;
+
+transient_guard = max(0.25, min(1, 1 - 0.75 * snap_transient_preserve * transient_score_sm));
+sample_attack_band_max_db *= max(0.25, min(1, transient_guard * (1 - 0.15 * snap_harmonic_preserve)));
+sample_sandy_band_max_db *= max(0.25, min(1, transient_guard * (1 - 0.10 * snap_harmonic_preserve)));
+sample_fizz_band_max_db *= max(0.25, min(1, 1 - 0.45 * snap_transient_preserve * transient_score_sm));
+sample_air_band_max_db *= max(0.25, min(1, 1 - 0.35 * snap_transient_preserve * transient_score_sm));
+attack_min_gain = exp(-sample_attack_band_max_db * db2lin);
+sandy_min_gain = exp(-sample_sandy_band_max_db * db2lin);
+fizz_min_gain = exp(-sample_fizz_band_max_db * db2lin);
+air_min_gain = exp(-sample_air_band_max_db * db2lin);
+
+// Soft-knee artifact probability. This JSFX has no STFT/model mask; these
+// broad-band probabilities are the conservative mask equivalent.
+attack_db = max(-160, min(0, log(max(attack_det, eps)) * lin2db));
+sandy_db = max(-160, min(0, log(max(sandy_det, eps)) * lin2db));
+fizz_db = max(-160, min(0, log(max(fizz_det, eps)) * lin2db));
+air_db = max(-160, min(0, log(max(air_det, eps)) * lin2db));
+
+attack_x = max(-40, min(40, (attack_db - attack_threshold_db) / knee_db));
+sandy_x = max(-40, min(40, (sandy_db - sandy_threshold_db) / knee_db));
+fizz_x = max(-40, min(40, (fizz_db - fizz_threshold_db) / knee_db));
+air_x = max(-40, min(40, (air_db - air_threshold_db) / knee_db));
+
+attack_prob = 1 / (1 + exp(-attack_x));
+sandy_prob = 1 / (1 + exp(-sandy_x));
+fizz_prob = min(1, 1 / (1 + exp(-fizz_x)) + tail_factor * snap_tail_amt * 0.35);
+air_prob = min(1, 1 / (1 + exp(-air_x)) + tail_factor * snap_tail_amt * 0.25);
+
+attack_att_db = sample_attack_band_max_db * attack_prob * snap_mapped_amount * snap_mask_strength * snap_attack_amt;
+sandy_att_db = sample_sandy_band_max_db * sandy_prob * snap_mapped_amount * snap_mask_strength * snap_sandy_amt;
+fizz_att_db = sample_fizz_band_max_db * fizz_prob * snap_mapped_amount * snap_mask_strength * min(1, snap_fizz_amt + snap_tail_amt * tail_factor * 0.5);
+air_att_db = sample_air_band_max_db * air_prob * snap_mapped_amount * snap_mask_strength * min(1, snap_fizz_amt * 0.5 + snap_tail_amt * tail_factor);
+
+attack_raw_gain = max(attack_min_gain, min(1, exp(-attack_att_db * db2lin)));
+sandy_raw_gain = max(sandy_min_gain, min(1, exp(-sandy_att_db * db2lin)));
+fizz_raw_gain = max(fizz_min_gain, min(1, exp(-fizz_att_db * db2lin)));
+air_raw_gain = max(air_min_gain, min(1, exp(-air_att_db * db2lin)));
+
+// Light frequency smoothing reduces isolated band holes without smearing the
+// whole spectrum or adding any artificial clarity.
+attack_target_gain = 0.25 + 0.50 * attack_raw_gain + 0.25 * sandy_raw_gain;
+sandy_target_gain = 0.25 * attack_raw_gain + 0.50 * sandy_raw_gain + 0.25 * fizz_raw_gain;
+fizz_target_gain = 0.25 * sandy_raw_gain + 0.50 * fizz_raw_gain + 0.25 * air_raw_gain;
+air_target_gain = 0.25 * fizz_raw_gain + 0.75 * air_raw_gain;
+
+transient_score_sm > 0.5 ? (
+  attack_target_gain = max(attack_target_gain, attack_gain_sm * 0.90);
+  sandy_target_gain = max(sandy_target_gain, sandy_gain_sm * 0.90);
+  fizz_target_gain = max(fizz_target_gain, fizz_gain_sm * 0.92);
+  air_target_gain = max(air_target_gain, air_gain_sm * 0.94);
+);
+
+// Asymmetric temporal smoothing: entering stronger attenuation is slower than
+// recovering toward dry, protecting consonants and transients from fast grabs.
+attack_target_gain < attack_gain_sm ? (
+  attack_gain_sm = suppression_attack_coeff * attack_gain_sm + (1 - suppression_attack_coeff) * attack_target_gain;
+) : (
+  attack_gain_sm = recovery_release_coeff * attack_gain_sm + (1 - recovery_release_coeff) * attack_target_gain;
+);
+sandy_target_gain < sandy_gain_sm ? (
+  sandy_gain_sm = suppression_attack_coeff * sandy_gain_sm + (1 - suppression_attack_coeff) * sandy_target_gain;
+) : (
+  sandy_gain_sm = recovery_release_coeff * sandy_gain_sm + (1 - recovery_release_coeff) * sandy_target_gain;
+);
+fizz_target_gain < fizz_gain_sm ? (
+  fizz_gain_sm = suppression_attack_coeff * fizz_gain_sm + (1 - suppression_attack_coeff) * fizz_target_gain;
+) : (
+  fizz_gain_sm = recovery_release_coeff * fizz_gain_sm + (1 - recovery_release_coeff) * fizz_target_gain;
+);
+air_target_gain < air_gain_sm ? (
+  air_gain_sm = suppression_attack_coeff * air_gain_sm + (1 - suppression_attack_coeff) * air_target_gain;
+) : (
+  air_gain_sm = recovery_release_coeff * air_gain_sm + (1 - recovery_release_coeff) * air_target_gain;
+);
+
+attack_gain = max(attack_min_gain, min(1, attack_gain_sm));
+sandy_gain = max(sandy_min_gain, min(1, sandy_gain_sm));
+fizz_gain = max(fizz_min_gain, min(1, fizz_gain_sm));
+air_gain = max(air_min_gain, min(1, air_gain_sm));
+
+near_floor_count =
+  (attack_gain <= attack_min_gain * mask_floor_ratio) +
+  (sandy_gain <= sandy_min_gain * mask_floor_ratio) +
+  (fizz_gain <= fizz_min_gain * mask_floor_ratio) +
+  (air_gain <= air_min_gain * mask_floor_ratio);
+full_band_mask_floor = near_floor_count >= full_band_floor_count_limit;
+full_band_mask_floor ? (
+  attack_gain += (1 - attack_gain) * 0.5;
+  sandy_gain += (1 - sandy_gain) * 0.5;
+  fizz_gain += (1 - fizz_gain) * 0.5;
+  air_gain += (1 - air_gain) * 0.5;
+);
+
+low_mid_in = abs(body_l) + abs(body_r) + abs(rest_l) + abs(rest_r) + eps;
+presence_in = attack_energy + sandy_energy + eps;
+presence_out_est = attack_energy * attack_gain + sandy_energy * sandy_gain + eps;
+input_tilt_db = 8.685889638065037 * log(presence_in / low_mid_in);
+output_tilt_db = 8.685889638065037 * log(presence_out_est / low_mid_in);
+tilt_loss_db = input_tilt_db - output_tilt_db;
+sample_in_pow > 0.0000000001 ? (
+  tilt_guard = max(0, min(1, (tilt_loss_db - 1.5) / 4.0));
+) : (
+  tilt_guard = 0;
+);
+tilt_guard_sm = tilt_guard + guard_rel * (tilt_guard_sm - tilt_guard);
+attack_gain += (1 - attack_gain) * 0.50 * tilt_guard_sm * max(snap_vocal_preserve, snap_clarity_preserve);
+sandy_gain += (1 - sandy_gain) * 0.50 * tilt_guard_sm * snap_clarity_preserve;
+
+air_in = fizz_energy + air_energy + eps;
+air_out_est = fizz_energy * fizz_gain + air_energy * air_gain + eps;
+air_loss_db = 8.685889638065037 * log(air_in / air_out_est);
+sample_in_pow > 0.0000000001 ? (
+  air_guard = max(0, min(1, (air_loss_db - 2.0) / 5.0));
+) : (
+  air_guard = 0;
+);
+air_guard_sm = air_guard + guard_rel * (air_guard_sm - air_guard);
+fizz_gain += (1 - fizz_gain) * 0.25 * air_guard_sm * snap_air_preserve;
+air_gain += (1 - air_gain) * 0.35 * air_guard_sm * snap_air_preserve;
+
+attack_gain = max(attack_min_gain, min(1, attack_gain));
+sandy_gain = max(sandy_min_gain, min(1, sandy_gain));
+fizz_gain = max(fizz_min_gain, min(1, fizz_gain));
+air_gain = max(air_min_gain, min(1, air_gain));
+
+body_gain = max(1, min(1.04, 1 + snap_body_amt * snap_mapped_amount * snap_mask_strength * 0.04));
+
+// M/S dynamic multiband suppressor. Standard convention:
+// mid = 0.5 * (L + R), side = 0.5 * (L - R), L = mid + side.
+// It adds only bounded attenuation after the existing conservative mask.
+mb_avg_gain = 1;
+mb_active = mb_enabled && ms_enabled;
+mb_active ? (
+  mid_low = 0.5 * (low_l + low_r);
+  mid_body = 0.5 * (body_l + body_r);
+  mid_rest = 0.5 * (rest_l + rest_r);
+  mid_attack = 0.5 * (attack_l + attack_r);
+  mid_sandy = 0.5 * (sandy_l + sandy_r);
+  mid_fizz = 0.5 * (fizz_l + fizz_r);
+  mid_air = 0.5 * (air_l + air_r);
+
+  side_low = 0.5 * (low_l - low_r);
+  side_body = 0.5 * (body_l - body_r);
+  side_rest = 0.5 * (rest_l - rest_r);
+  side_attack = 0.5 * (attack_l - attack_r);
+  side_sandy = 0.5 * (sandy_l - sandy_r);
+  side_fizz = 0.5 * (fizz_l - fizz_r);
+  side_air = 0.5 * (air_l - air_r);
+
+  mb_mid_total = abs(mid_low) + abs(mid_body) + abs(mid_rest) + abs(mid_attack) + abs(mid_sandy) + abs(mid_fizz) + abs(mid_air) + eps;
+  mb_side_total = abs(side_low) + abs(side_body) + abs(side_rest) + abs(side_attack) + abs(side_sandy) + abs(side_fizz) + abs(side_air) + eps;
+
+  low_det = min((abs(low_l) + abs(low_r)) * 3.5, 1);
+  body_det = min((abs(body_l) + abs(body_r)) * 4.0, 1);
+  rest_det = min((abs(rest_l) + abs(rest_r)) * 4.5, 1);
+  low_db = max(-160, min(0, log(max(low_det, eps)) * lin2db));
+  body_db = max(-160, min(0, log(max(body_det, eps)) * lin2db));
+  rest_db = max(-160, min(0, log(max(rest_det, eps)) * lin2db));
+  low_prob = 1 / (1 + exp(-max(-40, min(40, (low_db + 10) / knee_db))));
+  body_prob = 1 / (1 + exp(-max(-40, min(40, (body_db + 12) / knee_db))));
+  rest_prob = 1 / (1 + exp(-max(-40, min(40, (rest_db + 14) / knee_db))));
+
+  mb_mid_low_excess = max(0, min(1, (abs(mid_low) / max(mb_mid_total * 0.35, eps) - 0.70) * 0.75));
+  mb_mid_body_excess = max(0, min(1, (abs(mid_body) / max(mb_mid_total * 0.30, eps) - 0.70) * 0.80));
+  mb_mid_rest_excess = max(0, min(1, (abs(mid_rest) / max(mb_mid_total * 0.28, eps) - 0.70) * 0.80));
+  mb_mid_attack_excess = max(0, min(1, (abs(mid_attack) / max((abs(mid_rest) + abs(mid_sandy)) * 0.50 + eps, eps) - 0.75) * 0.70));
+  mb_mid_sandy_excess = max(0, min(1, (abs(mid_sandy) / max((abs(mid_attack) + abs(mid_fizz)) * 0.50 + eps, eps) - 0.75) * 0.70));
+  mb_mid_fizz_excess = max(0, min(1, (abs(mid_fizz) / max((abs(mid_sandy) + abs(mid_air)) * 0.50 + eps, eps) - 0.75) * 0.75));
+  mb_mid_air_excess = max(0, min(1, (abs(mid_air) / max(mb_mid_total * 0.18, eps) - 0.75) * 0.70));
+
+  mb_side_low_excess = max(0, min(1, (abs(side_low) / max(mb_side_total * 0.35, eps) - 0.55) * 0.80));
+  mb_side_body_excess = max(0, min(1, (abs(side_body) / max(mb_side_total * 0.30, eps) - 0.55) * 0.85));
+  mb_side_rest_excess = max(0, min(1, (abs(side_rest) / max(mb_side_total * 0.28, eps) - 0.55) * 0.85));
+  mb_side_attack_excess = max(0, min(1, (abs(side_attack) / max((abs(side_rest) + abs(side_sandy)) * 0.45 + eps, eps) - 0.60) * 0.85));
+  mb_side_sandy_excess = max(0, min(1, (abs(side_sandy) / max((abs(side_attack) + abs(side_fizz)) * 0.45 + eps, eps) - 0.60) * 0.85));
+  mb_side_fizz_excess = max(0, min(1, (abs(side_fizz) / max((abs(side_sandy) + abs(side_air)) * 0.45 + eps, eps) - 0.60) * 0.90));
+  mb_side_air_excess = max(0, min(1, (abs(side_air) / max(mb_side_total * 0.18, eps) - 0.60) * 0.85));
+
+  mb_mid_low_score = max(0, min(1, 0.50 * low_prob + 0.50 * mb_mid_low_excess));
+  mb_mid_body_score = max(0, min(1, 0.50 * body_prob + 0.50 * mb_mid_body_excess));
+  mb_mid_rest_score = max(0, min(1, 0.50 * rest_prob + 0.50 * mb_mid_rest_excess));
+  mb_mid_attack_score = max(0, min(1, 0.45 * attack_prob + 0.40 * mb_mid_attack_excess + 0.15 * tail_factor));
+  mb_mid_sandy_score = max(0, min(1, 0.45 * sandy_prob + 0.40 * mb_mid_sandy_excess + 0.15 * tail_factor));
+  mb_mid_fizz_score = max(0, min(1, 0.45 * fizz_prob + 0.40 * mb_mid_fizz_excess + 0.15 * tail_factor + mb_surgical_gate * max(0, mb_mid_fizz_excess - 0.75)));
+  mb_mid_air_score = max(0, min(1, 0.45 * air_prob + 0.40 * mb_mid_air_excess + 0.15 * tail_factor));
+
+  mb_side_low_score = max(0, min(1, 0.45 * low_prob + 0.55 * mb_side_low_excess));
+  mb_side_body_score = max(0, min(1, 0.45 * body_prob + 0.55 * mb_side_body_excess));
+  mb_side_rest_score = max(0, min(1, 0.45 * rest_prob + 0.55 * mb_side_rest_excess));
+  mb_side_attack_score = max(0, min(1, 0.40 * attack_prob + 0.45 * mb_side_attack_excess + 0.15 * tail_factor));
+  mb_side_sandy_score = max(0, min(1, 0.40 * sandy_prob + 0.45 * mb_side_sandy_excess + 0.15 * tail_factor));
+  mb_side_fizz_score = max(0, min(1, 0.40 * fizz_prob + 0.45 * mb_side_fizz_excess + 0.15 * tail_factor + mb_surgical_gate * max(0, mb_side_fizz_excess - 0.70)));
+  mb_side_air_score = max(0, min(1, 0.40 * air_prob + 0.45 * mb_side_air_excess + 0.15 * tail_factor));
+
+  mb_mid_low_protect = min(1, 0.45 * snap_vocal_preserve + 0.35 * snap_harmonic_preserve + 0.20 * snap_mid_preserve);
+  mb_mid_body_protect = min(1, 0.50 * snap_vocal_preserve + 0.35 * snap_harmonic_preserve + 0.25 * snap_mid_preserve);
+  mb_mid_rest_protect = min(1, 0.55 * snap_vocal_preserve + 0.35 * snap_clarity_preserve + 0.25 * snap_mid_preserve);
+  mb_mid_attack_protect = min(1, 0.45 * snap_vocal_preserve + 0.35 * snap_clarity_preserve + 0.25 * snap_harmonic_preserve + 0.45 * snap_transient_preserve * transient_score_sm + 0.25 * snap_mid_preserve);
+  mb_mid_sandy_protect = min(1, 0.25 * snap_vocal_preserve + 0.50 * snap_clarity_preserve + 0.25 * snap_harmonic_preserve + 0.45 * snap_transient_preserve * transient_score_sm + 0.20 * snap_mid_preserve);
+  mb_mid_fizz_protect = min(1, 0.25 * snap_clarity_preserve + 0.50 * snap_air_preserve + 0.20 * snap_harmonic_preserve + 0.35 * snap_transient_preserve * transient_score_sm + 0.20 * snap_mid_preserve);
+  mb_mid_air_protect = min(1, 0.65 * snap_air_preserve + 0.25 * snap_clarity_preserve + 0.25 * snap_transient_preserve * transient_score_sm + 0.15 * snap_mid_preserve);
+
+  mb_side_low_protect = min(1, 0.25 * snap_vocal_preserve + 0.25 * snap_harmonic_preserve);
+  mb_side_body_protect = min(1, 0.30 * snap_vocal_preserve + 0.25 * snap_harmonic_preserve);
+  mb_side_rest_protect = min(1, 0.35 * snap_vocal_preserve + 0.25 * snap_clarity_preserve);
+  mb_side_attack_protect = min(1, 0.30 * snap_vocal_preserve + 0.30 * snap_clarity_preserve + 0.35 * snap_transient_preserve * transient_score_sm);
+  mb_side_sandy_protect = min(1, 0.35 * snap_clarity_preserve + 0.35 * snap_transient_preserve * transient_score_sm);
+  mb_side_fizz_protect = min(1, 0.45 * snap_air_preserve + 0.25 * snap_clarity_preserve + 0.25 * snap_transient_preserve * transient_score_sm);
+  mb_side_air_protect = min(1, 0.55 * snap_air_preserve + 0.20 * snap_transient_preserve * transient_score_sm);
+
+  mb_mid_low_eff = mb_mid_low_score * max(0, min(1, 1 - mb_mid_low_protect));
+  mb_mid_body_eff = mb_mid_body_score * max(0, min(1, 1 - mb_mid_body_protect));
+  mb_mid_rest_eff = mb_mid_rest_score * max(0, min(1, 1 - mb_mid_rest_protect));
+  mb_mid_attack_eff = mb_mid_attack_score * max(0, min(1, 1 - mb_mid_attack_protect));
+  mb_mid_sandy_eff = mb_mid_sandy_score * max(0, min(1, 1 - mb_mid_sandy_protect));
+  mb_mid_fizz_eff = mb_mid_fizz_score * max(0, min(1, 1 - mb_mid_fizz_protect));
+  mb_mid_air_eff = mb_mid_air_score * max(0, min(1, 1 - mb_mid_air_protect));
+
+  mb_side_low_eff = mb_side_low_score * max(0, min(1, 1 - mb_side_low_protect));
+  mb_side_body_eff = mb_side_body_score * max(0, min(1, 1 - mb_side_body_protect));
+  mb_side_rest_eff = mb_side_rest_score * max(0, min(1, 1 - mb_side_rest_protect));
+  mb_side_attack_eff = mb_side_attack_score * max(0, min(1, 1 - mb_side_attack_protect));
+  mb_side_sandy_eff = mb_side_sandy_score * max(0, min(1, 1 - mb_side_sandy_protect));
+  mb_side_fizz_eff = mb_side_fizz_score * max(0, min(1, 1 - mb_side_fizz_protect));
+  mb_side_air_eff = mb_side_air_score * max(0, min(1, 1 - mb_side_air_protect));
+
+  mb_mid_low_db = mb_low_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_low_eff;
+  mb_mid_body_db = mb_body_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_body_eff;
+  mb_mid_rest_db = mb_rest_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_rest_eff;
+  mb_mid_attack_db = mb_attack_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_attack_eff;
+  mb_mid_sandy_db = mb_sandy_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_sandy_eff;
+  mb_mid_fizz_db = mb_fizz_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_fizz_eff;
+  mb_mid_air_db = mb_air_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * mid_reduction_scale * mb_mid_air_eff;
+
+  mb_side_low_db = mb_low_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_low_eff;
+  mb_side_body_db = mb_body_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_body_eff;
+  mb_side_rest_db = mb_rest_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_rest_eff;
+  mb_side_attack_db = mb_attack_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_attack_eff;
+  mb_side_sandy_db = mb_sandy_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_sandy_eff;
+  mb_side_fizz_db = mb_fizz_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_fizz_eff;
+  mb_side_air_db = mb_air_max_db * snap_mapped_amount * snap_mask_strength * mb_mode_scale * side_reduction_scale * mb_side_air_eff;
+
+  mb_mid_low_target = max(exp(-mb_low_max_db * db2lin), min(1, exp(-mb_mid_low_db * db2lin)));
+  mb_mid_body_target = max(exp(-mb_body_max_db * db2lin), min(1, exp(-mb_mid_body_db * db2lin)));
+  mb_mid_rest_target = max(exp(-mb_rest_max_db * db2lin), min(1, exp(-mb_mid_rest_db * db2lin)));
+  mb_mid_attack_target = max(exp(-mb_attack_max_db * db2lin), min(1, exp(-mb_mid_attack_db * db2lin)));
+  mb_mid_sandy_target = max(exp(-mb_sandy_max_db * db2lin), min(1, exp(-mb_mid_sandy_db * db2lin)));
+  mb_mid_fizz_target = max(exp(-mb_fizz_max_db * db2lin), min(1, exp(-mb_mid_fizz_db * db2lin)));
+  mb_mid_air_target = max(exp(-mb_air_max_db * db2lin), min(1, exp(-mb_mid_air_db * db2lin)));
+
+  mb_side_low_target = max(exp(-mb_low_max_db * db2lin), min(1, exp(-mb_side_low_db * db2lin)));
+  mb_side_body_target = max(exp(-mb_body_max_db * db2lin), min(1, exp(-mb_side_body_db * db2lin)));
+  mb_side_rest_target = max(exp(-mb_rest_max_db * db2lin), min(1, exp(-mb_side_rest_db * db2lin)));
+  mb_side_attack_target = max(exp(-mb_attack_max_db * db2lin), min(1, exp(-mb_side_attack_db * db2lin)));
+  mb_side_sandy_target = max(exp(-mb_sandy_max_db * db2lin), min(1, exp(-mb_side_sandy_db * db2lin)));
+  mb_side_fizz_target = max(exp(-mb_fizz_max_db * db2lin), min(1, exp(-mb_side_fizz_db * db2lin)));
+  mb_side_air_target = max(exp(-mb_air_max_db * db2lin), min(1, exp(-mb_side_air_db * db2lin)));
+
+  mb_mid_low_target < mb_mid_low_sm ? (
+    mb_mid_low_sm = suppression_attack_coeff * mb_mid_low_sm + (1 - suppression_attack_coeff) * mb_mid_low_target;
+  ) : (
+    mb_mid_low_sm = recovery_release_coeff * mb_mid_low_sm + (1 - recovery_release_coeff) * mb_mid_low_target;
+  );
+  mb_mid_body_target < mb_mid_body_sm ? (
+    mb_mid_body_sm = suppression_attack_coeff * mb_mid_body_sm + (1 - suppression_attack_coeff) * mb_mid_body_target;
+  ) : (
+    mb_mid_body_sm = recovery_release_coeff * mb_mid_body_sm + (1 - recovery_release_coeff) * mb_mid_body_target;
+  );
+  mb_mid_rest_target < mb_mid_rest_sm ? (
+    mb_mid_rest_sm = suppression_attack_coeff * mb_mid_rest_sm + (1 - suppression_attack_coeff) * mb_mid_rest_target;
+  ) : (
+    mb_mid_rest_sm = recovery_release_coeff * mb_mid_rest_sm + (1 - recovery_release_coeff) * mb_mid_rest_target;
+  );
+  mb_mid_attack_target < mb_mid_attack_sm ? (
+    mb_mid_attack_sm = suppression_attack_coeff * mb_mid_attack_sm + (1 - suppression_attack_coeff) * mb_mid_attack_target;
+  ) : (
+    mb_mid_attack_sm = recovery_release_coeff * mb_mid_attack_sm + (1 - recovery_release_coeff) * mb_mid_attack_target;
+  );
+  mb_mid_sandy_target < mb_mid_sandy_sm ? (
+    mb_mid_sandy_sm = suppression_attack_coeff * mb_mid_sandy_sm + (1 - suppression_attack_coeff) * mb_mid_sandy_target;
+  ) : (
+    mb_mid_sandy_sm = recovery_release_coeff * mb_mid_sandy_sm + (1 - recovery_release_coeff) * mb_mid_sandy_target;
+  );
+  mb_mid_fizz_target < mb_mid_fizz_sm ? (
+    mb_mid_fizz_sm = suppression_attack_coeff * mb_mid_fizz_sm + (1 - suppression_attack_coeff) * mb_mid_fizz_target;
+  ) : (
+    mb_mid_fizz_sm = recovery_release_coeff * mb_mid_fizz_sm + (1 - recovery_release_coeff) * mb_mid_fizz_target;
+  );
+  mb_mid_air_target < mb_mid_air_sm ? (
+    mb_mid_air_sm = suppression_attack_coeff * mb_mid_air_sm + (1 - suppression_attack_coeff) * mb_mid_air_target;
+  ) : (
+    mb_mid_air_sm = recovery_release_coeff * mb_mid_air_sm + (1 - recovery_release_coeff) * mb_mid_air_target;
+  );
+
+  mb_side_low_target < mb_side_low_sm ? (
+    mb_side_low_sm = suppression_attack_coeff * mb_side_low_sm + (1 - suppression_attack_coeff) * mb_side_low_target;
+  ) : (
+    mb_side_low_sm = recovery_release_coeff * mb_side_low_sm + (1 - recovery_release_coeff) * mb_side_low_target;
+  );
+  mb_side_body_target < mb_side_body_sm ? (
+    mb_side_body_sm = suppression_attack_coeff * mb_side_body_sm + (1 - suppression_attack_coeff) * mb_side_body_target;
+  ) : (
+    mb_side_body_sm = recovery_release_coeff * mb_side_body_sm + (1 - recovery_release_coeff) * mb_side_body_target;
+  );
+  mb_side_rest_target < mb_side_rest_sm ? (
+    mb_side_rest_sm = suppression_attack_coeff * mb_side_rest_sm + (1 - suppression_attack_coeff) * mb_side_rest_target;
+  ) : (
+    mb_side_rest_sm = recovery_release_coeff * mb_side_rest_sm + (1 - recovery_release_coeff) * mb_side_rest_target;
+  );
+  mb_side_attack_target < mb_side_attack_sm ? (
+    mb_side_attack_sm = suppression_attack_coeff * mb_side_attack_sm + (1 - suppression_attack_coeff) * mb_side_attack_target;
+  ) : (
+    mb_side_attack_sm = recovery_release_coeff * mb_side_attack_sm + (1 - recovery_release_coeff) * mb_side_attack_target;
+  );
+  mb_side_sandy_target < mb_side_sandy_sm ? (
+    mb_side_sandy_sm = suppression_attack_coeff * mb_side_sandy_sm + (1 - suppression_attack_coeff) * mb_side_sandy_target;
+  ) : (
+    mb_side_sandy_sm = recovery_release_coeff * mb_side_sandy_sm + (1 - recovery_release_coeff) * mb_side_sandy_target;
+  );
+  mb_side_fizz_target < mb_side_fizz_sm ? (
+    mb_side_fizz_sm = suppression_attack_coeff * mb_side_fizz_sm + (1 - suppression_attack_coeff) * mb_side_fizz_target;
+  ) : (
+    mb_side_fizz_sm = recovery_release_coeff * mb_side_fizz_sm + (1 - recovery_release_coeff) * mb_side_fizz_target;
+  );
+  mb_side_air_target < mb_side_air_sm ? (
+    mb_side_air_sm = suppression_attack_coeff * mb_side_air_sm + (1 - suppression_attack_coeff) * mb_side_air_target;
+  ) : (
+    mb_side_air_sm = recovery_release_coeff * mb_side_air_sm + (1 - recovery_release_coeff) * mb_side_air_target;
+  );
+
+  presence_budget_gain = exp(-mb_presence_budget_db * db2lin);
+  air_budget_gain = exp(-mb_air_budget_db * db2lin);
+  mb_mid_attack_gain = min(1, max(mb_mid_attack_sm, min(1, presence_budget_gain / max(attack_gain, eps))));
+  mb_mid_sandy_gain = min(1, max(mb_mid_sandy_sm, min(1, presence_budget_gain / max(sandy_gain, eps))));
+  mb_side_attack_gain = min(1, max(mb_side_attack_sm, min(1, presence_budget_gain / max(attack_gain, eps))));
+  mb_side_sandy_gain = min(1, max(mb_side_sandy_sm, min(1, presence_budget_gain / max(sandy_gain, eps))));
+  mb_mid_fizz_gain = min(1, max(mb_mid_fizz_sm, min(1, air_budget_gain / max(fizz_gain, eps))));
+  mb_mid_air_gain = min(1, max(mb_mid_air_sm, min(1, air_budget_gain / max(air_gain, eps))));
+  mb_side_fizz_gain = min(1, max(mb_side_fizz_sm, min(1, air_budget_gain / max(fizz_gain, eps))));
+  mb_side_air_gain = min(1, max(mb_side_air_sm, min(1, air_budget_gain / max(air_gain, eps))));
+
+  mb_mid_low_gain = max(exp(-mb_low_max_db * db2lin), min(1, mb_mid_low_sm));
+  mb_mid_body_gain = max(exp(-mb_body_max_db * db2lin), min(1, mb_mid_body_sm));
+  mb_mid_rest_gain = max(exp(-mb_rest_max_db * db2lin), min(1, mb_mid_rest_sm));
+  mb_side_low_gain = max(exp(-mb_low_max_db * db2lin), min(1, mb_side_low_sm));
+  mb_side_body_gain = max(exp(-mb_body_max_db * db2lin), min(1, mb_side_body_sm));
+  mb_side_rest_gain = max(exp(-mb_rest_max_db * db2lin), min(1, mb_side_rest_sm));
+
+  side_in_energy = abs(side_low) + abs(side_body) + abs(side_rest) + abs(side_attack) + abs(side_sandy) + abs(side_fizz) + abs(side_air) + eps;
+  side_out_est = abs(side_low) * mb_side_low_gain + abs(side_body) * mb_side_body_gain + abs(side_rest) * mb_side_rest_gain
+               + abs(side_attack) * mb_side_attack_gain + abs(side_sandy) * mb_side_sandy_gain
+               + abs(side_fizz) * mb_side_fizz_gain + abs(side_air) * mb_side_air_gain + eps;
+  side_width_loss_db = lin2db * log(side_in_energy / side_out_est);
+  side_width_guard = max(0, min(1, (side_width_loss_db - 3.0) / 4.0));
+  mb_side_low_gain += (1 - mb_side_low_gain) * 0.50 * side_width_guard;
+  mb_side_body_gain += (1 - mb_side_body_gain) * 0.50 * side_width_guard;
+  mb_side_rest_gain += (1 - mb_side_rest_gain) * 0.50 * side_width_guard;
+  mb_side_attack_gain += (1 - mb_side_attack_gain) * 0.50 * side_width_guard;
+  mb_side_sandy_gain += (1 - mb_side_sandy_gain) * 0.50 * side_width_guard;
+  mb_side_fizz_gain += (1 - mb_side_fizz_gain) * 0.50 * side_width_guard;
+  mb_side_air_gain += (1 - mb_side_air_gain) * 0.50 * side_width_guard;
+
+  mb_avg_gain = (mb_mid_low_gain + mb_mid_body_gain + mb_mid_rest_gain + mb_mid_attack_gain + mb_mid_sandy_gain + mb_mid_fizz_gain + mb_mid_air_gain
+               + mb_side_low_gain + mb_side_body_gain + mb_side_rest_gain + mb_side_attack_gain + mb_side_sandy_gain + mb_side_fizz_gain + mb_side_air_gain) / 14;
+
+  proc_m = mid_low * mb_mid_low_gain
+         + mid_body * body_gain * mb_mid_body_gain
+         + mid_rest * mb_mid_rest_gain
+         + mid_attack * attack_gain * mb_mid_attack_gain
+         + mid_sandy * sandy_gain * mb_mid_sandy_gain
+         + mid_fizz * fizz_gain * mb_mid_fizz_gain
+         + mid_air * air_gain * mb_mid_air_gain;
+
+  proc_s = side_low * mb_side_low_gain
+         + side_body * body_gain * mb_side_body_gain
+         + side_rest * mb_side_rest_gain
+         + side_attack * attack_gain * mb_side_attack_gain
+         + side_sandy * sandy_gain * mb_side_sandy_gain
+         + side_fizz * fizz_gain * mb_side_fizz_gain
+         + side_air * air_gain * mb_side_air_gain;
+
+  proc_l = proc_m + proc_s;
+  proc_r = proc_m - proc_s;
+) : (
+  proc_l = low_l
+         + body_l * body_gain
+         + rest_l
+         + attack_l * attack_gain
+         + sandy_l * sandy_gain
+         + fizz_l * fizz_gain
+         + air_l * air_gain;
+  proc_r = low_r
+         + body_r * body_gain
+         + rest_r
+         + attack_r * attack_gain
+         + sandy_r * sandy_gain
+         + fizz_r * fizz_gain
+         + air_r * air_gain;
+);
+
+proc_l *= snap_out_gain;
+proc_r *= snap_out_gain;
+
+bad_proc = (proc_l != proc_l) || (proc_r != proc_r) || (abs(proc_l) > abs_limit) || (abs(proc_r) > abs_limit);
+in_pow = sample_in_pow;
+proc_pow = max(0, proc_l * proc_l + proc_r * proc_r);
+in_pow_env = in_pow + rms_rel * (in_pow_env - in_pow);
+proc_pow_env = proc_pow + rms_rel * (proc_pow_env - proc_pow);
+avg_gain = (attack_gain + sandy_gain + fizz_gain + air_gain) * 0.25;
+suspicious_drop = (in_pow_env > 0.0000000001) && (proc_pow_env < in_pow_env * suspicious_drop_power_ratio);
+full_band_collapse = (avg_gain < max(snap_min_gain, collapse_gain_floor)) || (mb_avg_gain < mb_collapse_gain_floor) || full_band_mask_floor;
+
+bad_proc ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  wet_state = 0;
+  status = 4;
+) : (suspicious_drop || full_band_collapse) ? (
+  spl0 = in_l;
+  spl1 = in_r;
+  last_safe_l = in_l;
+  last_safe_r = in_r;
+  wet_state = 0;
+  status = 5;
+) : (
+  target_wet = snap_wet;
+  status = 0;
+
+  snap_wet <= eps ? (
+    wet_state = 0;
+  ) : (
+    wet_state = target_wet + wet_rel * (wet_state - target_wet);
+  );
+
+  out_l = in_l + (proc_l - in_l) * wet_state;
+  out_r = in_r + (proc_r - in_r) * wet_state;
+  // Residual monitor convention: dry input minus processed-before-drywet.
+  // It is a listening/debug mode only and is ignored by bypass/fallback paths.
+  snap_residual_monitor == 1 ? (
+    out_l = proc_l;
+    out_r = proc_r;
+  ) : snap_residual_monitor == 2 ? (
+    out_l = in_l - proc_l;
+    out_r = in_r - proc_r;
+  );
+  bad_out = (out_l != out_l) || (out_r != out_r) || (abs(out_l) > abs_limit) || (abs(out_r) > abs_limit);
+  bad_out ? (
+    spl0 = in_l;
+    spl1 = in_r;
+    last_safe_l = in_l;
+    last_safe_r = in_r;
+    wet_state = 0;
+    status = 4;
+  ) : (
+    spl0 = out_l;
+    spl1 = out_r;
+    last_safe_l = out_l;
+    last_safe_r = out_r;
+  );
+);
+);

@@ -1,0 +1,50 @@
+{
+  "candidate_sources": [
+    {
+      "human_accepted": false,
+      "intended_use": "isolated_stem",
+      "label": "instrumental_or_music_bus_stem",
+      "notes": "Needed to evaluate vocal-seat carving without treating a full mix as a vocal source.",
+      "source_classification": "isolated_stem",
+      "source_path": "",
+      "source_role": "full_mix_reference",
+      "source_stage": ""
+    },
+    {
+      "human_accepted": false,
+      "intended_use": "isolated_stem",
+      "label": "separate_lead_vocal_stem_if_available",
+      "notes": "Useful for level-matched A/B and vocal-first balance validation.",
+      "source_classification": "isolated_stem",
+      "source_path": "",
+      "source_role": "full_mix_reference",
+      "source_stage": ""
+    },
+    {
+      "human_accepted": false,
+      "intended_use": "isolated_stem",
+      "label": "instrumental_or_music_bus_stem",
+      "notes": "Needed to evaluate vocal-seat carving without treating a full mix as a vocal source.",
+      "source_classification": "isolated_stem",
+      "source_path": "",
+      "source_role": "instrumental_bus",
+      "source_stage": ""
+    },
+    {
+      "human_accepted": false,
+      "intended_use": "isolated_stem",
+      "label": "separate_lead_vocal_stem_if_available",
+      "notes": "Useful for level-matched A/B and vocal-first balance validation.",
+      "source_classification": "isolated_stem",
+      "source_path": "",
+      "source_role": "instrumental_bus",
+      "source_stage": ""
+    }
+  ],
+  "limits": [
+    "Do not mark human_accepted true without actual user listening acceptance.",
+    "Full-mix/reference tracks cannot satisfy isolated stem requests.",
+    "This template is not final export approval."
+  ],
+  "schema": "automix-source-acceptance-manifest-template-v1"
+}

@@ -1,0 +1,84 @@
+{
+  "allowed_probe_mutation_calls": [
+    "DeleteTrack",
+    "GetSetMediaTrackInfo_String",
+    "InsertTrackAtIndex",
+    "SetMediaTrackInfo_Value",
+    "TrackFX_AddByName",
+    "TrackFX_Delete",
+    "Undo_BeginBlock",
+    "Undo_EndBlock"
+  ],
+  "blockers": [],
+  "collector_package_path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+  "collector_package_summary": {
+    "blocked_queue_jobs_total": 2,
+    "collector_jobs_total": 9,
+    "schema": "automix-plugin-semantic-validation-runtime-collector-package-v1",
+    "status": "runtime_collector_package_ready"
+  },
+  "created_at": "2026-06-05T12:24:11Z",
+  "disallowed_reaper_calls": [],
+  "limits": [
+    "This is a static safety audit of the generated collector package.",
+    "A passing audit does not prove plugin semantic write safety or audio quality.",
+    "The collector still requires a saved test copy or temporary muted REAPER context because it creates and removes a probe track in memory.",
+    "The collector writes raw observation JSON only; raw observations are not validation reports."
+  ],
+  "lua_collector_path": "automix/reaper_scripts/collect_plugin_semantic_validation_runtime.lua",
+  "mutation_model": {
+    "approves_audio_delivery": false,
+    "creates_validation_reports": false,
+    "in_memory_temporary_probe_track_mutation": true,
+    "renders_audio": false,
+    "requires_saved_test_copy_or_temporary_muted_context": true,
+    "saves_project": false,
+    "writes_parameters": false
+  },
+  "output_dir": "automix",
+  "passed": true,
+  "project_name": "project",
+  "queue_payload_path": "automix/reaper_scripts/plugin_semantic_validation_runtime_queue.json",
+  "queue_payload_summary": {
+    "blocked_queue_jobs_total": 2,
+    "jobs_total": 9,
+    "safety": {
+      "creates_validation_reports": false,
+      "renders_audio": false,
+      "requires_reaper_runtime": true,
+      "requires_saved_test_copy_or_temporary_muted_context": true,
+      "safe_to_write_parameters": false,
+      "saves_project": false,
+      "temporary_muted_probe_track_only": true
+    },
+    "schema": "automix-plugin-semantic-validation-reaper-runtime-queue-v1"
+  },
+  "reaper_calls": [
+    "CountTracks",
+    "DeleteTrack",
+    "GetSetMediaTrackInfo_String",
+    "GetTrack",
+    "InsertTrackAtIndex",
+    "PreventUIRefresh",
+    "RecursiveCreateDirectory",
+    "SetMediaTrackInfo_Value",
+    "ShowMessageBox",
+    "TrackFX_AddByName",
+    "TrackFX_Delete",
+    "TrackFX_GetCount",
+    "TrackFX_GetFXName",
+    "TrackFX_GetNumParams",
+    "TrackFX_GetParamName",
+    "Undo_BeginBlock",
+    "Undo_EndBlock",
+    "ValidatePtr2"
+  ],
+  "safe_for_operator_runtime_collection": true,
+  "schema": "automix-reaper-runtime-collector-safety-audit-v1",
+  "status": "collector_safety_passed",
+  "warnings": [
+    "blocked_queue_jobs_remain:2",
+    "collector_writes_raw_observation_files",
+    "temporary_probe_track_mutation_detected"
+  ]
+}

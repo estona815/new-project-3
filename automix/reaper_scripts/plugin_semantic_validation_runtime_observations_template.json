@@ -1,0 +1,30 @@
+{
+  "collector_jobs_total": 9,
+  "created_at": "2026-06-05T12:24:11Z",
+  "creates_validation_reports": false,
+  "limits": [
+    "This template is not a runtime observation.",
+    "Raw observations are not passing validation reports.",
+    "Parameter indexes remain non-authoritative until semantic controls are reviewed."
+  ],
+  "observation_paths": [
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_02_reaverbate_cockos_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_07_reacomp_cockos_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_08_readelay_cockos_observation.json",
+    "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_09_reaeq_cockos_observation.json"
+  ],
+  "project_name": "project",
+  "required_follow_up": [
+    "Operator converts raw observation JSON into real plugin_parameter_validation reports only after manual review.",
+    "Runtime evidence gate must validate the accepted manifest and real reports.",
+    "Semantic validation gate must pass before automatic parameter writes are considered."
+  ],
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-observation-template-v1",
+  "target_runtime_observation_schema": "automix-plugin-semantic-validation-runtime-observation-v1"
+}

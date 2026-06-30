@@ -1,0 +1,178 @@
+{
+  "ab_preview_consistency": {
+    "ab_evidence_output_path": "",
+    "ab_manifest_output_path": "",
+    "approval_evidence_ab_preview_path": "",
+    "approval_reviewed_ab_preview_path": "",
+    "preview_output_exists": false,
+    "preview_output_path": ""
+  },
+  "blockers": [
+    "ab_preview_evidence_not_ready",
+    "ab_preview_output_path_missing",
+    "deliverable_package_evidence_not_ready",
+    "final_approval_evidence_not_ready",
+    "final_audio_path_missing",
+    "final_export_state_not_safe",
+    "final_qc_evidence_not_ready",
+    "final_render_evidence_not_ready",
+    "final_render_evidence_primary_wav_missing",
+    "final_render_manifest_primary_wav_missing"
+  ],
+  "created_at": "2026-06-02T17:06:47Z",
+  "evidence_files": {
+    "ab_preview_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+      "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+      "schema": "automix-ab-preview-evidence-gate-v1",
+      "schema_valid": true
+    },
+    "deliverable_package_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/deliverable_package_evidence_gate.json",
+      "relative_path": "eval_reports/deliverable_package_evidence_gate.json",
+      "schema": "automix-deliverable-package-evidence-gate-v1",
+      "schema_valid": true
+    },
+    "deliverable_package_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/deliverable_package_manifest.json",
+      "relative_path": "export/deliverable_package_manifest.json",
+      "schema": "automix-deliverable-package-manifest-v1",
+      "schema_valid": true
+    },
+    "final_ab_preview_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_ab_preview_manifest.json",
+      "relative_path": "eval_reports/final_ab_preview_manifest.json",
+      "schema": "automix-final-ab-preview-v1",
+      "schema_valid": true
+    },
+    "final_approval_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_approval_evidence_gate.json",
+      "relative_path": "eval_reports/final_approval_evidence_gate.json",
+      "schema": "automix-final-approval-evidence-gate-v1",
+      "schema_valid": true
+    },
+    "final_export_state": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/final_export_state.json",
+      "relative_path": "export/final_export_state.json",
+      "schema": "automix-final-export-state-v1",
+      "schema_valid": true
+    },
+    "final_human_approval": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/review/final_human_approval.json",
+      "relative_path": "review/final_human_approval.json",
+      "schema": "automix-final-human-approval-v1",
+      "schema_valid": true
+    },
+    "final_qc_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_qc_evidence_gate.json",
+      "relative_path": "eval_reports/final_qc_evidence_gate.json",
+      "schema": "automix-final-qc-evidence-gate-v1",
+      "schema_valid": true
+    },
+    "final_qc_metrics": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "relative_path": "eval_reports/final_qc_metrics.json",
+      "schema": "automix-final-qc-metrics-v1",
+      "schema_valid": true
+    },
+    "final_render_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_render_evidence_gate.json",
+      "relative_path": "eval_reports/final_render_evidence_gate.json",
+      "schema": "automix-final-render-evidence-gate-v1",
+      "schema_valid": true
+    },
+    "final_render_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/final_render_manifest.json",
+      "relative_path": "export/final_render_manifest.json",
+      "schema": "automix-final-render-manifest-v1",
+      "schema_valid": true
+    },
+    "project_state_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/project_state_manifest.json",
+      "relative_path": "export/project_state_manifest.json",
+      "schema": "automix-project-state-manifest-v1",
+      "schema_valid": true
+    },
+    "rollback_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/rollback_evidence_gate.json",
+      "relative_path": "eval_reports/rollback_evidence_gate.json",
+      "schema": "automix-rollback-evidence-gate-v1",
+      "schema_valid": true
+    }
+  },
+  "final_audio_consistency": {
+    "ab_preview_source_final": "",
+    "approval_evidence_final_audio": "",
+    "approval_reviewed_final_audio": "",
+    "final_audio_exists": false,
+    "final_audio_path": "",
+    "qc_evidence_final_audio": "",
+    "qc_metrics_final_audio": "",
+    "render_evidence_primary_wav": "",
+    "render_manifest_primary_wav": ""
+  },
+  "limits": [
+    "This gate validates final delivery cross-report consistency only; it does not approve audio.",
+    "A passing consistency gate does not replace render, QC, A/B, approval, package, rollback, or professional readiness gates.",
+    "Human listening at matched loudness remains required before final delivery."
+  ],
+  "output_dir": "automix",
+  "package_consistency": {
+    "ab_preview_filename_included": false,
+    "files_included_count": 18,
+    "final_audio_filename_included": false,
+    "package_evidence_actual_zip_size_bytes": 0,
+    "package_evidence_zip_path": "",
+    "package_manifest_size_bytes": 0,
+    "package_manifest_zip_path": ""
+  },
+  "project_name": "project",
+  "ready_for_delivery_consistency": false,
+  "ready_for_professional_readiness": false,
+  "schema": "automix-final-delivery-consistency-gate-v1",
+  "source_consistency": {
+    "approved_source": "",
+    "approved_stage": "",
+    "selected_export_source": "",
+    "selected_export_stage": "",
+    "selected_source_exists": false,
+    "selected_source_in_project_state": false
+  },
+  "supporting_gate_readiness": {
+    "ab_preview_evidence": false,
+    "deliverable_package_evidence": false,
+    "final_approval_evidence": false,
+    "final_export_state": false,
+    "final_qc_evidence": false,
+    "final_render_evidence": false,
+    "rollback_evidence": true
+  },
+  "template_path": "automix/review/final_delivery_consistency_manifest_template.json",
+  "warnings": []
+}

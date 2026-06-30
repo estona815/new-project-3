@@ -1,0 +1,6 @@
+{
+  "schema": "automix-orchestrator-premaster-analysis-v1",
+  "warnings": [
+    "source_mix_not_supplied_report_only"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "rejected premaster",
+  "coverage_tags": [
+    "human_review",
+    "rejected_revision"
+  ],
+  "input": {
+    "premaster_status": "rejected"
+  },
+  "expected_stage_status": "blocked",
+  "expected_decision": "manual_review_required",
+  "expected_blockers": [
+    "premaster_rejected_but_final_export_requested"
+  ],
+  "expected_reports": []
+}

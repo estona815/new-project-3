@@ -1,0 +1,7 @@
+{
+  "hpf_hz": 80,
+  "dynamic_mud_max_db": 2.0,
+  "box_cut_db": -1,
+  "presence_db": 1.0,
+  "air_db": 0.0
+}

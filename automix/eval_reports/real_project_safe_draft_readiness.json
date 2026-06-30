@@ -1,0 +1,23 @@
+{
+  "blockers": [
+    "isolated_stems_required",
+    "validated_plugin_mapping_required"
+  ],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "readiness_breakdown": {
+    "plugin_mapping_readiness": 0.0,
+    "prompt41_validation": 1.0,
+    "read_only_guard": 1.0,
+    "report_completeness": 1.0,
+    "rollback_preparedness": 1.0,
+    "source_quality_readiness": 0.25,
+    "stem_availability": 0.75
+  },
+  "ready": false,
+  "recommended_next_mode": "validate_plugin_mappings",
+  "safe_draft_readiness_score": 0.714286,
+  "schema": "automix-real-project-safe-draft-readiness-v1",
+  "warnings": [
+    "unknown_tracks_skipped"
+  ]
+}

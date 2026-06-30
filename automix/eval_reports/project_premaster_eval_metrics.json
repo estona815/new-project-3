@@ -1,0 +1,46 @@
+{
+  "schema": "automix-premaster-eval-v1",
+  "renders_created": {
+    "original_mix": false,
+    "premaster_draft": false,
+    "loudness_matched": false,
+    "difference": false
+  },
+  "loudness_results": {
+    "original_lufs": 0.0,
+    "premaster_lufs": 0.0,
+    "original_true_peak_dbTP": 0.0,
+    "premaster_true_peak_dbTP": 0.0,
+    "original_lra": 0.0,
+    "premaster_lra": 0.0,
+    "gain_increase_db": 0.0
+  },
+  "improvement_scores": {
+    "overall_loudness_control": 0.0,
+    "low_end_translation_delta": 0.0,
+    "vocal_forwardness_delta": 0.0,
+    "vocal_clarity_delta": 0.0,
+    "mix_glue_delta": 0.0,
+    "peak_control_delta": 0.0
+  },
+  "damage_scores": {
+    "vocal_harshness_increase": 0.0,
+    "sibilance_splatter_increase": 0.0,
+    "metallic_artifact_increase": 0.0,
+    "high_fizz_increase": 0.0,
+    "vocal_thinness_increase": 0.0,
+    "vocal_forwardness_loss": 0.0,
+    "beat_impact_loss": 0.0,
+    "low_end_loss_db": 0.0,
+    "transient_loss": 0.0,
+    "stereo_width_shift": 0.0,
+    "phase_correlation_worsening": 0.0,
+    "limiter_pumping_score": 0.0,
+    "reverb_tail_pumping_score": 0.0
+  },
+  "evaluation_passed": false,
+  "recommended_action": "manual_review_required",
+  "warnings": [
+    "missing premaster A/B renders"
+  ]
+}

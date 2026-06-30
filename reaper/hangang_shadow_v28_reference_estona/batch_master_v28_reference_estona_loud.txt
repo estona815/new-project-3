@@ -1,8 +1,0 @@
-/Users/hantaeheuk/Documents/New project 3/renders/hangang_shadow_v28_reference_estona/hangang_shadow_mashup_v28_reference_estona_REAPERPRINT_24-48.wav	/Users/hantaeheuk/Documents/New project 3/renders/hangang_shadow_v28_reference_estona/hangang_shadow_mashup_v28_reference_estona_MASTER_loud_24-48.wav
-<CONFIG
-  SRATE 48000
-  NCH 2
-  DITHER 3
-  NORMALIZE 3 -7.2 0
-  BRICKWALL 2 -1.0
->

@@ -1,3 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-v11_female_70_mseq,mgmg_mashup_v11_female_70_mseq_layers_24-48.wav,48000,int32,109.6,-1.3,-12.5,11.2,0.8806,-11.97,15.395,13.683,13.008,29.209,23.683,3.211,1.81,-9.0,3.9,-0.8,-21.9,-8.8,-7.6
-v11_preview_mp3,mgmg_mashup_v11_female_70_mseq_layers_preview_320.mp3,48000,float32 decoded_from_mp3,109.6,-1.06,-12.5,11.45,0.8805,-11.97,15.394,13.683,13.009,29.207,23.684,3.212,1.811,-9.0,3.9,-0.4,-21.9,-8.8,-7.6
