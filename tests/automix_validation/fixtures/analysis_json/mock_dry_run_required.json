@@ -1,0 +1,15 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "dry-run required",
+  "coverage_tags": [
+    "dry_run"
+  ],
+  "input": {
+    "dry_run": true,
+    "would_modify_project": false
+  },
+  "expected_stage_status": "dry_run_only",
+  "expected_decision": "draft_plan_only",
+  "expected_blockers": [],
+  "expected_reports": []
+}

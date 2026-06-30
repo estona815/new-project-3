@@ -1,0 +1,35 @@
+{
+  "damage_scores": {
+    "ai_artifact_exposure_increase": 0.0,
+    "beat_impact_loss": 0.0,
+    "drum_pump_score": 0.0,
+    "instrumental_hollowing": 0.0,
+    "lead_melody_damage": 0.0,
+    "low_end_loss_db": 0.0,
+    "phase_worsening": 0.0,
+    "sibilance_worsening": 0.0,
+    "stereo_shift": 0.0,
+    "vocal_harshness_increase": 0.0,
+    "vocal_thinness_increase": 0.0
+  },
+  "evaluation_passed": false,
+  "improvement_scores": {
+    "backing_conflict_reduction": 0.0,
+    "masking_reduction": 0.0,
+    "send_tail_masking_reduction": 0.0,
+    "vocal_center_stability_delta": 0.0,
+    "vocal_clarity_delta": 0.0,
+    "vocal_forwardness_delta": 0.0
+  },
+  "recommended_action": "manual_review_required",
+  "renders_created": {
+    "current_mix": false,
+    "difference": false,
+    "loudness_matched": false,
+    "placement_draft": false
+  },
+  "schema": "automix-final-vocal-space-eval-metrics-v1",
+  "warnings": [
+    "missing render means no pass"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "automix-project-reference-match-matrix-v1",
+  "project_name": "project",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "references_count": 0,
+  "overall_match_score": 0.5,
+  "safe_match_score": 0.538462,
+  "top_gaps": [
+    [
+      "vocal_too_low",
+      0.8
+    ],
+    [
+      "lead_melody_too_low",
+      0.78
+    ],
+    [
+      "presence_too_masked",
+      0.76
+    ],
+    [
+      "drums_too_soft",
+      0.75
+    ],
+    [
+      "808_too_weak",
+      0.72
+    ]
+  ],
+  "safe_adjustments": [],
+  "blocked_adjustments": [],
+  "draft_created": false,
+  "evaluation_status": "not_required",
+  "final_recommendation": "target_profile_only_used"
+}

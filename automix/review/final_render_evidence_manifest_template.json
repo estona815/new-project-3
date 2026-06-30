@@ -1,0 +1,18 @@
+{
+  "expected_reports": [
+    "automix/export/final_export_state.json",
+    "automix/export/final_render_manifest.json",
+    "automix/eval_reports/final_render_evidence_gate.json"
+  ],
+  "limits": [
+    "This template is not final approval.",
+    "Measured final QC and matched-loudness A/B review are still required.",
+    "Do not mark diagnostic/report-only renders as delivery evidence."
+  ],
+  "manual_checks": [
+    "Confirm the selected source is the intended accepted source.",
+    "Confirm the primary WAV path is a newly rendered deliverable, not the original source path.",
+    "Confirm no hidden limiter, normalization, or diagnostic/report-only state is present."
+  ],
+  "schema": "automix-final-render-evidence-manifest-template-v1"
+}

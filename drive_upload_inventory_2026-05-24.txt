@@ -1,0 +1,70 @@
+New project 3 generated-file inventory for Google Drive backup
+Date: 2026-05-24
+Connected Drive account checked via Google Drive plugin: kwonj0815@gmail.com
+
+Scope
+- Included: generated audio/video/archive files such as ZIP, WAV, MP3, M4A, FLAC, MP4, MOV, WEBM, SRT, ASS, PNG, JPG.
+- Excluded: .git, .codex, skills, source scripts, prompts, docs, and small planning/config files unless they are generated media outputs.
+- No files were deleted.
+
+Overall finding
+- Generated media/archive candidates total about 25 GB.
+- ZIP archive candidates total about 2.7 GB.
+- Filename-pattern intermediate/render/premaster/metrics candidates total about 3.6 GB, but many more intermediate folders are large when counted by directory.
+
+Largest backup/upload candidates
+1. suno_studio_extract - 7.2 GB
+   - Contains incoming ZIPs, raw stems, cleaned stems, v11 precision mix intermediates, processed stems, and render packages.
+   - Highest priority for Drive backup before any local cleanup.
+
+2. mgmg_mashup_v03_work/intermediate - 3.9 GB
+   - Mostly decoded metric WAVs and intermediate audio used during mix tests.
+   - Strong cleanup candidate after backup if final masters are preserved.
+
+3. mgmg_mashup_v09_work/intermediate - 2.2 GB
+   - Includes loudness test folders and intermediate audio.
+   - Strong cleanup candidate after backup.
+
+4. thin_shadow_reaper_mix - 2.1 GB
+   - stems: 904 MB
+   - renders: 833 MB
+   - intermediate_v02: 449 MB
+   - Important project material; upload first, delete only after explicit approval.
+
+5. AI_BEAT_LOGIC_WORKFLOW - 1.7 GB
+   - 04_PROCESSED_AUDIO: 1.2 GB
+   - music_sample_wavs: 1.0 GB
+   - final/reference/mix-master assets also present.
+
+6. Other sizable generated folders
+   - mgmg_mashup_v13_work: 1.0 GB
+   - mgmg_mashup_v12_work: 990 MB
+   - output: 628 MB
+   - exports: 592 MB
+   - mgmg_mashup_v05_voice_match_work: 481 MB
+   - mgmg_mashup_v11_work: 379 MB
+   - mgmg_mashup_v10_work: 379 MB
+   - mgmg_mashup_v04_work: 341 MB
+   - mgmg_mashup_v05_work through v08_work: about 339 MB each
+
+Largest individual files observed
+- suno_studio_extract/suno_studio_best_midi_stems_package.zip - 625 MB
+- exports/얇은_Shadow_Suno_multitrack_stems.zip - 592 MB
+- suno_studio_extract/incoming/한강 Shadow x 얇은 Shadow (Mashup).zip - 519 MB
+- suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v14_commercial_balance_processed_stems.zip - 257 MB
+- suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v17_reference_guided_music_balance_processed_stems.zip - 241 MB
+- suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v15_corrective_balance_processed_stems.zip - 240 MB
+- suno_studio_extract/v11_precision_mix/renders/hangang_shadow_mashup_v16_music_up_vocal_tucked_processed_stems.zip - 208 MB
+
+Recommended Drive archive structure
+- New project 3 / generated_backup_2026-05-24 / 01_suno_studio_extract
+- New project 3 / generated_backup_2026-05-24 / 02_mgmg_mashup_intermediates
+- New project 3 / generated_backup_2026-05-24 / 03_thin_shadow_reaper_mix
+- New project 3 / generated_backup_2026-05-24 / 04_ai_beat_logic_workflow
+- New project 3 / generated_backup_2026-05-24 / 05_exports_and_output
+
+Current limitation
+- The available Google Drive connector tools in this Codex session can import Docs, Sheets, and Slides files, and can search/list/read Drive metadata.
+- A raw binary upload tool for ZIP/WAV/MP4 folders is not currently exposed.
+- Google Drive desktop sync is not installed or mounted under ~/Library/CloudStorage.
+- Therefore this inventory document can be uploaded through the connector, but the large binary media archives need either a raw Drive upload tool, Google Drive for Desktop, rclone/gdrive setup, or a browser-based manual upload flow.

@@ -1,0 +1,11 @@
+{
+  "schema": "automix-final-human-approval-v1",
+  "approved": false,
+  "approved_by": "user",
+  "approved_stage": "",
+  "approved_source": "",
+  "approval_time": "",
+  "notes": "",
+  "warnings_acknowledged": [],
+  "unsafe_override": false
+}

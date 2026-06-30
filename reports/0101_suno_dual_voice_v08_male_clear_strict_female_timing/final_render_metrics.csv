@@ -1,7 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-dual_voice_layer_wav,0101_FINAL_male_ref_female_overlap.wav,48000,int32,139.441,-1.23,-14.27,13.03,0.1713,-1.5,11.637,18.315,22.463,39.394,7.689,0.33,0.172,-11.4,3.7,-1.2,-30.7,-11.6,-8.9
-new_dual_voice_alt_wav,0101_FINAL_overlap_layer_louder_check.wav,48000,int32,139.441,-1.23,-14.42,13.18,0.1552,-1.35,12.08,18.384,22.528,39.633,6.933,0.296,0.147,-11.6,3.8,-1.2,-30.9,-11.8,-9.0
-male_lead_new_voice_support_wav,0101_FINAL_male_lead_reference_balance.wav,48000,int32,139.441,-1.23,-14.37,13.14,0.1765,-1.54,11.177,18.213,22.364,39.534,8.171,0.353,0.188,-11.5,3.7,-1.2,-30.9,-11.7,-9.0
-dual_voice_layer_mp3,0101_FINAL_male_ref_female_overlap_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.17,-14.27,13.1,0.1713,-1.5,11.636,18.316,22.462,39.393,7.69,0.331,0.172,-11.4,3.7,-1.1,-30.7,-11.6,-8.9
-new_dual_voice_alt_mp3,0101_FINAL_overlap_layer_louder_check_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.12,-14.42,13.29,0.1552,-1.35,12.079,18.384,22.527,39.633,6.934,0.297,0.147,-11.6,3.8,-1.1,-30.9,-11.8,-9.0
-male_lead_new_voice_support_mp3,0101_FINAL_male_lead_reference_balance_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.16,-14.37,13.21,0.1765,-1.54,11.177,18.211,22.365,39.533,8.172,0.354,0.188,-11.5,3.7,-1.2,-30.9,-11.7,-9.0

@@ -1,0 +1,16 @@
+{
+  "schema": "automix-reference-adjustment-plan-v1",
+  "project_name": "project",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "adjustments": [],
+  "blocked_adjustments": [],
+  "ab_eval_required": false,
+  "draft_only": true,
+  "contains_pitch_correction": false,
+  "contains_reference_audio_content": false,
+  "warnings": [
+    "current mix missing; target profile scan only",
+    "current_mix_missing_target_profile_only",
+    "target_profile_only_used_no_reference_files"
+  ]
+}

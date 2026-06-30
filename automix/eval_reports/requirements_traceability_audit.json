@@ -1,0 +1,3355 @@
+{
+  "blockers": [],
+  "category_summary": {
+    "application_render": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "audio_diagnosis": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "delivery_readiness": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "docs_claims": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "feedback_loop": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "harness": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "intent": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "mastering_qc": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "path_hygiene": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "plugin_chain_planning": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "processing_policy": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "safety": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "source_intake": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "suno_ai": {
+      "incomplete": 0,
+      "satisfied": 1
+    },
+    "vocal_first": {
+      "incomplete": 0,
+      "satisfied": 1
+    }
+  },
+  "created_at": "2026-06-05T12:48:10Z",
+  "incomplete_requirement_ids": [],
+  "limits": [
+    "Traceability proves implementation evidence exists; it does not prove audio quality.",
+    "Runtime reports strengthen evidence but user A/B review remains required for accepted audio."
+  ],
+  "output_dir": "automix",
+  "passed": true,
+  "project_name": "project",
+  "requirement_results": [
+    {
+      "blockers": [],
+      "category": "safety",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/PIPELINE_ARCHITECTURE.md",
+          "relative_path": "PIPELINE_ARCHITECTURE.md",
+          "size_bytes": 3133
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/rollback_evidence_gate.py",
+          "relative_path": "automix/orchestrator/rollback_evidence_gate.py",
+          "size_bytes": 10432
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/global_rollback_registry.py",
+          "relative_path": "automix/orchestrator/global_rollback_registry.py",
+          "size_bytes": 3892
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/global_safety_controller.py",
+          "relative_path": "automix/orchestrator/global_safety_controller.py",
+          "size_bytes": 6855
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_rollback_evidence_gate.py",
+          "relative_path": "scripts/run_rollback_evidence_gate.py",
+          "size_bytes": 2202
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt40_automix_orchestrator.py",
+          "relative_path": "tests/test_prompt40_automix_orchestrator.py",
+          "size_bytes": 10158
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt64_rollback_evidence_gate.py",
+          "relative_path": "tests/test_prompt64_rollback_evidence_gate.py",
+          "size_bytes": 10602
+        }
+      ],
+      "id": "REQ-01",
+      "requirement": "Original tracks and original master must not be overwritten; applied stages need rollback evidence.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/rollback/global_rollback_registry.json",
+          "relative_path": "rollback/global_rollback_registry.json",
+          "size_bytes": 1938,
+          "summary": {
+            "schema": "automix-global-rollback-registry-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/rollback_evidence_gate.json",
+          "relative_path": "eval_reports/rollback_evidence_gate.json",
+          "size_bytes": 2127,
+          "summary": {
+            "schema": "automix-rollback-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/global_qc_summary.json",
+          "relative_path": "eval_reports/global_qc_summary.json",
+          "size_bytes": 5287,
+          "summary": {
+            "safe_to_export": false,
+            "schema": "automix-global-qc-summary-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "PIPELINE_ARCHITECTURE.md": [
+          {
+            "found": true,
+            "term": "Scan-only modes do not modify"
+          },
+          {
+            "found": true,
+            "term": "Missing rollback metadata"
+          }
+        ],
+        "automix/orchestrator/global_rollback_registry.py": [
+          {
+            "found": true,
+            "term": "original_tracks_protected"
+          },
+          {
+            "found": true,
+            "term": "original_master_protected"
+          }
+        ],
+        "automix/orchestrator/rollback_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "ready_for_delivery_readiness"
+          },
+          {
+            "found": true,
+            "term": "original_tracks_not_protected"
+          },
+          {
+            "found": true,
+            "term": "rollback_entry_not_safe"
+          }
+        ],
+        "tests/test_prompt40_automix_orchestrator.py": [
+          {
+            "found": true,
+            "term": "applied_without_rollback_file"
+          },
+          {
+            "found": true,
+            "term": "dry_run"
+          }
+        ]
+      },
+      "title": "Non-destructive original protection",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "processing_policy",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/safety/processing_policy_audit.py",
+          "relative_path": "automix/safety/processing_policy_audit.py",
+          "size_bytes": 12017
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_processing_policy_audit.py",
+          "relative_path": "scripts/run_processing_policy_audit.py",
+          "size_bytes": 1518
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt49_processing_policy_audit.py",
+          "relative_path": "tests/test_prompt49_processing_policy_audit.py",
+          "size_bytes": 7961
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/TESTING_AND_HARNESS.md",
+          "relative_path": "TESTING_AND_HARNESS.md",
+          "size_bytes": 16644
+        }
+      ],
+      "id": "REQ-02",
+      "requirement": "OTT-style processing, aggressive saturation, blind widening, and original-master limiting are blocked by default.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/processing_policy_audit.json",
+          "relative_path": "eval_reports/processing_policy_audit.json",
+          "size_bytes": 4108,
+          "summary": {
+            "passed": true,
+            "schema": "automix-processing-policy-audit-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/safety/processing_policy_audit.py": [
+          {
+            "found": true,
+            "term": "ott_style_processing_blocked_by_default"
+          },
+          {
+            "found": true,
+            "term": "dry_wet_exceeds_conservative_cap"
+          },
+          {
+            "found": true,
+            "term": "master_limiter_on_original_master_blocked"
+          }
+        ],
+        "tests/test_prompt49_processing_policy_audit.py": [
+          {
+            "found": true,
+            "term": "aggressive_saturation"
+          },
+          {
+            "found": true,
+            "term": "blind_stereo_widening"
+          },
+          {
+            "found": true,
+            "term": "original_master_limiter"
+          }
+        ]
+      },
+      "title": "Conservative overprocessing guard",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "suno_ai",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/SUNO_AI_ARTIFACT_STRATEGY.md",
+          "relative_path": "SUNO_AI_ARTIFACT_STRATEGY.md",
+          "size_bytes": 1740
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/artifact_evidence_gate.py",
+          "relative_path": "automix/orchestrator/artifact_evidence_gate.py",
+          "size_bytes": 16276
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/artifact_signal_audit.py",
+          "relative_path": "automix/orchestrator/artifact_signal_audit.py",
+          "size_bytes": 10818
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/intent/intent_classifier.py",
+          "relative_path": "automix/intent/intent_classifier.py",
+          "size_bytes": 21932
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/feedback/feedback_action_mapping.py",
+          "relative_path": "automix/feedback/feedback_action_mapping.py",
+          "size_bytes": 10228
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_artifact_evidence_gate.py",
+          "relative_path": "scripts/run_artifact_evidence_gate.py",
+          "size_bytes": 2248
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_artifact_signal_audit.py",
+          "relative_path": "scripts/run_artifact_signal_audit.py",
+          "size_bytes": 1832
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt48_intent_classification.py",
+          "relative_path": "tests/test_prompt48_intent_classification.py",
+          "size_bytes": 8216
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt61_artifact_evidence_gate.py",
+          "relative_path": "tests/test_prompt61_artifact_evidence_gate.py",
+          "size_bytes": 6967
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt57_artifact_signal_audit.py",
+          "relative_path": "tests/test_prompt57_artifact_signal_audit.py",
+          "size_bytes": 4667
+        }
+      ],
+      "id": "REQ-03",
+      "requirement": "AI/Suno artifact handling must use reduction/suppression language, conservative mode, formant protection, and human review.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/intent_classification.json",
+          "relative_path": "eval_reports/intent_classification.json",
+          "size_bytes": 9784,
+          "summary": {
+            "schema": "automix-intent-classification-v1",
+            "status": "review_required"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/artifact_evidence_gate.json",
+          "relative_path": "eval_reports/artifact_evidence_gate.json",
+          "size_bytes": 9887,
+          "summary": {
+            "schema": "automix-artifact-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/artifact_signal_audit.json",
+          "relative_path": "eval_reports/artifact_signal_audit.json",
+          "size_bytes": 7431,
+          "summary": {
+            "schema": "automix-artifact-signal-audit-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/fixture_coverage_audit.json",
+          "relative_path": "eval_reports/fixture_coverage_audit.json",
+          "size_bytes": 18840,
+          "summary": {
+            "passed": true,
+            "schema": "automix-fixture-coverage-audit-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "SUNO_AI_ARTIFACT_STRATEGY.md": [
+          {
+            "found": true,
+            "term": "artifact reduction"
+          },
+          {
+            "found": true,
+            "term": "watery smear"
+          },
+          {
+            "found": true,
+            "term": "fake stereo halo"
+          },
+          {
+            "found": true,
+            "term": "human review required"
+          }
+        ],
+        "automix/feedback/feedback_action_mapping.py": [
+          {
+            "found": true,
+            "term": "claim_100_percent_removal"
+          },
+          {
+            "found": true,
+            "term": "conservative artifact suppression"
+          }
+        ],
+        "automix/intent/intent_classifier.py": [
+          {
+            "found": true,
+            "term": "suno_artifact_suppression"
+          },
+          {
+            "found": true,
+            "term": "max_artifact_focus_dry_wet"
+          },
+          {
+            "found": true,
+            "term": "formant_protection_required"
+          }
+        ],
+        "automix/orchestrator/artifact_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "measured_artifact_metrics_missing"
+          },
+          {
+            "found": true,
+            "term": "report_only_metric"
+          },
+          {
+            "found": true,
+            "term": "safe_to_run_artifact_suppression"
+          }
+        ],
+        "automix/orchestrator/artifact_signal_audit.py": [
+          {
+            "found": true,
+            "term": "artifact_signal_not_established"
+          },
+          {
+            "found": true,
+            "term": "measured_artifact_metrics_not_established"
+          },
+          {
+            "found": true,
+            "term": "Zero or missing metrics"
+          }
+        ]
+      },
+      "title": "Suno/AI artifact suppression strategy",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "vocal_first",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/VOCAL_FIRST_MIXING_STRATEGY.md",
+          "relative_path": "VOCAL_FIRST_MIXING_STRATEGY.md",
+          "size_bytes": 1301
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/vocal_placement/vocal_placement_analyzer.py",
+          "relative_path": "automix/vocal_placement/vocal_placement_analyzer.py",
+          "size_bytes": 17371
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/routing/vocal_sidechain_routing.py",
+          "relative_path": "automix/routing/vocal_sidechain_routing.py",
+          "size_bytes": 4040
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt35_vocal_placement.py",
+          "relative_path": "tests/test_prompt35_vocal_placement.py",
+          "size_bytes": 12054
+        }
+      ],
+      "id": "REQ-04",
+      "requirement": "Lead vocal remains central; female/support layers cannot become the default lead; vocal seat carving is preferred over master limiting.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_vocal_space_eval_metrics.json",
+          "relative_path": "eval_reports/final_vocal_space_eval_metrics.json",
+          "size_bytes": 959,
+          "summary": {
+            "schema": "automix-final-vocal-space-eval-metrics-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_vocal_space_review_package_manifest.json",
+          "relative_path": "eval_reports/final_vocal_space_review_package_manifest.json",
+          "size_bytes": 2330,
+          "summary": {
+            "ready_for_delivery": false,
+            "schema": "automix-final-vocal-space-review-package-manifest-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "VOCAL_FIRST_MIXING_STRATEGY.md": [
+          {
+            "found": true,
+            "term": "lead vocal"
+          },
+          {
+            "found": true,
+            "term": "support layers"
+          },
+          {
+            "found": true,
+            "term": "Vocal Seat Carving"
+          }
+        ],
+        "tests/test_prompt35_vocal_placement.py": [
+          {
+            "found": true,
+            "term": "masking_2k_5k"
+          },
+          {
+            "found": true,
+            "term": "sibilance_conflict_duck_db"
+          }
+        ]
+      },
+      "title": "Vocal-first mix strategy",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "feedback_loop",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/USER_FEEDBACK_REVISION_LOOP.md",
+          "relative_path": "USER_FEEDBACK_REVISION_LOOP.md",
+          "size_bytes": 1926
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/feedback/feedback_intake.py",
+          "relative_path": "automix/feedback/feedback_intake.py",
+          "size_bytes": 8093
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/feedback/feedback_action_mapping.py",
+          "relative_path": "automix/feedback/feedback_action_mapping.py",
+          "size_bytes": 10228
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/feedback/revision_memory.py",
+          "relative_path": "automix/feedback/revision_memory.py",
+          "size_bytes": 17172
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/feedback/feedback_qc_integration.py",
+          "relative_path": "automix/feedback/feedback_qc_integration.py",
+          "size_bytes": 16663
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_feedback_revision_loop.py",
+          "relative_path": "scripts/run_feedback_revision_loop.py",
+          "size_bytes": 8501
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt45_user_feedback_revision_loop.py",
+          "relative_path": "tests/test_prompt45_user_feedback_revision_loop.py",
+          "size_bytes": 16747
+        }
+      ],
+      "id": "REQ-05",
+      "requirement": "User feedback is classified, mapped to dry-run actions, stored by pass, and linked to QC/A-B evidence before resolution.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/review/user_feedback_revision_memory.json",
+          "relative_path": "review/user_feedback_revision_memory.json",
+          "size_bytes": 381,
+          "summary": {
+            "schema": "automix-user-feedback-revision-memory-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/user_feedback_qc_integration.json",
+          "relative_path": "eval_reports/user_feedback_qc_integration.json",
+          "size_bytes": 2539,
+          "summary": {
+            "schema": "automix-user-feedback-qc-integration-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "USER_FEEDBACK_REVISION_LOOP.md": [
+          {
+            "found": true,
+            "term": "measured QC"
+          },
+          {
+            "found": true,
+            "term": "loudness-matched A/B"
+          },
+          {
+            "found": true,
+            "term": "human review"
+          }
+        ],
+        "automix/feedback/revision_memory.py": [
+          {
+            "found": true,
+            "term": "loudness_matched_ab_reviewed"
+          },
+          {
+            "found": true,
+            "term": "human_reviewed"
+          },
+          {
+            "found": true,
+            "term": "remaining_risks"
+          }
+        ],
+        "tests/test_prompt45_user_feedback_revision_loop.py": [
+          {
+            "found": true,
+            "term": "dry_run_only"
+          },
+          {
+            "found": true,
+            "term": "feedback_qc_integration"
+          },
+          {
+            "found": true,
+            "term": "loudness_matched"
+          }
+        ]
+      },
+      "title": "Feedback intake, action mapping, revision memory, and QC integration",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "source_intake",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/real_project/real_project_scan_only.py",
+          "relative_path": "automix/real_project/real_project_scan_only.py",
+          "size_bytes": 48133
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/source_acceptance_gate.py",
+          "relative_path": "automix/orchestrator/source_acceptance_gate.py",
+          "size_bytes": 14258
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/source_handoff_readiness.py",
+          "relative_path": "automix/orchestrator/source_handoff_readiness.py",
+          "size_bytes": 13560
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/analyze_ai_pitch_source.py",
+          "relative_path": "automix/analyze_ai_pitch_source.py",
+          "size_bytes": 49068
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_real_project_scan_only.py",
+          "relative_path": "scripts/run_real_project_scan_only.py",
+          "size_bytes": 2054
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_source_acceptance_gate.py",
+          "relative_path": "scripts/run_source_acceptance_gate.py",
+          "size_bytes": 2883
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_source_handoff_readiness.py",
+          "relative_path": "scripts/run_source_handoff_readiness.py",
+          "size_bytes": 2107
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt42_real_project_scan_only.py",
+          "relative_path": "tests/test_prompt42_real_project_scan_only.py",
+          "size_bytes": 9940
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt59_source_acceptance_gate.py",
+          "relative_path": "tests/test_prompt59_source_acceptance_gate.py",
+          "size_bytes": 6716
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt56_source_handoff_readiness.py",
+          "relative_path": "tests/test_prompt56_source_handoff_readiness.py",
+          "size_bytes": 5663
+        }
+      ],
+      "id": "REQ-06",
+      "requirement": "The system classifies stem/full mix/reference/vocal roles, AI/processed-source risk, and read-only safety before processing.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/real_project_source_safety_map.json",
+          "relative_path": "eval_reports/real_project_source_safety_map.json",
+          "size_bytes": 26888,
+          "summary": {
+            "schema": "automix-real-project-source-safety-map-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/source_acceptance_gate.json",
+          "relative_path": "eval_reports/source_acceptance_gate.json",
+          "size_bytes": 890,
+          "summary": {
+            "schema": "automix-source-acceptance-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/source_handoff_readiness.json",
+          "relative_path": "eval_reports/source_handoff_readiness.json",
+          "size_bytes": 8631,
+          "summary": {
+            "schema": "automix-source-handoff-readiness-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/analysis_reports/orchestrator_source_classification_summary.json",
+          "relative_path": "analysis_reports/orchestrator_source_classification_summary.json",
+          "size_bytes": 376,
+          "summary": {
+            "schema": "automix-orchestrator-source-classification-summary-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/analyze_ai_pitch_source.py": [
+          {
+            "found": true,
+            "term": "source_classification"
+          },
+          {
+            "found": true,
+            "term": "already_tuned_score"
+          },
+          {
+            "found": true,
+            "term": "ai_artifact_score"
+          }
+        ],
+        "automix/orchestrator/source_acceptance_gate.py": [
+          {
+            "found": true,
+            "term": "explicit_source_acceptance_missing"
+          },
+          {
+            "found": true,
+            "term": "full_mix_source_cannot_be_accepted_for_automatic_processing"
+          },
+          {
+            "found": true,
+            "term": "accepted_export_source_ready"
+          }
+        ],
+        "automix/orchestrator/source_handoff_readiness.py": [
+          {
+            "found": true,
+            "term": "accepted_export_source_missing"
+          },
+          {
+            "found": true,
+            "term": "stem_requests_open"
+          },
+          {
+            "found": true,
+            "term": "current_source_file_presence_is_not_acceptance"
+          }
+        ],
+        "automix/real_project/real_project_scan_only.py": [
+          {
+            "found": true,
+            "term": "ai_artifact_score"
+          },
+          {
+            "found": true,
+            "term": "source_safety_map"
+          },
+          {
+            "found": true,
+            "term": "strict_read_only"
+          }
+        ]
+      },
+      "title": "Source intake and role classification",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "audio_diagnosis",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/analyze_ai_pitch_source.py",
+          "relative_path": "automix/analyze_ai_pitch_source.py",
+          "size_bytes": 49068
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_qc_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_qc_evidence_gate.py",
+          "size_bytes": 16063
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/mastering/premaster_safety_analyzer.py",
+          "relative_path": "automix/mastering/premaster_safety_analyzer.py",
+          "size_bytes": 21382
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/vocal_placement/vocal_placement_analyzer.py",
+          "relative_path": "automix/vocal_placement/vocal_placement_analyzer.py",
+          "size_bytes": 17371
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_qc_evidence_gate.py",
+          "relative_path": "scripts/run_final_qc_evidence_gate.py",
+          "size_bytes": 2475
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/docs/final_export_and_delivery.md",
+          "relative_path": "docs/final_export_and_delivery.md",
+          "size_bytes": 11348
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt36_premaster_safety.py",
+          "relative_path": "tests/test_prompt36_premaster_safety.py",
+          "size_bytes": 11484
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt65_final_qc_evidence_gate.py",
+          "relative_path": "tests/test_prompt65_final_qc_evidence_gate.py",
+          "size_bytes": 11073
+        }
+      ],
+      "id": "REQ-07",
+      "requirement": "Diagnosis covers loudness, true peak proxy, crest factor, spectral/harshness, vocal masking, AI artifact, stereo/phase, and limiter risk.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_qc_metrics.json",
+          "relative_path": "eval_reports/final_qc_metrics.json",
+          "size_bytes": 999,
+          "summary": {
+            "qc_passed": false,
+            "schema": "automix-final-qc-metrics-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_qc_evidence_gate.json",
+          "relative_path": "eval_reports/final_qc_evidence_gate.json",
+          "size_bytes": 2616,
+          "summary": {
+            "schema": "automix-final-qc-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/analysis_reports/orchestrator_premaster_analysis.json",
+          "relative_path": "analysis_reports/orchestrator_premaster_analysis.json",
+          "size_bytes": 124,
+          "summary": {
+            "schema": "automix-orchestrator-premaster-analysis-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/mastering/premaster_safety_analyzer.py": [
+          {
+            "found": true,
+            "term": "limiter_pressure_risk"
+          },
+          {
+            "found": true,
+            "term": "mono_compatibility_risk"
+          },
+          {
+            "found": true,
+            "term": "ai_artifact_risk_profile"
+          }
+        ],
+        "automix/orchestrator/final_qc_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "final_qc_metrics_missing_or_invalid"
+          },
+          {
+            "found": true,
+            "term": "ready_for_delivery_qc"
+          },
+          {
+            "found": true,
+            "term": "true_peak"
+          },
+          {
+            "found": true,
+            "term": "digital_black"
+          }
+        ],
+        "automix/vocal_placement/vocal_placement_analyzer.py": [
+          {
+            "found": true,
+            "term": "masking_profile"
+          },
+          {
+            "found": true,
+            "term": "sibilance"
+          },
+          {
+            "found": true,
+            "term": "harshness"
+          }
+        ],
+        "docs/final_export_and_delivery.md": [
+          {
+            "found": true,
+            "term": "loudness"
+          },
+          {
+            "found": true,
+            "term": "true peak proxy"
+          },
+          {
+            "found": true,
+            "term": "AI fizz risk"
+          }
+        ]
+      },
+      "title": "Audio diagnosis metrics",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "intent",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/intent/intent_classifier.py",
+          "relative_path": "automix/intent/intent_classifier.py",
+          "size_bytes": 21932
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_intent_classifier.py",
+          "relative_path": "scripts/run_intent_classifier.py",
+          "size_bytes": 1869
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/docs/manual_test_plan_prompt48.md",
+          "relative_path": "docs/manual_test_plan_prompt48.md",
+          "size_bytes": 1409
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt48_intent_classification.py",
+          "relative_path": "tests/test_prompt48_intent_classification.py",
+          "size_bytes": 8216
+        }
+      ],
+      "id": "REQ-08",
+      "requirement": "Intent classification exposes confidence, source risk, vocal priority, artifact focus, overprocessing risk, dry-run state, and human review flags.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/intent_classification.json",
+          "relative_path": "eval_reports/intent_classification.json",
+          "size_bytes": 9784,
+          "summary": {
+            "schema": "automix-intent-classification-v1",
+            "status": "review_required"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/intent/intent_classifier.py": [
+          {
+            "found": true,
+            "term": "source_risk_score"
+          },
+          {
+            "found": true,
+            "term": "vocal_priority_score"
+          },
+          {
+            "found": true,
+            "term": "overprocessing_risk_score"
+          },
+          {
+            "found": true,
+            "term": "human_review_required"
+          }
+        ],
+        "docs/manual_test_plan_prompt48.md": [
+          {
+            "found": true,
+            "term": "confidence"
+          },
+          {
+            "found": true,
+            "term": "dry-run state"
+          },
+          {
+            "found": true,
+            "term": "human-review state"
+          }
+        ]
+      },
+      "title": "Intent classification and risk scoring",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "plugin_chain_planning",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/PLUGIN_FALLBACKS.md",
+          "relative_path": "PLUGIN_FALLBACKS.md",
+          "size_bytes": 5017
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_adapter_schema.py",
+          "relative_path": "automix/plugins/plugin_adapter_schema.py",
+          "size_bytes": 12557
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/safe_parameter_writer.py",
+          "relative_path": "automix/plugins/safe_parameter_writer.py",
+          "size_bytes": 3885
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/adapter_confidence_gate.py",
+          "relative_path": "automix/plugins/adapter_confidence_gate.py",
+          "size_bytes": 7588
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_gate.py",
+          "size_bytes": 13083
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_collection_plan.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_collection_plan.py",
+          "size_bytes": 16309
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_queue.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_queue.py",
+          "size_bytes": 11332
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_collection_package.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_collection_package.py",
+          "size_bytes": 15058
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_collector_package.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_collector_package.py",
+          "size_bytes": 26703
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_observation_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_observation_gate.py",
+          "size_bytes": 16205
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "size_bytes": 24983
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_report_authoring_package.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_report_authoring_package.py",
+          "size_bytes": 18949
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "size_bytes": 17886
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_evidence_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_evidence_gate.py",
+          "size_bytes": 17136
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "relative_path": "automix/plugins/plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "size_bytes": 25536
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/reaper_runtime_collection_operator_readiness_gate.py",
+          "relative_path": "automix/plugins/reaper_runtime_collection_operator_readiness_gate.py",
+          "size_bytes": 13195
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/reaper_runtime_collector_safety_audit.py",
+          "relative_path": "automix/plugins/reaper_runtime_collector_safety_audit.py",
+          "size_bytes": 13060
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/harness/public_pc_legacy_fixture_plan.py",
+          "relative_path": "automix/harness/public_pc_legacy_fixture_plan.py",
+          "size_bytes": 15908
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/harness/public_pc_legacy_api_regression_gate.py",
+          "relative_path": "automix/harness/public_pc_legacy_api_regression_gate.py",
+          "size_bytes": 10161
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/harness/public_pc_legacy_semantic_firewall_gate.py",
+          "relative_path": "automix/harness/public_pc_legacy_semantic_firewall_gate.py",
+          "size_bytes": 18472
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_validation_preflight.py",
+          "relative_path": "automix/plugins/plugin_validation_preflight.py",
+          "size_bytes": 12281
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_validation_action_plan.py",
+          "relative_path": "automix/plugins/plugin_validation_action_plan.py",
+          "size_bytes": 14814
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_availability_resolution_plan.py",
+          "relative_path": "automix/plugins/plugin_availability_resolution_plan.py",
+          "size_bytes": 11731
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_availability_operator_decision_package.py",
+          "relative_path": "automix/plugins/plugin_availability_operator_decision_package.py",
+          "size_bytes": 13893
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_availability_operator_decision_firewall_gate.py",
+          "relative_path": "automix/plugins/plugin_availability_operator_decision_firewall_gate.py",
+          "size_bytes": 19448
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/plugins/plugin_availability_decision_gate.py",
+          "relative_path": "automix/plugins/plugin_availability_decision_gate.py",
+          "size_bytes": 12597
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_gate.py",
+          "size_bytes": 2442
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_collection_plan.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_collection_plan.py",
+          "size_bytes": 2901
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_queue.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_queue.py",
+          "size_bytes": 2413
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_collection_package.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_collection_package.py",
+          "size_bytes": 2757
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_collector_package.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_collector_package.py",
+          "size_bytes": 5499
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_observation_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_observation_gate.py",
+          "size_bytes": 2804
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "size_bytes": 2820
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_report_authoring_package.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_report_authoring_package.py",
+          "size_bytes": 2949
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "size_bytes": 3177
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_evidence_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_evidence_gate.py",
+          "size_bytes": 2617
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "relative_path": "scripts/run_plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "size_bytes": 2982
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_reaper_runtime_collection_operator_readiness_gate.py",
+          "relative_path": "scripts/run_reaper_runtime_collection_operator_readiness_gate.py",
+          "size_bytes": 3186
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_reaper_runtime_collector_safety_audit.py",
+          "relative_path": "scripts/run_reaper_runtime_collector_safety_audit.py",
+          "size_bytes": 2239
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_public_pc_legacy_fixture_plan.py",
+          "relative_path": "scripts/run_public_pc_legacy_fixture_plan.py",
+          "size_bytes": 1872
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_public_pc_legacy_api_regression_gate.py",
+          "relative_path": "scripts/run_public_pc_legacy_api_regression_gate.py",
+          "size_bytes": 1892
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_public_pc_legacy_semantic_firewall_gate.py",
+          "relative_path": "scripts/run_public_pc_legacy_semantic_firewall_gate.py",
+          "size_bytes": 2499
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_validation_preflight.py",
+          "relative_path": "scripts/run_plugin_validation_preflight.py",
+          "size_bytes": 2439
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_validation_action_plan.py",
+          "relative_path": "scripts/run_plugin_validation_action_plan.py",
+          "size_bytes": 2295
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_resolution_plan.py",
+          "relative_path": "scripts/run_plugin_availability_resolution_plan.py",
+          "size_bytes": 2245
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_operator_decision_package.py",
+          "relative_path": "scripts/run_plugin_availability_operator_decision_package.py",
+          "size_bytes": 2733
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_operator_decision_firewall_gate.py",
+          "relative_path": "scripts/run_plugin_availability_operator_decision_firewall_gate.py",
+          "size_bytes": 2614
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_decision_gate.py",
+          "relative_path": "scripts/run_plugin_availability_decision_gate.py",
+          "size_bytes": 2301
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt39_plugin_intelligence.py",
+          "relative_path": "tests/test_prompt39_plugin_intelligence.py",
+          "size_bytes": 9795
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt60_plugin_semantic_validation_gate.py",
+          "relative_path": "tests/test_prompt60_plugin_semantic_validation_gate.py",
+          "size_bytes": 7115
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt73_plugin_semantic_validation_collection_plan.py",
+          "relative_path": "tests/test_prompt73_plugin_semantic_validation_collection_plan.py",
+          "size_bytes": 10223
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt74_plugin_semantic_validation_queue.py",
+          "relative_path": "tests/test_prompt74_plugin_semantic_validation_queue.py",
+          "size_bytes": 7752
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt76_plugin_semantic_validation_runtime_collection_package.py",
+          "relative_path": "tests/test_prompt76_plugin_semantic_validation_runtime_collection_package.py",
+          "size_bytes": 8311
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt78_plugin_semantic_validation_runtime_collector_package.py",
+          "relative_path": "tests/test_prompt78_plugin_semantic_validation_runtime_collector_package.py",
+          "size_bytes": 10897
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt79_plugin_semantic_validation_runtime_observation_gate.py",
+          "relative_path": "tests/test_prompt79_plugin_semantic_validation_runtime_observation_gate.py",
+          "size_bytes": 10179
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt84_plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "relative_path": "tests/test_prompt84_plugin_semantic_validation_runtime_observation_provenance_gate.py",
+          "size_bytes": 17658
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt80_plugin_semantic_validation_runtime_report_authoring_package.py",
+          "relative_path": "tests/test_prompt80_plugin_semantic_validation_runtime_report_authoring_package.py",
+          "size_bytes": 11540
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt81_plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "relative_path": "tests/test_prompt81_plugin_semantic_validation_runtime_report_authoring_gate.py",
+          "size_bytes": 11544
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt75_plugin_semantic_validation_runtime_evidence_gate.py",
+          "relative_path": "tests/test_prompt75_plugin_semantic_validation_runtime_evidence_gate.py",
+          "size_bytes": 9910
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt82_plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "relative_path": "tests/test_prompt82_plugin_semantic_validation_runtime_handoff_packet_gate.py",
+          "size_bytes": 12244
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_reaper_runtime_collection_operator_readiness_gate.py",
+          "relative_path": "tests/test_reaper_runtime_collection_operator_readiness_gate.py",
+          "size_bytes": 13283
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_reaper_runtime_collector_safety_audit.py",
+          "relative_path": "tests/test_reaper_runtime_collector_safety_audit.py",
+          "size_bytes": 7629
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_public_pc_legacy_fixture_plan.py",
+          "relative_path": "tests/test_public_pc_legacy_fixture_plan.py",
+          "size_bytes": 7449
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_public_pc_legacy_api_regression_gate.py",
+          "relative_path": "tests/test_public_pc_legacy_api_regression_gate.py",
+          "size_bytes": 6354
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_public_pc_legacy_semantic_firewall_gate.py",
+          "relative_path": "tests/test_public_pc_legacy_semantic_firewall_gate.py",
+          "size_bytes": 9028
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt55_plugin_validation_preflight.py",
+          "relative_path": "tests/test_prompt55_plugin_validation_preflight.py",
+          "size_bytes": 5498
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt70_plugin_validation_action_plan.py",
+          "relative_path": "tests/test_prompt70_plugin_validation_action_plan.py",
+          "size_bytes": 9684
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt71_plugin_availability_resolution_plan.py",
+          "relative_path": "tests/test_prompt71_plugin_availability_resolution_plan.py",
+          "size_bytes": 7764
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt77_plugin_availability_operator_decision_package.py",
+          "relative_path": "tests/test_prompt77_plugin_availability_operator_decision_package.py",
+          "size_bytes": 9230
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt83_plugin_availability_operator_decision_firewall_gate.py",
+          "relative_path": "tests/test_prompt83_plugin_availability_operator_decision_firewall_gate.py",
+          "size_bytes": 10969
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt72_plugin_availability_decision_gate.py",
+          "relative_path": "tests/test_prompt72_plugin_availability_decision_gate.py",
+          "size_bytes": 9582
+        }
+      ],
+      "id": "REQ-09",
+      "requirement": "Plugin mappings must fail closed; semantic controls need confidence, safe min/max bounds, and clamped writes.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/analysis_reports/plugin_inventory_audit.json",
+          "relative_path": "analysis_reports/plugin_inventory_audit.json",
+          "size_bytes": 2386,
+          "summary": {
+            "schema": "automix-plugin-inventory-audit-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": null,
+          "path": "automix/eval_reports/plugin_capability_report.md",
+          "relative_path": "eval_reports/plugin_capability_report.md",
+          "size_bytes": 1847,
+          "summary": {}
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_gate.json",
+          "size_bytes": 9844,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_collection_plan.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_collection_plan.json",
+          "size_bytes": 28898,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-collection-plan-v1",
+            "status": "availability_decisions_required_before_full_collection"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_queue.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_queue.json",
+          "size_bytes": 25385,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-queue-v1",
+            "status": "queue_ready_with_blocked_unavailable_decisions"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+          "size_bytes": 25603,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-collection-package-v1",
+            "status": "runtime_collection_package_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+          "size_bytes": 21829,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-collector-package-v1",
+            "status": "runtime_collector_package_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+          "size_bytes": 12066,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-observation-gate-v1",
+            "status": "runtime_observations_missing"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+          "size_bytes": 13326,
+          "summary": {
+            "passed": true,
+            "schema": "automix-plugin-semantic-validation-runtime-observation-provenance-gate-v1",
+            "status": "runtime_observation_provenance_pending_observations"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_package.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_report_authoring_package.json",
+          "size_bytes": 1467,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-report-authoring-package-v1",
+            "status": "no_accepted_runtime_observations"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+          "size_bytes": 1702,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-report-authoring-gate-v1",
+            "status": "runtime_report_authoring_package_not_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+          "size_bytes": 18554,
+          "summary": {
+            "schema": "automix-plugin-semantic-validation-runtime-evidence-gate-v1",
+            "status": "runtime_manifest_missing"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.json",
+          "relative_path": "eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.json",
+          "size_bytes": 15766,
+          "summary": {
+            "passed": true,
+            "schema": "automix-plugin-semantic-validation-runtime-handoff-packet-gate-v1",
+            "status": "partial_operator_runtime_handoff_packet_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/reaper_runtime_collection_operator_readiness.json",
+          "relative_path": "eval_reports/reaper_runtime_collection_operator_readiness.json",
+          "size_bytes": 4271,
+          "summary": {
+            "passed": true,
+            "schema": "automix-reaper-runtime-collection-operator-readiness-v1",
+            "status": "partial_operator_runtime_collection_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/reaper_runtime_collector_safety_audit.json",
+          "relative_path": "eval_reports/reaper_runtime_collector_safety_audit.json",
+          "size_bytes": 2926,
+          "summary": {
+            "passed": true,
+            "schema": "automix-reaper-runtime-collector-safety-audit-v1",
+            "status": "collector_safety_passed"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/public_pc_legacy_fixture_plan.json",
+          "relative_path": "eval_reports/public_pc_legacy_fixture_plan.json",
+          "size_bytes": 41710,
+          "summary": {
+            "passed": true,
+            "schema": "automix-public-pc-legacy-fixture-plan-v1",
+            "status": "legacy_fixture_plan_ready"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/public_pc_legacy_api_regression_gate.json",
+          "relative_path": "eval_reports/public_pc_legacy_api_regression_gate.json",
+          "size_bytes": 3706,
+          "summary": {
+            "passed": true,
+            "schema": "automix-public-pc-legacy-api-regression-gate-v1",
+            "status": "legacy_api_regression_covered"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/public_pc_legacy_semantic_firewall_gate.json",
+          "relative_path": "eval_reports/public_pc_legacy_semantic_firewall_gate.json",
+          "size_bytes": 5515,
+          "summary": {
+            "passed": true,
+            "schema": "automix-public-pc-legacy-semantic-firewall-gate-v1",
+            "status": "legacy_semantic_firewall_clear"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_validation_preflight.json",
+          "relative_path": "eval_reports/plugin_validation_preflight.json",
+          "size_bytes": 9428,
+          "summary": {
+            "schema": "automix-plugin-validation-preflight-v1",
+            "status": "availability_or_validation_incomplete"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_validation_action_plan.json",
+          "relative_path": "eval_reports/plugin_validation_action_plan.json",
+          "size_bytes": 25100,
+          "summary": {
+            "schema": "automix-plugin-validation-action-plan-v1",
+            "status": "plugin_validation_actions_open"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_availability_resolution_plan.json",
+          "relative_path": "eval_reports/plugin_availability_resolution_plan.json",
+          "size_bytes": 3627,
+          "summary": {
+            "schema": "automix-plugin-availability-resolution-plan-v1",
+            "status": "operator_resolution_required"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_availability_operator_decision_package.json",
+          "relative_path": "eval_reports/plugin_availability_operator_decision_package.json",
+          "size_bytes": 5308,
+          "summary": {
+            "schema": "automix-plugin-availability-operator-decision-package-v1",
+            "status": "operator_decisions_ready_for_human_acknowledgement"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_availability_operator_decision_firewall_gate.json",
+          "relative_path": "eval_reports/plugin_availability_operator_decision_firewall_gate.json",
+          "size_bytes": 2992,
+          "summary": {
+            "passed": true,
+            "schema": "automix-plugin-availability-operator-decision-firewall-gate-v1",
+            "status": "operator_decision_candidate_firewalled_pending_acknowledgement"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/plugin_availability_decision_gate.json",
+          "relative_path": "eval_reports/plugin_availability_decision_gate.json",
+          "size_bytes": 2275,
+          "summary": {
+            "schema": "automix-plugin-availability-decision-gate-v1",
+            "status": "operator_decision_manifest_missing"
+          }
+        }
+      ],
+      "term_results": {
+        "PLUGIN_FALLBACKS.md": [
+          {
+            "found": true,
+            "term": "low-confidence"
+          },
+          {
+            "found": true,
+            "term": "must not write"
+          }
+        ],
+        "automix/harness/public_pc_legacy_api_regression_gate.py": [
+          {
+            "found": true,
+            "term": "legacy_disallowed_call_not_in_current_policy"
+          },
+          {
+            "found": true,
+            "term": "ready_to_use_negative_safety_fixtures"
+          },
+          {
+            "found": true,
+            "term": "safe_to_execute_legacy_lua_in_user_project"
+          }
+        ],
+        "automix/harness/public_pc_legacy_fixture_plan.py": [
+          {
+            "found": true,
+            "term": "legacy_lua_contains_parameter_write_calls"
+          },
+          {
+            "found": true,
+            "term": "safe_to_merge_legacy_runtime_code"
+          },
+          {
+            "found": true,
+            "term": "Current fail-closed plugin semantic validation gates remain authoritative"
+          }
+        ],
+        "automix/harness/public_pc_legacy_semantic_firewall_gate.py": [
+          {
+            "found": true,
+            "term": "legacy_fixtures_count_as_validation_evidence"
+          },
+          {
+            "found": true,
+            "term": "legacy_path_referenced_by_semantic_validation_report"
+          },
+          {
+            "found": true,
+            "term": "semantic_validation_inputs_clean"
+          }
+        ],
+        "automix/plugins/plugin_adapter_schema.py": [
+          {
+            "found": true,
+            "term": "safe_min"
+          },
+          {
+            "found": true,
+            "term": "safe_max"
+          },
+          {
+            "found": true,
+            "term": "clamp_semantic_value"
+          }
+        ],
+        "automix/plugins/plugin_availability_decision_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_AVAILABILITY_DECISION_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "operator_acknowledgement_missing"
+          },
+          {
+            "found": true,
+            "term": "Fallback writes remain blocked"
+          }
+        ],
+        "automix/plugins/plugin_availability_operator_decision_firewall_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_AVAILABILITY_OPERATOR_DECISION_FIREWALL_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "candidate_counts_as_accepted_operator_evidence"
+          },
+          {
+            "found": true,
+            "term": "accepted_operator_decision_manifest_is_candidate"
+          }
+        ],
+        "automix/plugins/plugin_availability_operator_decision_package.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_AVAILABILITY_OPERATOR_DECISION_PACKAGE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "PLUGIN_AVAILABILITY_DISABLE_MANIFEST_CANDIDATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "This candidate is not accepted evidence"
+          }
+        ],
+        "automix/plugins/plugin_availability_resolution_plan.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_AVAILABILITY_RESOLUTION_PLAN_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "disable_manifest_template"
+          },
+          {
+            "found": true,
+            "term": "Fallback candidates require their own semantic validation"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_collection_plan.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_COLLECTION_PLAN_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "REAPER-observed semantic validation"
+          },
+          {
+            "found": true,
+            "term": "Do not write parameters before this collection plan has no open jobs"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_gate.py": [
+          {
+            "found": true,
+            "term": "validation_report_has_no_write_safe_controls"
+          },
+          {
+            "found": true,
+            "term": "validation_report_no_fake_success_missing"
+          },
+          {
+            "found": true,
+            "term": "semantic_validation_ready"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_queue.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_QUEUE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "requires_temporary_muted_test_context"
+          },
+          {
+            "found": true,
+            "term": "This queue does not open REAPER"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_collection_package.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_COLLECTION_PACKAGE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "PLUGIN_PARAMETER_VALIDATION_REPORT_TEMPLATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "This package does not open REAPER"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_collector_package.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_COLLECTOR_PACKAGE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "collect_plugin_semantic_validation_runtime.lua"
+          },
+          {
+            "found": true,
+            "term": "requires_collector_safety_audit"
+          },
+          {
+            "found": true,
+            "term": "This collector writes raw observations only"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_EVIDENCE_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "runtime_manifest_job_missing"
+          },
+          {
+            "found": true,
+            "term": "This gate does not open REAPER"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_handoff_packet_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_HANDOFF_PACKET_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "operator_runtime_handoff_packet_ready"
+          },
+          {
+            "found": true,
+            "term": "required_operator_file_missing"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_observation_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_OBSERVATION_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "runtime_observation_missing"
+          },
+          {
+            "found": true,
+            "term": "This gate validates raw collector observations only"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_observation_provenance_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_OBSERVATION_PROVENANCE_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "expected_observation_provenance_packet_ready"
+          },
+          {
+            "found": true,
+            "term": "runtime_observation_hash_mismatch"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_report_authoring_gate.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_REPORT_AUTHORING_GATE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "candidate_reports_are_validation_evidence"
+          },
+          {
+            "found": true,
+            "term": "writes no analysis_reports files"
+          }
+        ],
+        "automix/plugins/plugin_semantic_validation_runtime_report_authoring_package.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_SEMANTIC_VALIDATION_RUNTIME_REPORT_AUTHORING_PACKAGE_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "authoring_template_not_validation_evidence"
+          },
+          {
+            "found": true,
+            "term": "No files are written under automix/analysis_reports"
+          }
+        ],
+        "automix/plugins/plugin_validation_action_plan.py": [
+          {
+            "found": true,
+            "term": "PLUGIN_VALIDATION_ACTION_PLAN_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "next_plugin_action"
+          },
+          {
+            "found": true,
+            "term": "Plugin availability is not semantic write safety"
+          }
+        ],
+        "automix/plugins/plugin_validation_preflight.py": [
+          {
+            "found": true,
+            "term": "safe_to_write_parameters"
+          },
+          {
+            "found": true,
+            "term": "availability_does_not_grant_write_safety"
+          },
+          {
+            "found": true,
+            "term": "semantic_parameter_validation_required"
+          }
+        ],
+        "automix/plugins/reaper_runtime_collection_operator_readiness_gate.py": [
+          {
+            "found": true,
+            "term": "REAPER_RUNTIME_COLLECTION_OPERATOR_READINESS_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "ready_for_partial_operator_runtime_collection"
+          },
+          {
+            "found": true,
+            "term": "This gate does not open REAPER"
+          }
+        ],
+        "automix/plugins/reaper_runtime_collector_safety_audit.py": [
+          {
+            "found": true,
+            "term": "REAPER_RUNTIME_COLLECTOR_SAFETY_AUDIT_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "lua_disallowed_reaper_call"
+          },
+          {
+            "found": true,
+            "term": "temporary_probe_track_mutation_detected"
+          }
+        ],
+        "automix/plugins/safe_parameter_writer.py": [
+          {
+            "found": true,
+            "term": "UNKNOWN_PLUGIN_PARAMETER"
+          },
+          {
+            "found": true,
+            "term": "dry_run"
+          },
+          {
+            "found": true,
+            "term": "clamped_value"
+          }
+        ]
+      },
+      "title": "Plugin fallback, parameter bounds, and clamp safety",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "application_render",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/ab_preview_evidence_gate.py",
+          "relative_path": "automix/orchestrator/ab_preview_evidence_gate.py",
+          "size_bytes": 15789
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_render_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_render_evidence_gate.py",
+          "size_bytes": 14991
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_qc_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_qc_evidence_gate.py",
+          "size_bytes": 16063
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/rollback_evidence_gate.py",
+          "relative_path": "automix/orchestrator/rollback_evidence_gate.py",
+          "size_bytes": 10432
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/export/ab_preview_montage.py",
+          "relative_path": "automix/export/ab_preview_montage.py",
+          "size_bytes": 4883
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/export/final_export_state_resolver.py",
+          "relative_path": "automix/export/final_export_state_resolver.py",
+          "size_bytes": 7159
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_ab_preview_evidence_gate.py",
+          "relative_path": "scripts/run_ab_preview_evidence_gate.py",
+          "size_bytes": 2341
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_render_evidence_gate.py",
+          "relative_path": "scripts/run_final_render_evidence_gate.py",
+          "size_bytes": 2239
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_qc_evidence_gate.py",
+          "relative_path": "scripts/run_final_qc_evidence_gate.py",
+          "size_bytes": 2475
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_rollback_evidence_gate.py",
+          "relative_path": "scripts/run_rollback_evidence_gate.py",
+          "size_bytes": 2202
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/docs/end_to_end_automix_orchestrator.md",
+          "relative_path": "docs/end_to_end_automix_orchestrator.md",
+          "size_bytes": 4221
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt37_final_export_packaging.py",
+          "relative_path": "tests/test_prompt37_final_export_packaging.py",
+          "size_bytes": 17415
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt62_ab_preview_evidence_gate.py",
+          "relative_path": "tests/test_prompt62_ab_preview_evidence_gate.py",
+          "size_bytes": 11032
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt63_final_render_evidence_gate.py",
+          "relative_path": "tests/test_prompt63_final_render_evidence_gate.py",
+          "size_bytes": 11645
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt65_final_qc_evidence_gate.py",
+          "relative_path": "tests/test_prompt65_final_qc_evidence_gate.py",
+          "size_bytes": 11073
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt64_rollback_evidence_gate.py",
+          "relative_path": "tests/test_prompt64_rollback_evidence_gate.py",
+          "size_bytes": 10602
+        }
+      ],
+      "id": "REQ-10",
+      "requirement": "FX application and render paths must support dry-run/preview-only review, level-matched A/B, and rollback before delivery.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_ab_preview_manifest.json",
+          "relative_path": "eval_reports/final_ab_preview_manifest.json",
+          "size_bytes": 252,
+          "summary": {
+            "schema": "automix-final-ab-preview-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+          "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+          "size_bytes": 2914,
+          "summary": {
+            "schema": "automix-ab-preview-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_render_evidence_gate.json",
+          "relative_path": "eval_reports/final_render_evidence_gate.json",
+          "size_bytes": 1837,
+          "summary": {
+            "schema": "automix-final-render-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_qc_evidence_gate.json",
+          "relative_path": "eval_reports/final_qc_evidence_gate.json",
+          "size_bytes": 2616,
+          "summary": {
+            "schema": "automix-final-qc-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/rollback_evidence_gate.json",
+          "relative_path": "eval_reports/rollback_evidence_gate.json",
+          "size_bytes": 2127,
+          "summary": {
+            "schema": "automix-rollback-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/export/final_export_state.json",
+          "relative_path": "export/final_export_state.json",
+          "size_bytes": 942,
+          "summary": {
+            "safe_to_export": false,
+            "schema": "automix-final-export-state-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/export/ab_preview_montage.py": [
+          {
+            "found": true,
+            "term": "loudness_matched"
+          },
+          {
+            "found": true,
+            "term": "final_ab_preview_manifest"
+          }
+        ],
+        "automix/export/final_export_state_resolver.py": [
+          {
+            "found": true,
+            "term": "rollback_safety_validation_failed"
+          },
+          {
+            "found": true,
+            "term": "human_review_required"
+          }
+        ],
+        "automix/orchestrator/ab_preview_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "ab_preview_loudness_match_metrics_missing"
+          },
+          {
+            "found": true,
+            "term": "ready_for_human_ab_review"
+          },
+          {
+            "found": true,
+            "term": "Human listening review"
+          }
+        ],
+        "automix/orchestrator/final_qc_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "final_qc_has_failures"
+          },
+          {
+            "found": true,
+            "term": "ready_for_approval_readiness"
+          },
+          {
+            "found": true,
+            "term": "Measured QC does not replace"
+          }
+        ],
+        "automix/orchestrator/final_render_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "final_render_manifest_diagnostic_or_report_only"
+          },
+          {
+            "found": true,
+            "term": "ready_for_final_qc"
+          },
+          {
+            "found": true,
+            "term": "Diagnostic/report-only renders"
+          }
+        ],
+        "automix/orchestrator/rollback_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "Rollback evidence does not replace final QC"
+          },
+          {
+            "found": true,
+            "term": "rollback_validation_missing"
+          }
+        ],
+        "docs/end_to_end_automix_orchestrator.md": [
+          {
+            "found": true,
+            "term": "loudness-matched A/B preview"
+          },
+          {
+            "found": true,
+            "term": "rollback registry"
+          }
+        ]
+      },
+      "title": "Dry-run, preview-only, A/B render, and rollback gated application",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "mastering_qc",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/MASTERING_QC_STANDARD.md",
+          "relative_path": "MASTERING_QC_STANDARD.md",
+          "size_bytes": 3202
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/mastering/premaster_profiles.py",
+          "relative_path": "automix/mastering/premaster_profiles.py",
+          "size_bytes": 16121
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/mastering/premaster_policy.py",
+          "relative_path": "automix/mastering/premaster_policy.py",
+          "size_bytes": 17680
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt36_premaster_safety.py",
+          "relative_path": "tests/test_prompt36_premaster_safety.py",
+          "size_bytes": 11484
+        }
+      ],
+      "id": "REQ-11",
+      "requirement": "Mastering distinguishes streaming/reels/AI-source/stem-rebeat profiles and checks true peak, mono compatibility, low-end, dynamics, and limiter risk.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_qc_metrics.json",
+          "relative_path": "eval_reports/final_qc_metrics.json",
+          "size_bytes": 999,
+          "summary": {
+            "qc_passed": false,
+            "schema": "automix-final-qc-metrics-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/project_premaster_eval_metrics.json",
+          "relative_path": "eval_reports/project_premaster_eval_metrics.json",
+          "size_bytes": 1256,
+          "summary": {
+            "schema": "automix-premaster-eval-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "MASTERING_QC_STANDARD.md": [
+          {
+            "found": true,
+            "term": "Conservative Streaming Master"
+          },
+          {
+            "found": true,
+            "term": "Loud Reels Preview Master"
+          },
+          {
+            "found": true,
+            "term": "AI Source Repair Master"
+          },
+          {
+            "found": true,
+            "term": "Stem Rebeat Master"
+          }
+        ],
+        "tests/test_prompt36_premaster_safety.py": [
+          {
+            "found": true,
+            "term": "limiter_pressure_risk"
+          },
+          {
+            "found": true,
+            "term": "mono_compatibility_risk"
+          },
+          {
+            "found": true,
+            "term": "limiter_max_gain_db"
+          }
+        ]
+      },
+      "title": "Mastering QC and profile separation",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "harness",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/TESTING_AND_HARNESS.md",
+          "relative_path": "TESTING_AND_HARNESS.md",
+          "size_bytes": 16644
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/harness/fixture_coverage_audit.py",
+          "relative_path": "automix/harness/fixture_coverage_audit.py",
+          "size_bytes": 12482
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_fixture_coverage_audit.py",
+          "relative_path": "scripts/run_fixture_coverage_audit.py",
+          "size_bytes": 1742
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt50_fixture_coverage_audit.py",
+          "relative_path": "tests/test_prompt50_fixture_coverage_audit.py",
+          "size_bytes": 5953
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/scripts/generate_synthetic_audio_fixtures.py",
+          "relative_path": "tests/automix_validation/scripts/generate_synthetic_audio_fixtures.py",
+          "size_bytes": 13013
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/automix_validation/scripts/generate_mock_analysis_fixtures.py",
+          "relative_path": "tests/automix_validation/scripts/generate_mock_analysis_fixtures.py",
+          "size_bytes": 4325
+        }
+      ],
+      "id": "REQ-12",
+      "requirement": "Static/unit validation runs without REAPER and covers the required synthetic audio/mock failure fixtures.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/fixture_coverage_audit.json",
+          "relative_path": "eval_reports/fixture_coverage_audit.json",
+          "size_bytes": 18840,
+          "summary": {
+            "passed": true,
+            "schema": "automix-fixture-coverage-audit-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/validation_reports/prompt41_validation_summary.json",
+          "relative_path": "validation_reports/prompt41_validation_summary.json",
+          "size_bytes": 2459,
+          "summary": {
+            "schema": "prompt41-validation-summary-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "TESTING_AND_HARNESS.md": [
+          {
+            "found": true,
+            "term": "REAPER-Free Tests"
+          },
+          {
+            "found": true,
+            "term": "fixture coverage"
+          },
+          {
+            "found": true,
+            "term": "render failure"
+          }
+        ],
+        "automix/harness/fixture_coverage_audit.py": [
+          {
+            "found": true,
+            "term": "over_limited_master"
+          },
+          {
+            "found": true,
+            "term": "feedback_mapping"
+          },
+          {
+            "found": true,
+            "term": "phase_issue"
+          }
+        ],
+        "tests/test_prompt50_fixture_coverage_audit.py": [
+          {
+            "found": true,
+            "term": "required_fixture_category_missing"
+          },
+          {
+            "found": true,
+            "term": "missing_audio_files"
+          }
+        ]
+      },
+      "title": "REAPER-free harness and required fixtures",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "docs_claims",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/README.md",
+          "relative_path": "README.md",
+          "size_bytes": 3806
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/QUICKSTART.md",
+          "relative_path": "QUICKSTART.md",
+          "size_bytes": 21640
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/CHANGELOG.md",
+          "relative_path": "CHANGELOG.md",
+          "size_bytes": 8374
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/claim_language_guard.py",
+          "relative_path": "automix/orchestrator/claim_language_guard.py",
+          "size_bytes": 6241
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt46_professional_docs.py",
+          "relative_path": "tests/test_prompt46_professional_docs.py",
+          "size_bytes": 6907
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt47_professional_readiness_audit.py",
+          "relative_path": "tests/test_prompt47_professional_readiness_audit.py",
+          "size_bytes": 25907
+        }
+      ],
+      "id": "REQ-13",
+      "requirement": "Delivery docs exist, distinguish automation limits, avoid total-removal claims, and run unsafe-claim detection.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/claim_language_guard.json",
+          "relative_path": "eval_reports/claim_language_guard.json",
+          "size_bytes": 260,
+          "summary": {
+            "passed": true,
+            "schema": "automix-claim-language-guard-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/professional_readiness_audit.json",
+          "relative_path": "eval_reports/professional_readiness_audit.json",
+          "size_bytes": 112385,
+          "summary": {
+            "readiness_status": "review_required",
+            "ready_for_delivery": false,
+            "schema": "automix-professional-readiness-audit-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "README.md": [
+          {
+            "found": true,
+            "term": "artifact reduction"
+          },
+          {
+            "found": true,
+            "term": "human review required"
+          }
+        ],
+        "automix/orchestrator/claim_language_guard.py": [
+          {
+            "found": true,
+            "term": "total_artifact_removal_claim"
+          },
+          {
+            "found": true,
+            "term": "unsupported_commercial_master_claim"
+          }
+        ],
+        "tests/test_prompt46_professional_docs.py": [
+          {
+            "found": true,
+            "term": "BANNED_CLAIMS"
+          },
+          {
+            "found": true,
+            "term": "scripts/run_professional_readiness_audit.py"
+          }
+        ]
+      },
+      "title": "Professional documentation and claim-language guard",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "delivery_readiness",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/approval_export_readiness.py",
+          "relative_path": "automix/orchestrator/approval_export_readiness.py",
+          "size_bytes": 27028
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_approval_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_approval_evidence_gate.py",
+          "size_bytes": 15582
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/deliverable_package_evidence_gate.py",
+          "relative_path": "automix/orchestrator/deliverable_package_evidence_gate.py",
+          "size_bytes": 20057
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_delivery_consistency_gate.py",
+          "relative_path": "automix/orchestrator/final_delivery_consistency_gate.py",
+          "size_bytes": 20551
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_render_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_render_evidence_gate.py",
+          "size_bytes": 14991
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/final_qc_evidence_gate.py",
+          "relative_path": "automix/orchestrator/final_qc_evidence_gate.py",
+          "size_bytes": 16063
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/rollback_evidence_gate.py",
+          "relative_path": "automix/orchestrator/rollback_evidence_gate.py",
+          "size_bytes": 10432
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/professional_readiness_audit.py",
+          "relative_path": "automix/orchestrator/professional_readiness_audit.py",
+          "size_bytes": 93245
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/report_index.py",
+          "relative_path": "automix/orchestrator/report_index.py",
+          "size_bytes": 5689
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/risk_root_cause_rollup.py",
+          "relative_path": "automix/orchestrator/risk_root_cause_rollup.py",
+          "size_bytes": 15129
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_ab_preview_evidence_gate.py",
+          "relative_path": "scripts/run_ab_preview_evidence_gate.py",
+          "size_bytes": 2341
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_approval_evidence_gate.py",
+          "relative_path": "scripts/run_final_approval_evidence_gate.py",
+          "size_bytes": 2703
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_deliverable_package_evidence_gate.py",
+          "relative_path": "scripts/run_deliverable_package_evidence_gate.py",
+          "size_bytes": 2356
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_delivery_consistency_gate.py",
+          "relative_path": "scripts/run_final_delivery_consistency_gate.py",
+          "size_bytes": 2193
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_render_evidence_gate.py",
+          "relative_path": "scripts/run_final_render_evidence_gate.py",
+          "size_bytes": 2239
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_qc_evidence_gate.py",
+          "relative_path": "scripts/run_final_qc_evidence_gate.py",
+          "size_bytes": 2475
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_rollback_evidence_gate.py",
+          "relative_path": "scripts/run_rollback_evidence_gate.py",
+          "size_bytes": 2202
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_approval_export_readiness.py",
+          "relative_path": "scripts/run_approval_export_readiness.py",
+          "size_bytes": 1800
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_risk_root_cause_rollup.py",
+          "relative_path": "scripts/run_risk_root_cause_rollup.py",
+          "size_bytes": 1754
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_professional_readiness_audit.py",
+          "relative_path": "scripts/run_professional_readiness_audit.py",
+          "size_bytes": 1823
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/docs/final_export_and_delivery.md",
+          "relative_path": "docs/final_export_and_delivery.md",
+          "size_bytes": 11348
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt62_ab_preview_evidence_gate.py",
+          "relative_path": "tests/test_prompt62_ab_preview_evidence_gate.py",
+          "size_bytes": 11032
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt66_final_approval_evidence_gate.py",
+          "relative_path": "tests/test_prompt66_final_approval_evidence_gate.py",
+          "size_bytes": 11632
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt67_deliverable_package_evidence_gate.py",
+          "relative_path": "tests/test_prompt67_deliverable_package_evidence_gate.py",
+          "size_bytes": 11388
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt68_final_delivery_consistency_gate.py",
+          "relative_path": "tests/test_prompt68_final_delivery_consistency_gate.py",
+          "size_bytes": 12832
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt63_final_render_evidence_gate.py",
+          "relative_path": "tests/test_prompt63_final_render_evidence_gate.py",
+          "size_bytes": 11645
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt65_final_qc_evidence_gate.py",
+          "relative_path": "tests/test_prompt65_final_qc_evidence_gate.py",
+          "size_bytes": 11073
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt64_rollback_evidence_gate.py",
+          "relative_path": "tests/test_prompt64_rollback_evidence_gate.py",
+          "size_bytes": 10602
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt58_approval_export_readiness.py",
+          "relative_path": "tests/test_prompt58_approval_export_readiness.py",
+          "size_bytes": 12109
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt47_professional_readiness_audit.py",
+          "relative_path": "tests/test_prompt47_professional_readiness_audit.py",
+          "size_bytes": 25907
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt69_risk_root_cause_rollup.py",
+          "relative_path": "tests/test_prompt69_risk_root_cause_rollup.py",
+          "size_bytes": 6552
+        }
+      ],
+      "id": "REQ-14",
+      "requirement": "Final delivery needs render/package/project-state/plugin/QC/A-B/approval/rollback/feedback evidence and a report index.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/approval_export_readiness.json",
+          "relative_path": "eval_reports/approval_export_readiness.json",
+          "size_bytes": 18911,
+          "summary": {
+            "readiness_status": "blocked",
+            "schema": "automix-approval-export-readiness-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_approval_evidence_gate.json",
+          "relative_path": "eval_reports/final_approval_evidence_gate.json",
+          "size_bytes": 3717,
+          "summary": {
+            "schema": "automix-final-approval-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/deliverable_package_evidence_gate.json",
+          "relative_path": "eval_reports/deliverable_package_evidence_gate.json",
+          "size_bytes": 21166,
+          "summary": {
+            "schema": "automix-deliverable-package-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_delivery_consistency_gate.json",
+          "relative_path": "eval_reports/final_delivery_consistency_gate.json",
+          "size_bytes": 6485,
+          "summary": {
+            "schema": "automix-final-delivery-consistency-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+          "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+          "size_bytes": 2914,
+          "summary": {
+            "schema": "automix-ab-preview-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_render_evidence_gate.json",
+          "relative_path": "eval_reports/final_render_evidence_gate.json",
+          "size_bytes": 1837,
+          "summary": {
+            "schema": "automix-final-render-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/final_qc_evidence_gate.json",
+          "relative_path": "eval_reports/final_qc_evidence_gate.json",
+          "size_bytes": 2616,
+          "summary": {
+            "schema": "automix-final-qc-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/rollback_evidence_gate.json",
+          "relative_path": "eval_reports/rollback_evidence_gate.json",
+          "size_bytes": 2127,
+          "summary": {
+            "schema": "automix-rollback-evidence-gate-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/automix_report_index.json",
+          "relative_path": "eval_reports/automix_report_index.json",
+          "size_bytes": 69446,
+          "summary": {
+            "schema": "automix-report-index-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/professional_readiness_audit.json",
+          "relative_path": "eval_reports/professional_readiness_audit.json",
+          "size_bytes": 112385,
+          "summary": {
+            "readiness_status": "review_required",
+            "ready_for_delivery": false,
+            "schema": "automix-professional-readiness-audit-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/open_risk_register.json",
+          "relative_path": "eval_reports/open_risk_register.json",
+          "size_bytes": 278537,
+          "summary": {
+            "passed": false,
+            "schema": "automix-open-risk-register-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/risk_root_cause_rollup.json",
+          "relative_path": "eval_reports/risk_root_cause_rollup.json",
+          "size_bytes": 85191,
+          "summary": {
+            "passed": false,
+            "schema": "automix-risk-root-cause-rollup-v1"
+          }
+        },
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/risk_remediation_plan.json",
+          "relative_path": "eval_reports/risk_remediation_plan.json",
+          "size_bytes": 162343,
+          "summary": {
+            "schema": "automix-risk-remediation-plan-v1",
+            "status": "remediation_plan_ready"
+          }
+        }
+      ],
+      "term_results": {
+        "automix/orchestrator/approval_export_readiness.py": [
+          {
+            "found": true,
+            "term": "accepted_export_source_missing"
+          },
+          {
+            "found": true,
+            "term": "ab_preview_missing_or_not_loudness_matched"
+          },
+          {
+            "found": true,
+            "term": "final_human_approval_missing"
+          },
+          {
+            "found": true,
+            "term": "final_approval_evidence_not_ready"
+          }
+        ],
+        "automix/orchestrator/deliverable_package_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "ready_for_delivery_package"
+          },
+          {
+            "found": true,
+            "term": "deliverable_package_manifest_has_missing_files"
+          },
+          {
+            "found": true,
+            "term": "This gate validates deliverable package evidence only"
+          }
+        ],
+        "automix/orchestrator/final_approval_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "loudness_matched_ab_review_not_recorded"
+          },
+          {
+            "found": true,
+            "term": "final_audio_accepted_at_matched_loudness"
+          },
+          {
+            "found": true,
+            "term": "This gate validates final approval evidence only"
+          }
+        ],
+        "automix/orchestrator/final_delivery_consistency_gate.py": [
+          {
+            "found": true,
+            "term": "ready_for_delivery_consistency"
+          },
+          {
+            "found": true,
+            "term": "final_qc_audio_mismatch_render_evidence_primary_wav"
+          },
+          {
+            "found": true,
+            "term": "This gate validates final delivery cross-report consistency only"
+          }
+        ],
+        "automix/orchestrator/final_qc_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "final_audio_path_mismatch_render_evidence_primary_wav"
+          },
+          {
+            "found": true,
+            "term": "final_qc_true_peak_above_ceiling"
+          }
+        ],
+        "automix/orchestrator/final_render_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "primary_wav_render_missing"
+          },
+          {
+            "found": true,
+            "term": "primary_wav_path_matches_selected_export_source"
+          },
+          {
+            "found": true,
+            "term": "hidden_limiter"
+          }
+        ],
+        "automix/orchestrator/professional_readiness_audit.py": [
+          {
+            "found": true,
+            "term": "primary_wav_render_missing"
+          },
+          {
+            "found": true,
+            "term": "deliverable_zip_not_created"
+          },
+          {
+            "found": true,
+            "term": "feedback_qc_integration"
+          },
+          {
+            "found": true,
+            "term": "final_qc_evidence_gate"
+          }
+        ],
+        "automix/orchestrator/report_index.py": [
+          {
+            "found": true,
+            "term": "delivery readiness"
+          },
+          {
+            "found": true,
+            "term": "approval_export_readiness"
+          },
+          {
+            "found": true,
+            "term": "validation harness"
+          }
+        ],
+        "automix/orchestrator/risk_root_cause_rollup.py": [
+          {
+            "found": true,
+            "term": "RISK_ROOT_CAUSE_ROLLUP_SCHEMA"
+          },
+          {
+            "found": true,
+            "term": "root_cause_total"
+          },
+          {
+            "found": true,
+            "term": "This rollup compresses risk evidence into root causes"
+          }
+        ],
+        "automix/orchestrator/rollback_evidence_gate.py": [
+          {
+            "found": true,
+            "term": "rollback_registry_missing_or_invalid"
+          },
+          {
+            "found": true,
+            "term": "ready_for_delivery_readiness"
+          }
+        ],
+        "docs/final_export_and_delivery.md": [
+          {
+            "found": true,
+            "term": "primary WAV"
+          },
+          {
+            "found": true,
+            "term": "loudness-matched A/B preview"
+          },
+          {
+            "found": true,
+            "term": "Approval Export Readiness"
+          }
+        ]
+      },
+      "title": "Delivery readiness and report inventory",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "category": "path_hygiene",
+      "files": [
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/automix/orchestrator/path_hygiene_audit.py",
+          "relative_path": "automix/orchestrator/path_hygiene_audit.py",
+          "size_bytes": 6819
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_path_hygiene_audit.py",
+          "relative_path": "scripts/run_path_hygiene_audit.py",
+          "size_bytes": 1603
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/tests/test_prompt54_path_hygiene_audit.py",
+          "relative_path": "tests/test_prompt54_path_hygiene_audit.py",
+          "size_bytes": 3804
+        },
+        {
+          "exists": true,
+          "path": "/Users/hantaeheuk/Documents/New project 3/TESTING_AND_HARNESS.md",
+          "relative_path": "TESTING_AND_HARNESS.md",
+          "size_bytes": 16644
+        }
+      ],
+      "id": "REQ-15",
+      "requirement": "Source code should avoid hardcoded local user paths, while generated reports expose local evidence paths only as auditable runtime evidence.",
+      "status": "satisfied",
+      "supporting_reports": [
+        {
+          "exists": true,
+          "json_error": null,
+          "json_valid": true,
+          "path": "automix/eval_reports/path_hygiene_audit.json",
+          "relative_path": "eval_reports/path_hygiene_audit.json",
+          "size_bytes": 14436,
+          "summary": {
+            "passed": true,
+            "schema": "automix-path-hygiene-audit-v1"
+          }
+        }
+      ],
+      "term_results": {
+        "TESTING_AND_HARNESS.md": [
+          {
+            "found": true,
+            "term": "path hygiene"
+          },
+          {
+            "found": true,
+            "term": "hardcoded local paths"
+          }
+        ],
+        "automix/orchestrator/path_hygiene_audit.py": [
+          {
+            "found": true,
+            "term": "source_code_contains_absolute_local_path"
+          },
+          {
+            "found": true,
+            "term": "runtime reports may contain local evidence paths"
+          }
+        ]
+      },
+      "title": "Hardcoded path and handoff hygiene",
+      "warnings": []
+    }
+  ],
+  "requirements_incomplete": 0,
+  "requirements_satisfied": 15,
+  "requirements_total": 15,
+  "satisfied_requirement_ids": [
+    "REQ-01",
+    "REQ-02",
+    "REQ-03",
+    "REQ-04",
+    "REQ-05",
+    "REQ-06",
+    "REQ-07",
+    "REQ-08",
+    "REQ-09",
+    "REQ-10",
+    "REQ-11",
+    "REQ-12",
+    "REQ-13",
+    "REQ-14",
+    "REQ-15"
+  ],
+  "schema": "automix-requirements-traceability-audit-v1",
+  "warnings": [],
+  "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+}

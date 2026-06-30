@@ -1,0 +1,27 @@
+{
+  "artifact_evidence": [
+    {
+      "evidence_path": "automix/eval_reports/final_qc_metrics.json",
+      "evidence_type": "measured_metric",
+      "human_reviewed": false,
+      "label": "measured_final_qc_ai_fizz",
+      "metric_key": "vocal_preservation.ai_fizz_score",
+      "notes": "Use only after a real render/QC report exists; report-only placeholders do not count.",
+      "value": 0.0
+    },
+    {
+      "evidence_path": "automix/review/user_feedback_revision_memory.json",
+      "evidence_type": "user_feedback",
+      "human_reviewed": true,
+      "label": "user_artifact_feedback",
+      "notes": "Use only for actual user listening feedback, not a no-feedback baseline.",
+      "value": 1.0
+    }
+  ],
+  "limits": [
+    "Do not use zero or missing metrics as proof artifacts are absent.",
+    "Do not claim total artifact removal.",
+    "Artifact evidence is planning evidence; source, plugin, A/B, and approval gates still apply."
+  ],
+  "schema": "automix-artifact-evidence-manifest-template-v1"
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "automix-pitch-adapter-semantics-v1",
+  "purpose": "Semantic pitch-correction adapter contract for Prompt 31 draft-only AutoTune workflows.",
+  "safety": {
+    "no_fixed_parameter_indexes": true,
+    "unknown_parameters_are_skipped": true,
+    "min_mapping_confidence": 0.85,
+    "draft_track_only": true,
+    "original_track_must_remain_untouched": true,
+    "full_mix_default_apply": false
+  },
+  "semantic_controls": {
+    "correction_amount": {
+      "range": [0.0, 1.0],
+      "aliases": ["amount", "correction", "pitch correction", "tune amount", "retune amount"]
+    },
+    "speed": {
+      "range": [0.0, 1.0],
+      "aliases": ["speed", "retune speed", "response", "attack"]
+    },
+    "depth": {
+      "range": [0.0, 1.0],
+      "aliases": ["depth", "correction depth", "strength"]
+    },
+    "scale": {
+      "type": "enum_or_discrete",
+      "aliases": ["scale", "mode"],
+      "policy": "do_not_force_when_key_or_scale_confidence_is_low"
+    },
+    "key": {
+      "type": "enum_or_discrete",
+      "aliases": ["key", "root"],
+      "policy": "do_not_force_when_key_or_scale_confidence_is_low"
+    },
+    "formant_preserve": {
+      "range": [0.0, 1.0],
+      "aliases": ["formant preserve", "formant", "preserve formants"]
+    },
+    "humanize": {
+      "range": [0.0, 1.0],
+      "aliases": ["humanize", "natural", "naturalness"]
+    },
+    "vibrato_preserve": {
+      "range": [0.0, 1.0],
+      "aliases": ["vibrato preserve", "vibrato", "preserve vibrato"]
+    },
+    "dry_wet": {
+      "range": [0.0, 1.0],
+      "aliases": ["dry/wet", "mix", "wet", "blend"]
+    },
+    "output_gain": {
+      "range_db": [-12.0, 12.0],
+      "aliases": ["output", "gain", "output gain"]
+    }
+  },
+  "conservative_defaults": {
+    "already_mixed_ai_vocal": {
+      "correction_amount": 0.08,
+      "speed": 0.15,
+      "depth": 0.15,
+      "formant_preserve": 1.0,
+      "humanize": 0.70,
+      "vibrato_preserve": 0.80,
+      "dry_wet": 0.35,
+      "output_gain": 0.0
+    },
+    "raw_vocal": {
+      "correction_amount": 0.25,
+      "speed": 0.30,
+      "depth": 0.30,
+      "formant_preserve": 1.0,
+      "humanize": 0.60,
+      "vibrato_preserve": 0.70,
+      "dry_wet": 0.60,
+      "output_gain": 0.0
+    },
+    "full_mix": {
+      "apply": false,
+      "correction_amount": 0.0
+    }
+  },
+  "learned_mappings": [],
+  "notes": [
+    "This file is a semantic contract, not proof that a local plugin exposes these controls.",
+    "REAPER automation must discover or load high-confidence mappings before writing any parameter.",
+    "Do not use fast robotic correction unless a separate creative mode explicitly allows it."
+  ]
+}

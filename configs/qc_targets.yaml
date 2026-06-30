@@ -1,0 +1,34 @@
+integrated_lufs:
+  min: -12.5
+  max: -8.0
+loud_reference_master_integrated_lufs:
+  min: -9.5
+  max: -8.0
+safe_streaming_master_integrated_lufs:
+  min: -14.5
+  max: -12.5
+true_peak_db_tp:
+  max: -1.0
+sample_peak_dbfs:
+  max: -1.0
+lr_rms_delta_db:
+  max: 0.5
+stereo_correlation:
+  min: 0.25
+mono_peak_dbfs:
+  max: -1.0
+mono_loudness_delta_db:
+  min: -1.0
+  max: 1.0
+female_vs_male_delta_db:
+  max: -5.0
+male_active_rms_dbfs:
+  min: -24.0
+master_bus_sustained_gain_reduction_db:
+  max: 2.0
+band_share:
+  harshness_2500_6000_hz_max: 0.26
+  sibilance_5000_10000_hz_max: 0.18
+  metallic_hiss_8000_16000_hz_watch: 0.24
+  low_energy_20_120_hz_watch: 0.35
+  mid_energy_120_2500_hz_watch: 0.55

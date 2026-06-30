@@ -1,0 +1,14 @@
+{
+  "blockers": [
+    "PLUGIN_MAPPING_UNSAFE",
+    "no_safe_recovery_chain_plans",
+    "validated_plugin_mapping_required"
+  ],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "recommended_action": "validate_plugins_first",
+  "recovery_applied": false,
+  "schema": "automix-recovery-only-blocker-report-v1",
+  "warnings": [
+    "no_safe_recovery_chain_plans"
+  ]
+}

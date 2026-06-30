@@ -1,0 +1,26 @@
+{
+  "accepted_export_source_ready": false,
+  "accepted_final_export_sources": [],
+  "accepted_isolated_stems": [],
+  "accepted_stem_sources_total": 0,
+  "blockers": [
+    "source_acceptance_candidates_missing"
+  ],
+  "candidate_results": [],
+  "candidate_sources_total": 0,
+  "created_at": "2026-06-02T15:23:47Z",
+  "limits": [
+    "This gate does not modify final_export_state or project_state_manifest.",
+    "It records whether candidate source evidence is acceptable before final export packaging.",
+    "It does not listen to audio or replace user A/B approval."
+  ],
+  "manifest_path": "",
+  "output_dir": "automix",
+  "project_name": "project",
+  "rejected_candidate_sources_total": 0,
+  "schema": "automix-source-acceptance-gate-v1",
+  "template_path": "automix/review/source_acceptance_manifest_template.json",
+  "warnings": [
+    "accepted_final_export_source_not_recorded"
+  ]
+}

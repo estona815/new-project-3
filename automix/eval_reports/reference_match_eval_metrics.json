@@ -1,0 +1,37 @@
+{
+  "schema": "automix-reference-match-eval-v1",
+  "renders_created": {
+    "current_mix": false,
+    "reference_match_draft": false,
+    "loudness_matched": false,
+    "difference": false
+  },
+  "match_improvement_scores": {
+    "overall_safe_match_delta": 0.0,
+    "vocal_forwardness_delta": 0.0,
+    "lead_melody_prominence_delta": 0.0,
+    "low_end_control_delta": 0.0,
+    "drum_energy_delta": 0.0,
+    "808_translation_delta": 0.0,
+    "stereo_match_delta": 0.0,
+    "phone_translation_delta": 0.0
+  },
+  "damage_scores": {
+    "vocal_harshness_increase": 0.0,
+    "sibilance_splatter_increase": 0.0,
+    "metallic_artifact_increase": 0.0,
+    "ai_fizz_increase": 0.0,
+    "vocal_forwardness_loss": 0.0,
+    "lead_melody_masking_increase": 0.0,
+    "beat_impact_loss": 0.0,
+    "low_end_mud_increase": 0.0,
+    "phase_correlation_worsening": 0.0,
+    "stereo_width_shift": 0.0,
+    "limiter_pressure_increase": 0.0
+  },
+  "evaluation_passed": false,
+  "recommended_action": "manual_review_required",
+  "warnings": [
+    "missing reference match A/B renders"
+  ]
+}

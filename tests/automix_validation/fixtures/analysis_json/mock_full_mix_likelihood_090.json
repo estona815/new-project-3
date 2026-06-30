@@ -1,0 +1,16 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "full mix likelihood 0.90",
+  "coverage_tags": [
+    "full_mix"
+  ],
+  "input": {
+    "full_mix_likelihood": 0.9
+  },
+  "expected_stage_status": "requires_stem",
+  "expected_decision": "full_mix_unsafe",
+  "expected_blockers": [
+    "full_mix_detected_for_pitch_correction"
+  ],
+  "expected_reports": []
+}

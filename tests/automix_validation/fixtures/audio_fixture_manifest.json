@@ -1,0 +1,186 @@
+{
+  "schema": "prompt41-audio-fixture-manifest-v1",
+  "seed": 41041,
+  "copyrighted_material": false,
+  "external_downloads": false,
+  "sample_rate": 48000,
+  "duration_seconds": 10.0,
+  "fixtures": [
+    {
+      "path": "audio/raw_vocal_like_mono.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.498799,
+      "expected": "raw_vocal; low full_mix_likelihood; high pitch confidence",
+      "coverage_tags": [
+        "clean_vocal",
+        "raw_vocal"
+      ]
+    },
+    {
+      "path": "audio/already_tuned_ai_like_vocal.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.656828,
+      "expected": "already_tuned_score high; pitch skipped or micro",
+      "coverage_tags": [
+        "already_tuned_ai_vocal",
+        "suno_high_fizz"
+      ]
+    },
+    {
+      "path": "audio/source_separated_watery_vocal.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.584372,
+      "expected": "source separated/watery risk high; conservative recovery",
+      "coverage_tags": [
+        "watery_smear",
+        "fake_stereo_halo"
+      ]
+    },
+    {
+      "path": "audio/full_mix_dense_polyphonic.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 1.0,
+      "expected": "full_mix_likelihood high; pitch blocked",
+      "coverage_tags": [
+        "full_mix",
+        "dense_polyphonic"
+      ]
+    },
+    {
+      "path": "audio/fragile_thin_ai_vocal.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.333112,
+      "expected": "thin/fizz risk; body preservation",
+      "coverage_tags": [
+        "suno_high_fizz",
+        "fragile_ai_vocal"
+      ]
+    },
+    {
+      "path": "audio/harsh_sibilant_vocal.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.565516,
+      "expected": "sibilance and harshness guard",
+      "coverage_tags": [
+        "harsh_vocal",
+        "sibilant_vocal"
+      ]
+    },
+    {
+      "path": "audio/clean_instrumental_bus.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 1.0,
+      "expected": "instrumental role; pitch ineligible",
+      "coverage_tags": [
+        "clean_instrumental_bus"
+      ]
+    },
+    {
+      "path": "audio/vocal_buried_mix.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.962383,
+      "expected": "vocal masking; dynamic space preferred",
+      "coverage_tags": [
+        "buried_vocal",
+        "masking_balance"
+      ]
+    },
+    {
+      "path": "audio/clean_vocal_fixture.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.219456,
+      "expected": "clean vocal baseline for conservative comparison",
+      "coverage_tags": [
+        "clean_vocal"
+      ]
+    },
+    {
+      "path": "audio/muddy_vocal_fixture.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.686667,
+      "expected": "muddy/boxy low-mid vocal cleanup target",
+      "coverage_tags": [
+        "muddy_vocal"
+      ]
+    },
+    {
+      "path": "audio/fake_stereo_halo_vocal.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.334205,
+      "expected": "fake stereo halo should trigger phase-aware conservative treatment",
+      "coverage_tags": [
+        "fake_stereo_halo",
+        "phase_issue"
+      ]
+    },
+    {
+      "path": "audio/over_limited_master.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.959289,
+      "expected": "over-limited master should block aggressive final limiting claims",
+      "coverage_tags": [
+        "over_limited_master"
+      ]
+    },
+    {
+      "path": "audio/low_end_buildup_mix.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 1.0,
+      "expected": "low-end buildup should favor conservative cleanup over heavy mastering",
+      "coverage_tags": [
+        "low_end_buildup"
+      ]
+    },
+    {
+      "path": "audio/phase_issue_stereo.wav",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 10.0,
+      "format": "PCM_24",
+      "peak": 0.37884,
+      "expected": "phase issue should require mono compatibility and human review",
+      "coverage_tags": [
+        "phase_issue"
+      ]
+    }
+  ]
+}

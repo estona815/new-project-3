@@ -1,0 +1,87 @@
+{
+  "schema": "automix-goal02-8-reference-manifest-v1",
+  "project_name": "Mwolla v14 reference clarity diagnostic",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward_reference_clarity",
+  "analysis_window": {
+    "label": "auto_loudest_20s",
+    "selection": "auto_loudest_20s_per_file",
+    "start_seconds": 0.0,
+    "duration_seconds": 20.0
+  },
+  "target": {
+    "id": "mwolla_v14_approved",
+    "role": "current_user_approved_mix",
+    "path": "renders/mwolla_v14_no_chop_max_clarity_hook_reprise_master/mwolla_v14_NO_CHOP_MAX_CLARITY_HOOK_REPRISE_MASTER.wav",
+    "notes": "User-approved baseline; compare for clarity/separation diagnosis only."
+  },
+  "target_stems": {
+    "path": "audio_work/mwolla_v14_no_chop_max_clarity_hook_reprise_master/processed_stems",
+    "window_source": "mwolla_v14_approved",
+    "notes": "Processed v14 stems aligned to the target window for stem clarity and separation diagnostics."
+  },
+  "references_required": 8,
+  "references": [
+    {
+      "id": "ref_01",
+      "role": "primary_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Broken_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    },
+    {
+      "id": "ref_02",
+      "role": "vocal_balance_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Dough_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    },
+    {
+      "id": "ref_03",
+      "role": "low_end_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-IMnK_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    },
+    {
+      "id": "ref_04",
+      "role": "drum_energy_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Lovee_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    },
+    {
+      "id": "ref_05",
+      "role": "width_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Missu_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set; do not copy unsafe width blindly."
+    },
+    {
+      "id": "ref_06",
+      "role": "loudness_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Phobia_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set; mix fixes must come before master gain."
+    },
+    {
+      "id": "ref_07",
+      "role": "emotional_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    },
+    {
+      "id": "ref_08",
+      "role": "secondary_primary_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Why_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "User-owned Estona/Nib 4dium reference set."
+    }
+  ],
+  "safety_constraints": {
+    "reference_bus_policy": "Reference/full-mix material must stay muted, master-send disabled, and outside active master routing.",
+    "do_not_infer_listening": true,
+    "do_not_fabricate_missing_metrics": true,
+    "do_not_copy_reference_audio_content": true
+  }
+}

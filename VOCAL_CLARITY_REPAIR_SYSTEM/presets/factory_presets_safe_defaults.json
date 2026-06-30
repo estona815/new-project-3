@@ -1,0 +1,245 @@
+{
+  "schema": "codex-vocal-factory-presets-v1",
+  "plugin": "Codex Vocal AI Artifact Split Tamer",
+  "format": "REAPER JSFX",
+  "philosophy": "Source-preserving AI artifact and noise suppression. The product is not a maximum noise-removal tool; clean but damaged audio is a failed result.",
+  "default_preset": "Preserve",
+  "fresh_instance_policy": {
+    "preset": "Preserve",
+    "strong_mode_default_allowed": false,
+    "residual_monitor_default": "Off",
+    "dry_wet_default_percent": 70,
+    "amount_default_percent": 30,
+    "max_suppression_db_default": 8.0,
+    "mask_strength_default": 0.35
+  },
+  "legacy_preset_policy": {
+    "load_old_presets": true,
+    "missing_new_parameters": "use_safe_defaults",
+    "invalid_values": "clamp_to_absolute_range",
+    "strong_mode_auto_migration": false,
+    "notes": "Existing JSFX slider order is preserved. Sliders added after slider8 get safe defaults when absent."
+  },
+  "parameter_definitions": {
+    "slider1": {"id": "AttackHarshTame", "label": "Attack Harsh Tame", "min": 0.0, "max": 100.0, "default": 32.0, "ui_group": "developer"},
+    "slider2": {"id": "SandySibilanceTame", "label": "Sandy Sibilance Tame", "min": 0.0, "max": 100.0, "default": 38.0, "ui_group": "developer"},
+    "slider3": {"id": "DigitalFizzTame", "label": "Digital Fizz Tame", "min": 0.0, "max": 100.0, "default": 44.0, "ui_group": "developer"},
+    "slider4": {"id": "TailWarbleHide", "label": "Tail Warble Hide", "min": 0.0, "max": 100.0, "default": 28.0, "ui_group": "developer"},
+    "slider5": {"id": "BodyPreserve", "label": "Body Preserve", "min": 0.0, "max": 100.0, "default": 20.0, "ui_group": "advanced"},
+    "slider6": {"id": "DryWet", "label": "Dry/Wet", "user_label": "Dry/Wet blend", "min": 0.0, "max": 100.0, "default": 70.0, "ui_group": "main"},
+    "slider7": {"id": "OutputTrimDb", "label": "Output Trim (dB)", "min": -18.0, "max": 18.0, "default": 0.0, "ui_group": "advanced"},
+    "slider8": {"id": "Bypass", "label": "Bypass", "min": 0.0, "max": 1.0, "default": 0.0, "ui_group": "main"},
+    "slider9": {"id": "Amount", "label": "Amount", "user_label": "Overall cleanup strength", "min": 0.0, "max": 100.0, "default": 30.0, "ui_group": "main", "mapping": "pow(userAmount, 1.6)"},
+    "slider10": {"id": "MaxSuppressionDb", "label": "Max Reduction (dB)", "min": 0.0, "max": 24.0, "default": 8.0, "ui_group": "advanced"},
+    "slider11": {"id": "AttackMs", "label": "Detector Attack (ms)", "min": 1.0, "max": 200.0, "default": 50.0, "ui_group": "advanced"},
+    "slider12": {"id": "ReleaseMs", "label": "Detector Release (ms)", "min": 1.0, "max": 500.0, "default": 12.0, "ui_group": "advanced"},
+    "slider13": {"id": "ProcessingEnabled", "label": "Processing Enabled", "min": 0.0, "max": 1.0, "default": 1.0, "ui_group": "developer"},
+    "slider14": {"id": "MaskStrength", "label": "Mask Strength", "min": 0.0, "max": 1.0, "default": 0.35, "ui_group": "developer"},
+    "slider15": {"id": "SoftKneeDb", "label": "Soft Knee (dB)", "min": 1.0, "max": 24.0, "default": 9.0, "ui_group": "developer"},
+    "slider16": {"id": "VocalPreserve", "label": "Vocal Preserve", "user_label": "Protects vocal body and presence", "min": 0.0, "max": 1.0, "default": 0.85, "ui_group": "main"},
+    "slider17": {"id": "ClarityPreserve", "label": "Clarity Preserve", "user_label": "Protects consonants and forward detail", "min": 0.0, "max": 1.0, "default": 0.85, "ui_group": "main"},
+    "slider18": {"id": "AirPreserve", "label": "Air Preserve", "user_label": "Protects high-frequency air and ambience", "min": 0.0, "max": 1.0, "default": 0.80, "ui_group": "main"},
+    "slider19": {"id": "TransientPreserve", "label": "Transient Preserve", "min": 0.0, "max": 1.0, "default": 0.80, "ui_group": "advanced"},
+    "slider20": {"id": "MultibandEnabled", "label": "Multiband Enabled", "min": 0.0, "max": 1.0, "default": 1.0, "ui_group": "advanced"},
+    "slider21": {"id": "MSEnabled", "label": "M/S Enabled", "min": 0.0, "max": 1.0, "default": 1.0, "ui_group": "advanced"},
+    "slider22": {"id": "MultibandMode", "label": "Multiband Mode", "min": 0.0, "max": 3.0, "default": 0.0, "ui_group": "main", "enum": ["Preserve", "Balanced", "Surgical AI", "Strong Test"]},
+    "slider23": {"id": "MidAmount", "label": "Mid Amount", "min": 0.0, "max": 1.0, "default": 0.25, "ui_group": "advanced"},
+    "slider24": {"id": "SideAmount", "label": "Side Amount", "min": 0.0, "max": 1.0, "default": 0.40, "ui_group": "advanced"},
+    "slider25": {"id": "SideArtifactReduction", "label": "Side Artifact Reduction", "user_label": "Reduces stereo-side noise while preserving center vocal", "min": 0.0, "max": 1.0, "default": 0.45, "ui_group": "advanced"},
+    "slider26": {"id": "SurgicalArtifactReduction", "label": "Surgical Artifact Reduction", "user_label": "Targets metallic AI artifacts and narrow chirps", "min": 0.0, "max": 1.0, "default": 0.25, "ui_group": "main"},
+    "slider27": {"id": "ResidualMonitor", "label": "Residual Monitor", "user_label": "Listen to what is being removed", "min": 0.0, "max": 2.0, "default": 0.0, "ui_group": "main", "enum": ["Off", "Processed", "Residual"]},
+    "slider28": {"id": "MidPreserve", "label": "Mid Preserve", "min": 0.0, "max": 1.0, "default": 0.85, "ui_group": "advanced"},
+    "internal_harmonic_preserve": {"id": "HarmonicPreserve", "label": "Harmonic Preserve", "min": 0.0, "max": 1.0, "default": 0.75, "ui_group": "internal"}
+  },
+  "mode_soft_caps": {
+    "Preserve": {
+      "multiband_mode": 0,
+      "band_count": 14,
+      "recommended_max_suppression_db": 8.0,
+      "presence_active_loss_budget_db": 1.5,
+      "air_active_loss_budget_db": 2.0,
+      "mid_processing": "very_conservative",
+      "side_processing": "moderate"
+    },
+    "Balanced": {
+      "multiband_mode": 1,
+      "band_count": 28,
+      "recommended_max_suppression_db": 10.0,
+      "absolute_recommended_max_suppression_db": 12.0,
+      "presence_active_loss_budget_db": 2.0,
+      "air_active_loss_budget_db": 3.0,
+      "mid_processing": "protected",
+      "side_processing": "stronger_than_mid"
+    },
+    "AI Metallic Surgical": {
+      "multiband_mode": 2,
+      "band_count": 48,
+      "recommended_max_suppression_db": 10.0,
+      "presence_active_loss_budget_db": 2.0,
+      "air_active_loss_budget_db": 3.0,
+      "activation_rule": "high artifact score only"
+    },
+    "Strong Test / Repair": {
+      "multiband_mode": 3,
+      "band_count": 64,
+      "recommended_max_suppression_db": 18.0,
+      "absolute_max_suppression_db": 24.0,
+      "release_default_allowed": false,
+      "quality_score_included_in_default_release": false
+    }
+  },
+  "ui_layout": {
+    "main_controls": ["Amount", "MultibandMode", "DryWet", "VocalPreserve", "ClarityPreserve", "AirPreserve", "SurgicalArtifactReduction", "ResidualMonitor"],
+    "advanced_controls": ["MaxSuppressionDb", "SideArtifactReduction", "MidPreserve", "TransientPreserve", "MultibandEnabled", "MSEnabled", "AttackMs", "ReleaseMs", "SoftKneeDb", "MaskStrength"],
+    "developer_controls": ["AttackHarshTame", "SandySibilanceTame", "DigitalFizzTame", "TailWarbleHide", "ProcessingEnabled", "OutputTrimDb"],
+    "avoid_labels": ["Remove all noise", "Restore lost clarity", "AI enhancer", "Make it studio quality", "Perfect clean", "High-frequency reconstruction"]
+  },
+  "presets": [
+    {
+      "name": "Preserve",
+      "purpose": "Safest default for vocals, AI vocals, stems, and mixed material where original tone must remain close.",
+      "recommended_use": "Start here. Increase Amount only after residual listening.",
+      "not_recommended_use": "Severe repair where source damage is already acceptable.",
+      "release_default_allowed": true,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Mild to moderate cleanup with consonants, air, transients, harmonic texture, ambience, and stereo width protected.",
+      "jsfx_sliders": {
+        "slider1": 32, "slider2": 38, "slider3": 44, "slider4": 28, "slider5": 20, "slider6": 70, "slider7": 0, "slider8": 0,
+        "slider9": 30, "slider10": 8, "slider11": 50, "slider12": 12, "slider13": 1, "slider14": 0.35, "slider15": 9,
+        "slider16": 0.85, "slider17": 0.85, "slider18": 0.80, "slider19": 0.80, "slider20": 1, "slider21": 1, "slider22": 0,
+        "slider23": 0.25, "slider24": 0.40, "slider25": 0.45, "slider26": 0.25, "slider27": 0, "slider28": 0.85
+      }
+    },
+    {
+      "name": "Balanced",
+      "purpose": "General use with more cleanup than Preserve while still protecting source tone.",
+      "recommended_use": "Use after Preserve when hiss or AI fuzz remains too obvious.",
+      "not_recommended_use": "Clean vocal do-no-harm checks that should stay almost untouched.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Moderate artifact reduction without obvious dullness or ghost vocal in residual.",
+      "jsfx_sliders": {
+        "slider1": 34, "slider2": 42, "slider3": 48, "slider4": 32, "slider5": 20, "slider6": 75, "slider7": 0, "slider8": 0,
+        "slider9": 40, "slider10": 10, "slider11": 55, "slider12": 16, "slider13": 1, "slider14": 0.40, "slider15": 10,
+        "slider16": 0.80, "slider17": 0.80, "slider18": 0.76, "slider19": 0.76, "slider20": 1, "slider21": 1, "slider22": 1,
+        "slider23": 0.30, "slider24": 0.48, "slider25": 0.55, "slider26": 0.28, "slider27": 0, "slider28": 0.82
+      }
+    },
+    {
+      "name": "AI Metallic Surgical",
+      "purpose": "Target metallic AI chirps, birdies, narrow resonances, and source-separation artifacts.",
+      "recommended_use": "Use when artifacts are narrow and metallic; tune while listening to residual.",
+      "not_recommended_use": "Broad broadband hiss removal.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Sparse artifact-focused reduction. Broad denoise remains moderate.",
+      "jsfx_sliders": {
+        "slider1": 24, "slider2": 30, "slider3": 55, "slider4": 35, "slider5": 18, "slider6": 70, "slider7": 0, "slider8": 0,
+        "slider9": 35, "slider10": 10, "slider11": 60, "slider12": 20, "slider13": 1, "slider14": 0.35, "slider15": 9,
+        "slider16": 0.82, "slider17": 0.84, "slider18": 0.82, "slider19": 0.80, "slider20": 1, "slider21": 1, "slider22": 2,
+        "slider23": 0.24, "slider24": 0.45, "slider25": 0.52, "slider26": 0.55, "slider27": 0, "slider28": 0.86
+      }
+    },
+    {
+      "name": "Hiss / Room Tone Gentle",
+      "purpose": "Reduce broadband hiss and room tone while preserving air and ambience.",
+      "recommended_use": "Use on vocal takes with steady high-frequency noise or room tone.",
+      "not_recommended_use": "Metallic chirps that need surgical detection.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Gentle high-band cleanup without full-band de-airing.",
+      "jsfx_sliders": {
+        "slider1": 24, "slider2": 34, "slider3": 38, "slider4": 32, "slider5": 22, "slider6": 72, "slider7": 0, "slider8": 0,
+        "slider9": 32, "slider10": 8, "slider11": 70, "slider12": 28, "slider13": 1, "slider14": 0.32, "slider15": 12,
+        "slider16": 0.84, "slider17": 0.86, "slider18": 0.90, "slider19": 0.80, "slider20": 1, "slider21": 1, "slider22": 0,
+        "slider23": 0.22, "slider24": 0.45, "slider25": 0.50, "slider26": 0.18, "slider27": 0, "slider28": 0.86
+      }
+    },
+    {
+      "name": "Voiceover Clean",
+      "purpose": "Spoken word, podcast, narration, and voiceover cleanup.",
+      "recommended_use": "Use when intelligibility matters more than musical ambience.",
+      "not_recommended_use": "Music vocals that need maximum air and breath naturalness.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Slightly more cleanup than Preserve without hard gating.",
+      "jsfx_sliders": {
+        "slider1": 34, "slider2": 40, "slider3": 44, "slider4": 30, "slider5": 18, "slider6": 78, "slider7": 0, "slider8": 0,
+        "slider9": 42, "slider10": 10, "slider11": 55, "slider12": 22, "slider13": 1, "slider14": 0.42, "slider15": 10,
+        "slider16": 0.78, "slider17": 0.82, "slider18": 0.74, "slider19": 0.78, "slider20": 1, "slider21": 1, "slider22": 1,
+        "slider23": 0.30, "slider24": 0.42, "slider25": 0.48, "slider26": 0.20, "slider27": 0, "slider28": 0.80
+      }
+    },
+    {
+      "name": "Strong Test / Repair",
+      "purpose": "Stress and rescue mode for severely damaged material.",
+      "recommended_use": "Use only for difficult repair after checking residual.",
+      "not_recommended_use": "Default release demos, clean vocals, or automatic preset migration.",
+      "release_default_allowed": false,
+      "strong_mode": true,
+      "quality_score_included_in_default_release": false,
+      "warning": "Strong mode may reduce more artifacts but can affect source tone. Use Residual Monitor to check what is being removed.",
+      "model_mode": "DSP Only",
+      "expected_result": "Safety protected but potentially tone-changing cleanup.",
+      "jsfx_sliders": {
+        "slider1": 58, "slider2": 64, "slider3": 72, "slider4": 58, "slider5": 12, "slider6": 85, "slider7": 0, "slider8": 0,
+        "slider9": 70, "slider10": 18, "slider11": 45, "slider12": 20, "slider13": 1, "slider14": 0.65, "slider15": 8,
+        "slider16": 0.65, "slider17": 0.68, "slider18": 0.60, "slider19": 0.65, "slider20": 1, "slider21": 1, "slider22": 3,
+        "slider23": 0.45, "slider24": 0.65, "slider25": 0.80, "slider26": 0.75, "slider27": 0, "slider28": 0.70
+      }
+    },
+    {
+      "name": "DSP Only Safe",
+      "purpose": "Conservative DSP-only cleanup when model validation is not available or confidence is low.",
+      "recommended_use": "Use for fallback-safe renders or model-disabled sessions.",
+      "not_recommended_use": "Severe AI chirp repair.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Low-risk cleanup that keeps the source close.",
+      "jsfx_sliders": {
+        "slider1": 28, "slider2": 34, "slider3": 38, "slider4": 22, "slider5": 22, "slider6": 70, "slider7": 0, "slider8": 0,
+        "slider9": 25, "slider10": 8, "slider11": 60, "slider12": 18, "slider13": 1, "slider14": 0.30, "slider15": 10,
+        "slider16": 0.88, "slider17": 0.88, "slider18": 0.84, "slider19": 0.82, "slider20": 1, "slider21": 1, "slider22": 0,
+        "slider23": 0.20, "slider24": 0.35, "slider25": 0.38, "slider26": 0.15, "slider27": 0, "slider28": 0.90
+      }
+    },
+    {
+      "name": "Side Noise Cleanup",
+      "purpose": "Clean stereo-side ambience noise while preserving centered vocal.",
+      "recommended_use": "Use on stereo stems where noise lives mostly outside the center.",
+      "not_recommended_use": "Mono tracks or centered vocal artifact removal.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Side-biased cleanup with mid vocal protected.",
+      "jsfx_sliders": {
+        "slider1": 28, "slider2": 36, "slider3": 44, "slider4": 30, "slider5": 20, "slider6": 75, "slider7": 0, "slider8": 0,
+        "slider9": 34, "slider10": 9, "slider11": 60, "slider12": 24, "slider13": 1, "slider14": 0.36, "slider15": 11,
+        "slider16": 0.88, "slider17": 0.86, "slider18": 0.82, "slider19": 0.80, "slider20": 1, "slider21": 1, "slider22": 1,
+        "slider23": 0.15, "slider24": 0.58, "slider25": 0.70, "slider26": 0.20, "slider27": 0, "slider28": 0.90
+      }
+    },
+    {
+      "name": "Artifact Focus Low Denoise",
+      "purpose": "Very low broadband denoise with surgical artifact focus.",
+      "recommended_use": "Use when artifacts are obvious but the source is otherwise clean.",
+      "not_recommended_use": "Broad hiss or room tone cleanup.",
+      "release_default_allowed": false,
+      "strong_mode": false,
+      "model_mode": "DSP Only",
+      "expected_result": "Surgical artifact action with minimal broad tonal movement.",
+      "jsfx_sliders": {
+        "slider1": 18, "slider2": 20, "slider3": 35, "slider4": 20, "slider5": 22, "slider6": 70, "slider7": 0, "slider8": 0,
+        "slider9": 25, "slider10": 8, "slider11": 70, "slider12": 25, "slider13": 1, "slider14": 0.30, "slider15": 11,
+        "slider16": 0.88, "slider17": 0.88, "slider18": 0.86, "slider19": 0.84, "slider20": 1, "slider21": 1, "slider22": 2,
+        "slider23": 0.18, "slider24": 0.35, "slider25": 0.40, "slider26": 0.45, "slider27": 0, "slider28": 0.90
+      }
+    }
+  ]
+}

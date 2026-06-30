@@ -1,0 +1,13 @@
+{
+  "candidate_only": true,
+  "from_authoring_gate": true,
+  "limits": [
+    "This manifest candidate is not runtime evidence.",
+    "Copy or write real reports to target paths only after operator review.",
+    "Rerun semantic validation before report_reaudited_by_semantic_gate can become true."
+  ],
+  "operator_ready_to_run": false,
+  "queue_jobs": [],
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-manifest-v1"
+}

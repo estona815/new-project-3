@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-06-05T11:41:25Z",
+  "critical_blockers": [
+    "qc_failure_for_final_delivery"
+  ],
+  "feedback_qc_integration": {
+    "dry_run_only_until_resolved": false,
+    "items_with_missing_qc_metrics": 0,
+    "requires_human_review": false,
+    "resolved_with_evidence_count": 0,
+    "total_feedback_items": 0,
+    "unresolved_or_incomplete_count": 0
+  },
+  "feedback_revision_loop": {
+    "baseline_status": "no_feedback_recorded",
+    "category_counts": {},
+    "dry_run_only": true,
+    "exists": true,
+    "latest_entry_id": "",
+    "latest_pass_id": "",
+    "no_feedback_fabricated": true,
+    "path": "automix/review/user_feedback_revision_memory.json",
+    "pending_unresolved_count": 0,
+    "repeated_categories": [],
+    "requires_human_review": false,
+    "resolution_records_count": 0,
+    "resolved_feedback_count": 0,
+    "schema": "automix-user-feedback-summary-v1",
+    "total_entries": 0,
+    "warnings": []
+  },
+  "overall_qc_status": "review_required",
+  "processing_policy_audit": {
+    "blockers": [],
+    "passed": true,
+    "plans_checked": 7
+  },
+  "project_name": "project",
+  "safe_to_export": false,
+  "schema": "automix-global-qc-summary-v1",
+  "stage_qc": [
+    {
+      "critical_failures": [],
+      "critical_warnings": [
+        "github_integration_dry_run_only",
+        "not_a_live_reaper_bridge",
+        "not_safe_to_write_parameters"
+      ],
+      "evaluation_passed": true,
+      "exists": true,
+      "path": "automix/eval_reports/github_integration_smoke.json",
+      "stage": "github_integration",
+      "status": "passed"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [],
+      "evaluation_passed": false,
+      "exists": false,
+      "path": "automix/eval_reports/vocal_recovery_eval_metrics.json",
+      "stage": "vocal_recovery",
+      "status": "missing"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [],
+      "evaluation_passed": false,
+      "exists": false,
+      "path": "automix/eval_reports/pitch_eval_metrics.json",
+      "stage": "pitch",
+      "status": "missing"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [],
+      "evaluation_passed": false,
+      "exists": false,
+      "path": "automix/eval_reports/vocal_placement_eval_metrics.json",
+      "stage": "vocal_placement",
+      "status": "missing"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [
+        "missing reference match A/B renders"
+      ],
+      "evaluation_passed": false,
+      "exists": true,
+      "path": "automix/eval_reports/reference_match_eval_metrics.json",
+      "stage": "reference_matching",
+      "status": "review_required"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [
+        "missing premaster A/B renders"
+      ],
+      "evaluation_passed": false,
+      "exists": true,
+      "path": "automix/eval_reports/project_premaster_eval_metrics.json",
+      "stage": "premaster",
+      "status": "review_required"
+    },
+    {
+      "critical_failures": [],
+      "critical_warnings": [
+        "low_end_translation_manual_review",
+        "phone_speaker_vocal_loss_recommend_mix_revision"
+      ],
+      "evaluation_passed": false,
+      "exists": true,
+      "path": "automix/eval_reports/project_translation_check.json",
+      "stage": "translation_check",
+      "status": "review_required"
+    },
+    {
+      "critical_failures": [
+        "final_delivery_qc_not_passed"
+      ],
+      "critical_warnings": [],
+      "evaluation_passed": false,
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "stage": "final_qc",
+      "status": "review_required"
+    }
+  ],
+  "warnings": [
+    "analysis_only_no_audio_recovery_rendered",
+    "audio_source_classification_not_run_no_track_audio",
+    "chain_plan_policy_clean:final_safe_premaster_chain_plan.json",
+    "chain_plan_policy_clean:final_vocal_space_applicator_plan.json",
+    "chain_plan_policy_clean:final_vocal_space_carving_chain_plan.json",
+    "chain_plan_policy_clean:high_quality_mix_master_readiness_plan.json",
+    "chain_plan_policy_clean:project_premaster_chain_plan.json",
+    "chain_plan_policy_clean:project_reference_match_adjustment_plan.json",
+    "chain_plan_policy_clean:real_project_dry_run_chain_proposals.json",
+    "github_integration_dry_run_only",
+    "intent_blocker:aggressive_creative_enhancement_disabled_by_default",
+    "intent_blocker:artifact_signal_not_established",
+    "intent_blocker:explicit_rebeat_stems_and_arrangement_review_required",
+    "intent_blocker:explicit_user_approval_and_preview_required",
+    "intent_blocker:no_safe_vocal_candidate",
+    "intent_blocker:stems_not_ready",
+    "intent_blocker:validated_plugin_mapping_required",
+    "inventory_file_missing",
+    "no_accepted_export_source",
+    "no_reference_audio_provided_target_profile_only",
+    "no_tracks_available_for_role_detection",
+    "no_validated_plugin_adapters_available",
+    "no_validated_safe_plugin_adapters",
+    "not_a_live_reaper_bridge",
+    "not_safe_to_write_parameters",
+    "pitch_triage_report_only_no_audio",
+    "placement analysis report-only",
+    "project_file_missing_or_not_provided",
+    "project_path_empty_report_only_context",
+    "source_mix_not_supplied_report_only"
+  ]
+}

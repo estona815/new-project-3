@@ -1,0 +1,2318 @@
+{
+  "created_at": "2026-06-05T12:48:26Z",
+  "missing_expected_reports": [
+    "plugin_intelligence",
+    "project_scan",
+    "global_qc",
+    "rollback"
+  ],
+  "project_name": "project",
+  "reports": [
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/current_mix_reference_features.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "current_mix_reference_features.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/final_vocal_space_analysis.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/finalizing_target_resolution.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "finalizing_target_resolution.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_pitch_triage_summary.json",
+      "stage": "pitch correction",
+      "status": "passed",
+      "summary": "orchestrator_pitch_triage_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_premaster_analysis.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "orchestrator_premaster_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_reference_match_analysis.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "orchestrator_reference_match_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_source_classification_summary.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "orchestrator_source_classification_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_vocal_placement_analysis.json",
+      "stage": "vocal placement",
+      "status": "passed",
+      "summary": "orchestrator_vocal_placement_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/orchestrator_vocal_recovery_analysis.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "orchestrator_vocal_recovery_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_inventory_audit.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_inventory_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_js_ms_utility_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_js_ms_utility_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_js_utility_gain_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_js_utility_gain_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reacomp_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_reacomp_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_readelay_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_readelay_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reaeq_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_reaeq_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reaxcomp_adapter.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_parameter_validation_reaxcomp_adapter.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_safety_analysis.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/prompt32_audit_report.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "prompt32_audit_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/real_project_premaster_dry_run.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "real_project_premaster_dry_run.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/analysis_reports/real_project_track_audit.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "real_project_track_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/final_safe_premaster_chain_plan.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "final_safe_premaster_chain_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/final_vocal_space_applicator_plan.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_applicator_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/final_vocal_space_applicator_plan.lua",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_applicator_plan.lua",
+      "type": "lua"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/final_vocal_space_carving_chain_plan.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_carving_chain_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/high_quality_mix_master_readiness_plan.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "high_quality_mix_master_readiness_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/project_premaster_chain_plan.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_chain_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/project_reference_match_adjustment_plan.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "project_reference_match_adjustment_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/chain_plans/real_project_dry_run_chain_proposals.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "real_project_dry_run_chain_proposals.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "ab_preview_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/ab_preview_evidence_gate.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "ab_preview_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/approval_export_readiness.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "approval_export_readiness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/approval_export_readiness.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "approval_export_readiness.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/artifact_evidence_gate.json",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/artifact_evidence_gate.md",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/artifact_signal_audit.json",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_signal_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/artifact_signal_audit.md",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_signal_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/automix_orchestration_report.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "automix_orchestration_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/automix_report_index.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "automix_report_index.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/automix_report_index.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "automix_report_index.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/claim_language_guard.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "claim_language_guard.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/claim_language_guard.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "claim_language_guard.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/current_state_summary.json",
+      "stage": "github integration",
+      "status": "passed",
+      "summary": "current_state_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/current_state_summary.md",
+      "stage": "github integration",
+      "status": "passed",
+      "summary": "current_state_summary.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/deliverable_package_evidence_gate.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/deliverable_package_evidence_gate.md",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_ab_preview_manifest.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_ab_preview_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_approval_evidence_gate.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_approval_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_approval_evidence_gate.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_approval_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_delivery_consistency_gate.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_delivery_consistency_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_delivery_consistency_gate.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_delivery_consistency_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_placement_adapter_mapping_report.json",
+      "stage": "vocal placement",
+      "status": "passed",
+      "summary": "final_placement_adapter_mapping_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_placement_adapter_mapping_report.md",
+      "stage": "vocal placement",
+      "status": "passed",
+      "summary": "final_placement_adapter_mapping_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_evidence_gate.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_evidence_gate.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_metrics.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_report.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_render_evidence_gate.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_render_evidence_gate.md",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_safe_premaster_eval_metrics.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "final_safe_premaster_eval_metrics.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_safe_premaster_report.md",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "final_safe_premaster_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_ab_render_plan.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_ab_render_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_eval_metrics.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_eval_metrics.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_finish_summary.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_finish_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_iteration_history.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_iteration_history.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_protection_report.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_protection_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/final_vocal_space_review_package_manifest.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_vocal_space_review_package_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/finalizing_blocked_stages.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "finalizing_blocked_stages.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/finalizing_vocal_space_and_review_package_report.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "finalizing_vocal_space_and_review_package_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/fixture_coverage_audit.json",
+      "stage": "validation harness",
+      "status": "passed",
+      "summary": "fixture_coverage_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/fixture_coverage_audit.md",
+      "stage": "validation harness",
+      "status": "passed",
+      "summary": "fixture_coverage_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/github_integration_smoke.json",
+      "stage": "github integration",
+      "status": "passed",
+      "summary": "github_integration_smoke.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/github_integration_smoke.md",
+      "stage": "github integration",
+      "status": "passed",
+      "summary": "github_integration_smoke.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/global_qc_summary.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "global_qc_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/intent_classification.json",
+      "stage": "intent classification",
+      "status": "passed",
+      "summary": "intent_classification.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/intent_classification.md",
+      "stage": "intent classification",
+      "status": "passed",
+      "summary": "intent_classification.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/local_device_qc.json",
+      "stage": "local device QC",
+      "status": "passed",
+      "summary": "local_device_qc.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/local_device_qc.md",
+      "stage": "local device QC",
+      "status": "passed",
+      "summary": "local_device_qc.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/mix_master_quality_harness.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "mix_master_quality_harness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/mix_master_quality_harness.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "mix_master_quality_harness.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/open_risk_register.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "open_risk_register.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/open_risk_register.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "open_risk_register.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/path_hygiene_audit.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "path_hygiene_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/path_hygiene_audit.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "path_hygiene_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_decision_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_decision_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_decision_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_decision_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_operator_decision_firewall_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_operator_decision_firewall_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_operator_decision_firewall_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_operator_decision_firewall_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_operator_decision_package.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_operator_decision_package.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_operator_decision_package.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_operator_decision_package.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_resolution_plan.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_resolution_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_availability_resolution_plan.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_resolution_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_capability_report.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_capability_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_collection_plan.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_collection_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_collection_plan.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_collection_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_queue.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_queue.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_queue.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_queue.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collection_package.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collection_package.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collection_package.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collector_package.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collector_package.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_evidence_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_handoff_packet_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_handoff_packet_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_observation_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_observation_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_observation_provenance_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_package.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_package.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_package.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_package.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_validation_action_plan.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_validation_action_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_validation_action_plan.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_validation_action_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_validation_preflight.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_validation_preflight.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/plugin_validation_preflight.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_validation_preflight.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/processing_policy_audit.json",
+      "stage": "processing safety",
+      "status": "passed",
+      "summary": "processing_policy_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/processing_policy_audit.md",
+      "stage": "processing safety",
+      "status": "passed",
+      "summary": "processing_policy_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/professional_readiness_audit.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "professional_readiness_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/professional_readiness_audit.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "professional_readiness_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/project_premaster_eval_metrics.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_eval_metrics.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/project_premaster_iteration_history.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_iteration_history.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/project_premaster_report.md",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/project_reference_match_matrix.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "project_reference_match_matrix.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/project_translation_check.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_translation_check.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_handoff_package_audit.json",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_handoff_package_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_handoff_package_audit.md",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_handoff_package_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_api_regression_gate.json",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_api_regression_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_api_regression_gate.md",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_api_regression_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_fixture_plan.json",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_fixture_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_fixture_plan.md",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_fixture_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_semantic_firewall_gate.json",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_semantic_firewall_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/public_pc_legacy_semantic_firewall_gate.md",
+      "stage": "handoff evidence",
+      "status": "passed",
+      "summary": "public_pc_legacy_semantic_firewall_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/real_project_plugin_readiness.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "real_project_plugin_readiness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/real_project_safe_draft_readiness.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "real_project_safe_draft_readiness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/real_project_scan_only_report.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "real_project_scan_only_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/real_project_source_safety_map.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "real_project_source_safety_map.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/real_project_stem_request_plan.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "real_project_stem_request_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reaper_runtime_collection_operator_readiness.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "reaper_runtime_collection_operator_readiness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reaper_runtime_collection_operator_readiness.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "reaper_runtime_collection_operator_readiness.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reaper_runtime_collector_safety_audit.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "reaper_runtime_collector_safety_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reaper_runtime_collector_safety_audit.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "reaper_runtime_collector_safety_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_ab_render_plan.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_ab_render_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_blocker_report.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_blocker_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_original_protection_report.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_original_protection_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_pilot_report.md",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_pilot_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_pitch_block_report.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_pitch_block_report.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_pitch_block_validation.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_pitch_block_validation.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_only_track_selection.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_track_selection.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/recovery_review_report.md",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reference_match_comparison.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "reference_match_comparison.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reference_match_eval_metrics.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "reference_match_eval_metrics.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reference_match_iteration_history.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "reference_match_iteration_history.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/reference_match_report.md",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "reference_match_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/requirements_traceability_audit.json",
+      "stage": "validation harness",
+      "status": "passed",
+      "summary": "requirements_traceability_audit.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/requirements_traceability_audit.md",
+      "stage": "validation harness",
+      "status": "passed",
+      "summary": "requirements_traceability_audit.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/risk_remediation_plan.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_remediation_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/risk_remediation_plan.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_remediation_plan.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/risk_root_cause_rollup.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_root_cause_rollup.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/risk_root_cause_rollup.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_root_cause_rollup.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/rollback_evidence_gate.json",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "rollback_evidence_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/rollback_evidence_gate.md",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "rollback_evidence_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/source_acceptance_gate.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_acceptance_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/source_acceptance_gate.md",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_acceptance_gate.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/source_handoff_readiness.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_handoff_readiness.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/source_handoff_readiness.md",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_handoff_readiness.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/user_feedback_action_plan.json",
+      "stage": "user feedback",
+      "status": "passed",
+      "summary": "user_feedback_action_plan.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/user_feedback_qc_integration.json",
+      "stage": "user feedback",
+      "status": "passed",
+      "summary": "user_feedback_qc_integration.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/user_feedback_qc_integration.md",
+      "stage": "user feedback",
+      "status": "passed",
+      "summary": "user_feedback_qc_integration.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/eval_reports/user_feedback_revision_report.md",
+      "stage": "user feedback",
+      "status": "passed",
+      "summary": "user_feedback_revision_report.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/__init__.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "__init__.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/ab_preview_montage.py",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "ab_preview_montage.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/audio_export_utils.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "audio_export_utils.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/deliverable_package_manifest.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/deliverable_packager.py",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_packager.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/export_format_profiles.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "export_format_profiles.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/export_naming.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "export_naming.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/final_export_state.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_export_state.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/final_export_state_resolver.py",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_export_state_resolver.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/final_qc_analyzer.py",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_analyzer.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/final_render_engine.py",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_engine.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/final_render_manifest.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/human_approval_gate.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "human_approval_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/plugin_mapping_summary.md",
+      "stage": "other",
+      "status": "passed",
+      "summary": "plugin_mapping_summary.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/export/project_state_manifest.json",
+      "stage": "project scan",
+      "status": "passed",
+      "summary": "project_state_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/__init__.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "__init__.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/ab_preview_evidence_gate.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "ab_preview_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/approval_export_readiness.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "approval_export_readiness.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/artifact_evidence_gate.py",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/artifact_signal_audit.py",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_signal_audit.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/automix_orchestration_manifest.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "automix_orchestration_manifest.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/automix_orchestrator.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "automix_orchestrator.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/claim_language_guard.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "claim_language_guard.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/current_state_report.py",
+      "stage": "github integration",
+      "status": "passed",
+      "summary": "current_state_report.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/deliverable_package_evidence_gate.py",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/downstream_recovery_gate.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "downstream_recovery_gate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/final_approval_evidence_gate.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_approval_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/final_delivery_consistency_gate.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_delivery_consistency_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/final_qc_evidence_gate.py",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/final_render_evidence_gate.py",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/global_qc_aggregator.py",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "global_qc_aggregator.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/global_rollback_registry.py",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "global_rollback_registry.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/global_safety_controller.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "global_safety_controller.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/open_risk_register.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "open_risk_register.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/path_hygiene_audit.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "path_hygiene_audit.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/professional_readiness_audit.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "professional_readiness_audit.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/project_context.json",
+      "stage": "project scan",
+      "status": "passed",
+      "summary": "project_context.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/project_context_resolver.py",
+      "stage": "project scan",
+      "status": "passed",
+      "summary": "project_context_resolver.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/report_index.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "report_index.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/requirements_traceability_audit.py",
+      "stage": "validation harness",
+      "status": "passed",
+      "summary": "requirements_traceability_audit.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/resume_state.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "resume_state.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/risk_remediation_planner.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_remediation_planner.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/risk_root_cause_rollup.py",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "risk_root_cause_rollup.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/rollback_evidence_gate.py",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "rollback_evidence_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/source_acceptance_gate.py",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_acceptance_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/source_handoff_readiness.py",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_handoff_readiness.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/stage_dependency_graph.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "stage_dependency_graph.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/stage_result_schema.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "stage_result_schema.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/stage_status.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "stage_status.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/state_resume.py",
+      "stage": "other",
+      "status": "passed",
+      "summary": "state_resume.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/orchestrator/track_role_map.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "track_role_map.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/ab_preview_review_manifest_template.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "ab_preview_review_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/ab_preview_review_request.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "ab_preview_review_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/accepted_recovery_sources.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "accepted_recovery_sources.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/artifact_evidence_manifest_template.json",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/artifact_evidence_request.md",
+      "stage": "artifact evidence",
+      "status": "passed",
+      "summary": "artifact_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/deliverable_package_evidence_manifest_template.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/deliverable_package_evidence_request.md",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "deliverable_package_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_approval_evidence_manifest_template.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_approval_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_approval_evidence_request.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_approval_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_approval_request.md",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_approval_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_delivery_consistency_manifest_template.json",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_delivery_consistency_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_delivery_consistency_request.md",
+      "stage": "delivery readiness",
+      "status": "passed",
+      "summary": "final_delivery_consistency_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_human_approval.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_human_approval.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_qc_evidence_manifest_template.json",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_qc_evidence_request.md",
+      "stage": "QC",
+      "status": "passed",
+      "summary": "final_qc_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_render_evidence_manifest_template.json",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_render_evidence_request.md",
+      "stage": "final export",
+      "status": "passed",
+      "summary": "final_render_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_vocal_space_review_form.md",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_review_form.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/final_vocal_space_review_state.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "final_vocal_space_review_state.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_availability_decision_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_decision_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_availability_disable_manifest_candidate.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "plugin_availability_disable_manifest_candidate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_availability_disable_manifest_template.json",
+      "stage": "other",
+      "status": "passed",
+      "summary": "plugin_availability_disable_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_availability_operator_decision_checklist.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_operator_decision_checklist.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_availability_resolution_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_availability_resolution_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_collection_manifest_template.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_collection_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_collection_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_collection_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_manifest_template.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_queue_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_queue_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_collection_checklist.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collection_checklist.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_collector_operator_runbook.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_collector_operator_runbook.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_evidence_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_manifest_candidate.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_manifest_candidate.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_manifest_candidate_from_authoring.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_manifest_candidate_from_authoring.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_manifest_template.json",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_observation_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_observation_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_report_authoring_checklist.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_checklist.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_report_authoring_package_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_package_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_report_authoring_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_authoring_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_report_promotion_checklist.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_promotion_checklist.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_semantic_validation_runtime_report_promotion_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_semantic_validation_runtime_report_promotion_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/plugin_validation_action_request.md",
+      "stage": "plugin intelligence",
+      "status": "passed",
+      "summary": "plugin_validation_action_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_ab_review_policy.py",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_ab_review_policy.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_ab_review_status.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_ab_review_status.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_form.md",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_form.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_form_generator.py",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_form_generator.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_gate.py",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_gate.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_gate_summary.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_gate_summary.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_importer.py",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_importer.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_schema.py",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_schema.py",
+      "type": "py"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_review_state.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_review_state.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/recovery_revision_request.md",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_revision_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/rejected_recovery_drafts.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "rejected_recovery_drafts.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/rollback_evidence_manifest_template.json",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "rollback_evidence_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/rollback_evidence_request.md",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "rollback_evidence_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/source_acceptance_manifest_template.json",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_acceptance_manifest_template.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/source_acceptance_request.md",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_acceptance_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/source_stem_handoff_request.md",
+      "stage": "source classification",
+      "status": "passed",
+      "summary": "source_stem_handoff_request.md",
+      "type": "md"
+    },
+    {
+      "exists": true,
+      "path": "automix/review/user_feedback_revision_memory.json",
+      "stage": "user feedback",
+      "status": "passed",
+      "summary": "user_feedback_revision_memory.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/final_safe_premaster_rollback.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "final_safe_premaster_rollback.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/final_vocal_space_carving_rollback.json",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "final_vocal_space_carving_rollback.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/global_rollback_registry.json",
+      "stage": "rollback",
+      "status": "passed",
+      "summary": "global_rollback_registry.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/project_premaster_rollback.json",
+      "stage": "premaster",
+      "status": "passed",
+      "summary": "project_premaster_rollback.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/project_reference_match_rollback.json",
+      "stage": "reference matching",
+      "status": "passed",
+      "summary": "project_reference_match_rollback.json",
+      "type": "json"
+    },
+    {
+      "exists": true,
+      "path": "automix/rollback/recovery_only_rollback_registry.json",
+      "stage": "vocal recovery",
+      "status": "passed",
+      "summary": "recovery_only_rollback_registry.json",
+      "type": "json"
+    }
+  ],
+  "schema": "automix-report-index-v1",
+  "warnings": []
+}

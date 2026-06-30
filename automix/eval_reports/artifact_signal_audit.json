@@ -1,0 +1,214 @@
+{
+  "artifact_signal_established": false,
+  "blockers": [
+    "artifact_signal_not_established",
+    "measured_artifact_metrics_not_established"
+  ],
+  "created_at": "2026-06-02T15:39:29Z",
+  "feedback_observation": {
+    "ai_artifact_feedback_count": 0,
+    "baseline_status": "no_feedback_recorded",
+    "feedback_memory_exists": true,
+    "no_feedback_fabricated": true,
+    "pending_unresolved_count": 0,
+    "total_entries": 0,
+    "usable_signal": false
+  },
+  "limits": [
+    "This audit does not process audio, reduce artifacts, or prove cleanup.",
+    "Artifact-focused processing still requires validated plugin mappings, source safety, loudness-matched A/B, and human review.",
+    "Zero or missing metrics are treated as insufficient evidence, not proof that artifacts are absent."
+  ],
+  "metric_observations": [
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "final_qc.vocal_preservation.ai_fizz_score",
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": false,
+      "usable_signal": false,
+      "value": 0.0
+    },
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "final_qc.vocal_preservation.metallic_artifact_score",
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": false,
+      "usable_signal": false,
+      "value": 0.0
+    },
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "final_qc.vocal_preservation.sibilance_splatter_score",
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "report_only": false,
+      "usable_signal": false,
+      "value": 0.0
+    },
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "premaster.ai_artifact_risk_profile.high_fizz_risk",
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "usable_signal": false,
+      "value": 0.0
+    },
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "premaster.ai_artifact_risk_profile.metallic_harshness_risk",
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "usable_signal": false,
+      "value": 0.0
+    },
+    {
+      "above_threshold": false,
+      "exists": true,
+      "json_valid": true,
+      "metric": "premaster.ai_artifact_risk_profile.sibilance_splatter_risk",
+      "path": "automix/analysis_reports/project_premaster_safety_analysis.json",
+      "report_only": true,
+      "usable_signal": false,
+      "value": 0.0
+    }
+  ],
+  "output_dir": "automix",
+  "project_name": "project",
+  "safe_to_run_artifact_suppression": false,
+  "schema": "automix-artifact-signal-audit-v1",
+  "source_observations": [
+    {
+      "count": 0,
+      "notes": "Source classification signal only; still requires conservative processing and human review.",
+      "signal": "ai_or_already_processed_vocals",
+      "usable_signal": false
+    },
+    {
+      "count": 0,
+      "notes": "Source classification signal only; still requires conservative processing and human review.",
+      "signal": "source_separated_vocals",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "safe_vocal_candidates",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "raw_vocal",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "safe_vocal_candidates",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "raw_vocal",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "stem_required_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "SOURCE full mix reference muted",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "stem_required_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "unknown_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 PRINTED VOCAL REVERB SEND",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "unknown_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 PRINTED VOCAL DELAY SEND",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "unknown_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 RETURN ReaVerbate dark send",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "unknown_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "unknown",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 RETURN ReaDelay filtered throw",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "high_risk_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "SOURCE full mix reference muted",
+      "usable_signal": false
+    },
+    {
+      "ai_artifact_score": 0.0,
+      "group": "high_risk_tracks",
+      "notes": "Track-level source risk is a planning signal, not cleanup proof.",
+      "signal": "track_artifact_risk",
+      "source_classification": "full_mix",
+      "source_separated_likelihood": 0.0,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "usable_signal": false
+    }
+  ],
+  "summary": {
+    "artifact_signal_established": false,
+    "safe_to_run_artifact_suppression": false,
+    "usable_feedback_signal": false,
+    "usable_metric_signals": 0,
+    "usable_source_signals": 0
+  },
+  "warnings": [
+    "no_user_artifact_feedback_recorded",
+    "some_artifact_metric_reports_are_report_only",
+    "source_map_does_not_classify_ai_or_source_separated_vocals"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "accepted_recovery_draft_untouched": true,
+  "created_at": "2026-05-31T10:02:33Z",
+  "created_draft_buses": [],
+  "created_draft_tracks": [],
+  "created_sends": [],
+  "draft_created": false,
+  "inserted_plugins": [],
+  "original_master_untouched": true,
+  "original_tracks_untouched": true,
+  "pitch_plugins_inserted": false,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "routing_changes": [],
+  "safe_to_delete_draft": true,
+  "schema": "automix-final-vocal-space-carving-rollback-v1",
+  "written_parameters": []
+}

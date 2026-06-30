@@ -1,0 +1,110 @@
+{
+  "accepted_decisions_total": 0,
+  "accepted_manifest_exists": false,
+  "accepted_manifest_path": "automix/review/plugin_availability_disable_manifest.json",
+  "availability_decisions_ready": false,
+  "blockers": [],
+  "candidate_manifest_path": "automix/review/plugin_availability_disable_manifest_candidate.json",
+  "created_at": "2026-06-02T18:33:43Z",
+  "decision_items": [
+    {
+      "allowed_operator_resolutions": [
+        "disable_for_automatic_drafts",
+        "manual_review_only",
+        "keep_unavailable_blocked",
+        "install_and_rerun_preflight"
+      ],
+      "automatic_parameter_writes_allowed": false,
+      "category": "third_party_or_unknown",
+      "current_blockers": [
+        "operator_decision_missing:OTT (Xfer Records)"
+      ],
+      "current_decision_status": "blocked",
+      "current_operator_acknowledged": false,
+      "current_operator_resolution": "",
+      "decision_steps": [
+        "Choose install, disable for automatic drafts, manual-review only, or keep unavailable blocked.",
+        "If choosing install_and_rerun_preflight, install the plugin and rerun plugin_validation_preflight before treating it as resolved.",
+        "If choosing disable or manual-review only, create plugin_availability_disable_manifest.json with accepted schema and operator_acknowledged=true.",
+        "Keep automatic_parameter_writes_allowed=false for unavailable plugins and fallback candidates.",
+        "Rerun plugin_availability_decision_gate.py after writing the accepted operator manifest."
+      ],
+      "disallowed_actions": [
+        "claim this plugin was used while unavailable",
+        "replace it with a fallback without semantic validation evidence",
+        "write parameters to any substitute based on catalog fallback text alone"
+      ],
+      "fallback_candidate": "ReaXcomp",
+      "fallback_requires_validation": true,
+      "family": "ott",
+      "operator_decision_required": true,
+      "plugin_name": "OTT (Xfer Records)",
+      "recommended_resolution": "disable_for_automatic_drafts",
+      "required_evidence": [
+        "explicit operator choice to install, disable, or keep manual-review only",
+        "updated plugin validation preflight after installation or disable decision",
+        "semantic validation report before any fallback or installed plugin parameter writes"
+      ]
+    },
+    {
+      "allowed_operator_resolutions": [
+        "disable_for_automatic_drafts",
+        "manual_review_only",
+        "keep_unavailable_blocked",
+        "install_and_rerun_preflight"
+      ],
+      "automatic_parameter_writes_allowed": false,
+      "category": "third_party_or_unknown",
+      "current_blockers": [
+        "operator_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+      ],
+      "current_decision_status": "blocked",
+      "current_operator_acknowledged": false,
+      "current_operator_resolution": "",
+      "decision_steps": [
+        "Choose install, disable for automatic drafts, manual-review only, or keep unavailable blocked.",
+        "If choosing install_and_rerun_preflight, install the plugin and rerun plugin_validation_preflight before treating it as resolved.",
+        "If choosing disable or manual-review only, create plugin_availability_disable_manifest.json with accepted schema and operator_acknowledged=true.",
+        "Keep automatic_parameter_writes_allowed=false for unavailable plugins and fallback candidates.",
+        "Rerun plugin_availability_decision_gate.py after writing the accepted operator manifest."
+      ],
+      "disallowed_actions": [
+        "claim this plugin was used while unavailable",
+        "replace it with a fallback without semantic validation evidence",
+        "write parameters to any substitute based on catalog fallback text alone"
+      ],
+      "fallback_candidate": "ReaEQ plus ReaXcomp",
+      "fallback_requires_validation": true,
+      "family": "tdr_nova",
+      "operator_decision_required": true,
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)",
+      "recommended_resolution": "disable_for_automatic_drafts",
+      "required_evidence": [
+        "explicit operator choice to install, disable, or keep manual-review only",
+        "updated plugin validation preflight after installation or disable decision",
+        "semantic validation report before any fallback or installed plugin parameter writes"
+      ]
+    }
+  ],
+  "limits": [
+    "This package does not install plugins, open REAPER, write parameters, render, or approve audio.",
+    "The candidate manifest is not accepted evidence and uses a candidate-only schema.",
+    "Fallback writes remain blocked until semantic validation reports pass."
+  ],
+  "missing_decisions": [
+    "OTT (Xfer Records)",
+    "TDR Nova (Tokyo Dawn Labs)"
+  ],
+  "operator_decision_package_ready": true,
+  "output_dir": "automix",
+  "project_name": "project",
+  "required_decisions_total": 2,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-availability-operator-decision-package-v1",
+  "source_decision_gate": "automix/eval_reports/plugin_availability_decision_gate.json",
+  "source_resolution_plan": "automix/eval_reports/plugin_availability_resolution_plan.json",
+  "status": "operator_decisions_ready_for_human_acknowledgement",
+  "warnings": [
+    "operator_disable_or_install_decision_required"
+  ]
+}

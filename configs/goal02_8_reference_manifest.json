@@ -1,0 +1,88 @@
+{
+  "schema": "automix-goal02-8-reference-manifest-v1",
+  "project_name": "GOAL 02 chorus 20-second reference match",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "analysis_window": {
+    "label": "chorus_20s",
+    "selection": "auto_loudest_20s_per_file",
+    "start_seconds": "auto",
+    "duration_seconds": 20.0,
+    "notes": "Auto-selects the highest-RMS 20-second window per file as a reproducible chorus/proxy hook window. Replace with manual chorus timestamps after user confirmation."
+  },
+  "target": {
+    "id": "target_chorus",
+    "role": "current_mix_or_chorus_print",
+    "path": "0530 샘플.wav",
+    "notes": "Auto-discovered top-level project audio candidate. Treat as target candidate until the user confirms the exact target file."
+  },
+  "target_stems": {
+    "path": "audio_work/0530_sample_v18_vocal_clarity_final_reaper/source_stems",
+    "window_source": "target_chorus",
+    "notes": "Auto-discovered matching 0530 stem folder. Stems are analyzed over the target auto-selected 20-second window."
+  },
+  "references_required": 8,
+  "references": [
+    {
+      "id": "ref_01",
+      "role": "primary_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Broken_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    },
+    {
+      "id": "ref_02",
+      "role": "vocal_balance_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Dough_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    },
+    {
+      "id": "ref_03",
+      "role": "low_end_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-IMnK_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    },
+    {
+      "id": "ref_04",
+      "role": "drum_energy_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Lovee_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    },
+    {
+      "id": "ref_05",
+      "role": "width_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Missu_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set. Do not copy unsafe phase behavior."
+    },
+    {
+      "id": "ref_06",
+      "role": "loudness_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Phobia_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set. Mix fixes still come before master gain."
+    },
+    {
+      "id": "ref_07",
+      "role": "emotional_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Stuck in Seoul_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    },
+    {
+      "id": "ref_08",
+      "role": "secondary_primary_reference",
+      "path": "/Users/hantaeheuk/Desktop/Estona-4dium_MASTER_24-48./Estona,Nib-Why_MASTER_24-48.wav",
+      "weight": 1.0,
+      "notes": "Auto-discovered exact 8-WAV Estona/Nib reference set."
+    }
+  ],
+  "safety_constraints": {
+    "reference_bus_policy": "Reference/full-mix material must stay muted, master-send disabled, and outside active master routing.",
+    "do_not_infer_listening": true,
+    "do_not_fabricate_missing_metrics": true,
+    "master_bus_warning": "If sustained gain reduction exceeds 2 dB on the master chain, return to vocal/808/drum balance before pushing the master."
+  }
+}

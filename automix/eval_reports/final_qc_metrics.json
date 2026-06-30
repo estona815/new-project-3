@@ -1,0 +1,41 @@
+{
+  "schema": "automix-final-qc-metrics-v1",
+  "final_audio_path": ".",
+  "file_integrity": {
+    "exists": true,
+    "size_bytes": 1440,
+    "duration_seconds": 0.0,
+    "sample_rate": 0,
+    "bit_depth": 0,
+    "channels": 0,
+    "clipping_detected": false,
+    "digital_black_detected": false,
+    "unexpected_silence_detected": false
+  },
+  "loudness": {
+    "integrated_lufs": 0.0,
+    "short_term_lufs_max": 0.0,
+    "true_peak_dbTP": 0.0,
+    "sample_peak_dbFS": 0.0,
+    "lra": 0.0
+  },
+  "translation": {
+    "mono_compatibility_risk": 0.0,
+    "phase_correlation": 0.0,
+    "low_end_stereo_risk": 0.0,
+    "small_speaker_vocal_loss_risk": 0.0,
+    "earbud_harshness_risk": 0.0
+  },
+  "vocal_preservation": {
+    "vocal_forwardness_score": 0.0,
+    "vocal_harshness_score": 0.0,
+    "sibilance_splatter_score": 0.0,
+    "metallic_artifact_score": 0.0,
+    "ai_fizz_score": 0.0
+  },
+  "qc_passed": false,
+  "warnings": [],
+  "failures": [
+    "qc_not_requested_or_primary_wav_missing"
+  ]
+}

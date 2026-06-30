@@ -1,0 +1,55 @@
+{
+  "schema": "codex-vocal-rc-metadata-v1",
+  "plugin_name": "Codex Vocal AI Artifact Split Tamer",
+  "plugin_version": "0.9.0-rc-lock",
+  "build_number": "rc.2026.05.31.1",
+  "rc_build_date": "2026-05-31",
+  "platform": "macOS / REAPER JSFX validation workspace",
+  "supported_plugin_formats": ["REAPER JSFX"],
+  "unvalidated_plugin_formats": ["VST3", "AU", "AAX", "Standalone"],
+  "plugin_entry_point": "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_ai_artifact_split_tamer.jsfx",
+  "installed_reaper_path": "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+  "dsp_engine_version": "jsfx-preservation-dsp-v5",
+  "parameter_schema_version": "codex-vocal-parameter-schema-v1",
+  "factory_preset_version": "codex-vocal-factory-presets-v1",
+  "factory_preset_file": "VOCAL_CLARITY_REPAIR_SYSTEM/presets/factory_presets_safe_defaults.json",
+  "release_policy_version": "codex-vocal-release-candidate-policy-v1",
+  "release_policy_file": "VOCAL_CLARITY_REPAIR_SYSTEM/presets/release_candidate_policy.json",
+  "test_report_version": "prompt9-rc-qa-v1",
+  "model": {
+    "model_version": "none",
+    "model_expected_sample_rate": "not_applicable",
+    "model_output_type": "none",
+    "model_latency_samples": 0,
+    "model_file_required": false,
+    "missing_model_behavior": "DSP Only safe path"
+  },
+  "latency": {
+    "reported_latency_samples": 0,
+    "lookahead_samples": 0,
+    "stft_latency_samples": 0,
+    "model_latency_samples": 0,
+    "notes": "The current JSFX path uses causal IIR-style filterbank state and no declared lookahead."
+  },
+  "commit": {
+    "commit_hash": "filled_by_run_rc_qa",
+    "commit_hash_source": "git rev-parse HEAD",
+    "dirty_worktree_policy": "release artifact must be cut from reviewed committed changes"
+  },
+  "release_candidate_policy": {
+    "rc_branch_policy": "Cut release/v0.9.0-rc after automated QA passes. Allow only release blockers, documentation fixes, and evaluated preset fixes.",
+    "no_new_dsp_after_rc": true,
+    "no_preset_retune_without_prompt7_report": true,
+    "no_model_replacement_without_full_prompt7_rerun": true,
+    "no_parameter_id_changes_without_migration": true,
+    "manual_listening_signoff_required": true,
+    "daw_validation_required_before_ship": true
+  },
+  "current_release_state": "qa_lock_ready_not_rc_approved",
+  "current_blockers_before_ship": [
+    "manual listening sign-off not completed in this workspace",
+    "real REAPER processed-audio render pass not captured in this workspace",
+    "DAW compatibility matrix not completed beyond REAPER JSFX installed-file validation",
+    "no VST3/AU/AAX build artifact exists in this repository"
+  ]
+}

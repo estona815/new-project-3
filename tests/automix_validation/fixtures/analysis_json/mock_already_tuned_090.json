@@ -1,0 +1,16 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "already tuned 0.90",
+  "coverage_tags": [
+    "already_tuned_ai_vocal"
+  ],
+  "input": {
+    "already_tuned_score": 0.9
+  },
+  "expected_stage_status": "skipped",
+  "expected_decision": "reject_pitch_correction",
+  "expected_blockers": [
+    "ALREADY_TUNED_HIGH"
+  ],
+  "expected_reports": []
+}

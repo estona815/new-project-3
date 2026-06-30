@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "feedback mapping",
+  "coverage_tags": [
+    "feedback_mapping",
+    "suno_high_fizz",
+    "dry_run"
+  ],
+  "input": {
+    "feedback": "보컬이 뿌옇고 Suno fizz가 남아 있다.",
+    "dry_run": true
+  },
+  "expected_stage_status": "mapped_to_draft_actions",
+  "expected_decision": "feedback_revision_dry_run",
+  "expected_blockers": [],
+  "expected_reports": []
+}

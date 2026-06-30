@@ -1,0 +1,53 @@
+{
+  "ab_render_status": "plan_only",
+  "apply_drafts": true,
+  "blocked_tracks": 8,
+  "blockers": [
+    "PLUGIN_MAPPING_UNSAFE",
+    "no_safe_recovery_chain_plans",
+    "validated_plugin_mapping_required"
+  ],
+  "chain_plans": [],
+  "dry_run": false,
+  "eligible_recovery_tracks": 0,
+  "final_recommendation": "validate_plugins_first",
+  "iteration_histories": [],
+  "manual_review_tracks": 0,
+  "mode": "recovery_only_pilot",
+  "original_protection_safe": true,
+  "parameter_write_log_summary": {
+    "parameters_skipped": 0,
+    "parameters_written": 0
+  },
+  "pitch_block_status": true,
+  "plugin_safety_status": "blocked_or_unmapped",
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+  "prompt42_blockers": [
+    "validated_plugin_mapping_required"
+  ],
+  "prompt42_precondition_ok": false,
+  "recovery_drafts_created": 0,
+  "render_ab": false,
+  "reports": {
+    "ab_render_plan": "automix/eval_reports/recovery_only_ab_render_plan.json",
+    "original_protection": "automix/eval_reports/recovery_only_original_protection_report.json",
+    "parameter_write_log": "automix/logs/recovery_only_parameter_write_log.json",
+    "pilot_report": "automix/eval_reports/recovery_only_pilot_report.md",
+    "pitch_block": "automix/eval_reports/recovery_only_pitch_block_report.json",
+    "rollback_registry": "automix/rollback/recovery_only_rollback_registry.json",
+    "track_selection": "automix/eval_reports/recovery_only_track_selection.json"
+  },
+  "rollback_registry_valid": true,
+  "schema": "automix-recovery-only-pilot-summary-v1",
+  "selection_summary": {
+    "blocked_count": 8,
+    "eligible_count": 0,
+    "manual_review_count": 0,
+    "total_tracks_considered": 8
+  },
+  "status": "blocked",
+  "warnings": [
+    "no_safe_recovery_chain_plans"
+  ]
+}

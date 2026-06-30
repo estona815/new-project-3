@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "render failure",
+  "coverage_tags": [
+    "render_failure"
+  ],
+  "input": {
+    "render_status": "failed",
+    "render_error": "offline render aborted"
+  },
+  "expected_stage_status": "blocked",
+  "expected_decision": "render_failed_manual_review",
+  "expected_blockers": [
+    "RENDER_FAILED"
+  ],
+  "expected_reports": []
+}

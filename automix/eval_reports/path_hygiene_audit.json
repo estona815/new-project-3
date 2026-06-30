@@ -1,0 +1,254 @@
+{
+  "blockers": [],
+  "created_at": "2026-06-05T12:48:10Z",
+  "finding_counts": {
+    "blocker": 0,
+    "info": 18,
+    "warning": 0
+  },
+  "findings": [
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/analysis_reports/real_project_track_audit.json",
+      "relative_path": "automix/analysis_reports/real_project_track_audit.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/claim_language_guard.json",
+      "relative_path": "automix/eval_reports/claim_language_guard.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/fixture_coverage_audit.json",
+      "relative_path": "automix/eval_reports/fixture_coverage_audit.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 2,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New",
+        "/Users/hantaeheuk/Library/Application"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/local_device_qc.json",
+      "relative_path": "automix/eval_reports/local_device_qc.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 2,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New",
+        "/Users/hantaeheuk/Downloads/reaper-auto-mix-handoff"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/mix_master_quality_harness.json",
+      "relative_path": "automix/eval_reports/mix_master_quality_harness.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "relative_path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.json",
+      "relative_path": "automix/eval_reports/plugin_semantic_validation_runtime_handoff_packet_gate.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "relative_path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "relative_path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Library/Application"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_validation_action_plan.json",
+      "relative_path": "automix/eval_reports/plugin_validation_action_plan.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Library/Application"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/plugin_validation_preflight.json",
+      "relative_path": "automix/eval_reports/plugin_validation_preflight.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/professional_readiness_audit.json",
+      "relative_path": "automix/eval_reports/professional_readiness_audit.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 22,
+      "matches": [
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/PACKAGE_MANIFEST.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/README_FIRST.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/SCAN_AND_SCOPE_REPORT.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/HANDOFF.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/NEXT_CODEX_PROMPT.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/PROJECT_STATE.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/README.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/RESTORE_ON_OTHER_COMPUTER.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/project_manifest.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/json/target_mix_recipe.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/mix_recipe.schema.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/qc_actions.schema.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/handoff_validation_actual_targets_20260605.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/mix_risk_report.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/red_team_report.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/apply_mix_recipe.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/plugin_registry.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/validate_project_routing.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/tools/validate_recipe.py"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/public_pc_handoff_package_audit.json",
+      "relative_path": "automix/eval_reports/public_pc_handoff_package_audit.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 28,
+      "matches": [
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/FINAL_DECISIONS.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/HANDOFF.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/NEXT_CODEX_PROMPT.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/PACKAGE_WARNINGS.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/PROJECT_STATE.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/RESTORE_ON_OTHER_COMPUTER.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/json/default_target_arrangement_recipe.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/json/target_mix_recipe.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/lua/target_mix_recipe.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/arrangement_recipe.schema.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/mix_recipe.schema.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/recipes/schemas/qc_actions.schema.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/api_risk_report.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/handoff_validation_20260605.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/handoff_validation_actual_targets_20260605.json",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/mix_risk_report.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/review/red_team_report.md",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/apply_mix_recipe.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/apply_revision_actions.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/fx_chain_builder.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/import_and_mix_stems.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/plugin_registry.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/render_setup.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/routing_builder.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/utils.lua",
+        "/Users/hantaeheuk/Downloads/REAPER_2222_FULL_PROJECT_20260605-152350/source_workspaces/tttt/reaper-auto-mix/scripts/validate_project_routing.lua"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/public_pc_legacy_fixture_plan.json",
+      "relative_path": "automix/eval_reports/public_pc_legacy_fixture_plan.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/real_project_source_safety_map.json",
+      "relative_path": "automix/eval_reports/real_project_source_safety_map.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/reaper_runtime_collection_operator_readiness.json",
+      "relative_path": "automix/eval_reports/reaper_runtime_collection_operator_readiness.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/requirements_traceability_audit.json",
+      "relative_path": "automix/eval_reports/requirements_traceability_audit.json",
+      "severity": "info"
+    },
+    {
+      "category": "runtime_report",
+      "count": 1,
+      "matches": [
+        "/Users/hantaeheuk/Documents/New"
+      ],
+      "path": "/Users/hantaeheuk/Documents/New project 3/automix/eval_reports/source_handoff_readiness.json",
+      "relative_path": "automix/eval_reports/source_handoff_readiness.json",
+      "severity": "info"
+    }
+  ],
+  "fixture_files_scanned": 21,
+  "limits": [
+    "Runtime reports may contain local evidence paths; this audit treats those as informational unless they appear in source code.",
+    "Before external handoff, generated reports should be reviewed for raw audio/reference path exposure."
+  ],
+  "output_dir": "automix",
+  "passed": true,
+  "project_name": "project",
+  "runtime_report_files_scanned": 147,
+  "schema": "automix-path-hygiene-audit-v1",
+  "source_files_scanned": 200,
+  "warnings": [],
+  "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+}

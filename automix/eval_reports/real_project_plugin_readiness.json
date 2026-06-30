@@ -1,0 +1,52 @@
+{
+  "can_run_pitch_correction_safely": false,
+  "can_run_premaster_draft_safely": false,
+  "can_run_recovery_drafts_safely": false,
+  "can_run_vocal_placement_safely": false,
+  "commercial_plugins_detected": [
+    "OTT (Xfer Records)",
+    "TDR Nova (Tokyo Dawn Labs)"
+  ],
+  "commercial_plugins_safe": [],
+  "jsfx_fallbacks_available": [],
+  "missing_or_unsafe_mappings": [
+    "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+    "OTT (Xfer Records)",
+    "ReaComp (Cockos)",
+    "ReaDelay (Cockos)",
+    "ReaEQ (Cockos)",
+    "ReaVerbate (Cockos)",
+    "TDR Nova (Tokyo Dawn Labs)",
+    "Vocal Clarity Repair/vocal_air_guard.jsfx",
+    "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+    "Vocal Clarity Repair/vocal_output_guard.jsfx",
+    "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+    "validated EQ/dynamic EQ or JSFX artifact guard adapter",
+    "validated EQ/dynamics/limiter adapter",
+    "validated EQ/dynamics/utility adapter",
+    "validated pitch correction adapter"
+  ],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "provisional_adapters_count": 3,
+  "required_mappings_for_next_stage": [
+    "validated EQ/dynamic EQ or JSFX artifact guard adapter",
+    "validated EQ/dynamics/limiter adapter",
+    "validated EQ/dynamics/utility adapter",
+    "validated pitch correction adapter"
+  ],
+  "safe_adapters_count": 0,
+  "safe_draft_plugin_ready": false,
+  "schema": "automix-real-project-plugin-readiness-v1",
+  "stock_fallbacks_available": [
+    "ReaComp (Cockos)",
+    "ReaDelay (Cockos)",
+    "ReaEQ (Cockos)",
+    "ReaVerbate (Cockos)"
+  ],
+  "stock_or_jsfx_fallbacks_enough": false,
+  "third_party_plugins_detected_and_validated": false,
+  "unsafe_unmapped_plugins_count": 11,
+  "warnings": [
+    "no_validated_safe_plugin_adapters"
+  ]
+}

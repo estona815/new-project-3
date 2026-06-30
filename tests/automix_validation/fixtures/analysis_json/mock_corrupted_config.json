@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "corrupted config",
+  "coverage_tags": [
+    "corrupted_config"
+  ],
+  "input": {
+    "config_parse_error": true,
+    "config_path": "automix/config/bad.json"
+  },
+  "expected_stage_status": "blocked",
+  "expected_decision": "configuration_repair_required",
+  "expected_blockers": [
+    "CONFIG_CORRUPTED"
+  ],
+  "expected_reports": []
+}

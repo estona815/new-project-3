@@ -1,0 +1,139 @@
+{
+  "schema": "reaper-ai-artifact-multiband-prototype-v1",
+  "purpose": "Conservative DAW prototype settings for AI noise/artifact reduction decisions before plugin DSP porting.",
+  "global_rules": [
+    "Match loudness before judging.",
+    "Residual must not contain obvious vocal phrases, consonants, harmonics, guitar picking, snare attack, or musical air.",
+    "No exciter, high-shelf compensation, artificial clarity, or strong gate.",
+    "Every active band needs a keep/reduce/remove decision."
+  ],
+  "track_layout": [
+    "Original Dry",
+    "Processed Full",
+    "Processed Matched",
+    "Residual Monitor",
+    "Mid Process Bus",
+    "Side Process Bus",
+    "Broad Multiband Bus",
+    "Surgical Dynamic EQ Bus",
+    "ReaFIR Micro Suppression Bus",
+    "Gate/Expander Bus",
+    "Print/Render A/B",
+    "Notes/Markers",
+    "24-64 Band Suppressor Candidate"
+  ],
+  "dynamic_suppressor_candidate": {
+    "status": "design_and_reaper_validation_only",
+    "default_band_count": 24,
+    "allowed_band_counts": [24, 48, 64],
+    "frequency_layout": {
+      "main_range_hz": [80, 16000],
+      "spacing": "logarithmic",
+      "sub_80_hz": "technical rumble/hum bands only when confirmed"
+    },
+    "ms_processing": {
+      "mode": "independent_mid_side_detectors_and_gain_smoothing",
+      "mid_rule": "stricter vocal, consonant, transient, harmonic, and air guards",
+      "side_rule": "slightly stronger cleanup allowed only when stereo width and ambience survive"
+    },
+    "artifact_score_detector": {
+      "inputs": [
+        "narrow_tonal_peak",
+        "spectral_flatness_or_noise_excess",
+        "temporal_instability",
+        "high_frequency_fizz",
+        "residual_candidate_energy"
+      ],
+      "guards": [
+        "vocal_presence_guard",
+        "transient_guard",
+        "harmonic_guard",
+        "air_guard",
+        "residual_source_leak_penalty"
+      ],
+      "range": "0.0-1.0",
+      "decision": "if ambiguous, preserve source"
+    },
+    "safety_caps": {
+      "vocal_preserve_mid_max_reduction_db": 1.0,
+      "vocal_preserve_side_max_reduction_db": 1.5,
+      "balanced_mid_max_reduction_db": 2.0,
+      "balanced_side_max_reduction_db": 3.0,
+      "stress_test_absolute_max_reduction_db": 6.0
+    }
+  },
+  "presets": [
+    {
+      "name": "Vocal Preserve",
+      "intent": "Minimum source damage with mild cleanup.",
+      "wet_range": "50-70%",
+      "candidate_band_count": 24,
+      "active_stages": ["Static Cleanup", "Light Broad Dynamic Stabilization", "24-band guarded suppressor candidate"],
+      "max_reduction_policy": "mid <= 1 dB, side <= 1.5 dB, guards can only reduce suppression",
+      "reafir": "bypass unless extremely light",
+      "gate": "off or gaps only",
+      "port_if": "clean vocal remains nearly original and residual is mostly technical noise"
+    },
+    {
+      "name": "Balanced Artifact Reduction",
+      "intent": "Compromise cleanup while preserving vocal source.",
+      "wet_range": "65-85%",
+      "candidate_band_count": "24 default, 48 only after residual pass",
+      "active_stages": ["Static Cleanup", "Broad Dynamic Stabilization", "Limited Surgical Dynamic EQ", "Light Side Processing", "artifact-score suppressor candidate"],
+      "max_reduction_policy": "mid <= 2 dB, side <= 3 dB, no full-band collapse",
+      "reafir": "optional low wet",
+      "gate": "gaps only",
+      "port_if": "works across several sources without residual source leakage"
+    },
+    {
+      "name": "AI Metallic Surgical",
+      "intent": "Target confirmed metallic tones, chirps, whistles, and codec birdies.",
+      "wet_range": "60-80%",
+      "candidate_band_count": "48 or 64 sparse active bands",
+      "active_stages": ["Surgical Dynamic EQ", "sparse high-score suppressor bands"],
+      "max_reduction_policy": "only confirmed artifact bands move; harmonic guard vetoes pitch-following cuts",
+      "reafir": "off by default",
+      "gate": "off",
+      "port_if": "few source-specific bands solve artifacts without touching formants or consonants"
+    },
+    {
+      "name": "Strong Stress Test",
+      "intent": "Find the damage boundary; not a default recommendation.",
+      "wet_range": "80-100%",
+      "candidate_band_count": 64,
+      "active_stages": ["Broad Dynamic", "Surgical Dynamic", "64-band suppressor stress test", "ReaFIR Experiment", "Gap Expander"],
+      "max_reduction_policy": "absolute cap <= 6 dB; document failure boundary, do not default",
+      "reafir": "allowed for failure-boundary testing",
+      "gate": "still gaps only",
+      "port_if": "normally do not port; document where source collapses"
+    }
+  ],
+  "band_templates": [
+    {"stage": "Static Cleanup", "plugin": "ReaEQ", "band": "HPF", "frequency": "20-35 Hz", "q": "n/a", "mode": "static", "ratio": "n/a", "attack": "n/a", "release": "n/a", "max_gain_reduction": "n/a", "ms": "both", "target": "sub rumble only", "risk": "low"},
+    {"stage": "Static Cleanup", "plugin": "ReaEQ", "band": "Hum notch", "frequency": "50/60 Hz and confirmed harmonics", "q": "20-50", "mode": "static", "ratio": "n/a", "attack": "n/a", "release": "n/a", "max_gain_reduction": "-3 to -12 dB", "ms": "both", "target": "electrical hum", "risk": "low if hum exists"},
+    {"stage": "Broad Dynamic", "plugin": "ReaXcomp or TDR Nova", "band": "Low-mid cloud", "frequency": "120-350 Hz", "q": "broad", "mode": "dynamic", "ratio": "1.1:1-1.5:1", "attack": "30-70 ms", "release": "120-300 ms", "max_gain_reduction": "-1 to -3 dB", "ms": "both", "target": "mud bloom", "risk": "vocal body loss"},
+    {"stage": "Broad Dynamic", "plugin": "ReaXcomp or TDR Nova", "band": "Presence danger", "frequency": "2.5-5 kHz", "q": "broad", "mode": "dynamic", "ratio": "1.1:1-1.5:1", "attack": "20-80 ms", "release": "100-300 ms", "max_gain_reduction": "-0.3 to -1 dB", "ms": "mid protected", "target": "occasional harshness", "risk": "intelligibility loss"},
+    {"stage": "Nova C", "plugin": "TDR Nova", "band": "Consonant edge", "frequency": "4.5-8 kHz", "q": "2-8", "mode": "dynamic", "ratio": "1.2:1-2:1", "attack": "3-25 ms", "release": "40-150 ms", "max_gain_reduction": "-0.5 to -2 dB", "ms": "mid protected", "target": "spikes only", "risk": "de-essed dull vocal"},
+    {"stage": "Nova D", "plugin": "TDR Nova", "band": "Air/fizz", "frequency": "8-16 kHz", "q": "1-4", "mode": "dynamic", "ratio": "1.1:1-1.5:1", "attack": "5-40 ms", "release": "60-200 ms", "max_gain_reduction": "-0.2 to -1.5 dB", "ms": "side slightly stronger", "target": "hiss and AI fizz", "risk": "air/room loss"},
+    {"stage": "Nova E", "plugin": "TDR Nova", "band": "Surgical artifact", "frequency": "source-specific", "q": "8-30", "mode": "dynamic", "ratio": "1.5:1-3:1", "attack": "5-30 ms", "release": "80-250 ms", "max_gain_reduction": "-1 to -4 dB", "ms": "source-specific", "target": "chirp/whistle/birdie", "risk": "formant or harmonic removal"},
+    {"stage": "24-64 Suppressor Candidate", "plugin": "future DSP, not active REAPER FX", "band": "Log-spaced artifact score band", "frequency": "80 Hz-16 kHz", "q": "band-count derived", "mode": "dynamic mask", "ratio": "gain mask", "attack": "20-80 ms", "release": "60-250 ms", "max_gain_reduction": "preset capped", "ms": "independent Mid/Side", "target": "artifact score only", "risk": "source removal if guards fail"},
+    {"stage": "ReaFIR Micro", "plugin": "ReaFIR", "band": "Micro suppression", "frequency": "high-frequency artifact focus", "q": "FFT 1024/2048", "mode": "compressor-style preferred", "ratio": "1.05:1-1.3:1", "attack": "plugin-dependent", "release": "plugin-dependent", "max_gain_reduction": "very light", "ms": "test both", "target": "micro-ringing", "risk": "watery/phasey texture"},
+    {"stage": "Gate/Expander", "plugin": "ReaGate", "band": "Gaps only", "frequency": "full range", "q": "n/a", "mode": "downward expander", "ratio": "gentle", "attack": "5-20 ms", "release": "150-400 ms", "max_gain_reduction": "limited range", "ms": "both", "target": "empty gaps", "risk": "tail chopping"}
+  ],
+  "evaluation_columns": [
+    "source",
+    "preset",
+    "noise_artifact_reduction_1_to_5",
+    "vocal_preservation_1_to_5",
+    "clarity_1_to_5",
+    "air_preservation_1_to_5",
+    "transient_preservation_1_to_5",
+    "residual_cleanliness_1_to_5",
+    "residual_source_leak_1_to_5",
+    "artifact_score_usefulness_1_to_5",
+    "stereo_space_1_to_5",
+    "overall_1_to_5",
+    "pass_fail",
+    "notes"
+  ]
+}

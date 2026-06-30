@@ -1,0 +1,37 @@
+{
+  "adapter_id": "reaeq_adapter",
+  "controls": {
+    "frequency_hz": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    },
+    "gain_db": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    },
+    "q": {
+      "confidence": 0.84,
+      "notes": "validation unavailable because plugin was not confirmed available",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "write_allowed": false
+    }
+  },
+  "no_fake_success": true,
+  "plugin_name": "ReaEQ",
+  "reason_codes": [
+    "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+  ],
+  "safe_for_automix": false,
+  "scan_time": "2026-05-31T08:41:11Z",
+  "schema": "automix-plugin-parameter-validation-report-v1",
+  "schema_errors": [],
+  "status": "validation_unavailable",
+  "validator_version": "automix-plugin-parameter-validator-v1"
+}

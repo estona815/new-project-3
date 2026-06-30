@@ -1,0 +1,84 @@
+{
+  "adapter_id": "readelay_adapter",
+  "confidence": 0.84,
+  "created_at": "2026-05-31T00:00:00Z",
+  "do_not_touch_parameters": [],
+  "manufacturer": "Cockos",
+  "normalized_plugin_name_patterns": [
+    "readelay",
+    "cockosreadelay"
+  ],
+  "platform": "cross_platform",
+  "plugin_name_patterns": [
+    "ReaDelay",
+    "Cockos ReaDelay"
+  ],
+  "plugin_type": "stock_delay",
+  "safe_for_automix": false,
+  "safety": {
+    "no_fixed_parameter_indexes_required": true,
+    "requires_validation_before_write": true,
+    "unknown_parameters_are_skipped": true
+  },
+  "schema": "automix-plugin-adapter-v1",
+  "semantic_controls": {
+    "delay_time_ms": {
+      "category": "reverb_delay",
+      "confidence": 0.84,
+      "default": 120.0,
+      "normalization": "plugin_native_or_normalized",
+      "parameter_index": null,
+      "safe_max": 1500.0,
+      "safe_min": 1.0,
+      "semantic": "delay_time_ms",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "validation_notes": "availability and parameter response not validated in this repo",
+      "writable": false,
+      "write_allowed": false
+    },
+    "dry_wet": {
+      "category": "pitch",
+      "confidence": 0.84,
+      "default": 0.12,
+      "normalization": "plugin_native_or_normalized",
+      "parameter_index": null,
+      "safe_max": 0.35,
+      "safe_min": 0.0,
+      "semantic": "dry_wet",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "validation_notes": "availability and parameter response not validated in this repo",
+      "writable": false,
+      "write_allowed": false
+    },
+    "feedback": {
+      "category": "reverb_delay",
+      "confidence": 0.84,
+      "default": 0.15,
+      "normalization": "plugin_native_or_normalized",
+      "parameter_index": null,
+      "safe_max": 0.45,
+      "safe_min": 0.0,
+      "semantic": "feedback",
+      "target_name": "discovered_by_name",
+      "validated": false,
+      "validation_notes": "availability and parameter response not validated in this repo",
+      "writable": false,
+      "write_allowed": false
+    }
+  },
+  "source": "builtin_fallback_template",
+  "updated_at": "2026-05-31T00:00:00Z",
+  "unknown_parameters": [],
+  "validation": {
+    "last_validated_at": null,
+    "notes": "Built-in fallback template only. REAPER availability and semantic response validation required before writes.",
+    "status": "availability_not_verified",
+    "validated_by": null
+  },
+  "version": "unknown",
+  "warnings": [
+    "Template adapter is not write-safe until live validation passes."
+  ]
+}

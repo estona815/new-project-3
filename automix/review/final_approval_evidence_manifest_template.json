@@ -1,0 +1,24 @@
+{
+  "expected_reports": [
+    "automix/review/final_human_approval.json",
+    "automix/eval_reports/final_approval_evidence_gate.json",
+    "automix/eval_reports/ab_preview_evidence_gate.json",
+    "automix/eval_reports/final_qc_evidence_gate.json",
+    "automix/eval_reports/final_render_evidence_gate.json"
+  ],
+  "limits": [
+    "This template does not approve audio.",
+    "The operator must create the approval record after actual listening.",
+    "A matching path is not a listening claim; it only makes the approval auditable."
+  ],
+  "required_approval_fields": [
+    "approved true",
+    "review_decision accepted or accepted_with_limitations",
+    "loudness_matched_ab_reviewed true",
+    "final_audio_accepted_at_matched_loudness true",
+    "reviewed_ab_preview_path matches the A/B preview evidence output path",
+    "reviewed_final_audio_path matches the final QC evidence audio path",
+    "final_qc_evidence_reviewed true"
+  ],
+  "schema": "automix-final-approval-evidence-manifest-template-v1"
+}

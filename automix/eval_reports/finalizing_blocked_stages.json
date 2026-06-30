@@ -1,0 +1,12 @@
+{
+  "final_export_blocked_until_review": true,
+  "master_destructive_processing": false,
+  "pitch_correction_blocked": true,
+  "pitch_plugins_inserted": false,
+  "premaster_allowed_as_draft": true,
+  "reason": "This finishing pass focuses on vocal placement and safe premaster only.",
+  "schema": "automix-finalizing-blocked-stages-v1",
+  "warnings": [
+    "track_audit_loaded_from_analysis_reports_compatibility_path"
+  ]
+}

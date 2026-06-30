@@ -1,0 +1,34 @@
+{
+  "expected_manifest": "automix/export/deliverable_package_manifest.json",
+  "limits": [
+    "This gate validates package evidence only; it does not approve audio.",
+    "A valid ZIP does not replace final QC, matched-loudness A/B, or human approval.",
+    "Raw stems, references, renders not selected for delivery, and credential-like files remain excluded by default."
+  ],
+  "required_checks": [
+    "deliverable_package_manifest uses schema automix-deliverable-package-manifest-v1",
+    "package_created is true",
+    "zip_path exists, is a nonempty .zip file, and zip integrity passes",
+    "package_size_bytes matches the actual ZIP size",
+    "files_missing is empty and every included file still exists on disk",
+    "project_state_manifest proves original tracks are protected and the master is unchanged",
+    "supporting render, QC, A/B, approval, and rollback evidence gates are ready",
+    "package paths do not include credentials, raw stems, references, or source packages by default"
+  ],
+  "required_evidence_files": [
+    "automix/export/final_render_manifest.json",
+    "automix/eval_reports/final_render_evidence_gate.json",
+    "automix/eval_reports/final_qc_metrics.json",
+    "automix/eval_reports/final_qc_evidence_gate.json",
+    "automix/eval_reports/final_ab_preview_manifest.json",
+    "automix/eval_reports/ab_preview_evidence_gate.json",
+    "automix/review/final_human_approval.json",
+    "automix/eval_reports/final_approval_evidence_gate.json",
+    "automix/rollback/global_rollback_registry.json",
+    "automix/eval_reports/rollback_evidence_gate.json",
+    "automix/eval_reports/final_qc_report.md",
+    "automix/export/project_state_manifest.json",
+    "automix/export/plugin_mapping_summary.md"
+  ],
+  "schema": "automix-deliverable-package-evidence-manifest-template-v1"
+}

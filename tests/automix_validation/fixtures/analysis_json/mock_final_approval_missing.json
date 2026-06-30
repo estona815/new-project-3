@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "final approval missing",
+  "coverage_tags": [
+    "human_review",
+    "final_approval"
+  ],
+  "input": {
+    "approved": false
+  },
+  "expected_stage_status": "requires_approval",
+  "expected_decision": "final_export_blocked",
+  "expected_blockers": [
+    "final_approval_missing"
+  ],
+  "expected_reports": []
+}

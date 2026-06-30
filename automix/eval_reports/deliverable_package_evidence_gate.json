@@ -1,0 +1,485 @@
+{
+  "blockers": [
+    "ab_preview_evidence:ab_preview_final_segment_missing",
+    "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+    "ab_preview_evidence:ab_preview_manifest_has_warnings",
+    "ab_preview_evidence:ab_preview_not_created",
+    "ab_preview_evidence:ab_preview_not_loudness_matched",
+    "ab_preview_evidence:ab_preview_original_segment_missing",
+    "ab_preview_evidence:ab_preview_segments_missing",
+    "ab_preview_evidence:ab_preview_too_few_segments",
+    "ab_preview_evidence:preview_output_path_missing",
+    "ab_preview_evidence:source_final_path_missing",
+    "ab_preview_evidence:source_original_path_missing",
+    "ab_preview_evidence_gate_not_ready",
+    "deliverable_package_manifest_has_missing_files",
+    "deliverable_package_not_created",
+    "deliverable_package_size_missing_or_zero",
+    "deliverable_zip_path_missing",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_final_segment_missing",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_manifest_has_warnings",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_not_created",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_not_loudness_matched",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_original_segment_missing",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_segments_missing",
+    "final_approval_evidence:ab_preview_evidence:ab_preview_too_few_segments",
+    "final_approval_evidence:ab_preview_evidence:preview_output_path_missing",
+    "final_approval_evidence:ab_preview_evidence:source_final_path_missing",
+    "final_approval_evidence:ab_preview_evidence:source_original_path_missing",
+    "final_approval_evidence:ab_preview_evidence_not_ready",
+    "final_approval_evidence:final_human_approval_missing",
+    "final_approval_evidence:final_qc_evidence:final_audio_path_not_file",
+    "final_approval_evidence:final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+    "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+    "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_channels_missing",
+    "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+    "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+    "final_approval_evidence:final_qc_evidence:final_qc_has_failures",
+    "final_approval_evidence:final_qc_evidence:final_qc_not_passed",
+    "final_approval_evidence:final_qc_evidence:final_qc_true_peak_above_ceiling",
+    "final_approval_evidence:final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+    "final_approval_evidence:final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+    "final_approval_evidence:final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+    "final_approval_evidence:final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+    "final_approval_evidence:final_qc_evidence:final_render_evidence_not_ready",
+    "final_approval_evidence:final_qc_evidence:final_render_manifest_primary_wav_missing",
+    "final_approval_evidence:final_qc_evidence_not_ready",
+    "final_approval_evidence:final_render_evidence:final_export_state_not_safe",
+    "final_approval_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+    "final_approval_evidence:final_render_evidence:primary_wav_render_missing",
+    "final_approval_evidence:final_render_evidence:selected_export_source_path_missing",
+    "final_approval_evidence:final_render_evidence_not_ready",
+    "final_approval_evidence_gate_not_ready",
+    "final_qc_evidence:final_audio_path_not_file",
+    "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+    "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+    "final_qc_evidence:final_qc_file_integrity_channels_missing",
+    "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+    "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+    "final_qc_evidence:final_qc_has_failures",
+    "final_qc_evidence:final_qc_not_passed",
+    "final_qc_evidence:final_qc_true_peak_above_ceiling",
+    "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+    "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+    "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+    "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+    "final_qc_evidence:final_render_evidence_not_ready",
+    "final_qc_evidence:final_render_manifest_primary_wav_missing",
+    "final_qc_evidence_gate_not_ready",
+    "final_render_evidence:final_export_state_not_safe",
+    "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+    "final_render_evidence:primary_wav_render_missing",
+    "final_render_evidence:selected_export_source_path_missing",
+    "final_render_evidence_gate_not_ready"
+  ],
+  "created_at": "2026-06-02T16:55:07Z",
+  "included_file_statuses": [
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Analysis/project_premaster_safety_analysis.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Analysis/project_premaster_safety_analysis.json",
+      "size_bytes": 1929
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Analysis/prompt32_audit_report.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Analysis/prompt32_audit_report.json",
+      "size_bytes": 2962
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/ChainPlans/project_premaster_chain_plan.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/ChainPlans/project_premaster_chain_plan.json",
+      "size_bytes": 2169
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/final_ab_preview_manifest.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/final_ab_preview_manifest.json",
+      "size_bytes": 252
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/final_qc_metrics.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/final_qc_metrics.json",
+      "size_bytes": 999
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_eval_metrics.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_eval_metrics.json",
+      "size_bytes": 1256
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_iteration_history.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_iteration_history.json",
+      "size_bytes": 194
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_report.md",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_premaster_report.md",
+      "size_bytes": 2607
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_translation_check.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Eval/project_translation_check.json",
+      "size_bytes": 479
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Manifests/final_render_manifest.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Manifests/final_render_manifest.json",
+      "size_bytes": 256
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Manifests/project_state_manifest.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Manifests/project_state_manifest.json",
+      "size_bytes": 779
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/README_DELIVERY.md",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/README_DELIVERY.md",
+      "size_bytes": 461
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/final_ab_preview_manifest.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/final_ab_preview_manifest.json",
+      "size_bytes": 252
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/final_qc_metrics.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/final_qc_metrics.json",
+      "size_bytes": 999
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/plugin_mapping_summary.md",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/plugin_mapping_summary.md",
+      "size_bytes": 555
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/project_premaster_report.md",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/project_premaster_report.md",
+      "size_bytes": 2607
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/project_translation_check.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Reports/project_translation_check.json",
+      "size_bytes": 479
+    },
+    {
+      "exists": true,
+      "input_path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Rollback/project_premaster_rollback.json",
+      "is_file": true,
+      "path": "deliverables/project_DELIVERABLES_v01_2026-05-31/Rollback/project_premaster_rollback.json",
+      "size_bytes": 648
+    }
+  ],
+  "limits": [
+    "This gate validates deliverable package evidence only; it does not approve audio.",
+    "A valid package does not replace measured final QC, matched-loudness A/B review, rollback evidence, or final human approval.",
+    "Raw stems, references, source packages, and credential-like files remain excluded by default."
+  ],
+  "output_dir": "automix",
+  "package_manifest_path": "automix/export/deliverable_package_manifest.json",
+  "package_summary": {
+    "actual_zip_size_bytes": 0,
+    "files_included_count": 18,
+    "files_missing": [
+      "automix/eval_reports/final_qc_report.md"
+    ],
+    "package_created": false,
+    "package_size_bytes": 0,
+    "zip_path": ""
+  },
+  "project_name": "project",
+  "project_state_summary": {
+    "accepted_sources": [],
+    "master_unchanged": true,
+    "original_tracks_protected": true
+  },
+  "ready_for_delivery_package": false,
+  "ready_for_professional_readiness": false,
+  "required_evidence_file_statuses": [
+    {
+      "disk_path": "automix/export/final_render_manifest.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": true,
+      "relative_path": "export/final_render_manifest.json",
+      "satisfied": true,
+      "size_bytes": 256
+    },
+    {
+      "disk_path": "automix/eval_reports/final_render_evidence_gate.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/final_render_evidence_gate.json",
+      "satisfied": true,
+      "size_bytes": 1837
+    },
+    {
+      "disk_path": "automix/eval_reports/final_qc_metrics.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": true,
+      "relative_path": "eval_reports/final_qc_metrics.json",
+      "satisfied": true,
+      "size_bytes": 999
+    },
+    {
+      "disk_path": "automix/eval_reports/final_qc_evidence_gate.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/final_qc_evidence_gate.json",
+      "satisfied": true,
+      "size_bytes": 2616
+    },
+    {
+      "disk_path": "automix/eval_reports/final_ab_preview_manifest.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": true,
+      "relative_path": "eval_reports/final_ab_preview_manifest.json",
+      "satisfied": true,
+      "size_bytes": 252
+    },
+    {
+      "disk_path": "automix/eval_reports/ab_preview_evidence_gate.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+      "satisfied": true,
+      "size_bytes": 2914
+    },
+    {
+      "disk_path": "automix/review/final_human_approval.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "review/final_human_approval.json",
+      "satisfied": true,
+      "size_bytes": 242
+    },
+    {
+      "disk_path": "automix/eval_reports/final_approval_evidence_gate.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/final_approval_evidence_gate.json",
+      "satisfied": true,
+      "size_bytes": 3717
+    },
+    {
+      "disk_path": "automix/rollback/global_rollback_registry.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "rollback/global_rollback_registry.json",
+      "satisfied": true,
+      "size_bytes": 1160
+    },
+    {
+      "disk_path": "automix/eval_reports/rollback_evidence_gate.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/rollback_evidence_gate.json",
+      "satisfied": true,
+      "size_bytes": 2127
+    },
+    {
+      "disk_path": "automix/eval_reports/final_qc_report.md",
+      "exists_on_disk": true,
+      "present_in_package_manifest": false,
+      "relative_path": "eval_reports/final_qc_report.md",
+      "satisfied": true,
+      "size_bytes": 1512
+    },
+    {
+      "disk_path": "automix/export/project_state_manifest.json",
+      "exists_on_disk": true,
+      "present_in_package_manifest": true,
+      "relative_path": "export/project_state_manifest.json",
+      "satisfied": true,
+      "size_bytes": 779
+    },
+    {
+      "disk_path": "automix/export/plugin_mapping_summary.md",
+      "exists_on_disk": true,
+      "present_in_package_manifest": true,
+      "relative_path": "export/plugin_mapping_summary.md",
+      "satisfied": true,
+      "size_bytes": 555
+    }
+  ],
+  "schema": "automix-deliverable-package-evidence-gate-v1",
+  "supporting_gate_statuses": [
+    {
+      "blockers": [
+        "final_export_state_not_safe",
+        "final_render_manifest_diagnostic_or_report_only",
+        "primary_wav_render_missing",
+        "selected_export_source_path_missing"
+      ],
+      "code": "final_render_evidence",
+      "exists": true,
+      "path": "automix/eval_reports/final_render_evidence_gate.json",
+      "ready": false,
+      "ready_key": "ready_for_approval_readiness",
+      "relative_path": "eval_reports/final_render_evidence_gate.json",
+      "schema_valid": true,
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "final_audio_path_not_file",
+        "final_qc_failure:qc_not_requested_or_primary_wav_missing",
+        "final_qc_file_integrity_bit_depth_missing",
+        "final_qc_file_integrity_channels_missing",
+        "final_qc_file_integrity_duration_seconds_missing",
+        "final_qc_file_integrity_sample_rate_missing",
+        "final_qc_has_failures",
+        "final_qc_not_passed",
+        "final_qc_true_peak_above_ceiling",
+        "final_render_evidence:final_export_state_not_safe",
+        "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+        "final_render_evidence:primary_wav_render_missing",
+        "final_render_evidence:selected_export_source_path_missing",
+        "final_render_evidence_not_ready",
+        "final_render_manifest_primary_wav_missing"
+      ],
+      "code": "final_qc_evidence",
+      "exists": true,
+      "path": "automix/eval_reports/final_qc_evidence_gate.json",
+      "ready": false,
+      "ready_key": "ready_for_delivery_qc",
+      "relative_path": "eval_reports/final_qc_evidence_gate.json",
+      "schema_valid": true,
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "ab_preview_final_segment_missing",
+        "ab_preview_loudness_match_metrics_missing",
+        "ab_preview_manifest_has_warnings",
+        "ab_preview_not_created",
+        "ab_preview_not_loudness_matched",
+        "ab_preview_original_segment_missing",
+        "ab_preview_segments_missing",
+        "ab_preview_too_few_segments",
+        "preview_output_path_missing",
+        "source_final_path_missing",
+        "source_original_path_missing"
+      ],
+      "code": "ab_preview_evidence",
+      "exists": true,
+      "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+      "ready": false,
+      "ready_key": "ready_for_human_ab_review",
+      "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+      "schema_valid": true,
+      "warnings": [
+        "final_render_manifest_missing_ab_link_unverified",
+        "manifest:ab_preview_not_requested_or_missing_sources"
+      ]
+    },
+    {
+      "blockers": [
+        "ab_preview_evidence:ab_preview_final_segment_missing",
+        "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+        "ab_preview_evidence:ab_preview_manifest_has_warnings",
+        "ab_preview_evidence:ab_preview_not_created",
+        "ab_preview_evidence:ab_preview_not_loudness_matched",
+        "ab_preview_evidence:ab_preview_original_segment_missing",
+        "ab_preview_evidence:ab_preview_segments_missing",
+        "ab_preview_evidence:ab_preview_too_few_segments",
+        "ab_preview_evidence:preview_output_path_missing",
+        "ab_preview_evidence:source_final_path_missing",
+        "ab_preview_evidence:source_original_path_missing",
+        "ab_preview_evidence_not_ready",
+        "final_human_approval_missing",
+        "final_qc_evidence:final_audio_path_not_file",
+        "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+        "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+        "final_qc_evidence:final_qc_file_integrity_channels_missing",
+        "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+        "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+        "final_qc_evidence:final_qc_has_failures",
+        "final_qc_evidence:final_qc_not_passed",
+        "final_qc_evidence:final_qc_true_peak_above_ceiling",
+        "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+        "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+        "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+        "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+        "final_qc_evidence:final_render_evidence_not_ready",
+        "final_qc_evidence:final_render_manifest_primary_wav_missing",
+        "final_qc_evidence_not_ready",
+        "final_render_evidence:final_export_state_not_safe",
+        "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+        "final_render_evidence:primary_wav_render_missing",
+        "final_render_evidence:selected_export_source_path_missing",
+        "final_render_evidence_not_ready"
+      ],
+      "code": "final_approval_evidence",
+      "exists": true,
+      "path": "automix/eval_reports/final_approval_evidence_gate.json",
+      "ready": false,
+      "ready_key": "ready_for_delivery_request",
+      "relative_path": "eval_reports/final_approval_evidence_gate.json",
+      "schema_valid": true,
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "code": "rollback_evidence",
+      "exists": true,
+      "path": "automix/eval_reports/rollback_evidence_gate.json",
+      "ready": true,
+      "ready_key": "ready_for_delivery_readiness",
+      "relative_path": "eval_reports/rollback_evidence_gate.json",
+      "schema_valid": true,
+      "warnings": [
+        "no_applied_stages_declared",
+        "unknown:rollback_entry:rollback_entry_points_to_global_registry",
+        "unknown:rollback_entry:rollback_stage_unknown"
+      ]
+    }
+  ],
+  "template_path": "automix/review/deliverable_package_evidence_manifest_template.json",
+  "warnings": [],
+  "zip_status": {
+    "entries": [],
+    "entry_count": 0,
+    "exists": false,
+    "failures": [
+      "deliverable_zip_path_missing"
+    ],
+    "input_path": "",
+    "is_file": false,
+    "path": "",
+    "size_bytes": 0,
+    "valid_zip": false,
+    "warnings": []
+  }
+}

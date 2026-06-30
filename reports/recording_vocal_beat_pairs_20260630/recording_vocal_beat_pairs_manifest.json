@@ -1,0 +1,678 @@
+{
+  "output_folder": "output/audio/recording_vocal_beat_pairs_20260630",
+  "policy": {
+    "beat_only_source": "rendered from instrumental stems only; vocal/backing vocal/full mix stems excluded",
+    "files_per_song_folder": 2,
+    "source_files_modified": false,
+    "with_vocal_source": "copied from full mix/reference stem named 0 *.wav"
+  },
+  "schema": "recording-vocal-beat-pairs-v1",
+  "songs": [
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/01_0530_sample/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -0.55,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 3.1,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/01_0530_sample/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.07,
+            "threshold_lufs": -18.74,
+            "true_peak_dbtp": -2.63
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/0 0530 샘플.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/7 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/1 FX.wav",
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/2 Synth.wav",
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/3 Keyboard.wav",
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/4 Guitar.wav",
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/5 Bass.wav",
+        "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/6 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 3.1,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/01_0530_sample/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.07,
+          "threshold_lufs": -18.74,
+          "true_peak_dbtp": -2.63
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -15.16,
+          "loud_reference_target_pass": false,
+          "lra_lu": 16.0,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/01_0530_sample/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.79,
+          "threshold_lufs": -25.76,
+          "true_peak_dbtp": -2.9
+        }
+      },
+      "song_folder": "01_0530_sample",
+      "source_folder": "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/01_0530_sample/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/0530_sample_v19_louder_more_audible_reaper/source_stems/0 0530 샘플.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/02_0531/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": 0.09,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 3.1,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/02_0531/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.6,
+            "threshold_lufs": -18.81,
+            "true_peak_dbtp": -2.13
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/0531_v19_louder_more_audible_reaper/source_stems/0 0531.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/0531_v19_louder_more_audible_reaper/source_stems/7 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/0531_v19_louder_more_audible_reaper/source_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/0531_v19_louder_more_audible_reaper/source_stems/9 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/1 FX.wav",
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/2 Synth.wav",
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/3 Keyboard.wav",
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/4 Guitar.wav",
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/5 Bass.wav",
+        "audio_work/0531_v19_louder_more_audible_reaper/source_stems/6 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 3.1,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/02_0531/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.6,
+          "threshold_lufs": -18.81,
+          "true_peak_dbtp": -2.13
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -13.87,
+          "loud_reference_target_pass": false,
+          "lra_lu": 3.5,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/02_0531/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.69,
+          "threshold_lufs": -23.92,
+          "true_peak_dbtp": -1.89
+        }
+      },
+      "song_folder": "02_0531",
+      "source_folder": "audio_work/0531_v19_louder_more_audible_reaper/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/02_0531/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/0531_v19_louder_more_audible_reaper/source_stems/0 0531.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/03_chuchu/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -1.32,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 1.7,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/03_chuchu/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.17,
+            "threshold_lufs": -18.71,
+            "true_peak_dbtp": -3.41
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/chuchu_v01/raw_stems/0 추추.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/chuchu_v01/raw_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/chuchu_v01/raw_stems/9 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/chuchu_v01/raw_stems/10 New Track.wav",
+          "reason": "silence_or_placeholder_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/chuchu_v01/raw_stems/1 Brass.wav",
+        "audio_work/chuchu_v01/raw_stems/2 FX.wav",
+        "audio_work/chuchu_v01/raw_stems/3 Synth.wav",
+        "audio_work/chuchu_v01/raw_stems/4 Keyboard.wav",
+        "audio_work/chuchu_v01/raw_stems/5 Guitar.wav",
+        "audio_work/chuchu_v01/raw_stems/6 Bass.wav",
+        "audio_work/chuchu_v01/raw_stems/7 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 1.7,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/03_chuchu/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.17,
+          "threshold_lufs": -18.71,
+          "true_peak_dbtp": -3.41
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.63,
+          "loud_reference_target_pass": false,
+          "lra_lu": 3.9,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/03_chuchu/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.93,
+          "threshold_lufs": -24.71,
+          "true_peak_dbtp": -4.69
+        }
+      },
+      "song_folder": "03_chuchu",
+      "source_folder": "audio_work/chuchu_v01/raw_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/03_chuchu/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/chuchu_v01/raw_stems/0 추추.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/04_jo_mix/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -0.24,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 3.5,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/04_jo_mix/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.46,
+            "threshold_lufs": -18.97,
+            "true_peak_dbtp": -2.52
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/jo_mix_master_v01/source_stems/0 ㅈㅇ.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/jo_mix_master_v01/source_stems/7 Backing_Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/jo_mix_master_v01/source_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/jo_mix_master_v01/source_stems/9 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/jo_mix_master_v01/source_stems/1 FX.wav",
+        "audio_work/jo_mix_master_v01/source_stems/2 Synth.wav",
+        "audio_work/jo_mix_master_v01/source_stems/3 Keyboard.wav",
+        "audio_work/jo_mix_master_v01/source_stems/4 Guitar.wav",
+        "audio_work/jo_mix_master_v01/source_stems/5 Bass.wav",
+        "audio_work/jo_mix_master_v01/source_stems/6 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 3.5,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/04_jo_mix/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.46,
+          "threshold_lufs": -18.97,
+          "true_peak_dbtp": -2.52
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.61,
+          "loud_reference_target_pass": false,
+          "lra_lu": 5.5,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/04_jo_mix/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -1.29,
+          "threshold_lufs": -24.72,
+          "true_peak_dbtp": -1.79
+        }
+      },
+      "song_folder": "04_jo_mix",
+      "source_folder": "audio_work/jo_mix_master_v01/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/04_jo_mix/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/jo_mix_master_v01/source_stems/0 ㅈㅇ.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/05_mesi_1/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -1.0,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 2.0,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/05_mesi_1/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.3,
+            "threshold_lufs": -18.63,
+            "true_peak_dbtp": -3.23
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/0 메시 1.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/7 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/9 main vocal.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/10 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/1 FX.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/2 Synth.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/3 Keyboard.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/4 Guitar.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/5 Bass.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/6 Drums.wav",
+        "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/8 Keyboard.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 2.0,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/05_mesi_1/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.3,
+          "threshold_lufs": -18.63,
+          "true_peak_dbtp": -3.23
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.66,
+          "loud_reference_target_pass": false,
+          "lra_lu": 3.9,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/05_mesi_1/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.97,
+          "threshold_lufs": -24.7,
+          "true_peak_dbtp": -1.74
+        }
+      },
+      "song_folder": "05_mesi_1",
+      "source_folder": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/05_mesi_1/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/mesi_1_v44_louder_more_audible_master/source_stems/0 메시 1.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/06_mwolla/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -0.92,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 2.6,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/06_mwolla/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.51,
+            "threshold_lufs": -18.64,
+            "true_peak_dbtp": -3.06
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/0 몰라.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/8 Backing_Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/9 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/10 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/__missing_brass_silence.wav",
+          "reason": "silence_or_placeholder_excluded"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/__missing_percussion_silence.wav",
+          "reason": "silence_or_placeholder_excluded"
+        },
+        {
+          "path": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/__missing_woodwinds_silence.wav",
+          "reason": "silence_or_placeholder_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/1 FX.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/2 Synth.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/3 Strings.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/4 Keyboard.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/5 Guitar.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/6 Bass.wav",
+        "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/7 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 2.6,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/06_mwolla/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.51,
+          "threshold_lufs": -18.64,
+          "true_peak_dbtp": -3.06
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.39,
+          "loud_reference_target_pass": false,
+          "lra_lu": 3.5,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/06_mwolla/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.73,
+          "threshold_lufs": -24.39,
+          "true_peak_dbtp": -2.38
+        }
+      },
+      "song_folder": "06_mwolla",
+      "source_folder": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/06_mwolla/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/mwolla_v20_full_stem_harmony_master/source_stems/0 몰라.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/07_sonyeo_luka/02_beat_only.wav",
+      "beat_only_post_adjustments": [],
+      "excluded_stems": [
+        {
+          "path": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/0 소녀루카.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/11 Backing_Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/12 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/13 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/1 Woodwinds.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/2 Brass.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/3 FX.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/4 Synth.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/5 Strings.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/6 Percussion.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/7 Keyboard.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/8 Guitar.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/9 Bass.wav",
+        "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/10 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.61,
+          "loud_reference_target_pass": true,
+          "lra_lu": 3.4,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/07_sonyeo_luka/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": 0.04,
+          "threshold_lufs": -18.85,
+          "true_peak_dbtp": -2.17
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.51,
+          "loud_reference_target_pass": false,
+          "lra_lu": 4.8,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/07_sonyeo_luka/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.84,
+          "threshold_lufs": -24.67,
+          "true_peak_dbtp": -3.13
+        }
+      },
+      "song_folder": "07_sonyeo_luka",
+      "source_folder": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/07_sonyeo_luka/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/sonyeo_luka_v03_louder_clear_master/source_stems/0 소녀루카.wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/08_swaewol/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -0.36,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 2.8,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/08_swaewol/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.23,
+            "threshold_lufs": -18.66,
+            "true_peak_dbtp": -2.49
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/0 쇄월 x 쇄월 (Mashup).wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/6 Backing_Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/7 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/1 Synth.wav",
+        "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/2 Keyboard.wav",
+        "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/3 Guitar.wav",
+        "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/4 Bass.wav",
+        "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/5 Drums.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 2.8,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/08_swaewol/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.23,
+          "threshold_lufs": -18.66,
+          "true_peak_dbtp": -2.49
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.6,
+          "loud_reference_target_pass": false,
+          "lra_lu": 3.0,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/08_swaewol/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -0.7,
+          "threshold_lufs": -24.71,
+          "true_peak_dbtp": -2.58
+        }
+      },
+      "song_folder": "08_swaewol",
+      "source_folder": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/08_swaewol/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/swaewol_v03_even_louder_vocal_master/source_stems/0 쇄월 x 쇄월 (Mashup).wav"
+    },
+    {
+      "beat_only": "output/audio/recording_vocal_beat_pairs_20260630/09_track0627/02_beat_only.wav",
+      "beat_only_post_adjustments": [
+        {
+          "gain_db": -0.71,
+          "qc_after": {
+            "integrated_lufs": -8.6,
+            "loud_reference_target_pass": true,
+            "lra_lu": 1.6,
+            "normalization_type": "dynamic",
+            "path": "output/audio/recording_vocal_beat_pairs_20260630/09_track0627/02_beat_only.wav",
+            "status": "measured",
+            "target_offset": -0.11,
+            "threshold_lufs": -18.6,
+            "true_peak_dbtp": -2.85
+          },
+          "stage": "wav_post_gain"
+        }
+      ],
+      "excluded_stems": [
+        {
+          "path": "audio_work/track0627_v11_even_louder_vocal_master/source_stems/0 0627.wav",
+          "reason": "full_mix_reference_excluded_from_active_master_path"
+        },
+        {
+          "path": "audio_work/track0627_v11_even_louder_vocal_master/source_stems/7 Backing_Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/track0627_v11_even_louder_vocal_master/source_stems/8 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        },
+        {
+          "path": "audio_work/track0627_v11_even_louder_vocal_master/source_stems/9 Vocals.wav",
+          "reason": "vocal_or_backing_vocal_excluded"
+        }
+      ],
+      "included_instrumental_stems": [
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/1 FX.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/2 Synth.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/3 Keyboard.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/4 Guitar.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/5 Bass.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/6 Drums.wav",
+        "audio_work/track0627_v11_even_louder_vocal_master/source_stems/10 Bass.wav"
+      ],
+      "qc": {
+        "beat_only": {
+          "integrated_lufs": -8.6,
+          "loud_reference_target_pass": true,
+          "lra_lu": 1.6,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/09_track0627/02_beat_only.wav",
+          "status": "measured",
+          "target_offset": -0.11,
+          "threshold_lufs": -18.6,
+          "true_peak_dbtp": -2.85
+        },
+        "with_vocal_reference": {
+          "integrated_lufs": -14.95,
+          "loud_reference_target_pass": false,
+          "lra_lu": 4.8,
+          "normalization_type": "dynamic",
+          "path": "output/audio/recording_vocal_beat_pairs_20260630/09_track0627/01_with_vocal.wav",
+          "status": "measured",
+          "target_offset": -1.09,
+          "threshold_lufs": -25.02,
+          "true_peak_dbtp": -2.18
+        }
+      },
+      "song_folder": "09_track0627",
+      "source_folder": "audio_work/track0627_v11_even_louder_vocal_master/source_stems",
+      "with_vocal": "output/audio/recording_vocal_beat_pairs_20260630/09_track0627/01_with_vocal.wav",
+      "with_vocal_source": "audio_work/track0627_v11_even_louder_vocal_master/source_stems/0 0627.wav"
+    }
+  ],
+  "status": "RENDERED_QC_PASS"
+}

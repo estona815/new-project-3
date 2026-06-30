@@ -1,0 +1,49 @@
+{
+  "dry_run": true,
+  "dry_run_proposals_created": 15,
+  "manifest": "automix/orchestrator/automix_orchestration_manifest.json",
+  "mode": "real_project_scan_only",
+  "next_required_actions": [
+    "Provide isolated lead vocal stem."
+  ],
+  "orchestrator_global_status": "blocked_stem_required",
+  "plugin_readiness_summary": {
+    "provisional_adapters": 3,
+    "safe_adapters": 0,
+    "safe_draft_plugin_ready": false,
+    "unsafe_unmapped": 11
+  },
+  "project_modified": false,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+  "prompt41_validation_status": "PASS",
+  "read_only_guard_safe": true,
+  "real_project_pilot_risk": "normal",
+  "recommended_next_mode": "validate_plugin_mappings",
+  "reports": {
+    "dry_run_proposals": "automix/chain_plans/real_project_dry_run_chain_proposals.json",
+    "plugin_readiness": "automix/eval_reports/real_project_plugin_readiness.json",
+    "read_only_guard": "automix/real_project/read_only_guard_report.json",
+    "readiness": "automix/eval_reports/real_project_safe_draft_readiness.json",
+    "report": "automix/eval_reports/real_project_scan_only_report.md",
+    "source_safety_map": "automix/eval_reports/real_project_source_safety_map.json",
+    "track_audit": "automix/analysis_reports/real_project_track_audit.json"
+  },
+  "safe_draft_readiness_score": 0.714286,
+  "safe_draft_ready": false,
+  "source_safety_summary": {
+    "ai_or_already_processed_vocals": 0,
+    "full_mix_unsafe_tracks": 2,
+    "safe_vocal_candidates": 2,
+    "source_separated_vocals": 0,
+    "stem_required_tracks": 2,
+    "unknown_tracks": 4
+  },
+  "status": "real_project_scan_only_complete",
+  "stem_request_plan": "automix/eval_reports/real_project_stem_request_plan.md",
+  "strict_read_only": true,
+  "tracks_scanned": 8,
+  "warnings": [
+    "unknown_tracks_skipped"
+  ]
+}

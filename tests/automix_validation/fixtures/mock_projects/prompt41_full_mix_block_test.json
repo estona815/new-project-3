@@ -1,0 +1,32 @@
+{
+  "schema": "prompt41-mock-reaper-project-v1",
+  "project_name": "prompt41_full_mix_block_test",
+  "reaper_version": "mock",
+  "no_external_plugins_required": true,
+  "no_user_audio_references": true,
+  "tracks": [
+    {
+      "track_index": 1,
+      "name": "Full Mix Only",
+      "role": "full_mix",
+      "media_items": [
+        {
+          "path": "../audio/full_mix_dense_polyphonic.wav",
+          "start": 0.0,
+          "length": 10.0
+        }
+      ],
+      "fx": []
+    },
+    {
+      "track_index": 2,
+      "name": "Master",
+      "role": "master",
+      "media_items": [],
+      "fx": []
+    }
+  ],
+  "warnings": [
+    "mock_project_metadata_no_reaper_runtime"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schema": "prompt41-validation-summary-v1",
+  "created_at_epoch": 1780656342.058298,
+  "duration_seconds": 39.849996,
+  "environment": {
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "python": "3.9.6",
+    "reaper_available": false,
+    "test_mode": "mock_render",
+    "third_party_plugins_required": false
+  },
+  "fixture_generation": {
+    "audio_fixtures": 14,
+    "mock_analysis_fixtures": 16,
+    "mock_projects": 4,
+    "fixture_coverage_passed": true,
+    "fixture_categories_covered": 17,
+    "fixture_categories_required": 17,
+    "fixture_coverage_blockers": []
+  },
+  "test_results": [
+    {
+      "test_group": "plugin intelligence",
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0,
+      "notes": []
+    },
+    {
+      "test_group": "source classification and safety",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "notes": []
+    },
+    {
+      "test_group": "orchestrator modes",
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "notes": []
+    },
+    {
+      "test_group": "final export blocking",
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "notes": []
+    }
+  ],
+  "totals": {
+    "passed": 22,
+    "failed": 0,
+    "skipped": 0
+  },
+  "safety_results": {
+    "original_track_protection": true,
+    "original_master_protection": true,
+    "pitch_full_mix_block": true,
+    "low_confidence_plugin_block": true,
+    "final_export_approval_block": true,
+    "qc_failure_block": true,
+    "rollback_validation": true,
+    "fixture_coverage": true
+  },
+  "reports_created": [
+    {
+      "path": "automix/orchestrator/automix_orchestration_manifest.json",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/automix_orchestration_report.md",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/automix_report_index.json",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/automix_report_index.md",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/global_qc_summary.json",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/fixture_coverage_audit.json",
+      "exists": true
+    },
+    {
+      "path": "automix/eval_reports/fixture_coverage_audit.md",
+      "exists": true
+    },
+    {
+      "path": "automix/rollback/global_rollback_registry.json",
+      "exists": true
+    }
+  ],
+  "failures": [],
+  "skipped_notes": [],
+  "final_validation_status": "PROMPT41_VALIDATION_PASS"
+}

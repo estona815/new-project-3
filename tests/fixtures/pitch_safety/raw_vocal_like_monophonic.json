@@ -1,0 +1,18 @@
+{
+  "classification_metrics": {
+    "classification": "raw_vocal",
+    "already_mixed_score": 0.15,
+    "already_tuned_score": 0.20,
+    "baked_reverb_score": 0.10,
+    "full_mix_likelihood": 0.10,
+    "source_separated_likelihood": 0.05,
+    "pitch_correction_risk": "low"
+  },
+  "pitch_metrics": {
+    "monophonic_pitch_confidence": 0.88,
+    "scale_key_confidence": 0.75,
+    "polyphonic_contamination_score": 0.10
+  },
+  "adapter_confidence": 0.92,
+  "expected_decision": "apply_light"
+}

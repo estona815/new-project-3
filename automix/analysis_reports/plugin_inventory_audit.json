@@ -1,0 +1,80 @@
+{
+  "jsfx_available": false,
+  "missing_expected_plugins": [
+    {
+      "normal": true,
+      "plugin": "MAutoPitch",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "TDR Nova",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "Decapitator",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "Valhalla Supermassive",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "Valhalla reverb/delay",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "OTT",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "Ozone",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "Soothe-like resonance suppressor",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    },
+    {
+      "normal": true,
+      "plugin": "DSEQ-like resonance suppressor",
+      "reason": "optional commercial or third-party plugin not detected; fallback should be used"
+    }
+  ],
+  "platform": {
+    "python": "3.9.6",
+    "release": "25.5.0",
+    "system": "Darwin"
+  },
+  "plugins_detected": [],
+  "project_name": "unknown",
+  "reaper_version": "unknown",
+  "safety": {
+    "commercial_plugins_optional": true,
+    "inventory_only": true,
+    "no_audio_changes": true,
+    "no_parameter_writes": true,
+    "unmapped_plugins_are_unsafe": true
+  },
+  "scan_time": "2026-06-05T11:41:25Z",
+  "schema": "automix-plugin-inventory-audit-v1",
+  "source_inventory_scan_time": null,
+  "stock_plugins_available": false,
+  "summary": {
+    "detected_count": 0,
+    "missing_expected_count": 9,
+    "unsafe_or_unmapped_count": 0,
+    "validated_safe_count": 0
+  },
+  "third_party_plugins_available": false,
+  "unsafe_or_unmapped_plugins": [],
+  "warnings": [
+    "inventory_file_missing"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "QC failed",
+  "coverage_tags": [
+    "qc_failure"
+  ],
+  "input": {
+    "qc_passed": false
+  },
+  "expected_stage_status": "blocked",
+  "expected_decision": "final_delivery_failed",
+  "expected_blockers": [
+    "qc_failure_for_final_delivery"
+  ],
+  "expected_reports": []
+}

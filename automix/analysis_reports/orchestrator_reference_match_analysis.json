@@ -1,0 +1,8 @@
+{
+  "references": [],
+  "schema": "automix-orchestrator-reference-analysis-v1",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "warnings": [
+    "no_reference_audio_provided_target_profile_only"
+  ]
+}

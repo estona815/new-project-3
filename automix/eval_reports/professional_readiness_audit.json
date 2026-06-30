@@ -1,0 +1,2209 @@
+{
+  "ab_preview_evidence_gate_summary": {
+    "blockers": [
+      "ab_preview_final_segment_missing",
+      "ab_preview_loudness_match_metrics_missing",
+      "ab_preview_manifest_has_warnings",
+      "ab_preview_not_created",
+      "ab_preview_not_loudness_matched",
+      "ab_preview_original_segment_missing",
+      "ab_preview_segments_missing",
+      "ab_preview_too_few_segments",
+      "preview_output_path_missing",
+      "source_final_path_missing",
+      "source_original_path_missing"
+    ],
+    "human_ab_review_recorded": false,
+    "loudness_match_status": {
+      "blockers": [
+        "ab_preview_loudness_match_metrics_missing",
+        "ab_preview_not_loudness_matched"
+      ],
+      "delta_db_after_match": null,
+      "loudness_matched_flag": false,
+      "matched": false,
+      "method": "",
+      "metrics_present": false,
+      "tolerance_db": 0.25,
+      "warnings": []
+    },
+    "ready_for_final_approval_request": false,
+    "ready_for_human_ab_review": false,
+    "warnings": [
+      "final_render_manifest_missing_ab_link_unverified",
+      "manifest:ab_preview_not_requested_or_missing_sources"
+    ]
+  },
+  "ab_preview_summary": {
+    "created": false,
+    "loudness_matched": false,
+    "output_path": "",
+    "warnings": [
+      "ab_preview_not_requested_or_missing_sources"
+    ]
+  },
+  "approval_export_readiness_summary": {
+    "blockers": [
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_not_ready",
+      "ab_preview_missing_or_not_loudness_matched",
+      "accepted_export_source_missing",
+      "artifact_evidence:artifact_evidence_not_established",
+      "artifact_evidence:measured_artifact_metrics_missing",
+      "artifact_signal:artifact_signal_not_established",
+      "artifact_signal:measured_artifact_metrics_not_established",
+      "final_human_approval_missing",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_not_ready",
+      "final_qc_missing_or_failed",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready",
+      "final_render_missing_or_diagnostic_only",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaComp (Cockos)",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaDelay (Cockos)",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaEQ (Cockos)",
+      "plugin_semantic_validation:semantic_validation_passed_reports_missing",
+      "plugin_semantic_validation:validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "plugin_semantic_validation:validation_report_missing:OTT (Xfer Records)",
+      "plugin_semantic_validation:validation_report_missing:ReaVerbate (Cockos)",
+      "plugin_semantic_validation:validation_report_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "plugin_validation_preflight:required_plugin_availability_missing:OTT (Xfer Records)",
+      "plugin_validation_preflight:required_plugin_availability_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_validation_preflight:semantic_parameter_validation_required",
+      "source_acceptance:source_acceptance_candidates_missing",
+      "source_handoff:current_source_file_missing:V37 RETURN ReaDelay filtered throw",
+      "source_handoff:current_source_file_missing:V37 RETURN ReaVerbate dark send",
+      "source_handoff:full_mix_unsafe_tracks:2",
+      "source_handoff:stem_requests_open:2"
+    ],
+    "readiness_status": "blocked",
+    "ready_for_delivery_request": false,
+    "ready_for_human_approval_request": false,
+    "warnings": []
+  },
+  "approval_summary": {
+    "approved": false,
+    "approved_stage": ""
+  },
+  "artifact_evidence_gate_summary": {
+    "artifact_evidence_established": false,
+    "blockers": [
+      "artifact_evidence_not_established",
+      "measured_artifact_metrics_missing"
+    ],
+    "measured_artifact_metrics_established": false,
+    "ready_for_artifact_review": false,
+    "safe_to_run_artifact_suppression": false,
+    "warnings": [
+      "feedback:feedback_baseline_is_not_user_evidence",
+      "feedback:user_artifact_feedback_missing",
+      "report_only_metric:final_qc.vocal_preservation.ai_fizz_score",
+      "report_only_metric:final_qc.vocal_preservation.metallic_artifact_score",
+      "report_only_metric:final_qc.vocal_preservation.sibilance_splatter_score",
+      "report_only_metric:premaster.ai_artifact_risk_profile.high_fizz_risk",
+      "report_only_metric:premaster.ai_artifact_risk_profile.metallic_harshness_risk",
+      "report_only_metric:premaster.ai_artifact_risk_profile.sibilance_splatter_risk"
+    ]
+  },
+  "artifact_signal_audit_summary": {
+    "artifact_signal_established": false,
+    "blockers": [
+      "artifact_signal_not_established",
+      "measured_artifact_metrics_not_established"
+    ],
+    "safe_to_run_artifact_suppression": false,
+    "usable_feedback_signal": false,
+    "usable_metric_signals": 0,
+    "usable_source_signals": 0,
+    "warnings": [
+      "no_user_artifact_feedback_recorded",
+      "some_artifact_metric_reports_are_report_only",
+      "source_map_does_not_classify_ai_or_source_separated_vocals"
+    ]
+  },
+  "blockers": [],
+  "claim_language_guard": {
+    "blockers": [],
+    "created_at": "2026-06-05T12:48:26Z",
+    "files_scanned": 240,
+    "findings": [],
+    "output_dir": "automix",
+    "passed": true,
+    "schema": "automix-claim-language-guard-v1",
+    "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+  },
+  "created_at": "2026-06-05T12:48:26Z",
+  "deliverable_package_evidence_gate_summary": {
+    "blockers": [
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_gate_not_ready",
+      "deliverable_package_manifest_has_missing_files",
+      "deliverable_package_not_created",
+      "deliverable_package_size_missing_or_zero",
+      "deliverable_zip_path_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_final_segment_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_not_created",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_not_loudness_matched",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_original_segment_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_segments_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_too_few_segments",
+      "final_approval_evidence:ab_preview_evidence:preview_output_path_missing",
+      "final_approval_evidence:ab_preview_evidence:source_final_path_missing",
+      "final_approval_evidence:ab_preview_evidence:source_original_path_missing",
+      "final_approval_evidence:ab_preview_evidence_not_ready",
+      "final_approval_evidence:final_human_approval_missing",
+      "final_approval_evidence:final_qc_evidence:final_audio_path_not_file",
+      "final_approval_evidence:final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_has_failures",
+      "final_approval_evidence:final_qc_evidence:final_qc_not_passed",
+      "final_approval_evidence:final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence_not_ready",
+      "final_approval_evidence:final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_approval_evidence:final_qc_evidence_not_ready",
+      "final_approval_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_approval_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_approval_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_approval_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_approval_evidence:final_render_evidence_not_ready",
+      "final_approval_evidence_gate_not_ready",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_gate_not_ready",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_gate_not_ready"
+    ],
+    "package_summary": {
+      "actual_zip_size_bytes": 0,
+      "files_included_count": 18,
+      "files_missing": [
+        "automix/eval_reports/final_qc_report.md"
+      ],
+      "package_created": false,
+      "package_size_bytes": 0,
+      "zip_path": ""
+    },
+    "ready_for_delivery_package": false,
+    "ready_for_professional_readiness": false,
+    "warnings": [],
+    "zip_valid": false
+  },
+  "deliverable_package_summary": {
+    "files_missing": [
+      "automix/eval_reports/final_qc_report.md"
+    ],
+    "package_created": false,
+    "package_size_bytes": 0,
+    "zip_path": ""
+  },
+  "detail_docs": [
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/docs/automix_runbook.md",
+      "relative_path": "docs/automix_runbook.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/docs/final_export_and_delivery.md",
+      "relative_path": "docs/final_export_and_delivery.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/docs/user_feedback_revision_loop.md",
+      "relative_path": "docs/user_feedback_revision_loop.md"
+    }
+  ],
+  "evidence_files": {
+    "ab_preview_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/ab_preview_evidence_gate.json",
+      "relative_path": "eval_reports/ab_preview_evidence_gate.json",
+      "size_bytes": 2914
+    },
+    "ab_preview_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_ab_preview_manifest.json",
+      "relative_path": "eval_reports/final_ab_preview_manifest.json",
+      "size_bytes": 252
+    },
+    "approval_export_readiness": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/approval_export_readiness.json",
+      "relative_path": "eval_reports/approval_export_readiness.json",
+      "size_bytes": 18911
+    },
+    "artifact_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/artifact_evidence_gate.json",
+      "relative_path": "eval_reports/artifact_evidence_gate.json",
+      "size_bytes": 9887
+    },
+    "artifact_signal_audit": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/artifact_signal_audit.json",
+      "relative_path": "eval_reports/artifact_signal_audit.json",
+      "size_bytes": 7431
+    },
+    "deliverable_package_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/deliverable_package_evidence_gate.json",
+      "relative_path": "eval_reports/deliverable_package_evidence_gate.json",
+      "size_bytes": 21166
+    },
+    "deliverable_package_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/deliverable_package_manifest.json",
+      "relative_path": "export/deliverable_package_manifest.json",
+      "size_bytes": 2772
+    },
+    "feedback_qc_integration": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/user_feedback_qc_integration.json",
+      "relative_path": "eval_reports/user_feedback_qc_integration.json",
+      "size_bytes": 2539
+    },
+    "feedback_revision_memory": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/review/user_feedback_revision_memory.json",
+      "relative_path": "review/user_feedback_revision_memory.json",
+      "size_bytes": 381
+    },
+    "final_approval_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_approval_evidence_gate.json",
+      "relative_path": "eval_reports/final_approval_evidence_gate.json",
+      "size_bytes": 3717
+    },
+    "final_delivery_consistency_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_delivery_consistency_gate.json",
+      "relative_path": "eval_reports/final_delivery_consistency_gate.json",
+      "size_bytes": 6485
+    },
+    "final_export_state": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/final_export_state.json",
+      "relative_path": "export/final_export_state.json",
+      "size_bytes": 942
+    },
+    "final_human_approval": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/review/final_human_approval.json",
+      "relative_path": "review/final_human_approval.json",
+      "size_bytes": 242
+    },
+    "final_qc_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_qc_evidence_gate.json",
+      "relative_path": "eval_reports/final_qc_evidence_gate.json",
+      "size_bytes": 2616
+    },
+    "final_qc_metrics": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_qc_metrics.json",
+      "relative_path": "eval_reports/final_qc_metrics.json",
+      "size_bytes": 999
+    },
+    "final_render_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/final_render_evidence_gate.json",
+      "relative_path": "eval_reports/final_render_evidence_gate.json",
+      "size_bytes": 1837
+    },
+    "final_render_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/final_render_manifest.json",
+      "relative_path": "export/final_render_manifest.json",
+      "size_bytes": 256
+    },
+    "fixture_coverage_audit": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/fixture_coverage_audit.json",
+      "relative_path": "eval_reports/fixture_coverage_audit.json",
+      "size_bytes": 18840
+    },
+    "global_qc_summary": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/global_qc_summary.json",
+      "relative_path": "eval_reports/global_qc_summary.json",
+      "size_bytes": 5287
+    },
+    "global_rollback_registry": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/rollback/global_rollback_registry.json",
+      "relative_path": "rollback/global_rollback_registry.json",
+      "size_bytes": 1938
+    },
+    "intent_classification": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/intent_classification.json",
+      "relative_path": "eval_reports/intent_classification.json",
+      "size_bytes": 9784
+    },
+    "open_risk_register": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/open_risk_register.json",
+      "relative_path": "eval_reports/open_risk_register.json",
+      "size_bytes": 278537
+    },
+    "path_hygiene_audit": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/path_hygiene_audit.json",
+      "relative_path": "eval_reports/path_hygiene_audit.json",
+      "size_bytes": 14436
+    },
+    "plugin_availability_decision_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_availability_decision_gate.json",
+      "relative_path": "eval_reports/plugin_availability_decision_gate.json",
+      "size_bytes": 2275
+    },
+    "plugin_availability_operator_decision_package": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_availability_operator_decision_package.json",
+      "relative_path": "eval_reports/plugin_availability_operator_decision_package.json",
+      "size_bytes": 5308
+    },
+    "plugin_availability_resolution_plan": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_availability_resolution_plan.json",
+      "relative_path": "eval_reports/plugin_availability_resolution_plan.json",
+      "size_bytes": 3627
+    },
+    "plugin_mapping_summary": {
+      "exists": true,
+      "json_valid": null,
+      "path": "automix/export/plugin_mapping_summary.md",
+      "relative_path": "export/plugin_mapping_summary.md",
+      "size_bytes": 555
+    },
+    "plugin_semantic_validation_collection_plan": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_collection_plan.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_collection_plan.json",
+      "size_bytes": 28898
+    },
+    "plugin_semantic_validation_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_gate.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_gate.json",
+      "size_bytes": 9844
+    },
+    "plugin_semantic_validation_queue": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_queue.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_queue.json",
+      "size_bytes": 25385
+    },
+    "plugin_semantic_validation_runtime_collection_package": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+      "size_bytes": 25603
+    },
+    "plugin_semantic_validation_runtime_collector_package": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "size_bytes": 21829
+    },
+    "plugin_semantic_validation_runtime_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+      "size_bytes": 18554
+    },
+    "plugin_semantic_validation_runtime_observation_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "size_bytes": 12066
+    },
+    "plugin_semantic_validation_runtime_observation_provenance_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_observation_provenance_gate.json",
+      "size_bytes": 13326
+    },
+    "plugin_semantic_validation_runtime_report_authoring_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+      "size_bytes": 1702
+    },
+    "plugin_semantic_validation_runtime_report_authoring_package": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_package.json",
+      "relative_path": "eval_reports/plugin_semantic_validation_runtime_report_authoring_package.json",
+      "size_bytes": 1467
+    },
+    "plugin_validation_action_plan": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_validation_action_plan.json",
+      "relative_path": "eval_reports/plugin_validation_action_plan.json",
+      "size_bytes": 25100
+    },
+    "plugin_validation_preflight": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/plugin_validation_preflight.json",
+      "relative_path": "eval_reports/plugin_validation_preflight.json",
+      "size_bytes": 9428
+    },
+    "processing_policy_audit": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/processing_policy_audit.json",
+      "relative_path": "eval_reports/processing_policy_audit.json",
+      "size_bytes": 4108
+    },
+    "project_state_manifest": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/export/project_state_manifest.json",
+      "relative_path": "export/project_state_manifest.json",
+      "size_bytes": 779
+    },
+    "report_index": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/automix_report_index.json",
+      "relative_path": "eval_reports/automix_report_index.json",
+      "size_bytes": 70068
+    },
+    "requirements_traceability_audit": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/requirements_traceability_audit.json",
+      "relative_path": "eval_reports/requirements_traceability_audit.json",
+      "size_bytes": 119331
+    },
+    "risk_remediation_plan": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/risk_remediation_plan.json",
+      "relative_path": "eval_reports/risk_remediation_plan.json",
+      "size_bytes": 162343
+    },
+    "risk_root_cause_rollup": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/risk_root_cause_rollup.json",
+      "relative_path": "eval_reports/risk_root_cause_rollup.json",
+      "size_bytes": 85191
+    },
+    "rollback_evidence_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/rollback_evidence_gate.json",
+      "relative_path": "eval_reports/rollback_evidence_gate.json",
+      "size_bytes": 2127
+    },
+    "source_acceptance_gate": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/source_acceptance_gate.json",
+      "relative_path": "eval_reports/source_acceptance_gate.json",
+      "size_bytes": 890
+    },
+    "source_handoff_readiness": {
+      "exists": true,
+      "json_valid": true,
+      "path": "automix/eval_reports/source_handoff_readiness.json",
+      "relative_path": "eval_reports/source_handoff_readiness.json",
+      "size_bytes": 8631
+    }
+  },
+  "feedback_qc_integration_summary": {
+    "dry_run_only_until_resolved": false,
+    "items_with_missing_qc_metrics": 0,
+    "requires_human_review": false,
+    "resolved_with_evidence_count": 0,
+    "total_feedback_items": 0,
+    "unresolved_or_incomplete_count": 0
+  },
+  "feedback_revision_loop": {
+    "baseline_status": "no_feedback_recorded",
+    "category_counts": {},
+    "dry_run_only": true,
+    "exists": true,
+    "latest_entry_id": "",
+    "latest_pass_id": "",
+    "no_feedback_fabricated": true,
+    "path": "automix/review/user_feedback_revision_memory.json",
+    "pending_unresolved_count": 0,
+    "repeated_categories": [],
+    "requires_human_review": false,
+    "resolution_records_count": 0,
+    "resolved_feedback_count": 0,
+    "schema": "automix-user-feedback-summary-v1",
+    "total_entries": 0,
+    "warnings": []
+  },
+  "final_approval_evidence_gate_summary": {
+    "approval_pending_only": false,
+    "approval_summary": {
+      "approval_time": "",
+      "approved_by": "user",
+      "approved_source": "",
+      "approved_stage": "",
+      "final_audio_accepted_at_matched_loudness": false,
+      "final_qc_evidence_reviewed": false,
+      "loudness_matched_ab_reviewed": false,
+      "reviewed_ab_preview_path": "",
+      "reviewed_final_audio_path": "",
+      "warnings_acknowledged": []
+    },
+    "approved": false,
+    "blockers": [
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_not_ready",
+      "final_human_approval_missing",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_not_ready",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready"
+    ],
+    "ready_for_delivery_request": false,
+    "review_decision": "",
+    "supporting_gate_summary": {
+      "ab_preview_evidence_ready": false,
+      "ab_preview_output_path": "",
+      "final_audio_path": ".",
+      "final_qc_evidence_ready": false,
+      "final_render_evidence_ready": false
+    },
+    "warnings": []
+  },
+  "final_delivery_consistency_gate_summary": {
+    "ab_preview_path": "",
+    "blockers": [
+      "ab_preview_evidence_not_ready",
+      "ab_preview_output_path_missing",
+      "deliverable_package_evidence_not_ready",
+      "final_approval_evidence_not_ready",
+      "final_audio_path_missing",
+      "final_export_state_not_safe",
+      "final_qc_evidence_not_ready",
+      "final_render_evidence_not_ready",
+      "final_render_evidence_primary_wav_missing",
+      "final_render_manifest_primary_wav_missing"
+    ],
+    "final_audio_path": "",
+    "ready_for_delivery_consistency": false,
+    "ready_for_professional_readiness": false,
+    "warnings": []
+  },
+  "final_delivery_requested": false,
+  "final_export_state_summary": {
+    "blocked_reasons": [
+      "no_accepted_export_source"
+    ],
+    "safe_to_export": false,
+    "selected_export_source": ""
+  },
+  "final_qc_evidence_gate_summary": {
+    "blockers": [
+      "final_audio_path_not_file",
+      "final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_file_integrity_bit_depth_missing",
+      "final_qc_file_integrity_channels_missing",
+      "final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_file_integrity_sample_rate_missing",
+      "final_qc_has_failures",
+      "final_qc_not_passed",
+      "final_qc_true_peak_above_ceiling",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready",
+      "final_render_manifest_primary_wav_missing"
+    ],
+    "final_audio_path": ".",
+    "qc_summary": {
+      "clipping_detected": false,
+      "digital_black_detected": false,
+      "failures": [
+        "qc_not_requested_or_primary_wav_missing"
+      ],
+      "qc_passed": false,
+      "true_peak_dbTP": 0.0,
+      "unexpected_silence_detected": false,
+      "warnings": []
+    },
+    "ready_for_approval_readiness": false,
+    "ready_for_delivery_qc": false,
+    "render_link_summary": {
+      "final_audio_in_render_manifest": false,
+      "final_audio_matches_render_evidence": false,
+      "final_render_evidence_ready": false,
+      "render_evidence_primary_wav": "",
+      "render_manifest_primary_wavs_total": 0
+    },
+    "warnings": []
+  },
+  "final_qc_summary": {
+    "failures": [
+      "qc_not_requested_or_primary_wav_missing"
+    ],
+    "qc_passed": false
+  },
+  "final_render_evidence_gate_summary": {
+    "blockers": [
+      "final_export_state_not_safe",
+      "final_render_manifest_diagnostic_or_report_only",
+      "primary_wav_render_missing",
+      "selected_export_source_path_missing"
+    ],
+    "primary_wav_path": "",
+    "ready_for_approval_readiness": false,
+    "ready_for_final_qc": false,
+    "warnings": []
+  },
+  "final_render_summary": {
+    "failures": [],
+    "primary_wav_count": 0,
+    "render_count": 0
+  },
+  "fixture_coverage_audit_summary": {
+    "blockers": [],
+    "covered_categories": [
+      "buried_vocal",
+      "clean_vocal",
+      "corrupted_config",
+      "dry_run",
+      "fake_stereo_halo",
+      "feedback_mapping",
+      "harsh_vocal",
+      "low_end_buildup",
+      "missing_plugin",
+      "muddy_vocal",
+      "over_limited_master",
+      "phase_issue",
+      "render_failure",
+      "rollback",
+      "sibilant_vocal",
+      "suno_high_fizz",
+      "watery_smear"
+    ],
+    "missing_categories": [],
+    "passed": true
+  },
+  "global_qc_summary": {
+    "critical_blockers": [
+      "qc_failure_for_final_delivery"
+    ],
+    "safe_to_export": false
+  },
+  "intent_classification_summary": {
+    "recommended_primary_intent": "conservative_cleanup",
+    "safe_draft_intents": [],
+    "safe_next_mode": "validate_plugin_mappings",
+    "status": "review_required"
+  },
+  "open_risk_register_summary": {
+    "blockers": [
+      "ab_preview_final_segment_missing",
+      "ab_preview_loudness_match_metrics_missing",
+      "ab_preview_manifest_has_warnings",
+      "ab_preview_not_created",
+      "ab_preview_not_loudness_matched",
+      "ab_preview_original_segment_missing",
+      "ab_preview_segments_missing",
+      "ab_preview_too_few_segments",
+      "preview_output_path_missing",
+      "source_final_path_missing",
+      "source_original_path_missing",
+      "artifact_evidence_not_established",
+      "measured_artifact_metrics_missing",
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_not_ready",
+      "ab_preview_missing_or_not_loudness_matched",
+      "accepted_export_source_missing",
+      "artifact_evidence:artifact_evidence_not_established",
+      "artifact_evidence:measured_artifact_metrics_missing",
+      "artifact_signal:artifact_signal_not_established",
+      "artifact_signal:measured_artifact_metrics_not_established",
+      "final_human_approval_missing",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_not_ready",
+      "final_qc_missing_or_failed",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready",
+      "final_render_missing_or_diagnostic_only",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaComp (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaDelay (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_has_no_write_safe_controls",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_not_passed:validation_unavailable",
+      "plugin_semantic_validation:ReaEQ (Cockos):validation_report_not_safe_for_automix",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaComp (Cockos)",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaDelay (Cockos)",
+      "plugin_semantic_validation:no_passed_semantic_validation_report:ReaEQ (Cockos)",
+      "plugin_semantic_validation:semantic_validation_passed_reports_missing",
+      "plugin_semantic_validation:validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "plugin_semantic_validation:validation_report_missing:OTT (Xfer Records)",
+      "plugin_semantic_validation:validation_report_missing:ReaVerbate (Cockos)",
+      "plugin_semantic_validation:validation_report_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "plugin_semantic_validation:validation_report_missing:Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "plugin_validation_preflight:required_plugin_availability_missing:OTT (Xfer Records)",
+      "plugin_validation_preflight:required_plugin_availability_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_validation_preflight:semantic_parameter_validation_required",
+      "source_acceptance:source_acceptance_candidates_missing",
+      "source_handoff:current_source_file_missing:V37 RETURN ReaDelay filtered throw",
+      "source_handoff:current_source_file_missing:V37 RETURN ReaVerbate dark send",
+      "source_handoff:full_mix_unsafe_tracks:2",
+      "source_handoff:stem_requests_open:2",
+      "ab_preview_evidence_not_ready",
+      "ab_preview_output_path_missing",
+      "deliverable_package_evidence_not_ready",
+      "final_approval_evidence_not_ready",
+      "final_audio_path_missing",
+      "final_export_state_not_safe",
+      "final_qc_evidence_not_ready",
+      "final_render_evidence_not_ready",
+      "final_render_evidence_primary_wav_missing",
+      "final_render_manifest_primary_wav_missing",
+      "no_accepted_export_source",
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_not_ready",
+      "final_human_approval_missing",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_not_ready",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready",
+      "aggressive_creative_enhancement_disabled_by_default",
+      "artifact_signal_not_established",
+      "explicit_rebeat_stems_and_arrangement_review_required",
+      "explicit_user_approval_and_preview_required",
+      "no_safe_vocal_candidate",
+      "stems_not_ready",
+      "validated_plugin_mapping_required",
+      "ab_preview_evidence:ab_preview_final_segment_missing",
+      "ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "ab_preview_evidence:ab_preview_not_created",
+      "ab_preview_evidence:ab_preview_not_loudness_matched",
+      "ab_preview_evidence:ab_preview_original_segment_missing",
+      "ab_preview_evidence:ab_preview_segments_missing",
+      "ab_preview_evidence:ab_preview_too_few_segments",
+      "ab_preview_evidence:preview_output_path_missing",
+      "ab_preview_evidence:source_final_path_missing",
+      "ab_preview_evidence:source_original_path_missing",
+      "ab_preview_evidence_gate_not_ready",
+      "deliverable_package_manifest_has_missing_files",
+      "deliverable_package_not_created",
+      "deliverable_package_size_missing_or_zero",
+      "deliverable_zip_path_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_final_segment_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_loudness_match_metrics_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_manifest_has_warnings",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_not_created",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_not_loudness_matched",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_original_segment_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_segments_missing",
+      "final_approval_evidence:ab_preview_evidence:ab_preview_too_few_segments",
+      "final_approval_evidence:ab_preview_evidence:preview_output_path_missing",
+      "final_approval_evidence:ab_preview_evidence:source_final_path_missing",
+      "final_approval_evidence:ab_preview_evidence:source_original_path_missing",
+      "final_approval_evidence:ab_preview_evidence_not_ready",
+      "final_approval_evidence:final_human_approval_missing",
+      "final_approval_evidence:final_qc_evidence:final_audio_path_not_file",
+      "final_approval_evidence:final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_approval_evidence:final_qc_evidence:final_qc_has_failures",
+      "final_approval_evidence:final_qc_evidence:final_qc_not_passed",
+      "final_approval_evidence:final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_approval_evidence:final_qc_evidence:final_render_evidence_not_ready",
+      "final_approval_evidence:final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_approval_evidence:final_qc_evidence_not_ready",
+      "final_approval_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_approval_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_approval_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_approval_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_approval_evidence:final_render_evidence_not_ready",
+      "final_approval_evidence_gate_not_ready",
+      "final_qc_evidence:final_audio_path_not_file",
+      "final_qc_evidence:final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_evidence:final_qc_file_integrity_bit_depth_missing",
+      "final_qc_evidence:final_qc_file_integrity_channels_missing",
+      "final_qc_evidence:final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_evidence:final_qc_file_integrity_sample_rate_missing",
+      "final_qc_evidence:final_qc_has_failures",
+      "final_qc_evidence:final_qc_not_passed",
+      "final_qc_evidence:final_qc_true_peak_above_ceiling",
+      "final_qc_evidence:final_render_evidence:final_export_state_not_safe",
+      "final_qc_evidence:final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_qc_evidence:final_render_evidence:primary_wav_render_missing",
+      "final_qc_evidence:final_render_evidence:selected_export_source_path_missing",
+      "final_qc_evidence:final_render_evidence_not_ready",
+      "final_qc_evidence:final_render_manifest_primary_wav_missing",
+      "final_qc_evidence_gate_not_ready",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_gate_not_ready",
+      "files_missing:automix/eval_reports/final_qc_report.md",
+      "package_created_false",
+      "package_size_bytes_missing_or_zero",
+      "zip_path_missing",
+      "operator_decision_missing:OTT (Xfer Records)",
+      "operator_decision_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_availability_decision_manifest_missing",
+      "availability_decision_missing:OTT (Xfer Records)",
+      "availability_decision_missing:TDR Nova (Tokyo Dawn Labs)",
+      "ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaComp (Cockos):validation_report_not_safe_for_automix",
+      "ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaDelay (Cockos):validation_report_not_safe_for_automix",
+      "ReaEQ (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaEQ (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaEQ (Cockos):validation_report_not_safe_for_automix",
+      "no_passed_semantic_validation_report:ReaComp (Cockos)",
+      "no_passed_semantic_validation_report:ReaDelay (Cockos)",
+      "no_passed_semantic_validation_report:ReaEQ (Cockos)",
+      "semantic_validation_passed_reports_missing",
+      "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "validation_report_missing:OTT (Xfer Records)",
+      "validation_report_missing:ReaVerbate (Cockos)",
+      "validation_report_missing:TDR Nova (Tokyo Dawn Labs)",
+      "validation_report_missing:Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "collection_job_blocked:OTT (Xfer Records):availability_decision_missing:OTT (Xfer Records)",
+      "collection_job_blocked:TDR Nova (Tokyo Dawn Labs):availability_decision_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_semantic_validation_runtime_manifest_missing",
+      "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_manifest_job_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_manifest_job_missing:semantic_validation_08_readelay_cockos",
+      "runtime_manifest_job_missing:semantic_validation_09_reaeq_cockos",
+      "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_validation_report_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_validation_report_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_validation_report_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_validation_report_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_validation_report_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_validation_report_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_validation_report_missing:semantic_validation_08_readelay_cockos",
+      "runtime_validation_report_missing:semantic_validation_09_reaeq_cockos",
+      "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_observation_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_observation_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_observation_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_observation_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_observation_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_observation_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_observation_missing:semantic_validation_08_readelay_cockos",
+      "runtime_observation_missing:semantic_validation_09_reaeq_cockos",
+      "runtime_report_authoring_package_not_ready:no_accepted_runtime_observations",
+      "accepted_runtime_observations_missing",
+      "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx:collect_reaper_observed_semantic_validation",
+      "OTT (Xfer Records):install_or_disable_unavailable_plugin",
+      "ReaComp (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaDelay (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaEQ (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaVerbate (Cockos):collect_reaper_observed_semantic_validation",
+      "TDR Nova (Tokyo Dawn Labs):install_or_disable_unavailable_plugin",
+      "Vocal Clarity Repair/vocal_air_guard.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_output_guard.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_presence_enhancer.jsfx:collect_reaper_observed_semantic_validation",
+      "safe_draft_plugin_ready_false",
+      "final_audio_path_not_file",
+      "final_qc_failure:qc_not_requested_or_primary_wav_missing",
+      "final_qc_file_integrity_bit_depth_missing",
+      "final_qc_file_integrity_channels_missing",
+      "final_qc_file_integrity_duration_seconds_missing",
+      "final_qc_file_integrity_sample_rate_missing",
+      "final_qc_has_failures",
+      "final_qc_not_passed",
+      "final_qc_true_peak_above_ceiling",
+      "final_render_evidence:final_export_state_not_safe",
+      "final_render_evidence:final_render_manifest_diagnostic_or_report_only",
+      "final_render_evidence:primary_wav_render_missing",
+      "final_render_evidence:selected_export_source_path_missing",
+      "final_render_evidence_not_ready",
+      "final_render_manifest_primary_wav_missing",
+      "qc_not_requested_or_primary_wav_missing",
+      "qc_failure_for_final_delivery",
+      "final_export_state_not_safe",
+      "final_render_manifest_diagnostic_or_report_only",
+      "primary_wav_render_missing",
+      "selected_export_source_path_missing",
+      "full_mix_unsafe_tracks:2",
+      "high_risk_track:unsafe:SOURCE full mix reference muted",
+      "high_risk_track:unsafe:V37 INSTRUMENTAL BUS free EQ pocket",
+      "stem_required_tracks:2",
+      "source_acceptance_candidates_missing"
+    ],
+    "passed": false,
+    "risk_counts": {
+      "blocker": 308,
+      "info": 1,
+      "review": 2,
+      "warning": 118
+    }
+  },
+  "output_dir": "automix",
+  "path_hygiene_audit_summary": {
+    "blockers": [],
+    "finding_counts": {
+      "blocker": 0,
+      "info": 18,
+      "warning": 0
+    },
+    "passed": true,
+    "warnings": []
+  },
+  "plugin_availability_decision_gate_summary": {
+    "accepted_decisions_total": 0,
+    "availability_decisions_ready": false,
+    "blockers": [
+      "operator_decision_missing:OTT (Xfer Records)",
+      "operator_decision_missing:TDR Nova (Tokyo Dawn Labs)",
+      "plugin_availability_decision_manifest_missing"
+    ],
+    "missing_decisions": [
+      "OTT (Xfer Records)",
+      "TDR Nova (Tokyo Dawn Labs)"
+    ],
+    "required_decisions_total": 2,
+    "safe_to_write_parameters": false,
+    "status": "operator_decision_manifest_missing",
+    "warnings": []
+  },
+  "plugin_availability_operator_decision_package_summary": {
+    "accepted_decisions_total": 0,
+    "accepted_manifest_exists": false,
+    "accepted_manifest_path": "automix/review/plugin_availability_disable_manifest.json",
+    "availability_decisions_ready": false,
+    "blockers": [],
+    "candidate_manifest_path": "automix/review/plugin_availability_disable_manifest_candidate.json",
+    "missing_decisions": [
+      "OTT (Xfer Records)",
+      "TDR Nova (Tokyo Dawn Labs)"
+    ],
+    "operator_decision_package_ready": true,
+    "required_decisions_total": 2,
+    "safe_to_write_parameters": false,
+    "status": "operator_decisions_ready_for_human_acknowledgement",
+    "warnings": [
+      "operator_disable_or_install_decision_required"
+    ]
+  },
+  "plugin_availability_resolution_plan_summary": {
+    "blockers": [],
+    "disable_manifest_plugins_total": 2,
+    "pending_operator_decisions": [
+      "OTT (Xfer Records)",
+      "TDR Nova (Tokyo Dawn Labs)"
+    ],
+    "status": "operator_resolution_required",
+    "unavailable_plugins_total": 2,
+    "warnings": [
+      "operator_disable_or_install_decision_required"
+    ]
+  },
+  "plugin_mapping_summary": {
+    "exists": true,
+    "size_bytes": 555
+  },
+  "plugin_semantic_validation_collection_plan_summary": {
+    "all_jobs_resolved": false,
+    "blockers": [
+      "availability_decision_missing:OTT (Xfer Records)",
+      "availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+    ],
+    "collectable_jobs_total": 9,
+    "decision_blocked_jobs_total": 2,
+    "next_collection_job": {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "blockers": [],
+      "category": "jsfx",
+      "collectable_in_reaper": true,
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "Do not write parameters before this collection plan has no open jobs.",
+        "Do not mark validation passed from plugin availability alone.",
+        "Do not use fixed parameter indexes unless observed in the target REAPER runtime.",
+        "Do not treat a fallback candidate as proof that the unavailable plugin loaded."
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx*.json",
+      "matching_reports_total": 0,
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "passed_reports_total": 0,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "priority": 20,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "resolved_without_collection": false,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "source_warnings": [],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    "open_jobs_total": 11,
+    "ready_to_collect_some_in_reaper": true,
+    "safe_to_write_parameters": false,
+    "status": "availability_decisions_required_before_full_collection",
+    "warnings": [
+      "ReaComp (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked"
+    ]
+  },
+  "plugin_semantic_validation_gate_summary": {
+    "blockers": [
+      "ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaComp (Cockos):validation_report_not_safe_for_automix",
+      "ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaDelay (Cockos):validation_report_not_safe_for_automix",
+      "ReaEQ (Cockos):validation_report_has_no_write_safe_controls",
+      "ReaEQ (Cockos):validation_report_not_passed:validation_unavailable",
+      "ReaEQ (Cockos):validation_report_not_safe_for_automix",
+      "no_passed_semantic_validation_report:ReaComp (Cockos)",
+      "no_passed_semantic_validation_report:ReaDelay (Cockos)",
+      "no_passed_semantic_validation_report:ReaEQ (Cockos)",
+      "semantic_validation_passed_reports_missing",
+      "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "validation_report_missing:OTT (Xfer Records)",
+      "validation_report_missing:ReaVerbate (Cockos)",
+      "validation_report_missing:TDR Nova (Tokyo Dawn Labs)",
+      "validation_report_missing:Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "validation_report_missing:Vocal Clarity Repair/vocal_presence_enhancer.jsfx"
+    ],
+    "required_plugins_total": 11,
+    "safe_controls_total": 0,
+    "semantic_validation_ready": false,
+    "validation_reports_total": 6,
+    "warnings": [
+      "ReaComp (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked"
+    ]
+  },
+  "plugin_semantic_validation_queue_summary": {
+    "blocked_jobs_total": 2,
+    "blockers": [
+      "collection_job_blocked:OTT (Xfer Records):availability_decision_missing:OTT (Xfer Records)",
+      "collection_job_blocked:TDR Nova (Tokyo Dawn Labs):availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+    ],
+    "next_queue_job": {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx*.json",
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    "queue_jobs_total": 9,
+    "ready_to_run_reaper_collection": true,
+    "requires_reaper_runtime": true,
+    "safe_to_write_parameters": false,
+    "status": "queue_ready_with_blocked_unavailable_decisions",
+    "warnings": [
+      "ReaComp (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked"
+    ]
+  },
+  "plugin_semantic_validation_runtime_collection_package_summary": {
+    "blocked_queue_jobs_total": 2,
+    "blockers": [],
+    "collection_jobs_total": 9,
+    "manifest_candidate_path": "automix/review/plugin_semantic_validation_runtime_manifest_candidate.json",
+    "ready_for_runtime_collection": true,
+    "ready_for_runtime_evidence_gate": false,
+    "report_template_dir": "automix/review/plugin_semantic_validation_runtime_report_templates",
+    "report_templates_total": 9,
+    "safe_to_write_parameters": false,
+    "status": "runtime_collection_package_ready",
+    "target_reports_existing_total": 0,
+    "target_reports_missing_total": 9,
+    "warnings": [
+      "blocked_queue_jobs_remain:2"
+    ]
+  },
+  "plugin_semantic_validation_runtime_collector_package_summary": {
+    "blocked_queue_jobs_total": 2,
+    "blockers": [],
+    "collector_jobs_total": 9,
+    "creates_validation_reports": false,
+    "lua_collector_script_path": "automix/reaper_scripts/collect_plugin_semantic_validation_runtime.lua",
+    "operator_runbook_path": "automix/review/plugin_semantic_validation_runtime_collector_operator_runbook.md",
+    "queue_payload_path": "automix/reaper_scripts/plugin_semantic_validation_runtime_queue.json",
+    "ready_for_reaper_runtime_collection": true,
+    "ready_for_runtime_evidence_gate": false,
+    "safe_to_write_parameters": false,
+    "status": "runtime_collector_package_ready",
+    "warnings": [
+      "blocked_queue_jobs_remain:2"
+    ]
+  },
+  "plugin_semantic_validation_runtime_evidence_gate_summary": {
+    "accepted_jobs_total": 0,
+    "blocked_jobs_total": 9,
+    "blocked_queue_jobs_total": 2,
+    "blockers": [
+      "plugin_semantic_validation_runtime_manifest_missing",
+      "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_manifest_job_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_manifest_job_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_manifest_job_missing:semantic_validation_08_readelay_cockos",
+      "runtime_manifest_job_missing:semantic_validation_09_reaeq_cockos",
+      "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_validation_report_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_validation_report_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_validation_report_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_validation_report_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_validation_report_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_validation_report_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_validation_report_missing:semantic_validation_08_readelay_cockos",
+      "runtime_validation_report_missing:semantic_validation_09_reaeq_cockos"
+    ],
+    "next_blocked_job": {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+        "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    "queue_jobs_total": 9,
+    "ready_for_semantic_gate_rerun": false,
+    "runtime_evidence_ready": false,
+    "safe_to_write_parameters": false,
+    "status": "runtime_manifest_missing",
+    "warnings": [
+      "blocked_queue_jobs_remain:2"
+    ]
+  },
+  "plugin_semantic_validation_runtime_observation_gate_summary": {
+    "accepted_observations_total": 0,
+    "blocked_observations_total": 9,
+    "blocked_queue_jobs_total": 2,
+    "blockers": [
+      "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_observation_missing:semantic_validation_02_reaverbate_cockos",
+      "runtime_observation_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "runtime_observation_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "runtime_observation_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "runtime_observation_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "runtime_observation_missing:semantic_validation_07_reacomp_cockos",
+      "runtime_observation_missing:semantic_validation_08_readelay_cockos",
+      "runtime_observation_missing:semantic_validation_09_reaeq_cockos"
+    ],
+    "collector_jobs_total": 9,
+    "creates_validation_reports": false,
+    "next_blocked_observation": {
+      "actual_fx_name": "",
+      "add_inserted": false,
+      "blockers": [
+        "runtime_observation_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "creates_validation_reports": false,
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "job_status": "blocked",
+      "json_valid": false,
+      "observation_exists": false,
+      "observation_schema": "",
+      "observation_status": "",
+      "param_count": 0,
+      "parameters_observed_total": 0,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "raw_observation_output_path": "/Users/hantaeheuk/Documents/New project 3/automix/reaper_scripts/observations/semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_observation.json",
+      "raw_parameters_only": true,
+      "ready_for_manual_report_authoring": false,
+      "safe_to_write_parameters": false,
+      "warnings": []
+    },
+    "ready_for_manual_report_authoring": false,
+    "ready_for_runtime_evidence_gate": false,
+    "runtime_observations_ready": false,
+    "safe_to_write_parameters": false,
+    "status": "runtime_observations_missing",
+    "warnings": [
+      "blocked_queue_jobs_remain:2"
+    ]
+  },
+  "plugin_semantic_validation_runtime_observation_provenance_gate_summary": {
+    "blockers": [],
+    "counts": {
+      "collector_jobs_total": 9,
+      "observations_existing_total": 0,
+      "observations_missing_total": 9,
+      "observations_provenance_verified_total": 0,
+      "queue_jobs_total": 9
+    },
+    "creates_validation_reports": false,
+    "expected_observation_provenance_packet_ready": true,
+    "observed_runtime_provenance_ready": false,
+    "passed": true,
+    "ready_for_manual_report_authoring": false,
+    "safe_to_write_parameters": false,
+    "status": "runtime_observation_provenance_pending_observations",
+    "warnings": [
+      "runtime_observation_files_missing:9",
+      "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx:runtime_observation_file_missing",
+      "semantic_validation_02_reaverbate_cockos:runtime_observation_file_missing",
+      "semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx:runtime_observation_file_missing",
+      "semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx:runtime_observation_file_missing",
+      "semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx:runtime_observation_file_missing",
+      "semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx:runtime_observation_file_missing",
+      "semantic_validation_07_reacomp_cockos:runtime_observation_file_missing",
+      "semantic_validation_08_readelay_cockos:runtime_observation_file_missing",
+      "semantic_validation_09_reaeq_cockos:runtime_observation_file_missing"
+    ]
+  },
+  "plugin_semantic_validation_runtime_report_authoring_gate_summary": {
+    "accepted_candidates_total": 0,
+    "authoring_candidates_ready": false,
+    "blocked_candidates_total": 0,
+    "blockers": [
+      "runtime_report_authoring_package_not_ready:no_accepted_runtime_observations"
+    ],
+    "candidate_dir": "automix/review/plugin_semantic_validation_runtime_report_authoring_candidates",
+    "candidate_reports_are_validation_evidence": false,
+    "candidate_reports_total": 0,
+    "manifest_candidate_path": "automix/review/plugin_semantic_validation_runtime_manifest_candidate_from_authoring.json",
+    "promotion_checklist_path": "automix/review/plugin_semantic_validation_runtime_report_promotion_checklist.md",
+    "ready_for_operator_promotion": false,
+    "ready_for_runtime_evidence_gate": false,
+    "safe_to_write_parameters": false,
+    "status": "runtime_report_authoring_package_not_ready",
+    "templates_total": 0,
+    "warnings": [],
+    "writes_analysis_reports": false
+  },
+  "plugin_semantic_validation_runtime_report_authoring_package_summary": {
+    "accepted_observations_total": 0,
+    "blockers": [
+      "accepted_runtime_observations_missing"
+    ],
+    "checklist_path": "automix/review/plugin_semantic_validation_runtime_report_authoring_checklist.md",
+    "creates_validation_reports": false,
+    "ready_for_manual_report_authoring": false,
+    "ready_for_runtime_evidence_gate": false,
+    "runtime_report_authoring_package_ready": false,
+    "safe_to_write_parameters": false,
+    "status": "no_accepted_runtime_observations",
+    "template_dir": "automix/review/plugin_semantic_validation_runtime_report_authoring_templates",
+    "templates_total": 0,
+    "warnings": [],
+    "writes_analysis_reports": false
+  },
+  "plugin_validation_action_plan_summary": {
+    "blockers": [
+      "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx:collect_reaper_observed_semantic_validation",
+      "OTT (Xfer Records):install_or_disable_unavailable_plugin",
+      "ReaComp (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaDelay (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaEQ (Cockos):rerun_or_keep_plugin_read_only",
+      "ReaVerbate (Cockos):collect_reaper_observed_semantic_validation",
+      "TDR Nova (Tokyo Dawn Labs):install_or_disable_unavailable_plugin",
+      "Vocal Clarity Repair/vocal_air_guard.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_output_guard.jsfx:collect_reaper_observed_semantic_validation",
+      "Vocal Clarity Repair/vocal_presence_enhancer.jsfx:collect_reaper_observed_semantic_validation"
+    ],
+    "next_plugin_action": {
+      "action_id": "install_or_disable_unavailable_plugin",
+      "available": false,
+      "blockers": [
+        "OTT (Xfer Records):install_or_disable_unavailable_plugin"
+      ],
+      "candidate_paths": [],
+      "category": "third_party_or_unknown",
+      "disallowed_actions": [
+        "write parameters based on plugin availability alone",
+        "use fixed parameter indexes without observed semantic validation",
+        "treat fallback EQ/dynamics as proof that a developed rescue plugin loaded"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_ott_xfer_records*.json",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "OTT (Xfer Records)",
+      "priority": 10,
+      "recommended_next_action": "Install the plugin, map a validated substitute, or disable this plugin for automatic drafts.",
+      "required_evidence": [
+        "plugin availability evidence from plugin_validation_preflight",
+        "REAPER-observed semantic parameter validation report",
+        "status=passed, safe_for_automix=true, no_fake_success=true",
+        "at least one validated write_allowed semantic control with confidence>=0.85 and safe bounds"
+      ],
+      "safe_control_count": 0,
+      "semantic_validation_passed": false,
+      "severity": "blocker",
+      "source_blockers": [
+        "validation_report_missing:OTT (Xfer Records)"
+      ],
+      "source_warnings": [],
+      "title": "Plugin is unavailable on disk",
+      "warnings": []
+    },
+    "plugin_actions_total": 11,
+    "required_plugins_total": 11,
+    "safe_to_write_parameters": false,
+    "status": "plugin_validation_actions_open",
+    "warnings": [
+      "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx:availability_only_not_write_safety",
+      "ReaComp (Cockos):availability_only_not_write_safety",
+      "ReaComp (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaDelay (Cockos):availability_only_not_write_safety",
+      "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaEQ (Cockos):availability_only_not_write_safety",
+      "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked",
+      "ReaVerbate (Cockos):availability_only_not_write_safety",
+      "Vocal Clarity Repair/vocal_air_guard.jsfx:availability_only_not_write_safety",
+      "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx:availability_only_not_write_safety",
+      "Vocal Clarity Repair/vocal_output_guard.jsfx:availability_only_not_write_safety",
+      "Vocal Clarity Repair/vocal_presence_enhancer.jsfx:availability_only_not_write_safety",
+      "adapter_validation_reports_unavailable",
+      "availability_does_not_grant_write_safety"
+    ]
+  },
+  "plugin_validation_preflight_summary": {
+    "available_plugins_total": 9,
+    "blockers": [
+      "required_plugin_availability_missing:OTT (Xfer Records)",
+      "required_plugin_availability_missing:TDR Nova (Tokyo Dawn Labs)",
+      "semantic_parameter_validation_required"
+    ],
+    "missing_plugins_total": 2,
+    "safe_to_write_parameters": false,
+    "status": "availability_or_validation_incomplete",
+    "warnings": [
+      "adapter_validation_reports_unavailable",
+      "availability_does_not_grant_write_safety"
+    ]
+  },
+  "processing_policy_audit_summary": {
+    "blockers": [],
+    "passed": true,
+    "plans_checked": 7
+  },
+  "project_name": "project",
+  "project_state_summary": {
+    "master_unchanged": true,
+    "original_tracks_protected": true
+  },
+  "readiness_status": "review_required",
+  "ready_for_delivery": false,
+  "requirements_traceability_audit_summary": {
+    "blockers": [],
+    "incomplete_requirement_ids": [],
+    "passed": true,
+    "requirements_satisfied": 15,
+    "requirements_total": 15
+  },
+  "risk_remediation_plan_summary": {
+    "actions_total": 6,
+    "blockers": [],
+    "dry_run_only": true,
+    "open_risk_total": 429,
+    "status": "remediation_plan_ready"
+  },
+  "risk_root_cause_rollup_summary": {
+    "blockers": [
+      "plugin_validation_not_ready",
+      "accepted_source_or_stems_missing",
+      "artifact_evidence_missing",
+      "primary_render_missing",
+      "final_qc_missing_or_failed",
+      "ab_preview_missing_or_not_matched",
+      "human_approval_missing",
+      "deliverable_package_missing",
+      "delivery_consistency_not_ready",
+      "other_open_risks"
+    ],
+    "next_root_cause": {
+      "acceptance_criteria": [
+        "plugin_validation_preflight has no blockers",
+        "plugin_semantic_validation_gate reports ready validation evidence",
+        "unsafe or unavailable plugins are disabled or kept manual-review only"
+      ],
+      "categories": [
+        "delivery_readiness",
+        "intent",
+        "plugin",
+        "qc"
+      ],
+      "cause_id": "plugin_validation_not_ready",
+      "phase": "plugin_safety",
+      "phase_order": 10,
+      "recommended_next_action": "Run plugin preflight and semantic validation, then disable or remap unsafe plugins before any draft processing.",
+      "representative_codes": [
+        "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx:collect_reaper_observed_semantic_validation",
+        "OTT (Xfer Records):install_or_disable_unavailable_plugin",
+        "ReaComp (Cockos):rerun_or_keep_plugin_read_only",
+        "ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+        "ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+        "ReaComp (Cockos):validation_report_not_safe_for_automix",
+        "ReaDelay (Cockos):rerun_or_keep_plugin_read_only",
+        "ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+        "ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+        "ReaDelay (Cockos):validation_report_not_safe_for_automix",
+        "ReaEQ (Cockos):rerun_or_keep_plugin_read_only",
+        "ReaEQ (Cockos):validation_report_has_no_write_safe_controls"
+      ],
+      "severity": "blocker",
+      "source_risk_count": 146,
+      "source_risk_ids": [
+        "risk_271_eval_reports_plugin_validation_action_plan_json_blocker_codex_vocal_vocal_ai_artifact_split_tame",
+        "risk_272_eval_reports_plugin_validation_action_plan_json_blocker_ott__xfer_records__install_or_disable_un",
+        "risk_273_eval_reports_plugin_validation_action_plan_json_blocker_reacomp__cockos__rerun_or_keep_plugin_re",
+        "risk_218_eval_reports_plugin_semantic_validation_gate_json_blocker_reacomp__cockos__validation_report_has",
+        "risk_219_eval_reports_plugin_semantic_validation_gate_json_blocker_reacomp__cockos__validation_report_not",
+        "risk_220_eval_reports_plugin_semantic_validation_gate_json_blocker_reacomp__cockos__validation_report_not",
+        "risk_274_eval_reports_plugin_validation_action_plan_json_blocker_readelay__cockos__rerun_or_keep_plugin_r",
+        "risk_221_eval_reports_plugin_semantic_validation_gate_json_blocker_readelay__cockos__validation_report_ha",
+        "risk_222_eval_reports_plugin_semantic_validation_gate_json_blocker_readelay__cockos__validation_report_no",
+        "risk_223_eval_reports_plugin_semantic_validation_gate_json_blocker_readelay__cockos__validation_report_no",
+        "risk_275_eval_reports_plugin_validation_action_plan_json_blocker_reaeq__cockos__rerun_or_keep_plugin_read",
+        "risk_224_eval_reports_plugin_semantic_validation_gate_json_blocker_reaeq__cockos__validation_report_has_n",
+        "risk_225_eval_reports_plugin_semantic_validation_gate_json_blocker_reaeq__cockos__validation_report_not_p",
+        "risk_226_eval_reports_plugin_semantic_validation_gate_json_blocker_reaeq__cockos__validation_report_not_s",
+        "risk_276_eval_reports_plugin_validation_action_plan_json_blocker_reaverbate__cockos__collect_reaper_obser",
+        "risk_277_eval_reports_plugin_validation_action_plan_json_blocker_tdr_nova__tokyo_dawn_labs__install_or_di",
+        "risk_278_eval_reports_plugin_validation_action_plan_json_blocker_vocal_clarity_repair_vocal_air_guard_jsf",
+        "risk_279_eval_reports_plugin_validation_action_plan_json_blocker_vocal_clarity_repair_vocal_demud_dynamic",
+        "risk_280_eval_reports_plugin_validation_action_plan_json_blocker_vocal_clarity_repair_vocal_output_guard",
+        "risk_281_eval_reports_plugin_validation_action_plan_json_blocker_vocal_clarity_repair_vocal_presence_enha",
+        "risk_270_eval_reports_plugin_semantic_validation_runtime_report_authoring_package_json_blocker_accepted_r",
+        "risk_216_eval_reports_plugin_semantic_validation_collection_plan_json_blocker_availability_decision_missi",
+        "risk_217_eval_reports_plugin_semantic_validation_collection_plan_json_blocker_availability_decision_missi",
+        "risk_239_eval_reports_plugin_semantic_validation_queue_json_blocker_collection_job_blocked_ott__xfer_reco",
+        "risk_240_eval_reports_plugin_semantic_validation_queue_json_blocker_collection_job_blocked_tdr_nova__toky",
+        "risk_227_eval_reports_plugin_semantic_validation_gate_json_blocker_no_passed_semantic_validation_report_r",
+        "risk_228_eval_reports_plugin_semantic_validation_gate_json_blocker_no_passed_semantic_validation_report_r",
+        "risk_229_eval_reports_plugin_semantic_validation_gate_json_blocker_no_passed_semantic_validation_report_r",
+        "risk_056_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reacomp__cockos",
+        "risk_057_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reacomp__cockos",
+        "risk_058_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reacomp__cockos",
+        "risk_059_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_readelay__cockos",
+        "risk_060_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_readelay__cockos",
+        "risk_061_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_readelay__cockos",
+        "risk_062_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reaeq__cockos__va",
+        "risk_063_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reaeq__cockos__va",
+        "risk_064_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_reaeq__cockos__va",
+        "risk_065_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_no_passed_semanti",
+        "risk_066_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_no_passed_semanti",
+        "risk_067_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_no_passed_semanti",
+        "risk_068_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_semantic_validati",
+        "risk_069_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_070_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_071_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_072_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_073_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_074_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_075_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_076_eval_reports_approval_export_readiness_json_blocker_plugin_semantic_validation_validation_report",
+        "risk_241_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_plugin_semantic_valid",
+        "risk_077_eval_reports_approval_export_readiness_json_blocker_plugin_validation_preflight_required_plugin",
+        "risk_078_eval_reports_approval_export_readiness_json_blocker_plugin_validation_preflight_required_plugin",
+        "risk_079_eval_reports_approval_export_readiness_json_blocker_plugin_validation_preflight_semantic_paramet",
+        "risk_242_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_243_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_244_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_245_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_246_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_247_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_248_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_249_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_250_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_manifest_job",
+        "risk_260_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_261_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_262_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_263_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_264_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_265_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_266_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_267_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_268_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_blocker_runtime_observatio",
+        "risk_269_eval_reports_plugin_semantic_validation_runtime_report_authoring_gate_json_blocker_runtime_repor",
+        "risk_251_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_252_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_253_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_254_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_255_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_256_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_257_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_258_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_259_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_blocker_runtime_validation_re",
+        "risk_282_eval_reports_real_project_plugin_readiness_json_blocker_safe_draft_plugin_ready_false",
+        "risk_230_eval_reports_plugin_semantic_validation_gate_json_blocker_semantic_validation_passed_reports_mis",
+        "risk_136_eval_reports_intent_classification_json_blocker_validated_plugin_mapping_required",
+        "risk_231_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_codex_vocal",
+        "risk_232_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_ott__xfer_re",
+        "risk_233_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_reaverbate",
+        "risk_234_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_tdr_nova__to",
+        "risk_235_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_vocal_clarit",
+        "risk_236_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_vocal_clarit",
+        "risk_237_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_vocal_clarit",
+        "risk_238_eval_reports_plugin_semantic_validation_gate_json_blocker_validation_report_missing_vocal_clarit",
+        "risk_348_eval_reports_plugin_validation_action_plan_json_warning_codex_vocal_vocal_ai_artifact_split_tame",
+        "risk_349_eval_reports_plugin_validation_action_plan_json_warning_reacomp__cockos__availability_only_not_w",
+        "risk_325_eval_reports_plugin_semantic_validation_collection_plan_json_warning_reacomp__cockos__some_seman",
+        "risk_328_eval_reports_plugin_semantic_validation_gate_json_warning_reacomp__cockos__some_semantic_control",
+        "risk_331_eval_reports_plugin_semantic_validation_queue_json_warning_reacomp__cockos__some_semantic_contro",
+        "risk_350_eval_reports_plugin_validation_action_plan_json_warning_reacomp__cockos__some_semantic_controls",
+        "risk_351_eval_reports_plugin_validation_action_plan_json_warning_readelay__cockos__availability_only_not",
+        "risk_326_eval_reports_plugin_semantic_validation_collection_plan_json_warning_readelay__cockos__some_sema",
+        "risk_329_eval_reports_plugin_semantic_validation_gate_json_warning_readelay__cockos__some_semantic_contro",
+        "risk_332_eval_reports_plugin_semantic_validation_queue_json_warning_readelay__cockos__some_semantic_contr",
+        "risk_352_eval_reports_plugin_validation_action_plan_json_warning_readelay__cockos__some_semantic_controls",
+        "risk_353_eval_reports_plugin_validation_action_plan_json_warning_reaeq__cockos__availability_only_not_wri",
+        "risk_327_eval_reports_plugin_semantic_validation_collection_plan_json_warning_reaeq__cockos__some_semanti",
+        "risk_330_eval_reports_plugin_semantic_validation_gate_json_warning_reaeq__cockos__some_semantic_controls",
+        "risk_333_eval_reports_plugin_semantic_validation_queue_json_warning_reaeq__cockos__some_semantic_controls",
+        "risk_354_eval_reports_plugin_validation_action_plan_json_warning_reaeq__cockos__some_semantic_controls_re",
+        "risk_355_eval_reports_plugin_validation_action_plan_json_warning_reaverbate__cockos__availability_only_no",
+        "risk_356_eval_reports_plugin_validation_action_plan_json_warning_vocal_clarity_repair_vocal_air_guard_jsf",
+        "risk_357_eval_reports_plugin_validation_action_plan_json_warning_vocal_clarity_repair_vocal_demud_dynamic",
+        "risk_358_eval_reports_plugin_validation_action_plan_json_warning_vocal_clarity_repair_vocal_output_guard",
+        "risk_359_eval_reports_plugin_validation_action_plan_json_warning_vocal_clarity_repair_vocal_presence_enha",
+        "risk_360_eval_reports_plugin_validation_action_plan_json_warning_adapter_validation_reports_unavailable",
+        "risk_361_eval_reports_plugin_validation_action_plan_json_warning_availability_does_not_grant_write_safety",
+        "risk_334_eval_reports_plugin_semantic_validation_runtime_collection_package_json_warning_blocked_queue_jo",
+        "risk_335_eval_reports_plugin_semantic_validation_runtime_collector_package_json_warning_blocked_queue_job",
+        "risk_336_eval_reports_plugin_semantic_validation_runtime_evidence_gate_json_warning_blocked_queue_jobs_re",
+        "risk_337_eval_reports_plugin_semantic_validation_runtime_observation_gate_json_warning_blocked_queue_jobs",
+        "risk_407_eval_reports_global_qc_summary_json_warning_intent_blocker_validated_plugin_mapping_required",
+        "risk_362_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_codex_v",
+        "risk_363_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_ott__xf",
+        "risk_364_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_reacomp",
+        "risk_365_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_readela",
+        "risk_366_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_reaeq",
+        "risk_367_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_reaverb",
+        "risk_368_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_tdr_nov",
+        "risk_369_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_vocal_c",
+        "risk_370_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_vocal_c",
+        "risk_371_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_vocal_c",
+        "risk_372_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_vocal_c",
+        "risk_373_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_validat",
+        "risk_374_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_validat",
+        "risk_375_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_validat",
+        "risk_376_eval_reports_real_project_plugin_readiness_json_warning_missing_or_unsafe_plugin_mapping_validat",
+        "risk_412_eval_reports_global_qc_summary_json_warning_no_validated_plugin_adapters_available",
+        "risk_338_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_runtime",
+        "risk_339_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_340_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_341_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_342_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_343_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_344_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_345_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_346_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti",
+        "risk_347_eval_reports_plugin_semantic_validation_runtime_observation_provenance_gate_json_warning_semanti"
+      ],
+      "title": "Plugin availability and semantic write validation are not ready",
+      "unique_code_count": 134
+    },
+    "open_risk_total": 429,
+    "passed": false,
+    "root_cause_total": 12
+  },
+  "rollback_evidence_gate_summary": {
+    "blockers": [],
+    "original_master_protected": true,
+    "original_tracks_protected": true,
+    "ready_for_delivery_readiness": true,
+    "rollback_entries_total": 3,
+    "safe_entries_total": 3,
+    "warnings": [
+      "no_applied_stages_declared",
+      "unknown:rollback_entry:rollback_entry_points_to_global_registry",
+      "unknown:rollback_entry:rollback_stage_unknown"
+    ]
+  },
+  "rollback_summary": {
+    "failures": [],
+    "validation_passed": true
+  },
+  "root_docs": [
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/README.md",
+      "relative_path": "README.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/QUICKSTART.md",
+      "relative_path": "QUICKSTART.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/PIPELINE_ARCHITECTURE.md",
+      "relative_path": "PIPELINE_ARCHITECTURE.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/AUDIO_ENGINEERING_NOTES.md",
+      "relative_path": "AUDIO_ENGINEERING_NOTES.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/SUNO_AI_ARTIFACT_STRATEGY.md",
+      "relative_path": "SUNO_AI_ARTIFACT_STRATEGY.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/VOCAL_FIRST_MIXING_STRATEGY.md",
+      "relative_path": "VOCAL_FIRST_MIXING_STRATEGY.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/MASTERING_QC_STANDARD.md",
+      "relative_path": "MASTERING_QC_STANDARD.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/USER_FEEDBACK_REVISION_LOOP.md",
+      "relative_path": "USER_FEEDBACK_REVISION_LOOP.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/TESTING_AND_HARNESS.md",
+      "relative_path": "TESTING_AND_HARNESS.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/PLUGIN_FALLBACKS.md",
+      "relative_path": "PLUGIN_FALLBACKS.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/TROUBLESHOOTING.md",
+      "relative_path": "TROUBLESHOOTING.md"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/CHANGELOG.md",
+      "relative_path": "CHANGELOG.md"
+    }
+  ],
+  "schema": "automix-professional-readiness-audit-v1",
+  "source_acceptance_gate_summary": {
+    "accepted_export_source_ready": false,
+    "accepted_stem_sources_total": 0,
+    "blockers": [
+      "source_acceptance_candidates_missing"
+    ],
+    "candidate_sources_total": 0,
+    "warnings": [
+      "accepted_final_export_source_not_recorded"
+    ]
+  },
+  "source_handoff_readiness_summary": {
+    "accepted_export_source_present": false,
+    "automatic_processing_ready": false,
+    "blockers": [
+      "accepted_export_source_missing",
+      "current_source_file_missing:V37 RETURN ReaDelay filtered throw",
+      "current_source_file_missing:V37 RETURN ReaVerbate dark send",
+      "full_mix_unsafe_tracks:2",
+      "stem_requests_open:2"
+    ],
+    "manual_review_tracks_total": 4,
+    "source_files_present_total": 6,
+    "source_files_total": 8,
+    "stem_requests_total": 2,
+    "warnings": [
+      "current_source_file_presence_is_not_acceptance",
+      "manual_review_required_tracks:4"
+    ]
+  },
+  "warnings": [
+    "final_delivery_not_requested_readiness_is_documentation_and_gate_inventory_only"
+  ],
+  "workflow_scripts": [
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_automix_orchestrator.py",
+      "relative_path": "scripts/run_automix_orchestrator.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_prompt41_smoke_validation.py",
+      "relative_path": "scripts/run_prompt41_smoke_validation.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_fixture_coverage_audit.py",
+      "relative_path": "scripts/run_fixture_coverage_audit.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_requirements_traceability_audit.py",
+      "relative_path": "scripts/run_requirements_traceability_audit.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_open_risk_register.py",
+      "relative_path": "scripts/run_open_risk_register.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_risk_root_cause_rollup.py",
+      "relative_path": "scripts/run_risk_root_cause_rollup.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_risk_remediation_plan.py",
+      "relative_path": "scripts/run_risk_remediation_plan.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_path_hygiene_audit.py",
+      "relative_path": "scripts/run_path_hygiene_audit.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_ab_preview_evidence_gate.py",
+      "relative_path": "scripts/run_ab_preview_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_render_evidence_gate.py",
+      "relative_path": "scripts/run_final_render_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_qc_evidence_gate.py",
+      "relative_path": "scripts/run_final_qc_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_approval_evidence_gate.py",
+      "relative_path": "scripts/run_final_approval_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_deliverable_package_evidence_gate.py",
+      "relative_path": "scripts/run_deliverable_package_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_delivery_consistency_gate.py",
+      "relative_path": "scripts/run_final_delivery_consistency_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_rollback_evidence_gate.py",
+      "relative_path": "scripts/run_rollback_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_source_acceptance_gate.py",
+      "relative_path": "scripts/run_source_acceptance_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_artifact_evidence_gate.py",
+      "relative_path": "scripts/run_artifact_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_gate.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_collection_plan.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_collection_plan.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_queue.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_queue.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_collection_package.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_collection_package.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_collector_package.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_collector_package.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_observation_gate.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_observation_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_observation_provenance_gate.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_observation_provenance_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_report_authoring_package.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_report_authoring_package.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_report_authoring_gate.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_report_authoring_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_semantic_validation_runtime_evidence_gate.py",
+      "relative_path": "scripts/run_plugin_semantic_validation_runtime_evidence_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_validation_preflight.py",
+      "relative_path": "scripts/run_plugin_validation_preflight.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_validation_action_plan.py",
+      "relative_path": "scripts/run_plugin_validation_action_plan.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_resolution_plan.py",
+      "relative_path": "scripts/run_plugin_availability_resolution_plan.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_operator_decision_package.py",
+      "relative_path": "scripts/run_plugin_availability_operator_decision_package.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_plugin_availability_decision_gate.py",
+      "relative_path": "scripts/run_plugin_availability_decision_gate.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_source_handoff_readiness.py",
+      "relative_path": "scripts/run_source_handoff_readiness.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_artifact_signal_audit.py",
+      "relative_path": "scripts/run_artifact_signal_audit.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_approval_export_readiness.py",
+      "relative_path": "scripts/run_approval_export_readiness.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_feedback_revision_loop.py",
+      "relative_path": "scripts/run_feedback_revision_loop.py"
+    },
+    {
+      "exists": true,
+      "path": "/Users/hantaeheuk/Documents/New project 3/scripts/run_final_export_packager.py",
+      "relative_path": "scripts/run_final_export_packager.py"
+    }
+  ],
+  "workspace_root": "/Users/hantaeheuk/Documents/New project 3"
+}

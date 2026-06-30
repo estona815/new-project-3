@@ -5,10 +5,16 @@ mastering harness. It should be uploaded as code, configs, tests, JSFX, Lua,
 and documentation. It should not include raw stems, references, renders,
 delivery ZIPs, private documents, or generated REAPER session files.
 
+When sharing the GitHub link with another Codex session, give it
+`prompts/new_computer_codex_bootstrap.md` first. The repository carries the
+workflow, safety gates, plugin inventory logic, and conservative processing
+policies; it does not carry local REAPER plugin validation evidence or listening
+approval from this machine.
+
 ## Safe Upload Contract
 
 - Upload source code: `automix/`, `tools/`, `scripts/`, `tests/`, `configs/`,
-  `reaper/scripts/`, and the bundled JSFX source that is actually present
+  the REAPER Lua scripts under `automix/`, and the bundled JSFX source that is actually present
   (`VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/` and, when available, `reaper/jsfx/`).
 - Upload operating docs: `README.md`, `QUICKSTART.md`, `AGENTS.md`,
   `MIXMASTER_SPEC.md`, `PLUGIN_POLICY.md`, `QC_TARGETS.md`,

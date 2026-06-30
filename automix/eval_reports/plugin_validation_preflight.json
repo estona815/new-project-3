@@ -1,0 +1,273 @@
+{
+  "availability": [
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Codex Vocal/vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "category": "jsfx",
+      "name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": false,
+      "candidate_paths": [],
+      "category": "third_party_or_unknown",
+      "name": "OTT (Xfer Records)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Applications/REAPER.app/Contents/Plugins/FX/reacomp.vst.dylib",
+        "/Applications/REAPER.app/Contents/Plugins/FX/reacomp.vst.dylib.rpl"
+      ],
+      "category": "stock",
+      "name": "ReaComp (Cockos)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Applications/REAPER.app/Contents/Plugins/FX/readelay.vst.dylib",
+        "/Applications/REAPER.app/Contents/Plugins/FX/readelay.vst.dylib.rpl"
+      ],
+      "category": "stock",
+      "name": "ReaDelay (Cockos)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Applications/REAPER.app/Contents/Plugins/FX/reaeq.vst.dylib",
+        "/Applications/REAPER.app/Contents/Plugins/FX/reaeq.vst.dylib.rpl"
+      ],
+      "category": "stock",
+      "name": "ReaEQ (Cockos)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Applications/REAPER.app/Contents/Plugins/FX/reaverbate.vst.dylib",
+        "/Applications/REAPER.app/Contents/Plugins/FX/reaverbate.vst.dylib.rpl"
+      ],
+      "category": "stock",
+      "name": "ReaVerbate (Cockos)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": false,
+      "candidate_paths": [],
+      "category": "third_party_or_unknown",
+      "name": "TDR Nova (Tokyo Dawn Labs)",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Vocal Clarity Repair/vocal_air_guard.jsfx"
+      ],
+      "category": "jsfx",
+      "name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx"
+      ],
+      "category": "jsfx",
+      "name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Vocal Clarity Repair/vocal_output_guard.jsfx"
+      ],
+      "category": "jsfx",
+      "name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    },
+    {
+      "availability_only": true,
+      "available": true,
+      "candidate_paths": [
+        "/Users/hantaeheuk/Library/Application Support/REAPER/Effects/Vocal Clarity Repair/vocal_presence_enhancer.jsfx"
+      ],
+      "category": "jsfx",
+      "name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "notes": "Presence on disk does not validate semantic parameter writes.",
+      "safe_for_parameter_write": false
+    }
+  ],
+  "blockers": [
+    "required_plugin_availability_missing:OTT (Xfer Records)",
+    "required_plugin_availability_missing:TDR Nova (Tokyo Dawn Labs)",
+    "semantic_parameter_validation_required"
+  ],
+  "created_at": "2026-06-05T11:07:21Z",
+  "limits": [
+    "This preflight reads local plugin files and reports only; it does not open REAPER, insert FX, write parameters, render, or save a project.",
+    "A plugin or JSFX file being present is not proof of semantic parameter write safety.",
+    "safe_to_write_parameters becomes true only when readiness evidence and validation reports prove safe semantic controls."
+  ],
+  "output_dir": "automix",
+  "paths": {
+    "plugin_readiness": {
+      "exists": true,
+      "is_dir": false,
+      "is_file": true,
+      "path": "automix/eval_reports/real_project_plugin_readiness.json"
+    },
+    "reaper_app": {
+      "exists": true,
+      "is_dir": true,
+      "is_file": false,
+      "path": "/Applications/REAPER.app"
+    },
+    "reaper_resource_dir": {
+      "exists": true,
+      "is_dir": true,
+      "is_file": false,
+      "path": "/Users/hantaeheuk/Library/Application Support/REAPER"
+    },
+    "reaper_stock_fx_dir": {
+      "exists": true,
+      "is_dir": true,
+      "is_file": false,
+      "path": "/Applications/REAPER.app/Contents/Plugins/FX"
+    },
+    "user_effects_dir": {
+      "exists": true,
+      "is_dir": true,
+      "is_file": false,
+      "path": "/Users/hantaeheuk/Library/Application Support/REAPER/Effects"
+    },
+    "validation_reports_dir": {
+      "exists": true,
+      "is_dir": true,
+      "is_file": false,
+      "path": "automix/analysis_reports"
+    }
+  },
+  "project_name": "project",
+  "required_plugins": [
+    "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+    "OTT (Xfer Records)",
+    "ReaComp (Cockos)",
+    "ReaDelay (Cockos)",
+    "ReaEQ (Cockos)",
+    "ReaVerbate (Cockos)",
+    "TDR Nova (Tokyo Dawn Labs)",
+    "Vocal Clarity Repair/vocal_air_guard.jsfx",
+    "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+    "Vocal Clarity Repair/vocal_output_guard.jsfx",
+    "Vocal Clarity Repair/vocal_presence_enhancer.jsfx"
+  ],
+  "schema": "automix-plugin-validation-preflight-v1",
+  "status": "availability_or_validation_incomplete",
+  "summary": {
+    "available_plugins_total": 9,
+    "missing_plugins_total": 2,
+    "readiness_safe_draft_plugin_ready": false,
+    "required_plugins_total": 11,
+    "safe_to_write_parameters": false,
+    "safe_validation_reports_total": 0,
+    "validation_reports_total": 6,
+    "validation_unavailable_reports_total": 6
+  },
+  "validation_reports": [
+    {
+      "adapter_id": "js_ms_utility_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_js_ms_utility_adapter.json",
+      "plugin_name": "JS: M/S",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    },
+    {
+      "adapter_id": "js_utility_gain_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_js_utility_gain_adapter.json",
+      "plugin_name": "JS: Utility",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    },
+    {
+      "adapter_id": "reacomp_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reacomp_adapter.json",
+      "plugin_name": "ReaComp",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    },
+    {
+      "adapter_id": "readelay_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_readelay_adapter.json",
+      "plugin_name": "ReaDelay",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    },
+    {
+      "adapter_id": "reaeq_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reaeq_adapter.json",
+      "plugin_name": "ReaEQ",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    },
+    {
+      "adapter_id": "reaxcomp_adapter",
+      "json_valid": true,
+      "path": "automix/analysis_reports/plugin_parameter_validation_reaxcomp_adapter.json",
+      "plugin_name": "ReaXcomp",
+      "reason_codes": [
+        "PLUGIN_NOT_AVAILABLE_FOR_VALIDATION"
+      ],
+      "safe_for_automix": false,
+      "status": "validation_unavailable"
+    }
+  ],
+  "warnings": [
+    "adapter_validation_reports_unavailable",
+    "availability_does_not_grant_write_safety"
+  ]
+}

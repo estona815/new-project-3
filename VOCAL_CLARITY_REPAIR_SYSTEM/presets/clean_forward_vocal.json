@@ -1,0 +1,10 @@
+{
+  "hpf_hz": 90,
+  "demud_hz": 250,
+  "demud_db": -3,
+  "box_hz": 620,
+  "presence_hz": 3200,
+  "presence_db": 1.8,
+  "air_db": 1.0,
+  "saturation_mix": 0.08
+}

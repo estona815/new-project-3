@@ -1,0 +1,21 @@
+{
+  "mode": "scan_only",
+  "project_path": "",
+  "output_dir": "automix",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "references": [],
+  "allow_pitch_correction": true,
+  "allow_full_mix_pitch_experiment": false,
+  "allow_recovery_drafts": true,
+  "allow_placement_drafts": true,
+  "allow_premaster_draft": true,
+  "allow_reference_match_draft": false,
+  "allow_final_export": false,
+  "require_human_approval_for_final": true,
+  "require_ab_eval_for_applied_stages": true,
+  "prefer_stock_and_jsfx": true,
+  "allow_commercial_plugins_if_validated": true,
+  "max_iterations_per_stage": 3,
+  "stop_on_safety_failure": true,
+  "write_reports_even_when_skipped": true
+}

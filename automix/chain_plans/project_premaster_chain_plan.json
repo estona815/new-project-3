@@ -1,0 +1,72 @@
+{
+  "schema": "automix-premaster-chain-plan-v1",
+  "project_name": "project",
+  "source_mix_path": "",
+  "input_stage": "missing_source_mix",
+  "premaster_stage": "post_mix_safety_layer",
+  "premaster_action": "mix_revision_required",
+  "selected_profile": "skip_premaster",
+  "loudness_profile": {
+    "integrated_lufs": 0.0,
+    "short_term_lufs": 0.0,
+    "momentary_lufs_peak": 0.0,
+    "true_peak_dbTP": 0.0,
+    "sample_peak_dbFS": 0.0,
+    "lra": 0.0,
+    "crest_factor": 0.0,
+    "dynamic_range_proxy": 0.0,
+    "peak_density_score": 0.0,
+    "limiter_pressure_risk": 0.0
+  },
+  "ai_artifact_risk_profile": {
+    "metallic_harshness_risk": 0.0,
+    "high_fizz_risk": 0.0,
+    "codec_birdies_risk": 0.0,
+    "sibilance_splatter_risk": 0.0,
+    "phasey_width_risk": 0.0,
+    "vocal_thinness_risk": 0.175,
+    "reverb_tail_pump_risk": 0.0
+  },
+  "vocal_preservation_profile": {
+    "vocal_forwardness_score": 0.0,
+    "vocal_clarity_score": 0.0,
+    "vocal_harshness_score": 0.0,
+    "vocal_sibilance_score": 0.0,
+    "vocal_body_score": 0.0,
+    "vocal_to_beat_balance": 0.0,
+    "vocal_masking_risk": 0.45
+  },
+  "translation_profile": {
+    "small_speaker_risk": 0.45,
+    "earbud_harshness_risk": 0.0,
+    "club_low_end_risk": 0.88,
+    "phone_speaker_vocal_loss_risk": 0.6925
+  },
+  "plugin_chain": [],
+  "semantic_settings": {
+    "apply": false
+  },
+  "semantic_controls_written": {},
+  "semantic_controls_skipped": {},
+  "rollback_required": true,
+  "ab_eval_required": false,
+  "draft_only": true,
+  "apply_to": "premaster_draft_bus_only",
+  "original_master_must_remain_untouched": true,
+  "modifies_original_master": false,
+  "contains_pitch_correction": false,
+  "contains_master_limiter_on_original": false,
+  "contains_master_widening": false,
+  "no_fixed_parameter_indexes": true,
+  "requires_parameter_discovery": false,
+  "safe_to_apply": false,
+  "output_dir": "automix",
+  "reason_codes": [
+    "LOW_END_TRANSLATION_MANUAL_CHECK",
+    "WEAK_VOCAL_FORWARDNESS_FIX_MIX_NOT_MASTER"
+  ],
+  "warnings": [
+    "source mix render missing; analysis is report-only",
+    "vocal forwardness is weak; prefer mix placement revision over master boost"
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "baseline_status": "no_feedback_recorded",
+  "blocked_auto_actions": [
+    {
+      "blocked_action": "automatic_processing_without_classification",
+      "feedback_category": "general_mix_feedback",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    },
+    {
+      "blocked_action": "female_layer_as_default_lead",
+      "feedback_category": "female_support_layer",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    },
+    {
+      "blocked_action": "random_intro_chops",
+      "feedback_category": "female_support_layer",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    },
+    {
+      "blocked_action": "automatic_processing_without_classification",
+      "feedback_category": "general_mix_feedback",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    },
+    {
+      "blocked_action": "female_layer_as_default_lead",
+      "feedback_category": "female_support_layer",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    },
+    {
+      "blocked_action": "random_intro_chops",
+      "feedback_category": "female_support_layer",
+      "reason": "unsafe_or_unverified_response_to_user_feedback"
+    }
+  ],
+  "created_at": "2026-06-06T15:31:02Z",
+  "dry_run_only": true,
+  "latest_entry_id": "revision_jo_mix_master_v09_female_down_10db_male_forward",
+  "latest_pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+  "no_feedback_fabricated": true,
+  "planned_actions": [
+    {
+      "action_id": "manual_triage_required",
+      "diagnostic_checks": [
+        "operator_clarification",
+        "current_qc_reports",
+        "matched_ab_review"
+      ],
+      "disallowed_actions": [
+        "automatic_processing_without_classification"
+      ],
+      "dry_run_only": true,
+      "feedback_category": "general_mix_feedback",
+      "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+      "priority": "elevated",
+      "repeat_count_before_this_pass": 19,
+      "requires_human_review": true,
+      "safe_processing_bias": "review_only",
+      "stage": "diagnostic_review",
+      "status": "planned",
+      "target": "project"
+    },
+    {
+      "action_id": "support_layer_lead_intrusion_check",
+      "diagnostic_checks": [
+        "lead_range_intrusion",
+        "timing_overlap",
+        "pitch_overlap",
+        "adlib_forwardness"
+      ],
+      "disallowed_actions": [
+        "female_layer_as_default_lead",
+        "random_intro_chops"
+      ],
+      "dry_run_only": true,
+      "feedback_category": "female_support_layer",
+      "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+      "priority": "elevated",
+      "repeat_count_before_this_pass": 3,
+      "requires_human_review": true,
+      "safe_processing_bias": "male_lead_anchor",
+      "stage": "vocal_placement",
+      "status": "planned",
+      "target": "female_double_adlib_harmony"
+    },
+    {
+      "action_id": "manual_triage_required",
+      "diagnostic_checks": [
+        "operator_clarification",
+        "current_qc_reports",
+        "matched_ab_review"
+      ],
+      "disallowed_actions": [
+        "automatic_processing_without_classification"
+      ],
+      "dry_run_only": true,
+      "feedback_category": "general_mix_feedback",
+      "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+      "priority": "elevated",
+      "repeat_count_before_this_pass": 19,
+      "requires_human_review": true,
+      "safe_processing_bias": "review_only",
+      "stage": "diagnostic_review",
+      "status": "planned",
+      "target": "project"
+    },
+    {
+      "action_id": "support_layer_lead_intrusion_check",
+      "diagnostic_checks": [
+        "lead_range_intrusion",
+        "timing_overlap",
+        "pitch_overlap",
+        "adlib_forwardness"
+      ],
+      "disallowed_actions": [
+        "female_layer_as_default_lead",
+        "random_intro_chops"
+      ],
+      "dry_run_only": true,
+      "feedback_category": "female_support_layer",
+      "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+      "priority": "elevated",
+      "repeat_count_before_this_pass": 3,
+      "requires_human_review": true,
+      "safe_processing_bias": "male_lead_anchor",
+      "stage": "vocal_placement",
+      "status": "planned",
+      "target": "female_double_adlib_harmony"
+    }
+  ],
+  "project_name": "jo_mix_master",
+  "requires_human_review": true,
+  "resolved_feedback_ids": [],
+  "safety_flags": [
+    "dry_run_required",
+    "human_review_required"
+  ],
+  "schema": "automix-current-user-feedback-action-plan-v1",
+  "unresolved_feedback_ids": [
+    "feedback_0202e413ead4",
+    "feedback_0e43d09c2a5f",
+    "feedback_1df5b332116d",
+    "feedback_218a9ab02db4",
+    "feedback_2317dcd1d09b",
+    "feedback_2518fcf1428b",
+    "feedback_289acd0bb198",
+    "feedback_2a7f20cbc2ef",
+    "feedback_2fb22638eb4d",
+    "feedback_301e5a993db6",
+    "feedback_359a643e295e",
+    "feedback_432513da0597",
+    "feedback_64022e9fa2e2",
+    "feedback_707620a6dce0",
+    "feedback_72ac16203ac3",
+    "feedback_77eb66e9d8b7",
+    "feedback_834d1f3519cb",
+    "feedback_84cc3e0f7938",
+    "feedback_8feacd269bef",
+    "feedback_930ae49a9c7d",
+    "feedback_b1a7ecb9a6fe",
+    "feedback_b1d25c8a61b5",
+    "feedback_daccee1f9649",
+    "feedback_e06589ffc83e",
+    "feedback_ec65e24c4535",
+    "feedback_f83091053afa"
+  ]
+}

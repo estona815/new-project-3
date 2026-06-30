@@ -1,0 +1,15 @@
+{
+  "conflicts": [],
+  "created_at": "2026-06-05T11:41:25Z",
+  "previous_state_found": true,
+  "resume_allowed": true,
+  "reusable_stage_outputs": [
+    "github_integration_smoke",
+    "plugin_intelligence",
+    "project_scan",
+    "track_role_detection"
+  ],
+  "schema": "automix-resume-state-v1",
+  "stale_stage_outputs": [],
+  "warnings": []
+}

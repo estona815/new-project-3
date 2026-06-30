@@ -1,0 +1,2375 @@
+{
+  "baseline_status": "no_feedback_recorded",
+  "category_counts": {
+    "female_support_layer": 5,
+    "general_mix_feedback": 21
+  },
+  "created_at": "2026-06-02T14:38:09Z",
+  "entries": [
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_77d70d4a3e62",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:14:01Z",
+          "feedback_id": "feedback_432513da0597",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "normal",
+              "repeat_count_before_this_pass": 0,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "v02 전체 믹스가 제일 마음에 든다. 이 느낌을 기준으로 저장한다.",
+          "track_name": "jo_mix_master_v02_to_v03",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_c4975f49739a",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:14:01Z",
+          "feedback_id": "feedback_359a643e295e",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "normal",
+              "repeat_count_before_this_pass": 0,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "최종본은 v02의 전체 느낌을 유지하고 여자 목소리를 조금 낮춘 v03로 한다.",
+          "track_name": "jo_mix_master_v02_to_v03",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_840cfe7837db",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:14:01Z",
+          "feedback_id": "feedback_8feacd269bef",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "normal",
+              "repeat_count_before_this_pass": 0,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "남자 목소리는 가운데 강하게, 여자 목소리는 좌우 패닝 레이어로 유지한다.",
+          "track_name": "jo_mix_master_v02_to_v03",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "saved_favorite_reference_mix",
+          "status": "applied",
+          "target": "jo_mix_master_v02"
+        },
+        {
+          "action": "lowered_female_lr_layer_for_final",
+          "status": "applied",
+          "target": "jo_mix_master_v03"
+        },
+        {
+          "action": "preserved_male_center_and_v02_overall_feel",
+          "status": "applied",
+          "target": "jo_mix_master_v03"
+        }
+      ],
+      "categories": [
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T12:14:01Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v03_final_preference_lock",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v02/jo_mix_master_v02_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v03/jo_mix_master_v03_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v03/jo_mix_master_v03_cumulative_qc_summary.md"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_432513da0597",
+          "normalized_text": "v02 전체 믹스가 제일 마음에 든다. 이 느낌을 기준으로 저장한다.",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "v02 전체 믹스가 제일 마음에 든다. 이 느낌을 기준으로 저장한다.",
+          "received_at": "2026-06-06T12:14:01Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v02_to_v03"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_359a643e295e",
+          "normalized_text": "최종본은 v02의 전체 느낌을 유지하고 여자 목소리를 조금 낮춘 v03로 한다.",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "최종본은 v02의 전체 느낌을 유지하고 여자 목소리를 조금 낮춘 v03로 한다.",
+          "received_at": "2026-06-06T12:14:01Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v02_to_v03"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_8feacd269bef",
+          "normalized_text": "남자 목소리는 가운데 강하게, 여자 목소리는 좌우 패닝 레이어로 유지한다.",
+          "pass_id": "jo_mix_master_v03_final_preference_lock",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "남자 목소리는 가운데 강하게, 여자 목소리는 좌우 패닝 레이어로 유지한다.",
+          "received_at": "2026-06-06T12:14:01Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v02_to_v03"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v03_final_preference_lock",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [],
+      "resolution_status": "planned_review_required",
+      "source": "user",
+      "stage": "final_preference_lock",
+      "track_name": "jo_mix_master_v02_to_v03",
+      "unresolved_feedback_ids": [
+        "feedback_432513da0597",
+        "feedback_359a643e295e",
+        "feedback_8feacd269bef"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_d0ab9d1b2664",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:23:54Z",
+          "feedback_id": "feedback_2fb22638eb4d",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 3,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "v03 최종본이 너무 좋다. 이 느낌은 유지한다.",
+          "track_name": "jo_mix_master_v03_to_v04",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_2ce6ddd88e46",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:23:54Z",
+          "feedback_id": "feedback_0202e413ead4",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 3,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "마스터에 더 치중해서 전체 스템이 균형적으로 잘 들리게 한다.",
+          "track_name": "jo_mix_master_v03_to_v04",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_38990d3b83e3",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:23:54Z",
+          "feedback_id": "feedback_84cc3e0f7938",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 3,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "v04는 v03의 보컬 배치와 분위기를 유지한 마스터 균형 강화판으로 저장한다.",
+          "track_name": "jo_mix_master_v03_to_v04",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "saved_liked_final_reference_mix",
+          "status": "applied",
+          "target": "jo_mix_master_v03"
+        },
+        {
+          "action": "master_balance_polish",
+          "status": "applied",
+          "target": "jo_mix_master_v04"
+        },
+        {
+          "action": "slightly_forward_rhythm_and_music_bus",
+          "status": "applied",
+          "target": "jo_mix_master_v04"
+        },
+        {
+          "action": "master_congestion_trim_and_uniformity_leveling",
+          "status": "applied",
+          "target": "jo_mix_master_v04"
+        }
+      ],
+      "categories": [
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T12:23:54Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v04_master_balance_polish",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v03/jo_mix_master_v03_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v04/jo_mix_master_v04_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v04/jo_mix_master_v04_cumulative_qc_summary.md"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_2fb22638eb4d",
+          "normalized_text": "v03 최종본이 너무 좋다. 이 느낌은 유지한다.",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "v03 최종본이 너무 좋다. 이 느낌은 유지한다.",
+          "received_at": "2026-06-06T12:23:54Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v03_to_v04"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_0202e413ead4",
+          "normalized_text": "마스터에 더 치중해서 전체 스템이 균형적으로 잘 들리게 한다.",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "마스터에 더 치중해서 전체 스템이 균형적으로 잘 들리게 한다.",
+          "received_at": "2026-06-06T12:23:54Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v03_to_v04"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_84cc3e0f7938",
+          "normalized_text": "v04는 v03의 보컬 배치와 분위기를 유지한 마스터 균형 강화판으로 저장한다.",
+          "pass_id": "jo_mix_master_v04_master_balance_polish",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "v04는 v03의 보컬 배치와 분위기를 유지한 마스터 균형 강화판으로 저장한다.",
+          "received_at": "2026-06-06T12:23:54Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v03_to_v04"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v04_master_balance_polish",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user",
+      "stage": "master_balance_polish",
+      "track_name": "jo_mix_master_v03_to_v04",
+      "unresolved_feedback_ids": [
+        "feedback_2fb22638eb4d",
+        "feedback_0202e413ead4",
+        "feedback_84cc3e0f7938"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_242877fc3b79",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:48:08Z",
+          "feedback_id": "feedback_1df5b332116d",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 6,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "훅 자체가 남자 메인보컬이 중심으로 크게 나오고 여자목소리는 패닝으로 깔리는 구조여야 한다.",
+          "track_name": "jo_mix_master_v04_to_v05",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_e6adba2fce4e",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:48:08Z",
+          "feedback_id": "feedback_289acd0bb198",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 6,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "훅에 여자목소리 밖에 안 들리면 안 된다.",
+          "track_name": "jo_mix_master_v04_to_v05",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_c95e1be9e0f7",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T12:48:08Z",
+          "feedback_id": "feedback_64022e9fa2e2",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 6,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "남자 메인보컬은 절대 없으면 안 된다.",
+          "track_name": "jo_mix_master_v04_to_v05",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "male_hook_guard_enforced",
+          "status": "applied",
+          "target": "jo_mix_master_v05"
+        },
+        {
+          "action": "female_lr_layer_ducked_under_male_hook",
+          "status": "applied",
+          "target": "jo_mix_master_v05"
+        },
+        {
+          "action": "male_center_lead_priority_locked",
+          "status": "saved_as_rule",
+          "target": "future_revisions"
+        }
+      ],
+      "categories": [
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T12:48:08Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v05_male_hook_guard_final",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v05/jo_mix_master_v05_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v05/jo_mix_master_v05_cumulative_qc_summary.md",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v05/jo_mix_master_v05_FINAL_24bit_48k.wav"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_1df5b332116d",
+          "normalized_text": "훅 자체가 남자 메인보컬이 중심으로 크게 나오고 여자목소리는 패닝으로 깔리는 구조여야 한다.",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "훅 자체가 남자 메인보컬이 중심으로 크게 나오고 여자목소리는 패닝으로 깔리는 구조여야 한다.",
+          "received_at": "2026-06-06T12:48:08Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v04_to_v05"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_289acd0bb198",
+          "normalized_text": "훅에 여자목소리 밖에 안 들리면 안 된다.",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "훅에 여자목소리 밖에 안 들리면 안 된다.",
+          "received_at": "2026-06-06T12:48:08Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v04_to_v05"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_64022e9fa2e2",
+          "normalized_text": "남자 메인보컬은 절대 없으면 안 된다.",
+          "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "남자 메인보컬은 절대 없으면 안 된다.",
+          "received_at": "2026-06-06T12:48:08Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user",
+          "track_name": "jo_mix_master_v04_to_v05"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v05_male_hook_guard_final",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user",
+      "stage": "hook_vocal_priority_lock",
+      "track_name": "jo_mix_master_v04_to_v05",
+      "unresolved_feedback_ids": [
+        "feedback_1df5b332116d",
+        "feedback_289acd0bb198",
+        "feedback_64022e9fa2e2"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_27a7b54b3eb1",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "female_layer_as_default_lead",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            },
+            {
+              "blocked_action": "random_intro_chops",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "female_support_layer"
+          ],
+          "created_at": "2026-06-06T13:23:31Z",
+          "feedback_id": "feedback_b1a7ecb9a6fe",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "planned_actions": [
+            {
+              "action_id": "support_layer_lead_intrusion_check",
+              "diagnostic_checks": [
+                "lead_range_intrusion",
+                "timing_overlap",
+                "pitch_overlap",
+                "adlib_forwardness"
+              ],
+              "disallowed_actions": [
+                "female_layer_as_default_lead",
+                "random_intro_chops"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "female_support_layer",
+              "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+              "priority": "normal",
+              "repeat_count_before_this_pass": 0,
+              "requires_human_review": true,
+              "safe_processing_bias": "male_lead_anchor",
+              "stage": "vocal_placement",
+              "status": "planned",
+              "target": "female_double_adlib_harmony"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "무조건 여자는 더블링 레이어 하모니 용이다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_b9786221b4f6",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:23:31Z",
+          "feedback_id": "feedback_f83091053afa",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 9,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "남자 보컬은 앞에서부터 훅까지 중심으로 있어야 하고 중간에 절대 없어지면 안 된다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_5f1cf1df210c",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:23:31Z",
+          "feedback_id": "feedback_daccee1f9649",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 9,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 보컬은 계속 들려도 되지만 남자보다 아래에서 패닝 레이어로 깔린다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_85b715eae105",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:23:31Z",
+          "feedback_id": "feedback_2518fcf1428b",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 9,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "9 Vocals.wav is the continuous center lead; 8 Vocals.wav is only the lowered left/right harmony layer because 8 has measured low/silent hook-adjacent windows.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "role_lock_9_male_center_lead",
+          "status": "applied"
+        },
+        {
+          "action": "role_lock_8_female_lr_harmony_only",
+          "status": "applied"
+        },
+        {
+          "action": "female_harmony_layer_lowered_and_panned",
+          "status": "applied"
+        },
+        {
+          "action": "male_priority_guard_intro_to_hook_target_7db",
+          "status": "applied"
+        },
+        {
+          "action": "source_continuity_check_prevents_male_lead_gap",
+          "status": "applied"
+        },
+        {
+          "action": "user_rule_saved_female_never_lead",
+          "status": "saved_as_rule"
+        }
+      ],
+      "categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T13:23:31Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v06_female_harmony_only_male_priority",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v06/jo_mix_master_v06_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v06/jo_mix_master_v06_cumulative_qc_summary.json",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v06/jo_mix_master_v06_FINAL_24bit_48k.wav",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v06/jo_mix_master_v06_DELIVERY_PACKAGE.zip"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "vocal_layer",
+              "category": "female_support_layer",
+              "confidence": 0.79,
+              "matched_terms": [
+                "더블",
+                "하모니"
+              ],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_b1a7ecb9a6fe",
+          "normalized_text": "무조건 여자는 더블링 레이어 하모니 용이다.",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "primary_category": "female_support_layer",
+          "project_name": "jo_mix_master",
+          "raw_text": "무조건 여자는 더블링 레이어 하모니 용이다.",
+          "received_at": "2026-06-06T13:23:31Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_f83091053afa",
+          "normalized_text": "남자 보컬은 앞에서부터 훅까지 중심으로 있어야 하고 중간에 절대 없어지면 안 된다.",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "남자 보컬은 앞에서부터 훅까지 중심으로 있어야 하고 중간에 절대 없어지면 안 된다.",
+          "received_at": "2026-06-06T13:23:31Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_daccee1f9649",
+          "normalized_text": "여자 보컬은 계속 들려도 되지만 남자보다 아래에서 패닝 레이어로 깔린다.",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 보컬은 계속 들려도 되지만 남자보다 아래에서 패닝 레이어로 깔린다.",
+          "received_at": "2026-06-06T13:23:31Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_2518fcf1428b",
+          "normalized_text": "9 Vocals.wav is the continuous center lead; 8 Vocals.wav is only the lowered left/right harmony layer because 8 has measured low/silent hook-adjacent windows.",
+          "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "9 Vocals.wav is the continuous center lead; 8 Vocals.wav is only the lowered left/right harmony layer because 8 has measured low/silent hook-adjacent windows.",
+          "received_at": "2026-06-06T13:23:31Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v06_female_harmony_only_male_priority",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user_and_measured_qc",
+      "stage": "mix_revision_applied",
+      "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+      "unresolved_feedback_ids": [
+        "feedback_b1a7ecb9a6fe",
+        "feedback_f83091053afa",
+        "feedback_daccee1f9649",
+        "feedback_2518fcf1428b"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_699624769504",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:45:36Z",
+          "feedback_id": "feedback_930ae49a9c7d",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 12,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "초반에 여자 목소리가 너무 크고 훅 전체도 마찬가지다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_7ca96e7f396c",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:45:36Z",
+          "feedback_id": "feedback_834d1f3519cb",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 12,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "첫 부분과 마지막 부분은 남자 목소리를 더 높인다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_af404228b938",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T13:45:36Z",
+          "feedback_id": "feedback_77eb66e9d8b7",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 12,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "중간 벌스에는 여자 목소리 패닝을 더 시키고 크게 해서 들리게 한다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_d468e8960a3d",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "female_layer_as_default_lead",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            },
+            {
+              "blocked_action": "random_intro_chops",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "female_support_layer"
+          ],
+          "created_at": "2026-06-06T13:45:36Z",
+          "feedback_id": "feedback_b1d25c8a61b5",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "planned_actions": [
+            {
+              "action_id": "support_layer_lead_intrusion_check",
+              "diagnostic_checks": [
+                "lead_range_intrusion",
+                "timing_overlap",
+                "pitch_overlap",
+                "adlib_forwardness"
+              ],
+              "disallowed_actions": [
+                "female_layer_as_default_lead",
+                "random_intro_chops"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "female_support_layer",
+              "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 1,
+              "requires_human_review": true,
+              "safe_processing_bias": "male_lead_anchor",
+              "stage": "vocal_placement",
+              "status": "planned",
+              "target": "female_double_adlib_harmony"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 보컬은 리드가 아니라 더블링/하모니 레이어라는 기존 규칙은 유지한다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "first_hook_male_up_female_down",
+          "female_gain_db": -3.0,
+          "male_gain_db": 1.65,
+          "status": "applied"
+        },
+        {
+          "action": "final_hook_male_up_female_down",
+          "female_gain_db": -3.2,
+          "male_gain_db": 1.75,
+          "status": "applied"
+        },
+        {
+          "action": "middle_verse_female_lr_up_and_wider",
+          "female_gain_db": 6.2,
+          "female_width": 1.75,
+          "status": "applied"
+        },
+        {
+          "action": "male_center_priority_preserved_after_section_automation",
+          "status": "applied",
+          "target_margin_db": 7.0
+        },
+        {
+          "action": "v07_qc_and_cumulative_report_updated",
+          "status": "applied"
+        }
+      ],
+      "categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T13:45:36Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v07_section_vocal_balance_revision",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v07/jo_mix_master_v07_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v07/jo_mix_master_v07_cumulative_qc_summary.json",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v07/jo_mix_master_v07_FINAL_24bit_48k.wav",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v07/jo_mix_master_v07_DELIVERY_PACKAGE.zip"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_930ae49a9c7d",
+          "normalized_text": "초반에 여자 목소리가 너무 크고 훅 전체도 마찬가지다.",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "초반에 여자 목소리가 너무 크고 훅 전체도 마찬가지다.",
+          "received_at": "2026-06-06T13:45:36Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_834d1f3519cb",
+          "normalized_text": "첫 부분과 마지막 부분은 남자 목소리를 더 높인다.",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "첫 부분과 마지막 부분은 남자 목소리를 더 높인다.",
+          "received_at": "2026-06-06T13:45:36Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_77eb66e9d8b7",
+          "normalized_text": "중간 벌스에는 여자 목소리 패닝을 더 시키고 크게 해서 들리게 한다.",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "중간 벌스에는 여자 목소리 패닝을 더 시키고 크게 해서 들리게 한다.",
+          "received_at": "2026-06-06T13:45:36Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "vocal_layer",
+              "category": "female_support_layer",
+              "confidence": 0.79,
+              "matched_terms": [
+                "더블",
+                "하모니"
+              ],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_b1d25c8a61b5",
+          "normalized_text": "여자 보컬은 리드가 아니라 더블링/하모니 레이어라는 기존 규칙은 유지한다.",
+          "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+          "primary_category": "female_support_layer",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 보컬은 리드가 아니라 더블링/하모니 레이어라는 기존 규칙은 유지한다.",
+          "received_at": "2026-06-06T13:45:36Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v07_section_vocal_balance_revision",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user_and_measured_qc",
+      "stage": "mix_revision_applied",
+      "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+      "unresolved_feedback_ids": [
+        "feedback_930ae49a9c7d",
+        "feedback_834d1f3519cb",
+        "feedback_77eb66e9d8b7",
+        "feedback_b1d25c8a61b5"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_a9e36ba05d22",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:16:04Z",
+          "feedback_id": "feedback_2317dcd1d09b",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 15,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "0초부터 15초까지 여자 목소리가 너무 크니 약 -6 dB 내린다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_ea3e3d2ce907",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:16:04Z",
+          "feedback_id": "feedback_ec65e24c4535",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 15,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "15초 이후와 벌스에서는 여자 목소리가 너무 작으니 더 들리게 올린다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_129244862e04",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:16:04Z",
+          "feedback_id": "feedback_301e5a993db6",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 15,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "벌스 여자 패닝 레이어는 v07보다 약 2 dB 더 올리고 더 넓힌다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_e8434325e0fd",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:16:04Z",
+          "feedback_id": "feedback_0e43d09c2a5f",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 15,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "1분 23초 부분은 남자 목소리가 너무 적으니 남자 센터를 보강한다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_ac3362dd767b",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "female_layer_as_default_lead",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            },
+            {
+              "blocked_action": "random_intro_chops",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "female_support_layer"
+          ],
+          "created_at": "2026-06-06T15:16:04Z",
+          "feedback_id": "feedback_2a7f20cbc2ef",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "planned_actions": [
+            {
+              "action_id": "support_layer_lead_intrusion_check",
+              "diagnostic_checks": [
+                "lead_range_intrusion",
+                "timing_overlap",
+                "pitch_overlap",
+                "adlib_forwardness"
+              ],
+              "disallowed_actions": [
+                "female_layer_as_default_lead",
+                "random_intro_chops"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "female_support_layer",
+              "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 2,
+              "requires_human_review": true,
+              "safe_processing_bias": "male_lead_anchor",
+              "stage": "vocal_placement",
+              "status": "planned",
+              "target": "female_double_adlib_harmony"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 보컬은 무조건 패닝되고 리드가 아니라 더블링/하모니 레이어다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "early_hook_0_15_female_down",
+          "female_gain_db": -9.0,
+          "relative_to_v07_db": -6.0,
+          "status": "applied"
+        },
+        {
+          "action": "post_15_female_support_up",
+          "female_gain_db": -1.0,
+          "female_width": 1.35,
+          "status": "applied"
+        },
+        {
+          "action": "middle_verse_female_lr_up_plus_2db",
+          "female_gain_db": 8.2,
+          "female_width": 1.85,
+          "status": "applied"
+        },
+        {
+          "action": "male_83s_center_boost",
+          "male_gain_db": 2.6,
+          "status": "applied",
+          "window_seconds": [
+            80.0,
+            88.0
+          ]
+        },
+        {
+          "action": "final_hook_female_down",
+          "female_gain_db": -9.2,
+          "relative_to_v07_db": -6.0,
+          "status": "applied"
+        },
+        {
+          "action": "female_lr_panning_preserved",
+          "status": "applied"
+        }
+      ],
+      "categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T15:16:04Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v08_fine_section_vocal_automation",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v08/jo_mix_master_v08_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v08/jo_mix_master_v08_cumulative_qc_summary.json",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v08/jo_mix_master_v08_FINAL_24bit_48k.wav",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v08/jo_mix_master_v08_DELIVERY_PACKAGE.zip"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_2317dcd1d09b",
+          "normalized_text": "0초부터 15초까지 여자 목소리가 너무 크니 약 -6 dB 내린다.",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "0초부터 15초까지 여자 목소리가 너무 크니 약 -6 dB 내린다.",
+          "received_at": "2026-06-06T15:16:04Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_ec65e24c4535",
+          "normalized_text": "15초 이후와 벌스에서는 여자 목소리가 너무 작으니 더 들리게 올린다.",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "15초 이후와 벌스에서는 여자 목소리가 너무 작으니 더 들리게 올린다.",
+          "received_at": "2026-06-06T15:16:04Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_301e5a993db6",
+          "normalized_text": "벌스 여자 패닝 레이어는 v07보다 약 2 dB 더 올리고 더 넓힌다.",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "벌스 여자 패닝 레이어는 v07보다 약 2 dB 더 올리고 더 넓힌다.",
+          "received_at": "2026-06-06T15:16:04Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_0e43d09c2a5f",
+          "normalized_text": "1분 23초 부분은 남자 목소리가 너무 적으니 남자 센터를 보강한다.",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "1분 23초 부분은 남자 목소리가 너무 적으니 남자 센터를 보강한다.",
+          "received_at": "2026-06-06T15:16:04Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "vocal_layer",
+              "category": "female_support_layer",
+              "confidence": 0.79,
+              "matched_terms": [
+                "더블",
+                "하모니"
+              ],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_2a7f20cbc2ef",
+          "normalized_text": "여자 보컬은 무조건 패닝되고 리드가 아니라 더블링/하모니 레이어다.",
+          "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+          "primary_category": "female_support_layer",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 보컬은 무조건 패닝되고 리드가 아니라 더블링/하모니 레이어다.",
+          "received_at": "2026-06-06T15:16:04Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v08_fine_section_vocal_automation",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user_and_measured_qc",
+      "stage": "mix_revision_applied",
+      "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+      "unresolved_feedback_ids": [
+        "feedback_2317dcd1d09b",
+        "feedback_ec65e24c4535",
+        "feedback_301e5a993db6",
+        "feedback_0e43d09c2a5f",
+        "feedback_2a7f20cbc2ef"
+      ]
+    },
+    {
+      "action_plans": [
+        {
+          "action_plan_id": "feedback_action_plan_9424a09b7015",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:31:02Z",
+          "feedback_id": "feedback_218a9ab02db4",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 19,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 목소리를 더 확 줄인다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_f2e40ada6992",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "female_layer_as_default_lead",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            },
+            {
+              "blocked_action": "random_intro_chops",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "female_support_layer"
+          ],
+          "created_at": "2026-06-06T15:31:02Z",
+          "feedback_id": "feedback_e06589ffc83e",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "planned_actions": [
+            {
+              "action_id": "support_layer_lead_intrusion_check",
+              "diagnostic_checks": [
+                "lead_range_intrusion",
+                "timing_overlap",
+                "pitch_overlap",
+                "adlib_forwardness"
+              ],
+              "disallowed_actions": [
+                "female_layer_as_default_lead",
+                "random_intro_chops"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "female_support_layer",
+              "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 3,
+              "requires_human_review": true,
+              "safe_processing_bias": "male_lead_anchor",
+              "stage": "vocal_placement",
+              "status": "planned",
+              "target": "female_double_adlib_harmony"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 패닝 하모니 레이어는 v08보다 약 -10 dB 내려 균형을 맞춘다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_b451cc4fe053",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "automatic_processing_without_classification",
+              "feedback_category": "general_mix_feedback",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "general_mix_feedback"
+          ],
+          "created_at": "2026-06-06T15:31:02Z",
+          "feedback_id": "feedback_707620a6dce0",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "planned_actions": [
+            {
+              "action_id": "manual_triage_required",
+              "diagnostic_checks": [
+                "operator_clarification",
+                "current_qc_reports",
+                "matched_ab_review"
+              ],
+              "disallowed_actions": [
+                "automatic_processing_without_classification"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "general_mix_feedback",
+              "planned_action": "Keep as human-review feedback until it can be classified into a concrete mix issue.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 19,
+              "requires_human_review": true,
+              "safe_processing_bias": "review_only",
+              "stage": "diagnostic_review",
+              "status": "planned",
+              "target": "project"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "남자 목소리는 더 크게, 센터 메인으로 더 앞으로 보낸다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        },
+        {
+          "action_plan_id": "feedback_action_plan_1b3ec1ec97f1",
+          "blocked_auto_actions": [
+            {
+              "blocked_action": "female_layer_as_default_lead",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            },
+            {
+              "blocked_action": "random_intro_chops",
+              "feedback_category": "female_support_layer",
+              "reason": "unsafe_or_unverified_response_to_user_feedback"
+            }
+          ],
+          "categories": [
+            "female_support_layer"
+          ],
+          "created_at": "2026-06-06T15:31:02Z",
+          "feedback_id": "feedback_72ac16203ac3",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "planned_actions": [
+            {
+              "action_id": "support_layer_lead_intrusion_check",
+              "diagnostic_checks": [
+                "lead_range_intrusion",
+                "timing_overlap",
+                "pitch_overlap",
+                "adlib_forwardness"
+              ],
+              "disallowed_actions": [
+                "female_layer_as_default_lead",
+                "random_intro_chops"
+              ],
+              "dry_run_only": true,
+              "feedback_category": "female_support_layer",
+              "planned_action": "Keep support layers tucked, panned, filtered, or muted when they compete with the male lead.",
+              "priority": "elevated",
+              "repeat_count_before_this_pass": 3,
+              "requires_human_review": true,
+              "safe_processing_bias": "male_lead_anchor",
+              "stage": "vocal_placement",
+              "status": "planned",
+              "target": "female_double_adlib_harmony"
+            }
+          ],
+          "project_name": "jo_mix_master",
+          "resolution_status": "planned_review_required",
+          "safety_flags": [
+            "dry_run_required",
+            "human_review_required"
+          ],
+          "schema": "automix-feedback-action-plan-v1",
+          "source_feedback": "여자 보컬은 계속 패닝 더블/하모니 레이어이고 리드가 아니다.",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+          "unresolved": true
+        }
+      ],
+      "applied_actions": [
+        {
+          "action": "female_lr_harmony_down_10db_relative_to_v08",
+          "status": "applied"
+        },
+        {
+          "action": "male_center_lead_forward_across_sections",
+          "status": "applied"
+        },
+        {
+          "action": "male_83s_center_lift_preserved",
+          "status": "applied"
+        },
+        {
+          "action": "female_lr_panning_preserved_while_lowered",
+          "status": "applied"
+        },
+        {
+          "action": "v09_qc_and_cumulative_report_updated",
+          "status": "applied"
+        }
+      ],
+      "categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "created_at": "2026-06-06T15:31:02Z",
+      "dry_run_only": true,
+      "entry_id": "revision_jo_mix_master_v09_female_down_10db_male_forward",
+      "evidence_paths": [
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v09/jo_mix_master_v09_qc_report.json",
+        "/Users/hantaeheuk/Documents/New project 3/reports/jo_mix_master_v09/jo_mix_master_v09_cumulative_qc_summary.json",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v09/jo_mix_master_v09_FINAL_24bit_48k.wav",
+        "/Users/hantaeheuk/Documents/New project 3/renders/jo_mix_master_v09/jo_mix_master_v09_DELIVERY_PACKAGE.zip"
+      ],
+      "feedback_items": [
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_218a9ab02db4",
+          "normalized_text": "여자 목소리를 더 확 줄인다.",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 목소리를 더 확 줄인다.",
+          "received_at": "2026-06-06T15:31:02Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "vocal_layer",
+              "category": "female_support_layer",
+              "confidence": 0.67,
+              "matched_terms": [
+                "하모니"
+              ],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_e06589ffc83e",
+          "normalized_text": "여자 패닝 하모니 레이어는 v08보다 약 -10 dB 내려 균형을 맞춘다.",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "primary_category": "female_support_layer",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 패닝 하모니 레이어는 v08보다 약 -10 dB 내려 균형을 맞춘다.",
+          "received_at": "2026-06-06T15:31:02Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "general",
+              "category": "general_mix_feedback",
+              "confidence": 0.35,
+              "matched_terms": [],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_707620a6dce0",
+          "normalized_text": "남자 목소리는 더 크게, 센터 메인으로 더 앞으로 보낸다.",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "primary_category": "general_mix_feedback",
+          "project_name": "jo_mix_master",
+          "raw_text": "남자 목소리는 더 크게, 센터 메인으로 더 앞으로 보낸다.",
+          "received_at": "2026-06-06T15:31:02Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        },
+        {
+          "categories": [
+            {
+              "area": "vocal_layer",
+              "category": "female_support_layer",
+              "confidence": 0.79,
+              "matched_terms": [
+                "더블",
+                "하모니"
+              ],
+              "severity": "medium"
+            }
+          ],
+          "feedback_id": "feedback_72ac16203ac3",
+          "normalized_text": "여자 보컬은 계속 패닝 더블/하모니 레이어이고 리드가 아니다.",
+          "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+          "primary_category": "female_support_layer",
+          "project_name": "jo_mix_master",
+          "raw_text": "여자 보컬은 계속 패닝 더블/하모니 레이어이고 리드가 아니다.",
+          "received_at": "2026-06-06T15:31:02Z",
+          "requires_human_review": true,
+          "safety_flags": [],
+          "schema": "automix-feedback-intake-v1",
+          "source": "user_and_measured_qc",
+          "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony"
+        }
+      ],
+      "human_review_required": true,
+      "pass_id": "jo_mix_master_v09_female_down_10db_male_forward",
+      "project_name": "jo_mix_master",
+      "repeated_categories": [
+        "female_support_layer",
+        "general_mix_feedback"
+      ],
+      "resolution_status": "planned_review_required",
+      "source": "user_and_measured_qc",
+      "stage": "mix_revision_applied",
+      "track_name": "9 Vocals.wav male center lead / 8 Vocals.wav female LR harmony",
+      "unresolved_feedback_ids": [
+        "feedback_218a9ab02db4",
+        "feedback_e06589ffc83e",
+        "feedback_707620a6dce0",
+        "feedback_72ac16203ac3"
+      ]
+    }
+  ],
+  "no_feedback_fabricated": true,
+  "project_name": "jo_mix_master",
+  "resolution_records": [],
+  "resolved_feedback_ids": [],
+  "schema": "automix-user-feedback-revision-memory-v1",
+  "unresolved_feedback_ids": [
+    "feedback_0202e413ead4",
+    "feedback_0e43d09c2a5f",
+    "feedback_1df5b332116d",
+    "feedback_218a9ab02db4",
+    "feedback_2317dcd1d09b",
+    "feedback_2518fcf1428b",
+    "feedback_289acd0bb198",
+    "feedback_2a7f20cbc2ef",
+    "feedback_2fb22638eb4d",
+    "feedback_301e5a993db6",
+    "feedback_359a643e295e",
+    "feedback_432513da0597",
+    "feedback_64022e9fa2e2",
+    "feedback_707620a6dce0",
+    "feedback_72ac16203ac3",
+    "feedback_77eb66e9d8b7",
+    "feedback_834d1f3519cb",
+    "feedback_84cc3e0f7938",
+    "feedback_8feacd269bef",
+    "feedback_930ae49a9c7d",
+    "feedback_b1a7ecb9a6fe",
+    "feedback_b1d25c8a61b5",
+    "feedback_daccee1f9649",
+    "feedback_e06589ffc83e",
+    "feedback_ec65e24c4535",
+    "feedback_f83091053afa"
+  ],
+  "updated_at": "2026-06-06T15:31:02Z"
+}

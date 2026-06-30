@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-05-31T10:02:33Z",
+  "files_included": [
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Manifests/project_state_manifest.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Manifests/review_package_manifest.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_safe_premaster_report.md",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_ab_render_plan.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_analysis.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_carving_chain_plan.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_carving_rollback.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_eval_metrics.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_protection_report.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/final_vocal_space_review_form.md",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/finalizing_target_resolution.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/finalizing_vocal_space_and_review_package_report.md",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/real_project_plugin_readiness.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/recovery_only_rollback_registry.json",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/finalizing_vocal_space_and_review_package_report.md",
+    "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02/Reports/finalizing_vocal_space_and_review_package_report.md"
+  ],
+  "files_missing": [],
+  "package_created": true,
+  "package_dir": "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02",
+  "package_is_final": false,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "ready_for_delivery": false,
+  "schema": "automix-final-vocal-space-review-package-manifest-v1",
+  "zip_path": "deliverables/mesi_1_v37_vocal_clarity_final_REVIEW_PACKAGE_v02.zip"
+}

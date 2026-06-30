@@ -1,0 +1,262 @@
+{
+  "schema": "automix-plugin-capability-catalog-v1",
+  "purpose": "Static capability map used by the REAPER AutoMix inventory scanner before any automated mix decisions are allowed.",
+  "safety": {
+    "inventory_only": true,
+    "does_not_apply_fx": true,
+    "does_not_assume_parameter_indexes": true,
+    "fuzzy_matches_require_confidence_and_manual_review_when_ambiguous": true
+  },
+  "required_capabilities": [
+    "pitch_correction",
+    "static_eq",
+    "dynamic_eq",
+    "resonance_suppressor",
+    "compressor",
+    "limiter",
+    "saturator",
+    "multiband_compressor",
+    "deesser",
+    "reverb",
+    "delay",
+    "stereo_width",
+    "noise_reduction",
+    "analyzer",
+    "utility"
+  ],
+  "fallback_options": {
+    "pitch_correction": ["ReaPitch", "MAutoPitch if installed", "manual pitch editing"],
+    "static_eq": ["ReaEQ"],
+    "dynamic_eq": ["TDR Nova if installed", "ReaXcomp as coarse fallback"],
+    "resonance_suppressor": ["TDR Nova if installed", "manual ReaEQ notches after analysis"],
+    "compressor": ["ReaComp"],
+    "limiter": ["ReaLimit", "JS Event Horizon Limiter/Clipper"],
+    "saturator": ["JS saturation fallback", "defer saturation"],
+    "multiband_compressor": ["ReaXcomp"],
+    "deesser": ["TDR Nova if installed", "ReaXcomp de-ess band"],
+    "reverb": ["ReaVerbate", "stock/JS reverb fallback"],
+    "delay": ["ReaDelay"],
+    "stereo_width": ["pan/routing only", "JS Stereo Width if installed"],
+    "noise_reduction": ["manual/offline only unless a validated plugin is present"],
+    "analyzer": ["REAPER meters", "JS analyzer if installed"],
+    "utility": ["track controls", "JS utility plugins"]
+  },
+  "target_families": [
+    {
+      "id": "mautopitch",
+      "display_name": "MAutoPitch",
+      "capabilities": ["pitch_correction"],
+      "aliases": ["MAutoPitch", "MeldaProduction MAutoPitch", "VST3: MAutoPitch"],
+      "fallback": "ReaPitch"
+    },
+    {
+      "id": "reapitch",
+      "display_name": "ReaPitch",
+      "capabilities": ["pitch_correction", "utility"],
+      "aliases": ["ReaPitch", "Cockos ReaPitch"],
+      "fallback": "manual pitch correction"
+    },
+    {
+      "id": "autotune_type",
+      "display_name": "Auto-Tune Type",
+      "capabilities": ["pitch_correction"],
+      "aliases": ["Auto-Tune", "Autotune", "Antares Auto-Tune", "Auto Tune"],
+      "manual_only": true,
+      "fallback": "MAutoPitch or ReaPitch"
+    },
+    {
+      "id": "melodyne_type",
+      "display_name": "Melodyne Type",
+      "capabilities": ["pitch_correction"],
+      "aliases": ["Melodyne", "Celemony Melodyne"],
+      "manual_only": true,
+      "fallback": "manual-only correction; do not automate unless validated"
+    },
+    {
+      "id": "reaeq",
+      "display_name": "ReaEQ",
+      "capabilities": ["static_eq"],
+      "aliases": ["ReaEQ", "Cockos ReaEQ"],
+      "fallback": "JS: 3-Band EQ"
+    },
+    {
+      "id": "tdr_nova",
+      "display_name": "TDR Nova",
+      "capabilities": ["static_eq", "dynamic_eq", "resonance_suppressor", "deesser"],
+      "aliases": ["TDR Nova", "Nova", "Tokyo Dawn Nova"],
+      "fallback": "ReaEQ plus ReaXcomp"
+    },
+    {
+      "id": "mequalizer",
+      "display_name": "MEqualizer",
+      "capabilities": ["static_eq"],
+      "aliases": ["MEqualizer", "MeldaProduction MEqualizer"],
+      "fallback": "ReaEQ"
+    },
+    {
+      "id": "melda_dynamic_eq",
+      "display_name": "Melda Dynamic EQ",
+      "capabilities": ["dynamic_eq", "resonance_suppressor", "deesser"],
+      "aliases": ["MAutoDynamicEQ", "MDynamicEQ", "MeldaProduction MAutoDynamicEQ", "MeldaProduction MDynamicEQ"],
+      "fallback": "TDR Nova or ReaXcomp"
+    },
+    {
+      "id": "mseq_user_alias",
+      "display_name": "MSEQ User Alias",
+      "capabilities": ["static_eq"],
+      "aliases": ["MSEQ", "mseq"],
+      "fallback": "ReaEQ"
+    },
+    {
+      "id": "soothe_type",
+      "display_name": "Soothe-like Resonance Suppressor",
+      "capabilities": ["dynamic_eq", "resonance_suppressor", "deesser"],
+      "aliases": ["Soothe", "soothe2", "oeksound soothe"],
+      "manual_only": true,
+      "fallback": "TDR Nova"
+    },
+    {
+      "id": "dseq_type",
+      "display_name": "DSEQ-like Resonance Suppressor",
+      "capabilities": ["dynamic_eq", "resonance_suppressor", "deesser"],
+      "aliases": ["DSEQ", "TBProAudio DSEQ"],
+      "manual_only": true,
+      "fallback": "TDR Nova"
+    },
+    {
+      "id": "decapitator",
+      "display_name": "Decapitator",
+      "capabilities": ["saturator"],
+      "aliases": ["Decapitator", "Soundtoys Decapitator"],
+      "fallback": "JS saturation fallback"
+    },
+    {
+      "id": "saturn_type",
+      "display_name": "Saturn-type Saturator",
+      "capabilities": ["saturator", "multiband_compressor"],
+      "aliases": ["Saturn", "FabFilter Saturn", "Saturn 2"],
+      "fallback": "JS saturation fallback"
+    },
+    {
+      "id": "rea_comp",
+      "display_name": "ReaComp",
+      "capabilities": ["compressor"],
+      "aliases": ["ReaComp", "Cockos ReaComp"],
+      "fallback": "JS compressor"
+    },
+    {
+      "id": "reaxcomp",
+      "display_name": "ReaXcomp",
+      "capabilities": ["multiband_compressor", "compressor", "deesser"],
+      "aliases": ["ReaXcomp", "Cockos ReaXcomp", "ReaXComp"],
+      "fallback": "ReaComp"
+    },
+    {
+      "id": "la2a_type",
+      "display_name": "LA-2A / Opto Compressor Type",
+      "capabilities": ["compressor"],
+      "aliases": ["LA-2A", "LA2A", "LA-2A Gray", "opto", "Opto Compressor", "Kolin", "Koliv", "Kiive"],
+      "manual_only": true,
+      "fallback": "ReaComp"
+    },
+    {
+      "id": "1176_type",
+      "display_name": "1176 Compressor Type",
+      "capabilities": ["compressor"],
+      "aliases": ["1176", "FET Compressor", "Black 76", "Blue Stripe"],
+      "manual_only": true,
+      "fallback": "ReaComp"
+    },
+    {
+      "id": "ott",
+      "display_name": "OTT",
+      "capabilities": ["multiband_compressor", "compressor"],
+      "aliases": ["OTT", "Xfer OTT", "Xfer Records OTT"],
+      "fallback": "ReaXcomp"
+    },
+    {
+      "id": "freeclip",
+      "display_name": "FreeClip",
+      "capabilities": ["limiter", "utility"],
+      "aliases": ["FreeClip", "Venn Audio FreeClip"],
+      "fallback": "ReaLimit"
+    },
+    {
+      "id": "ozone_eq",
+      "display_name": "Ozone 12 Equalizer",
+      "capabilities": ["static_eq", "dynamic_eq", "analyzer"],
+      "aliases": ["Ozone 12 Equalizer", "iZotope Ozone 12 Equalizer", "Ozone Equalizer"],
+      "fallback": "ReaEQ or TDR Nova"
+    },
+    {
+      "id": "ozone_imager",
+      "display_name": "Ozone Imager 2",
+      "capabilities": ["stereo_width", "utility"],
+      "aliases": ["Ozone Imager 2", "iZotope Ozone Imager 2", "Ozone Imager"],
+      "fallback": "pan/routing only"
+    },
+    {
+      "id": "fresh_air",
+      "display_name": "Fresh Air",
+      "capabilities": ["saturator", "utility"],
+      "aliases": ["Fresh Air", "Slate Digital Fresh Air"],
+      "fallback": "defer air boost; use ReaEQ subtractive cleanup"
+    },
+    {
+      "id": "ivgi2",
+      "display_name": "IVGI2",
+      "capabilities": ["saturator"],
+      "aliases": ["IVGI2", "Klanghelm IVGI2", "IVGI"],
+      "fallback": "JS saturation fallback"
+    },
+    {
+      "id": "krush",
+      "display_name": "Krush",
+      "capabilities": ["saturator", "utility"],
+      "aliases": ["Krush", "Tritik Krush"],
+      "fallback": "REAPER item edits or JS distortion only when intentional"
+    },
+    {
+      "id": "byod",
+      "display_name": "BYOD",
+      "capabilities": ["saturator", "utility"],
+      "aliases": ["BYOD", "Chowdhury DSP BYOD", "ChowDSP BYOD"],
+      "fallback": "stock JS saturation or defer"
+    },
+    {
+      "id": "raum",
+      "display_name": "Raum",
+      "capabilities": ["reverb"],
+      "aliases": ["Raum", "Native Instruments Raum"],
+      "fallback": "ReaVerbate or ReaVerb"
+    },
+    {
+      "id": "valhalla_supermassive",
+      "display_name": "Valhalla Supermassive",
+      "capabilities": ["reverb", "delay"],
+      "aliases": ["Valhalla Supermassive", "ValhallaSupermassive", "Supermassive"],
+      "fallback": "ReaDelay"
+    },
+    {
+      "id": "valhalla",
+      "display_name": "Valhalla Reverb/Space",
+      "capabilities": ["reverb", "delay"],
+      "aliases": ["Valhalla", "ValhallaVintageVerb", "Valhalla Room", "ValhallaPlate"],
+      "fallback": "ReaVerbate or ReaDelay"
+    },
+    {
+      "id": "stock_space",
+      "display_name": "REAPER Stock Space",
+      "capabilities": ["reverb", "delay"],
+      "aliases": ["ReaVerbate", "ReaDelay", "Cockos ReaVerbate", "Cockos ReaDelay"],
+      "fallback": "stock/JS reverb and delay"
+    },
+    {
+      "id": "utility_metering",
+      "display_name": "Utility and Metering",
+      "capabilities": ["utility", "stereo_width", "analyzer", "limiter"],
+      "aliases": ["Gain", "Utility", "Stereo Width", "M/S", "Mid Side", "Spectrum Analyzer", "SPAN", "Youlean", "Limiter", "ReaLimit", "mvMeter2", "ClearMaster Audit", "Wider", "Vocal Doubler"],
+      "fallback": "track controls and REAPER meters"
+    }
+  ]
+}

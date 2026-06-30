@@ -1,0 +1,420 @@
+{
+  "accepted_jobs_total": 0,
+  "blocked_jobs_total": 9,
+  "blocked_queue_jobs": [
+    {
+      "blockers": [
+        "availability_decision_missing:OTT (Xfer Records)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "OTT (Xfer Records)"
+    },
+    {
+      "blockers": [
+        "availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)"
+    }
+  ],
+  "blocked_queue_jobs_total": 2,
+  "blockers": [
+    "plugin_semantic_validation_runtime_manifest_missing",
+    "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "runtime_manifest_job_missing:semantic_validation_02_reaverbate_cockos",
+    "runtime_manifest_job_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+    "runtime_manifest_job_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+    "runtime_manifest_job_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+    "runtime_manifest_job_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+    "runtime_manifest_job_missing:semantic_validation_07_reacomp_cockos",
+    "runtime_manifest_job_missing:semantic_validation_08_readelay_cockos",
+    "runtime_manifest_job_missing:semantic_validation_09_reaeq_cockos",
+    "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "runtime_validation_report_missing:semantic_validation_02_reaverbate_cockos",
+    "runtime_validation_report_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+    "runtime_validation_report_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+    "runtime_validation_report_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+    "runtime_validation_report_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+    "runtime_validation_report_missing:semantic_validation_07_reacomp_cockos",
+    "runtime_validation_report_missing:semantic_validation_08_readelay_cockos",
+    "runtime_validation_report_missing:semantic_validation_09_reaeq_cockos"
+  ],
+  "created_at": "2026-06-05T11:10:32Z",
+  "job_results": [
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+        "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_02_reaverbate_cockos",
+        "runtime_validation_report_missing:semantic_validation_02_reaverbate_cockos"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_02_reaverbate_cockos",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "ReaVerbate (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_02_reaverbate_cockos"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+        "runtime_validation_report_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+        "runtime_validation_report_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+        "runtime_validation_report_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+        "runtime_validation_report_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx"
+      ],
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "job_id": "semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_07_reacomp_cockos",
+        "runtime_validation_report_missing:semantic_validation_07_reacomp_cockos"
+      ],
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "job_id": "semantic_validation_07_reacomp_cockos",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "ReaComp (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_07_reacomp_cockos"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos_rerun_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos_rerun_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_08_readelay_cockos",
+        "runtime_validation_report_missing:semantic_validation_08_readelay_cockos"
+      ],
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "job_id": "semantic_validation_08_readelay_cockos",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "ReaDelay (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_08_readelay_cockos"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos_rerun_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos_rerun_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "blockers": [
+        "runtime_manifest_job_missing:semantic_validation_09_reaeq_cockos",
+        "runtime_validation_report_missing:semantic_validation_09_reaeq_cockos"
+      ],
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "job_id": "semantic_validation_09_reaeq_cockos",
+      "job_status": "blocked",
+      "manifest_entry_present": false,
+      "operator_acknowledged": false,
+      "plugin_name": "ReaEQ (Cockos)",
+      "report_reaudited_by_semantic_gate": false,
+      "report_result": {
+        "adapter_id": "",
+        "blockers": [
+          "runtime_validation_report_missing:semantic_validation_09_reaeq_cockos"
+        ],
+        "json_valid": false,
+        "no_fake_success": false,
+        "passed": false,
+        "report_exists": false,
+        "report_plugin_name": "",
+        "report_schema": "",
+        "report_status": "",
+        "safe_control_count": 0,
+        "safe_controls": [],
+        "safe_for_automix": false,
+        "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos_rerun_reaper_observed.json",
+        "warnings": []
+      },
+      "report_written": false,
+      "runtime_observed": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos_rerun_reaper_observed.json",
+      "warnings": []
+    }
+  ],
+  "limits": [
+    "This gate does not open REAPER, insert FX, write parameters, render, or approve audio.",
+    "This gate validates operator/runtime evidence for queued semantic validation reports only.",
+    "safe_to_write_parameters remains false; rerun plugin_semantic_validation_gate before any automatic write decision."
+  ],
+  "next_blocked_job": {
+    "blockers": [
+      "runtime_manifest_job_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+    ],
+    "collection_action": "collect_missing_reaper_observed_semantic_report",
+    "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "job_status": "blocked",
+    "manifest_entry_present": false,
+    "operator_acknowledged": false,
+    "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+    "report_reaudited_by_semantic_gate": false,
+    "report_result": {
+      "adapter_id": "",
+      "blockers": [
+        "runtime_validation_report_missing:semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "json_valid": false,
+      "no_fake_success": false,
+      "passed": false,
+      "report_exists": false,
+      "report_plugin_name": "",
+      "report_schema": "",
+      "report_status": "",
+      "safe_control_count": 0,
+      "safe_controls": [],
+      "safe_for_automix": false,
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    "report_written": false,
+    "runtime_observed": false,
+    "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+    "warnings": []
+  },
+  "output_dir": "automix",
+  "project_name": "project",
+  "queue_jobs_total": 9,
+  "ready_for_semantic_gate_rerun": false,
+  "requires_operator_review": true,
+  "requires_reaper_runtime": true,
+  "runtime_evidence_ready": false,
+  "runtime_manifest_path": "automix/review/plugin_semantic_validation_runtime_manifest.json",
+  "runtime_manifest_schema": "",
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-runtime-evidence-gate-v1",
+  "source_queue": "automix/eval_reports/plugin_semantic_validation_queue.json",
+  "status": "runtime_manifest_missing",
+  "warnings": [
+    "blocked_queue_jobs_remain:2"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "safe draft pass",
+  "coverage_tags": [
+    "dry_run",
+    "safe_draft"
+  ],
+  "input": {
+    "all_gates_passed": true,
+    "dry_run": true
+  },
+  "expected_stage_status": "passed",
+  "expected_decision": "drafts_created_review_required",
+  "expected_blockers": [],
+  "expected_reports": []
+}

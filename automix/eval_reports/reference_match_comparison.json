@@ -1,0 +1,80 @@
+{
+  "schema": "automix-reference-match-comparison-v1",
+  "project_name": "project",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "references_count": 0,
+  "comparison_summary": {
+    "overall_match_score": 0.5,
+    "safe_match_score": 0.538462,
+    "vocal_match_score": 0.0,
+    "low_end_match_score": 0.0,
+    "drum_energy_match_score": 0.0,
+    "melody_prominence_match_score": 0.0,
+    "stereo_match_score": 0.0,
+    "loudness_match_score": 1.0,
+    "artifact_safety_score": 1.0
+  },
+  "differences": {
+    "vocal_too_low": 0.8,
+    "vocal_too_harsh": 0.0,
+    "vocal_too_thin": 0.45,
+    "lead_melody_too_low": 0.78,
+    "drums_too_soft": 0.75,
+    "808_too_weak": 0.72,
+    "low_end_too_muddy": 0.0,
+    "presence_too_masked": 0.76,
+    "air_too_fizzy": 0.0,
+    "stereo_too_wide": 0.0,
+    "stereo_too_narrow": 0.68,
+    "mix_too_limited": 0.0,
+    "mix_not_loud_enough": 0.0,
+    "ai_artifacts_too_exposed": 0.0
+  },
+  "safe_adjustment_priorities": [
+    "vocal_forward_space",
+    "lead_melody_space",
+    "drum_energy_support",
+    "808_support",
+    "stereo_safety"
+  ],
+  "unsafe_adjustments_blocked": [],
+  "reference_average_profile": {},
+  "target_profile_details": {
+    "purpose": "Strong lead vocal, clear digital lead melody, energetic drums/808, controlled high-end, commercial but not over-clean.",
+    "vocal_forwardness_target": 0.8,
+    "lead_melody_prominence_target": 0.78,
+    "drum_energy_target": 0.75,
+    "808_energy_target": 0.72,
+    "low_end_control_target": 0.75,
+    "presence_clarity_target": 0.76,
+    "air_band_target": 0.62,
+    "harshness_max": 0.45,
+    "sibilance_max": 0.42,
+    "stereo_width_target": 0.68,
+    "mono_compatibility_min": 0.7,
+    "loudness_target_lufs_range": [
+      -11.5,
+      -8.5
+    ],
+    "lra_target_range": [
+      3.0,
+      7.0
+    ],
+    "ai_artifact_exposure_max": 0.35,
+    "recommended_priority": [
+      "vocal_forwardness",
+      "lead_melody_prominence",
+      "low_end_control",
+      "drum_energy",
+      "harshness_control",
+      "safe_loudness"
+    ],
+    "profile_name": "digicore_hyperpop_hiphop_vocal_forward",
+    "safety_constraints_override_matching": true,
+    "copyright_safety_note": "Target profiles guide broad mix, tonal, energy, and translation decisions only. They are not commands to copy melody, lyrics, arrangement, artist identity, or reference audio."
+  },
+  "warnings": [
+    "current_mix_missing_target_profile_only",
+    "target_profile_only_used_no_reference_files"
+  ]
+}

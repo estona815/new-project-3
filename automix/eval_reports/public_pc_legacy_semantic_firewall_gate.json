@@ -1,0 +1,142 @@
+{
+  "authoring_candidates_ready_seen": false,
+  "blockers": [],
+  "coverage": {
+    "invalid_semantic_reports": [],
+    "legacy_hash_conflicts_in_analysis_reports": [],
+    "legacy_parameter_write_records": [
+      "scripts/fx_chain_builder.lua",
+      "scripts/plugin_registry.lua"
+    ],
+    "legacy_project_mutation_records": [
+      "scripts/render_setup.lua",
+      "scripts/routing_builder.lua",
+      "scripts/utils.lua"
+    ],
+    "legacy_semantic_references": [],
+    "missing_semantic_reports": [],
+    "unsafe_delivery_records": [],
+    "unsafe_execute_records": [],
+    "unsafe_merge_records": []
+  },
+  "created_at": "2026-06-05T12:16:52Z",
+  "legacy_api_regression_gate_path": "automix/eval_reports/public_pc_legacy_api_regression_gate.json",
+  "legacy_fixture_plan_path": "automix/eval_reports/public_pc_legacy_fixture_plan.json",
+  "legacy_negative_records_total": 5,
+  "legacy_records_total": 26,
+  "limits": [
+    "This gate does not execute legacy Lua, open REAPER, write parameters, render, or approve audio.",
+    "Public-PC legacy files may be used as read-only or negative safety fixtures only.",
+    "Legacy fixture paths or hashes must not appear as accepted semantic validation evidence.",
+    "Passing this firewall does not make plugin semantic validation ready."
+  ],
+  "passed": true,
+  "project_name": "project",
+  "readiness": {
+    "legacy_fixtures_count_as_validation_evidence": false,
+    "legacy_fixtures_firewalled_from_semantic_validation": true,
+    "report_only": true,
+    "safe_to_claim_final_audio_or_delivery": false,
+    "safe_to_execute_legacy_lua_in_user_project": false,
+    "safe_to_merge_legacy_runtime_code": false,
+    "safe_to_write_parameters": false,
+    "semantic_validation_inputs_clean": true
+  },
+  "runtime_evidence_ready_seen": false,
+  "schema": "automix-public-pc-legacy-semantic-firewall-gate-v1",
+  "semantic_reports": [
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_gate.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-gate-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 102
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_evidence_gate.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-runtime-evidence-gate-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 169
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_report_authoring_gate.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-runtime-report-authoring-gate-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 15
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_queue.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-queue-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 255
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collection_package.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-runtime-collection-package-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 255
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_collector_package.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-runtime-collector-package-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 214
+    },
+    {
+      "authoring_candidates_ready": false,
+      "candidate_reports_are_validation_evidence": false,
+      "exists": true,
+      "json_valid": true,
+      "legacy_references": [],
+      "path": "automix/eval_reports/plugin_semantic_validation_runtime_observation_gate.json",
+      "runtime_evidence_ready": false,
+      "schema": "automix-plugin-semantic-validation-runtime-observation-gate-v1",
+      "semantic_validation_ready": false,
+      "strings_scanned": 109
+    }
+  ],
+  "semantic_reports_scanned_total": 7,
+  "semantic_validation_ready_seen": false,
+  "status": "legacy_semantic_firewall_clear",
+  "validation_reports_dir": "automix/analysis_reports",
+  "warnings": [
+    "legacy_negative_safety_fixture_records:5",
+    "legacy_parameter_write_records:2",
+    "legacy_project_mutation_records:3"
+  ]
+}

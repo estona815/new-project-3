@@ -1,9 +1,14 @@
 # New Computer Codex Bootstrap Prompt
 
-Use this prompt after cloning the GitHub repo on another computer.
+Use this prompt after cloning the GitHub repo on another computer or when a
+Codex session is asked to learn the workflow from the GitHub link.
 
 ```text
 You are working in a REAPER AutoMix / mastering automation harness.
+
+Treat the GitHub repo as source, policy, and reproducible workflow context. Do
+not treat it as proof of local plugin semantics, parameter-write safety,
+finished audio quality, or listening approval.
 
 First read, in this order:
 1. AGENTS.md

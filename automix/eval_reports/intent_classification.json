@@ -1,0 +1,304 @@
+{
+  "blockers": [
+    "aggressive_creative_enhancement_disabled_by_default",
+    "artifact_signal_not_established",
+    "explicit_rebeat_stems_and_arrangement_review_required",
+    "explicit_user_approval_and_preview_required",
+    "no_safe_vocal_candidate",
+    "stems_not_ready",
+    "validated_plugin_mapping_required"
+  ],
+  "created_at": "2026-06-05T11:41:25Z",
+  "dry_run_only": true,
+  "feedback_summary": {
+    "baseline_status": "no_feedback_recorded",
+    "category_counts": {},
+    "dry_run_only": true,
+    "exists": true,
+    "latest_entry_id": "",
+    "latest_pass_id": "",
+    "no_feedback_fabricated": true,
+    "path": "automix/review/user_feedback_revision_memory.json",
+    "pending_unresolved_count": 0,
+    "repeated_categories": [],
+    "requires_human_review": false,
+    "resolution_records_count": 0,
+    "resolved_feedback_count": 0,
+    "schema": "automix-user-feedback-summary-v1",
+    "total_entries": 0,
+    "warnings": []
+  },
+  "human_review_required": true,
+  "intents": [
+    {
+      "artifact_focus_score": 0.25,
+      "blockers": [
+        "no_safe_vocal_candidate",
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.35,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "vocal_rescue",
+      "max_artifact_focus_dry_wet": 0.5,
+      "overprocessing_risk_score": 0.35,
+      "preview_only": true,
+      "recommended_next_action": "run_vocal_recovery_or_placement_dry_run",
+      "source_risk_score": 0.0,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.95,
+      "warnings": [
+        "male_lead_vocal_must_remain_primary"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.35,
+      "blockers": [
+        "artifact_signal_not_established",
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.2,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "suno_artifact_suppression",
+      "max_artifact_focus_dry_wet": 0.3,
+      "overprocessing_risk_score": 0.7,
+      "preview_only": true,
+      "recommended_next_action": "run_conservative_artifact_suppression_dry_run",
+      "source_risk_score": 0.25,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.9,
+      "warnings": [
+        "artifact_reduction_not_total_removal",
+        "formant_protection_required"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.25,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.45,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "conservative_cleanup",
+      "max_artifact_focus_dry_wet": 0.45,
+      "overprocessing_risk_score": 0.3,
+      "preview_only": true,
+      "recommended_next_action": "create_conservative_cleanup_plan",
+      "source_risk_score": 0.0,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.8,
+      "warnings": [
+        "dry_run_only_until_ab_review"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "stems_not_ready",
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.0,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "stem_mix",
+      "max_artifact_focus_dry_wet": 0.45,
+      "overprocessing_risk_score": 0.45,
+      "preview_only": true,
+      "recommended_next_action": "run_stem_mix_dry_run",
+      "source_risk_score": 0.0,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.9,
+      "warnings": [
+        "female_support_layers_must_not_replace_male_lead"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "full_mix_source_not_confirmed"
+      ],
+      "confidence": 0.0,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "full_mix_polish",
+      "max_artifact_focus_dry_wet": 0.25,
+      "overprocessing_risk_score": 0.8,
+      "preview_only": true,
+      "recommended_next_action": "request_stems_or_run_report_only_full_mix_qc",
+      "source_risk_score": 0.35,
+      "status": "manual_review_only",
+      "vocal_priority_score": 0.7,
+      "warnings": [
+        "do_not_fake_polish_full_mix_with_limiter"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.2,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "master_only",
+      "max_artifact_focus_dry_wet": 0.2,
+      "overprocessing_risk_score": 0.65,
+      "preview_only": true,
+      "recommended_next_action": "run_premaster_safety_scan",
+      "source_risk_score": 0.3,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.65,
+      "warnings": [
+        "mastering_must_not_fix_mix_balance_problem"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "explicit_rebeat_stems_and_arrangement_review_required",
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.15,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "active_rebeat_mix",
+      "max_artifact_focus_dry_wet": 0.4,
+      "overprocessing_risk_score": 0.6,
+      "preview_only": true,
+      "recommended_next_action": "collect_rebeat_stems_and_manual_arrangement_intent",
+      "source_risk_score": 0.45,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.85,
+      "warnings": [
+        "do_not_replace_existing_song_feel_without_request"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "final_loud_preview_requires_ab_qc_and_approval",
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.2,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "reels_preview_master",
+      "max_artifact_focus_dry_wet": 0.2,
+      "overprocessing_risk_score": 0.7,
+      "preview_only": true,
+      "recommended_next_action": "run_loud_preview_only_after_final_qc",
+      "source_risk_score": 0.5,
+      "status": "manual_review_only",
+      "vocal_priority_score": 0.8,
+      "warnings": [
+        "reels_loudness_preview_must_not_replace_streaming_master_qc"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.0,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "confidence": 0.25,
+      "conservative_mode": true,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "streaming_master",
+      "max_artifact_focus_dry_wet": 0.2,
+      "overprocessing_risk_score": 0.5,
+      "preview_only": true,
+      "recommended_next_action": "run_conservative_streaming_premaster_scan",
+      "source_risk_score": 0.25,
+      "status": "blocked_or_review_only",
+      "vocal_priority_score": 0.8,
+      "warnings": [
+        "translation_and_true_peak_before_loudness"
+      ]
+    },
+    {
+      "artifact_focus_score": 0.2,
+      "blockers": [
+        "aggressive_creative_enhancement_disabled_by_default",
+        "explicit_user_approval_and_preview_required"
+      ],
+      "confidence": 0.05,
+      "conservative_mode": false,
+      "dry_run_only": true,
+      "human_review_required": true,
+      "intent": "aggressive_creative_enhancement",
+      "max_artifact_focus_dry_wet": 0.0,
+      "overprocessing_risk_score": 0.95,
+      "preview_only": true,
+      "recommended_next_action": "manual_review_only",
+      "source_risk_score": 0.9,
+      "status": "blocked",
+      "vocal_priority_score": 0.3,
+      "warnings": [
+        "random_vocal_chops_and_unbounded_saturation_disallowed"
+      ]
+    }
+  ],
+  "plugin_readiness": {
+    "can_run_pitch_correction_safely": false,
+    "can_run_premaster_draft_safely": false,
+    "can_run_vocal_placement_safely": false,
+    "missing_or_unsafe_mappings": [
+      "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "OTT (Xfer Records)",
+      "ReaComp (Cockos)",
+      "ReaDelay (Cockos)",
+      "ReaEQ (Cockos)",
+      "ReaVerbate (Cockos)",
+      "TDR Nova (Tokyo Dawn Labs)",
+      "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "validated EQ/dynamic EQ or JSFX artifact guard adapter",
+      "validated EQ/dynamics/limiter adapter",
+      "validated EQ/dynamics/utility adapter",
+      "validated pitch correction adapter"
+    ],
+    "safe_adapters_count": 0,
+    "safe_draft_plugin_ready": false,
+    "schema": "automix-real-project-plugin-readiness-v1",
+    "warnings": [
+      "no_validated_safe_plugin_adapters"
+    ]
+  },
+  "preview_only_until_ab_review": true,
+  "project_name": "project",
+  "recommended_primary_intent": "conservative_cleanup",
+  "requested_intents": [],
+  "safe_draft_intents": [],
+  "safe_next_mode": "validate_plugin_mappings",
+  "schema": "automix-intent-classification-v1",
+  "source_summary": {
+    "classification_source": "offline_track_name_heuristic",
+    "full_mix_unsafe_tracks": 0,
+    "project_name": "project",
+    "schema": "automix-orchestrator-source-classification-summary-v1",
+    "stem_required_tracks": 0,
+    "tracks_total": 0,
+    "unknown_tracks_skipped": 0,
+    "vocal_like_tracks": 0,
+    "warnings": [
+      "audio_source_classification_not_run_no_track_audio"
+    ]
+  },
+  "status": "review_required",
+  "target_profile": "digicore_hyperpop_hiphop_vocal_forward",
+  "warnings": [
+    "no_validated_safe_plugin_adapters"
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "schema": "codex-vocal-release-candidate-policy-v1",
+  "factory_presets": "factory_presets_safe_defaults.json",
+  "default_preset": "Preserve",
+  "release_presets": [
+    "Preserve",
+    "Balanced",
+    "AI Metallic Surgical",
+    "Hiss / Room Tone Gentle",
+    "Voiceover Clean",
+    "DSP Only Safe",
+    "Side Noise Cleanup",
+    "Artifact Focus Low Denoise"
+  ],
+  "strong_preset": "Strong Test / Repair",
+  "strong_policy": {
+    "never_default": true,
+    "never_auto_migrated": true,
+    "quality_report_only": true,
+    "must_pass_safety": true,
+    "warning": "Strong mode may reduce more artifacts but can affect source tone. Use Residual Monitor to check what is being removed."
+  },
+  "required_test_categories": [
+    "clean_vocal",
+    "clean_consonant_vocal",
+    "clean_acoustic_guitar",
+    "clean_drum_transient",
+    "vocal_with_hiss",
+    "room_tone_vocal",
+    "ai_metallic_vocal",
+    "watery_source_separated_vocal",
+    "stereo_ambience",
+    "full_mix_center_vocal"
+  ],
+  "preset_gates": {
+    "Preserve": {
+      "minimum_average_scores": {
+        "source_preservation": 85.0,
+        "clarity": 85.0,
+        "air": 80.0,
+        "transient": 85.0,
+        "residual_cleanliness": 80.0,
+        "stereo": 80.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 78.0,
+        "clarity": 78.0,
+        "air": 72.0,
+        "transient": 78.0,
+        "residual_cleanliness": 72.0,
+        "safety": 100.0
+      },
+      "clean_input_max_loss_db": {
+        "presence": 2.0,
+        "clarity": 2.0,
+        "air": 3.0,
+        "transient": 2.0
+      }
+    },
+    "Balanced": {
+      "minimum_average_scores": {
+        "source_preservation": 75.0,
+        "clarity": 75.0,
+        "air": 70.0,
+        "transient": 75.0,
+        "residual_cleanliness": 75.0,
+        "stereo": 75.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 68.0,
+        "clarity": 68.0,
+        "air": 62.0,
+        "transient": 68.0,
+        "residual_cleanliness": 65.0,
+        "safety": 100.0
+      }
+    },
+    "AI Metallic Surgical": {
+      "minimum_average_scores": {
+        "source_preservation": 75.0,
+        "clarity": 75.0,
+        "air": 70.0,
+        "transient": 75.0,
+        "residual_cleanliness": 75.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 68.0,
+        "clarity": 68.0,
+        "air": 62.0,
+        "transient": 68.0,
+        "residual_cleanliness": 65.0,
+        "safety": 100.0
+      },
+      "artifact_material_required": true
+    },
+    "Hiss / Room Tone Gentle": {
+      "minimum_average_scores": {
+        "source_preservation": 80.0,
+        "clarity": 80.0,
+        "air": 82.0,
+        "transient": 80.0,
+        "residual_cleanliness": 75.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 72.0,
+        "clarity": 72.0,
+        "air": 74.0,
+        "transient": 72.0,
+        "residual_cleanliness": 65.0,
+        "safety": 100.0
+      }
+    },
+    "Voiceover Clean": {
+      "minimum_average_scores": {
+        "source_preservation": 78.0,
+        "clarity": 82.0,
+        "air": 72.0,
+        "transient": 78.0,
+        "residual_cleanliness": 75.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 70.0,
+        "clarity": 74.0,
+        "air": 64.0,
+        "transient": 70.0,
+        "residual_cleanliness": 65.0,
+        "safety": 100.0
+      }
+    },
+    "DSP Only Safe": {
+      "minimum_average_scores": {
+        "source_preservation": 85.0,
+        "clarity": 85.0,
+        "air": 80.0,
+        "transient": 85.0,
+        "residual_cleanliness": 80.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 78.0,
+        "clarity": 78.0,
+        "air": 72.0,
+        "transient": 78.0,
+        "residual_cleanliness": 72.0,
+        "safety": 100.0
+      }
+    },
+    "Side Noise Cleanup": {
+      "minimum_average_scores": {
+        "source_preservation": 80.0,
+        "clarity": 80.0,
+        "air": 76.0,
+        "transient": 78.0,
+        "residual_cleanliness": 75.0,
+        "stereo": 80.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 72.0,
+        "clarity": 72.0,
+        "air": 68.0,
+        "transient": 70.0,
+        "residual_cleanliness": 65.0,
+        "stereo": 72.0,
+        "safety": 100.0
+      }
+    },
+    "Artifact Focus Low Denoise": {
+      "minimum_average_scores": {
+        "source_preservation": 82.0,
+        "clarity": 82.0,
+        "air": 80.0,
+        "transient": 82.0,
+        "residual_cleanliness": 78.0,
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "source_preservation": 74.0,
+        "clarity": 74.0,
+        "air": 72.0,
+        "transient": 74.0,
+        "residual_cleanliness": 68.0,
+        "safety": 100.0
+      }
+    },
+    "Strong Test / Repair": {
+      "quality_report_only": true,
+      "minimum_average_scores": {
+        "safety": 100.0
+      },
+      "minimum_worst_scores": {
+        "safety": 100.0
+      }
+    }
+  },
+  "release_blockers": [
+    "plugin_crash",
+    "nan_inf_reaches_output",
+    "invalid_model_output_reaches_audio",
+    "bypass_not_dry",
+    "drywet_zero_not_dry",
+    "clean_vocal_damaged_in_preserve",
+    "preserve_obvious_dullness",
+    "default_residual_contains_strong_ghost_vocal",
+    "default_transient_smear",
+    "default_presence_loss_over_threshold",
+    "default_air_collapse",
+    "stereo_image_collapse",
+    "strong_mode_default_or_auto_selected",
+    "obvious_realtime_unsafe_audio_thread_work",
+    "severe_mode_switch_clicks",
+    "model_not_ready_outputs_silence_or_broken_audio",
+    "preset_loading_breaks_existing_sessions"
+  ],
+  "release_warnings": [
+    "Balanced mode slightly darkens some sources",
+    "Surgical mode helps only certain AI artifacts",
+    "Strong mode damages some clean material",
+    "Model confidence often falls back to DSP Only",
+    "ReaFIR-like micro suppression was not ported",
+    "Residual monitor unavailable in some formats",
+    "CPU high in Surgical mode",
+    "Sample rate 96 kHz uses reduced band count if needed",
+    "Unsupported channel layouts fall back to stereo or mono safe path"
+  ],
+  "required_prompt_tests": [
+    "Prompt 1 safety tests",
+    "Prompt 2 soft mask tests",
+    "Prompt 3 preservation tests",
+    "Prompt 5 multiband/M/S tests",
+    "Prompt 6 model output tests",
+    "Prompt 7 evaluation harness tests",
+    "Prompt 8 preset gate tests"
+  ],
+  "manual_listening_required": true,
+  "approval_rule": "A preset cannot pass if vocal preservation or residual cleanliness is rated below acceptable threshold.",
+  "residual_policy": {
+    "good_residual": ["noise", "hiss", "hum", "AI chirp", "metallic artifact", "unwanted fuzz"],
+    "bad_residual": ["vocal phrases", "S/T/CH consonants", "musical breath", "harmonic overtones", "guitar picking", "snare attack", "source ambience tail"],
+    "action_if_bad": "reduce processing, raise preserve controls, reduce high-band attenuation, or reject preset"
+  },
+  "automation_safety": {
+    "continuous_parameters_to_smooth": ["Amount", "DryWet", "MaxSuppressionDb", "VocalPreserve", "ClarityPreserve", "AirPreserve", "TransientPreserve", "SideArtifactReduction", "SurgicalArtifactReduction"],
+    "mode_parameters": ["MultibandMode", "MSEnabled", "MultibandEnabled", "ResidualMonitor"],
+    "rules": [
+      "Do not allocate while responding to automation.",
+      "Continuous parameters must change through smoothed gain paths.",
+      "Mode changes must not bypass dry fallback, NaN/Inf checks, or total attenuation budgets.",
+      "FFT size, hop size, and band count are not exposed as real-time release controls.",
+      "Residual monitor is a listening/debug output and must not alter bypass safety."
+    ]
+  },
+  "mode_switching_safety": {
+    "rules": [
+      "Fresh mode is Preserve.",
+      "Strong is never selected by migration.",
+      "Switching modes must retain dry/wet alignment.",
+      "Gain changes should settle through existing detector and wet smoothing.",
+      "If a future model mode is not ready, output must fall back to dry or DSP-only safe path."
+    ]
+  },
+  "report_fields": [
+    "preset",
+    "parameter_values",
+    "mode",
+    "band_count",
+    "ms_state",
+    "model_mode",
+    "average_noise_reduction",
+    "average_source_preservation",
+    "worst_case_source_preservation",
+    "average_clarity_score",
+    "worst_case_clarity_score",
+    "average_air_score",
+    "worst_case_air_score",
+    "residual_leakage_score",
+    "failure_tags",
+    "recommended_use",
+    "not_recommended_use"
+  ]
+}

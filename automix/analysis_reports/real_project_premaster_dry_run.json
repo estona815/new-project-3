@@ -1,0 +1,67 @@
+{
+  "ai_artifact_risk_profile": {
+    "codec_birdies_risk": 0.0,
+    "high_fizz_risk": 0.0,
+    "metallic_harshness_risk": 0.0,
+    "phasey_width_risk": 0.0,
+    "reverb_tail_pump_risk": 0.0,
+    "sibilance_splatter_risk": 0.0,
+    "vocal_thinness_risk": 0.175
+  },
+  "input_stage": "scan_only",
+  "loudness_profile": {
+    "crest_factor": 0.0,
+    "dynamic_range_proxy": 0.0,
+    "integrated_lufs": 0.0,
+    "limiter_pressure_risk": 0.0,
+    "lra": 0.0,
+    "momentary_lufs_peak": 0.0,
+    "peak_density_score": 0.0,
+    "sample_peak_dbFS": 0.0,
+    "short_term_lufs": 0.0,
+    "true_peak_dbTP": 0.0
+  },
+  "premaster_risk": "high",
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "recommended_premaster_mode": "safety_only_premaster",
+  "scan_date_utc": "2026-05-31T09:26:46Z",
+  "schema": "automix-premaster-safety-analysis-v1",
+  "source_mix_path": "",
+  "stereo_profile": {
+    "low_end_stereo_risk": 0.0,
+    "mid_energy_score": 0.0,
+    "mono_compatibility_risk": 0.0,
+    "phase_correlation": 1.0,
+    "side_energy_score": 0.0,
+    "stereo_width_score": 0.0
+  },
+  "tonal_profile": {
+    "air_10k_16k": 0.0,
+    "bass_60_120": 0.0,
+    "harshness_2k5_6k": 0.0,
+    "low_mid_120_350": 0.0,
+    "mid_350_1k": 0.0,
+    "presence_1k_4k": 0.0,
+    "sibilance_5k_10k": 0.0,
+    "sub_20_60": 0.0,
+    "ultra_high_16k_plus": 0.0
+  },
+  "translation_profile": {
+    "club_low_end_risk": 0.88,
+    "earbud_harshness_risk": 0.0,
+    "phone_speaker_vocal_loss_risk": 0.6925,
+    "small_speaker_risk": 0.45
+  },
+  "vocal_preservation_profile": {
+    "vocal_body_score": 0.0,
+    "vocal_clarity_score": 0.0,
+    "vocal_forwardness_score": 0.0,
+    "vocal_harshness_score": 0.0,
+    "vocal_masking_risk": 0.45,
+    "vocal_sibilance_score": 0.0,
+    "vocal_to_beat_balance": 0.0
+  },
+  "warnings": [
+    "vocal forwardness is weak; prefer mix placement revision over master boost"
+  ]
+}

@@ -1,3 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-v07_loud,mgmg_mashup_v07_mseq_male_center_human_tone_loud_24-48.wav,48000,int32,109.6,-2.41,-11.31,8.9,0.9047,-13.01,17.315,26.53,14.628,23.3,15.934,1.643,0.649,-8.5,1.2,-1.2,-17.0,-8.5,-7.1
-v07_preview_mp3,mgmg_mashup_v07_mseq_male_center_human_tone_preview_320.mp3,48000,float32 decoded_from_mp3,109.6,-1.55,-11.31,9.76,0.9046,-13.0,17.313,26.532,14.629,23.299,15.932,1.643,0.65,-8.5,1.2,-1.0,-17.0,-8.5,-7.1

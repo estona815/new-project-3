@@ -1,0 +1,16 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "low pitch confidence 0.40",
+  "coverage_tags": [
+    "low_confidence_analysis"
+  ],
+  "input": {
+    "pitch_confidence": 0.4
+  },
+  "expected_stage_status": "skipped",
+  "expected_decision": "skip",
+  "expected_blockers": [
+    "PITCH_CONFIDENCE_LOW"
+  ],
+  "expected_reports": []
+}

@@ -1,3 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-v12_vocals_down_lufs6,mgmg_mashup_v12_vocals_down_clear_stems_lufs6_24-48.wav,48000,int32,109.6,-1.15,-9.08,7.93,0.9677,-17.85,22.267,17.419,10.832,25.811,18.742,3.145,1.783,-6.0,2.1,-0.7,-15.0,-5.9,-4.4
-v12_preview_mp3,mgmg_mashup_v12_vocals_down_clear_stems_lufs6_preview_320.mp3,48000,float32 decoded_from_mp3,109.6,-1.09,-9.08,7.98,0.9676,-17.84,22.263,17.421,10.832,25.809,18.743,3.147,1.785,-6.0,2.1,-0.4,-15.0,-5.9,-4.4

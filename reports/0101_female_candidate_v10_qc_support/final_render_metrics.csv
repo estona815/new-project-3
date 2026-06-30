@@ -1,7 +1,0 @@
-label,file,sample_rate,dtype,duration_s,peak_dbfs,rms_dbfs,crest_db,stereo_corr,side_mid_db,sub_20_80_pct,bass_body_80_200_pct,body_200_500_pct,formant_500_1500_pct,presence_1500_5000_pct,sibilance_5000_10000_pct,air_10000_16000_pct,integrated_lufs,lra_lu,true_peak_dbfs,short_term_lufs_min,short_term_lufs_median,short_term_lufs_max
-female_qc_support_wav,0101_FINAL_female_qc_support.wav,48000,int32,139.441,-1.22,-14.5,13.28,0.838,-10.55,6.029,16.21,29.238,40.396,6.632,0.857,0.639,-11.6,3.6,-1.2,-30.2,-11.6,-9.5
-female_qc_support_mp3,0101_FINAL_female_qc_support_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.14,-14.5,13.35,0.8379,-10.54,6.028,16.21,29.239,40.394,6.633,0.858,0.639,-11.6,3.6,-1.1,-30.2,-11.6,-9.5
-male_only_safety_wav,0101_FINAL_male_only_safety.wav,48000,int32,139.441,-1.23,-14.58,13.35,0.8491,-10.88,6.22,16.689,29.039,40.446,6.111,0.856,0.638,-11.5,3.8,-1.2,-30.3,-11.7,-9.5
-male_only_safety_mp3,0101_FINAL_male_only_safety_320.mp3,48000,float32 decoded_from_mp3,139.441,-1.1,-14.58,13.48,0.8491,-10.88,6.219,16.689,29.04,40.444,6.112,0.856,0.638,-11.5,3.8,-1.1,-30.3,-11.7,-9.5
-processed_male_vocal,processed_male_vocal_stem.wav,48000,float32,139.441,-2.0,-25.95,23.95,0.9996,-37.43,0.0,9.883,24.026,33.38,30.994,0.979,0.739,-21.1,1.8,-2.0,-79.8,-21.1,-20.0
-processed_female_qc_support,processed_female_qc_support_stem.wav,48000,float32,139.441,-8.1,-29.0,20.9,0.5701,-5.63,0.0,0.015,39.004,36.897,22.867,0.722,0.495,-22.7,8.6,-8.1,-77.6,-24.5,-20.4

@@ -1,0 +1,33 @@
+targets:
+  loud_reference_master_24bit_48k:
+    path: work/renders/loud_reference_master_24bit_48k.wav
+    format: wav
+    sample_rate: 48000
+    bit_depth: 24
+    target_profile: loud_reference_master
+  safe_streaming_master_24bit_48k:
+    path: work/renders/safe_streaming_master_24bit_48k.wav
+    format: wav
+    sample_rate: 48000
+    bit_depth: 24
+    target_profile: safe_streaming_master
+  final_24bit_48k:
+    path: work/renders/final_24bit_48k.wav
+    format: wav
+    sample_rate: 48000
+    bit_depth: 24
+    compatibility_alias: safe_streaming_master_24bit_48k
+  final_16bit_44k1:
+    path: work/renders/final_16bit_44k1.wav
+    format: wav
+    sample_rate: 44100
+    bit_depth: 16
+    dither: documented_if_used
+  preview_mp3:
+    path: work/renders/preview.mp3
+    format: mp3
+    requires_encoder: mp3
+  preview_m4a:
+    path: work/renders/preview.m4a
+    format: m4a
+    fallback_if_mp3_unavailable: true

@@ -1,0 +1,70 @@
+{
+  "applied_stages": [],
+  "created_at": "2026-06-05T11:41:25Z",
+  "original_master_protected": true,
+  "original_tracks_protected": true,
+  "project_name": "project",
+  "rollback_entries": [
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/final_safe_premaster_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "premaster"
+    },
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/final_vocal_space_carving_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "final_export"
+    },
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/global_rollback_registry.json",
+      "safe_to_rollback": true,
+      "stage": "unknown"
+    },
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/project_premaster_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "premaster"
+    },
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/project_reference_match_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "reference_matching"
+    },
+    {
+      "created_sends": [],
+      "draft_tracks": [],
+      "original_tracks": [],
+      "plugins_inserted": [],
+      "rollback_file": "automix/rollback/recovery_only_rollback_registry.json",
+      "safe_to_rollback": true,
+      "stage": "vocal_recovery"
+    }
+  ],
+  "schema": "automix-global-rollback-registry-v1",
+  "validation": {
+    "failures": [],
+    "passed": true,
+    "warnings": []
+  },
+  "warnings": []
+}

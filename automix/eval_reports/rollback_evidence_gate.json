@@ -1,0 +1,67 @@
+{
+  "applied_stages": [],
+  "blockers": [],
+  "created_at": "2026-06-02T16:12:43Z",
+  "entry_results": [
+    {
+      "blockers": [],
+      "exists": true,
+      "resolved_path": "automix/rollback/global_rollback_registry.json",
+      "rollback_file": "automix/rollback/global_rollback_registry.json",
+      "safe_to_rollback": true,
+      "stage": "unknown",
+      "warnings": [
+        "rollback_entry_points_to_global_registry",
+        "rollback_stage_unknown"
+      ]
+    },
+    {
+      "blockers": [],
+      "exists": true,
+      "resolved_path": "automix/rollback/project_premaster_rollback.json",
+      "rollback_file": "automix/rollback/project_premaster_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "premaster",
+      "warnings": []
+    },
+    {
+      "blockers": [],
+      "exists": true,
+      "resolved_path": "automix/rollback/project_reference_match_rollback.json",
+      "rollback_file": "automix/rollback/project_reference_match_rollback.json",
+      "safe_to_rollback": true,
+      "stage": "reference_matching",
+      "warnings": []
+    }
+  ],
+  "limits": [
+    "This gate validates rollback evidence only; it does not approve audio.",
+    "Rollback evidence does not replace final QC, A/B review, or human approval.",
+    "If a stage was applied without rollback evidence, delivery remains blocked."
+  ],
+  "original_master_protected": true,
+  "original_tracks_protected": true,
+  "output_dir": "automix",
+  "project_name": "project",
+  "ready_for_delivery_readiness": true,
+  "recomputed_validation": {
+    "failures": [],
+    "passed": true,
+    "warnings": []
+  },
+  "registry_path": "automix/rollback/global_rollback_registry.json",
+  "rollback_entries_total": 3,
+  "safe_entries_total": 3,
+  "schema": "automix-rollback-evidence-gate-v1",
+  "stored_validation": {
+    "failures": [],
+    "passed": true,
+    "warnings": []
+  },
+  "template_path": "automix/review/rollback_evidence_manifest_template.json",
+  "warnings": [
+    "no_applied_stages_declared",
+    "unknown:rollback_entry:rollback_entry_points_to_global_registry",
+    "unknown:rollback_entry:rollback_stage_unknown"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "blockers": [],
+  "coverage": {
+    "credential_marker_records": [],
+    "disallowed_api_records": [
+      {
+        "disallowed_reaper_calls": [
+          "TrackFX_SetNamedConfigParm",
+          "TrackFX_SetParam"
+        ],
+        "relative_path": "scripts/plugin_registry.lua"
+      },
+      {
+        "disallowed_reaper_calls": [
+          "TrackFX_SetEQBandEnabled",
+          "TrackFX_SetEQParam"
+        ],
+        "relative_path": "scripts/fx_chain_builder.lua"
+      },
+      {
+        "disallowed_reaper_calls": [
+          "GetSetProjectInfo",
+          "GetSetProjectInfo_String"
+        ],
+        "relative_path": "scripts/render_setup.lua"
+      },
+      {
+        "disallowed_reaper_calls": [
+          "SetTrackSendInfo_Value"
+        ],
+        "relative_path": "scripts/routing_builder.lua"
+      },
+      {
+        "disallowed_reaper_calls": [
+          "GetSetProjectNotes",
+          "InsertMedia"
+        ],
+        "relative_path": "scripts/utils.lua"
+      }
+    ],
+    "parameter_write_records": [
+      "scripts/fx_chain_builder.lua",
+      "scripts/plugin_registry.lua"
+    ],
+    "project_mutation_records": [
+      "scripts/render_setup.lua",
+      "scripts/routing_builder.lua",
+      "scripts/utils.lua"
+    ],
+    "records_missing_required_direct_merge_blockers": [],
+    "unsafe_merge_records": [],
+    "unsafe_runtime_records": []
+  },
+  "created_at": "2026-06-05T12:16:41Z",
+  "legacy_fixture_plan_path": "automix/eval_reports/public_pc_legacy_fixture_plan.json",
+  "limits": [
+    "This gate proves only static regression coverage for legacy public-PC APIs.",
+    "It does not execute legacy Lua, approve parameter writes, render audio, or validate sonic quality.",
+    "Legacy files with disallowed REAPER calls are negative fixtures for safety gates, not approved automation code."
+  ],
+  "passed": true,
+  "policy": {
+    "current_disallowed_reaper_calls": [
+      "ApplyNudge",
+      "GetSetProjectInfo",
+      "GetSetProjectInfo_String",
+      "GetSetProjectNotes",
+      "InsertMedia",
+      "InsertMediaSection",
+      "Main_OnCommand",
+      "Main_SaveProject",
+      "RenderFileSection",
+      "SaveProject",
+      "SetProjExtState",
+      "SetProjectMarker",
+      "SetProjectMarker2",
+      "SetProjectMarker3",
+      "SetRegionRenderMatrix",
+      "SetTrackSendInfo_Value",
+      "TrackFX_SetEQBandEnabled",
+      "TrackFX_SetEQParam",
+      "TrackFX_SetNamedConfigParm",
+      "TrackFX_SetParam",
+      "TrackFX_SetParamNormalized",
+      "UpdateTimeline"
+    ],
+    "plan_disallowed_reaper_calls": [
+      "GetSetProjectInfo",
+      "GetSetProjectInfo_String",
+      "GetSetProjectNotes",
+      "InsertMedia",
+      "SetTrackSendInfo_Value",
+      "TrackFX_SetEQBandEnabled",
+      "TrackFX_SetEQParam",
+      "TrackFX_SetNamedConfigParm",
+      "TrackFX_SetParam"
+    ],
+    "required_direct_merge_blockers": [
+      "current_fail_closed_gates_must_remain_authoritative",
+      "legacy_runtime_code_requires_manual_review"
+    ],
+    "uncovered_policy_calls": []
+  },
+  "project_name": "project",
+  "readiness": {
+    "legacy_api_regression_covered": true,
+    "ready_to_use_negative_safety_fixtures": true,
+    "report_only": true,
+    "safe_to_claim_final_audio_or_delivery": false,
+    "safe_to_execute_legacy_lua_in_user_project": false,
+    "safe_to_merge_legacy_runtime_code": false,
+    "safe_to_render_or_save": false,
+    "safe_to_write_parameters": false
+  },
+  "records_total": 26,
+  "schema": "automix-public-pc-legacy-api-regression-gate-v1",
+  "status": "legacy_api_regression_covered",
+  "warnings": [
+    "legacy_disallowed_reaper_api_records:5",
+    "legacy_parameter_write_records:2",
+    "legacy_project_mutation_records:3"
+  ]
+}

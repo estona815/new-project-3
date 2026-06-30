@@ -1,0 +1,431 @@
+{
+  "after_snapshot": {
+    "fx_counts_per_track": [
+      0,
+      2,
+      11,
+      2,
+      1,
+      1,
+      2,
+      2
+    ],
+    "master_fx_count": 3,
+    "media_item_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "project_exists": true,
+    "project_file_modified_timestamp": 1780152396.854305,
+    "project_file_sha256": "9b328aa24e4ae43322bf1deaf0d1378ab77b34d9a2fe176ca5c90087a93a548c",
+    "project_file_size_bytes": 38098,
+    "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+    "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+    "receive_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "routing_summary": {
+      "receive_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "send_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "schema": "automix-read-only-project-snapshot-v1",
+    "send_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "snapshot_time": "2026-05-31T09:26:46Z",
+    "take_pitch_playrate_states": [
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [],
+      []
+    ],
+    "track_count": 8,
+    "track_guids": [
+      "{8617EFFB-D580-4F47-92BA-01F68788AAD9}",
+      "{789EE8C5-6F76-0B46-AD9E-C49C912834DD}",
+      "{66FD05FC-C225-9F40-B4F0-DCA7650D3957}",
+      "{7CA69CA0-EF3B-494B-95F8-3B82050D24AF}",
+      "{87AA7D9A-736A-964C-A207-C7C3FD67CF91}",
+      "{CC2B5F66-254D-FD4D-B845-E6DDAC6FD868}",
+      "{7C0D06FA-41DA-A54F-8AE6-49E40A875FBD}",
+      "{0A85E797-01C7-4544-A75C-FE77C16529A6}"
+    ],
+    "track_names": [
+      "SOURCE full mix reference muted",
+      "V37 INSTRUMENTAL BUS free EQ pocket",
+      "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "V37 PRINTED VOCAL REVERB SEND",
+      "V37 PRINTED VOCAL DELAY SEND",
+      "V37 RETURN ReaVerbate dark send",
+      "V37 RETURN ReaDelay filtered throw"
+    ],
+    "tracks": [
+      {
+        "fx_count": 0,
+        "media_item_count": 1,
+        "name": "SOURCE full mix reference muted",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{8617EFFB-D580-4F47-92BA-01F68788AAD9}",
+        "track_index": 1
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 1,
+        "name": "V37 INSTRUMENTAL BUS free EQ pocket",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{789EE8C5-6F76-0B46-AD9E-C49C912834DD}",
+        "track_index": 2
+      },
+      {
+        "fx_count": 11,
+        "media_item_count": 1,
+        "name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{66FD05FC-C225-9F40-B4F0-DCA7650D3957}",
+        "track_index": 3
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 1,
+        "name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{7CA69CA0-EF3B-494B-95F8-3B82050D24AF}",
+        "track_index": 4
+      },
+      {
+        "fx_count": 1,
+        "media_item_count": 1,
+        "name": "V37 PRINTED VOCAL REVERB SEND",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{87AA7D9A-736A-964C-A207-C7C3FD67CF91}",
+        "track_index": 5
+      },
+      {
+        "fx_count": 1,
+        "media_item_count": 1,
+        "name": "V37 PRINTED VOCAL DELAY SEND",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{CC2B5F66-254D-FD4D-B845-E6DDAC6FD868}",
+        "track_index": 6
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 0,
+        "name": "V37 RETURN ReaVerbate dark send",
+        "receive_count": 1,
+        "send_count": 0,
+        "take_pitch_playrate_states": [],
+        "track_guid": "{7C0D06FA-41DA-A54F-8AE6-49E40A875FBD}",
+        "track_index": 7
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 0,
+        "name": "V37 RETURN ReaDelay filtered throw",
+        "receive_count": 1,
+        "send_count": 0,
+        "take_pitch_playrate_states": [],
+        "track_guid": "{0A85E797-01C7-4544-A75C-FE77C16529A6}",
+        "track_index": 8
+      }
+    ],
+    "warnings": []
+  },
+  "before_snapshot": {
+    "fx_counts_per_track": [
+      0,
+      2,
+      11,
+      2,
+      1,
+      1,
+      2,
+      2
+    ],
+    "master_fx_count": 3,
+    "media_item_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "project_exists": true,
+    "project_file_modified_timestamp": 1780152396.854305,
+    "project_file_sha256": "9b328aa24e4ae43322bf1deaf0d1378ab77b34d9a2fe176ca5c90087a93a548c",
+    "project_file_size_bytes": 38098,
+    "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+    "project_path": "reaper/mesi_1_v37_vocal_clarity_max_guarded/mesi_1_v37_VOCAL_CLARITY_FINAL.rpp",
+    "receive_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "routing_summary": {
+      "receive_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "send_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "schema": "automix-read-only-project-snapshot-v1",
+    "send_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "snapshot_time": "2026-05-31T09:26:46Z",
+    "take_pitch_playrate_states": [
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [
+        "PLAYRATE 1 1 0 -1 0 0.0025"
+      ],
+      [],
+      []
+    ],
+    "track_count": 8,
+    "track_guids": [
+      "{8617EFFB-D580-4F47-92BA-01F68788AAD9}",
+      "{789EE8C5-6F76-0B46-AD9E-C49C912834DD}",
+      "{66FD05FC-C225-9F40-B4F0-DCA7650D3957}",
+      "{7CA69CA0-EF3B-494B-95F8-3B82050D24AF}",
+      "{87AA7D9A-736A-964C-A207-C7C3FD67CF91}",
+      "{CC2B5F66-254D-FD4D-B845-E6DDAC6FD868}",
+      "{7C0D06FA-41DA-A54F-8AE6-49E40A875FBD}",
+      "{0A85E797-01C7-4544-A75C-FE77C16529A6}"
+    ],
+    "track_names": [
+      "SOURCE full mix reference muted",
+      "V37 INSTRUMENTAL BUS free EQ pocket",
+      "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "V37 PRINTED VOCAL REVERB SEND",
+      "V37 PRINTED VOCAL DELAY SEND",
+      "V37 RETURN ReaVerbate dark send",
+      "V37 RETURN ReaDelay filtered throw"
+    ],
+    "tracks": [
+      {
+        "fx_count": 0,
+        "media_item_count": 1,
+        "name": "SOURCE full mix reference muted",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{8617EFFB-D580-4F47-92BA-01F68788AAD9}",
+        "track_index": 1
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 1,
+        "name": "V37 INSTRUMENTAL BUS free EQ pocket",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{789EE8C5-6F76-0B46-AD9E-C49C912834DD}",
+        "track_index": 2
+      },
+      {
+        "fx_count": 11,
+        "media_item_count": 1,
+        "name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{66FD05FC-C225-9F40-B4F0-DCA7650D3957}",
+        "track_index": 3
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 1,
+        "name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{7CA69CA0-EF3B-494B-95F8-3B82050D24AF}",
+        "track_index": 4
+      },
+      {
+        "fx_count": 1,
+        "media_item_count": 1,
+        "name": "V37 PRINTED VOCAL REVERB SEND",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{87AA7D9A-736A-964C-A207-C7C3FD67CF91}",
+        "track_index": 5
+      },
+      {
+        "fx_count": 1,
+        "media_item_count": 1,
+        "name": "V37 PRINTED VOCAL DELAY SEND",
+        "receive_count": 0,
+        "send_count": 0,
+        "take_pitch_playrate_states": [
+          "PLAYRATE 1 1 0 -1 0 0.0025"
+        ],
+        "track_guid": "{CC2B5F66-254D-FD4D-B845-E6DDAC6FD868}",
+        "track_index": 6
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 0,
+        "name": "V37 RETURN ReaVerbate dark send",
+        "receive_count": 1,
+        "send_count": 0,
+        "take_pitch_playrate_states": [],
+        "track_guid": "{7C0D06FA-41DA-A54F-8AE6-49E40A875FBD}",
+        "track_index": 7
+      },
+      {
+        "fx_count": 2,
+        "media_item_count": 0,
+        "name": "V37 RETURN ReaDelay filtered throw",
+        "receive_count": 1,
+        "send_count": 0,
+        "take_pitch_playrate_states": [],
+        "track_guid": "{0A85E797-01C7-4544-A75C-FE77C16529A6}",
+        "track_index": 8
+      }
+    ],
+    "warnings": []
+  },
+  "modification_detected": [],
+  "modified": false,
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "read_only_mode": true,
+  "safe": true,
+  "schema": "automix-read-only-guard-report-v1",
+  "warnings": []
+}

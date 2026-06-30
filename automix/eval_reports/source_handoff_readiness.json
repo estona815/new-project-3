@@ -1,0 +1,234 @@
+{
+  "accepted_source_summary": {
+    "accepted_export_source_present": false,
+    "accepted_sources": [],
+    "blocked_reasons": [
+      "no_accepted_export_source"
+    ],
+    "safe_to_export": false,
+    "selected_export_source": {
+      "exists": false,
+      "path": "",
+      "size_bytes": 0
+    },
+    "selected_export_stage": ""
+  },
+  "blockers": [
+    "accepted_export_source_missing",
+    "current_source_file_missing:V37 RETURN ReaDelay filtered throw",
+    "current_source_file_missing:V37 RETURN ReaVerbate dark send",
+    "full_mix_unsafe_tracks:2",
+    "stem_requests_open:2"
+  ],
+  "created_at": "2026-06-02T15:23:47Z",
+  "final_export_state_path": "automix/export/final_export_state.json",
+  "limits": [
+    "This report does not analyze, render, modify, or approve audio.",
+    "Current source files being present does not make them accepted export sources.",
+    "Full-mix/reference material stays reference-only until a human review explicitly accepts a draft source."
+  ],
+  "manual_review_items": [
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/vocal_reverb_send_print.wav",
+        "size_bytes": 40646722
+      },
+      "recommended_next_action": "analyze_manually",
+      "review_reason": [
+        "audio_read_failed:vocal_reverb_send_print.wav:Error",
+        "unknown_source_skipped"
+      ],
+      "role": "reverb_send",
+      "source_classification": "unknown",
+      "track_index": 5,
+      "track_name": "V37 PRINTED VOCAL REVERB SEND"
+    },
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/vocal_delay_send_print.wav",
+        "size_bytes": 40646722
+      },
+      "recommended_next_action": "analyze_manually",
+      "review_reason": [
+        "audio_read_failed:vocal_delay_send_print.wav:Error",
+        "unknown_source_skipped"
+      ],
+      "role": "delay_send",
+      "source_classification": "unknown",
+      "track_index": 6,
+      "track_name": "V37 PRINTED VOCAL DELAY SEND"
+    },
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": false,
+        "path": "",
+        "size_bytes": 0
+      },
+      "recommended_next_action": "analyze_manually",
+      "review_reason": [
+        "unknown_source_skipped"
+      ],
+      "role": "unknown",
+      "source_classification": "unknown",
+      "track_index": 7,
+      "track_name": "V37 RETURN ReaVerbate dark send"
+    },
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": false,
+        "path": "",
+        "size_bytes": 0
+      },
+      "recommended_next_action": "analyze_manually",
+      "review_reason": [
+        "unknown_source_skipped"
+      ],
+      "role": "delay_send",
+      "source_classification": "unknown",
+      "track_index": 8,
+      "track_name": "V37 RETURN ReaDelay filtered throw"
+    }
+  ],
+  "output_dir": "automix",
+  "project_name": "project",
+  "project_state_path": "automix/export/project_state_manifest.json",
+  "safe_vocal_candidates": [
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/lead_vocal_clarity_processed.wav",
+        "size_bytes": 40646722
+      },
+      "recommended_next_action": "validate_plugin_mappings_first",
+      "review_reason": [
+        "audio_read_failed:lead_vocal_clarity_processed.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "role": "lead_vocal",
+      "source_classification": "raw_vocal",
+      "track_index": 3,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED"
+    },
+    {
+      "automatic_processing_allowed": false,
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/backing_vocal_side_support.wav",
+        "size_bytes": 40646722
+      },
+      "recommended_next_action": "validate_plugin_mappings_first",
+      "review_reason": [
+        "audio_read_failed:backing_vocal_side_support.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "role": "backing_vocal",
+      "source_classification": "raw_vocal",
+      "track_index": 4,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R"
+    }
+  ],
+  "schema": "automix-source-handoff-readiness-v1",
+  "source_safety_path": "automix/eval_reports/real_project_source_safety_map.json",
+  "source_summary": {
+    "ai_or_already_processed_vocals": 0,
+    "full_mix_unsafe_tracks": 2,
+    "safe_vocal_candidates": 2,
+    "source_separated_vocals": 0,
+    "stem_required_tracks": 2,
+    "unknown_tracks": 4
+  },
+  "stem_requests": [
+    {
+      "acceptance_criteria": [
+        "provided as WAV 24-bit/48 kHz or documented equivalent",
+        "track role and processing level are labeled",
+        "source is reviewed before any safe-draft processing",
+        "reference/full-mix material remains reference-only unless explicitly accepted as a draft source"
+      ],
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/source_full_mix_reference.wav",
+        "size_bytes": 40646722
+      },
+      "current_source_is_processing_target": false,
+      "recommended_next_action": "provide_isolated_stems",
+      "requested_files": [
+        {
+          "label": "instrumental_or_music_bus_stem",
+          "notes": "Needed to evaluate vocal-seat carving without treating a full mix as a vocal source.",
+          "preferred_processing": "dry or lightly processed"
+        },
+        {
+          "label": "separate_lead_vocal_stem_if_available",
+          "notes": "Useful for level-matched A/B and vocal-first balance validation.",
+          "preferred_processing": "dry preferred"
+        }
+      ],
+      "role": "full_mix_reference",
+      "source_classification": "full_mix",
+      "stem_category": "instrumental_bus_required",
+      "track_index": 1,
+      "track_name": "SOURCE full mix reference muted",
+      "why_required": [
+        "Current source is not accepted for automatic vocal/pitch/recovery processing.",
+        "Full-mix or reference-like sources require isolated stems or manual review."
+      ]
+    },
+    {
+      "acceptance_criteria": [
+        "provided as WAV 24-bit/48 kHz or documented equivalent",
+        "track role and processing level are labeled",
+        "source is reviewed before any safe-draft processing",
+        "reference/full-mix material remains reference-only unless explicitly accepted as a draft source"
+      ],
+      "current_source": {
+        "exists": true,
+        "path": "/Users/hantaeheuk/Documents/New project 3/audio_work/mesi_1_v37_vocal_clarity_max_guarded/processed_stems/instrumental_vocal_pocket.wav",
+        "size_bytes": 40646722
+      },
+      "current_source_is_processing_target": false,
+      "recommended_next_action": "provide_isolated_stems",
+      "requested_files": [
+        {
+          "label": "instrumental_or_music_bus_stem",
+          "notes": "Needed to evaluate vocal-seat carving without treating a full mix as a vocal source.",
+          "preferred_processing": "dry or lightly processed"
+        },
+        {
+          "label": "separate_lead_vocal_stem_if_available",
+          "notes": "Useful for level-matched A/B and vocal-first balance validation.",
+          "preferred_processing": "dry preferred"
+        }
+      ],
+      "role": "instrumental_bus",
+      "source_classification": "full_mix",
+      "stem_category": "instrumental_bus_required",
+      "track_index": 2,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "why_required": [
+        "Current source is not accepted for automatic vocal/pitch/recovery processing.",
+        "Full-mix or reference-like sources require isolated stems or manual review."
+      ]
+    }
+  ],
+  "summary": {
+    "accepted_export_source_present": false,
+    "automatic_processing_ready": false,
+    "manual_review_tracks_total": 4,
+    "safe_vocal_candidates_total": 2,
+    "source_files_present_total": 6,
+    "source_files_total": 8,
+    "stem_requests_total": 2
+  },
+  "warnings": [
+    "current_source_file_presence_is_not_acceptance",
+    "manual_review_required_tracks:4"
+  ]
+}

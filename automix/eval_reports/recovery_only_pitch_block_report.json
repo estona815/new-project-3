@@ -1,0 +1,18 @@
+{
+  "blocked_controls": [
+    "correction_amount",
+    "speed",
+    "depth",
+    "key",
+    "scale",
+    "formant_preserve",
+    "humanize",
+    "vibrato_preserve"
+  ],
+  "pitch_parameters_written": false,
+  "pitch_plugins_inserted": false,
+  "pitch_stage_blocked": true,
+  "reason": "Recovery-only pilot does not allow pitch correction.",
+  "schema": "automix-recovery-only-pitch-block-v1",
+  "warnings": []
+}

@@ -1,0 +1,11 @@
+{
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "render_enabled": false,
+  "schema": "automix-recovery-only-ab-render-plan-v1",
+  "tracks_not_rendered": [],
+  "tracks_to_render": [],
+  "warnings": [
+    "render_disabled_plan_only",
+    "evaluation_cannot_pass_without_ab_renders"
+  ]
+}

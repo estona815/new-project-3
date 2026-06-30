@@ -1,0 +1,32 @@
+{
+  "expected_reports": [
+    "automix/export/final_export_state.json",
+    "automix/export/final_render_manifest.json",
+    "automix/eval_reports/final_render_evidence_gate.json",
+    "automix/eval_reports/final_qc_metrics.json",
+    "automix/eval_reports/final_qc_evidence_gate.json",
+    "automix/eval_reports/final_ab_preview_manifest.json",
+    "automix/eval_reports/ab_preview_evidence_gate.json",
+    "automix/review/final_human_approval.json",
+    "automix/eval_reports/final_approval_evidence_gate.json",
+    "automix/export/deliverable_package_manifest.json",
+    "automix/eval_reports/deliverable_package_evidence_gate.json",
+    "automix/export/project_state_manifest.json",
+    "automix/eval_reports/rollback_evidence_gate.json"
+  ],
+  "limits": [
+    "This gate validates cross-report consistency only; it does not approve audio.",
+    "A passing consistency gate does not replace measured QC, matched-loudness listening, or human approval.",
+    "Missing real audio/source evidence remains a blocker even if report schemas are present."
+  ],
+  "required_checks": [
+    "final export state, render evidence, QC evidence, A/B evidence, final approval, package evidence, project state, and rollback evidence use expected schemas",
+    "supporting final render, QC, A/B, approval, package, and rollback gates are ready",
+    "final audio path is consistent across render manifest, render evidence, QC metrics, QC evidence, A/B preview, and approval records",
+    "A/B preview output path is consistent across preview manifest, A/B evidence, approval evidence, and human approval record",
+    "approved source and stage match the final export state",
+    "project state records original/master protection and the selected source when a selected source exists",
+    "package manifest lists the final audio and A/B preview filenames and matches package evidence ZIP path/size"
+  ],
+  "schema": "automix-final-delivery-consistency-manifest-template-v1"
+}

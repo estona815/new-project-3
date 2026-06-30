@@ -40,9 +40,11 @@ deliverables/
 downloads/
 exports/
 drive_handoff/
+hwp_extract/
 output/
 processed_audio/
 renders/
+tools/bin/
 tmp/
 external_models/audio-separator/
 suno_studio_extract/
@@ -53,6 +55,7 @@ ESTONA_AUTO_MIX_ENGINE/06_OUTPUTS/
 
 # Generated office deliverables
 *.docx
+*.odt
 *.pdf
 
 # Codex mix/master harness inputs and runtime output
@@ -60,12 +63,15 @@ input/stems/*
 !input/stems/.gitkeep
 input/reference/*
 !input/reference/.gitkeep
+input/target/*
+!input/target/.gitkeep
 work/assets/*
 !work/assets/.gitkeep
 work/reaper_project/*
 !work/reaper_project/.gitkeep
 work/traces/*
 !work/traces/.gitkeep
+!work/renders/
 work/renders/*
 !work/renders/.gitkeep
 work/qc/*

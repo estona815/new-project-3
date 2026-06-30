@@ -39,7 +39,7 @@ def make_minimal_workspace(
         else:
             write_text(path, "fixture\n")
     write_text(root / "automix/harness/fixture_module.py", "# fixture\n")
-    write_text(root / "reaper/scripts/00_bootstrap_project.lua", "-- fixture\n")
+    write_text(root / "automix/scan_reaper_plugin_inventory.lua", "-- fixture\n")
     if jsfx_layout == "vocal_clarity_bundle":
         write_text(root / "VOCAL_CLARITY_REPAIR_SYSTEM/JSFX/vocal_ai_artifact_split_tamer.jsfx", "desc: fixture\n")
     elif jsfx_layout == "legacy_reaper_bundle":

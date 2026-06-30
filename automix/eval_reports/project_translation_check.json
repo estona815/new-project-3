@@ -1,0 +1,15 @@
+{
+  "schema": "automix-project-translation-check-v1",
+  "mono_fold_down_risk": 0.0,
+  "small_speaker_vocal_audibility_proxy": 0.55,
+  "earbud_harshness_proxy": 0.0,
+  "low_end_translation_proxy": 0.12,
+  "phase_correlation_warning": false,
+  "vocal_sibilance_warning": false,
+  "limiter_pumping_warning": false,
+  "warnings": [
+    "phone_speaker_vocal_loss_recommend_mix_revision",
+    "low_end_translation_manual_review"
+  ],
+  "recommended_action": "manual_review_required"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "prompt41-mock-analysis-fixture-v1",
+  "name": "rejected recovery",
+  "coverage_tags": [
+    "human_review",
+    "rejected_revision"
+  ],
+  "input": {
+    "recovery_status": "rejected"
+  },
+  "expected_stage_status": "blocked",
+  "expected_decision": "manual_review_required",
+  "expected_blockers": [
+    "rejected_recovery_but_pitch_requested"
+  ],
+  "expected_reports": []
+}

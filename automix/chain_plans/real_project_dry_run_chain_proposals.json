@@ -1,0 +1,336 @@
+{
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "proposals": [
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_requires_isolated_stem",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated EQ/dynamic EQ or JSFX artifact guard adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_ai_vocal_cleanup",
+      "stage": "vocal_recovery",
+      "track_index": 1,
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": [
+        "audio_read_failed:source_full_mix_reference.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_pitch_blocked",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated pitch correction adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_pitch_triage_only",
+      "stage": "pitch_correction",
+      "track_index": 1,
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": [
+        "audio_read_failed:source_full_mix_reference.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_not_safe_for_vocal_placement_automation",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated EQ/dynamics/utility adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "vocal_forward_dry_run",
+      "stage": "vocal_placement",
+      "track_index": 1,
+      "track_name": "SOURCE full mix reference muted",
+      "warnings": [
+        "audio_read_failed:source_full_mix_reference.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_requires_isolated_stem",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated EQ/dynamic EQ or JSFX artifact guard adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_ai_vocal_cleanup",
+      "stage": "vocal_recovery",
+      "track_index": 2,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": [
+        "audio_read_failed:instrumental_vocal_pocket.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_pitch_blocked",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated pitch correction adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_pitch_triage_only",
+      "stage": "pitch_correction",
+      "track_index": 2,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": [
+        "audio_read_failed:instrumental_vocal_pocket.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "full_mix_not_safe_for_vocal_placement_automation",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated EQ/dynamics/utility adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "vocal_forward_dry_run",
+      "stage": "vocal_placement",
+      "track_index": 2,
+      "track_name": "V37 INSTRUMENTAL BUS free EQ pocket",
+      "warnings": [
+        "audio_read_failed:instrumental_vocal_pocket.wav:Error",
+        "full mix source is unsafe for vocal-forward placement automation",
+        "full mix unsafe for vocal recovery",
+        "full_mix_unsafe_for_pitch_correction"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": true,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamic EQ or JSFX artifact guard adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_ai_vocal_cleanup",
+      "stage": "vocal_recovery",
+      "track_index": 3,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "warnings": [
+        "audio_read_failed:lead_vocal_clarity_processed.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "pitch_plugin_mapping_required",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated pitch correction adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_pitch_triage_only",
+      "stage": "pitch_correction",
+      "track_index": 3,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "warnings": [
+        "audio_read_failed:lead_vocal_clarity_processed.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": true,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamics/utility adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "vocal_forward_dry_run",
+      "stage": "vocal_placement",
+      "track_index": 3,
+      "track_name": "V37 LEAD VOCAL CLARITY MAX GUARDED",
+      "warnings": [
+        "audio_read_failed:lead_vocal_clarity_processed.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": true,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamic EQ or JSFX artifact guard adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_ai_vocal_cleanup",
+      "stage": "vocal_recovery",
+      "track_index": 4,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "warnings": [
+        "audio_read_failed:backing_vocal_side_support.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "pitch_plugin_mapping_required",
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [
+        "validated pitch correction adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "conservative_pitch_triage_only",
+      "stage": "pitch_correction",
+      "track_index": 4,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "warnings": [
+        "audio_read_failed:backing_vocal_side_support.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": true,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamics/utility adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "vocal_forward_dry_run",
+      "stage": "vocal_placement",
+      "track_index": 4,
+      "track_name": "V37 BACKGROUND DOUBLE SUPPORT L/R",
+      "warnings": [
+        "audio_read_failed:backing_vocal_side_support.wav:Error",
+        "pitch_plugin_mapping_required"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": false,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamics/utility adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "target_profile_scan_only",
+      "stage": "reference_matching",
+      "track_index": null,
+      "track_name": "__project__",
+      "warnings": [],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "validated_plugin_mapping_required"
+      ],
+      "draft_required": true,
+      "proposed": true,
+      "required_plugins": [
+        "validated EQ/dynamics/limiter adapter"
+      ],
+      "safe_plugins_available": false,
+      "selected_profile": "premaster_safety_scan_only",
+      "stage": "premaster",
+      "track_index": null,
+      "track_name": "__project__",
+      "warnings": [
+        "accepted_mix_required_before_premaster_draft"
+      ],
+      "would_modify_project": false
+    },
+    {
+      "blocked": true,
+      "blockers": [
+        "scan_only_mode_blocks_final_export",
+        "explicit_human_approval_required"
+      ],
+      "draft_required": false,
+      "proposed": false,
+      "required_plugins": [],
+      "safe_plugins_available": false,
+      "selected_profile": "blocked_scan_only",
+      "stage": "final_export",
+      "track_index": null,
+      "track_name": "__project__",
+      "warnings": [],
+      "would_modify_project": false
+    }
+  ],
+  "schema": "automix-real-project-dry-run-chain-proposals-v1",
+  "warnings": [
+    "dry_run_informational_only_no_fx_inserted"
+  ]
+}

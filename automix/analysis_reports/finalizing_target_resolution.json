@@ -1,0 +1,39 @@
+{
+  "accepted_lead_vocal_guid": "",
+  "accepted_lead_vocal_recovery_draft": "",
+  "adlibs": [],
+  "backing_vocal_tracks": [
+    "V37 BACKGROUND DOUBLE SUPPORT L/R"
+  ],
+  "bass_808_tracks": [],
+  "delay_send": "V37 PRINTED VOCAL DELAY SEND",
+  "do_not_modify_full_mix_reference": true,
+  "do_not_modify_master_directly": true,
+  "do_not_modify_original_tracks": true,
+  "drum_bus": "",
+  "fragile_source": false,
+  "full_mix_references_for_listening_only": [
+    "SOURCE full mix reference muted"
+  ],
+  "guitar_tracks": [],
+  "instrumental_bus": "V37 INSTRUMENTAL BUS free EQ pocket",
+  "master_track_for_measurement_only": "Master",
+  "missing_targets": [
+    "accepted_lead_vocal_recovery_draft",
+    "no_accepted_recovery_sources",
+    "plugin_adapter_gate_not_ready_for_placement"
+  ],
+  "original_lead_vocal_guid": "",
+  "original_lead_vocal_reference": "",
+  "piano_tracks": [],
+  "project_name": "mesi_1_v37_VOCAL_CLARITY_FINAL",
+  "requires_manual_review": true,
+  "reverb_send": "V37 PRINTED VOCAL REVERB SEND",
+  "schema": "automix-finalizing-target-resolution-v1",
+  "synth_sample_lead_tracks": [],
+  "target_confidence": 0.35,
+  "vocal_doubles": [],
+  "warnings": [
+    "target confidence is low; manual review required"
+  ]
+}

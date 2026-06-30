@@ -1,0 +1,487 @@
+{
+  "all_collection_jobs_queued": false,
+  "blocked_jobs": [
+    {
+      "blockers": [
+        "availability_decision_missing:OTT (Xfer Records)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "OTT (Xfer Records)"
+    },
+    {
+      "blockers": [
+        "availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+      ],
+      "collection_action": "operator_availability_decision_required",
+      "operator_acknowledged": false,
+      "operator_resolution": "",
+      "plugin_name": "TDR Nova (Tokyo Dawn Labs)"
+    }
+  ],
+  "blocked_jobs_total": 2,
+  "blockers": [
+    "collection_job_blocked:OTT (Xfer Records):availability_decision_missing:OTT (Xfer Records)",
+    "collection_job_blocked:TDR Nova (Tokyo Dawn Labs):availability_decision_missing:TDR Nova (Tokyo Dawn Labs)"
+  ],
+  "collection_plan_status": "availability_decisions_required_before_full_collection",
+  "created_at": "2026-06-05T11:07:59Z",
+  "limits": [
+    "This queue does not open REAPER, insert FX, write parameters, render, or approve audio.",
+    "Queue jobs must write plugin_parameter_validation reports that are audited again by plugin_semantic_validation_gate.",
+    "Do not write parameters before semantic validation gate passes and the collection queue has no open jobs."
+  ],
+  "next_queue_job": {
+    "acceptance_criteria": [
+      "report schema is automix-plugin-parameter-validation-report-v1",
+      "status=passed",
+      "safe_for_automix=true",
+      "no_fake_success=true",
+      "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+    ],
+    "available": true,
+    "category": "jsfx",
+    "collection_action": "collect_missing_reaper_observed_semantic_report",
+    "disallowed_actions": [
+      "do not validate on a production track without a saved test copy or temporary muted test context",
+      "do not write parameters to the user's mix from this queue",
+      "do not mark a report passed from plugin availability alone",
+      "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+    ],
+    "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx*.json",
+    "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+    "matching_reports_total": 0,
+    "passed_reports_total": 0,
+    "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+    "priority": 20,
+    "report_must_be_reaudited_by_semantic_gate": true,
+    "required_observations": [
+      "REAPER runtime observed the exact plugin or accepted installed substitute",
+      "semantic parameter response observed by name or verified helper, not guessed from index order",
+      "status=passed only when the report has at least one validated write-safe semantic control",
+      "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+      "safe min/max bounds recorded for every write_allowed semantic control"
+    ],
+    "requires_operator_review": true,
+    "requires_reaper_runtime": true,
+    "requires_temporary_muted_test_context": true,
+    "safe_control_count": 0,
+    "source_action_id": "collect_reaper_observed_semantic_validation",
+    "source_blockers": [
+      "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx"
+    ],
+    "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+    "warnings": []
+  },
+  "output_dir": "automix",
+  "project_name": "project",
+  "queue_jobs": [
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx*.json",
+      "job_id": "semantic_validation_01_codex_vocal_vocal_ai_artifact_split_tamer.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Codex Vocal/vocal_ai_artifact_split_tamer.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Codex Vocal/vocal_ai_artifact_split_tamer.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_codex_vocal_vocal_ai_artifact_split_tamer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "stock",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos*.json",
+      "job_id": "semantic_validation_02_reaverbate_cockos",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "ReaVerbate (Cockos)",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:ReaVerbate (Cockos)"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaverbate_cockos_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx*.json",
+      "job_id": "semantic_validation_03_vocal_clarity_repair_vocal_air_guard.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_air_guard.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Vocal Clarity Repair/vocal_air_guard.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_air_guard.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx*.json",
+      "job_id": "semantic_validation_04_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Vocal Clarity Repair/vocal_demud_dynamic_eq.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_demud_dynamic_eq.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx*.json",
+      "job_id": "semantic_validation_05_vocal_clarity_repair_vocal_output_guard.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_output_guard.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Vocal Clarity Repair/vocal_output_guard.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_output_guard.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "jsfx",
+      "collection_action": "collect_missing_reaper_observed_semantic_report",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx*.json",
+      "job_id": "semantic_validation_06_vocal_clarity_repair_vocal_presence_enhancer.jsfx",
+      "matching_reports_total": 0,
+      "passed_reports_total": 0,
+      "plugin_name": "Vocal Clarity Repair/vocal_presence_enhancer.jsfx",
+      "priority": 20,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "collect_reaper_observed_semantic_validation",
+      "source_blockers": [
+        "validation_report_missing:Vocal Clarity Repair/vocal_presence_enhancer.jsfx"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_vocal_clarity_repair_vocal_presence_enhancer.jsfx_reaper_observed.json",
+      "warnings": []
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "stock",
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos*.json",
+      "job_id": "semantic_validation_07_reacomp_cockos",
+      "matching_reports_total": 1,
+      "passed_reports_total": 0,
+      "plugin_name": "ReaComp (Cockos)",
+      "priority": 30,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "rerun_or_keep_plugin_read_only",
+      "source_blockers": [
+        "ReaComp (Cockos):validation_report_has_no_write_safe_controls",
+        "ReaComp (Cockos):validation_report_not_passed:validation_unavailable",
+        "ReaComp (Cockos):validation_report_not_safe_for_automix",
+        "no_passed_semantic_validation_report:ReaComp (Cockos)"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reacomp_cockos_rerun_reaper_observed.json",
+      "warnings": [
+        "ReaComp (Cockos):some_semantic_controls_remain_write_blocked"
+      ]
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "stock",
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos*.json",
+      "job_id": "semantic_validation_08_readelay_cockos",
+      "matching_reports_total": 1,
+      "passed_reports_total": 0,
+      "plugin_name": "ReaDelay (Cockos)",
+      "priority": 30,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "rerun_or_keep_plugin_read_only",
+      "source_blockers": [
+        "ReaDelay (Cockos):validation_report_has_no_write_safe_controls",
+        "ReaDelay (Cockos):validation_report_not_passed:validation_unavailable",
+        "ReaDelay (Cockos):validation_report_not_safe_for_automix",
+        "no_passed_semantic_validation_report:ReaDelay (Cockos)"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_readelay_cockos_rerun_reaper_observed.json",
+      "warnings": [
+        "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked"
+      ]
+    },
+    {
+      "acceptance_criteria": [
+        "report schema is automix-plugin-parameter-validation-report-v1",
+        "status=passed",
+        "safe_for_automix=true",
+        "no_fake_success=true",
+        "at least one control has validated=true, write_allowed=true, confidence>=0.85, and target_name"
+      ],
+      "available": true,
+      "category": "stock",
+      "collection_action": "rerun_failed_semantic_report_or_keep_read_only",
+      "disallowed_actions": [
+        "do not validate on a production track without a saved test copy or temporary muted test context",
+        "do not write parameters to the user's mix from this queue",
+        "do not mark a report passed from plugin availability alone",
+        "do not use fixed parameter indexes unless observed in the target REAPER runtime"
+      ],
+      "expected_report_glob": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos*.json",
+      "job_id": "semantic_validation_09_reaeq_cockos",
+      "matching_reports_total": 1,
+      "passed_reports_total": 0,
+      "plugin_name": "ReaEQ (Cockos)",
+      "priority": 30,
+      "report_must_be_reaudited_by_semantic_gate": true,
+      "required_observations": [
+        "REAPER runtime observed the exact plugin or accepted installed substitute",
+        "semantic parameter response observed by name or verified helper, not guessed from index order",
+        "status=passed only when the report has at least one validated write-safe semantic control",
+        "safe_for_automix=true and no_fake_success=true only after observed response evidence",
+        "safe min/max bounds recorded for every write_allowed semantic control"
+      ],
+      "requires_operator_review": true,
+      "requires_reaper_runtime": true,
+      "requires_temporary_muted_test_context": true,
+      "safe_control_count": 0,
+      "source_action_id": "rerun_or_keep_plugin_read_only",
+      "source_blockers": [
+        "ReaEQ (Cockos):validation_report_has_no_write_safe_controls",
+        "ReaEQ (Cockos):validation_report_not_passed:validation_unavailable",
+        "ReaEQ (Cockos):validation_report_not_safe_for_automix",
+        "no_passed_semantic_validation_report:ReaEQ (Cockos)"
+      ],
+      "target_report_path": "automix/analysis_reports/plugin_parameter_validation_reaeq_cockos_rerun_reaper_observed.json",
+      "warnings": [
+        "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked"
+      ]
+    }
+  ],
+  "queue_jobs_total": 9,
+  "ready_to_run_reaper_collection": true,
+  "requires_operator_review": true,
+  "requires_reaper_runtime": true,
+  "safe_to_write_parameters": false,
+  "schema": "automix-plugin-semantic-validation-queue-v1",
+  "source_collection_plan": "automix/eval_reports/plugin_semantic_validation_collection_plan.json",
+  "status": "queue_ready_with_blocked_unavailable_decisions",
+  "warnings": [
+    "ReaComp (Cockos):some_semantic_controls_remain_write_blocked",
+    "ReaDelay (Cockos):some_semantic_controls_remain_write_blocked",
+    "ReaEQ (Cockos):some_semantic_controls_remain_write_blocked"
+  ]
+}
